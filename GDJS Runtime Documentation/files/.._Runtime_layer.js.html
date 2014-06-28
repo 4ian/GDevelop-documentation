@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\layer.js - Game Develop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+        
+            Game Develop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\layer.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * Game Develop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the GNU Lesser General Public License.
+ */
+
+/**
+ * Represents a layer used to display objects.&lt;br&gt;
+ * The layer connects its Pixi container to the Pixi stage during its construction,
+ * but then it is objects responsibility to connect themselves to the layer&#x27;s container
+ * ( See addChildToPIXIContainer method ).&lt;br&gt;
+ * Layers do not provide direct access to their pixi container as they do some extra work
+ * to ensure that z orders remains correct.
+ *
+ * &lt;b&gt;TODO:&lt;/b&gt; Viewports and support for multiple cameras
+ *
+ * @class Layer
+ * @namespace gdjs
+ * @constructor
+ */
+gdjs.Layer = function(name, runtimeScene)
+{
+    this._name = name;
+    this._cameraRotation = 0;
+    this._zoomFactor = 1;
+    this._hidden = false;
+    this._pixiRenderer = runtimeScene.getPIXIRenderer();
+    this._pixiContainer = new PIXI.DisplayObjectContainer(); //The container of the layer
+    this._cameraX = runtimeScene.getGame().getDefaultWidth()/2;
+    this._cameraY = runtimeScene.getGame().getDefaultHeight()/2;
+    this._defaultWidth = runtimeScene.getGame().getDefaultWidth();
+    this._defaultHeight = runtimeScene.getGame().getDefaultHeight();
+
+    runtimeScene.getPIXIContainer().addChild(this._pixiContainer);
+};
+
+/**
+ * Update the position of the PIXI container. To be called after each change
+ * made to position, zoom or rotation of the camera.
+ * @private
+ */
+gdjs.Layer.prototype._updatePixiContainerPosition = function() {
+	var angle = -gdjs.toRad(this._cameraRotation);
+	this._pixiContainer.rotation = angle;
+	this._pixiContainer.scale.x = this._zoomFactor;
+	this._pixiContainer.scale.y = this._zoomFactor;
+
+	var centerX = (this._cameraX*this._zoomFactor)*Math.cos(angle)-(this._cameraY*this._zoomFactor)*Math.sin(angle);
+	var centerY = (this._cameraX*this._zoomFactor)*Math.sin(angle)+(this._cameraY*this._zoomFactor)*Math.cos(angle);
+
+	this._pixiContainer.position.x = -centerX;
+	this._pixiContainer.position.y = -centerY;
+	this._pixiContainer.position.x += this._defaultWidth/2;
+	this._pixiContainer.position.y += this._defaultHeight/2;
+};
+
+/**
+ * Get the name of the layer
+ * @method getName
+ * @return {String} The name of the layer
+ */
+gdjs.Layer.prototype.getName = function() {
+	return this._name;
+};
+
+/**
+ * Add a child to the pixi container associated to the layer.&lt;br&gt;
+ * All objects which are on this layer must be children of this container.&lt;br&gt;
+ *
+ * @method addChildToPIXIContainer
+ * @param child The child ( PIXI object ) to be added.
+ * @param zOrder The z order of the associated object.
+ */
+gdjs.Layer.prototype.addChildToPIXIContainer = function(child, zOrder) {
+	child.zOrder = zOrder; //Extend the pixi object with a z order.
+
+	for( var i = 0, len = this._pixiContainer.children.length; i &lt; len;++i) {
+		if ( this._pixiContainer.children[i].zOrder &gt;= zOrder ) { //TODO : Dichotomic search
+			this._pixiContainer.addChildAt(child, i);
+			return;
+		}
+	}
+	this._pixiContainer.addChild(child);
+};
+
+/**
+ * Change the z order of a child associated to an object.
+ *
+ * @method changePIXIContainerChildZOrder
+ * @param child The child ( PIXI object ) to be modified.
+ * @param newZOrder The z order of the associated object.
+ */
+gdjs.Layer.prototype.changePIXIContainerChildZOrder = function(child, newZOrder) {
+	this._pixiContainer.removeChild(child);
+	this.addChildToPIXIContainer(child, newZOrder);
+};
+
+/**
+ * Remove a child from the internal pixi container.&lt;br&gt;
+ * Should be called when an object is deleted or removed from the layer.
+ *
+ * @method removePIXIContainerChild
+ * @param child The child ( PIXI object ) to be removed.
+ */
+gdjs.Layer.prototype.removePIXIContainerChild = function(child) {
+	this._pixiContainer.removeChild(child);
+};
+
+/**
+ * Change the camera center X position.&lt;br&gt;
+ *
+ * @method getCameraX
+ * @param cameraId The camera number. Currently ignored.
+ * @return The x position of the camera
+ */
+gdjs.Layer.prototype.getCameraX = function(cameraId) {
+	return this._cameraX;
+};
+
+/**
+ * Change the camera center Y position.&lt;br&gt;
+ *
+ * @method getCameraY
+ * @param cameraId The camera number. Currently ignored.
+ * @return The y position of the camera
+ */
+gdjs.Layer.prototype.getCameraY = function(cameraId) {
+	return this._cameraY;
+};
+
+/**
+ * Set the camera center X position.&lt;br&gt;
+ *
+ * @method setCameraX
+ * @param x {Number} The new x position
+ * @param cameraId The camera number. Currently ignored.
+ */
+gdjs.Layer.prototype.setCameraX = function(x, cameraId) {
+	this._cameraX = x;
+	this._updatePixiContainerPosition();
+};
+
+/**
+ * Set the camera center Y position.&lt;br&gt;
+ *
+ * @method setCameraY
+ * @param y {Number} The new y position
+ * @param cameraId The camera number. Currently ignored.
+ */
+gdjs.Layer.prototype.setCameraY = function(y, cameraId) {
+	this._cameraY = y;
+	this._updatePixiContainerPosition();
+};
+
+gdjs.Layer.prototype.getCameraWidth = function(cameraId) {
+	return (+this._defaultWidth)*1/this._pixiContainer.scale.x;
+};
+
+gdjs.Layer.prototype.getCameraHeight = function(cameraId) {
+	return (+this._defaultHeight)*1/this._pixiContainer.scale.y;
+};
+
+gdjs.Layer.prototype.show = function(enable) {
+	this._hidden = !enable;
+	this._pixiContainer.visible = !!enable;
+};
+
+/**
+ * Check if the layer is visible.&lt;br&gt;
+ *
+ * @method isVisible
+ * @return true if the layer is visible.
+ */
+gdjs.Layer.prototype.isVisible = function() {
+	return !this._hidden;
+};
+
+/**
+ * Set the zoom of a camera.&lt;br&gt;
+ *
+ * @method setCameraZoom
+ * @param The new zoom. Must be superior to 0. 1 is the default zoom.
+ * @param cameraId The camera number. Currently ignored.
+ */
+gdjs.Layer.prototype.setCameraZoom = function(newZoom, cameraId) {
+
+	this._zoomFactor = newZoom;
+	this._updatePixiContainerPosition();
+};
+
+/**
+ * Get the zoom of a camera.&lt;br&gt;
+ *
+ * @method getZoom
+ * @param cameraId The camera number. Currently ignored.
+ * @return The zoom.
+ */
+gdjs.Layer.prototype.getCameraZoom = function(cameraId) {
+	return this._zoomFactor;
+};
+
+/**
+ * Get the rotation of the camera, expressed in degrees.&lt;br&gt;
+ *
+ * @method getCameraRotation
+ * @param cameraId The camera number. Currently ignored.
+ * @return The rotation, in degrees.
+ */
+gdjs.Layer.prototype.getCameraRotation = function(cameraId) {
+	return this._cameraRotation;
+};
+
+/**
+ * Set the rotation of the camera, expressed in degrees.&lt;br&gt;
+ * The rotation is made around the camera center.
+ *
+ * @method setCameraRotation
+ * @param rotation {Number} The new rotation, in degrees.
+ * @param cameraId The camera number. Currently ignored.
+ */
+gdjs.Layer.prototype.setCameraRotation = function(rotation, cameraId) {
+	this._cameraRotation = rotation;
+	this._updatePixiContainerPosition();
+};
+
+/**
+ * Convert a point from the canvas coordinates (For example, the mouse position) to the
+ * &quot;world&quot; coordinates.
+ *
+ * @method convertCoords
+ * @param x {Number} The x position, in canvas coordinates.
+ * @param y {Number} The y position, in canvas coordinates.
+ * @param cameraId The camera number. Currently ignored.
+ */
+gdjs.Layer.prototype.convertCoords = function(x,y, cameraId) {
+
+	x -= this._defaultWidth/2;
+	y -= this._defaultHeight/2;
+	x /= Math.abs(this._pixiContainer.scale.x);
+	y /= Math.abs(this._pixiContainer.scale.y);
+
+	var tmp = x;
+	x = Math.cos(this._cameraRotation/180*3.14159)*x - Math.sin(this._cameraRotation/180*3.14159)*y;
+	y = Math.sin(this._cameraRotation/180*3.14159)*tmp + Math.cos(this._cameraRotation/180*3.14159)*y;
+
+	return [x+this.getCameraX(cameraId), y+this.getCameraY(cameraId)];
+};
+
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\storagetools.js - Game Develop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+        
+            Game Develop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\storagetools.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * Game Develop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the GNU Lesser General Public License.
+ */
+
+/**
+ * Tools related to storage, for events generated code.
+ *
+ * @namespace gdjs.evtTools
+ * @class storage
+ * @static
+ * @private
+ */
+gdjs.evtTools.storage = gdjs.evtTools.storage || {loadedFiles:new Hashtable()};
+
+/**
+ * Load into memory a JSON object stored in the local storage object
+ * provided by the browser.
+ * The JSON object is named GDJS_filename in the localStorage object.
+ *
+ * @method loadJSONFileFromStorage
+ * @param filename {String} The name of the JSON object
+ * @static
+ * @private
+ */
+gdjs.evtTools.storage.loadJSONFileFromStorage = function(filename) {
+	if ( gdjs.evtTools.storage.loadedFiles.containsKey(filename) )
+		return; //Already loaded.
+
+	var rawStr = localStorage.getItem(&quot;GDJS_&quot;+filename);
+	if ( rawStr !== null )
+		gdjs.evtTools.storage.loadedFiles.put(filename, JSON.parse(rawStr));
+	else
+		gdjs.evtTools.storage.loadedFiles.put(filename, {});
+};
+
+/**
+ * Unload from memory a JSON object, which is then stored in the local storage 
+ * object provided by the browser.
+ * The JSON object is named GDJS_filename in the localStorage object.
+ *
+ * @method loadJSONFileFromStorage
+ * @param filename {String} The name of the JSON object
+ * @static
+ * @private
+ */
+gdjs.evtTools.storage.unloadJSONFile = function(filename) {
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) )
+		return; //Not loaded.
+
+	var JSONobject = gdjs.evtTools.storage.loadedFiles.get(filename);
+	try {
+		localStorage.setItem(&quot;GDJS_&quot;+filename, JSON.stringify(JSONobject));
+	}
+	catch(e) {
+		//TODO: Handle storage error.
+	}
+
+	 gdjs.evtTools.storage.loadedFiles.remove(filename);
+};
+
+gdjs.evtTools.storage.clearJSONFile = function(filename) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+    
+    var JSONobject = gdjs.evtTools.storage.loadedFiles.get(filename);
+    for ( var p in JSONobject ) {
+        if ( JSONobject.hasOwnProperty(p) )
+            delete JSONobject[p];
+    }
+    
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+gdjs.evtTools.storage.elementExistsInJSONFile = function(filename, element) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+
+	var elemArray = element.split(&quot;/&quot;);
+	var currentElem = gdjs.evtTools.storage.loadedFiles.get(filename);
+	for (var i =0;i&lt;elemArray.length;++i) {
+
+		if ( !currentElem[elemArray[i]] ) {
+			if ( !notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+			return false;
+		}
+		
+		currentElem = currentElem[elemArray[i]];
+	}
+
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+gdjs.evtTools.storage.deleteElementFromJSONFile = function(filename, element) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+
+	var elemArray = element.split(&quot;/&quot;);
+	var currentElem = gdjs.evtTools.storage.loadedFiles.get(filename);
+	for (var i =0;i&lt;elemArray.length;++i) {
+
+		if ( !currentElem[elemArray[i]] ) {
+			if ( !notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+			return false;
+		}
+		
+		if ( i == elemArray.length-1)
+			delete currentElem[elemArray[i]];
+		else
+			currentElem = currentElem[elemArray[i]];
+	}
+
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+gdjs.evtTools.storage.writeNumberInJSONFile = function(filename, element, val) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+
+	var elemArray = element.split(&quot;/&quot;);
+	var currentElem = gdjs.evtTools.storage.loadedFiles.get(filename);
+	for (var i =0;i&lt;elemArray.length;++i) {
+
+		if ( !currentElem[elemArray[i]] ) currentElem[elemArray[i]] = {};
+		
+		if ( i == elemArray.length-1)
+			currentElem[elemArray[i]].value = val;
+		else
+			currentElem = currentElem[elemArray[i]];
+	}
+
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+gdjs.evtTools.storage.writeStringInJSONFile = function(filename, element, str) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+
+	var elemArray = element.split(&quot;/&quot;);
+	var currentElem = gdjs.evtTools.storage.loadedFiles.get(filename);
+	for (var i =0;i&lt;elemArray.length;++i) {
+
+		if ( !currentElem[elemArray[i]] ) currentElem[elemArray[i]] = {};
+		
+		if ( i == elemArray.length-1)
+			currentElem[elemArray[i]].str = str;
+		else
+			currentElem = currentElem[elemArray[i]];
+	}
+
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+gdjs.evtTools.storage.readNumberFromJSONFile = function(filename, element, runtimeScene, variable) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+
+	var elemArray = element.split(&quot;/&quot;);
+	var currentElem = gdjs.evtTools.storage.loadedFiles.get(filename);
+	for (var i =0;i&lt;elemArray.length;++i) {
+
+		if ( !currentElem[elemArray[i]] ) {
+			if ( !notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+			return false;
+		}
+		
+		if ( i == elemArray.length-1 &amp;&amp; currentElem[elemArray[i]].value)
+			variable.setNumber(currentElem[elemArray[i]].value);
+		else
+			currentElem = currentElem[elemArray[i]];
+	}
+
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+gdjs.evtTools.storage.readStringFromJSONFile = function(filename, element, runtimeScene, variable) {
+	var notPermanentlyLoaded = false;
+	if ( !gdjs.evtTools.storage.loadedFiles.containsKey(filename) ) {
+		notPermanentlyLoaded = true;
+		gdjs.evtTools.storage.loadJSONFileFromStorage(filename);
+	}
+
+	var elemArray = element.split(&quot;/&quot;);
+	var currentElem = gdjs.evtTools.storage.loadedFiles.get(filename);
+	for (var i =0;i&lt;elemArray.length;++i) {
+
+		if ( !currentElem[elemArray[i]] ) {
+			if ( !notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+			return false;
+		}
+		
+		if ( i == elemArray.length-1 &amp;&amp; currentElem[elemArray[i]].str)
+			variable.setString(currentElem[elemArray[i]].str);
+		else
+			currentElem = currentElem[elemArray[i]];
+	}
+
+	if ( notPermanentlyLoaded ) gdjs.evtTools.storage.unloadJSONFile(filename);
+	return true;
+};
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

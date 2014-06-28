@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\inputtools.js - Game Develop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+        
+            Game Develop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\inputtools.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * Game Develop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the GNU Lesser General Public License.
+ */
+
+/**
+ * Tools related to input ( Keyboard, mouse ), for events generated code.
+ *
+ * TODO : Map all keys&lt;br&gt;
+ * TODO : Implement others buttons for mouse&lt;br&gt;
+ *
+ * @namespace gdjs.evtTools
+ * @class input
+ * @static
+ * @private
+ */
+gdjs.evtTools.input = gdjs.evtTools.input || {};
+
+/**
+ * Return true if the specified key is pressed
+ * TODO: Map all keys and uses a hash table.
+ * @method isKeyPressed
+ * @private
+ */
+gdjs.evtTools.input.isKeyPressed = function(runtimeScene, key) {
+
+    if ( key === &quot;a&quot; ) { return runtimeScene.getGame().isKeyPressed(65); }
+    if ( key === &quot;b&quot; ) { return runtimeScene.getGame().isKeyPressed(66); }
+    if ( key === &quot;c&quot; ) { return runtimeScene.getGame().isKeyPressed(67); }
+    if ( key === &quot;d&quot; ) { return runtimeScene.getGame().isKeyPressed(68); }
+    if ( key === &quot;e&quot; ) { return runtimeScene.getGame().isKeyPressed(69); }
+    if ( key === &quot;f&quot; ) { return runtimeScene.getGame().isKeyPressed(70); }
+    if ( key === &quot;g&quot; ) { return runtimeScene.getGame().isKeyPressed(71); }
+    if ( key === &quot;h&quot; ) { return runtimeScene.getGame().isKeyPressed(72); }
+    if ( key === &quot;i&quot; ) { return runtimeScene.getGame().isKeyPressed(73); }
+    if ( key === &quot;j&quot; ) { return runtimeScene.getGame().isKeyPressed(74); }
+    if ( key === &quot;k&quot; ) { return runtimeScene.getGame().isKeyPressed(75); }
+    if ( key === &quot;l&quot; ) { return runtimeScene.getGame().isKeyPressed(76); }
+    if ( key === &quot;m&quot; ) { return runtimeScene.getGame().isKeyPressed(77); }
+    if ( key === &quot;n&quot; ) { return runtimeScene.getGame().isKeyPressed(78); }
+    if ( key === &quot;o&quot; ) { return runtimeScene.getGame().isKeyPressed(79); }
+    if ( key === &quot;p&quot; ) { return runtimeScene.getGame().isKeyPressed(80); }
+    if ( key === &quot;q&quot; ) { return runtimeScene.getGame().isKeyPressed(81); }
+    if ( key === &quot;r&quot; ) { return runtimeScene.getGame().isKeyPressed(82); }
+    if ( key === &quot;s&quot; ) { return runtimeScene.getGame().isKeyPressed(83); }
+    if ( key === &quot;t&quot; ) { return runtimeScene.getGame().isKeyPressed(84); }
+    if ( key === &quot;u&quot; ) { return runtimeScene.getGame().isKeyPressed(85); }
+    if ( key === &quot;v&quot; ) { return runtimeScene.getGame().isKeyPressed(86); }
+    if ( key === &quot;w&quot; ) { return runtimeScene.getGame().isKeyPressed(87); }
+    if ( key === &quot;x&quot; ) { return runtimeScene.getGame().isKeyPressed(88); }
+    if ( key === &quot;y&quot; ) { return runtimeScene.getGame().isKeyPressed(89); }
+    if ( key === &quot;z&quot; ) { return runtimeScene.getGame().isKeyPressed(90); }
+
+    if ( key === &quot;Numpad0&quot; ) { return runtimeScene.getGame().isKeyPressed(96); }
+    if ( key === &quot;Numpad1&quot; ) { return runtimeScene.getGame().isKeyPressed(97); }
+    if ( key === &quot;Numpad2&quot; ) { return runtimeScene.getGame().isKeyPressed(98); }
+    if ( key === &quot;Numpad3&quot; ) { return runtimeScene.getGame().isKeyPressed(99); }
+    if ( key === &quot;Numpad4&quot; ) { return runtimeScene.getGame().isKeyPressed(100); }
+    if ( key === &quot;Numpad5&quot; ) { return runtimeScene.getGame().isKeyPressed(101); }
+    if ( key === &quot;Numpad6&quot; ) { return runtimeScene.getGame().isKeyPressed(102); }
+    if ( key === &quot;Numpad7&quot; ) { return runtimeScene.getGame().isKeyPressed(103); }
+    if ( key === &quot;Numpad8&quot; ) { return runtimeScene.getGame().isKeyPressed(104); }
+    if ( key === &quot;Numpad9&quot; ) { return runtimeScene.getGame().isKeyPressed(105); }
+
+    if ( key == &quot;RControl&quot; ) { return runtimeScene.getGame().isKeyPressed(17); }
+    if ( key == &quot;RShift&quot; ) { return runtimeScene.getGame().isKeyPressed(16); }
+    if ( key == &quot;RAlt&quot; ) { return runtimeScene.getGame().isKeyPressed(18); }
+    if ( key == &quot;LControl&quot; ) { return runtimeScene.getGame().isKeyPressed(17); }
+    if ( key == &quot;LShift&quot; ) { return runtimeScene.getGame().isKeyPressed(16);}
+    if ( key == &quot;LAlt&quot; ) { return runtimeScene.getGame().isKeyPressed(18); }
+    if ( key == &quot;LSystem&quot; ) { return runtimeScene.getGame().isKeyPressed(91); }
+    if ( key == &quot;RSystem&quot; ) { return runtimeScene.getGame().isKeyPressed(91); }
+    /*if ( key == &quot;Menu&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Menu ); }
+    if ( key == &quot;LBracket&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::LBracket ); }
+    if ( key == &quot;RBracket&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::RBracket ); }
+    if ( key == &quot;SemiColon&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::SemiColon ); }
+    if ( key == &quot;Comma&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Comma ); }
+    if ( key == &quot;Period&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Period ); }
+    if ( key == &quot;Quote&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Quote ); }
+    if ( key == &quot;Slash&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Slash ); }
+    if ( key == &quot;BackSlash&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::BackSlash ); }
+    if ( key == &quot;Tilde&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Tilde ); }
+    if ( key == &quot;Equal&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Equal ); }
+    if ( key == &quot;Dash&quot; ) { return sf::Keyboard::isKeyPressed( sf::Keyboard::Dash ); }*/
+    if ( key == &quot;Space&quot; ) { return runtimeScene.getGame().isKeyPressed(32); }
+    if ( key == &quot;Return&quot; ) { return runtimeScene.getGame().isKeyPressed(13); }
+    if ( key == &quot;Back&quot; ) { return runtimeScene.getGame().isKeyPressed(8); }
+    if ( key == &quot;Tab&quot; ) { return runtimeScene.getGame().isKeyPressed(9); }
+    if ( key == &quot;PageUp&quot; ) { return runtimeScene.getGame().isKeyPressed(33); }
+    if ( key == &quot;PageDown&quot; ) { return runtimeScene.getGame().isKeyPressed(34); }
+    if ( key == &quot;End&quot; ) { return runtimeScene.getGame().isKeyPressed(35); }
+    if ( key == &quot;Home&quot; ) { return runtimeScene.getGame().isKeyPressed(36); }
+    if ( key == &quot;Delete&quot; ) { return runtimeScene.getGame().isKeyPressed(46); }
+    if ( key == &quot;Insert&quot; ) { return runtimeScene.getGame().isKeyPressed(45); }
+
+    if ( key == &quot;Add&quot; ) { return runtimeScene.getGame().isKeyPressed(107); }
+    if ( key == &quot;Subtract&quot; ) { return runtimeScene.getGame().isKeyPressed(109); }
+    if ( key == &quot;Multiply&quot; ) { return runtimeScene.getGame().isKeyPressed(106); }
+    if ( key == &quot;Divide&quot; ) { return runtimeScene.getGame().isKeyPressed(111); }
+
+    if ( key === &quot;Left&quot; ) { return runtimeScene.getGame().isKeyPressed(37); }
+    if ( key === &quot;Up&quot; ) { return runtimeScene.getGame().isKeyPressed(38); }
+    if ( key === &quot;Right&quot; ) { return runtimeScene.getGame().isKeyPressed(39); }
+    if ( key === &quot;Down&quot; ) { return runtimeScene.getGame().isKeyPressed(40); }
+
+    if ( key === &quot;F1&quot; ) { return runtimeScene.getGame().isKeyPressed(112); }
+    if ( key === &quot;F2&quot; ) { return runtimeScene.getGame().isKeyPressed(113); }
+    if ( key === &quot;F3&quot; ) { return runtimeScene.getGame().isKeyPressed(114); }
+    if ( key === &quot;F4&quot; ) { return runtimeScene.getGame().isKeyPressed(115); }
+    if ( key === &quot;F5&quot; ) { return runtimeScene.getGame().isKeyPressed(116); }
+    if ( key === &quot;F6&quot; ) { return runtimeScene.getGame().isKeyPressed(117); }
+    if ( key === &quot;F7&quot; ) { return runtimeScene.getGame().isKeyPressed(118); }
+    if ( key === &quot;F8&quot; ) { return runtimeScene.getGame().isKeyPressed(119); }
+    if ( key === &quot;F9&quot; ) { return runtimeScene.getGame().isKeyPressed(120); }
+    if ( key === &quot;F10&quot; ) { return runtimeScene.getGame().isKeyPressed(121); }
+    if ( key === &quot;F11&quot; ) { return runtimeScene.getGame().isKeyPressed(122); }
+    if ( key === &quot;F12&quot; ) { return runtimeScene.getGame().isKeyPressed(123); }
+
+    if ( key === &quot;Pause&quot; ) { return runtimeScene.getGame().isKeyPressed(19); }
+
+    return false;
+};
+
+gdjs.evtTools.input.anyKeyPressed = function(runtimeScene) {
+    return runtimeScene.getGame().anyKeyPressed();
+};
+
+gdjs.evtTools.input.isMouseButtonPressed = function(runtimeScene, button) {
+    if ( button == &quot;Left&quot; ) return runtimeScene.getGame().isMouseButtonPressed(0);
+    if ( button == &quot;Right&quot; ) return runtimeScene.getGame().isMouseButtonPressed(1);
+    return false;
+};
+
+gdjs.evtTools.input.hideCursor = function(runtimeScene) {
+    runtimeScene.getPIXIRenderer().view.style.cursor = &#x27;none&#x27;;
+};
+
+gdjs.evtTools.input.showCursor = function(runtimeScene) {
+    runtimeScene.getPIXIRenderer().view.style.cursor = &#x27;&#x27;;
+};
+
+gdjs.evtTools.input.getMouseWheelDelta = function(runtimeScene) {
+    return runtimeScene.getGame().getMouseWheelDelta();
+};
+
+gdjs.evtTools.input.getMouseX = function(runtimeScene, layer, camera) {
+    return runtimeScene.getLayer(layer).convertCoords(runtimeScene.getGame().getMouseX(),
+        runtimeScene.getGame().getMouseY())[0];
+};
+
+gdjs.evtTools.input.getMouseY = function(runtimeScene, layer, camera) {
+    return runtimeScene.getLayer(layer).convertCoords(runtimeScene.getGame().getMouseX(),
+        runtimeScene.getGame().getMouseY())[1];
+};
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

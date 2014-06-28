@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$class_dnd_text_resources_editor.html" title="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. " alt="" coords="202,5,369,32"/>
+<area shape="rect" id="node5" href="$classgd_1_1_dnd_text_sprite_object_editor.html" title="Tool class used by SpriteObjectEditor to enable inserting images using drag&#39;n&#39;drop. " alt="" coords="186,56,385,83"/>
+<area shape="rect" id="node7" href="$classgd_1_1_layout_editor_canvas_text_dnd.html" title="Tool class used by LayoutEditorCanvas to enable inserting object using drag&#39;n&#39;drop. " alt="" coords="182,107,389,133"/>
+</map>
