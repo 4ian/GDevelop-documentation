@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\networktools.js - Game Develop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+        
+            Game Develop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\networktools.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * Game Develop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the GNU Lesser General Public License.
+ */
+
+/**
+ * @namespace gdjs.evtTools
+ * @class network
+ * @static
+ * @private
+ */
+gdjs.evtTools.network = gdjs.evtTools.network || {};
+
+gdjs.evtTools.network.sendHttpRequest = function(host, uri, body, method, contentType, responseVar)
+{
+	try {
+		var xhr;
+	    if (typeof XMLHttpRequest !== &#x27;undefined&#x27;)
+			xhr = new XMLHttpRequest();
+	    else {
+	        var versions = [&quot;MSXML2.XmlHttp.5.0&quot;,
+	                        &quot;MSXML2.XmlHttp.4.0&quot;,
+	                        &quot;MSXML2.XmlHttp.3.0&quot;,
+	                        &quot;MSXML2.XmlHttp.2.0&quot;,
+	                        &quot;Microsoft.XmlHttp&quot;]
+
+	         for(var i = 0, len = versions.length; i &lt; len; i++) {
+	            try {
+	                xhr = new ActiveXObject(versions[i]);
+	                break;
+	            }
+	            catch(e){}
+	         } // end for
+	    }
+
+	    if ( xhr === undefined ) return;
+
+	    xhr.open(method, host+uri, false);
+	    xhr.setRequestHeader( &quot;Content-Type&quot;, contentType === &quot;&quot; ? &quot;application/x-www-form-urlencoded&quot; : contentType );
+	    xhr.send(body);
+		responseVar.setString(xhr.responseText);
+	}
+	catch(e){}
+};
+
+gdjs.evtTools.network.variableStructureToJSON = function(variable)
+{
+    if ( !variable.isStructure() ) {
+        if ( variable.isNumber() )
+            return variable.getAsNumber().toString();
+        else
+            return &quot;\&quot;&quot;+variable.getAsString()+&quot;\&quot;&quot;;
+    }
+
+    var str = &quot;{&quot;;
+    var firstChild = true;
+    var children = variable.getAllChildren();
+    for(var p in children) {
+        if (children.hasOwnProperty(p)) {
+	        if ( !firstChild ) str += &quot;,&quot;;
+	        str += &quot;\&quot;&quot;+p+&quot;\&quot;: &quot;+gdjs.evtTools.network.variableStructureToJSON(children[p]);
+
+	        firstChild = false;
+	    }
+    }
+
+    str += &quot;}&quot;;
+    return str;
+};
+
+gdjs.evtTools.network._objectToVariable = function(obj, variable)
+{
+	if(!isNaN(obj)) {  //Number
+		variable.setNumber(obj);
+	}
+	else if (typeof obj == &#x27;string&#x27; || obj instanceof String) {
+		variable.setString(obj);
+	}
+    else if ( Array.isArray(obj) ) {
+	    for(var i = 0;i&lt;obj.length;++i) {
+	        gdjs.evtTools.network._objectToVariable(obj[i], variable.getChild(i.toString()));
+		}
+	}
+	else {
+	    for(var p in obj) {
+	        if (obj.hasOwnProperty(p)) {
+	        	gdjs.evtTools.network._objectToVariable(obj[p], variable.getChild(p));
+	        }
+		}
+	}
+
+}
+
+gdjs.evtTools.network.jsonToVariableStructure = function(jsonStr, variable)
+{
+    if ( jsonStr.length === 0 ) return;
+    try {
+		var obj = JSON.parse(jsonStr);
+		gdjs.evtTools.network._objectToVariable(obj, variable);
+	} catch(e) {
+		//Do nothing iF JSON was not properly parsed;
+	}
+}
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

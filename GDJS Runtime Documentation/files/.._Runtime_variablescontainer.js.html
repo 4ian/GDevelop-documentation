@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\variablescontainer.js - Game Develop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+        
+            Game Develop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\variablescontainer.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * Game Develop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the GNU Lesser General Public License.
+ */
+
+/**
+ * VariablesContainer stores variables, usually for a a RuntimeGame, a RuntimeScene
+ * or a RuntimeObject.
+ *
+ * @namespace gdjs
+ * @class VariablesContainer
+ * @constructor
+ * @param initialVariablesData Optional object containing initial variables.
+ */
+gdjs.VariablesContainer = function(initialVariablesData)
+{
+    if ( this._variables == undefined ) this._variables = new Hashtable();
+    if ( this._variablesArray == undefined ) this._variablesArray = [];
+
+    if ( initialVariablesData != undefined ) this.initFrom(initialVariablesData);
+};
+
+/**
+ * Initialize variables from a container data.&lt;br&gt;
+ * If keepOldVariables is set to false ( by default ), all already existing variables will be
+ * erased, but the new variables will be accessible thanks to getFromIndex. &lt;br&gt;
+ * if keepOldVariables is set to true, already existing variables won&#x27;t be erased and will be
+ * still accessible thanks to getFromIndex.
+ *
+ * @method initFrom
+ * @param data The object containing the variables.
+ * @param keepOldVariables {Boolean} If set to true, already existing variables won&#x27;t be erased.
+ */
+gdjs.VariablesContainer.prototype.initFrom = function(data, keepOldVariables) {
+    if ( keepOldVariables == undefined ) keepOldVariables = false;
+    if ( !keepOldVariables ) var deletedVars = this._variables.keys();
+
+    var that = this;
+    var i = 0;
+	gdjs.iterateOverArray(data, function(varData) {
+
+        //Get the variable:
+        var variable = that.get(varData.name);
+        gdjs.Variable.call(variable, varData);
+
+        if ( !keepOldVariables ) {
+            //Register the variable in the extra array to ensure a fast lookup using getFromIndex.
+            if ( i &lt; that._variablesArray.length )
+                that._variablesArray[i] = variable;
+            else
+                that._variablesArray.push(variable);
+
+            ++i;
+
+            //Remove the variable from the list of variables to be deleted.
+            var idx = deletedVars.indexOf(varData.name)
+            if (idx !== -1) deletedVars[idx] = undefined;
+        }
+	});
+
+    if ( !keepOldVariables ) {
+        this._variablesArray.length = i;
+
+        //If we do not want to keep the already existing variables,
+        //remove all the variables not assigned above.
+        //(Here, remove means flag the variable as not existing, to avoid garbage creation ).
+        for(var i =0, len = deletedVars.length;i&lt;len;++i) {
+            if ( deletedVars[i] != undefined )
+                this._variables.get(deletedVars[i]).setUndefinedInContainer();
+        }
+    }
+};
+
+/**
+ * Add a new variable.
+ * @method add
+ * @param name {String} Variable name
+ * @param variable The variable to be added
+ */
+gdjs.VariablesContainer.prototype.add = function(name, variable) {
+	this._variables.put(name, variable);
+};
+
+/**
+ * Remove a variable.&lt;br&gt;
+ * ( In fact, the variable is not really removed from the container to avoid creating garbage )
+ * @method remove
+ * @param name {String} Variable to be removed
+ */
+gdjs.VariablesContainer.prototype.remove = function(name) {
+	if ( this._variables.containsKey(name) ) {
+        this._variables.get(name).setUndefinedInContainer();
+    }
+};
+
+/**
+ * Get a variable.
+ * @method get
+ * @param name {String} The variable&#x27;s name
+ * @return The specified variable. If not found, an empty variable is added to the container.
+ */
+gdjs.VariablesContainer.prototype.get = function(name) {
+    var variable = null;
+	if ( !this._variables.containsKey(name) ) { //Add automatically inexisting variables.
+        variable = new gdjs.Variable();
+        this._variables.put(name, variable);
+	}
+    else {
+        variable = this._variables.get(name);
+        if ( variable.isUndefinedInContainer() ) { //Reuse variables removed before.
+            gdjs.Variable.call(variable);
+        }
+    }
+
+	return variable;
+};
+
+/**
+ * Get a variable using its index.&lt;br&gt;
+ * The index of a variable is its index in the data passed to initFrom.&lt;br&gt;
+ *
+ * This method is generally used by events generated code to increase lookup speed for variables.&lt;br&gt;
+ * If you&#x27;re unsure about how to use this method, prefer to use get.
+ *
+ * @method getFromIndex
+ * @param id {Number} The variable index
+ * @return The specified variable. If not found, an empty variable is added to the container, but it
+ * should not happen.
+ */
+gdjs.VariablesContainer.prototype.getFromIndex = function(id) {
+	if ( id &gt;= this._variablesArray.length ) { //Add automatically inexisting variables.
+        var variable = new gdjs.Variable();
+        return this._variables.put(name, variable);
+	}
+    else {
+        var variable = this._variablesArray[id];
+        if ( variable.isUndefinedInContainer() ) { //Reuse variables removed before.
+            gdjs.Variable.call(variable);
+        }
+        return variable;
+    }
+};
+
+/**
+ * Check if a variable exists in the container
+ * @method has
+ * @param name {String} The variable&#x27;s name
+ * @return true if the variable exists.
+ */
+gdjs.VariablesContainer.prototype.has = function(name) {
+	return this._variables.containsKey(name) &amp;&amp; !this._variables.get(name).isUndefinedInContainer();
+};
+
+
+/**
+ * &quot;Bad&quot; variable container, used by events when no other valid container can be found.
+ * This container has no state and always returns the bad variable ( see gdjs.VariablesContainer.badVariable ).
+ * @static
+ */
+gdjs.VariablesContainer.badVariablesContainer = {
+    has: function() {return false;},
+    getFromIndex : function() { return gdjs.VariablesContainer.badVariable; },
+    get : function() { return gdjs.VariablesContainer.badVariable; },
+    remove : function() { return; },
+    add : function() { return; },
+    initFrom : function() { return; }
+};
+
+/**
+ * &quot;Bad&quot; variable, used by events when no other valid variable can be found.
+ * This variable has no state and always return 0 or the empty string.
+ * @static
+ */
+gdjs.VariablesContainer.badVariable = {
+    getChild : function() { return gdjs.VariablesContainer.badVariable; },
+    hasChild: function() {return false;},
+    isStructure: function() {return false;},
+    isNumber: function() {return true;},
+    removeChild : function() { return; },
+    setNumber : function() { return; },
+    setString : function() { return; },
+    getAsString : function() { return &quot;&quot;; },
+    getAsNumber : function() { return 0; },
+    getAllChildren : function() { return {}; },
+    add : function() { return; },
+    sub : function() { return; },
+    mul : function() { return; },
+    div : function() { return; },
+    concatenate : function() { return; },
+    setUndefinedInContainer : function() { return; },
+    isUndefinedInContainer : function() { return; }
+};
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

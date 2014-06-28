@@ -1,0 +1,6 @@
+<map id="gd::ArbitraryResourceWorker" name="gd::ArbitraryResourceWorker">
+<area shape="rect" id="node3" href="$classgd_1_1_resources_absolute_path_checker.html" title="Helper used to check if a project has at least a resource with an absolute filename. " alt="" coords="256,5,440,46"/>
+<area shape="rect" id="node5" href="$classgd_1_1_resources_merging_helper.html" title="ResourcesMergingHelper is used (mainly during compilation) so as to inventory resources and change th..." alt="" coords="253,71,443,97"/>
+<area shape="rect" id="node7" href="$classgd_1_1_resources_unmerging_helper.html" title="Helper used to regenerate resources filename from a &quot;portable&quot; game. " alt="" coords="245,121,451,148"/>
+<area shape="rect" id="node9" href="$class_images_used_inventorizer.html" title="Class used to track all images used in a game. " alt="" coords="269,172,427,199"/>
+</map>
