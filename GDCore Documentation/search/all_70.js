@@ -14,7 +14,7 @@ var searchData=
   ['percentduringlastsession',['percentDuringLastSession',['../classgd_1_1_base_event.html#a01d9d72cc7814a410ccd45500ad5640f',1,'gd::BaseEvent']]],
   ['platform',['Platform',['../classgd_1_1_platform.html',1,'gd']]],
   ['platform',['platform',['../classgd_1_1_events_code_generator.html#a4647581c288441ee1302a158b05ae313',1,'gd::EventsCodeGenerator']]],
-  ['platform_20definition_20_28_20classes_20defining_20the_20common_20concepts_20used_20by_20all_20platforms_20_29',['Platform Definition ( Classes defining the common concepts used by all platforms )',['../group___platform_definition.html',1,'']]],
+  ['platform_20definition_20_28common_20classes_20used_20by_20all_20platforms_29',['Platform Definition (Common classes used by all platforms)',['../group___platform_definition.html',1,'']]],
   ['platformextension',['PlatformExtension',['../classgd_1_1_platform_extension.html',1,'gd']]],
   ['platformloader',['PlatformLoader',['../classgd_1_1_platform_loader.html',1,'gd']]],
   ['platformmanager',['PlatformManager',['../classgd_1_1_platform_manager.html',1,'gd']]],

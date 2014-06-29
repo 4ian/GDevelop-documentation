@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['structure_20of_20platforms_20and_20extensions',['Structure of platforms and extensions',['../platform_and_extensions_structure.html',1,'index']]]
+  ['setting_20up_20the_20development_20environnement',['Setting up the development environnement',['../setup_dev_env.html',1,'index']]]
 ];

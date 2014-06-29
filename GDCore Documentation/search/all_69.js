@@ -1,8 +1,8 @@
 var searchData=
 [
   ['iconexists',['IconExists',['../classgd_1_1_skin_helper.html#a1895959c2458ba792288fd0b45e09ef7',1,'gd::SkinHelper']]],
-  ['ide_20classes_20_28_20classes_20to_20be_20used_20to_20implement_20a_20development_20environment_20_29',['IDE Classes ( Classes to be used to implement a development environment )',['../group___i_d_e.html',1,'']]],
-  ['ide_20dialogs_20_28_20pre_2dmade_20dialogs_20to_20be_20used_20to_20implement_20a_20development_20environment_20_29',['IDE Dialogs ( Pre-made dialogs to be used to implement a development environment )',['../group___i_d_e_dialogs.html',1,'']]],
+  ['ide_20classes_20_28classes_20to_20be_20used_20to_20implement_20a_20development_20environment_29',['IDE Classes (Classes to be used to implement a development environment)',['../group___i_d_e.html',1,'']]],
+  ['ide_20dialogs_20_28pre_2dmade_20dialogs_20to_20be_20used_20to_20implement_20a_20development_20environment_29',['IDE Dialogs (Pre-made dialogs to be used to implement a development environment)',['../group___i_d_e_dialogs.html',1,'']]],
   ['image',['image',['../class_s_f_m_l_texture_wrapper.html#ab375094c2f058ffe0fdc3f8059b6dc6c',1,'SFMLTextureWrapper']]],
   ['imagemanager',['ImageManager',['../classgd_1_1_image_manager.html',1,'gd']]],
   ['imageresource',['ImageResource',['../classgd_1_1_image_resource.html',1,'gd']]],
