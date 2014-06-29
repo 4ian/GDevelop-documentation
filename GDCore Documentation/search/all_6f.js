@@ -67,5 +67,6 @@ var searchData=
   ['operator_3d',['operator=',['../classgd_1_1_for_each_event.html#ab0154a6772f3c219c98af118218b0b3e',1,'gd::ForEachEvent::operator=()'],['../classgd_1_1_repeat_event.html#a0a8e3bfd14b47f891635da1eca8bb3d0',1,'gd::RepeatEvent::operator=()'],['../classgd_1_1_standard_event.html#a43452e81ac00bb79f07b56922a7ac4ad',1,'gd::StandardEvent::operator=()'],['../classgd_1_1_while_event.html#ac21f6dbc331eb47797142c8861c476f5',1,'gd::WhileEvent::operator=()'],['../classgd_1_1_object.html#ad2e3a7f23b60a41ae16c2f85ba242e49',1,'gd::Object::operator=()']]],
   ['operator_5b_5d',['operator[]',['../classgd_1_1_events_list.html#af9f6b2b941f5c7696fc8ffef5ca2c5f5',1,'gd::EventsList::operator[](size_t index)'],['../classgd_1_1_events_list.html#a93af1a6ffcbae1737e09c4228cdf2013',1,'gd::EventsList::operator[](size_t index) const ']]],
   ['optional',['optional',['../classgd_1_1_parameter_metadata.html#a190e80dc576ff0de4d19fad2c1cf93de',1,'gd::ParameterMetadata']]],
-  ['originalevent',['originalEvent',['../classgd_1_1_base_event.html#adcf60d726963283d4632884406f9d8c4',1,'gd::BaseEvent']]]
+  ['originalevent',['originalEvent',['../classgd_1_1_base_event.html#adcf60d726963283d4632884406f9d8c4',1,'gd::BaseEvent']]],
+  ['overview_20of_20gdcore',['Overview of GDCore',['../overview.html',1,'index']]]
 ];

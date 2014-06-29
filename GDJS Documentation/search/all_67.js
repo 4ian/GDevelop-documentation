@@ -9,8 +9,6 @@ var searchData=
   ['getexporttype',['GetExportType',['../d2/d4d/classgdjs_1_1_project_export_dialog.html#acaa76024c64643951af1a185246008ad',1,'gdjs::ProjectExportDialog']]],
   ['getextensioncreatefunctionname',['GetExtensionCreateFunctionName',['../d2/d3d/classgdjs_1_1_js_platform.html#a47a7ef37ca150006ae4948bed121329e',1,'gdjs::JsPlatform']]],
   ['getextensiondestroyfunctionname',['GetExtensionDestroyFunctionName',['../d2/d3d/classgdjs_1_1_js_platform.html#addec1debbc4937d481b4a5afb9875e4c',1,'gdjs::JsPlatform']]],
-  ['get_20familiarized_20with_20game_20develop_20js_20platform',['Get familiarized with Game Develop JS Platform',['../db/dec/_get_familiarized_with_g_d_j_s.html',1,'GetFamiliarizedWithGDSDK']]],
-  ['get_20familiarized_20with_20game_20develop_20sdk',['Get familiarized with Game Develop SDK',['../d8/da7/_get_familiarized_with_g_d_s_d_k.html',1,'index']]],
   ['getjavaexecutablepath',['GetJavaExecutablePath',['../dc/dda/classgdjs_1_1_exporter.html#ab5f62988c6875220102dcc43b4a63d3d',1,'gdjs::Exporter']]],
   ['getlasterror',['GetLastError',['../dc/dda/classgdjs_1_1_exporter.html#ac0babb1e8acd48cc030ae1cfd3492b08',1,'gdjs::Exporter']]],
   ['getlayoutpreviewer',['GetLayoutPreviewer',['../d2/d3d/classgdjs_1_1_js_platform.html#a4acd6207bb4dad1609fd29eeacf923eb',1,'gdjs::JsPlatform']]],

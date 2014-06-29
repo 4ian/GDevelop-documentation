@@ -40,7 +40,7 @@ var searchData=
   ['eventhighlightedonbottompart',['EventHighlightedOnBottomPart',['../classgd_1_1_events_editor_selection.html#afb4a993dfd98b8777765c6c195550a06',1,'gd::EventsEditorSelection']]],
   ['eventitem',['EventItem',['../classgd_1_1_event_item.html',1,'gd']]],
   ['eventmetadata',['EventMetadata',['../classgd_1_1_event_metadata.html',1,'gd']]],
-  ['events_20_28_20classes_20defining_20the_20event_20system_20and_20some_20tools_20associated_20with_20events_20_29',['Events ( Classes defining the event system and some tools associated with events )',['../group___events.html',1,'']]],
+  ['events_20_28classes_20defining_20the_20event_20system_20and_20some_20tools_20associated_20with_20events_29',['Events (Classes defining the event system and some tools associated with events)',['../group___events.html',1,'']]],
   ['eventschangesnotifier',['EventsChangesNotifier',['../classgd_1_1_events_changes_notifier.html',1,'gd']]],
   ['eventscodegenerationcontext',['EventsCodeGenerationContext',['../classgd_1_1_events_code_generation_context.html#a8e6deb4c9ec579cc18f567f07405150f',1,'gd::EventsCodeGenerationContext']]],
   ['eventscodegenerationcontext',['EventsCodeGenerationContext',['../classgd_1_1_events_code_generation_context.html',1,'gd']]],

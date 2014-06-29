@@ -1,0 +1,6 @@
+<map id="TiXmlDocument::RootElement" name="TiXmlDocument::RootElement">
+<area shape="rect" id="node3" href="$d9/dca/class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55" title="Convenience function to get through elements. " alt="" coords="248,56,443,83"/>
+<area shape="rect" id="node5" href="$d9/dca/class_ti_xml_node.html#a44c8eee26bbe2d1b2762038df9dde2f0" title="The first child of this node. Will be null if there are no children. " alt="" coords="496,5,643,32"/>
+<area shape="rect" id="node7" href="$d9/dca/class_ti_xml_node.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="491,56,648,83"/>
+<area shape="rect" id="node9" href="$d9/dca/class_ti_xml_node.html#a72abed96dc9667ab9e0a2a275301bb1c" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="493,107,646,133"/>
+</map>

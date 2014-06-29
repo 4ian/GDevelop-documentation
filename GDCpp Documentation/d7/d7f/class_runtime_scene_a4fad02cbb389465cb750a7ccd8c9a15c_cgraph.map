@@ -1,0 +1,8 @@
+<map id="RuntimeScene::RenderWithoutStep" name="RuntimeScene::RenderWithoutStep">
+<area shape="rect" id="node3" href="$d7/d7f/class_runtime_scene.html#a94762e139b325609f870c3239a3e75c6" title="RuntimeScene::Render" alt="" coords="283,136,439,163"/>
+<area shape="rect" id="node5" href="$d3/de4/class_obj_instances_holder.html#a696fa5524e22453622c545f04b2fe804" title="ObjInstancesHolder\l::GetAllObjects" alt="" coords="525,5,659,46"/>
+<area shape="rect" id="node7" href="$d7/d7f/class_runtime_scene.html#afda4af0cb7d266a4b8f13d160267c62c" title="RuntimeScene::OrderObjects\lByZOrder" alt="" coords="496,70,688,111"/>
+<area shape="rect" id="node9" href="$d4/d47/class_runtime_camera.html#a87ff33b848444c07dc3f3ab38fe2eec0" title="RuntimeCamera::GetWidth" alt="" coords="503,136,681,163"/>
+<area shape="rect" id="node11" href="$d4/d47/class_runtime_camera.html#a357165cc8447f7153a4deab60437d0a5" title="RuntimeCamera::GetHeight" alt="" coords="501,187,683,213"/>
+<area shape="rect" id="node13" href="$d4/d47/class_runtime_camera.html#afe64393c6deb05ecf0851dd4100aa9e8" title="RuntimeCamera::GetSFMLView" alt="" coords="489,237,695,264"/>
+</map>

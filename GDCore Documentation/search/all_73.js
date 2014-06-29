@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['structure_20of_20platforms_20and_20extensions',['Structure of platforms and extensions',['../platform_and_extensions_structure.html',1,'index']]],
   ['saveactions',['SaveActions',['../classgd_1_1_events_list_serialization.html#a6e0eb9c6b3c0c7fd4656bd89492777f5',1,'gd::EventsListSerialization']]],
   ['saveconditions',['SaveConditions',['../classgd_1_1_events_list_serialization.html#a02982837ce23b6087d306a10c37d4a41',1,'gd::EventsListSerialization']]],
   ['savefile',['SaveFile',['../class_ti_xml_document.html#a21c0aeb0d0a720169ad4ac89523ebe93',1,'TiXmlDocument::SaveFile() const '],['../class_ti_xml_document.html#ae869f5ebf7fc54c4a1d737fb4689fd44',1,'TiXmlDocument::SaveFile(const char *filename) const '],['../class_ti_xml_document.html#acf1672b4538c6d1d441f9f108aea2bf4',1,'TiXmlDocument::SaveFile(FILE *) const ']]],
@@ -124,6 +123,7 @@ var searchData=
   ['settimebetweenframes',['SetTimeBetweenFrames',['../classgd_1_1_direction.html#ae40bbe453d974eb64db913824ad04615',1,'gd::Direction']]],
   ['settype',['SetType',['../classgd_1_1_base_event.html#a35ad06654cb75694a26dcbd511de459f',1,'gd::BaseEvent::SetType()'],['../classgd_1_1_instruction.html#a8450d53e533da6489899bc718015ce29',1,'gd::Instruction::SetType()'],['../classgd_1_1_property_descriptor.html#a27b9453f8341ac3ea27ba5c34ed58091',1,'gd::PropertyDescriptor::SetType()'],['../classgd_1_1_object.html#a8596f73f598ac3a880fd3369ec5da294',1,'gd::Object::SetType()']]],
   ['settypename',['SetTypeName',['../classgd_1_1_automatism.html#a4f67d014a08cde668f76db9503c633a9',1,'gd::Automatism::SetTypeName()'],['../classgd_1_1_automatisms_shared_data.html#a9a61514f49cbaf4ca75f704c04f56527',1,'gd::AutomatismsSharedData::SetTypeName()']]],
+  ['setting_20up_20the_20development_20environnement',['Setting up the development environnement',['../setup_dev_env.html',1,'index']]],
   ['setuseradded',['SetUserAdded',['../classgd_1_1_resource.html#a36ae2bd6d97a79c282a17dc9f4545a9c',1,'gd::Resource']]],
   ['setuserdata',['SetUserData',['../class_ti_xml_base.html#ac6b3e0f790930d4970ec30764e937b5d',1,'TiXmlBase']]],
   ['setvalue',['SetValue',['../classgd_1_1_property_descriptor.html#aa3842e519175e5e3ba3d06cc3b0189db',1,'gd::PropertyDescriptor::SetValue()'],['../classgd_1_1_variable.html#acbd6bbf4f155ac27bb24fd3b1a7ac1db',1,'gd::Variable::SetValue()'],['../classgd_1_1_serializer_element.html#ae23f301138274b862fa1a5576c870cb5',1,'gd::SerializerElement::SetValue()'],['../class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90',1,'TiXmlNode::SetValue()'],['../class_ti_xml_attribute.html#a2dae44178f668b3cb48101be4f2236a0',1,'TiXmlAttribute::SetValue()']]],
@@ -150,8 +150,8 @@ var searchData=
   ['standard_20sprite_20object_20extension',['Standard Sprite Object extension',['../group___sprite_object_extension.html',1,'']]],
   ['spriteobjectspositionupdater',['SpriteObjectsPositionUpdater',['../classgd_1_1_sprite_objects_position_updater.html',1,'gd']]],
   ['standalone',['Standalone',['../class_ti_xml_declaration.html#a9ff06afc033d7ef730ec7c6825b97ad9',1,'TiXmlDeclaration']]],
-  ['standardevent',['StandardEvent',['../classgd_1_1_standard_event.html#a90142b1f6f088f721ebbb8116472cd4c',1,'gd::StandardEvent']]],
   ['standardevent',['StandardEvent',['../classgd_1_1_standard_event.html',1,'gd']]],
+  ['standardevent',['StandardEvent',['../classgd_1_1_standard_event.html#a90142b1f6f088f721ebbb8116472cd4c',1,'gd::StandardEvent']]],
   ['standardsortmethod',['StandardSortMethod',['../classgd_1_1_layout.html#ad8d3ca86d4140d348adfb6f17546ab98',1,'gd::Layout']]],
   ['status',['Status',['../classgd_1_1_version_wrapper.html#aa3b25b37a13b6a582bf81de636733c3c',1,'gd::VersionWrapper']]],
   ['steppostevents',['StepPostEvents',['../classgd_1_1_automatism.html#a5e2038b05ada1127cd76ed72d665ae8d',1,'gd::Automatism']]],
