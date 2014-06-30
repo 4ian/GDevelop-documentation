@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Game Develop Core: gd::FoldingItem Class Reference</title>
+<title>Game Develop Core: Write a new extension</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,7 +41,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -60,13 +60,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-    </ul>
-  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,49 +76,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>gd</b></li><li class="navelem"><a class="el" href="classgd_1_1_folding_item.html">FoldingItem</a></li>  </ul>
+<li class="navelem"><a class="el" href="index.html">Game Develop Core</a></li><li class="navelem"><a class="el" href="overview.html">Overview of GDCore</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="classgd_1_1_folding_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">gd::FoldingItem Class Reference<div class="ingroups"><a class="el" href="group___i_d_e_dialogs_events_editor.html">Events Editor related classes</a></div></div>  </div>
+<div class="title">Write a new extension </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Used to indicate to <a class="el" href="classgd_1_1_events_editor_items_areas.html" title="Allow events to indicate where is displayed an instruction or parameter. ">EventsEditorItemsAreas</a> that a fold/unfold button is displayed somewhere.  
- <a href="classgd_1_1_folding_item.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="_events_editor_items_areas_8h_source.html">EventsEditorItemsAreas.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af796286832aba15f41c687150414a774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af796286832aba15f41c687150414a774"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FoldingItem</b> (<a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> *event)</td></tr>
-<tr class="separator:af796286832aba15f41c687150414a774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83fd1279d3b9e304cdd133bcb21e42e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac83fd1279d3b9e304cdd133bcb21e42e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classgd_1_1_folding_item.html">FoldingItem</a> &amp;other) const </td></tr>
-<tr class="separator:ac83fd1279d3b9e304cdd133bcb21e42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a9c15f11eda9458d9e148243ae417d316"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c15f11eda9458d9e148243ae417d316"></a>
-<a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>event</b></td></tr>
-<tr class="separator:a9c15f11eda9458d9e148243ae417d316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Used to indicate to <a class="el" href="classgd_1_1_events_editor_items_areas.html" title="Allow events to indicate where is displayed an instruction or parameter. ">EventsEditorItemsAreas</a> that a fold/unfold button is displayed somewhere. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_events_editor_items_areas_8h_source.html">EventsEditorItemsAreas.h</a></li>
-<li>EventsEditorItemsAreas.cpp</li>
+<div class="textblock"><h1><a class="anchor" id="writeANewExtension_createNewExtension"></a>
+Create a new extension</h1>
+<p>Creation of a new extension can be made by following these steps :<br/>
+</p>
+<ul>
+<li>Copy the directory of an extension and rename it: <div class="image">
+<img src="createnew1.png" alt="createnew1.png"/>
+</div>
+</li>
+<li>Rename then the sources files : <div class="image">
+<img src="createnew2.png" alt="createnew2.png"/>
+</div>
+</li>
+<li>Open the <em>CMakeLists.txt</em> file and replace every occurrence of the extension old name with the new name.<br/>
+</li>
+<li>Open all the source files and again, replace every occurrence of the extension old name with the new name.<br/>
+</li>
+<li>In the <em>Extensions</em> directory, open the <em>CMakeLists.txt</em> file and add a line such as <code>ADD_SUBDIRECTORY(MyExtension)</code>. You can then start to modify the extension.<br/>
+ If your extension is fairly simple, you can create it from the AES Extension. <br/>
+ If your extension need an object, you can use for instance the TextObject Extension as a starting point.<br/>
+ <br/>
+</li>
+<li>You can compile your extension by relaunching CMake like described <a class="el" href="install_and_use_c_make.html">here</a>.</li>
 </ul>
-</div><!-- contents -->
+<h1><a class="anchor" id="writeANewExtension_installExtension"></a>
+Use the extension with Game Develop</h1>
+<p>To make your extension usable with Game Develop, you have to:</p>
+<ol type="1">
+<li><b>Copy the files</b> generated in <em>Binaries/Output/Release_{OS}</em> into your <em>Game Develop folder</em>.</li>
+<li>For the C++ platform, copy <b>all needed include file</b> (.h files) inside a folder with the name of your extension located into <em>(Game Develop folder)/CppPlatform/Extensions/include</em>.<br/>
+ You can use a <em>small script</em> (batch file on Windows) to copy all the needed includes files in a single click.<br/>
+</li>
+<li>For the JS platform, there is a script in <em>GDJS/scripts</em> called <b>CopyRuntimeToGD</b>. Launch it to automatically copy the .js files of your extension into <em>Binaries/Output/Release_{OS}/JsPlatform/...</em>.</li>
+<li><b>Translations catalog files</b> (.po/.mo files) must be put into xxxPlatform/Extensions/locale/<b>language</b>/myExtension.mo (Example : CppPlatform/Extensions/locale/fr_FR/myExtension.mo) </li>
+</ol>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 30 2014 20:44:53 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 30 2014 20:44:51 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
