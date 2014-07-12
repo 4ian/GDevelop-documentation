@@ -95,8 +95,13 @@ Download, (build) and install libraries</h1>
 </p>
 <h2><a class="anchor" id="sfml"></a>
 SFML</h2>
-<p>Game Develop may uses some specific version of SFML library. You can download a precompiled package for linux here: <a href="http://www.compilgames.net/code/GameDevelopSDK/SFMLlinux.7z">http://www.compilgames.net/code/GameDevelopSDK/SFMLlinux.7z</a> <br/>
- Just extract the archive inside the folder ExtLibs (located at the root of the SDK). </p>
+<p>Game Develop may uses some specific version of SFML library. You can download the version used here: <a href="http://www.compilgames.net/code/GameDevelopSDK/SFMLlinux.7z">http://www.compilgames.net/code/GameDevelopSDK/SFMLlinux.7z</a> <br/>
+</p>
+<p>The archive contains a precompiled version of SFML, compiled <b>for Ubuntu</b>, and only for the version for which Game Develop is distributed officially:</p>
+<ul>
+<li>If you compile GD on <b>this</b> version of Ubuntu, just extract the archive inside the folder ExtLibs (located at the root of the SDK).</li>
+<li>If you compile GD for another version of Ubuntu or a different distro, extract the archive inside the folder ExtLibs, and <em>recompile</em> SFML using CMake into a folder called <b>build-linux</b>. It's easy, just follow <a href="http://www.sfml-dev.org/tutorials/2.1/compile-with-cmake.php">this tutorial</a>. Again, be sure to build the binaries into <b>ExtLibs/SFML/build-linux</b>.</li>
+</ul>
 <h2><a class="anchor" id="boost"></a>
 Boost</h2>
 <p>Boost version used by Game Develop can be downloaded here: <a href="http://www.compilgames.net/code/GameDevelopSDK/boost_1_55_0.7z">http://www.compilgames.net/code/GameDevelopSDK/boost_1_55_0.7z</a> <br/>
@@ -112,11 +117,11 @@ wxWidgets</h2>
 </div><!-- fragment --><p>Note that you need to have GTK+ 2.0 or GTK+ 3.0 development file installed (in your package manager, search for the <em>libgtk2.0-dev</em> or <em>libgtk-3-dev</em> package and install it).</p>
 <h2><a class="anchor" id="installcmake"></a>
 Install CMake</h2>
-<p>You'll need CMake to build the extensions: See more on useAndInstallCmake. </p>
+<p>You'll need CMake to build Game Develop: See more on <a class="el" href="install_and_use_c_make.html">(All) Install and use Cmake</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 5 2014 20:44:41 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 12 2014 19:03:44 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

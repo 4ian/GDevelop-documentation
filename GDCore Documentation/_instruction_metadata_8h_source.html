@@ -200,94 +200,114 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    };</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">  182</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a></div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#a20f6cccc70c0bf261944585ab9d9ec9e">  182</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html" title="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...">InstructionMetadata</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata.html#a20f6cccc70c0bf261944585ab9d9ec9e" title="Consider that the instruction is easy for an user to understand. ">MarkAsSimple</a>()</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keyword">enum</span> AccessType {Reference, MutatorAndOrAccessor};</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a>() : accessType(Reference) {};</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a>() {};</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a32de563e6396e75d2b4e1298bfa99e2b">  192</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a32de563e6396e75d2b4e1298bfa99e2b">SetFunctionName</a>(<span class="keyword">const</span> std::string &amp; cppCallingName_)</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            functionCallName = cppCallingName_;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        usageComplexity = 2;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277">  192</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html" title="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...">InstructionMetadata</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277" title="Consider that the instruction is harder for an user to understand than a normal instruction. ">MarkAsAdvanced</a>()</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        usageComplexity = 7;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#ab1f42b2e72a0d1faa07d2427330ad11f">  201</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#ab1f42b2e72a0d1faa07d2427330ad11f">SetManipulatedType</a>(<span class="keyword">const</span> std::string &amp; type_)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            type = type_;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#a073dc8ddaaff2eb4395a98b2637a8c8a">  201</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html" title="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...">InstructionMetadata</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata.html#a073dc8ddaaff2eb4395a98b2637a8c8a" title="Consider that the instruction is complex for an user to understand. ">MarkAsComplex</a>()</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        usageComplexity = 9;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a3dac2e1aaafa48717c79d03b3a2d9493">  230</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a3dac2e1aaafa48717c79d03b3a2d9493">SetAssociatedGetter</a>(<span class="keyword">const</span> std::string &amp; getter)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            optionalAssociatedInstruction = getter;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            accessType = MutatorAndOrAccessor;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#af4ba29f9c0fd0fa516d70c0bb3ca40fb">  240</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#af4ba29f9c0fd0fa516d70c0bb3ca40fb">SetIncludeFile</a>(<span class="keyword">const</span> std::string &amp; optionalIncludeFile_)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            optionalIncludeFile = optionalIncludeFile_;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html">  248</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html" title="Class used to redefine instruction code generation. ">CustomCodeGenerator</a></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keyword">virtual</span> std::string GenerateCode(<a class="code" href="classgd_1_1_instruction.html" title="An instruction is a member of an event: It can be a condition or an action. ">Instruction</a> &amp; instruction, <a class="code" href="classgd_1_1_events_code_generator.html" title="Internal class used to generate code from events. ">gd::EventsCodeGenerator</a> &amp; codeGenerator_, <a class="code" href="classgd_1_1_events_code_generation_context.html" title="Used to manage the context when generating code for events. ">gd::EventsCodeGenerationContext</a> &amp; context) {<span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;};</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        };</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; SetCustomCodeGenerator(boost::shared_ptr&lt;CustomCodeGenerator&gt; codeGenerator)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            optionalCustomCodeGenerator = codeGenerator;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        std::string functionCallName;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        std::string type;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        AccessType accessType;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        std::string optionalAssociatedInstruction;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        std::string optionalIncludeFile;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        boost::shared_ptr&lt;CustomCodeGenerator&gt; optionalCustomCodeGenerator;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    };</div>
-<div class="line"><a name="l00267"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#ad17c94e8f183867f7d1d6e604ac707c1">  267</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> <a class="code" href="classgd_1_1_instruction_metadata.html#ad17c94e8f183867f7d1d6e604ac707c1" title="Information about how generate code for the instruction. ">codeExtraInformation</a>; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#a5dd9731037c161b560c7059dfcebdf22">  274</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata.html#a5dd9731037c161b560c7059dfcebdf22" title="Declare if the instruction being declared is somewhat manipulating in a standard way. ">SetManipulatedType</a>(<span class="keyword">const</span> std::string &amp; type_)</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">return</span> codeExtraInformation.<a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#ab1f42b2e72a0d1faa07d2427330ad11f">SetManipulatedType</a>(type_);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html" title="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...">InstructionMetadata</a>();</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::vector &lt; ParameterMetadata &gt; parameters;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#a4a35a3440f567143074d3d3346602e54">  211</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_instruction_metadata.html#a4a35a3440f567143074d3d3346602e54" title="Return the usage complexity of this instruction for the user, from 0 (simple&amp;easy to use) to 10 (comp...">GetUsageComplexity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> usageComplexity; }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">  216</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">enum</span> AccessType {Reference, MutatorAndOrAccessor};</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a>() : accessType(Reference) {};</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a>() {};</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a32de563e6396e75d2b4e1298bfa99e2b">  226</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a32de563e6396e75d2b4e1298bfa99e2b">SetFunctionName</a>(<span class="keyword">const</span> std::string &amp; cppCallingName_)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            functionCallName = cppCallingName_;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#ab1f42b2e72a0d1faa07d2427330ad11f">  235</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#ab1f42b2e72a0d1faa07d2427330ad11f">SetManipulatedType</a>(<span class="keyword">const</span> std::string &amp; type_)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            type = type_;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a3dac2e1aaafa48717c79d03b3a2d9493">  264</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a3dac2e1aaafa48717c79d03b3a2d9493">SetAssociatedGetter</a>(<span class="keyword">const</span> std::string &amp; getter)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            optionalAssociatedInstruction = getter;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            accessType = MutatorAndOrAccessor;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#af4ba29f9c0fd0fa516d70c0bb3ca40fb">  274</a></span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#af4ba29f9c0fd0fa516d70c0bb3ca40fb">SetIncludeFile</a>(<span class="keyword">const</span> std::string &amp; optionalIncludeFile_)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            optionalIncludeFile = optionalIncludeFile_;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html">  282</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html" title="Class used to redefine instruction code generation. ">CustomCodeGenerator</a></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keyword">virtual</span> std::string GenerateCode(<a class="code" href="classgd_1_1_instruction.html" title="An instruction is a member of an event: It can be a condition or an action. ">Instruction</a> &amp; instruction, <a class="code" href="classgd_1_1_events_code_generator.html" title="Internal class used to generate code from events. ">gd::EventsCodeGenerator</a> &amp; codeGenerator_, <a class="code" href="classgd_1_1_events_code_generation_context.html" title="Used to manage the context when generating code for events. ">gd::EventsCodeGenerationContext</a> &amp; context) {<span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;};</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        };</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::string fullname;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    std::string description;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    std::string sentence;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    std::string group;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor"></span>    wxBitmap icon;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    wxBitmap smallicon;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor"></span>    std::string iconFilename;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    std::string smallIconFilename;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">bool</span> canHaveSubInstructions;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    std::string extensionNamespace;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">bool</span> hidden;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;};</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; SetCustomCodeGenerator(boost::shared_ptr&lt;CustomCodeGenerator&gt; codeGenerator)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            optionalCustomCodeGenerator = codeGenerator;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        std::string functionCallName;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        std::string type;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        AccessType accessType;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        std::string optionalAssociatedInstruction;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        std::string optionalIncludeFile;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        boost::shared_ptr&lt;CustomCodeGenerator&gt; optionalCustomCodeGenerator;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    };</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#ad17c94e8f183867f7d1d6e604ac707c1">  301</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> <a class="code" href="classgd_1_1_instruction_metadata.html#ad17c94e8f183867f7d1d6e604ac707c1" title="Information about how generate code for the instruction. ">codeExtraInformation</a>; </div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // INSTRUCTIONMETADATA_H</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="code" href="classgd_1_1_instruction_metadata.html#a5dd9731037c161b560c7059dfcebdf22">  308</a></span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html" title="Defines information about how generate the code for an instruction. ">ExtraInformation</a> &amp; <a class="code" href="classgd_1_1_instruction_metadata.html#a5dd9731037c161b560c7059dfcebdf22" title="Declare if the instruction being declared is somewhat manipulating in a standard way. ">SetManipulatedType</a>(<span class="keyword">const</span> std::string &amp; type_)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">return</span> codeExtraInformation.<a class="code" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#ab1f42b2e72a0d1faa07d2427330ad11f">SetManipulatedType</a>(type_);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html" title="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...">InstructionMetadata</a>();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    std::vector &lt; ParameterMetadata &gt; parameters;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    std::string fullname;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    std::string description;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    std::string sentence;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    std::string group;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span>    wxBitmap icon;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    wxBitmap smallicon;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor"></span>    std::string iconFilename;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    std::string smallIconFilename;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">bool</span> canHaveSubInstructions;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    std::string extensionNamespace;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">bool</span> hidden;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">int</span> usageComplexity; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;};</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // INSTRUCTIONMETADATA_H</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 5 2014 20:44:40 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 12 2014 19:03:43 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
