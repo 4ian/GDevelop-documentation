@@ -1,6 +1,7 @@
 var searchData=
 [
   ['r',['r',['../classgd_1_1_comment_event.html#a5fee52192356484ae7fbc94453c7c77e',1,'gd::CommentEvent']]],
+  ['readdir',['ReadDir',['../classgd_1_1_abstract_file_system.html#a812961ed9e72f4039caa8301cf47648b',1,'gd::AbstractFileSystem::ReadDir()'],['../classgd_1_1_native_file_system.html#a073baac1d2c49a50fab71bc14390c5a5',1,'gd::NativeFileSystem::ReadDir()']]],
   ['recommended_20tools_20and_20advices_20to_20work_20with_20gd',['Recommended tools and advices to work with GD',['../recommended_tools_and_conventions.html',1,'setupDevEnv']]],
   ['recreateribbontoolbar',['RecreateRibbonToolbar',['../classgd_1_1_layout_editor_canvas.html#aaa6b1701e01798db0cbe786ac2e7797a',1,'gd::LayoutEditorCanvas']]],
   ['recursivemkdir',['RecursiveMkDir',['../classgd_1_1_recursive_mk_dir.html',1,'gd']]],
