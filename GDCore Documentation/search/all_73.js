@@ -137,7 +137,7 @@ var searchData=
   ['setzorder',['SetZOrder',['../classgd_1_1_initial_instance.html#a5a6068e360f5fdf24c3a297db3c61513',1,'gd::InitialInstance']]],
   ['sfmltexturewrapper',['SFMLTextureWrapper',['../class_s_f_m_l_texture_wrapper.html',1,'']]],
   ['showprojectexportdialog',['ShowProjectExportDialog',['../classgd_1_1_project_exporter.html#ad195e6ff1068dc743ce5e45af53c5d60',1,'gd::ProjectExporter']]],
-  ['size',['Size',['../class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()'],['../classgd_1_1_events_list.html#a16db4bdc77f5b470cd7a3cddd106a54f',1,'gd::EventsList::size()']]],
+  ['size',['size',['../classgd_1_1_events_list.html#a16db4bdc77f5b470cd7a3cddd106a54f',1,'gd::EventsList::size()'],['../class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()']]],
   ['skinhelper',['SkinHelper',['../classgd_1_1_skin_helper.html',1,'gd']]],
   ['smallestinstanceundercursorpicker',['SmallestInstanceUnderCursorPicker',['../classgd_1_1_smallest_instance_under_cursor_picker.html',1,'gd']]],
   ['smooth',['smooth',['../classgd_1_1_image_resource.html#a8b02d374e3fe1ac5b9fbd57299b0360b',1,'gd::ImageResource']]],

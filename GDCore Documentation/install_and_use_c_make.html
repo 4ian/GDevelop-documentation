@@ -112,29 +112,28 @@ Using the GUI</h2>
 <img src="usecmake3.png" alt="usecmake3.png"/>
 </div>
 <ul>
-<li>You can then launch a terminal/command prompt, go to the *.build* folder ( <code>cd SDKFolder/Binaries/.build</code> ) and launch the build using the generator you've choosen: <code>mingw32-make</code>, or <code>make</code> on Linux.</li>
+<li>You can then launch a terminal/command prompt, go to the *.build* folder ( <code>cd GDRootFolder/Binaries/.build</code> ) and launch the build using the generator you've choosen: <code>mingw32-make</code>, or <code>make</code> on Linux.</li>
 </ul>
 <p>Binaries are created into <em>Binaries/Output/Release_{OS}</em> folder, where {OS} can be Windows or Linux for example.</p>
 <h2><a class="anchor" id="installAndUseCMake_use_cmd"></a>
 Using the command line</h2>
 <p>Using the commandline with CMake is also easy:</p>
-<div class="fragment"><div class="line">cd SDKFolder/Binaries</div>
+<div class="fragment"><div class="line">cd GDRootFolder/Binaries</div>
 <div class="line">mkdir .build</div>
 <div class="line">cd .build</div>
-<div class="line">cmake .. -G <span class="stringliteral">&quot;MinGW Makefiles&quot;</span></div>
+<div class="line">cmake ../.. -G <span class="stringliteral">&quot;MinGW Makefiles&quot;</span></div>
 <div class="line">mingw32-make</div>
 </div><!-- fragment --><p>or using the fast <a href="http://martine.github.io/ninja/">Ninja build system</a> : </p>
-<div class="fragment"><div class="line">cd SDKFolder/Binaries</div>
+<div class="fragment"><div class="line">cd GDRootFolder/Binaries</div>
 <div class="line">mkdir .build</div>
 <div class="line">cd .build</div>
-<div class="line">cmake .. -G <span class="stringliteral">&quot;Ninja&quot;</span></div>
+<div class="line">cmake ../.. -G <span class="stringliteral">&quot;Ninja&quot;</span></div>
 <div class="line">ninja</div>
-</div><!-- fragment --><p>Binaries are of course also created into <em>Binaries/Output/Release_{OS}</em> folder.<br/>
- (For linux, this is the directory where you put the files of Game Develop) </p>
+</div><!-- fragment --><p>Binaries are of course also created into <em>Binaries/Output/Release_{OS}</em> folder. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 19:03:44 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 3 2014 10:58:38 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

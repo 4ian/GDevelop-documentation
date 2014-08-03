@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readdir',['ReadDir',['../classgd_1_1_abstract_file_system.html#a812961ed9e72f4039caa8301cf47648b',1,'gd::AbstractFileSystem::ReadDir()'],['../classgd_1_1_native_file_system.html#a073baac1d2c49a50fab71bc14390c5a5',1,'gd::NativeFileSystem::ReadDir()']]],
   ['recreateribbontoolbar',['RecreateRibbonToolbar',['../classgd_1_1_layout_editor_canvas.html#aaa6b1701e01798db0cbe786ac2e7797a',1,'gd::LayoutEditorCanvas']]],
   ['redo',['Redo',['../classgd_1_1_layout_editor_canvas.html#a4fc354652388f2f103e05c653df246aa',1,'gd::LayoutEditorCanvas']]],
   ['refresh',['Refresh',['../classgd_1_1_layers_editor_panel.html#a0f2688b999358090e5c6d15b0ffa9c1a',1,'gd::LayersEditorPanel::Refresh()'],['../classgd_1_1_layout_editor_canvas_associated_editor.html#abee4bc3fe6a71a8df71e3bb5e21fa4ca',1,'gd::LayoutEditorCanvasAssociatedEditor::Refresh()'],['../class_resources_editor.html#aee4b447812c78f5202be1df54598fbf5',1,'ResourcesEditor::Refresh()']]],

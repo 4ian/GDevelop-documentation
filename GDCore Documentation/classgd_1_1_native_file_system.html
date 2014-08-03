@@ -156,8 +156,8 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFi
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#afe98bce323aeb9d5ecae6d4c430f8e68">GetTempDir</a> ()</td></tr>
 <tr class="memdesc:afe98bce323aeb9d5ecae6d4c430f8e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a directory suitable for temporary files. <br/></td></tr>
 <tr class="separator:afe98bce323aeb9d5ecae6d4c430f8e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073baac1d2c49a50fab71bc14390c5a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a073baac1d2c49a50fab71bc14390c5a5"></a>
-virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDir</b> (const std::string &amp;path, const std::string &amp;extension=&quot;&quot;)</td></tr>
+<tr class="memitem:a073baac1d2c49a50fab71bc14390c5a5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a073baac1d2c49a50fab71bc14390c5a5">ReadDir</a> (const std::string &amp;path, const std::string &amp;extension=&quot;&quot;)</td></tr>
+<tr class="memdesc:a073baac1d2c49a50fab71bc14390c5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector containing the files in the specified path.  <a href="#a073baac1d2c49a50fab71bc14390c5a5">More...</a><br/></td></tr>
 <tr class="separator:a073baac1d2c49a50fab71bc14390c5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -311,6 +311,52 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 
 </div>
 </div>
+<a class="anchor" id="a073baac1d2c49a50fab71bc14390c5a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; gd::NativeFileSystem::ReadDir </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>extension</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a vector containing the files in the specified path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to read </td></tr>
+    <tr><td class="paramname">extension</td><td>If specified, only file finishing with this extension will be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector with all the matched files </dd></dl>
+
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a812961ed9e72f4039caa8301cf47648b">gd::AbstractFileSystem</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_abstract_file_system_8h_source.html">AbstractFileSystem.h</a></li>
 <li>AbstractFileSystem.cpp</li>
@@ -318,7 +364,7 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 19:03:47 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 3 2014 10:58:40 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

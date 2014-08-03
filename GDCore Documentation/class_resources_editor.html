@@ -115,8 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab298e2d84da76f44f69023d9e2f1e912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b355d5f441afbf9b0ad0bf2f0cab3ec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_editor.html#a0b355d5f441afbf9b0ad0bf2f0cab3ec">CopyAndAddResources</a> (std::vector&lt; std::string &gt; filenames, const std::string &amp;destinationDir)</td></tr>
 <tr class="separator:a0b355d5f441afbf9b0ad0bf2f0cab3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380687a7e5705b9fdbf4f34c27cda085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_editor.html#a380687a7e5705b9fdbf4f34c27cda085">TriggerDrop</a> (wxCoord x, wxCoord y)</td></tr>
-<tr class="separator:a380687a7e5705b9fdbf4f34c27cda085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf57fe5ccf997212a85d2ef236291c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_editor.html#a5bf57fe5ccf997212a85d2ef236291c9">TriggerDrop</a> (wxCoord x, wxCoord y, std::vector&lt; std::string &gt; resources)</td></tr>
+<tr class="memdesc:a5bf57fe5ccf997212a85d2ef236291c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_dnd_text_resources_editor.html" title="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. ">DndTextResourcesEditor</a> when one or more resources from the editor has been dropped into this same editor.  <a href="#a5bf57fe5ccf997212a85d2ef236291c9">More...</a><br/></td></tr>
+<tr class="separator:a5bf57fe5ccf997212a85d2ef236291c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b40b322b5f088649530b80c2be50ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_editor.html#a3b40b322b5f088649530b80c2be50ea1">ForceRefreshRibbonAndConnect</a> ()</td></tr>
 <tr class="separator:a3b40b322b5f088649530b80c2be50ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -409,7 +410,7 @@ static const long&#160;</td><td class="memItemRight" valign="bottom"><b>idMenuRe
 
 </div>
 </div>
-<a class="anchor" id="a380687a7e5705b9fdbf4f34c27cda085"></a>
+<a class="anchor" id="a5bf57fe5ccf997212a85d2ef236291c9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -423,7 +424,13 @@ static const long&#160;</td><td class="memItemRight" valign="bottom"><b>idMenuRe
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">wxCoord&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>resources</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -432,7 +439,9 @@ static const long&#160;</td><td class="memItemRight" valign="bottom"><b>idMenuRe
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Must be called by <a class="el" href="class_dnd_text_resources_editor.html" title="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. ">DndTextResourcesEditor</a> when an item from the editor has been dropped into this same editor. </p>
+
+<p>Called by <a class="el" href="class_dnd_text_resources_editor.html" title="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. ">DndTextResourcesEditor</a> when one or more resources from the editor has been dropped into this same editor. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_dnd_text_resources_editor.html" title="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. ">DndTextResourcesEditor</a> </dd></dl>
 
 </div>
 </div>
@@ -443,7 +452,7 @@ static const long&#160;</td><td class="memItemRight" valign="bottom"><b>idMenuRe
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 19:03:45 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 3 2014 10:58:38 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

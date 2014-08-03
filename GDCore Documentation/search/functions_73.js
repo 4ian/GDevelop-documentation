@@ -129,7 +129,7 @@ var searchData=
   ['sety',['SetY',['../class_point.html#ade26ff15ad16ceea3c46e65b22d795f5',1,'Point::SetY()'],['../classgd_1_1_initial_instance.html#a16f60a686aef71dc289fa9c74824848c',1,'gd::InitialInstance::SetY()']]],
   ['setzorder',['SetZOrder',['../classgd_1_1_initial_instance.html#a5a6068e360f5fdf24c3a297db3c61513',1,'gd::InitialInstance']]],
   ['showprojectexportdialog',['ShowProjectExportDialog',['../classgd_1_1_project_exporter.html#ad195e6ff1068dc743ce5e45af53c5d60',1,'gd::ProjectExporter']]],
-  ['size',['Size',['../class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()'],['../classgd_1_1_events_list.html#a16db4bdc77f5b470cd7a3cddd106a54f',1,'gd::EventsList::size()']]],
+  ['size',['size',['../classgd_1_1_events_list.html#a16db4bdc77f5b470cd7a3cddd106a54f',1,'gd::EventsList::size()'],['../class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()']]],
   ['someinstancesareonlayer',['SomeInstancesAreOnLayer',['../classgd_1_1_initial_instances_container.html#a8a356830f76e510430e237a1dd075b4b',1,'gd::InitialInstancesContainer']]],
   ['standalone',['Standalone',['../class_ti_xml_declaration.html#a9ff06afc033d7ef730ec7c6825b97ad9',1,'TiXmlDeclaration']]],
   ['standardevent',['StandardEvent',['../classgd_1_1_standard_event.html#a90142b1f6f088f721ebbb8116472cd4c',1,'gd::StandardEvent']]],
