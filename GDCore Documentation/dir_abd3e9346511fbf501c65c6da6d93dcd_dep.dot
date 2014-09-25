@@ -1,0 +1,17 @@
+digraph "GDCore" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abd3e9346511fbf501c65c6da6d93dcd {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_abd3e9346511fbf501c65c6da6d93dcd.html"];
+    dir_abd3e9346511fbf501c65c6da6d93dcd [shape=plaintext label="GDCore"];
+    dir_133005aee98dc14e9b45053ba4beb69f [shape=box label="BuiltinExtensions" color="red" fillcolor="white" style="filled" URL="dir_133005aee98dc14e9b45053ba4beb69f.html"];
+    dir_f475b029dedc4c82b538a3827ce3c9d6 [shape=box label="Events" color="red" fillcolor="white" style="filled" URL="dir_f475b029dedc4c82b538a3827ce3c9d6.html"];
+    dir_5d9e789590af4f95678b31d48a716d1e [shape=box label="IDE" color="red" fillcolor="white" style="filled" URL="dir_5d9e789590af4f95678b31d48a716d1e.html"];
+    dir_cb41f5ef91fc988d72e8399a7772e902 [shape=box label="PlatformDefinition" color="black" fillcolor="white" style="filled" URL="dir_cb41f5ef91fc988d72e8399a7772e902.html"];
+    dir_c18c47de871da4609f0d4989cffd2aa0 [shape=box label="Serialization" color="black" fillcolor="white" style="filled" URL="dir_c18c47de871da4609f0d4989cffd2aa0.html"];
+    dir_4337522efa961dc71e4d2efec2c1a09f [shape=box label="TinyXml" color="black" fillcolor="white" style="filled" URL="dir_4337522efa961dc71e4d2efec2c1a09f.html"];
+    dir_f0e478594b4c2fa2818f86f5d16936c1 [shape=box label="Tools" color="red" fillcolor="white" style="filled" URL="dir_f0e478594b4c2fa2818f86f5d16936c1.html"];
+  }
+  dir_cb41f5ef91fc988d72e8399a7772e902->dir_f0e478594b4c2fa2818f86f5d16936c1 [headlabel="1", labeldistance=1.5 headhref="dir_000006_000009.html"];
+}

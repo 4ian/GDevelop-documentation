@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classgd_1_1_layout_editor_canvas_associated_editor.html" title="Base class meant to be used by the IDE for its editors that are associated with a gd::LayoutEditorCan..." alt="" coords="5,5,229,46"/>
-<area shape="rect" id="node3" href="$classgd_1_1_layers_editor_panel.html" title="Panel showing the layers of a layout and allowing to edit them. " alt="" coords="282,16,433,43"/>
-<area shape="rect" id="node6" href="$classgd_1_1_layout_editor_canvas.html" title="Base class for implementing the main canvas of layout editors. " alt="" coords="278,121,437,148"/>
-<area shape="rect" id="node11" href="$class_resources_editor.html" title="Panel for editing the resources of a game. " alt="" coords="298,71,417,97"/>
-</map>

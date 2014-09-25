@@ -1,0 +1,11 @@
+digraph "TiXmlNode::NextSiblingElement"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TiXmlNode::NextSiblingElement",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TiXmlNode::NextSibling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dca/class_ti_xml_node.html#af854baeba384f5fe9859f5aee03b548e",tooltip="Navigate to a sibling node. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TiXmlNode::ToElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dca/class_ti_xml_node.html#a72abed96dc9667ab9e0a2a275301bb1c",tooltip="Cast to a more defined type. Will return null if not of the requested type. "];
+}

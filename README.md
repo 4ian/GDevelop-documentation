@@ -1,7 +1,7 @@
-Game Develop Documentations
+GDevelop Documentations
 ===========================
 
-This is the documentation generated for Game Develop (http://github.com/4ian/gd).
+This is the documentation generated for GDevelop, the open-source game creator requiring no programming (http://github.com/4ian/gd).
 
 Read the documentation
 ----------------------

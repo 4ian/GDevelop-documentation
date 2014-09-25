@@ -1,0 +1,9 @@
+digraph "Dialogs" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2788447a247d89981b9774cad09bae1c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDJS" fontname="Helvetica", fontsize="10", URL="dir_2788447a247d89981b9774cad09bae1c.html"]
+  dir_9cecc5d751beb7fbc6ba7681e92895f7 [shape=box, label="Dialogs", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9cecc5d751beb7fbc6ba7681e92895f7.html"];
+  }
+}

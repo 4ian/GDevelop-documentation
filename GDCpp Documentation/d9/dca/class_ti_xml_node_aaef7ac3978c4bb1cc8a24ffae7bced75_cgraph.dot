@@ -1,0 +1,11 @@
+digraph "TiXmlNode::IterateChildren"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TiXmlNode::IterateChildren",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TiXmlNode::FirstChild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dca/class_ti_xml_node.html#a44c8eee26bbe2d1b2762038df9dde2f0",tooltip="The first child of this node. Will be null if there are no children. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TiXmlNode::NextSibling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dca/class_ti_xml_node.html#af854baeba384f5fe9859f5aee03b548e",tooltip="Navigate to a sibling node. "];
+}

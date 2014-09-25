@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$classgd_1_1_tree_item_expression_info_data.html" title="Internal class used by gd::EditExpressionDialog. This class can be used by wxTreeCtrl, to attach information ( an gd::ExpressionMetadata and the name of the expression ) to an item. " alt="" coords="169,5,375,32"/>
-<area shape="rect" id="node5" href="$classgd_1_1_tree_item_str_expression_info_data.html" title="Internal class used by EditStrExpressionDialog This class can be used by wxTreeCtrl, to attach information ( an gd::StrExpressionMetadata and the name of the expression ) to an item. " alt="" coords="184,57,360,98"/>
-<area shape="rect" id="node7" href="$classgd_1_1_tree_item_string_data.html" title="Tool class which can be used with wxTreeCtrl or others controls to associate one or two strings with ..." alt="" coords="195,123,349,149"/>
-</map>

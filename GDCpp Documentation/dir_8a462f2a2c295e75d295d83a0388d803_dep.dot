@@ -1,0 +1,9 @@
+digraph "tinyxml" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d2357026098860ba2e16e48ff3d9516a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCpp" fontname="Helvetica", fontsize="10", URL="dir_d2357026098860ba2e16e48ff3d9516a.html"]
+  dir_8a462f2a2c295e75d295d83a0388d803 [shape=box, label="tinyxml", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8a462f2a2c295e75d295d83a0388d803.html"];
+  }
+}

@@ -1,8 +1,0 @@
-<map id="RuntimeContext" name="RuntimeContext">
-<area shape="rect" id="node2" href="$d7/d7f/class_runtime_scene.html" title="Represents a scene being played. " alt="" coords="483,132,589,159"/>
-<area shape="rect" id="node6" href="$dd/daf/class_runtime_layer.html" title="A layer of a layout, used to display objects using RuntimeCamera. " alt="" coords="187,56,290,83"/>
-<area shape="rect" id="node8" href="$d3/de4/class_obj_instances_holder.html" title="Hold lists of objects classified by the name of the objects. " alt="" coords="171,107,306,133"/>
-<area shape="rect" id="node10" href="$d3/de0/class_runtime_variables_container.html" title="Container for gd::Variable used at by games at runtime. " alt="" coords="149,157,328,184"/>
-<area shape="rect" id="node12" href="$d8/ddb/class_runtime_game.html" title="Represents a game being played. " alt="" coords="186,208,291,235"/>
-<area shape="rect" id="node16" href="$d3/d7d/class_cpp_platform.html" title="Game Develop C++ Platform. " alt="" coords="192,259,285,285"/>
-</map>

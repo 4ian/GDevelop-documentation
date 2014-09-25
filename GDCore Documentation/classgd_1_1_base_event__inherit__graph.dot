@@ -1,0 +1,21 @@
+digraph "gd::BaseEvent"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gd::BaseEvent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gd::CommentEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_comment_event.html",tooltip="Allows to add a text in the events editor. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="gd::EmptyEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_empty_event.html",tooltip="Empty event doing nothing. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gd::ForEachEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_for_each_event.html",tooltip="Event repeated for each object of a list. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="gd::LinkEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_link_event.html",tooltip="A link pointing to external events ( or events of another layout ) that should be included and run in..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="gd::RepeatEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_repeat_event.html",tooltip="Event being repeated a specified number of times. "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="gd::StandardEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_standard_event.html",tooltip="Standard event, with conditions, actions and support for sub events. "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="gd::WhileEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_while_event.html",tooltip="While event is a standard event that is repeated while some conditions are true. "];
+}

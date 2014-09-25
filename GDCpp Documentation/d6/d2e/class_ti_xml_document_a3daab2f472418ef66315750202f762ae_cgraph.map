@@ -1,7 +1,0 @@
-<map id="TiXmlDocument::Accept" name="TiXmlDocument::Accept">
-<area shape="rect" id="node3" href="$d0/dfd/class_ti_xml_visitor.html#a07baecb52dd7d8716ae2a48ad0956ee0" title="Visit a document. " alt="" coords="217,5,372,32"/>
-<area shape="rect" id="node5" href="$d9/dca/class_ti_xml_node.html#a44c8eee26bbe2d1b2762038df9dde2f0" title="The first child of this node. Will be null if there are no children. " alt="" coords="221,56,368,83"/>
-<area shape="rect" id="node7" href="$d9/dca/class_ti_xml_node.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="216,107,373,133"/>
-<area shape="rect" id="node9" href="$d9/dca/class_ti_xml_node.html#acc0f88b7462c6cb73809d410a4f5bb86" title="TiXmlNode::Accept" alt="" coords="229,157,361,184"/>
-<area shape="rect" id="node11" href="$d0/dfd/class_ti_xml_visitor.html#aa0ade4f27087447e93974e975c3246ad" title="Visit a document. " alt="" coords="221,208,368,235"/>
-</map>
