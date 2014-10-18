@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a68af884e7046a4d82e23946eb33d28f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b5086be682528fd93906f55616aea64"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_link_event.html#a2b5086be682528fd93906f55616aea64">MustBePreprocessed</a> ()</td></tr>
 <tr class="separator:a2b5086be682528fd93906f55616aea64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01298a6b472f16bb86d13b25a9245378"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_events_list.html">EventsList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_link_event.html#a01298a6b472f16bb86d13b25a9245378">GetLinkedEvents</a> (const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project) const </td></tr>
+<tr class="memdesc:a01298a6b472f16bb86d13b25a9245378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the list of events that are targeted by the link.  <a href="#a01298a6b472f16bb86d13b25a9245378">More...</a><br/></td></tr>
+<tr class="separator:a01298a6b472f16bb86d13b25a9245378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d3358def8c2af26b723c403bcdedbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04d3358def8c2af26b723c403bcdedbd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_link_event.html#a04d3358def8c2af26b723c403bcdedbd">ReplaceLinkByLinkedEvents</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_events_list.html">EventsList</a> &amp;eventList, unsigned int indexOfTheEventInThisList)</td></tr>
 <tr class="memdesc:a04d3358def8c2af26b723c403bcdedbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the link in the events list by the linked events. When implementing a platform with a link event, you should call this function when preprocessing the events ( See gd::EventMetadata::codeGeneration ). <br/></td></tr>
@@ -351,6 +354,31 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>renderedHeigh
 </table>
 </div><div class="memdoc">
 <p>Get the number of the first event to be included. ( Meaningful only if includeAll was set to false, see SetIncludeAllEvents ) </p>
+
+</div>
+</div>
+<a class="anchor" id="a01298a6b472f16bb86d13b25a9245378"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classgd_1_1_events_list.html">EventsList</a> * gd::LinkEvent::GetLinkedEvents </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
+          <td class="paramname"><em>project</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the list of events that are targeted by the link. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">project</td><td>The project containing the link. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL if nothing is found or a pointer to the list of events being linked. </dd></dl>
 
 </div>
 </div>
@@ -652,7 +680,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>renderedHeigh
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 25 2014 18:03:07 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 18 2014 16:33:55 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

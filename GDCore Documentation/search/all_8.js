@@ -7,7 +7,7 @@ var searchData=
   ['imagemanager',['ImageManager',['../classgd_1_1_image_manager.html',1,'gd']]],
   ['imageresource',['ImageResource',['../classgd_1_1_image_resource.html',1,'gd']]],
   ['imageschanged',['imagesChanged',['../classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec',1,'gd::Project']]],
-  ['imagesusedinventorizer',['ImagesUsedInventorizer',['../class_images_used_inventorizer.html',1,'']]],
+  ['imagesusedinventorizer',['ImagesUsedInventorizer',['../classgd_1_1_images_used_inventorizer.html',1,'gd']]],
   ['includeallevents',['IncludeAllEvents',['../classgd_1_1_link_event.html#a6266e34a7b6098df1621a7be5aa0e259',1,'gd::LinkEvent']]],
   ['includefiles',['includeFiles',['../classgd_1_1_events_code_generator.html#a6b5825ac1f13c398894f88c0694b748a',1,'gd::EventsCodeGenerator']]],
   ['indent',['Indent',['../class_ti_xml_printer.html#abb33ec7d4bad6aaeb57f4304394b133d',1,'TiXmlPrinter']]],

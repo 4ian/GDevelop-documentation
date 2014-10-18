@@ -58,7 +58,7 @@ var searchData=
   ['setzorder',['SetZOrder',['../d0/d3b/class_runtime_object.html#aaab3934a6a10b28da26f928562b8d700',1,'RuntimeObject']]],
   ['sfileentry',['sFileEntry',['../d7/d54/structs_file_entry.html',1,'']]],
   ['shadermanager',['ShaderManager',['../d2/d24/class_shader_manager.html',1,'']]],
-  ['size',['Size',['../d4/de6/class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()'],['../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13',1,'sFileEntry::size()']]],
+  ['size',['size',['../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13',1,'sFileEntry::size()'],['../d4/de6/class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()']]],
   ['sortbyzorder',['SortByZOrder',['../d4/db0/struct_sort_by_z_order.html',1,'']]],
   ['sound',['Sound',['../d0/d9e/class_sound.html',1,'']]],
   ['sound_20engine',['Sound engine',['../d7/d58/group___sound_engine.html',1,'']]],

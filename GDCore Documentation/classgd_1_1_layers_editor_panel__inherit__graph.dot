@@ -4,7 +4,9 @@ digraph "gd::LayersEditorPanel"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="gd::LayersEditorPanel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="wxPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="gd::LayoutEditorCanvasAssociated\lEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layout_editor_canvas_associated_editor.html",tooltip="Base class meant to be used by the IDE for its editors that are associated with a gd::LayoutEditorCan..."];
+  Node2 [label="LayersEditorPanelBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_layers_editor_panel_base.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="wxPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gd::LayoutEditorCanvasAssociated\lEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layout_editor_canvas_associated_editor.html",tooltip="Base class meant to be used by the IDE for its editors that are associated with a gd::LayoutEditorCan..."];
 }

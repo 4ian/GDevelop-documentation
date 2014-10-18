@@ -2,6 +2,7 @@ var searchData=
 [
   ['datfile',['DatFile',['../dc/dd1/class_dat_file.html',1,'DatFile'],['../dc/dd1/class_dat_file.html#aa2866c948ea9ebf62b2949a2ec54a9d1',1,'DatFile::DatFile()']]],
   ['datfile_2eh',['DatFile.h',['../d4/d15/_dat_file_8h.html',1,'']]],
+  ['debuggerguibase',['DebuggerGUIBase',['../d8/d2b/class_debugger_g_u_i_base.html',1,'']]],
   ['deletecamera',['DeleteCamera',['../dd/daf/class_runtime_layer.html#add090b767c166af89d0e8034e67055c5',1,'RuntimeLayer']]],
   ['deprecated_20list',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
   ['destroysingleton',['DestroySingleton',['../d3/d7d/class_cpp_platform.html#ab07aa4781dcfb5a94461139aab64a3c2',1,'CppPlatform::DestroySingleton()'],['../d8/dfc/class_font_manager.html#ab7b7e1e95ea4abacec707d9c8e95adeb',1,'FontManager::DestroySingleton()']]],

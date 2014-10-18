@@ -14,6 +14,7 @@ var searchData=
   ['removeallanimations',['RemoveAllAnimations',['../classgd_1_1_sprite_object.html#a0799f7b38f5914f5f0b72b013a820674',1,'gd::SpriteObject']]],
   ['removeallinstancesonlayer',['RemoveAllInstancesOnLayer',['../classgd_1_1_initial_instances_container.html#a12771fbd9bea88b4053555e40e049bc9',1,'gd::InitialInstancesContainer']]],
   ['removeallsprites',['RemoveAllSprites',['../classgd_1_1_direction.html#a1a9afaf92ed28613a03c24d35deaed3c',1,'gd::Direction']]],
+  ['removealluselessresources',['RemoveAllUselessResources',['../classgd_1_1_project_resources_adder.html#a51f4fcbe022ec7f6654a4faf9ac094ea',1,'gd::ProjectResourcesAdder']]],
   ['removeanimation',['RemoveAnimation',['../classgd_1_1_sprite_object.html#ab99988926d8c60613308cd4d05f02ac1',1,'gd::SpriteObject']]],
   ['removeattribute',['RemoveAttribute',['../class_ti_xml_element.html#a56979767deca794376b1dfa69a525b2a',1,'TiXmlElement']]],
   ['removeautomatism',['RemoveAutomatism',['../classgd_1_1_object.html#aff74061e41830945fee761b8c2c39eaf',1,'gd::Object']]],

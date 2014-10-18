@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="TiXmlHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d19/class_ti_xml_handle.html",tooltip="Part of the tinyxml library. "];
+  Node1 [label="TiXmlCursor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d17/struct_ti_xml_cursor.html",tooltip="Part of the tinyxml library. "];
 }

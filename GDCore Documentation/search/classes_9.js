@@ -3,6 +3,7 @@ var searchData=
   ['layer',['Layer',['../classgd_1_1_layer.html',1,'gd']]],
   ['layerhasname',['LayerHasName',['../structgd_1_1_layer_has_name.html',1,'gd']]],
   ['layerseditorpanel',['LayersEditorPanel',['../classgd_1_1_layers_editor_panel.html',1,'gd']]],
+  ['layerseditorpanelbase',['LayersEditorPanelBase',['../class_layers_editor_panel_base.html',1,'']]],
   ['layout',['Layout',['../classgd_1_1_layout.html',1,'gd']]],
   ['layouteditorcanvas',['LayoutEditorCanvas',['../classgd_1_1_layout_editor_canvas.html',1,'gd']]],
   ['layouteditorcanvasassociatededitor',['LayoutEditorCanvasAssociatedEditor',['../classgd_1_1_layout_editor_canvas_associated_editor.html',1,'gd']]],

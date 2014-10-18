@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::RessourcesLoader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/de2/classgd_1_1_ressources_loader.html",tooltip="Class that is used by games to load resources from an GDevelop Executable ( DatFile ) or from an exte..."];
+  Node1 [label="Force",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d88/class_force.html",tooltip="Represents a force to be applied on an object. "];
 }

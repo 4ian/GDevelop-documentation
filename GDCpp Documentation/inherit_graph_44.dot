@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="XmlFilesManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d40/class_xml_files_manager.html",tooltip="Helper class for opening XML files. "];
+  Node1 [label="XmlFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/da5/class_xml_file.html",tooltip="Helper class wrapping a tinyxml document in RAII fashion. "];
 }

@@ -10,8 +10,10 @@ digraph "Graphical Class Hierarchy"
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="gd::LayoutEditorCanvas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layout_editor_canvas.html",tooltip="Base class for implementing the main canvas of layout editors. "];
   Node5 [label="wxPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="ResourcesEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_resources_editor.html",tooltip="Panel for editing the resources of a game. "];
+  Node6 [label="LayersEditorPanelBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_layers_editor_panel_base.html"];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ResourcesEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_resources_editor.html",tooltip="Panel for editing the resources of a game. "];
 }

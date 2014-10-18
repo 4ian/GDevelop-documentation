@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="RuntimeContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/de6/class_runtime_context.html",tooltip="Helper class used by events generated code to get access to various things without including &quot;heavy&quot; ..."];
+  Node1 [label="RuntimeCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d47/class_runtime_camera.html",tooltip="A camera which is displayed on a part of a window ( see Viewport related methods ) rendering an area ..."];
 }
