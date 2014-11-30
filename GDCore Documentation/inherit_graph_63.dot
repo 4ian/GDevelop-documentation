@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::InstructionSentenceFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_instruction_sentence_formatter.html",tooltip="Generate user friendly sentences and information from an action. "];
+  Node1 [label="gd::InstructionMetadata\l::ExtraInformation::CustomCode\lGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html",tooltip="Class used to redefine instruction code generation. "];
 }

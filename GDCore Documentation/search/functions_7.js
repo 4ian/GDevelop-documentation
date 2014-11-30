@@ -33,6 +33,7 @@ var searchData=
   ['hasselectedconditions',['HasSelectedConditions',['../classgd_1_1_events_editor_selection.html#accae65ddd7c6913471381863e5248871',1,'gd::EventsEditorSelection']]],
   ['hasselectedevents',['HasSelectedEvents',['../classgd_1_1_events_editor_selection.html#adba5df29636caf7c25d44205de0b3efe',1,'gd::EventsEditorSelection']]],
   ['hasselectedinstructions',['HasSelectedInstructions',['../classgd_1_1_events_editor_selection.html#aa82f6e5dc85a3b6fdc9fb45b0a4a3757',1,'gd::EventsEditorSelection']]],
+  ['hassourcefile',['HasSourceFile',['../classgd_1_1_project.html#a515427ba7054058f2e93068eb5ba1dab',1,'gd::Project']]],
   ['hasstrexpression',['HasStrExpression',['../classgd_1_1_metadata_provider.html#a8e728dce16fe9963c4f71577ec0b7cda',1,'gd::MetadataProvider']]],
   ['hassubevents',['HasSubEvents',['../classgd_1_1_base_event.html#abfac7dcfd722cd1dae332d9c34e15688',1,'gd::BaseEvent']]],
   ['hidewarnings',['HideWarnings',['../classgd_1_1_serializer_element.html#add834450cfeb167a5ebac79d11505764',1,'gd::SerializerElement']]]

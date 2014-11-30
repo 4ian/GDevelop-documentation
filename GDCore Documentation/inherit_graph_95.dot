@@ -3,5 +3,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::SceneNameMangler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_scene_name_mangler.html",tooltip="Used to mangle the name of a scene. "];
+  Node1 [label="wxRibbonArtProvider",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gd::RibbonMetroArtProvider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_ribbon_metro_art_provider.html"];
 }

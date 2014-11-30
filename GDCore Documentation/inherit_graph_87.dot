@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::ProjectStripper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_project_stripper.html",tooltip="Tool class providing methods to strip useless data for a project after it has been exported..."];
+  Node1 [label="gd::ProjectResourcesCopier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_project_resources_copier.html",tooltip="Copy all resources files of a project to a directory. "];
 }

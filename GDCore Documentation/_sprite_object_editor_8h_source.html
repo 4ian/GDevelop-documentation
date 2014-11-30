@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the GNU Lesser General Public License.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef SPRITEOBJECTEDITOR_H</span></div>
@@ -334,41 +334,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">bool</span> editingMask;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">bool</span> editingPoint;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    std::string renamedPointOldName;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">bool</span> movingPolygon;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> selectedPolygon;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">bool</span> movingPolygonPoint;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> selectedPolygonPoint;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">float</span> xSelectionOffset;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordtype">float</span> ySelectionOffset;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="classgd_1_1_polygon_edition_helper.html">gd::PolygonEditionHelper</a> polygonEditionHelper;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">bool</span> deletingMaskTreeItems; <span class="comment">//Used to workaround an event being called when using maskTree-&gt;DeleteAllItems().</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    std::string renamedPointOldName;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="classgd_1_1_polygon_edition_helper.html">gd::PolygonEditionHelper</a> polygonEditionHelper;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">float</span> previewElapsedTime;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">int</span> previewCurrentSprite;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="classgd_1_1_main_frame_wrapper.html">gd::MainFrameWrapper</a> &amp; mainFrameWrapper;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;};</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">float</span> previewElapsedTime;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">int</span> previewCurrentSprite;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="classgd_1_1_main_frame_wrapper.html">gd::MainFrameWrapper</a> &amp; mainFrameWrapper;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;};</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classgd_1_1_dnd_text_sprite_object_editor.html">  287</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgd_1_1_dnd_text_sprite_object_editor.html">DndTextSpriteObjectEditor</a> : <span class="keyword">public</span> wxTextDropTarget</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="classgd_1_1_dnd_text_sprite_object_editor.html">DndTextSpriteObjectEditor</a>(<a class="code" href="classgd_1_1_sprite_object_editor.html">SpriteObjectEditor</a> &amp; editor_) : editor(editor_) {}</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classgd_1_1_dnd_text_sprite_object_editor.html">  281</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgd_1_1_dnd_text_sprite_object_editor.html">DndTextSpriteObjectEditor</a> : <span class="keyword">public</span> wxTextDropTarget</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="classgd_1_1_dnd_text_sprite_object_editor.html">DndTextSpriteObjectEditor</a>(<a class="code" href="classgd_1_1_sprite_object_editor.html">SpriteObjectEditor</a> &amp; editor_) : editor(editor_) {}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> OnDropText(wxCoord x, wxCoord y, <span class="keyword">const</span> wxString&amp; text);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classgd_1_1_sprite_object_editor.html">SpriteObjectEditor</a> &amp; editor;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;};</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> OnDropText(wxCoord x, wxCoord y, <span class="keyword">const</span> wxString&amp; text);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="classgd_1_1_sprite_object_editor.html">SpriteObjectEditor</a> &amp; editor;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;};</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classgd_1_1_sprite_object_editor_html_a474496837f089d29e1e442675c51f662"><div class="ttname"><a href="classgd_1_1_sprite_object_editor.html#a474496837f089d29e1e442675c51f662">gd::SpriteObjectEditor::AddImageToCurrentAnimation</a></div><div class="ttdeci">void AddImageToCurrentAnimation(wxString image, bool refresh=true)</div><div class="ttdoc">Can be called to add an image to the current animation. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.cpp:1015</div></div>
-<div class="ttc" id="classgd_1_1_dnd_text_sprite_object_editor_html"><div class="ttname"><a href="classgd_1_1_dnd_text_sprite_object_editor.html">gd::DndTextSpriteObjectEditor</a></div><div class="ttdoc">Tool class used by SpriteObjectEditor to enable inserting images using drag&#39;n&#39;drop. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.h:287</div></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classgd_1_1_sprite_object_editor_html_a474496837f089d29e1e442675c51f662"><div class="ttname"><a href="classgd_1_1_sprite_object_editor.html#a474496837f089d29e1e442675c51f662">gd::SpriteObjectEditor::AddImageToCurrentAnimation</a></div><div class="ttdeci">void AddImageToCurrentAnimation(wxString image, bool refresh=true)</div><div class="ttdoc">Can be called to add an image to the current animation. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.cpp:993</div></div>
+<div class="ttc" id="classgd_1_1_dnd_text_sprite_object_editor_html"><div class="ttname"><a href="classgd_1_1_dnd_text_sprite_object_editor.html">gd::DndTextSpriteObjectEditor</a></div><div class="ttdoc">Tool class used by SpriteObjectEditor to enable inserting images using drag&#39;n&#39;drop. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.h:281</div></div>
 <div class="ttc" id="classgd_1_1_sprite_object_html"><div class="ttname"><a href="classgd_1_1_sprite_object.html">gd::SpriteObject</a></div><div class="ttdoc">Standard sprite object for extensions that implements the standard SpriteExtension (see gd::BuiltinEx...</div><div class="ttdef"><b>Definition:</b> SpriteObject.h:41</div></div>
 <div class="ttc" id="classgd_1_1_resource_html"><div class="ttname"><a href="classgd_1_1_resource.html">gd::Resource</a></div><div class="ttdoc">Base class to describe a resource used by a game. </div><div class="ttdef"><b>Definition:</b> ResourcesManager.h:25</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html">gd::MainFrameWrapper</a></div><div class="ttdoc">Provides access to some specific features or members of the IDE. </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:25</div></div>
@@ -379,7 +373,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:54 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:41 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

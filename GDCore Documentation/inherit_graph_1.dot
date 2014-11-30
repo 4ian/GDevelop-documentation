@@ -3,5 +3,11 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="EventsCodeNameMangler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_events_code_name_mangler.html"];
+  Node1 [label="wxTextDropTarget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DndTextResourcesEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dnd_text_resources_editor.html",tooltip="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="gd::DndTextSpriteObjectEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_dnd_text_sprite_object_editor.html",tooltip="Tool class used by SpriteObjectEditor to enable inserting images using drag&#39;n&#39;drop. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gd::LayoutEditorCanvasTextDnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layout_editor_canvas_text_dnd.html",tooltip="Tool class used by LayoutEditorCanvas to enable inserting object using drag&#39;n&#39;drop. "];
 }

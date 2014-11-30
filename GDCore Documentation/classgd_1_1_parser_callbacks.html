@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classgd_1_1_parser_callbacks-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::ParserCallbacks Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -110,6 +111,10 @@ Inheritance diagram for gd::ParserCallbacks:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab15cf5d95855025e91a93b36c096f151"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab15cf5d95855025e91a93b36c096f151"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parser_callbacks.html#ab15cf5d95855025e91a93b36c096f151">GetReturnType</a> ()</td></tr>
+<tr class="memdesc:ab15cf5d95855025e91a93b36c096f151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the expression for which callbacks are used: "expression" or "string". <br/></td></tr>
+<tr class="separator:ab15cf5d95855025e91a93b36c096f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f34dde73d8c915041d3b63dfcaf774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6f34dde73d8c915041d3b63dfcaf774"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnConstantToken</b> (std::string text)=0</td></tr>
 <tr class="separator:aa6f34dde73d8c915041d3b63dfcaf774"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,21 +127,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnOperator</b
 <tr class="memitem:a6bed7d504bd6342b0fb73823baf25a02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bed7d504bd6342b0fb73823baf25a02"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStaticFunction</b> (std::string functionName, const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;expressionInfo)=0</td></tr>
 <tr class="separator:a6bed7d504bd6342b0fb73823baf25a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178a7bf53e1af1dc3d456fb9a69745ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a178a7bf53e1af1dc3d456fb9a69745ff"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStaticFunction</b> (std::string functionName, const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const <a class="el" href="classgd_1_1_str_expression_metadata.html">gd::StrExpressionMetadata</a> &amp;expressionInfo)=0</td></tr>
-<tr class="separator:a178a7bf53e1af1dc3d456fb9a69745ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859cdcf398434583b5acf9609ab16750"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a859cdcf398434583b5acf9609ab16750"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnObjectFunction</b> (std::string functionName, const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;expressionInfo)=0</td></tr>
 <tr class="separator:a859cdcf398434583b5acf9609ab16750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a939e2bc6c93424305380d56073a1c954"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a939e2bc6c93424305380d56073a1c954"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnObjectFunction</b> (std::string functionName, const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const <a class="el" href="classgd_1_1_str_expression_metadata.html">gd::StrExpressionMetadata</a> &amp;expressionInfo)=0</td></tr>
-<tr class="separator:a939e2bc6c93424305380d56073a1c954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cafc8511b2419cdc99d88ada9b59327"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cafc8511b2419cdc99d88ada9b59327"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnObjectAutomatismFunction</b> (std::string functionName, const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;expressionInfo)=0</td></tr>
 <tr class="separator:a7cafc8511b2419cdc99d88ada9b59327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd528e1e8a8ae4b13980274e91f02779"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd528e1e8a8ae4b13980274e91f02779"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnObjectAutomatismFunction</b> (std::string functionName, const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const <a class="el" href="classgd_1_1_str_expression_metadata.html">gd::StrExpressionMetadata</a> &amp;expressionInfo)=0</td></tr>
-<tr class="separator:abd528e1e8a8ae4b13980274e91f02779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f35e68fe9cf10326c2b51bf91e837f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75f35e68fe9cf10326c2b51bf91e837f"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnSubMathExpression</b> (const <a class="el" href="classgd_1_1_platform.html">gd::Platform</a> &amp;platform, const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;layout, <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &amp;expression)=0</td></tr>
 <tr class="separator:a75f35e68fe9cf10326c2b51bf91e837f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +148,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>firstErrorStr<
 <tr class="memitem:afae7a3bf52cde2f753710a70eb1dd0af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afae7a3bf52cde2f753710a70eb1dd0af"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>firstErrorPos</b></td></tr>
 <tr class="separator:afae7a3bf52cde2f753710a70eb1dd0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a4dbd45fa6ccde9b0acaa5ee5dec24bb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dbd45fa6ccde9b0acaa5ee5dec24bb4"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ExpressionParser</b></td></tr>
+<tr class="separator:a4dbd45fa6ccde9b0acaa5ee5dec24bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Callbacks called by parser during parsing. </p>
@@ -163,7 +165,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>firstErrorPos</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:55 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:42 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

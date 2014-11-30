@@ -3,9 +3,9 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="wxAuiDefaultToolBarArt",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="wxAuiTabArt",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="gd::AuiToolBarArt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_aui_tool_bar_art.html"];
+  Node2 [label="gd::AuiTabArt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_aui_tab_art.html",tooltip="Internal class providing GDevelop specific skin for wxwidget&#39;s wxAuiNotebook class. "];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="gd::FlatAuiToolBarArt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_flat_aui_tool_bar_art.html"];
+  Node3 [label="gd::FlatAuiTabArt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_flat_aui_tab_art.html",tooltip="Internal class providing GDevelop specific skin for wxwidget&#39;s wxAuiNotebook class. "];
 }

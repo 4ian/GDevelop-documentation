@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::EventsVariablesFinder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_events_variables_finder.html",tooltip="Perform a search over a project or a layout, searching for layout, global or object variables..."];
+  Node1 [label="gd::EventsSearchResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_events_search_result.html",tooltip="Class used to return result when calling EventsRefactorer::SearchInEvents. "];
 }

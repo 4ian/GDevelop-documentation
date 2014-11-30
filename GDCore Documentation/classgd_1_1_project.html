@@ -376,11 +376,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a96bc83390dddb0f6aa21c683d001d30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5a0c9873d62a4c44fa51873da88913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_variables_container.html">gd::VariablesContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a8d5a0c9873d62a4c44fa51873da88913">GetVariables</a> ()</td></tr>
 <tr class="separator:a8d5a0c9873d62a4c44fa51873da88913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Other</div></td></tr>
-<tr class="memitem:a73af0d5fcac469f0a9b2ff511367ec2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a73af0d5fcac469f0a9b2ff511367ec2a">ValidateObjectName</a> (const std::string &amp;objectName)</td></tr>
-<tr class="separator:a73af0d5fcac469f0a9b2ff511367ec2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acacb92cb75f20e1f1b05d19c3b5ec997"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acacb92cb75f20e1f1b05d19c3b5ec997">GetBadObjectNameWarning</a> ()</td></tr>
-<tr class="separator:acacb92cb75f20e1f1b05d19c3b5ec997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">External source files</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>To manage external C++ or Javascript source files used by the game </p>
+</div></td></tr>
+<tr class="memitem:a2cc41ffb2f7bb3b8d0ece93928833a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cc41ffb2f7bb3b8d0ece93928833a10"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a2cc41ffb2f7bb3b8d0ece93928833a10">UseExternalSourceFiles</a> () const </td></tr>
+<tr class="memdesc:a2cc41ffb2f7bb3b8d0ece93928833a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the game activated the use of external source files. <br/></td></tr>
+<tr class="separator:a2cc41ffb2f7bb3b8d0ece93928833a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339b41143a2cda7add574ae952698d1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a339b41143a2cda7add574ae952698d1a"></a>
+const std::vector<br class="typebreak"/>
+&lt; boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a339b41143a2cda7add574ae952698d1a">GetAllSourceFiles</a> () const </td></tr>
+<tr class="memdesc:a339b41143a2cda7add574ae952698d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the vector containing all the source files used by the game. <br/></td></tr>
+<tr class="separator:a339b41143a2cda7add574ae952698d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515427ba7054058f2e93068eb5ba1dab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a515427ba7054058f2e93068eb5ba1dab">HasSourceFile</a> (std::string name, std::string language=&quot;&quot;) const </td></tr>
+<tr class="memdesc:a515427ba7054058f2e93068eb5ba1dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the source file with the specified name is used by the game.  <a href="#a515427ba7054058f2e93068eb5ba1dab">More...</a><br/></td></tr>
+<tr class="separator:a515427ba7054058f2e93068eb5ba1dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf26e847135a4dacdb06562b41140dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_source_file.html">SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5bf26e847135a4dacdb06562b41140dd">GetSourceFile</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a5bf26e847135a4dacdb06562b41140dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb3d9b183ad4040bfda5f15b3ff09b9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_source_file.html">SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aafb3d9b183ad4040bfda5f15b3ff09b9">GetSourceFile</a> (const std::string &amp;name) const </td></tr>
+<tr class="separator:aafb3d9b183ad4040bfda5f15b3ff09b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cd5d44ecd5504e665178fe99375032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab2cd5d44ecd5504e665178fe99375032">RemoveSourceFile</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:ab2cd5d44ecd5504e665178fe99375032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4d505a58eb242de6ed176a532d12b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5c4d505a58eb242de6ed176a532d12b7">InsertNewSourceFile</a> (const std::string &amp;name, const std::string &amp;language, unsigned int position=-1)</td></tr>
+<tr class="separator:a5c4d505a58eb242de6ed176a532d12b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgd_1_1_class_with_objects"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgd_1_1_class_with_objects')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgd_1_1_class_with_objects.html">gd::ClassWithObjects</a></td></tr>
 <tr class="memitem:a762c26c2a86249e61a9fd0a239e0ff4b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a762c26c2a86249e61a9fd0a239e0ff4b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a762c26c2a86249e61a9fd0a239e0ff4b">ClassWithObjects</a> ()</td></tr>
@@ -443,12 +462,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a561337c294c90e7a032c6e9ed27a83c5 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialize the instances container. <br/></td></tr>
 <tr class="separator:a561337c294c90e7a032c6e9ed27a83c5 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Other</div></td></tr>
+<tr class="memitem:a73af0d5fcac469f0a9b2ff511367ec2a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a73af0d5fcac469f0a9b2ff511367ec2a">ValidateObjectName</a> (const std::string &amp;objectName)</td></tr>
+<tr class="separator:a73af0d5fcac469f0a9b2ff511367ec2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacb92cb75f20e1f1b05d19c3b5ec997"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acacb92cb75f20e1f1b05d19c3b5ec997">GetBadObjectNameWarning</a> ()</td></tr>
+<tr class="separator:acacb92cb75f20e1f1b05d19c3b5ec997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a875311bfbc230a80515970024b7c54c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a875311bfbc230a80515970024b7c54c5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a875311bfbc230a80515970024b7c54c5">useExternalSourceFiles</a></td></tr>
-<tr class="memdesc:a875311bfbc230a80515970024b7c54c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if game used external source files. <br/></td></tr>
-<tr class="separator:a875311bfbc230a80515970024b7c54c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71caec23d009ea6f10e6aedba121f3ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71caec23d009ea6f10e6aedba121f3ec"></a>
 std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec">imagesChanged</a></td></tr>
 <tr class="memdesc:a71caec23d009ea6f10e6aedba121f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images that have been changed and which have to be reloaded. <br/></td></tr>
@@ -469,11 +492,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a533a3a87af6b1e992a12945b67708c9e">macExecutableFilename</a></td></tr>
 <tr class="memdesc:a533a3a87af6b1e992a12945b67708c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mac executable name. <br/></td></tr>
 <tr class="separator:a533a3a87af6b1e992a12945b67708c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b0374d27f43d6b5db5b6ded0b757b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7b0374d27f43d6b5db5b6ded0b757b8"></a>
-std::vector&lt; boost::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af7b0374d27f43d6b5db5b6ded0b757b8">externalSourceFiles</a></td></tr>
-<tr class="memdesc:af7b0374d27f43d6b5db5b6ded0b757b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of C++ source files used. <br/></td></tr>
-<tr class="separator:af7b0374d27f43d6b5db5b6ded0b757b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -704,6 +722,9 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
 <a class="anchor" id="acacb92cb75f20e1f1b05d19c3b5ec997"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string gd::Project::GetBadObjectNameWarning </td>
@@ -712,6 +733,11 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Return a message that will be displayed when an invalid object name has been entered.</p>
 <dl class="section note"><dt>Note</dt><dd>This message will be displayed by the IDE into a tooltip. </dd></dl>
@@ -1162,6 +1188,40 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
 
 </div>
 </div>
+<a class="anchor" id="a5bf26e847135a4dacdb06562b41140dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp; gd::Project::GetSourceFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a reference to the external source file with the given name. </p>
+
+</div>
+</div>
+<a class="anchor" id="aafb3d9b183ad4040bfda5f15b3ff09b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp; gd::Project::GetSourceFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a reference to the external source file with the given name. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae0b7bd4739d0830582c5d40e703e7104"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1313,6 +1373,41 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 <p>Return true if external layout called "name" exists. </p>
+
+</div>
+</div>
+<a class="anchor" id="a515427ba7054058f2e93068eb5ba1dab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Project::HasSourceFile </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>language</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if the source file with the specified name is used by the game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The filename of the source file. </td></tr>
+    <tr><td class="paramname">language</td><td>Optional. If specified, check that the source file that exists is in this language. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1473,6 +1568,39 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 <p>Must add a new empty external layout called "name" at the specified position in the layout list. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c4d505a58eb242de6ed176a532d12b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp; gd::Project::InsertNewSourceFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>language</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>position</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a new source file the specified position in the external source files list. </p>
 
 </div>
 </div>
@@ -1638,6 +1766,23 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
 <p>Remove a platform from the project.</p>
 <dl class="section note"><dt>Note</dt><dd>The remove will fail if there is only one platform left. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the platform was removed, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2cd5d44ecd5504e665178fe99375032"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Project::RemoveSourceFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the specified source file. </p>
 
 </div>
 </div>
@@ -2080,6 +2225,9 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
 <a class="anchor" id="a73af0d5fcac469f0a9b2ff511367ec2a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool gd::Project::ValidateObjectName </td>
@@ -2089,6 +2237,11 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Return true if <em>objectName</em> can be used as name for an object.</p>
 <p>Default implementation check if objectName is only composed of a-z,A-Z,0-9 or _ characters an if does not conflict with an expression. </p>
@@ -2102,7 +2255,7 @@ std::vector&lt; boost::shared_ptr<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:56 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:42 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

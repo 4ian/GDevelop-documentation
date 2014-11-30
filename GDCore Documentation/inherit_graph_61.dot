@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::InstructionMetadata\l::ExtraInformation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_instruction_metadata_1_1_extra_information.html",tooltip="Defines information about how generate the code for an instruction. "];
+  Node1 [label="gd::InstructionMetadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_instruction_metadata.html",tooltip="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction..."];
 }

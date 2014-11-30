@@ -126,86 +126,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e">IsGDManaged</a> () const </td></tr>
 <tr class="memdesc:a57c5e0d8f5ec525cc2f7d063e52ea41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the file is hidden from the user point of view and is only managed by GDevelop. <br/></td></tr>
 <tr class="separator:a57c5e0d8f5ec525cc2f7d063e52ea41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3df615e2325f2a5f90c0e44b0793ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab">SetAssociatedEvent</a> (boost::weak_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">BaseEvent</a> &gt; event)</td></tr>
-<tr class="memdesc:ada3df615e2325f2a5f90c0e44b0793ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a source file is GD-managed, it is usually created for a specific event ( C++ Code Event ).  <a href="#ada3df615e2325f2a5f90c0e44b0793ab">More...</a><br/></td></tr>
-<tr class="separator:ada3df615e2325f2a5f90c0e44b0793ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a298c981061fa5b3d1f5cd10e48f13ed8"><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">BaseEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_source_file.html#a298c981061fa5b3d1f5cd10e48f13ed8">GetAssociatedEvent</a> () const </td></tr>
-<tr class="memdesc:a298c981061fa5b3d1f5cd10e48f13ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a (weak) pointer to the event associated to the source file, if any.  <a href="#a298c981061fa5b3d1f5cd10e48f13ed8">More...</a><br/></td></tr>
-<tr class="separator:a298c981061fa5b3d1f5cd10e48f13ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70c49dbbac8050dc4cf67e90a6b5dcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af70c49dbbac8050dc4cf67e90a6b5dcd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">SetLanguage</a> (std::string lang)</td></tr>
 <tr class="memdesc:af70c49dbbac8050dc4cf67e90a6b5dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the language of the source file. <br/></td></tr>
 <tr class="separator:af70c49dbbac8050dc4cf67e90a6b5dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b82965818902f54d2171f83089d7449"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b82965818902f54d2171f83089d7449"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_source_file.html#a0b82965818902f54d2171f83089d7449">SetLanguage</a> () const </td></tr>
-<tr class="memdesc:a0b82965818902f54d2171f83089d7449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the language of the source file. <br/></td></tr>
-<tr class="separator:a0b82965818902f54d2171f83089d7449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bcc0c77ec4d99dfc6a08aee36b70f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7bcc0c77ec4d99dfc6a08aee36b70f6"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_source_file.html#ac7bcc0c77ec4d99dfc6a08aee36b70f6">GetLanguage</a> () const </td></tr>
+<tr class="memdesc:ac7bcc0c77ec4d99dfc6a08aee36b70f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the language of the source file. <br/></td></tr>
+<tr class="separator:ac7bcc0c77ec4d99dfc6a08aee36b70f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a "physical" source file. </p>
 <p>Source file can be compiled (or just integrated to the exported project) by platforms. Most of the time, special events are provided to use functions created in such files. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a298c981061fa5b3d1f5cd10e48f13ed8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::weak_ptr&lt;<a class="el" href="classgd_1_1_base_event.html">BaseEvent</a>&gt; gd::SourceFile::GetAssociatedEvent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return a (weak) pointer to the event associated to the source file, if any. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab" title="When a source file is GD-managed, it is usually created for a specific event ( C++ Code Event )...">SetAssociatedEvent</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ada3df615e2325f2a5f90c0e44b0793ab"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::SourceFile::SetAssociatedEvent </td>
-          <td>(</td>
-          <td class="paramtype">boost::weak_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">BaseEvent</a> &gt;&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>When a source file is GD-managed, it is usually created for a specific event ( C++ Code Event ). </p>
-<p>Using this method, the event can store in the source file a (weak) pointer to itself, so that we can show to the user the event if the compilation fails in the source file. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_source_file_8h_source.html">SourceFile.h</a></li>
 <li>SourceFile.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:56 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:42 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

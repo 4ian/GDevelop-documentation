@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::PropertyDescriptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_property_descriptor.html",tooltip="Used to describe a property shown in a property grid. "];
+  Node1 [label="gd::ProjectStripper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_project_stripper.html",tooltip="Tool class providing methods to strip useless data for a project after it has been exported..."];
 }

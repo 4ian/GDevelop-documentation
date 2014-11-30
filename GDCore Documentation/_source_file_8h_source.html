@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the GNU Lesser General Public License.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SOURCEFILE_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SOURCEFILE_H</span></div>
@@ -124,47 +124,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e">   59</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e">IsGDManaged</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gdManaged; };</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab">SetAssociatedEvent</a>(boost::weak_ptr&lt;BaseEvent&gt; event) { associatedGdEvent = event; };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#a298c981061fa5b3d1f5cd10e48f13ed8">   74</a></span>&#160;    boost::weak_ptr&lt;BaseEvent&gt; <a class="code" href="classgd_1_1_source_file.html#a298c981061fa5b3d1f5cd10e48f13ed8">GetAssociatedEvent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> associatedGdEvent; };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">SetLanguage</a>(std::string lang) { language = lang; }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#a0b82965818902f54d2171f83089d7449">   84</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_source_file.html#a0b82965818902f54d2171f83089d7449">SetLanguage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> language; }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string filename; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    time_t lastBuildTimeStamp; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> gdManaged; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::string language; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    boost::weak_ptr&lt;BaseEvent&gt; associatedGdEvent; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//&quot;Tool&quot; Functions</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="structgd_1_1_external_source_file_has_name.html">  100</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgd_1_1_external_source_file_has_name.html">ExternalSourceFileHasName</a> : <span class="keyword">public</span> std::binary_function&lt;boost::shared_ptr&lt;SourceFile&gt;, std::string, bool&gt; {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> boost::shared_ptr&lt;SourceFile&gt; &amp; externalEvents, std::string name)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalEvents-&gt;GetFileName() == name; }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // SOURCEFILE_H</span></div>
-<div class="ttc" id="classgd_1_1_source_file_html_a298c981061fa5b3d1f5cd10e48f13ed8"><div class="ttname"><a href="classgd_1_1_source_file.html#a298c981061fa5b3d1f5cd10e48f13ed8">gd::SourceFile::GetAssociatedEvent</a></div><div class="ttdeci">boost::weak_ptr&lt; BaseEvent &gt; GetAssociatedEvent() const </div><div class="ttdoc">Return a (weak) pointer to the event associated to the source file, if any. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:74</div></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">   64</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">SetLanguage</a>(std::string lang) { language = lang; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classgd_1_1_source_file.html#ac7bcc0c77ec4d99dfc6a08aee36b70f6">   69</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_source_file.html#ac7bcc0c77ec4d99dfc6a08aee36b70f6">GetLanguage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> language; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string filename; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    time_t lastBuildTimeStamp; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> gdManaged; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::string language; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    boost::weak_ptr&lt;BaseEvent&gt; associatedGdEvent; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//&quot;Tool&quot; Functions</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="structgd_1_1_external_source_file_has_name.html">   85</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgd_1_1_external_source_file_has_name.html">ExternalSourceFileHasName</a> : <span class="keyword">public</span> std::binary_function&lt;boost::shared_ptr&lt;SourceFile&gt;, std::string, bool&gt; {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> boost::shared_ptr&lt;SourceFile&gt; &amp; externalEvents, std::string name)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalEvents-&gt;GetFileName() == name; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // SOURCEFILE_H</span></div>
 <div class="ttc" id="classgd_1_1_source_file_html_ae2c7dd94703a0f12b91c869a8c8d0666"><div class="ttname"><a href="classgd_1_1_source_file.html#ae2c7dd94703a0f12b91c869a8c8d0666">gd::SourceFile::SetFileName</a></div><div class="ttdeci">void SetFileName(std::string filename_)</div><div class="ttdoc">Change the filename. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:39</div></div>
-<div class="ttc" id="classgd_1_1_source_file_html_ada3df615e2325f2a5f90c0e44b0793ab"><div class="ttname"><a href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab">gd::SourceFile::SetAssociatedEvent</a></div><div class="ttdeci">void SetAssociatedEvent(boost::weak_ptr&lt; BaseEvent &gt; event)</div><div class="ttdoc">When a source file is GD-managed, it is usually created for a specific event ( C++ Code Event )...</div><div class="ttdef"><b>Definition:</b> SourceFile.h:67</div></div>
 <div class="ttc" id="classgd_1_1_source_file_html_a0097ee4273f3d5946ee69f6635a2d987"><div class="ttname"><a href="classgd_1_1_source_file.html#a0097ee4273f3d5946ee69f6635a2d987">gd::SourceFile::GetFileName</a></div><div class="ttdeci">std::string GetFileName() const </div><div class="ttdoc">Get the filename. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:34</div></div>
-<div class="ttc" id="structgd_1_1_external_source_file_has_name_html"><div class="ttname"><a href="structgd_1_1_external_source_file_has_name.html">gd::ExternalSourceFileHasName</a></div><div class="ttdef"><b>Definition:</b> SourceFile.h:100</div></div>
+<div class="ttc" id="structgd_1_1_external_source_file_has_name_html"><div class="ttname"><a href="structgd_1_1_external_source_file_has_name.html">gd::ExternalSourceFileHasName</a></div><div class="ttdef"><b>Definition:</b> SourceFile.h:85</div></div>
 <div class="ttc" id="classgd_1_1_source_file_html_a57c5e0d8f5ec525cc2f7d063e52ea41e"><div class="ttname"><a href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e">gd::SourceFile::IsGDManaged</a></div><div class="ttdeci">bool IsGDManaged() const </div><div class="ttdoc">Return true if the file is hidden from the user point of view and is only managed by GDevelop...</div><div class="ttdef"><b>Definition:</b> SourceFile.h:59</div></div>
 <div class="ttc" id="classgd_1_1_source_file_html_a5a67787b99073834deaa837e075c7762"><div class="ttname"><a href="classgd_1_1_source_file.html#a5a67787b99073834deaa837e075c7762">gd::SourceFile::SetGDManaged</a></div><div class="ttdeci">void SetGDManaged(bool gdManaged_)</div><div class="ttdoc">Set if the file is hidden from the user point of view and is only managed by GDevelop. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:54</div></div>
 <div class="ttc" id="classgd_1_1_serializer_element_html"><div class="ttname"><a href="classgd_1_1_serializer_element.html">gd::SerializerElement</a></div><div class="ttdoc">An element used during serialization from/to XML or JSON. </div><div class="ttdef"><b>Definition:</b> SerializerElement.h:22</div></div>
+<div class="ttc" id="classgd_1_1_source_file_html_ac7bcc0c77ec4d99dfc6a08aee36b70f6"><div class="ttname"><a href="classgd_1_1_source_file.html#ac7bcc0c77ec4d99dfc6a08aee36b70f6">gd::SourceFile::GetLanguage</a></div><div class="ttdeci">const std::string &amp; GetLanguage() const </div><div class="ttdoc">Get the language of the source file. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:69</div></div>
 <div class="ttc" id="classgd_1_1_source_file_html"><div class="ttname"><a href="classgd_1_1_source_file.html">gd::SourceFile</a></div><div class="ttdoc">Represents a &quot;physical&quot; source file. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:25</div></div>
-<div class="ttc" id="classgd_1_1_source_file_html_a0b82965818902f54d2171f83089d7449"><div class="ttname"><a href="classgd_1_1_source_file.html#a0b82965818902f54d2171f83089d7449">gd::SourceFile::SetLanguage</a></div><div class="ttdeci">const std::string &amp; SetLanguage() const </div><div class="ttdoc">Get the language of the source file. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:84</div></div>
-<div class="ttc" id="classgd_1_1_source_file_html_af70c49dbbac8050dc4cf67e90a6b5dcd"><div class="ttname"><a href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">gd::SourceFile::SetLanguage</a></div><div class="ttdeci">void SetLanguage(std::string lang)</div><div class="ttdoc">Change the language of the source file. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:79</div></div>
+<div class="ttc" id="classgd_1_1_source_file_html_af70c49dbbac8050dc4cf67e90a6b5dcd"><div class="ttname"><a href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">gd::SourceFile::SetLanguage</a></div><div class="ttdeci">void SetLanguage(std::string lang)</div><div class="ttdoc">Change the language of the source file. </div><div class="ttdef"><b>Definition:</b> SourceFile.h:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:54 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:41 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::Direction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_direction.html",tooltip="Class defining a direction of an Animation. "];
+  Node1 [label="gd::CompilationInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_compilation_info.html",tooltip="Class used by gd::PlatformExtension to ensure that an extension is compiled against the right version..."];
 }

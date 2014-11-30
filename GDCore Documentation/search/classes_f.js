@@ -13,6 +13,5 @@ var searchData=
   ['spriteobjecteditor',['SpriteObjectEditor',['../classgd_1_1_sprite_object_editor.html',1,'gd']]],
   ['spriteobjectspositionupdater',['SpriteObjectsPositionUpdater',['../classgd_1_1_sprite_objects_position_updater.html',1,'gd']]],
   ['standardevent',['StandardEvent',['../classgd_1_1_standard_event.html',1,'gd']]],
-  ['strexpressionmetadata',['StrExpressionMetadata',['../classgd_1_1_str_expression_metadata.html',1,'gd']]],
   ['systemstats',['SystemStats',['../classgd_1_1_system_stats.html',1,'gd']]]
 ];

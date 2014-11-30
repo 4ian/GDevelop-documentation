@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['showprojectexportdialog',['ShowProjectExportDialog',['../dc/dda/classgdjs_1_1_exporter.html#a1cf43deaeeaee9bf32d507d39cfb5b8c',1,'gdjs::Exporter']]],
-  ['stop',['Stop',['../d5/d19/classgdjs_1_1_http_server.html#a4b1ddda690910ddda124ed69653943e9',1,'gdjs::HttpServer']]]
+  ['variablecodegenerationcallbacks',['VariableCodeGenerationCallbacks',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#a05aa3ea2c19e9fec9b1ecba6dc7a7914',1,'gdjs::VariableCodeGenerationCallbacks::VariableCodeGenerationCallbacks(std::string &amp;output, gd::EventsCodeGenerator &amp;codeGenerator_, gd::EventsCodeGenerationContext &amp;context_, const VariableScope &amp;scope_)'],['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#a260a9794ac39d0c3ebbea5e252598c8a',1,'gdjs::VariableCodeGenerationCallbacks::VariableCodeGenerationCallbacks(std::string &amp;output, gd::EventsCodeGenerator &amp;codeGenerator_, gd::EventsCodeGenerationContext &amp;context_, const std::string &amp;object)']]]
 ];

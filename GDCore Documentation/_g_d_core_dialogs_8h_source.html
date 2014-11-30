@@ -110,46 +110,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;wx/toolbar.h&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;wx/sizer.h&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;wx/listctrl.h&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_layers_editor_panel_base.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a> : <span class="keyword">public</span> wxPanel</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        ADD_LAYER_TOOL = 1001,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        DELETE_LAYER_TOOL = 1002,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        EDIT_LAYER_TOOL = 1003,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        HELP_TOOL = 1004,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        LAYERS_LIST_ID = 1005,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        LAYER_DOWN_TOOL = 1006,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        LAYER_UP_TOOL = 1007,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        REFRESH_TOOL = 1008,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    wxAuiManager* m_auimgr;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    wxAuiToolBar* m_toolbar;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    wxPanel* m_panel7;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    wxListCtrl* m_layersList;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnAddLayerClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnDeleteLayerClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnEditLayerClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLayerUpClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLayerDownClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRefreshClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnHelpClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;wx/dialog.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;wx/iconbndl.h&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;wx/stattext.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;wx/textctrl.h&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;wx/button.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;wx/checkbox.h&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;wx/statline.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;wx/statbmp.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;wx/hyperlink.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_layers_editor_panel_base.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a> : <span class="keyword">public</span> wxPanel</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        ADD_LAYER_TOOL = 1001,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        DELETE_LAYER_TOOL = 1002,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        EDIT_LAYER_TOOL = 1003,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        HELP_TOOL = 1004,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        LAYERS_LIST_ID = 1005,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        LAYER_DOWN_TOOL = 1006,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        LAYER_UP_TOOL = 1007,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        REFRESH_TOOL = 1008,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    wxAuiManager* m_auimgr;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    wxAuiToolBar* m_toolbar;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    wxPanel* m_panel7;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    wxListCtrl* m_layersList;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a>(wxWindow* parent, wxWindowID <span class="keywordtype">id</span> = wxID_ANY, <span class="keyword">const</span> wxPoint&amp; pos = wxDefaultPosition, <span class="keyword">const</span> wxSize&amp; size = wxSize(500,300), <span class="keywordtype">long</span> style = wxTAB_TRAVERSAL);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_layers_editor_panel_base_html"><div class="ttname"><a href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a></div><div class="ttdef"><b>Definition:</b> GDCoreDialogs.h:25</div></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnAddLayerClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnDeleteLayerClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnEditLayerClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLayerUpClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLayerDownClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRefreshClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnHelpClicked(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a>(wxWindow* parent, wxWindowID <span class="keywordtype">id</span> = wxID_ANY, <span class="keyword">const</span> wxPoint&amp; pos = wxDefaultPosition, <span class="keyword">const</span> wxSize&amp; size = wxSize(500,300), <span class="keywordtype">long</span> style = wxTAB_TRAVERSAL);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_base_group_event_dialog.html">   68</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_group_event_dialog.html">BaseGroupEventDialog</a> : <span class="keyword">public</span> wxDialog</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    wxStaticText* m_staticText49;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    wxTextCtrl* groupNameEdit;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    wxButton* backColorBt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    wxCheckBox* hideCheck;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    wxStaticLine* m_staticLine47;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    wxStaticBitmap* m_staticBitmap63;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    wxHyperlinkCtrl* m_hyperLink65;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    wxButton* okBt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    wxButton* cancelBt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onChooseBackgroundBtClick(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onOkBtClick(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onCancelBtClick(wxCommandEvent&amp; event) { <span class="keyword">event</span>.Skip(); }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_base_group_event_dialog.html">BaseGroupEventDialog</a>(wxWindow* parent, wxWindowID <span class="keywordtype">id</span> = wxID_ANY, <span class="keyword">const</span> wxString&amp; title = _(<span class="stringliteral">&quot;Edit the events group properties&quot;</span>), <span class="keyword">const</span> wxPoint&amp; pos = wxDefaultPosition, <span class="keyword">const</span> wxSize&amp; size = wxSize(400,200), <span class="keywordtype">long</span> style = wxDEFAULT_DIALOG_STYLE);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_base_group_event_dialog.html">BaseGroupEventDialog</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_layers_editor_panel_base_html"><div class="ttname"><a href="class_layers_editor_panel_base.html">LayersEditorPanelBase</a></div><div class="ttdef"><b>Definition:</b> GDCoreDialogs.h:34</div></div>
+<div class="ttc" id="class_base_group_event_dialog_html"><div class="ttname"><a href="class_base_group_event_dialog.html">BaseGroupEventDialog</a></div><div class="ttdef"><b>Definition:</b> GDCoreDialogs.h:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:54 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:41 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

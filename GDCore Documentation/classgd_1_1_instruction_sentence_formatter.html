@@ -97,35 +97,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Generate user friendly sentences and information from an action.  
+<p>Generate user friendly sentences and information from an action or condition metadata.  
  <a href="classgd_1_1_instruction_sentence_formatter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_instruction_sentence_formatter_8h_source.html">InstructionSentenceFormatter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b637aa1f3a685cff86574037bbe0889"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a1b637aa1f3a685cff86574037bbe0889">Translate</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;action, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;infos)</td></tr>
-<tr class="memdesc:a1b637aa1f3a685cff86574037bbe0889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sentence from an action.  <a href="#a1b637aa1f3a685cff86574037bbe0889">More...</a><br/></td></tr>
-<tr class="separator:a1b637aa1f3a685cff86574037bbe0889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfa7ba7e62f57e69e36e50771b3a6e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak"/>
+<tr class="memitem:a04eb4afed1ec53e3f9f46db9f044b340"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a04eb4afed1ec53e3f9f46db9f044b340">Translate</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;instr, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;metadata)</td></tr>
+<tr class="memdesc:a04eb4afed1ec53e3f9f46db9f044b340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sentence from an instruction and its metadata.  <a href="#a04eb4afed1ec53e3f9f46db9f044b340">More...</a><br/></td></tr>
+<tr class="separator:a04eb4afed1ec53e3f9f46db9f044b340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e613043bbfd78a5f33931e48aed2c1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e613043bbfd78a5f33931e48aed2c1c"></a>
+std::vector&lt; std::pair<br class="typebreak"/>
 &lt; std::string, <br class="typebreak"/>
-<a class="el" href="classgd_1_1_text_formatting.html">gd::TextFormatting</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a2bfa7ba7e62f57e69e36e50771b3a6e9">GetAsFormattedText</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;action, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;infos)</td></tr>
-<tr class="memdesc:a2bfa7ba7e62f57e69e36e50771b3a6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a formatted sentence from an action.  <a href="#a2bfa7ba7e62f57e69e36e50771b3a6e9">More...</a><br/></td></tr>
-<tr class="separator:a2bfa7ba7e62f57e69e36e50771b3a6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classgd_1_1_text_formatting.html">gd::TextFormatting</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a1e613043bbfd78a5f33931e48aed2c1c">GetAsFormattedText</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;instr, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;metadata)</td></tr>
+<tr class="memdesc:a1e613043bbfd78a5f33931e48aed2c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a formatted sentence from an instruction and its metadata. <br/></td></tr>
+<tr class="separator:a1e613043bbfd78a5f33931e48aed2c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991d5efd79e9630247cff5d7ea888e7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a991d5efd79e9630247cff5d7ea888e7d"></a>
 <a class="el" href="classgd_1_1_text_formatting.html">TextFormatting</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a991d5efd79e9630247cff5d7ea888e7d">GetFormattingFromType</a> (const std::string &amp;type)</td></tr>
 <tr class="memdesc:a991d5efd79e9630247cff5d7ea888e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="classgd_1_1_text_formatting.html" title="Represents the style of a text displayed in the events editor. ">TextFormatting</a> object associated to the <em>type</em>. <br/></td></tr>
 <tr class="separator:a991d5efd79e9630247cff5d7ea888e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8442bdcc4e92b237886b82f32bbaada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8442bdcc4e92b237886b82f32bbaada"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#ae8442bdcc4e92b237886b82f32bbaada">LabelFromType</a> (const std::string &amp;type)</td></tr>
-<tr class="memdesc:ae8442bdcc4e92b237886b82f32bbaada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the label of a button from parameter type. <br/></td></tr>
+<tr class="memdesc:ae8442bdcc4e92b237886b82f32bbaada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the label of a parameter type. <br/></td></tr>
 <tr class="separator:ae8442bdcc4e92b237886b82f32bbaada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffddca6180614b6696732dc68234729"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acffddca6180614b6696732dc68234729"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#acffddca6180614b6696732dc68234729">LoadTypesFormattingFromConfig</a> ()</td></tr>
+<tr class="memdesc:acffddca6180614b6696732dc68234729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the configuration from the default configuration, or saved configuration if one was saved with wxWidgets. <br/></td></tr>
+<tr class="separator:acffddca6180614b6696732dc68234729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c92887751a98c27e618524f9b7ce1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33c92887751a98c27e618524f9b7ce1e"></a>
 wxBitmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a33c92887751a98c27e618524f9b7ce1e">BitmapFromType</a> (const std::string &amp;type)</td></tr>
 <tr class="memdesc:a33c92887751a98c27e618524f9b7ce1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the bitmap of a button from parameter type. <br/></td></tr>
 <tr class="separator:a33c92887751a98c27e618524f9b7ce1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acffddca6180614b6696732dc68234729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#acffddca6180614b6696732dc68234729">LoadTypesFormattingFromConfig</a> ()</td></tr>
-<tr class="separator:acffddca6180614b6696732dc68234729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affce9980bfd49cd1d961763a22d96dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#affce9980bfd49cd1d961763a22d96dd3">SaveTypesFormattingToConfig</a> ()</td></tr>
 <tr class="separator:affce9980bfd49cd1d961763a22d96dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -147,53 +150,8 @@ std::map&lt; std::string, <br class="typebreak"/>
 <tr class="separator:a511fa757d45e49eb7336d081631d195e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generate user friendly sentences and information from an action. </p>
+<div class="textblock"><p>Generate user friendly sentences and information from an action or condition metadata. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2bfa7ba7e62f57e69e36e50771b3a6e9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::pair&lt; std::string, <a class="el" href="classgd_1_1_text_formatting.html">gd::TextFormatting</a> &gt; &gt; gd::InstructionSentenceFormatter::GetAsFormattedText </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td>
-          <td class="paramname"><em>infos</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a formatted sentence from an action. </p>
-<p>Create a formatted sentence from an action </p>
-
-</div>
-</div>
-<a class="anchor" id="acffddca6180614b6696732dc68234729"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::InstructionSentenceFormatter::LoadTypesFormattingFromConfig </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Load the configuration from wxConfigBase </p>
-
-</div>
-</div>
 <a class="anchor" id="affce9980bfd49cd1d961763a22d96dd3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +168,7 @@ std::map&lt; std::string, <br class="typebreak"/>
 
 </div>
 </div>
-<a class="anchor" id="a1b637aa1f3a685cff86574037bbe0889"></a>
+<a class="anchor" id="a04eb4afed1ec53e3f9f46db9f044b340"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -218,13 +176,13 @@ std::map&lt; std::string, <br class="typebreak"/>
           <td class="memname">string gd::InstructionSentenceFormatter::Translate </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
+          <td class="paramname"><em>instr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td>
-          <td class="paramname"><em>infos</em>&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -234,8 +192,8 @@ std::map&lt; std::string, <br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 
-<p>Create a sentence from an action. </p>
-<p>Generate the sentence describing an action. </p>
+<p>Create a sentence from an instruction and its metadata. </p>
+<p>Sentence is provided in the <a class="el" href="classgd_1_1_instruction_metadata.html" title="Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...">gd::InstructionMetadata</a> passed as parameter. Parameters placeholders ("_PARAMx_", x being the parameter index) are replaced by their values stored in the isntruction passed as parameter. </p>
 
 </div>
 </div>
@@ -246,7 +204,7 @@ std::map&lt; std::string, <br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:55 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:42 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

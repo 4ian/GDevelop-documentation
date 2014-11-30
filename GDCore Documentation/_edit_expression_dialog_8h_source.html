@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the GNU Lesser General Public License.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef EditExpressionDialog_H</span></div>
@@ -302,25 +302,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    DECLARE_EVENT_TABLE()</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classgd_1_1_tree_item_expression_info_data.html">  236</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_tree_item_expression_info_data.html">TreeItemExpressionInfoData</a> : <span class="keyword">public</span> wxTreeItemData</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="classgd_1_1_tree_item_expression_info_data.html">TreeItemExpressionInfoData</a>(<span class="keyword">const</span> std::string &amp; name_, <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; info_) : name(name_), info(info_) { };</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_tree_item_expression_info_data.html">TreeItemExpressionInfoData</a>() {};</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">const</span> std::string &amp; GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetExpressionMetadata()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> info; }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    std::string name;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> info;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;};</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classgd_1_1_tree_item_expression_info_data_html"><div class="ttname"><a href="classgd_1_1_tree_item_expression_info_data.html">gd::TreeItemExpressionInfoData</a></div><div class="ttdoc">Internal class used by gd::EditExpressionDialog. This class can be used by wxTreeCtrl, to attach information ( an gd::ExpressionMetadata and the name of the expression ) to an item. </div><div class="ttdef"><b>Definition:</b> EditExpressionDialog.h:236</div></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classgd_1_1_parameter_metadata_html"><div class="ttname"><a href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a></div><div class="ttdoc">Contains user-friendly info about a parameter, and information about what a parameter need...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:30</div></div>
-<div class="ttc" id="classgd_1_1_expression_metadata_html"><div class="ttname"><a href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about expressions and members needed to setup an expression. </div><div class="ttdef"><b>Definition:</b> ExpressionMetadata.h:86</div></div>
 <div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:42</div></div>
 <div class="ttc" id="classgd_1_1_edit_expression_dialog_html_a85efc998e6c8b704b0c9db2eba167777"><div class="ttname"><a href="classgd_1_1_edit_expression_dialog.html#a85efc998e6c8b704b0c9db2eba167777">gd::EditExpressionDialog::GetExpression</a></div><div class="ttdeci">const std::string &amp; GetExpression() const </div><div class="ttdef"><b>Definition:</b> EditExpressionDialog.h:56</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
@@ -328,7 +313,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 18 2014 16:33:54 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 30 2014 16:53:41 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

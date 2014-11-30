@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node1 [label="BaseEvent",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="gdjs::JsCodeEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d13/classgdjs_1_1_js_code_event.html",tooltip="Builtin internal event that pick an object of a list each time it is repeated. "];
+  Node2 [label="gdjs::JsCodeEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d13/classgdjs_1_1_js_code_event.html",tooltip="Event used to insert raw javascript code into events. "];
 }
