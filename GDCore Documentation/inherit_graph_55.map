@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classgd_1_1_initial_instance_functor.html" title="Tool class to be used with gd::InitialInstancesContainer::IterateOverInstances. " alt="" coords="6,107,173,133"/>
+<area shape="rect" id="node3" href="$classgd_1_1_highest_z_order_finder.html" title="Tool class picking returning the highest Z order of instances on a layer. " alt="" coords="229,5,392,32"/>
+<area shape="rect" id="node5" href="$classgd_1_1_instances_in_area_picker.html" title="Tool class collecting in a list all the instances that are inside the selectionRectangle of the layou..." alt="" coords="223,56,398,83"/>
+<area shape="rect" id="node7" href="$classgd_1_1_instances_renderer.html" title="Internal Tool class used to display instances at edittime. " alt="" coords="235,107,387,133"/>
+<area shape="rect" id="node9" href="$classgd_1_1_smallest_instance_under_cursor_picker.html" title="Tool class picking the smallest instance under the cursor. " alt="" coords="221,158,400,199"/>
+<area shape="rect" id="node11" href="$classgd_1_1_sprite_objects_position_updater.html" title="gd::SpriteObjectsPosition\lUpdater" alt="" coords="225,223,396,265"/>
+</map>

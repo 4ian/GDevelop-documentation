@@ -1,9 +1,0 @@
-digraph "BuiltinExtensions" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_2788447a247d89981b9774cad09bae1c {
-    graph [ bgcolor="#ddddee", pencolor="black", label="GDJS" fontname="Helvetica", fontsize="10", URL="dir_2788447a247d89981b9774cad09bae1c.html"]
-  dir_62d11054b38f1c7ad6b1370e15a9f297 [shape=box, label="BuiltinExtensions", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_62d11054b38f1c7ad6b1370e15a9f297.html"];
-  }
-}

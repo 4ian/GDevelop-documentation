@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\eventscontext.js - GDevelop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
+        
+            GDevelop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\eventscontext.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * GDevelop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the MIT License.
+ */
+
+/**
+ * EventsContext contains specific tools and data structures used
+ * by events generated code only.
+ *
+ * @namespace gdjs
+ * @class EventsContext
+ * @constructor
+ */
+gdjs.EventsContext = function()
+{
+	if (this._eventsObjectsMap !== undefined) this._eventsObjectsMap.clear();
+	else this._eventsObjectsMap = new Hashtable();
+
+    this._onceTriggers = {};
+    this._lastFrameOnceTrigger = {};
+};
+
+/**
+ * To be called when events begin so that &quot;Trigger once&quot; conditions
+ * are properly handled.
+ * @method startNewFrame
+ */
+gdjs.EventsContext.prototype.startNewFrame = function() {
+    this.clearObject(this._lastFrameOnceTrigger);
+    for (var k in this._onceTriggers) {
+        if (this._onceTriggers.hasOwnProperty(k)) {
+            this._lastFrameOnceTrigger[k] = this._onceTriggers[k];
+            delete this._onceTriggers[k];
+        }
+    }
+};
+
+/**
+ * Used by &quot;Trigger once&quot; conditions: Return true only if
+ * this method was not called with the same identifier during the last frame.
+ * @param triggerId The identifier of the &quot;Trigger once&quot; condition.
+ * @method triggerOnce
+ */
+gdjs.EventsContext.prototype.triggerOnce = function(triggerId) {
+	this._onceTriggers[triggerId] = true;
+
+	return !this._lastFrameOnceTrigger.hasOwnProperty(triggerId);
+};
+
+gdjs.EventsContext.prototype.clearObject = function(obj) {
+    for (var k in obj) {
+        if (obj.hasOwnProperty(k)) {
+            delete obj[k];
+        }
+    }
+};
+
+/**
+ * Clear the map containing objects lists.
+ * @method clearEventsObjectsMap
+ */
+gdjs.EventsContext.prototype.clearEventsObjectsMap = function() {
+    this._eventsObjectsMap.clear();
+    return this;
+};
+
+/**
+ * Add an objects list to the objects lists map.
+ * @method addObjectsToEventsMap
+ */
+gdjs.EventsContext.prototype.addObjectsToEventsMap = function(name, objectList) {
+    this._eventsObjectsMap.put(name, objectList);
+    return this;
+};
+
+/**
+ * Return the objects lists map.
+ * @method getEventsObjectsMap
+ */
+gdjs.EventsContext.prototype.getEventsObjectsMap = function() {
+    return this._eventsObjectsMap.clone();
+};
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

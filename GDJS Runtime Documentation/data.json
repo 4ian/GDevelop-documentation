@@ -9,8 +9,8 @@
         ]
     },
     "files": {
-        "../Runtime/cameratools.js": {
-            "name": "../Runtime/cameratools.js",
+        "..\\Runtime\\cameratools.js": {
+            "name": "..\\Runtime\\cameratools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.camera": 1
@@ -20,8 +20,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/commontools.js": {
-            "name": "../Runtime/commontools.js",
+        "..\\Runtime\\commontools.js": {
+            "name": "..\\Runtime\\commontools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.common": 1
@@ -31,8 +31,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/eventscontext.js": {
-            "name": "../Runtime/eventscontext.js",
+        "..\\Runtime\\eventscontext.js": {
+            "name": "..\\Runtime\\eventscontext.js",
             "modules": {},
             "classes": {
                 "gdjs.EventsContext": 1
@@ -42,8 +42,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/force.js": {
-            "name": "../Runtime/force.js",
+        "..\\Runtime\\force.js": {
+            "name": "..\\Runtime\\force.js",
             "modules": {},
             "classes": {
                 "gdjs.Force": 1
@@ -53,8 +53,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/gd.js": {
-            "name": "../Runtime/gd.js",
+        "..\\Runtime\\gd.js": {
+            "name": "..\\Runtime\\gd.js",
             "modules": {},
             "classes": {},
             "fors": {},
@@ -62,8 +62,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/imagemanager.js": {
-            "name": "../Runtime/imagemanager.js",
+        "..\\Runtime\\imagemanager.js": {
+            "name": "..\\Runtime\\imagemanager.js",
             "modules": {},
             "classes": {
                 "gdjs.ImageManager": 1
@@ -73,8 +73,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/inputtools.js": {
-            "name": "../Runtime/inputtools.js",
+        "..\\Runtime\\inputtools.js": {
+            "name": "..\\Runtime\\inputtools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.input": 1
@@ -84,8 +84,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/layer.js": {
-            "name": "../Runtime/layer.js",
+        "..\\Runtime\\layer.js": {
+            "name": "..\\Runtime\\layer.js",
             "modules": {},
             "classes": {
                 "gdjs.Layer": 1
@@ -95,8 +95,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/networktools.js": {
-            "name": "../Runtime/networktools.js",
+        "..\\Runtime\\networktools.js": {
+            "name": "..\\Runtime\\networktools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.network": 1
@@ -106,8 +106,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/objecttools.js": {
-            "name": "../Runtime/objecttools.js",
+        "..\\Runtime\\objecttools.js": {
+            "name": "..\\Runtime\\objecttools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.object": 1
@@ -117,8 +117,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/polygon.js": {
-            "name": "../Runtime/polygon.js",
+        "..\\Runtime\\polygon.js": {
+            "name": "..\\Runtime\\polygon.js",
             "modules": {},
             "classes": {
                 "gdjs.Polygon": 1
@@ -128,8 +128,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/runtimeautomatism.js": {
-            "name": "../Runtime/runtimeautomatism.js",
+        "..\\Runtime\\runtimeautomatism.js": {
+            "name": "..\\Runtime\\runtimeautomatism.js",
             "modules": {},
             "classes": {
                 "gdjs.RuntimeAutomatism": 1
@@ -137,8 +137,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "../Runtime/runtimegame.js": {
-            "name": "../Runtime/runtimegame.js",
+        "..\\Runtime\\runtimegame.js": {
+            "name": "..\\Runtime\\runtimegame.js",
             "modules": {},
             "classes": {
                 "gdjs.RuntimeGame": 1
@@ -148,8 +148,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/runtimeobject.js": {
-            "name": "../Runtime/runtimeobject.js",
+        "..\\Runtime\\runtimeobject.js": {
+            "name": "..\\Runtime\\runtimeobject.js",
             "modules": {},
             "classes": {
                 "gdjs.RuntimeObject": 1
@@ -159,8 +159,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/runtimescene.js": {
-            "name": "../Runtime/runtimescene.js",
+        "..\\Runtime\\runtimescene.js": {
+            "name": "..\\Runtime\\runtimescene.js",
             "modules": {},
             "classes": {
                 "gdjs.RuntimeScene": 1
@@ -168,8 +168,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "../Runtime/runtimescenetools.js": {
-            "name": "../Runtime/runtimescenetools.js",
+        "..\\Runtime\\runtimescenetools.js": {
+            "name": "..\\Runtime\\runtimescenetools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.runtimeScene": 1
@@ -179,8 +179,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/soundmanager.js": {
-            "name": "../Runtime/soundmanager.js",
+        "..\\Runtime\\soundmanager.js": {
+            "name": "..\\Runtime\\soundmanager.js",
             "modules": {},
             "classes": {
                 "gdjs.Sound": 1,
@@ -191,8 +191,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/soundtools.js": {
-            "name": "../Runtime/soundtools.js",
+        "..\\Runtime\\soundtools.js": {
+            "name": "..\\Runtime\\soundtools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.sound": 1
@@ -202,8 +202,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/spriteruntimeobject.js": {
-            "name": "../Runtime/spriteruntimeobject.js",
+        "..\\Runtime\\spriteruntimeobject.js": {
+            "name": "..\\Runtime\\spriteruntimeobject.js",
             "modules": {},
             "classes": {
                 "gdjs.SpriteAnimationFrame": 1,
@@ -215,8 +215,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/storagetools.js": {
-            "name": "../Runtime/storagetools.js",
+        "..\\Runtime\\storagetools.js": {
+            "name": "..\\Runtime\\storagetools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.storage": 1
@@ -226,8 +226,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/stringtools.js": {
-            "name": "../Runtime/stringtools.js",
+        "..\\Runtime\\stringtools.js": {
+            "name": "..\\Runtime\\stringtools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.string": 1
@@ -237,8 +237,8 @@
                 "gdjs.evtTools": 1
             }
         },
-        "../Runtime/timer.js": {
-            "name": "../Runtime/timer.js",
+        "..\\Runtime\\timer.js": {
+            "name": "..\\Runtime\\timer.js",
             "modules": {},
             "classes": {
                 "gdjs.Timer": 1
@@ -248,8 +248,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/variable.js": {
-            "name": "../Runtime/variable.js",
+        "..\\Runtime\\variable.js": {
+            "name": "..\\Runtime\\variable.js",
             "modules": {},
             "classes": {
                 "gdjs.Variable": 1
@@ -259,8 +259,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/variablescontainer.js": {
-            "name": "../Runtime/variablescontainer.js",
+        "..\\Runtime\\variablescontainer.js": {
+            "name": "..\\Runtime\\variablescontainer.js",
             "modules": {},
             "classes": {
                 "gdjs.VariablesContainer": 1
@@ -270,8 +270,8 @@
                 "gdjs": 1
             }
         },
-        "../Runtime/windowtools.js": {
-            "name": "../Runtime/windowtools.js",
+        "..\\Runtime\\windowtools.js": {
+            "name": "..\\Runtime\\windowtools.js",
             "modules": {},
             "classes": {
                 "gdjs.evtTools.window": 1
@@ -293,7 +293,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/cameratools.js",
+            "file": "..\\Runtime\\cameratools.js",
             "line": 7,
             "access": "private",
             "tagname": "",
@@ -308,7 +308,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 7,
             "static": 1,
             "access": "private",
@@ -323,7 +323,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/eventscontext.js",
+            "file": "..\\Runtime\\eventscontext.js",
             "line": 7,
             "description": "EventsContext contains specific tools and data structures used\nby events generated code only.",
             "is_constructor": 1
@@ -337,7 +337,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 7,
             "description": "A Force is used to move objects.",
             "is_constructor": 1,
@@ -365,7 +365,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/imagemanager.js",
+            "file": "..\\Runtime\\imagemanager.js",
             "line": 7,
             "description": "The imageManager stores textures this.can be used by the objects",
             "params": [
@@ -384,7 +384,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/inputtools.js",
+            "file": "..\\Runtime\\inputtools.js",
             "line": 7,
             "description": "Tools related to input ( Keyboard, mouse ), for events generated code.\n\nTODO : Map all keys<br>\nTODO : Implement others buttons for mouse<br>",
             "static": 1,
@@ -400,7 +400,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 7,
             "description": "Represents a layer used to display objects.<br>\nThe layer connects its Pixi container to the Pixi stage during its construction,\nbut then it is objects responsibility to connect themselves to the layer's container\n( See addChildToPIXIContainer method ).<br>\nLayers do not provide direct access to their pixi container as they do some extra work\nto ensure that z orders remains correct.\n\n<b>TODO:</b> Viewports and support for multiple cameras",
             "is_constructor": 1
@@ -414,7 +414,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/networktools.js",
+            "file": "..\\Runtime\\networktools.js",
             "line": 7,
             "static": 1,
             "access": "private",
@@ -429,7 +429,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/objecttools.js",
+            "file": "..\\Runtime\\objecttools.js",
             "line": 7,
             "description": "Tools related to objects, for events generated code.",
             "static": 1,
@@ -445,7 +445,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/polygon.js",
+            "file": "..\\Runtime\\polygon.js",
             "line": 7,
             "description": "Polygon represents a polygon which can be used to create collisions masks for RuntimeObject.",
             "is_constructor": 1
@@ -459,7 +459,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 7,
             "description": "RuntimeAutomatism represents an automatism being used by a RuntimeObject.",
             "is_constructor": 1,
@@ -487,7 +487,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 7,
             "description": "Represents a game being played.",
             "is_constructor": 1,
@@ -512,7 +512,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 7,
             "description": "RuntimeObject represents an object being used on a RuntimeScene.<br>\nThe constructor can be called on an already existing RuntimeObject:\nIn this case, the constructor will try to reuse as much already existing members\nas possible ( Recycling ).<br>\nHowever, you should not be calling the constructor on an already existing object\nwhich is not a RuntimeObject.",
             "is_constructor": 1,
@@ -536,7 +536,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 7,
             "description": "The runtimeScene object represents a scene being played and rendered in the browser in a canvas.",
             "params": [
@@ -555,7 +555,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/runtimescenetools.js",
+            "file": "..\\Runtime\\runtimescenetools.js",
             "line": 7,
             "description": "Tools related to runtime scene, for events generated code.",
             "static": 1,
@@ -571,7 +571,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/soundmanager.js",
+            "file": "..\\Runtime\\soundmanager.js",
             "line": 7,
             "description": "A wrapper around an Audio object.",
             "access": "private",
@@ -586,7 +586,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/soundmanager.js",
+            "file": "..\\Runtime\\soundmanager.js",
             "line": 97,
             "description": "SoundManager is used to manage the sounds and musics of a RuntimeScene.",
             "is_constructor": 1
@@ -600,7 +600,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/soundtools.js",
+            "file": "..\\Runtime\\soundtools.js",
             "line": 7,
             "description": "Class used by events to interact with the soundManager.",
             "static": 1,
@@ -616,7 +616,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 7,
             "description": "A frame used by a SpriteAnimation in a SpriteRuntimeObject.\n\nIt contains the texture displayed as well as information like the points position\nor the collision mask.",
             "is_constructor": 1
@@ -630,7 +630,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 96,
             "description": "Represents an animation of a SpriteRuntimeObject.",
             "is_constructor": 1
@@ -644,7 +644,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 141,
             "description": "The SpriteRuntimeObject represents an object that can display images.\n\n<b>TODO:</b> custom collisions masks.",
             "extends": "runtimeObject"
@@ -658,7 +658,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/storagetools.js",
+            "file": "..\\Runtime\\storagetools.js",
             "line": 7,
             "description": "Tools related to storage, for events generated code.",
             "static": 1,
@@ -674,7 +674,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 7,
             "description": "Tools related to strings manipulation, for events generated code.",
             "static": 1,
@@ -690,7 +690,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 7,
             "description": "Represents a timer which must be updated manually.",
             "is_constructor": 1
@@ -704,7 +704,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 7,
             "description": "A Variable is an object storing a value (number or a string) or children variables.",
             "is_constructor": 1,
@@ -724,7 +724,7 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs",
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 7,
             "description": "VariablesContainer stores variables, usually for a a RuntimeGame, a RuntimeScene\nor a RuntimeObject.",
             "is_constructor": 1,
@@ -744,9 +744,9 @@
             "plugin_for": [],
             "extension_for": [],
             "namespace": "gdjs.evtTools",
-            "file": "../Runtime/windowtools.js",
+            "file": "..\\Runtime\\windowtools.js",
             "line": 7,
-            "description": "Tools related to runtime scene, for events generated code.",
+            "description": "Tools related to window, for events generated code.",
             "static": 1,
             "access": "private",
             "tagname": ""
@@ -754,7 +754,7 @@
     },
     "classitems": [
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 15,
             "description": "Get the value of a variable. Equivalent of variable.getAsNumber().",
             "itemtype": "method",
@@ -766,7 +766,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 25,
             "description": "Get the string of a variable. Equivalent of variable.getAsString().",
             "itemtype": "method",
@@ -778,7 +778,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 35,
             "itemtype": "method",
             "name": "sceneVariableExists",
@@ -789,7 +789,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 44,
             "itemtype": "method",
             "name": "globalVariableExists",
@@ -800,7 +800,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 53,
             "itemtype": "method",
             "name": "variableChildExists",
@@ -811,7 +811,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 62,
             "itemtype": "method",
             "name": "variableRemoveChild",
@@ -822,7 +822,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 71,
             "description": "Convert a string to a float.",
             "itemtype": "method",
@@ -834,7 +834,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 81,
             "description": "Convert a number to a string.",
             "itemtype": "method",
@@ -846,7 +846,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/commontools.js",
+            "file": "..\\Runtime\\commontools.js",
             "line": 91,
             "description": "Always return false.",
             "itemtype": "method",
@@ -858,7 +858,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/eventscontext.js",
+            "file": "..\\Runtime\\eventscontext.js",
             "line": 24,
             "description": "To be called when events begin so that \"Trigger once\" conditions\nare properly handled.",
             "itemtype": "method",
@@ -867,7 +867,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/eventscontext.js",
+            "file": "..\\Runtime\\eventscontext.js",
             "line": 39,
             "description": "Used by \"Trigger once\" conditions: Return true only if\nthis method was not called with the same identifier during the last frame.",
             "params": [
@@ -882,7 +882,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/eventscontext.js",
+            "file": "..\\Runtime\\eventscontext.js",
             "line": 59,
             "description": "Clear the map containing objects lists.",
             "itemtype": "method",
@@ -891,7 +891,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/eventscontext.js",
+            "file": "..\\Runtime\\eventscontext.js",
             "line": 68,
             "description": "Add an objects list to the objects lists map.",
             "itemtype": "method",
@@ -900,7 +900,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/eventscontext.js",
+            "file": "..\\Runtime\\eventscontext.js",
             "line": 77,
             "description": "Return the objects lists map.",
             "itemtype": "method",
@@ -909,7 +909,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 27,
             "description": "Returns the X component of the force.",
             "itemtype": "method",
@@ -918,7 +918,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 35,
             "description": "Returns the Y component of the force.",
             "itemtype": "method",
@@ -927,7 +927,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 43,
             "description": "Set the x component of the force.",
             "itemtype": "method",
@@ -943,7 +943,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 53,
             "description": "Set the y component of the force.",
             "itemtype": "method",
@@ -959,7 +959,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 63,
             "description": "Set the angle of the force.",
             "itemtype": "method",
@@ -975,7 +975,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 80,
             "description": "Set the length of the force.",
             "itemtype": "method",
@@ -991,7 +991,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 97,
             "description": "Get the angle of the force",
             "itemtype": "method",
@@ -1000,7 +1000,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 113,
             "description": "Get the length of the force",
             "itemtype": "method",
@@ -1009,7 +1009,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 128,
             "description": "Return true if the force is temporary, false if it is permanent.",
             "itemtype": "method",
@@ -1018,7 +1018,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/force.js",
+            "file": "..\\Runtime\\force.js",
             "line": 136,
             "description": "Set if the force clearing.",
             "itemtype": "method",
@@ -1027,13 +1027,13 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 7,
             "class": "gdjs.ImageManager",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 19,
             "description": "Convert a rgb color value to a hex value.",
             "note": "No \"#\" or \"0x\" are added.",
@@ -1042,7 +1042,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 28,
             "description": "Get a random integer between 0 and max.",
             "itemtype": "method",
@@ -1052,7 +1052,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 38,
             "description": "Convert an angle in degrees to radians.",
             "itemtype": "method",
@@ -1062,7 +1062,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 47,
             "description": "Convert an angle in radians to degrees.",
             "itemtype": "method",
@@ -1072,7 +1072,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 56,
             "description": "Get the height of the document ( or of the viewport ) displayed in browser",
             "itemtype": "method",
@@ -1082,7 +1082,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 71,
             "description": "Get the width of the document ( or of the viewport ) displayed in browser",
             "itemtype": "method",
@@ -1092,7 +1092,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 85,
             "description": "Iterate over an array: func is called on each member of the array.<br>\n<br>\nNote that func must not remove elements from the array. If func\nreturn false, the iteration will stop.",
             "itemtype": "method",
@@ -1102,7 +1102,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 104,
             "description": "Register the runtime objects that can be used in runtimeScene.<br>\nObjects must be part of gdjs and have their property \"thisIsARuntimeObjectConstructor\"\ndefined and set to the name of the type of the object so as to be recognized.\nThe name of the type of the object must be complete, with the namespace if any. For\nexample, if you are providing a Text object in the TextObject extension, the full name\nof the type of the object is \"TextObject::Text\".",
             "itemtype": "method",
@@ -1112,7 +1112,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 125,
             "description": "Register the runtime automatisms that can be used bt runtimeObject.<br>\nAutomatisms must be part of gdjs and have their property \"thisIsARuntimeAutomatismConstructor\"\ndefined and set to the name of the type of the automatism so as to be recognized.\nThe name of the type of the automatism must be complete, with the namespace if any. For\nexample, if you are providing a Draggable automatism in the DraggableAutomatism extension,\nthe full name of the type of the automatism is \"DraggableAutomatism::Draggable\".",
             "itemtype": "method",
@@ -1122,7 +1122,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 146,
             "description": "Register the callbacks that will be called when a runtimeScene is loaded/unloaded or\nwhen an object is deleted from a scene.<br>\nCallbacks must be called respectively gdjsCallbackRuntimeSceneLoaded, gdjsCallbackRuntimeSceneUnloaded\nor gdjsCallbackObjectDeletedFromScene and be part of a (nested) child object of gdjs.<br>\nArguments passed to the function are the runtimeScene and the object if applicable.",
             "itemtype": "method",
@@ -1132,7 +1132,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 186,
             "description": "Get the constructor of an object.",
             "itemtype": "method",
@@ -1149,7 +1149,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/gd.js",
+            "file": "..\\Runtime\\gd.js",
             "line": 201,
             "description": "Get the constructor of an automatism.",
             "itemtype": "method",
@@ -1166,7 +1166,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/imagemanager.js",
+            "file": "..\\Runtime\\imagemanager.js",
             "line": 22,
             "description": "Return the PIXI texture associated to the specified name.\nReturns a placeholder texture if not found.",
             "params": [
@@ -1181,7 +1181,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/imagemanager.js",
+            "file": "..\\Runtime\\imagemanager.js",
             "line": 67,
             "description": "Return a PIXI texture which can be used as a placeholder when no\nsuitable texture can be found.",
             "itemtype": "method",
@@ -1190,7 +1190,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/inputtools.js",
+            "file": "..\\Runtime\\inputtools.js",
             "line": 20,
             "description": "Return true if the specified key is pressed\nTODO: Map all keys and uses a hash table.",
             "itemtype": "method",
@@ -1201,7 +1201,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 38,
             "description": "Update the position of the PIXI container. To be called after each change\nmade to position, zoom or rotation of the camera.",
             "access": "private",
@@ -1210,7 +1210,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 58,
             "description": "Get the name of the layer",
             "itemtype": "method",
@@ -1223,7 +1223,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 67,
             "description": "Add a child to the pixi container associated to the layer.<br>\nAll objects which are on this layer must be children of this container.<br>",
             "itemtype": "method",
@@ -1242,7 +1242,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 87,
             "description": "Change the z order of a child associated to an object.",
             "itemtype": "method",
@@ -1261,7 +1261,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 99,
             "description": "Remove a child from the internal pixi container.<br>\nShould be called when an object is deleted or removed from the layer.",
             "itemtype": "method",
@@ -1276,7 +1276,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 110,
             "description": "Change the camera center X position.<br>",
             "itemtype": "method",
@@ -1294,7 +1294,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 121,
             "description": "Change the camera center Y position.<br>",
             "itemtype": "method",
@@ -1312,7 +1312,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 132,
             "description": "Set the camera center X position.<br>",
             "itemtype": "method",
@@ -1332,7 +1332,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 144,
             "description": "Set the camera center Y position.<br>",
             "itemtype": "method",
@@ -1352,7 +1352,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 169,
             "description": "Check if the layer is visible.<br>",
             "itemtype": "method",
@@ -1364,7 +1364,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 179,
             "description": "Set the zoom of a camera.<br>",
             "itemtype": "method",
@@ -1383,7 +1383,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 192,
             "description": "Get the zoom of a camera.<br>",
             "itemtype": "method",
@@ -1401,7 +1401,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 203,
             "description": "Get the rotation of the camera, expressed in degrees.<br>",
             "itemtype": "method",
@@ -1419,7 +1419,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 214,
             "description": "Set the rotation of the camera, expressed in degrees.<br>\nThe rotation is made around the camera center.",
             "itemtype": "method",
@@ -1439,7 +1439,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/layer.js",
+            "file": "..\\Runtime\\layer.js",
             "line": 227,
             "description": "Convert a point from the canvas coordinates (For example, the mouse position) to the\n\"world\" coordinates.",
             "itemtype": "method",
@@ -1464,7 +1464,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/objecttools.js",
+            "file": "..\\Runtime\\objecttools.js",
             "line": 16,
             "description": "Do a test on two tables of objects so as to pick only the pair of objects for which the test is true.\nIf inverted == true, only the objects of the first table are filtered.\n\nNote that the func method is not called stricly for each pair: When considering a pair of objects, if\nthese objects have already been marked as picked, the func method won't be called again.\n\nCost (Worst case, func being always false):\n   Cost(Setting property 'picked' of NbObjList1+NbObjList2 objects to false)\n + Cost(functor)*NbObjList1*NbObjList2\n + Cost(Testing NbObjList1+NbObjList2 booleans)\n + Cost(Removing NbObjList1+NbObjList2 objects from all the lists)\n\nCost (Best case, func being always true):\n   Cost(Setting property 'picked' of NbObjList1+NbObjList2 objects to false)\n + Cost(functor)*(NbObjList1+NbObjList2)\n + Cost(Testing NbObjList1+NbObjList2 booleans)",
             "itemtype": "method",
@@ -1473,7 +1473,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/objecttools.js",
+            "file": "..\\Runtime\\objecttools.js",
             "line": 291,
             "description": "Do the work of creating a new object",
             "access": "private",
@@ -1482,7 +1482,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/objecttools.js",
+            "file": "..\\Runtime\\objecttools.js",
             "line": 312,
             "description": "Allows events to create a new object on a scene.",
             "access": "private",
@@ -1491,7 +1491,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/objecttools.js",
+            "file": "..\\Runtime\\objecttools.js",
             "line": 320,
             "description": "Allows events to create a new object on a scene.",
             "access": "private",
@@ -1500,7 +1500,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/objecttools.js",
+            "file": "..\\Runtime\\objecttools.js",
             "line": 328,
             "description": "Allows events to get the number of objects picked.",
             "access": "private",
@@ -1509,7 +1509,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/polygon.js",
+            "file": "..\\Runtime\\polygon.js",
             "line": 16,
             "description": "The vertices of the polygon",
             "itemtype": "property",
@@ -1518,7 +1518,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/polygon.js",
+            "file": "..\\Runtime\\polygon.js",
             "line": 22,
             "description": "The edges of the polygon. This property is only valid after calling\ncomputeEdges, and remains valid until vertices are modified.",
             "itemtype": "property",
@@ -1527,7 +1527,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/polygon.js",
+            "file": "..\\Runtime\\polygon.js",
             "line": 29,
             "description": "The center of the polygon. This property is only valid after calling\ncomputeCenter, and remains valid until vertices are modified.",
             "itemtype": "property",
@@ -1536,7 +1536,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/polygon.js",
+            "file": "..\\Runtime\\polygon.js",
             "line": 121,
             "description": "Do a collision test between two polygons.<br>\nPlease note that polygons must <b>convexes</b>!\n\nUses <a href=\"http://en.wikipedia.org/wiki/Hyperplane_separation_theorem\">Separating Axis Theorem </a>.<br>\nBased on <a href=\"http://www.codeproject.com/Articles/15573/2D-Polygon-Collision-Detection\">this</a>\nand <a href=\"http://stackoverflow.com/questions/5742329/problem-with-collision-response-sat\">this</a> article.",
             "itemtype": "method",
@@ -1562,7 +1562,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 24,
             "description": "Get the name of the automatism.",
             "itemtype": "method",
@@ -1575,7 +1575,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 33,
             "description": "Get the name identifier of the automatism.",
             "itemtype": "method",
@@ -1588,7 +1588,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 42,
             "description": "Called at each frame before events. Call doStepPreEvents.<br>\nAutomatisms writers: Please do not redefine this method. Redefine doStepPreEvents instead.",
             "itemtype": "method",
@@ -1603,7 +1603,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 52,
             "description": "Called at each frame after events. Call doStepPostEvents.<br>\nAutomatisms writers: Please do not redefine this method. Redefine doStepPreEvents instead.",
             "itemtype": "method",
@@ -1618,7 +1618,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 62,
             "description": "De/Activate the automatism",
             "itemtype": "method",
@@ -1627,7 +1627,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 78,
             "description": "Return true if the automatism is activated",
             "itemtype": "method",
@@ -1636,7 +1636,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 86,
             "description": "Automatisms writers: Reimplement this method to do extra work\nwhen the automatism is activated",
             "itemtype": "method",
@@ -1645,7 +1645,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 95,
             "description": "Automatisms writers: Reimplement this method to do extra work\nwhen the automatism is deactivated",
             "itemtype": "method",
@@ -1654,7 +1654,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 104,
             "description": "Automatisms writers: This method is called each tick before events are done.",
             "itemtype": "method",
@@ -1669,7 +1669,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 113,
             "description": "Automatisms writers: This method is called each tick after events are done.",
             "itemtype": "method",
@@ -1684,7 +1684,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeautomatism.js",
+            "file": "..\\Runtime\\runtimeautomatism.js",
             "line": 122,
             "description": "Automatisms writers: This method is called when the owner of the automatism\nis removed from its scene.",
             "itemtype": "method",
@@ -1693,7 +1693,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 66,
             "description": "Get the variables of the runtimeGame.",
             "itemtype": "method",
@@ -1705,7 +1705,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 79,
             "description": "Get the object containing the game data",
             "itemtype": "method",
@@ -1717,7 +1717,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 88,
             "description": "Get the data associated to a scene.",
             "itemtype": "method",
@@ -1735,7 +1735,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 110,
             "description": "Check if a scene exists",
             "itemtype": "method",
@@ -1753,7 +1753,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 129,
             "description": "Get the data associated to an external layout.",
             "itemtype": "method",
@@ -1771,7 +1771,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 148,
             "description": "Get the data representing all the global objects of the game.",
             "itemtype": "method",
@@ -1783,7 +1783,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 157,
             "description": "Should be called whenever a key is pressed",
             "itemtype": "method",
@@ -1799,7 +1799,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 166,
             "description": "Should be called whenever a key is released",
             "itemtype": "method",
@@ -1815,7 +1815,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 175,
             "description": "Return true if the key corresponding to keyCode is pressed.",
             "itemtype": "method",
@@ -1831,7 +1831,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 184,
             "description": "Return true if any key is pressed",
             "itemtype": "method",
@@ -1840,7 +1840,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 200,
             "description": "Should be called when the mouse is moved.<br>\nPlease note that the coordinates must be expressed relative to the view position.",
             "itemtype": "method",
@@ -1861,7 +1861,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 213,
             "description": "Get the mouse X position",
             "itemtype": "method",
@@ -1873,7 +1873,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 223,
             "description": "Get the mouse Y position",
             "itemtype": "method",
@@ -1885,8 +1885,26 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 232,
+            "description": "Get the default width of the game: canvas is created with this width,\nand cameras are created using this width.",
+            "itemtype": "method",
+            "name": "getDefaultWidth",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 241,
+            "description": "Get the default height of the game: canvas is created with this height,\nand cameras are created using this height.",
+            "itemtype": "method",
+            "name": "getDefaultHeight",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 250,
             "description": "Change the default width of the game: It won't affect the canvas size, but\nnew scene cameras will be created with this size.",
             "itemtype": "method",
             "name": "setDefaultWidth",
@@ -1901,8 +1919,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 251,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 260,
             "description": "Change the default height of the game: It won't affect the canvas size, but\nnew scene cameras will be created with this size.",
             "itemtype": "method",
             "name": "setDefaultHeight",
@@ -1917,8 +1935,26 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 261,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 271,
+            "description": "Get the current width of the canvas.",
+            "itemtype": "method",
+            "name": "getCurrentWidth",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 279,
+            "description": "Get the current height of the canvas.",
+            "itemtype": "method",
+            "name": "getCurrentHeight",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 287,
             "description": "Change the size of the canvas displaying the game.\nNote that if the canvas is fullscreen, it won't be resized, but when going back to\nnon fullscreen mode, the requested size will be used.",
             "itemtype": "method",
             "name": "setCanvasSize",
@@ -1938,8 +1974,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 279,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 305,
             "description": "Should be called whenever a mouse button is pressed",
             "itemtype": "method",
             "name": "onMouseButtonPressed",
@@ -1954,8 +1990,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 288,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 314,
             "description": "Should be called whenever a mouse button is released",
             "itemtype": "method",
             "name": "onMouseButtonReleased",
@@ -1970,8 +2006,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 297,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 323,
             "description": "Return true if the mouse button corresponding to buttonCode is pressed.",
             "itemtype": "method",
             "name": "isMouseButtonPressed",
@@ -1986,8 +2022,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 306,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 332,
             "description": "Should be called whenever the mouse wheel is used",
             "itemtype": "method",
             "name": "onMouseWheel",
@@ -2002,8 +2038,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 315,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 341,
             "description": "Return the mouse wheel delta",
             "itemtype": "method",
             "name": "getMouseWheelDelta",
@@ -2011,8 +2047,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 323,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 349,
             "description": "Return the minimal fps that must be guaranteed by the game.\n( Otherwise, game is slowed down ).",
             "itemtype": "method",
             "name": "getMinimalFramerate",
@@ -2020,8 +2056,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 332,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 358,
             "description": "Add the standard events handler.\nBe sure that the game has a renderer (See createStandardRenderer).",
             "itemtype": "method",
             "name": "bindStandardEvents",
@@ -2029,22 +2065,22 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 493,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 519,
             "description": "Set if the aspect ratio must be kept when the game canvas is resized.",
             "class": "gdjs.RuntimeGame",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 504,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 530,
             "description": "Change the margin that must be preserved around the game canvas.",
             "class": "gdjs.RuntimeGame",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 520,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 546,
             "description": "De/activate fullscreen for the canvas rendering the game.",
             "itemtype": "method",
             "name": "setFullScreen",
@@ -2052,8 +2088,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 553,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 579,
             "description": "Create a standard canvas inside canvasArea.\nThe game keep a reference to this canvas and will renderer in it.",
             "itemtype": "method",
             "name": "createStandardCanvas",
@@ -2061,20 +2097,19 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 580,
-            "description": "Resize the canvas, according to _isFullscreen, _forceFullscreen, _currentWidth,\n_currentHeight, _marginTop, _marginLeft, _marginRight, _marginBottom, _keepRatio.\n\nIf fullscreen is activated",
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 606,
+            "description": "Resize the canvas, according to _isFullscreen, _forceFullscreen, _currentWidth,\n_currentHeight, _marginTop, _marginLeft, _marginRight, _marginBottom, _keepRatio.",
             "itemtype": "method",
             "name": "_resizeCanvas",
             "access": "private",
             "tagname": "",
-            "static": 1,
             "class": "gdjs.RuntimeGame",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 627,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 650,
             "description": "Load all assets, displaying progress in renderer.",
             "itemtype": "method",
             "name": "loadAllAssets",
@@ -2082,8 +2117,8 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimegame.js",
-            "line": 668,
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 691,
             "description": "Launch the game, displayed in the renderer associated to the game (see createStandardCanvas).<br>\nThe method returns when the game is closed.",
             "itemtype": "method",
             "name": "startStandardGameLoop",
@@ -2091,7 +2126,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 98,
             "description": "Called each time the scene is rendered.",
             "itemtype": "method",
@@ -2107,7 +2142,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 108,
             "description": "Called when the object is created from an initial instance at the startup of the scene.<br>\nNote this.common properties ( position, angle, z order... ) have already been setup.",
             "itemtype": "method",
@@ -2122,7 +2157,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 119,
             "description": "Remove an object from a scene.<br>\nExtensions writers, do not change this method. Instead, redefine the onDeletedFromScene method.",
             "itemtype": "method",
@@ -2137,7 +2172,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 132,
             "description": "Called when the object is removed from its scene.",
             "itemtype": "method",
@@ -2152,7 +2187,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 143,
             "description": "Get the name of the object.",
             "itemtype": "method",
@@ -2165,7 +2200,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 152,
             "description": "Get the name identifier of the object.",
             "itemtype": "method",
@@ -2178,9 +2213,9 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 161,
-            "description": "Get the unique identifier of the object.<br>\nThe identifier is set by the runtimeScene owning the object.<br>\nYou can also use the id property ( this._bject.id ) for increased efficiency instead of\ncalling this method.",
+            "description": "Get the unique identifier of the object.<br>\nThe identifier is set by the runtimeScene owning the object.<br>\nYou can also use the id property (this._object.id) for increased efficiency instead of\ncalling this method.",
             "itemtype": "method",
             "name": "getUniqueId",
             "return": {
@@ -2191,7 +2226,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 174,
             "description": "Set the position of the object.",
             "itemtype": "method",
@@ -2212,7 +2247,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 186,
             "description": "Set the X position of the object.",
             "itemtype": "method",
@@ -2228,7 +2263,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 199,
             "description": "Get the X position of the object.",
             "itemtype": "method",
@@ -2241,7 +2276,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 209,
             "description": "Set the Y position of the object.",
             "itemtype": "method",
@@ -2257,7 +2292,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 222,
             "description": "Get the Y position of the object.",
             "itemtype": "method",
@@ -2270,7 +2305,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 232,
             "description": "Get the X position of the rendered object.<br>\nFor most objects, this will returns the same value as getX(). But if the object\nhas an origin this.is not the same as the point (0,0) of the object displayed,\ngetDrawableX will differs.",
             "itemtype": "method",
@@ -2283,7 +2318,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 245,
             "description": "Get the Y position of the rendered object.<br>\nFor most objects, this will returns the same value as getY(). But if the object\nhas an origin this.is not the same as the point (0,0) of the object displayed,\ngetDrawableY will differs.",
             "itemtype": "method",
@@ -2296,7 +2331,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 286,
             "description": "Set the Z order of the object.",
             "itemtype": "method",
@@ -2312,7 +2347,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 296,
             "description": "Get the Z order of the object.",
             "itemtype": "method",
@@ -2325,7 +2360,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 306,
             "description": "Set the angle of the object.",
             "itemtype": "method",
@@ -2341,7 +2376,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 319,
             "description": "Get the rotation of the object.",
             "itemtype": "method",
@@ -2354,7 +2389,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 329,
             "description": "Set the layer of the object.",
             "itemtype": "method",
@@ -2367,7 +2402,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 339,
             "description": "Get the layer of the object.",
             "itemtype": "method",
@@ -2380,7 +2415,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 349,
             "description": "Return true if the object is on the specified layer",
             "itemtype": "method",
@@ -2400,7 +2435,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 360,
             "description": "Get the container of the object variables",
             "itemtype": "method",
@@ -2413,7 +2448,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 369,
             "description": "Get the value of a variable considered as a number. Equivalent of variable.getAsNumber()",
             "itemtype": "method",
@@ -2432,7 +2467,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 381,
             "description": "Get the value of a variable considered as a string. Equivalent of variable.getAsString()",
             "itemtype": "method",
@@ -2451,7 +2486,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 393,
             "description": "Shortcut to set the value of a variable considered as a number",
             "itemtype": "method",
@@ -2471,7 +2506,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 404,
             "description": "Shortcut to set the value of a variable considered as a string",
             "itemtype": "method",
@@ -2491,7 +2526,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 415,
             "itemtype": "method",
             "name": "variableChildExists",
@@ -2513,7 +2548,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 427,
             "itemtype": "method",
             "name": "variableRemoveChild",
@@ -2535,7 +2570,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 439,
             "description": "Shortcut to test if a variable exists for the object.",
             "itemtype": "method",
@@ -2551,7 +2586,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 448,
             "description": "Hide or show the object",
             "itemtype": "method",
@@ -2567,7 +2602,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 457,
             "description": "Return true if the object is not hidden.",
             "itemtype": "method",
@@ -2580,7 +2615,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 466,
             "description": "Return true if the object is hidden.",
             "itemtype": "method",
@@ -2593,7 +2628,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 475,
             "description": "Return the width of the object",
             "itemtype": "method",
@@ -2606,7 +2641,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 484,
             "description": "Return the width of the object",
             "itemtype": "method",
@@ -2619,7 +2654,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 493,
             "description": "Return the X position of the object center, relative to the object position.",
             "itemtype": "method",
@@ -2628,7 +2663,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 501,
             "description": "Return the Y position of the object center, relative to the object position.",
             "itemtype": "method",
@@ -2637,7 +2672,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 511,
             "description": "Get a force from the garbage, or create a new force is garbage is empty.<br>\nTo be used each time a force is created so as to avoid temporaries objects.",
             "itemtype": "method",
@@ -2665,7 +2700,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 533,
             "description": "Add a force to the object to make it moving.",
             "itemtype": "method",
@@ -2691,7 +2726,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 544,
             "description": "Add a force using polar coordinates.",
             "itemtype": "method",
@@ -2717,7 +2752,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 558,
             "description": "Add a force oriented toward a position",
             "itemtype": "method",
@@ -2748,7 +2783,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 576,
             "description": "Add a force oriented toward another object.<br>\n(Shortcut for addForceTowardPosition)",
             "itemtype": "method",
@@ -2773,7 +2808,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 592,
             "description": "Deletes all forces applied on the object",
             "itemtype": "method",
@@ -2782,7 +2817,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 601,
             "description": "Return true if no forces are applied on the object.",
             "itemtype": "method",
@@ -2795,7 +2830,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 610,
             "description": "Called once a step by runtimeScene to update forces magnitudes and\nremove null ones.",
             "itemtype": "method",
@@ -2804,7 +2839,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 630,
             "description": "Return a force which is the sum of all forces applied on the object.",
             "itemtype": "method",
@@ -2817,7 +2852,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 649,
             "description": "Return true if the average angle of the forces applied on the object\nis in a given range.",
             "itemtype": "method",
@@ -2842,7 +2877,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 669,
             "description": "Get the hit boxes for the object.<br>\nThe default implementation returns a basic bouding box based on the result of getWidth and\ngetHeight. You should probably redefine updateHitBoxes instead of this function.",
             "itemtype": "method",
@@ -2855,7 +2890,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 690,
             "description": "Update the hit boxes for the object.<br>\nThe default implementation set a basic bouding box based on the result of getWidth and\ngetHeight.\n\nYou should not call this function by yourself, it is called when necessary by getHitBoxes method.\nHowever, you can redefine it if your object need custom hit boxes.",
             "itemtype": "method",
@@ -2864,7 +2899,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 740,
             "description": "Call each automatism stepPreEvents method.",
             "itemtype": "method",
@@ -2873,7 +2908,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 750,
             "description": "Call each automatism stepPostEvents method.",
             "itemtype": "method",
@@ -2882,7 +2917,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 760,
             "description": "Get an automatism from its name.<br>\nBe careful, the automatism must exists, no check is made on the name.",
             "itemtype": "method",
@@ -2898,7 +2933,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 770,
             "description": "Check if an automatism is used by the object.",
             "itemtype": "method",
@@ -2914,9 +2949,9 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 780,
-            "description": "De/activate an automatism of the object.<br>",
+            "description": "De/activate an automatism of the object.",
             "itemtype": "method",
             "name": "activateAutomatism",
             "params": [
@@ -2935,11 +2970,11 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 793,
-            "description": "De/activate an automatism of the object.<br>",
+            "description": "Check if an automatism is activated",
             "itemtype": "method",
-            "name": "activateAutomatism",
+            "name": "automatismActivated",
             "params": [
                 {
                     "name": "name",
@@ -2954,7 +2989,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 810,
             "description": "Separate the object from others objects, using their hitboxes.",
             "itemtype": "method",
@@ -2969,7 +3004,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 861,
             "description": "Put the object around a position, with a specific distance and angle.<br>\nThe distance is computed between the position and the center of the object.",
             "itemtype": "method",
@@ -3000,7 +3035,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 878,
             "description": "Put the object around another object, with a specific distance and angle.<br>\nThe distance is computed between the centers of the objects.",
             "itemtype": "method",
@@ -3025,7 +3060,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 892,
             "itemtype": "method",
             "name": "separateObjectsWithoutForces",
@@ -3040,7 +3075,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 925,
             "itemtype": "method",
             "name": "SeparateObjectsWithForces",
@@ -3055,7 +3090,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 968,
             "description": "Return true if the hitboxes of two objects are overlapping",
             "itemtype": "method",
@@ -3075,7 +3110,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 1012,
             "description": "Check the distance between two objects.",
             "itemtype": "method",
@@ -3085,7 +3120,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimeobject.js",
+            "file": "..\\Runtime\\runtimeobject.js",
             "line": 1024,
             "description": "Get the identifier associated to an object name :<br>\nSome features may want to compare objects name a large number of time. In this case,\nit may be more efficient to compare objects name identifier ( see gdjs.RuntimeObject.getNameId ).",
             "itemtype": "method",
@@ -3095,7 +3130,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 47,
             "description": "Should be called when the canvas where the scene is rendered has been resized.\nSee gdjs.RuntimeGame.startStandardGameLoop in particular.",
             "itemtype": "method",
@@ -3104,7 +3139,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 58,
             "description": "Load the runtime scene from the given scene.",
             "itemtype": "method",
@@ -3119,7 +3154,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 148,
             "description": "Create objects from initial instances data ( for example, the initial instances\nof the scene or from an external layout ).",
             "itemtype": "method",
@@ -3142,7 +3177,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 174,
             "description": "Set the function called each time the runtimeScene is stepped.<br>\nThe function will be passed the runtimeScene as argument.\n\nNote this.this is already set up by the runtimeScene constructor and this.you should\nnot need to use this method.",
             "itemtype": "method",
@@ -3157,7 +3192,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 188,
             "description": "Step and render the scene.<br>\nShould be called in a game loop.",
             "itemtype": "method",
@@ -3169,7 +3204,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 208,
             "description": "Render the PIXI stage associated to the runtimeScene.",
             "itemtype": "method",
@@ -3178,7 +3213,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 217,
             "description": "Called when rendering to do all times related tasks.",
             "itemtype": "method",
@@ -3189,7 +3224,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 237,
             "description": "Empty the list of the removed objects:<br>\nWhen an object is removed from the scene, it is still kept in the _instancesRemoved member\nof the RuntimeScene.<br>\nThis method should be called regularly ( after events or automatisms steps ) so as to clear this list\nand allows the removed objects to be cached ( or destroyed if the cache is full ).<br>\nThe removed objects could not be sent directly to the cache, as events may still be using them after\nremoving them from the scene for example.",
             "itemtype": "method",
@@ -3200,7 +3235,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 259,
             "description": "Tool function filling _allObjectsList member with all the instances.",
             "itemtype": "method",
@@ -3211,7 +3246,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 284,
             "description": "Update the objects before launching the events.",
             "itemtype": "method",
@@ -3222,7 +3257,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 301,
             "description": "Update the objects (update positions, time management...)",
             "itemtype": "method",
@@ -3233,7 +3268,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 323,
             "description": "Change the background color",
             "itemtype": "method",
@@ -3242,7 +3277,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 331,
             "description": "Get the name of the scene.",
             "itemtype": "method",
@@ -3251,7 +3286,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 339,
             "description": "Update the objects positions according to their forces",
             "itemtype": "method",
@@ -3260,7 +3295,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 360,
             "description": "Add an object to the instances living on the scene.",
             "itemtype": "method",
@@ -3275,7 +3310,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 374,
             "description": "Get all the instances of the object called name.",
             "itemtype": "method",
@@ -3290,7 +3325,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 388,
             "description": "Create a new object from its name. The object is also added to the instances\nliving on the scene ( No need to call RuntimeScene.addObject )",
             "params": [
@@ -3307,7 +3342,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 418,
             "description": "Must be called whenever an object must be removed from the scene.",
             "itemtype": "method",
@@ -3322,7 +3357,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 454,
             "description": "Return the time elapsed since the last frame, in milliseconds.",
             "itemtype": "method",
@@ -3331,7 +3366,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 462,
             "description": "Create an identifier for a new object of the scene.",
             "itemtype": "method",
@@ -3340,7 +3375,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 471,
             "description": "Get the PIXI.Stage associated to the RuntimeScene.",
             "itemtype": "method",
@@ -3349,7 +3384,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 479,
             "description": "Get the PIXI renderer associated to the RuntimeScene.",
             "itemtype": "method",
@@ -3358,7 +3393,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 487,
             "description": "Get the PIXI DisplayObjectContainer associated to the RuntimeScene.",
             "itemtype": "method",
@@ -3367,7 +3402,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 495,
             "description": "Get the runtimeGame associated to the RuntimeScene.",
             "itemtype": "method",
@@ -3376,7 +3411,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 503,
             "description": "Get the variables of the runtimeScene.",
             "itemtype": "method",
@@ -3388,7 +3423,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 512,
             "description": "Get the data representing the initial shared data of the scene for the specified automatism.",
             "itemtype": "method",
@@ -3404,7 +3439,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 556,
             "description": "Get the soundManager of the scene.",
             "return": {
@@ -3414,7 +3449,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 564,
             "description": "Return true if the scene is rendering its first frame.",
             "itemtype": "method",
@@ -3423,7 +3458,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 572,
             "description": "Set the time scale of the scene",
             "itemtype": "method",
@@ -3439,7 +3474,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 581,
             "description": "Get the time scale of the scene",
             "itemtype": "method",
@@ -3448,7 +3483,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 589,
             "description": "Return true if the scene requested the game to be stopped.",
             "itemtype": "method",
@@ -3457,7 +3492,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 597,
             "description": "When called, the scene will be flagged as requesting the game to be stopped.<br>\n( i.e: gameStopRequested will return true ).",
             "itemtype": "method",
@@ -3466,7 +3501,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 607,
             "description": "Return the name of the new scene to be launched instead of this one.",
             "itemtype": "method",
@@ -3475,7 +3510,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/runtimescene.js",
+            "file": "..\\Runtime\\runtimescene.js",
             "line": 615,
             "description": "When called, the scene will be flagged as requesting a new scene to be launched.",
             "itemtype": "method",
@@ -3484,7 +3519,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 82,
             "description": "Get a point of the frame.<br>\nIf the point does not exist, the origin is returned.",
             "itemtype": "method",
@@ -3496,28 +3531,28 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 199,
             "description": "Initialize the extra parameters that could be set for an instance.",
             "class": "gdjs.SpriteRuntimeObject",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 216,
             "description": "Update the internal PIXI.Sprite position, angle...",
             "class": "gdjs.SpriteRuntimeObject",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 248,
             "description": "Update the internal texture of the PIXI sprite.",
             "class": "gdjs.SpriteRuntimeObject",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 272,
             "description": "Update the current frame according to the elapsed time.",
             "itemtype": "method",
@@ -3526,7 +3561,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 308,
             "description": "Update the hit boxes for the object: <br>\nFallback to the default implementation (rotated bounding box) if there is no custom\nhitboxes defined for the current animation frame.",
             "itemtype": "method",
@@ -3535,28 +3570,28 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 412,
             "description": "Change the current frame displayed by the animation",
             "class": "gdjs.SpriteRuntimeObject",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 429,
             "description": "Get the index of the current frame displayed by the animation",
             "class": "gdjs.SpriteRuntimeObject",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 436,
             "description": "Return true if animation has ended.",
             "class": "gdjs.SpriteRuntimeObject",
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 478,
             "description": "Return an array containing the coordinates of the point passed as parameter\nin world coordinates (as opposed to the object local coordinates).\n\nBeware: this._animationFrame and this._sprite must *not* be null!\n\nAll transformations (flipping, scale, rotation) are supported.",
             "params": [
@@ -3584,7 +3619,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 742,
             "description": "Set the Z order of the object.",
             "itemtype": "method",
@@ -3600,7 +3635,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 756,
             "itemtype": "method",
             "name": "turnTowardObject",
@@ -3619,7 +3654,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/spriteruntimeobject.js",
+            "file": "..\\Runtime\\spriteruntimeobject.js",
             "line": 770,
             "description": "Return true if the cursor is on the object.<br>\nTODO : Support layer's camera rotation.",
             "itemtype": "method",
@@ -3631,7 +3666,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/storagetools.js",
+            "file": "..\\Runtime\\storagetools.js",
             "line": 17,
             "description": "Load into memory a JSON object stored in the local storage object\nprovided by the browser.\nThe JSON object is named GDJS_filename in the localStorage object.",
             "itemtype": "method",
@@ -3650,7 +3685,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/storagetools.js",
+            "file": "..\\Runtime\\storagetools.js",
             "line": 38,
             "description": "Unload from memory a JSON object, which is then stored in the local storage\nobject provided by the browser.\nThe JSON object is named GDJS_filename in the localStorage object.",
             "itemtype": "method",
@@ -3669,7 +3704,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 17,
             "description": "Return a string containing a new line character.",
             "itemtype": "method",
@@ -3680,7 +3715,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 26,
             "description": "Return a new string containing the substring of the original string.",
             "itemtype": "method",
@@ -3691,7 +3726,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 38,
             "description": "Return a new string containing the character at the specified position.",
             "itemtype": "method",
@@ -3702,7 +3737,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 50,
             "description": "Return the length of the string",
             "itemtype": "method",
@@ -3713,7 +3748,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 59,
             "description": "Search in a string",
             "itemtype": "method",
@@ -3724,7 +3759,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 68,
             "description": "Reverse search in a string",
             "itemtype": "method",
@@ -3735,7 +3770,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 77,
             "description": "Search in a string, starting from a specified position.",
             "itemtype": "method",
@@ -3746,7 +3781,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/stringtools.js",
+            "file": "..\\Runtime\\stringtools.js",
             "line": 86,
             "description": "Reverse search in a string, starting from a specified position.",
             "itemtype": "method",
@@ -3757,7 +3792,7 @@
             "namespace": "gdjs.evtTools"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 21,
             "description": "Get the name of the timer",
             "itemtype": "method",
@@ -3770,7 +3805,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 30,
             "description": "Get the time elapsed",
             "itemtype": "method",
@@ -3783,7 +3818,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 39,
             "description": "Notify the timer this.some time elapsed.",
             "itemtype": "method",
@@ -3792,7 +3827,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 47,
             "description": "Change the time.",
             "itemtype": "method",
@@ -3801,7 +3836,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 55,
             "description": "Set time to zero.",
             "itemtype": "method",
@@ -3810,7 +3845,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 63,
             "description": "Set if the timer is paused.",
             "itemtype": "method",
@@ -3819,7 +3854,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/timer.js",
+            "file": "..\\Runtime\\timer.js",
             "line": 71,
             "description": "Check if the timer is paused.",
             "itemtype": "method",
@@ -3828,7 +3863,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 59,
             "description": "Used ( usually by VariablesContainer ) to set that the variable must be\nconsidered as not existing in the container.",
             "itemtype": "method",
@@ -3837,7 +3872,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 68,
             "description": "Check if the variable must be considered as not existing in its container\n( Usually a VariablesContainer ).",
             "itemtype": "method",
@@ -3849,7 +3884,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 78,
             "description": "Get the child with the specified name.\n\nIf the variable has not the specified child, an empty variable with the specified name\nis added as child.",
             "itemtype": "method",
@@ -3858,7 +3893,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 95,
             "description": "Get the child with the specified name.\n\nIf the variable has not the specified child, an empty variable with the specified name\nis added as child.",
             "itemtype": "method",
@@ -3867,7 +3902,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 106,
             "description": "Remove the child with the specified name.\n\nIf the variable has not the specified child, nothing is done.",
             "itemtype": "method",
@@ -3882,7 +3917,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 118,
             "description": "Get the value of the variable, considered as a number",
             "itemtype": "method",
@@ -3895,7 +3930,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 133,
             "description": "Change the value of the variable, considered as a number",
             "itemtype": "method",
@@ -3911,7 +3946,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 144,
             "description": "Get the value of the variable, considered as a string",
             "itemtype": "method",
@@ -3924,7 +3959,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 158,
             "description": "Change the value of the variable, considered as a string",
             "itemtype": "method",
@@ -3940,7 +3975,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 169,
             "description": "Return true if the variable is a structure.",
             "itemtype": "method",
@@ -3949,7 +3984,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 177,
             "description": "Return true if the variable is a number.",
             "itemtype": "method",
@@ -3958,7 +3993,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variable.js",
+            "file": "..\\Runtime\\variable.js",
             "line": 185,
             "description": "Return the object containing all the children of the variable",
             "itemtype": "method",
@@ -3967,7 +4002,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 24,
             "description": "Initialize variables from a container data.<br>\nIf keepOldVariables is set to false ( by default ), all already existing variables will be\nerased, but the new variables will be accessible thanks to getFromIndex. <br>\nif keepOldVariables is set to true, already existing variables won't be erased and will be\nstill accessible thanks to getFromIndex.",
             "itemtype": "method",
@@ -3987,7 +4022,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 75,
             "description": "Add a new variable.",
             "itemtype": "method",
@@ -4007,7 +4042,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 85,
             "description": "Remove a variable.<br>\n( In fact, the variable is not really removed from the container to avoid creating garbage )",
             "itemtype": "method",
@@ -4023,7 +4058,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 97,
             "description": "Get a variable.",
             "itemtype": "method",
@@ -4042,7 +4077,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 119,
             "description": "Get a variable using its index.<br>\nThe index of a variable is its index in the data passed to initFrom.<br>\n\nThis method is generally used by events generated code to increase lookup speed for variables.<br>\nIf you're unsure about how to use this method, prefer to use get.",
             "itemtype": "method",
@@ -4061,7 +4096,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 145,
             "description": "Check if a variable exists in the container",
             "itemtype": "method",
@@ -4080,7 +4115,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 156,
             "description": "\"Bad\" variable container, used by events when no other valid container can be found.\nThis container has no state and always returns the bad variable ( see gdjs.VariablesContainer.badVariable ).",
             "static": 1,
@@ -4088,7 +4123,7 @@
             "namespace": "gdjs"
         },
         {
-            "file": "../Runtime/variablescontainer.js",
+            "file": "..\\Runtime\\variablescontainer.js",
             "line": 170,
             "description": "\"Bad\" variable, used by events when no other valid variable can be found.\nThis variable has no state and always return 0 or the empty string.",
             "static": 1,
@@ -4099,83 +4134,83 @@
     "warnings": [
         {
             "message": "unknown tag: note",
-            "line": " ../Runtime/gd.js:19"
+            "line": " ..\\Runtime\\gd.js:19"
         },
         {
             "message": "Missing item type",
-            "line": " ../Runtime/gd.js:7"
+            "line": " ..\\Runtime\\gd.js:7"
         },
         {
             "message": "Missing item type\nConvert a rgb color value to a hex value.",
-            "line": " ../Runtime/gd.js:19"
+            "line": " ..\\Runtime\\gd.js:19"
         },
         {
             "message": "Missing item type\nUpdate the position of the PIXI container. To be called after each change\nmade to position, zoom or rotation of the camera.",
-            "line": " ../Runtime/layer.js:38"
+            "line": " ..\\Runtime\\layer.js:38"
         },
         {
             "message": "Missing item type\nDo the work of creating a new object",
-            "line": " ../Runtime/objecttools.js:291"
+            "line": " ..\\Runtime\\objecttools.js:291"
         },
         {
             "message": "Missing item type\nAllows events to create a new object on a scene.",
-            "line": " ../Runtime/objecttools.js:312"
+            "line": " ..\\Runtime\\objecttools.js:312"
         },
         {
             "message": "Missing item type\nAllows events to create a new object on a scene.",
-            "line": " ../Runtime/objecttools.js:320"
+            "line": " ..\\Runtime\\objecttools.js:320"
         },
         {
             "message": "Missing item type\nAllows events to get the number of objects picked.",
-            "line": " ../Runtime/objecttools.js:328"
+            "line": " ..\\Runtime\\objecttools.js:328"
         },
         {
             "message": "Missing item type\nSet if the aspect ratio must be kept when the game canvas is resized.",
-            "line": " ../Runtime/runtimegame.js:493"
+            "line": " ..\\Runtime\\runtimegame.js:519"
         },
         {
             "message": "Missing item type\nChange the margin that must be preserved around the game canvas.",
-            "line": " ../Runtime/runtimegame.js:504"
+            "line": " ..\\Runtime\\runtimegame.js:530"
         },
         {
             "message": "Missing item type\nCreate a new object from its name. The object is also added to the instances\nliving on the scene ( No need to call RuntimeScene.addObject )",
-            "line": " ../Runtime/runtimescene.js:388"
+            "line": " ..\\Runtime\\runtimescene.js:388"
         },
         {
             "message": "Missing item type\nGet the soundManager of the scene.",
-            "line": " ../Runtime/runtimescene.js:556"
+            "line": " ..\\Runtime\\runtimescene.js:556"
         },
         {
             "message": "Missing item type\nInitialize the extra parameters that could be set for an instance.",
-            "line": " ../Runtime/spriteruntimeobject.js:199"
+            "line": " ..\\Runtime\\spriteruntimeobject.js:199"
         },
         {
             "message": "Missing item type\nUpdate the internal PIXI.Sprite position, angle...",
-            "line": " ../Runtime/spriteruntimeobject.js:216"
+            "line": " ..\\Runtime\\spriteruntimeobject.js:216"
         },
         {
             "message": "Missing item type\nUpdate the internal texture of the PIXI sprite.",
-            "line": " ../Runtime/spriteruntimeobject.js:248"
+            "line": " ..\\Runtime\\spriteruntimeobject.js:248"
         },
         {
             "message": "Missing item type\nChange the current frame displayed by the animation",
-            "line": " ../Runtime/spriteruntimeobject.js:412"
+            "line": " ..\\Runtime\\spriteruntimeobject.js:412"
         },
         {
             "message": "Missing item type\nGet the index of the current frame displayed by the animation",
-            "line": " ../Runtime/spriteruntimeobject.js:429"
+            "line": " ..\\Runtime\\spriteruntimeobject.js:429"
         },
         {
             "message": "Missing item type\nReturn true if animation has ended.",
-            "line": " ../Runtime/spriteruntimeobject.js:436"
+            "line": " ..\\Runtime\\spriteruntimeobject.js:436"
         },
         {
             "message": "Missing item type\n\"Bad\" variable container, used by events when no other valid container can be found.\nThis container has no state and always returns the bad variable ( see gdjs.VariablesContainer.badVariable ).",
-            "line": " ../Runtime/variablescontainer.js:156"
+            "line": " ..\\Runtime\\variablescontainer.js:156"
         },
         {
             "message": "Missing item type\n\"Bad\" variable, used by events when no other valid variable can be found.\nThis variable has no state and always return 0 or the empty string.",
-            "line": " ../Runtime/variablescontainer.js:170"
+            "line": " ..\\Runtime\\variablescontainer.js:170"
         }
     ]
 }

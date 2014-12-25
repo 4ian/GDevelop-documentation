@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>..\Runtime\soundmanager.js - GDevelop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
+        
+            GDevelop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+                    
+                        <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+                    
+                        <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+                    
+                        <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+                    
+                        <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+                    
+                        <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+                    
+                        <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+                    
+                        <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>..\Runtime\soundmanager.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/*
+ * GDevelop JS Platform
+ * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the MIT License.
+ */
+
+/**
+ * A wrapper around an Audio object.
+ * @namespace gdjs
+ * @class Sound
+ * @private
+ */
+gdjs.Sound = function(soundFile) {
+	this.audio = new Audio(soundFile || &quot;&quot;);
+	this._volume = 100;
+	this._requestedCurrentTime = null; //Can be set to the requested playing offset, when the audio is not ready yet. See below:
+
+	//Extra work when the audio is ready:
+	//Setting its playing offset to the request one, if any.
+	var that = this;
+	this.audio.addEventListener(&quot;canplay&quot;, function() {
+		if ( that._requestedCurrentTime != null ) { //The sound must start playing at the request offset.
+			that.audio.currentTime = that._requestedCurrentTime;
+			that._requestedCurrentTime = null;
+		}
+	});
+};
+
+gdjs.Sound.prototype.setSrc = function(soundFile) {
+	if (!gdjs.SoundManager.canUseOgg &amp;&amp;
+		(soundFile.length &gt;= 4 &amp;&amp; soundFile.substr(soundFile.length-4, 4).toLowerCase() === &quot;.ogg&quot;)) {
+		soundFile = soundFile.substr(0, soundFile.length-4)+&quot;.mp3&quot;;
+	}
+
+	this.audio.src = soundFile;
+}
+
+gdjs.Sound.prototype.setVolume = function(volume, globalVolume) {
+	if ( volume &lt; 0 ) volume = 0;
+	if ( volume &gt; 100 ) volume = 100;
+	if ( globalVolume &lt; 0 ) globalVolume = 0;
+	if ( globalVolume &gt; 100 ) globalVolume = 100;
+
+	this._volume = volume;
+	this.updateVolume(globalVolume);
+};
+
+gdjs.Sound.prototype.updateVolume = function(globalVolume) {
+	if ( globalVolume &lt; 0 ) globalVolume = 0;
+	this.audio.volume = this._volume/100*globalVolume/100;
+};
+
+gdjs.Sound.prototype.getVolume = function() {
+	return this._volume;
+};
+
+gdjs.Sound.prototype.hasEnded = function() {
+	return !this.audio.loop &amp;&amp; this.audio.currentTime == this.audio.duration;
+};
+
+gdjs.Sound.prototype.play = function() {
+	this.audio.play();
+};
+
+gdjs.Sound.prototype.pause = function() {
+	this.audio.pause();
+};
+
+gdjs.Sound.prototype.stop = function() {
+	if ( this.audio.readyState == 4 ) this.audio.currentTime = 0;
+	this.audio.pause();
+};
+
+gdjs.Sound.prototype.isPlaying = function() {
+	return this.audio &amp;&amp; !this.audio.paused;
+};
+
+gdjs.Sound.prototype.isPaused = function() {
+	return this.audio &amp;&amp; this.audio.paused &amp;&amp; this.audio.readyState == 4 &amp;&amp; this.audio.currentTime !== 0;
+};
+
+gdjs.Sound.prototype.isStopped = function() {
+	return !this.audio || (this.audio.paused &amp;&amp; (this.audio.readyState != 4 || this.audio.currentTime === 0));
+};
+
+gdjs.Sound.prototype.getPlayingOffset = function() {
+	return this.audio.readyState == 4 ? this.audio.currentTime : 0;
+};
+
+gdjs.Sound.prototype.setPlayingOffset = function(playingOffset) {
+	if ( this.audio.readyState == 4 )
+		this.audio.currentTime = playingOffset;
+	else
+		this._requestedCurrentTime = playingOffset;
+};
+
+/**
+ * SoundManager is used to manage the sounds and musics of a RuntimeScene.
+ *
+ * @namespace gdjs
+ * @class SoundManager
+ * @constructor
+ */
+gdjs.SoundManager = function()
+{
+    this._sounds = [];
+    this._musics = [];
+    this._freeSounds = []; //Sounds without an assigned channel.
+    this._freeMusics = []; //Musics without an assigned channel.
+    this._globalVolume = 100;
+
+    //Check if ogg is supported. If not, fallback to mp3.
+    try {
+		gdjs.SoundManager.canUseOgg = !!(new Audio().canPlayType(&#x27;audio/ogg; codecs=&quot;vorbis&quot;&#x27;));
+	}
+	catch (e) {}
+};
+gdjs.SoundManager.canUseOgg = false; //Static boolean to know if we can play ogg files or not.
+
+gdjs.SoundManager.prototype._getRecyledResource = function(arr) {
+	//Try to recycle an old sound.
+	for(var i = 0, len = arr.length;i&lt;len;++i) {
+		if (arr[i] !== null &amp;&amp; arr[i].hasEnded() ) {
+			return arr[i];
+		}
+	}
+
+	theSound = new gdjs.Sound();
+	arr.push(theSound);
+	return theSound;
+};
+
+gdjs.SoundManager.prototype.playSound = function(soundFile, loop, volume, pitch) {
+	var theSound = this._getRecyledResource(this._freeSounds);
+
+	theSound.setSrc(soundFile);
+	theSound.audio.loop = loop;
+	theSound.setVolume(volume, this._globalVolume);
+	theSound.audio.play();
+};
+
+gdjs.SoundManager.prototype.playSoundOnChannel = function(soundFile, channel, loop, volume, pitch) {
+	if ( this._sounds[channel] === null || this._sounds[channel] === undefined ) {
+		this._sounds[channel] = new gdjs.Sound();
+	}
+
+	var theSound = this._sounds[channel];
+
+	theSound.stop();
+	theSound.setSrc(soundFile);
+	theSound.audio.loop = loop;
+	theSound.setVolume(volume, this._globalVolume);
+	theSound.audio.play();
+};
+
+gdjs.SoundManager.prototype.stopSoundOnChannel = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) theSound.stop();
+};
+
+gdjs.SoundManager.prototype.pauseSoundOnChannel = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) theSound.pause();
+};
+
+gdjs.SoundManager.prototype.continueSoundOnChannel = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) theSound.play();
+};
+
+gdjs.SoundManager.prototype.isSoundOnChannelPlaying = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) return theSound.isPlaying();
+
+	return false;
+};
+
+gdjs.SoundManager.prototype.isSoundOnChannelPaused = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) return theSound.isPaused();
+
+	return false;
+};
+
+gdjs.SoundManager.prototype.isSoundOnChannelStopped = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) return theSound.isStopped();
+
+	return true;
+};
+
+gdjs.SoundManager.prototype.getSoundOnChannelVolume = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) return theSound.getVolume();
+	return 0;
+};
+
+gdjs.SoundManager.prototype.setSoundOnChannelVolume = function(channel, volume) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) theSound.setVolume(volume, this._globalVolume);
+};
+
+gdjs.SoundManager.prototype.getSoundOnChannelPlayingOffset = function(channel) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) return theSound.getPlayingOffset();
+	return 0;
+};
+
+gdjs.SoundManager.prototype.setSoundOnChannelPlayingOffset = function(channel, playingOffset) {
+	var theSound = this._sounds[channel];
+	if ( theSound !== null &amp;&amp; theSound !== undefined ) theSound.setPlayingOffset(playingOffset);
+};
+
+gdjs.SoundManager.prototype.playMusic = function(soundFile, loop, volume, pitch) {
+	var theMusic = this._getRecyledResource(this._freeMusics);
+
+	theMusic.setSrc(soundFile);
+	theMusic.audio.loop = loop;
+	theMusic.setVolume(volume, this._globalVolume);
+	theMusic.audio.play();
+};
+
+gdjs.SoundManager.prototype.playMusicOnChannel = function(soundFile, channel, loop, volume, pitch) {
+	if ( this._musics[channel] === null || this._musics[channel] === undefined ) {
+		this._musics[channel] = new gdjs.Sound();
+	}
+
+	var theMusic = this._musics[channel];
+
+	theMusic.stop();
+	theMusic.setSrc(soundFile);
+	theMusic.audio.loop = loop;
+	theMusic.setVolume(volume, this._globalVolume);
+	theMusic.audio.play();
+};
+
+gdjs.SoundManager.prototype.stopMusicOnChannel = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) theMusic.stop();
+};
+
+gdjs.SoundManager.prototype.pauseMusicOnChannel = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) theMusic.pause();
+};
+
+gdjs.SoundManager.prototype.continueMusicOnChannel = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) theMusic.play();
+};
+
+gdjs.SoundManager.prototype.isMusicOnChannelPlaying = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) return theMusic.isPlaying();
+
+	return false;
+};
+
+gdjs.SoundManager.prototype.isMusicOnChannelPaused = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) return theMusic.isPaused();
+
+	return false;
+};
+
+gdjs.SoundManager.prototype.isMusicOnChannelStopped = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) return theMusic.isStopped();
+
+	return true;
+};
+
+gdjs.SoundManager.prototype.getMusicOnChannelVolume = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) return theMusic.getVolume();
+	return 0;
+};
+
+gdjs.SoundManager.prototype.setMusicOnChannelVolume = function(channel, volume) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) theMusic.setVolume(volume, this._globalVolume);
+};
+
+gdjs.SoundManager.prototype.getMusicOnChannelPlayingOffset = function(channel) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) return theMusic.getPlayingOffset();
+	return 0;
+};
+
+gdjs.SoundManager.prototype.setMusicOnChannelPlayingOffset = function(channel, playingOffset) {
+	var theMusic = this._musics[channel];
+	if ( theMusic !== null &amp;&amp; theMusic !== undefined ) theMusic.setPlayingOffset(playingOffset);
+};
+
+gdjs.SoundManager.prototype.setGlobalVolume = function(volume) {
+	this._globalVolume = volume;
+
+	//Update the volumes of sounds.
+	for(var i = 0, len = this._freeSounds.length;i&lt;len;++i) {
+		if ( this._freeSounds[i] !== null &amp;&amp; this._freeSounds[i] !== undefined ) {
+			this._freeSounds[i].updateVolume(this._globalVolume);
+		}
+	}
+	for(var i = 0, len = this._freeMusics.length;i&lt;len;++i) {
+		if ( this._freeMusics[i] !== null &amp;&amp; this._freeMusics[i] !== undefined ) {
+			this._freeMusics[i].updateVolume(this._globalVolume);
+		}
+	}
+	for(var i = 0, len = this._sounds.length;i&lt;len;++i) {
+		if ( this._sounds[i] !== null &amp;&amp; this._sounds[i] !== undefined ) {
+			this._sounds[i].updateVolume(this._globalVolume);
+		}
+	}
+	for(var i = 0, len = this._musics.length;i&lt;len;++i) {
+		if ( this._musics[i] !== null &amp;&amp; this._musics[i] !== undefined ) {
+			this._musics[i].updateVolume(this._globalVolume);
+		}
+	}
+};
+
+gdjs.SoundManager.prototype.getGlobalVolume = function() {
+	return this._globalVolume;
+};
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

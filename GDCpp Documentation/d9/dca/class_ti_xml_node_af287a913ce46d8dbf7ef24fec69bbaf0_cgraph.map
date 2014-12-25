@@ -1,0 +1,7 @@
+<map id="TiXmlNode::InsertEndChild" name="TiXmlNode::InsertEndChild">
+<area shape="rect" id="node3" href="$d9/dca/class_ti_xml_node.html#a57b99d5c97d67a42b9752f5210a1ba5e" title="TiXmlNode::Type" alt="" coords="471,5,590,32"/>
+<area shape="rect" id="node5" href="$d9/dca/class_ti_xml_node.html#aa66f4ebcd175204a168ed7c2d7b43071" title="TiXmlNode::GetDocument" alt="" coords="445,81,616,108"/>
+<area shape="rect" id="node9" href="$d9/dca/class_ti_xml_node.html#a4508cc3a2d7a98e96a54cc09c37a78a4" title="TiXmlNode::Clone" alt="" coords="251,81,375,108"/>
+<area shape="rect" id="node11" href="$d9/dca/class_ti_xml_node.html#a1a881212554b759865f6cac79a851d38" title="TiXmlNode::LinkEndChild" alt="" coords="230,31,397,57"/>
+<area shape="rect" id="node7" href="$d9/dca/class_ti_xml_node.html#a8a4cda4b15c29f64cff419309aebed08" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="665,81,829,108"/>
+</map>

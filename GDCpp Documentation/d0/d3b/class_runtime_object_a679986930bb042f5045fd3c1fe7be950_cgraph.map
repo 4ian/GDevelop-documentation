@@ -1,0 +1,13 @@
+<map id="RuntimeObject::SeparateFromObjects" name="RuntimeObject::SeparateFromObjects">
+<area shape="rect" id="node3" href="$d0/d3b/class_runtime_object.html#a15f03c46b15118ce0cbdf99a1aeb33fa" title="Get the object hitbox(es) " alt="" coords="254,183,445,209"/>
+<area shape="rect" id="node11" href="$d0/d3b/class_runtime_object.html#a145cbfa2cf53ab5b4f7ede3ab4feb2a3" title="Get the X coordinate of the object in the layout. " alt="" coords="513,259,657,285"/>
+<area shape="rect" id="node15" href="$d0/d3b/class_runtime_object.html#a09f91467e1b8f7831f5c6d7c9eee0159" title="Get the Y coordinate of the object in the layout. " alt="" coords="512,309,659,336"/>
+<area shape="rect" id="node19" href="$da/df4/group___game_engine.html#ga7a5b7643e8e5e8cf401b5c4fceb4d9b3" title="PolygonCollisionTest" alt="" coords="278,360,421,387"/>
+<area shape="rect" id="node21" href="$d0/d3b/class_runtime_object.html#a4cfe5ef8c1702606c3229c2a910db809" title="Change X position of the object. " alt="" coords="278,411,421,437"/>
+<area shape="rect" id="node24" href="$d0/d3b/class_runtime_object.html#a4982f00578b0ea6a4c6f91de1fbcbc42" title="Change Y position of the object. " alt="" coords="277,461,422,488"/>
+<area shape="rect" id="node5" href="$d0/d3b/class_runtime_object.html#ab7f45e473387e34cfe121e2b772d0649" title="Get the width of the object. " alt="" coords="500,56,671,83"/>
+<area shape="rect" id="node7" href="$d0/d3b/class_runtime_object.html#a9fdc8ed08039f5c2cd692e9c22e26e9b" title="Get the height of the object. " alt="" coords="498,107,673,133"/>
+<area shape="rect" id="node9" href="$d0/d3b/class_runtime_object.html#a93ff1974abb09355d1cb208980f32cf8" title="Get the angle of the object, in degrees. " alt="" coords="500,157,671,184"/>
+<area shape="rect" id="node13" href="$d0/d3b/class_runtime_object.html#add684c08e01b0705448d04f000980489" title="Get the X position of the center, relative to the position returned by GetDrawableX(). " alt="" coords="494,208,677,235"/>
+<area shape="rect" id="node17" href="$d0/d3b/class_runtime_object.html#aacc50de5e06f1a74040e696775e0c1ae" title="Get the Y position of the center, relative to the position returned by GetDrawableY(). " alt="" coords="493,5,677,32"/>
+</map>

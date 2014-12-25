@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d3/de0/class_runtime_variables_container.html" title="Container for gd::Variable used at by games at runtime. " alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node3" href="$d8/d5f/class_bad_runtime_variables_container.html" title="&quot;Bad&quot; variable container, used by events when no other valid container can be found. " alt="" coords="232,5,435,32"/>
+</map>

@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="DatFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd1/class_dat_file.html",tooltip="Internal class used to create and access &quot;DAT files&quot;. "];
-}
