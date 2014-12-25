@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Game Develop Core: Overview of GDCore</title>
+<title>GDevelop Core: Overview of GDCore</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="glogo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Game Develop Core
+   <div id="projectname">GDevelop Core
    </div>
-   <div id="projectbrief">Core library for developing platforms and tools compatible with Game Develop.</div>
+   <div id="projectbrief">Core library for developing platforms and tools compatible with GDevelop.</div>
   </td>
  </tr>
  </tbody>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -74,10 +74,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="index.html">Game Develop Core</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -86,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="platformstructure"></a>
 Structure of a platform</h1>
-<p>A platform for Game Develop Core is a class inheriting from <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">gd::Platform</a>.<br/>
+<p>A platform for GDevelop Core is a class inheriting from <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">gd::Platform</a>.<br/>
  They contains the extensions of the platform (see below) and offer various methods, like <a class="el" href="classgd_1_1_platform.html#afe28367145868807397b89c2f0d5ff92" title="Must provide a gd::ProjectExporter object that will be used by the IDE to export the project so as to...">gd::Platform::GetProjectExporter</a> which is called by the IDE to export a <a class="el" href="classgd_1_1_project.html" title="Base class used to represent a project of a platform. ">gd::Project</a> to a stand-alone game.</p>
 <h2><a class="anchor" id="platformloading"></a>
 Platforms loading</h2>
@@ -100,16 +96,16 @@ Platforms loading</h2>
 <div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> GD_API DestroyGDPlatform() {</div>
 <div class="line">    JsPlatform::DestroySingleton(); <span class="comment">//Destroy the singleton.</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The platform dynamic library file is often located inside <em>Game Develop directory</em>/*xxx*Platform (<em>xxx</em> being replaced by the platform acronym).</p>
+</div><!-- fragment --><p>The platform dynamic library file is often located inside <em>GDevelop directory</em>/xxxPlatform (<em>xxx</em> being replaced by the platform acronym).</p>
 <p>In this folder, the platform can store basically anything it needs. For example, both GDJS and GDCpp are storing a folder called <em>Runtime</em> containing the game engine. If there is a sub directory called <em>Extensions</em>, the <a class="el" href="classgd_1_1_platform_loader.html" title="Load a gd::Platform in memory from a file and add it to the manager. ">gd::PlatformLoader</a> tries to load the extensions contained inside (see below).</p>
 <h1><a class="anchor" id="extensionsstructure"></a>
 Structure of an extension</h1>
-<p><b>Extensions</b> are seen by Game Develop Core as classes inheriting from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>.<br/>
+<p><b>Extensions</b> are seen by GDevelop Core as classes inheriting from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>.<br/>
  They are stored inside the platform they belong to, and they are also loaded from a dynamic library file thanks to <a class="el" href="classgd_1_1_extensions_loader.html" title="Internal class loading static extensions. ">gd::ExtensionsLoader</a>. The main job of an extension is to <b>declare</b> everything it provides: objects, actions and conditions, automatisms, expressions.<br/>
  This is done directly using the standard method provided by <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>, notably:</p>
 <ul>
 <li><a class="el" href="classgd_1_1_platform_extension.html#aeb64794cc22a8df0541e734358b6fdd2" title="Declare a new condition as being part of the extension. ">gd::PlatformExtension::AddCondition</a> and <a class="el" href="classgd_1_1_platform_extension.html#a5b2cccd02b509af21a9293bbfcdf94f9" title="Declare a new action as being part of the extension. ">gd::PlatformExtension::AddAction</a>,</li>
-<li><a class="el" href="classgd_1_1_platform_extension.html#a313d3b881a24fd4c15430f24652f6103" title="Declare a new expression as being part of the extension. ">gd::PlatformExtension::AddExpression</a> (and <a class="el" href="classgd_1_1_platform_extension.html#a5457e0280cfe79fa9c3aa51567eb3e23" title="Declare a new string expression as being part of the extension. ">gd::PlatformExtension::AddStrExpression</a>),</li>
+<li><a class="el" href="classgd_1_1_platform_extension.html#a313d3b881a24fd4c15430f24652f6103" title="Declare a new expression as being part of the extension. ">gd::PlatformExtension::AddExpression</a> (and <a class="el" href="classgd_1_1_platform_extension.html#ab897dfe5deb3be277e6d8a4db7c83cd6" title="Declare a new string expression as being part of the extension. ">gd::PlatformExtension::AddStrExpression</a>),</li>
 <li><a class="el" href="classgd_1_1_platform_extension.html#a49b70f32ba953397f38002d008bdf597" title="Declare a new object as being part of the extension. ">gd::PlatformExtension::AddObject</a> and <a class="el" href="classgd_1_1_platform_extension.html#a22457cf5a7d971a23daf0de9c5547ba9" title="Declare a new automatism as being part of the extension. ">gd::PlatformExtension::AddAutomatism</a></li>
 </ul>
 <p>Some platforms (like the C++ Platform) offers another base class which must be used instead of <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a> when declaring a platorm: As this base class inherits from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>, standard methods still works, but you may be able to declares some others features (the C++ Platform offers the possibility of declaring debugger related functions).</p>
@@ -127,7 +123,7 @@ Edit or write a new extension</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 3 2014 10:58:38 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 25 2014 20:53:30 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

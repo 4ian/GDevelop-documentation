@@ -18,7 +18,6 @@ var searchData=
   ['tixmltext',['TiXmlText',['../class_ti_xml_text.html',1,'']]],
   ['tixmlunknown',['TiXmlUnknown',['../class_ti_xml_unknown.html',1,'']]],
   ['tixmlvisitor',['TiXmlVisitor',['../class_ti_xml_visitor.html',1,'']]],
-  ['treeitemexpressioninfodata',['TreeItemExpressionInfoData',['../classgd_1_1_tree_item_expression_info_data.html',1,'gd']]],
-  ['treeitemstrexpressioninfodata',['TreeItemStrExpressionInfoData',['../classgd_1_1_tree_item_str_expression_info_data.html',1,'gd']]],
+  ['treeitemexpressionmetadata',['TreeItemExpressionMetadata',['../classgd_1_1_tree_item_expression_metadata.html',1,'gd']]],
   ['treeitemstringdata',['TreeItemStringData',['../classgd_1_1_tree_item_string_data.html',1,'gd']]]
 ];

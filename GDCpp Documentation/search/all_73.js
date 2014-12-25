@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['standard_20game_20develop_20extensions',['Standard Game Develop extensions',['../df/d1f/group___builtin_extensions.html',1,'']]],
+  ['standard_20gdevelop_20extensions',['Standard GDevelop extensions',['../df/d1f/group___builtin_extensions.html',1,'']]],
   ['standard_20file_20extension',['Standard File extension',['../dd/d4b/group___file_extension.html',1,'']]],
   ['savefile',['SaveFile',['../d6/d2e/class_ti_xml_document.html#a21c0aeb0d0a720169ad4ac89523ebe93',1,'TiXmlDocument::SaveFile() const '],['../d6/d2e/class_ti_xml_document.html#ae869f5ebf7fc54c4a1d737fb4689fd44',1,'TiXmlDocument::SaveFile(const char *filename) const '],['../d6/d2e/class_ti_xml_document.html#acf1672b4538c6d1d441f9f108aea2bf4',1,'TiXmlDocument::SaveFile(FILE *) const ']]],
   ['scene',['scene',['../dd/de6/class_runtime_context.html#a9b2290cb4861f19fca7e74ad540d12c7',1,'RuntimeContext']]],
@@ -8,6 +8,7 @@ var searchData=
   ['sceneloaded',['SceneLoaded',['../d5/de6/class_extension_base.html#a5f32f6e17f6d126ef85b668e988e2128',1,'ExtensionBase']]],
   ['sceneunloaded',['SceneUnloaded',['../d5/de6/class_extension_base.html#a47417b087504f5c9ed71e3ff5979a6cd',1,'ExtensionBase']]],
   ['sdatheader',['sDATHeader',['../d9/d24/structs_d_a_t_header.html',1,'']]],
+  ['separatefromobjects',['SeparateFromObjects',['../d0/d3b/class_runtime_object.html#a679986930bb042f5045fd3c1fe7be950',1,'RuntimeObject']]],
   ['separateobjectswithforces',['SeparateObjectsWithForces',['../d0/d3b/class_runtime_object.html#ab5f573e1f66ab522af9f1f7164555342',1,'RuntimeObject']]],
   ['separateobjectswithoutforces',['SeparateObjectsWithoutForces',['../d0/d3b/class_runtime_object.html#a2ffb1852dcc6f6fc1e98317336867673',1,'RuntimeObject']]],
   ['setangle',['SetAngle',['../d0/d3b/class_runtime_object.html#a347874f97ad277b9c1271da4d98689f9',1,'RuntimeObject::SetAngle()'],['../dd/d1a/class_runtime_sprite_object.html#a78b4590441392f90ef9160358ea4414e',1,'RuntimeSpriteObject::SetAngle()']]],
@@ -36,7 +37,7 @@ var searchData=
   ['setpitch',['SetPitch',['../db/d96/class_music.html#aec3c204d35db8a8277625edacb12c7c7',1,'Music::SetPitch()'],['../d0/d9e/class_sound.html#afc96e8fcfc9c1ee59822b6dd357ed1bf',1,'Sound::SetPitch()']]],
   ['setplayingoffset',['SetPlayingOffset',['../db/d96/class_music.html#a3935ab4d820c4731726583e05852ee69',1,'Music::SetPlayingOffset()'],['../d0/d9e/class_sound.html#a8092d4d3f0cef0b0de0d88b90f6c1bec',1,'Sound::SetPlayingOffset()']]],
   ['setrenderwindowisfullscreen',['SetRenderWindowIsFullScreen',['../d7/d7f/class_runtime_scene.html#a808498729e7e9a79f94c543b8cafc0a6',1,'RuntimeScene']]],
-  ['setresourcefile',['SetResourceFile',['../da/de2/classgd_1_1_ressources_loader.html#a2fa59b9f9f14b4fc3446ee0577db4b7e',1,'gd::RessourcesLoader']]],
+  ['setresourcefile',['SetResourceFile',['../de/dd6/classgd_1_1_resources_loader.html#a58ad2911fa8e6d5ac04aedd7c9654a95',1,'gd::ResourcesLoader']]],
   ['setrotation',['SetRotation',['../d4/d47/class_runtime_camera.html#a4d736c456251efd519da36fa73326a50',1,'RuntimeCamera']]],
   ['setsize',['SetSize',['../d4/d47/class_runtime_camera.html#ac6c41549b0056a7f1f5bd9570036b3d4',1,'RuntimeCamera']]],
   ['setsoundonchannel',['SetSoundOnChannel',['../d5/dd9/class_sound_manager.html#a23788c33f2d34d319f77a806e737d591',1,'SoundManager']]],
@@ -58,7 +59,7 @@ var searchData=
   ['setzorder',['SetZOrder',['../d0/d3b/class_runtime_object.html#aaab3934a6a10b28da26f928562b8d700',1,'RuntimeObject']]],
   ['sfileentry',['sFileEntry',['../d7/d54/structs_file_entry.html',1,'']]],
   ['shadermanager',['ShaderManager',['../d2/d24/class_shader_manager.html',1,'']]],
-  ['size',['Size',['../d4/de6/class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()'],['../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13',1,'sFileEntry::size()']]],
+  ['size',['size',['../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13',1,'sFileEntry::size()'],['../d4/de6/class_ti_xml_printer.html#ad01375ae9199bd2f48252eaddce3039d',1,'TiXmlPrinter::Size()']]],
   ['sortbyzorder',['SortByZOrder',['../d4/db0/struct_sort_by_z_order.html',1,'']]],
   ['sound',['Sound',['../d0/d9e/class_sound.html',1,'']]],
   ['sound_20engine',['Sound engine',['../d7/d58/group___sound_engine.html',1,'']]],

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>gdjs.RuntimeGame - Game Develop JS Runtime API</title>
+    <title>gdjs.RuntimeGame - GDevelop JS Runtime API</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -16,9 +16,9 @@
     <div class="navbar-inner">
         <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
         
-	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
         
-            Game Develop JS Runtime API
+            GDevelop JS Runtime API
         </h1>
 	<div class="nav">
             <li class="divider-vertical"></li>
@@ -290,8 +290,6 @@
                                 <a href="#" data-tabid="#methods" data-anchor="#method__resizeCanvas" data-tablink="_resizeCanvas">_resizeCanvas</a>
 
                                 
-                                    <span class="flag static">static</span>
-                                
                                 
                             </li>
                         
@@ -311,6 +309,34 @@
                         
                             <li class="index-item method">
                                 <a href="#" data-tabid="#methods" data-anchor="#method_createStandardCanvas" data-tablink="createStandardCanvas">createStandardCanvas</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getCurrentHeight" data-tablink="getCurrentHeight">getCurrentHeight</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getCurrentWidth" data-tablink="getCurrentWidth">getCurrentWidth</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getDefaultHeight" data-tablink="getDefaultHeight">getDefaultHeight</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getDefaultWidth" data-tablink="getDefaultWidth">getDefaultWidth</a>
 
                                 
                                 
@@ -518,8 +544,6 @@
     
 
     
-        <span class="flag static">static</span>
-    
 
     
 
@@ -536,7 +560,7 @@
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l580"><code>..\Runtime\runtimegame.js:580</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l606"><code>..\Runtime\runtimegame.js:606</code></a>
         
         </p>
 
@@ -549,8 +573,6 @@
     <div class="description">
         <p>Resize the canvas, according to _isFullscreen, _forceFullscreen, _currentWidth,
 _currentHeight, _marginTop, _marginLeft, _marginRight, _marginBottom, _keepRatio.</p>
-
-<p>If fullscreen is activated</p>
     </div>
 
     
@@ -647,7 +669,7 @@ _currentHeight, _marginTop, _marginLeft, _marginRight, _marginBottom, _keepRatio
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l332"><code>..\Runtime\runtimegame.js:332</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l358"><code>..\Runtime\runtimegame.js:358</code></a>
         
         </p>
 
@@ -702,7 +724,7 @@ Be sure that the game has a renderer (See createStandardRenderer).</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l553"><code>..\Runtime\runtimegame.js:553</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l579"><code>..\Runtime\runtimegame.js:579</code></a>
         
         </p>
 
@@ -715,6 +737,224 @@ Be sure that the game has a renderer (See createStandardRenderer).</p>
     <div class="description">
         <p>Create a standard canvas inside canvasArea.
 The game keep a reference to this canvas and will renderer in it.</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getCurrentHeight" class="method item">
+    <h3 class="name"><code>getCurrentHeight</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/.._Runtime_runtimegame.js.html#l279"><code>..\Runtime\runtimegame.js:279</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Get the current height of the canvas.</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getCurrentWidth" class="method item">
+    <h3 class="name"><code>getCurrentWidth</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/.._Runtime_runtimegame.js.html#l271"><code>..\Runtime\runtimegame.js:271</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Get the current width of the canvas.</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getDefaultHeight" class="method item">
+    <h3 class="name"><code>getDefaultHeight</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/.._Runtime_runtimegame.js.html#l241"><code>..\Runtime\runtimegame.js:241</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Get the default height of the game: canvas is created with this height,
+and cameras are created using this height.</p>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getDefaultWidth" class="method item">
+    <h3 class="name"><code>getDefaultWidth</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/.._Runtime_runtimegame.js.html#l232"><code>..\Runtime\runtimegame.js:232</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Get the default width of the game: canvas is created with this width,
+and cameras are created using this width.</p>
     </div>
 
     
@@ -997,7 +1237,7 @@ The game keep a reference to this canvas and will renderer in it.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l323"><code>..\Runtime\runtimegame.js:323</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l349"><code>..\Runtime\runtimegame.js:349</code></a>
         
         </p>
 
@@ -1052,7 +1292,7 @@ The game keep a reference to this canvas and will renderer in it.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l315"><code>..\Runtime\runtimegame.js:315</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l341"><code>..\Runtime\runtimegame.js:341</code></a>
         
         </p>
 
@@ -1614,7 +1854,7 @@ The game keep a reference to this canvas and will renderer in it.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l297"><code>..\Runtime\runtimegame.js:297</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l323"><code>..\Runtime\runtimegame.js:323</code></a>
         
         </p>
 
@@ -1691,7 +1931,7 @@ The game keep a reference to this canvas and will renderer in it.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l627"><code>..\Runtime\runtimegame.js:627</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l650"><code>..\Runtime\runtimegame.js:650</code></a>
         
         </p>
 
@@ -1929,7 +2169,7 @@ The game keep a reference to this canvas and will renderer in it.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l279"><code>..\Runtime\runtimegame.js:279</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l305"><code>..\Runtime\runtimegame.js:305</code></a>
         
         </p>
 
@@ -2016,7 +2256,7 @@ The game keep a reference to this canvas and will renderer in it.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l288"><code>..\Runtime\runtimegame.js:288</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l314"><code>..\Runtime\runtimegame.js:314</code></a>
         
         </p>
 
@@ -2212,7 +2452,7 @@ Please note that the coordinates must be expressed relative to the view position
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l306"><code>..\Runtime\runtimegame.js:306</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l332"><code>..\Runtime\runtimegame.js:332</code></a>
         
         </p>
 
@@ -2305,7 +2545,7 @@ Please note that the coordinates must be expressed relative to the view position
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l261"><code>..\Runtime\runtimegame.js:261</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l287"><code>..\Runtime\runtimegame.js:287</code></a>
         
         </p>
 
@@ -2409,7 +2649,7 @@ non fullscreen mode, the requested size will be used.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l251"><code>..\Runtime\runtimegame.js:251</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l260"><code>..\Runtime\runtimegame.js:260</code></a>
         
         </p>
 
@@ -2497,7 +2737,7 @@ new scene cameras will be created with this size.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l241"><code>..\Runtime\runtimegame.js:241</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l250"><code>..\Runtime\runtimegame.js:250</code></a>
         
         </p>
 
@@ -2575,7 +2815,7 @@ new scene cameras will be created with this size.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l520"><code>..\Runtime\runtimegame.js:520</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l546"><code>..\Runtime\runtimegame.js:546</code></a>
         
         </p>
 
@@ -2629,7 +2869,7 @@ new scene cameras will be created with this size.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimegame.js.html#l668"><code>..\Runtime\runtimegame.js:668</code></a>
+        <a href="../files/.._Runtime_runtimegame.js.html#l691"><code>..\Runtime\runtimegame.js:691</code></a>
         
         </p>
 

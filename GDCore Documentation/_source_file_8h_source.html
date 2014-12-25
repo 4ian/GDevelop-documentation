@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Game Develop Core: SourceFile.h Source File</title>
+<title>GDevelop Core: SourceFile.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="glogo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Game Develop Core
+   <div id="projectname">GDevelop Core
    </div>
-   <div id="projectbrief">Core library for developing platforms and tools compatible with Game Develop.</div>
+   <div id="projectbrief">Core library for developing platforms and tools compatible with GDevelop.</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,9 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Game Develop Core</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the GNU Lesser General Public License.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SOURCEFILE_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SOURCEFILE_H</span></div>
@@ -120,40 +120,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> UnserializeFrom(<span class="keyword">const</span> <a class="code" href="classgd_1_1_serializer_element.html" title="An element used during serialization from/to XML or JSON. ">SerializerElement</a> &amp; element);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#a5a67787b99073834deaa837e075c7762">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#a5a67787b99073834deaa837e075c7762" title="Set if the file is hidden from the user point of view and is only managed by Game Develop...">SetGDManaged</a>(<span class="keywordtype">bool</span> gdManaged_) { gdManaged = gdManaged_; };</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#a5a67787b99073834deaa837e075c7762">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#a5a67787b99073834deaa837e075c7762" title="Set if the file is hidden from the user point of view and is only managed by GDevelop. ">SetGDManaged</a>(<span class="keywordtype">bool</span> gdManaged_) { gdManaged = gdManaged_; };</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e">   59</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e" title="Return true if the file is hidden from the user point of view and is only managed by Game Develop...">IsGDManaged</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gdManaged; };</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e">   59</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_source_file.html#a57c5e0d8f5ec525cc2f7d063e52ea41e" title="Return true if the file is hidden from the user point of view and is only managed by GDevelop...">IsGDManaged</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gdManaged; };</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#ada3df615e2325f2a5f90c0e44b0793ab" title="When a source file is GD-managed, it is usually created for a specific event ( C++ Code Event )...">SetAssociatedEvent</a>(boost::weak_ptr&lt;BaseEvent&gt; event) { associatedGdEvent = event; };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#a298c981061fa5b3d1f5cd10e48f13ed8">   74</a></span>&#160;    boost::weak_ptr&lt;BaseEvent&gt; <a class="code" href="classgd_1_1_source_file.html#a298c981061fa5b3d1f5cd10e48f13ed8" title="Return a (weak) pointer to the event associated to the source file, if any. ">GetAssociatedEvent</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> associatedGdEvent; };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd" title="Change the language of the source file. ">SetLanguage</a>(std::string lang) { language = lang; }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#a0b82965818902f54d2171f83089d7449">   84</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_source_file.html#a0b82965818902f54d2171f83089d7449" title="Get the language of the source file. ">SetLanguage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> language; }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string filename; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    time_t lastBuildTimeStamp; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> gdManaged; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::string language; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    boost::weak_ptr&lt;BaseEvent&gt; associatedGdEvent; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//&quot;Tool&quot; Functions</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="structgd_1_1_external_source_file_has_name.html">  100</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgd_1_1_external_source_file_has_name.html">ExternalSourceFileHasName</a> : <span class="keyword">public</span> std::binary_function&lt;boost::shared_ptr&lt;SourceFile&gt;, std::string, bool&gt; {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> boost::shared_ptr&lt;SourceFile&gt; &amp; externalEvents, std::string name)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalEvents-&gt;GetFileName() == name; }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // SOURCEFILE_H</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd">   64</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_source_file.html#af70c49dbbac8050dc4cf67e90a6b5dcd" title="Change the language of the source file. ">SetLanguage</a>(std::string lang) { language = lang; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classgd_1_1_source_file.html#ac7bcc0c77ec4d99dfc6a08aee36b70f6">   69</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_source_file.html#ac7bcc0c77ec4d99dfc6a08aee36b70f6" title="Get the language of the source file. ">GetLanguage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> language; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string filename; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    time_t lastBuildTimeStamp; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> gdManaged; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::string language; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    boost::weak_ptr&lt;BaseEvent&gt; associatedGdEvent; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//&quot;Tool&quot; Functions</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="structgd_1_1_external_source_file_has_name.html">   85</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgd_1_1_external_source_file_has_name.html">ExternalSourceFileHasName</a> : <span class="keyword">public</span> std::binary_function&lt;boost::shared_ptr&lt;SourceFile&gt;, std::string, bool&gt; {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> boost::shared_ptr&lt;SourceFile&gt; &amp; externalEvents, std::string name)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalEvents-&gt;GetFileName() == name; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // SOURCEFILE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 3 2014 10:58:37 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 25 2014 20:53:30 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>..\Runtime\runtimeobject.js - Game Develop JS Runtime API</title>
+    <title>..\Runtime\runtimeobject.js - GDevelop JS Runtime API</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -16,9 +16,9 @@
     <div class="navbar-inner">
         <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
         
-	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
         
-            Game Develop JS Runtime API
+            GDevelop JS Runtime API
         </h1>
 	<div class="nav">
             <li class="divider-vertical"></li>
@@ -132,9 +132,9 @@
 <div class="file">
     <pre class="prettyprint linenums">
 /*
- * Game Develop JS Platform
+ * GDevelop JS Platform
  * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
- * This project is released under the GNU Lesser General Public License.
+ * This project is released under the MIT License.
  */
 
 /**
@@ -206,16 +206,16 @@ gdjs.RuntimeObject = function(runtimeScene, objectData)
     var that = this;
     var i = 0;
     gdjs.iterateOverArray(objectData.automatisms, function(autoData) {
-        var ctor = gdjs.getAutomatismConstructor(autoData.type);
+        var Ctor = gdjs.getAutomatismConstructor(autoData.type);
 
         //Try to reuse already existing automatisms.
         if ( i &lt; that._automatisms.length ) {
-            if ( that._automatisms[i] instanceof ctor )
-                ctor.call(that._automatisms[i], runtimeScene, autoData, that);
+            if ( that._automatisms[i] instanceof Ctor )
+                Ctor.call(that._automatisms[i], runtimeScene, autoData, that);
             else
-                that._automatisms[i] = new ctor(runtimeScene, autoData, that);
+                that._automatisms[i] = new Ctor(runtimeScene, autoData, that);
         }
-        else that._automatisms.push(new ctor(runtimeScene, autoData, that));
+        else that._automatisms.push(new Ctor(runtimeScene, autoData, that));
 
         that._automatismsTable.put(autoData.name, that._automatisms[i]);
 
@@ -235,7 +235,7 @@ gdjs.RuntimeObject.forcesGarbage = []; //Global container for unused forces, avo
  * @param elapsedTime {Number} The time elapsedTime since the last frame, in &lt;b&gt;seconds&lt;/b&gt;.
  */
 gdjs.RuntimeObject.prototype.updateTime = function(elapsedTime) {
-    //Nothing to do.
+    //Update the forces
 };
 
 /**
@@ -294,7 +294,7 @@ gdjs.RuntimeObject.prototype.getNameId = function() {
 /**
  * Get the unique identifier of the object.&lt;br&gt;
  * The identifier is set by the runtimeScene owning the object.&lt;br&gt;
- * You can also use the id property ( this._bject.id ) for increased efficiency instead of
+ * You can also use the id property (this._object.id) for increased efficiency instead of
  * calling this method.
  *
  * @method getUniqueId
@@ -302,8 +302,8 @@ gdjs.RuntimeObject.prototype.getNameId = function() {
  */
 gdjs.RuntimeObject.prototype.getUniqueId = function() {
     return this.id;
-};
-
+}
+;
 /**
  * Set the position of the object.
  *
@@ -390,8 +390,8 @@ gdjs.RuntimeObject.prototype.getDrawableY = function() {
 
 
 gdjs.RuntimeObject.prototype.rotateTowardPosition = function(x, y, speed, scene) {
-    this.rotateTowardAngle(Math.atan2(y - (this.getDrawableY()+this.getCenterY()),
-        x - (this.getDrawableX()+this.getCenterX()))*180/Math.PI, speed, scene);
+    this.rotateTowardAngle(Math.atan2(y - (this.getDrawableY() + this.getCenterY()),
+        x - (this.getDrawableX() + this.getCenterX()))*180/Math.PI, speed, scene);
 };
 
 gdjs.RuntimeObject.prototype.rotateTowardAngle = function(angle, speed, runtimeScene) {
@@ -403,7 +403,7 @@ gdjs.RuntimeObject.prototype.rotateTowardAngle = function(angle, speed, runtimeS
     var angularDiff = gdjs.evtTools.common.angleDifference(this.getAngle(), angle);
     var diffWasPositive = angularDiff &gt;= 0;
 
-    var newAngle = this.getAngle()+(diffWasPositive ? -1.0 : 1.0)*speed*runtimeScene.getElapsedTime()/1000;
+    var newAngle = this.getAngle() + (diffWasPositive ? -1.0 : 1.0) * speed * runtimeScene.getElapsedTime()/1000;
     if (gdjs.evtTools.common.angleDifference(newAngle, angle) &gt; 0 ^ diffWasPositive)
         newAngle = angle;
     this.setAngle(newAngle);
@@ -467,7 +467,7 @@ gdjs.RuntimeObject.prototype.getAngle = function() {
  */
 gdjs.RuntimeObject.prototype.setLayer = function(layer) {
     this.layer = layer;
-}
+};
 
 /**
  * Get the layer of the object.
@@ -477,7 +477,7 @@ gdjs.RuntimeObject.prototype.setLayer = function(layer) {
  */
 gdjs.RuntimeObject.prototype.getLayer = function() {
     return this.layer;
-}
+};
 
 /**
  * Return true if the object is on the specified layer
@@ -488,7 +488,7 @@ gdjs.RuntimeObject.prototype.getLayer = function() {
  */
 gdjs.RuntimeObject.prototype.isOnLayer = function(layer) {
     return this.layer === layer;
-}
+};
 
 /**
  * Get the container of the object variables
@@ -592,7 +592,7 @@ gdjs.RuntimeObject.prototype.hide = function(enable) {
  * @method isVisible
  * @return {Boolean} true if the object is not hidden.
  */
-gdjs.RuntimeObject.prototype.isVisible = function(enable) {
+gdjs.RuntimeObject.prototype.isVisible = function() {
     return !this.hidden;
 };
 
@@ -601,7 +601,7 @@ gdjs.RuntimeObject.prototype.isVisible = function(enable) {
  * @method isHidden
  * @return {Boolean} true if the object is hidden.
  */
-gdjs.RuntimeObject.prototype.isHidden = function(enable) {
+gdjs.RuntimeObject.prototype.isHidden = function() {
     return this.hidden;
 };
 
@@ -628,7 +628,7 @@ gdjs.RuntimeObject.prototype.getHeight = function() {
  * @method getCenterX
  */
 gdjs.RuntimeObject.prototype.getCenterX = function() {
-    return this.getWidth()/2;
+    return this.getWidth() / 2;
 };
 
 /**
@@ -636,7 +636,7 @@ gdjs.RuntimeObject.prototype.getCenterX = function() {
  * @method getCenterY
  */
 gdjs.RuntimeObject.prototype.getCenterY = function() {
-    return this.getHeight()/2;
+    return this.getHeight() / 2;
 };
 
 //Forces :
@@ -649,16 +649,16 @@ gdjs.RuntimeObject.prototype.getCenterY = function() {
  * @private
  * @param x {Number} The x coordinates of the force
  * @param y {Number} The y coordinates of the force
- * @param isTemporary {Boolean} Set if the force is temporary or not.
+ * @param clearing {Number} Set the force clearing
  */
-gdjs.RuntimeObject.prototype._getRecycledForce = function(x, y, isTemporary) {
+gdjs.RuntimeObject.prototype._getRecycledForce = function(x, y, clearing) {
     if ( gdjs.RuntimeObject.forcesGarbage.length === 0 )
-        return new gdjs.Force(x, y, isTemporary);
+        return new gdjs.Force(x, y, clearing);
     else {
         var recycledForce = gdjs.RuntimeObject.forcesGarbage.pop();
         recycledForce.setX(x);
         recycledForce.setY(y);
-        recycledForce.setTemporary(isTemporary);
+        recycledForce.setClearing(clearing);
         return recycledForce;
     }
 };
@@ -668,10 +668,10 @@ gdjs.RuntimeObject.prototype._getRecycledForce = function(x, y, isTemporary) {
  * @method addForce
  * @param x {Number} The x coordinates of the force
  * @param y {Number} The y coordinates of the force
- * @param isPermanent {Boolean} Set if the force is permanent or not.
+ * @param clearing {Number} Set the force clearing
  */
-gdjs.RuntimeObject.prototype.addForce = function(x,y, isPermanent) {
-    this._forces.push(this._getRecycledForce(x, y, !isPermanent));
+gdjs.RuntimeObject.prototype.addForce = function(x,y, clearing) {
+    this._forces.push(this._getRecycledForce(x, y, clearing));
 };
 
 /**
@@ -679,13 +679,13 @@ gdjs.RuntimeObject.prototype.addForce = function(x,y, isPermanent) {
  * @method addPolarForce
  * @param angle {Number} The angle of the force
  * @param len {Number} The length of the force
- * @param isPermanent {Boolean} Set if the force is permanent or not.
+ * @param clearing {Number} Set the force clearing
  */
-gdjs.RuntimeObject.prototype.addPolarForce = function(angle, len, isPermanent) {
+gdjs.RuntimeObject.prototype.addPolarForce = function(angle, len, clearing) {
     var forceX = Math.cos(angle/180*3.14159)*len;
     var forceY = Math.sin(angle/180*3.14159)*len;
 
-    this._forces.push(this._getRecycledForce(forceX, forceY, !isPermanent));
+    this._forces.push(this._getRecycledForce(forceX, forceY, clearing));
 };
 
 /**
@@ -694,16 +694,16 @@ gdjs.RuntimeObject.prototype.addPolarForce = function(angle, len, isPermanent) {
  * @param x {Number} The target x position
  * @param y {Number} The target y position
  * @param len {Number} The force length, in pixels.
- * @param isPermanent {Boolean} Set if the force is permanent or not.
+ * @param clearing {Number} Set the force clearing
  */
-gdjs.RuntimeObject.prototype.addForceTowardPosition = function(x,y, len, isPermanent) {
+gdjs.RuntimeObject.prototype.addForceTowardPosition = function(x,y, len, clearing) {
 
     var angle = Math.atan2(y - (this.getDrawableY()+this.getCenterY()),
                            x - (this.getDrawableX()+this.getCenterX()));
 
     var forceX = Math.cos(angle)*len;
     var forceY = Math.sin(angle)*len;
-    this._forces.push(this._getRecycledForce(forceX, forceY, !isPermanent));
+    this._forces.push(this._getRecycledForce(forceX, forceY, clearing));
 };
 
 /**
@@ -712,14 +712,14 @@ gdjs.RuntimeObject.prototype.addForceTowardPosition = function(x,y, len, isPerma
  * @method addForceTowardObject
  * @param obj The target object
  * @param len {Number} The force length, in pixels.
- * @param isPermanent {Boolean} Set if the force is permanent or not.
+ * @param clearing {Number} Set the force clearing
  */
-gdjs.RuntimeObject.prototype.addForceTowardObject = function(obj, len, isPermanent) {
+gdjs.RuntimeObject.prototype.addForceTowardObject = function(obj, len, clearing) {
     if ( obj == null ) return;
 
-    this.addForceTowardPosition(obj.getDrawableX()+obj.getCenterX(),
-                                obj.getDrawableY()+obj.getCenterY(),
-                                len, isPermanent);
+    this.addForceTowardPosition(obj.getDrawableX() + obj.getCenterX(),
+                                obj.getDrawableY() + obj.getCenterY(),
+                                len, clearing);
 };
 
 /**
@@ -741,18 +741,20 @@ gdjs.RuntimeObject.prototype.hasNoForces = function() {
 };
 
 /**
- * Called once a step by runtimeScene to remove temporary forces.
- *
+ * Called once a step by runtimeScene to update forces magnitudes and
+ * remove null ones.
  * @method updateForces
  */
-gdjs.RuntimeObject.prototype.updateForces = function() {
+gdjs.RuntimeObject.prototype.updateForces = function(elapsedTime) {
     for(var i = 0;i&lt;this._forces.length;) {
-
-        if ( this._forces[i].isTemporary() ) {
+        if(this._forces[i].getClearing() === 0 || this._forces[i].getLength() &lt;= 0.001)
+        {
             gdjs.RuntimeObject.forcesGarbage.push(this._forces[i]);
             this._forces.remove(i);
         }
-        else {
+        else
+        {
+            this._forces[i].setLength(this._forces[i].getLength() - this._forces[i].getLength() * ( 1 - this._forces[i].getClearing() ) * elapsedTime);
             ++i;
         }
     }
@@ -909,7 +911,7 @@ gdjs.RuntimeObject.prototype.hasAutomatism = function(name) {
 };
 
 /**
- * De/activate an automatism of the object.&lt;br&gt;
+ * De/activate an automatism of the object.
  *
  * @method activateAutomatism
  * @param name {String} The automatism name.
@@ -922,13 +924,13 @@ gdjs.RuntimeObject.prototype.activateAutomatism = function(name, enable) {
 };
 
 /**
- * De/activate an automatism of the object.&lt;br&gt;
+ * Check if an automatism is activated
  *
- * @method activateAutomatism
+ * @method automatismActivated
  * @param name {String} The automatism name.
  * @return true if the automatism is activated.
  */
-gdjs.RuntimeObject.prototype.automatismActivated = function(name, enable) {
+gdjs.RuntimeObject.prototype.automatismActivated = function(name) {
     if ( this._automatismsTable.containsKey(name) ) {
         this._automatismsTable.get(name).activated();
     }
@@ -1094,13 +1096,6 @@ gdjs.RuntimeObject.prototype.separateObjectsWithForces = function(objectsLists, 
             }
         }
     }
-
-    /*
-    for(var i = 0, len = objects.length;i&lt;len;++i) {
-        if ( objects[i].id != this.id ) {
-            this.addForceTowardObject(objects[i], -len, false);
-        }
-    }*/
 };
 
 /**
@@ -1182,6 +1177,7 @@ gdjs.RuntimeObject.getNameIdentifier = function(name) {
 
 //Notify gdjs the RuntimeObject exists.
 gdjs.RuntimeObject.thisIsARuntimeObjectConstructor = &quot;&quot;;
+
     </pre>
 </div>
 

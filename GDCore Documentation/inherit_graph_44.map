@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classgd_1_1_external_layout.html" title="An external layout allows to create layouts of objects that can be then inserted on a layout..." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node3" href="$structgd_1_1_external_events_has_name.html" title="Functor testing ExternalEvents&#39; name. " alt="" coords="174,5,362,32"/>
+<area shape="rect" id="node5" href="$structgd_1_1_external_layout_has_name.html" title="Functor testing ExternalLayout&#39; name. " alt="" coords="174,56,362,83"/>
+<area shape="rect" id="node7" href="$structgd_1_1_external_source_file_has_name.html" title="gd::ExternalSourceFileHasName" alt="" coords="163,107,373,133"/>
+<area shape="rect" id="node9" href="$structgd_1_1_group_has_the_same_name.html" title="Functor to easily find an object group with a specific name. " alt="" coords="173,157,363,184"/>
+<area shape="rect" id="node11" href="$structgd_1_1_layer_has_name.html" title="Functor testing layer name. " alt="" coords="201,208,335,235"/>
+<area shape="rect" id="node13" href="$structgd_1_1_layout_has_name.html" title="Functor testing layout name. " alt="" coords="198,259,338,285"/>
+<area shape="rect" id="node15" href="$structgd_1_1_object_has_name.html" title="Functor testing object name. " alt="" coords="199,309,337,336"/>
 </map>

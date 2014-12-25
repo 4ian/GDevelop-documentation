@@ -2,7 +2,7 @@ var searchData=
 [
   ['imagemanager',['ImageManager',['../classgd_1_1_image_manager.html',1,'gd']]],
   ['imageresource',['ImageResource',['../classgd_1_1_image_resource.html',1,'gd']]],
-  ['imagesusedinventorizer',['ImagesUsedInventorizer',['../class_images_used_inventorizer.html',1,'']]],
+  ['imagesusedinventorizer',['ImagesUsedInventorizer',['../classgd_1_1_images_used_inventorizer.html',1,'gd']]],
   ['initialinstance',['InitialInstance',['../classgd_1_1_initial_instance.html',1,'gd']]],
   ['initialinstancefunctor',['InitialInstanceFunctor',['../classgd_1_1_initial_instance_functor.html',1,'gd']]],
   ['initialinstancescontainer',['InitialInstancesContainer',['../classgd_1_1_initial_instances_container.html',1,'gd']]],

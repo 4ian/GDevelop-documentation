@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>gdjs.RuntimeObject - Game Develop JS Runtime API</title>
+    <title>gdjs.RuntimeObject - GDevelop JS Runtime API</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -16,9 +16,9 @@
     <div class="navbar-inner">
         <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
         
-	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
         
-            Game Develop JS Runtime API
+            GDevelop JS Runtime API
         </h1>
 	<div class="nav">
             <li class="divider-vertical"></li>
@@ -299,13 +299,6 @@ which is not a RuntimeObject.</p>
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#" data-tabid="#methods" data-anchor="#method_activateAutomatism" data-tablink="activateAutomatism">activateAutomatism</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item method">
                                 <a href="#" data-tabid="#methods" data-anchor="#method_addForce" data-tablink="addForce">addForce</a>
 
                                 
@@ -328,6 +321,13 @@ which is not a RuntimeObject.</p>
                         
                             <li class="index-item method">
                                 <a href="#" data-tabid="#methods" data-anchor="#method_addPolarForce" data-tablink="addPolarForce">addPolarForce</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_automatismActivated" data-tablink="automatismActivated">automatismActivated</a>
 
                                 
                                 
@@ -807,7 +807,7 @@ which is not a RuntimeObject.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l778"><code>..\Runtime\runtimeobject.js:778</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l780"><code>..\Runtime\runtimeobject.js:780</code></a>
         
         </p>
 
@@ -818,7 +818,7 @@ which is not a RuntimeObject.</p>
     </div>
 
     <div class="description">
-        <p>De/activate an automatism of the object.<br></p>
+        <p>De/activate an automatism of the object.</p>
     </div>
 
     
@@ -867,108 +867,6 @@ which is not a RuntimeObject.</p>
 </div>
 
                 
-                    <div id="method_activateAutomatism" class="method item">
-    <h3 class="name"><code>activateAutomatism</code></h3>
-
-    
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-            
-                <li class="arg">
-                    
-                        <code>name</code>
-                    
-                </li>
-            
-            </ul><span class="paren">)</span>
-        </div>
-    
-
-    
-        <span class="returns-inline">
-            <span class="type"></span>
-        </span>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/.._Runtime_runtimeobject.js.html#l791"><code>..\Runtime\runtimeobject.js:791</code></a>
-        
-        </p>
-
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>De/activate an automatism of the object.<br></p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">name</code>
-                        <span class="type">String</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>The automatism name.</p>
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
-    
-
-    
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                
-                    
-                    true if the automatism is activated.
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
                     <div id="method_addForce" class="method item">
     <h3 class="name"><code>addForce</code></h3>
 
@@ -990,7 +888,7 @@ which is not a RuntimeObject.</p>
             
                 <li class="arg">
                     
-                        <code>isPermanent</code>
+                        <code>clearing</code>
                     
                 </li>
             
@@ -1075,14 +973,14 @@ which is not a RuntimeObject.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">isPermanent</code>
-                        <span class="type">Boolean</span>
+                        <code class="param-name">clearing</code>
+                        <span class="type">Number</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Set if the force is permanent or not.</p>
+                        <p>Set the force clearing</p>
                     </div>
 
                     
@@ -1119,7 +1017,7 @@ which is not a RuntimeObject.</p>
             
                 <li class="arg">
                     
-                        <code>isPermanent</code>
+                        <code>clearing</code>
                     
                 </li>
             
@@ -1205,14 +1103,14 @@ which is not a RuntimeObject.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">isPermanent</code>
-                        <span class="type">Boolean</span>
+                        <code class="param-name">clearing</code>
+                        <span class="type">Number</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Set if the force is permanent or not.</p>
+                        <p>Set the force clearing</p>
                     </div>
 
                     
@@ -1255,7 +1153,7 @@ which is not a RuntimeObject.</p>
             
                 <li class="arg">
                     
-                        <code>isPermanent</code>
+                        <code>clearing</code>
                     
                 </li>
             
@@ -1355,14 +1253,14 @@ which is not a RuntimeObject.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">isPermanent</code>
-                        <span class="type">Boolean</span>
+                        <code class="param-name">clearing</code>
+                        <span class="type">Number</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Set if the force is permanent or not.</p>
+                        <p>Set the force clearing</p>
                     </div>
 
                     
@@ -1399,7 +1297,7 @@ which is not a RuntimeObject.</p>
             
                 <li class="arg">
                     
-                        <code>isPermanent</code>
+                        <code>clearing</code>
                     
                 </li>
             
@@ -1484,14 +1382,14 @@ which is not a RuntimeObject.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">isPermanent</code>
-                        <span class="type">Boolean</span>
+                        <code class="param-name">clearing</code>
+                        <span class="type">Number</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Set if the force is permanent or not.</p>
+                        <p>Set the force clearing</p>
                     </div>
 
                     
@@ -1501,6 +1399,108 @@ which is not a RuntimeObject.</p>
         </div>
     
 
+    
+
+    
+</div>
+
+                
+                    <div id="method_automatismActivated" class="method item">
+    <h3 class="name"><code>automatismActivated</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>name</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/.._Runtime_runtimeobject.js.html#l793"><code>..\Runtime\runtimeobject.js:793</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Check if an automatism is activated</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The automatism name.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    true if the automatism is activated.
+                
+            </div>
+        </div>
     
 
     
@@ -1559,7 +1559,7 @@ which is not a RuntimeObject.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l647"><code>..\Runtime\runtimeobject.js:647</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l649"><code>..\Runtime\runtimeobject.js:649</code></a>
         
         </p>
 
@@ -1738,7 +1738,7 @@ and the angle parameter is inferior to toleranceInDegrees parameter.
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l973"><code>..\Runtime\runtimeobject.js:973</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l968"><code>..\Runtime\runtimeobject.js:968</code></a>
         
         </p>
 
@@ -1920,7 +1920,7 @@ Extensions writers, do not change this method. Instead, redefine the onDeletedFr
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l1017"><code>..\Runtime\runtimeobject.js:1017</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l1012"><code>..\Runtime\runtimeobject.js:1012</code></a>
         
         </p>
 
@@ -2143,7 +2143,7 @@ Note this.common properties ( position, angle, z order... ) have already been se
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l758"><code>..\Runtime\runtimeobject.js:758</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l760"><code>..\Runtime\runtimeobject.js:760</code></a>
         
         </p>
 
@@ -2225,7 +2225,7 @@ Be careful, the automatism must exists, no check is made on the name.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l628"><code>..\Runtime\runtimeobject.js:628</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l630"><code>..\Runtime\runtimeobject.js:630</code></a>
         
         </p>
 
@@ -2623,7 +2623,7 @@ getDrawableY will differs.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l667"><code>..\Runtime\runtimeobject.js:667</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l669"><code>..\Runtime\runtimeobject.js:669</code></a>
         
         </p>
 
@@ -2907,7 +2907,7 @@ getHeight. You should probably redefine updateHitBoxes instead of this function.
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l1029"><code>..\Runtime\runtimeobject.js:1029</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l1024"><code>..\Runtime\runtimeobject.js:1024</code></a>
         
         </p>
 
@@ -2952,7 +2952,7 @@ it may be more efficient to compare objects name identifier ( see gdjs.RuntimeOb
             
                 <li class="arg">
                     
-                        <code>isTemporary</code>
+                        <code>clearing</code>
                     
                 </li>
             
@@ -3040,14 +3040,14 @@ To be used each time a force is created so as to avoid temporaries objects.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">isTemporary</code>
-                        <span class="type">Boolean</span>
+                        <code class="param-name">clearing</code>
+                        <span class="type">Number</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Set if the force is temporary or not.</p>
+                        <p>Set the force clearing</p>
                     </div>
 
                     
@@ -3112,7 +3112,7 @@ To be used each time a force is created so as to avoid temporaries objects.</p>
     <div class="description">
         <p>Get the unique identifier of the object.<br>
 The identifier is set by the runtimeScene owning the object.<br>
-You can also use the id property ( this._bject.id ) for increased efficiency instead of
+You can also use the id property (this._object.id) for increased efficiency instead of
 calling this method.</p>
     </div>
 
@@ -3742,7 +3742,7 @@ calling this method.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l768"><code>..\Runtime\runtimeobject.js:768</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l770"><code>..\Runtime\runtimeobject.js:770</code></a>
         
         </p>
 
@@ -4419,7 +4419,7 @@ calling this method.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l876"><code>..\Runtime\runtimeobject.js:876</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l878"><code>..\Runtime\runtimeobject.js:878</code></a>
         
         </p>
 
@@ -4555,7 +4555,7 @@ The distance is computed between the centers of the objects.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l859"><code>..\Runtime\runtimeobject.js:859</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l861"><code>..\Runtime\runtimeobject.js:861</code></a>
         
         </p>
 
@@ -4688,7 +4688,7 @@ The distance is computed between the position and the center of the object.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l808"><code>..\Runtime\runtimeobject.js:808</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l810"><code>..\Runtime\runtimeobject.js:810</code></a>
         
         </p>
 
@@ -4777,7 +4777,7 @@ The distance is computed between the position and the center of the object.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l923"><code>..\Runtime\runtimeobject.js:923</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l925"><code>..\Runtime\runtimeobject.js:925</code></a>
         
         </p>
 
@@ -4866,7 +4866,7 @@ The distance is computed between the position and the center of the object.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l890"><code>..\Runtime\runtimeobject.js:890</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l892"><code>..\Runtime\runtimeobject.js:892</code></a>
         
         </p>
 
@@ -5686,7 +5686,7 @@ The distance is computed between the position and the center of the object.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l748"><code>..\Runtime\runtimeobject.js:748</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l750"><code>..\Runtime\runtimeobject.js:750</code></a>
         
         </p>
 
@@ -5740,7 +5740,7 @@ The distance is computed between the position and the center of the object.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l738"><code>..\Runtime\runtimeobject.js:738</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l740"><code>..\Runtime\runtimeobject.js:740</code></a>
         
         </p>
 
@@ -5805,7 +5805,8 @@ The distance is computed between the position and the center of the object.</p>
     </div>
 
     <div class="description">
-        <p>Called once a step by runtimeScene to remove temporary forces.</p>
+        <p>Called once a step by runtimeScene to update forces magnitudes and
+remove null ones.</p>
     </div>
 
     
@@ -5848,7 +5849,7 @@ The distance is computed between the position and the center of the object.</p>
             
         
         
-        <a href="../files/.._Runtime_runtimeobject.js.html#l688"><code>..\Runtime\runtimeobject.js:688</code></a>
+        <a href="../files/.._Runtime_runtimeobject.js.html#l690"><code>..\Runtime\runtimeobject.js:690</code></a>
         
         </p>
 

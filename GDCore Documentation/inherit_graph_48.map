@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$classgd_1_1gd_ribbon_a_u_i_art_provider.html" title="Internal art provider providing a nice help button instead of the default one. " alt="" coords="217,5,399,32"/>
+<area shape="rect" id="node3" href="$classgd_1_1_g_d_aui_command_capture.html" title="gd::GDAuiCommandCapture" alt="" coords="156,5,343,32"/>
+<area shape="rect" id="node5" href="$classgd_1_1_layout_editor_previewer.html" title="Base class used to define what should happen when a preview is launched for a platform. " alt="" coords="163,56,335,83"/>
+<area shape="rect" id="node7" href="$classgd_1_1_parameter_controls_helper.html" title="Helper class used to create controls to edit parameters of an action/condition or an event template..." alt="" coords="155,107,344,133"/>
 </map>

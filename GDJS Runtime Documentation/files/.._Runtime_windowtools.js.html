@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>..\Runtime\windowtools.js - Game Develop JS Runtime API</title>
+    <title>..\Runtime\windowtools.js - GDevelop JS Runtime API</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -16,9 +16,9 @@
     <div class="navbar-inner">
         <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
         
-	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
         
-            Game Develop JS Runtime API
+            GDevelop JS Runtime API
         </h1>
 	<div class="nav">
             <li class="divider-vertical"></li>
@@ -132,13 +132,13 @@
 <div class="file">
     <pre class="prettyprint linenums">
 /*
- * Game Develop JS Platform
+ * GDevelop JS Platform
  * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
- * This project is released under the GNU Lesser General Public License.
+ * This project is released under the MIT License.
  */
 
 /**
- * Tools related to runtime scene, for events generated code.
+ * Tools related to window, for events generated code.
  * @namespace gdjs.evtTools
  * @class window
  * @static
@@ -174,8 +174,29 @@ gdjs.evtTools.window.getWindowTitle = function() {
 gdjs.evtTools.window.getWindowWidth = function() {
     return window.innerWidth;
 };
+
 gdjs.evtTools.window.getWindowHeight = function() {
     return window.innerHeight;
+};
+
+gdjs.evtTools.window.getCanvasWidth = function(runtimeScene) {
+	return runtimeScene.getGame().getCurrentWidth();
+};
+
+gdjs.evtTools.window.getCanvasHeight = function(runtimeScene) {
+	return runtimeScene.getGame().getCurrentHeight();
+};
+
+gdjs.evtTools.window.openURL = function(url) {
+    //Try to detect the environment to use the most adapted
+    //way of opening an URL.
+    if (typeof intel !== &quot;undefined&quot; &amp;&amp; intel.xdk &amp;&amp; intel.xdk.device &amp;&amp; intel.xdk.device.launchExternal) {
+        intel.xdk.device.launchExternal(url);
+    } else if (typeof Cocoon !== &quot;undefined&quot; &amp;&amp; Cocoon.App &amp;&amp; Cocoon.App.openURL ) {
+        Cocoon.App.openURL(url);
+    } else {
+        window.open(url);
+    }
 };
 
     </pre>

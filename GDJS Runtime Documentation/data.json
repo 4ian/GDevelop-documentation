@@ -1,7 +1,7 @@
 {
     "project": {
-        "name": "Game Develop JS Runtime API",
-        "description": "Game Develop JS Runtime: An engine for developing javascript based games using Game Develop",
+        "name": "GDevelop JS Runtime API",
+        "description": "GDevelop JS Runtime: An engine for developing javascript based games using GDevelop",
         "version": "1",
         "url": "http://www.compilgames.net",
         "paths": [
@@ -351,8 +351,8 @@
                     "description": "The initial y component"
                 },
                 {
-                    "name": "isTemporary",
-                    "description": "true if the force must be temporary"
+                    "name": "clearing",
+                    "description": "The clearing"
                 }
             ]
         },
@@ -746,7 +746,7 @@
             "namespace": "gdjs.evtTools",
             "file": "..\\Runtime\\windowtools.js",
             "line": 7,
-            "description": "Tools related to runtime scene, for events generated code.",
+            "description": "Tools related to window, for events generated code.",
             "static": 1,
             "access": "private",
             "tagname": ""
@@ -1013,23 +1013,16 @@
             "line": 128,
             "description": "Return true if the force is temporary, false if it is permanent.",
             "itemtype": "method",
-            "name": "isTemporary",
+            "name": "getClearing",
             "class": "gdjs.Force",
             "namespace": "gdjs"
         },
         {
             "file": "..\\Runtime\\force.js",
             "line": 136,
-            "description": "Set if the force is temporary or not.",
+            "description": "Set if the force clearing.",
             "itemtype": "method",
-            "name": "setTemporary",
-            "params": [
-                {
-                    "name": "enable",
-                    "description": "true if the force must be temporary",
-                    "type": "Boolean"
-                }
-            ],
+            "name": "setClearing",
             "class": "gdjs.Force",
             "namespace": "gdjs"
         },
@@ -1209,7 +1202,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 37,
+            "line": 38,
             "description": "Update the position of the PIXI container. To be called after each change\nmade to position, zoom or rotation of the camera.",
             "access": "private",
             "tagname": "",
@@ -1218,7 +1211,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 57,
+            "line": 58,
             "description": "Get the name of the layer",
             "itemtype": "method",
             "name": "getName",
@@ -1231,7 +1224,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 66,
+            "line": 67,
             "description": "Add a child to the pixi container associated to the layer.<br>\nAll objects which are on this layer must be children of this container.<br>",
             "itemtype": "method",
             "name": "addChildToPIXIContainer",
@@ -1250,7 +1243,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 86,
+            "line": 87,
             "description": "Change the z order of a child associated to an object.",
             "itemtype": "method",
             "name": "changePIXIContainerChildZOrder",
@@ -1269,7 +1262,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 98,
+            "line": 99,
             "description": "Remove a child from the internal pixi container.<br>\nShould be called when an object is deleted or removed from the layer.",
             "itemtype": "method",
             "name": "removePIXIContainerChild",
@@ -1284,7 +1277,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 109,
+            "line": 110,
             "description": "Change the camera center X position.<br>",
             "itemtype": "method",
             "name": "getCameraX",
@@ -1302,7 +1295,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 120,
+            "line": 121,
             "description": "Change the camera center Y position.<br>",
             "itemtype": "method",
             "name": "getCameraY",
@@ -1320,7 +1313,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 131,
+            "line": 132,
             "description": "Set the camera center X position.<br>",
             "itemtype": "method",
             "name": "setCameraX",
@@ -1340,7 +1333,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 143,
+            "line": 144,
             "description": "Set the camera center Y position.<br>",
             "itemtype": "method",
             "name": "setCameraY",
@@ -1360,7 +1353,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 168,
+            "line": 169,
             "description": "Check if the layer is visible.<br>",
             "itemtype": "method",
             "name": "isVisible",
@@ -1372,7 +1365,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 178,
+            "line": 179,
             "description": "Set the zoom of a camera.<br>",
             "itemtype": "method",
             "name": "setCameraZoom",
@@ -1391,7 +1384,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 191,
+            "line": 192,
             "description": "Get the zoom of a camera.<br>",
             "itemtype": "method",
             "name": "getZoom",
@@ -1409,7 +1402,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 202,
+            "line": 203,
             "description": "Get the rotation of the camera, expressed in degrees.<br>",
             "itemtype": "method",
             "name": "getCameraRotation",
@@ -1427,7 +1420,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 213,
+            "line": 214,
             "description": "Set the rotation of the camera, expressed in degrees.<br>\nThe rotation is made around the camera center.",
             "itemtype": "method",
             "name": "setCameraRotation",
@@ -1447,7 +1440,7 @@
         },
         {
             "file": "..\\Runtime\\layer.js",
-            "line": 226,
+            "line": 227,
             "description": "Convert a point from the canvas coordinates (For example, the mouse position) to the\n\"world\" coordinates.",
             "itemtype": "method",
             "name": "convertCoords",
@@ -1473,7 +1466,7 @@
         {
             "file": "..\\Runtime\\objecttools.js",
             "line": 16,
-            "description": "Do a test on two tables of objects so as to pick only the pair of objects for which the test is true.\nIf inverted == true, only the objects of the first table are filtered.\n\nNote that the func method is not called stricly for each pair: When considering a pair of objects, if \nthese objects have already been marked as picked, the func method won't be called again.\n\nCost (Worst case, func being always false):\n   Cost(Setting property 'picked' of NbObjList1+NbObjList2 objects to false)\n + Cost(functor)*NbObjList1*NbObjList2\n + Cost(Testing NbObjList1+NbObjList2 booleans)\n + Cost(Removing NbObjList1+NbObjList2 objects from all the lists)\n\nCost (Best case, func being always true):\n   Cost(Setting property 'picked' of NbObjList1+NbObjList2 objects to false)\n + Cost(functor)*(NbObjList1+NbObjList2)\n + Cost(Testing NbObjList1+NbObjList2 booleans)",
+            "description": "Do a test on two tables of objects so as to pick only the pair of objects for which the test is true.\nIf inverted == true, only the objects of the first table are filtered.\n\nNote that the func method is not called stricly for each pair: When considering a pair of objects, if\nthese objects have already been marked as picked, the func method won't be called again.\n\nCost (Worst case, func being always false):\n   Cost(Setting property 'picked' of NbObjList1+NbObjList2 objects to false)\n + Cost(functor)*NbObjList1*NbObjList2\n + Cost(Testing NbObjList1+NbObjList2 booleans)\n + Cost(Removing NbObjList1+NbObjList2 objects from all the lists)\n\nCost (Best case, func being always true):\n   Cost(Setting property 'picked' of NbObjList1+NbObjList2 objects to false)\n + Cost(functor)*(NbObjList1+NbObjList2)\n + Cost(Testing NbObjList1+NbObjList2 booleans)",
             "itemtype": "method",
             "name": "TwoListsTest",
             "class": "gdjs.evtTools.object",
@@ -1893,7 +1886,25 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
+            "line": 232,
+            "description": "Get the default width of the game: canvas is created with this width,\nand cameras are created using this width.",
+            "itemtype": "method",
+            "name": "getDefaultWidth",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
             "line": 241,
+            "description": "Get the default height of the game: canvas is created with this height,\nand cameras are created using this height.",
+            "itemtype": "method",
+            "name": "getDefaultHeight",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 250,
             "description": "Change the default width of the game: It won't affect the canvas size, but\nnew scene cameras will be created with this size.",
             "itemtype": "method",
             "name": "setDefaultWidth",
@@ -1909,7 +1920,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 251,
+            "line": 260,
             "description": "Change the default height of the game: It won't affect the canvas size, but\nnew scene cameras will be created with this size.",
             "itemtype": "method",
             "name": "setDefaultHeight",
@@ -1925,7 +1936,25 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 261,
+            "line": 271,
+            "description": "Get the current width of the canvas.",
+            "itemtype": "method",
+            "name": "getCurrentWidth",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 279,
+            "description": "Get the current height of the canvas.",
+            "itemtype": "method",
+            "name": "getCurrentHeight",
+            "class": "gdjs.RuntimeGame",
+            "namespace": "gdjs"
+        },
+        {
+            "file": "..\\Runtime\\runtimegame.js",
+            "line": 287,
             "description": "Change the size of the canvas displaying the game.\nNote that if the canvas is fullscreen, it won't be resized, but when going back to\nnon fullscreen mode, the requested size will be used.",
             "itemtype": "method",
             "name": "setCanvasSize",
@@ -1946,7 +1975,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 279,
+            "line": 305,
             "description": "Should be called whenever a mouse button is pressed",
             "itemtype": "method",
             "name": "onMouseButtonPressed",
@@ -1962,7 +1991,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 288,
+            "line": 314,
             "description": "Should be called whenever a mouse button is released",
             "itemtype": "method",
             "name": "onMouseButtonReleased",
@@ -1978,7 +2007,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 297,
+            "line": 323,
             "description": "Return true if the mouse button corresponding to buttonCode is pressed.",
             "itemtype": "method",
             "name": "isMouseButtonPressed",
@@ -1994,7 +2023,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 306,
+            "line": 332,
             "description": "Should be called whenever the mouse wheel is used",
             "itemtype": "method",
             "name": "onMouseWheel",
@@ -2010,7 +2039,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 315,
+            "line": 341,
             "description": "Return the mouse wheel delta",
             "itemtype": "method",
             "name": "getMouseWheelDelta",
@@ -2019,7 +2048,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 323,
+            "line": 349,
             "description": "Return the minimal fps that must be guaranteed by the game.\n( Otherwise, game is slowed down ).",
             "itemtype": "method",
             "name": "getMinimalFramerate",
@@ -2028,7 +2057,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 332,
+            "line": 358,
             "description": "Add the standard events handler.\nBe sure that the game has a renderer (See createStandardRenderer).",
             "itemtype": "method",
             "name": "bindStandardEvents",
@@ -2037,21 +2066,21 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 493,
+            "line": 519,
             "description": "Set if the aspect ratio must be kept when the game canvas is resized.",
             "class": "gdjs.RuntimeGame",
             "namespace": "gdjs"
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 504,
+            "line": 530,
             "description": "Change the margin that must be preserved around the game canvas.",
             "class": "gdjs.RuntimeGame",
             "namespace": "gdjs"
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 520,
+            "line": 546,
             "description": "De/activate fullscreen for the canvas rendering the game.",
             "itemtype": "method",
             "name": "setFullScreen",
@@ -2060,7 +2089,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 553,
+            "line": 579,
             "description": "Create a standard canvas inside canvasArea.\nThe game keep a reference to this canvas and will renderer in it.",
             "itemtype": "method",
             "name": "createStandardCanvas",
@@ -2069,19 +2098,18 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 580,
-            "description": "Resize the canvas, according to _isFullscreen, _forceFullscreen, _currentWidth,\n_currentHeight, _marginTop, _marginLeft, _marginRight, _marginBottom, _keepRatio.\n\nIf fullscreen is activated",
+            "line": 606,
+            "description": "Resize the canvas, according to _isFullscreen, _forceFullscreen, _currentWidth,\n_currentHeight, _marginTop, _marginLeft, _marginRight, _marginBottom, _keepRatio.",
             "itemtype": "method",
             "name": "_resizeCanvas",
             "access": "private",
             "tagname": "",
-            "static": 1,
             "class": "gdjs.RuntimeGame",
             "namespace": "gdjs"
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 627,
+            "line": 650,
             "description": "Load all assets, displaying progress in renderer.",
             "itemtype": "method",
             "name": "loadAllAssets",
@@ -2090,7 +2118,7 @@
         },
         {
             "file": "..\\Runtime\\runtimegame.js",
-            "line": 668,
+            "line": 691,
             "description": "Launch the game, displayed in the renderer associated to the game (see createStandardCanvas).<br>\nThe method returns when the game is closed.",
             "itemtype": "method",
             "name": "startStandardGameLoop",
@@ -2187,7 +2215,7 @@
         {
             "file": "..\\Runtime\\runtimeobject.js",
             "line": 161,
-            "description": "Get the unique identifier of the object.<br>\nThe identifier is set by the runtimeScene owning the object.<br>\nYou can also use the id property ( this._bject.id ) for increased efficiency instead of\ncalling this method.",
+            "description": "Get the unique identifier of the object.<br>\nThe identifier is set by the runtimeScene owning the object.<br>\nYou can also use the id property (this._object.id) for increased efficiency instead of\ncalling this method.",
             "itemtype": "method",
             "name": "getUniqueId",
             "return": {
@@ -2663,9 +2691,9 @@
                     "type": "Number"
                 },
                 {
-                    "name": "isTemporary",
-                    "description": "Set if the force is temporary or not.",
-                    "type": "Boolean"
+                    "name": "clearing",
+                    "description": "Set the force clearing",
+                    "type": "Number"
                 }
             ],
             "class": "gdjs.RuntimeObject",
@@ -2689,9 +2717,9 @@
                     "type": "Number"
                 },
                 {
-                    "name": "isPermanent",
-                    "description": "Set if the force is permanent or not.",
-                    "type": "Boolean"
+                    "name": "clearing",
+                    "description": "Set the force clearing",
+                    "type": "Number"
                 }
             ],
             "class": "gdjs.RuntimeObject",
@@ -2715,9 +2743,9 @@
                     "type": "Number"
                 },
                 {
-                    "name": "isPermanent",
-                    "description": "Set if the force is permanent or not.",
-                    "type": "Boolean"
+                    "name": "clearing",
+                    "description": "Set the force clearing",
+                    "type": "Number"
                 }
             ],
             "class": "gdjs.RuntimeObject",
@@ -2746,9 +2774,9 @@
                     "type": "Number"
                 },
                 {
-                    "name": "isPermanent",
-                    "description": "Set if the force is permanent or not.",
-                    "type": "Boolean"
+                    "name": "clearing",
+                    "description": "Set the force clearing",
+                    "type": "Number"
                 }
             ],
             "class": "gdjs.RuntimeObject",
@@ -2771,9 +2799,9 @@
                     "type": "Number"
                 },
                 {
-                    "name": "isPermanent",
-                    "description": "Set if the force is permanent or not.",
-                    "type": "Boolean"
+                    "name": "clearing",
+                    "description": "Set the force clearing",
+                    "type": "Number"
                 }
             ],
             "class": "gdjs.RuntimeObject",
@@ -2804,7 +2832,7 @@
         {
             "file": "..\\Runtime\\runtimeobject.js",
             "line": 610,
-            "description": "Called once a step by runtimeScene to remove temporary forces.",
+            "description": "Called once a step by runtimeScene to update forces magnitudes and\nremove null ones.",
             "itemtype": "method",
             "name": "updateForces",
             "class": "gdjs.RuntimeObject",
@@ -2812,7 +2840,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 628,
+            "line": 630,
             "description": "Return a force which is the sum of all forces applied on the object.",
             "itemtype": "method",
             "name": "getAverageForce",
@@ -2825,7 +2853,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 647,
+            "line": 649,
             "description": "Return true if the average angle of the forces applied on the object\nis in a given range.",
             "itemtype": "method",
             "name": "averageForceAngleIs",
@@ -2850,7 +2878,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 667,
+            "line": 669,
             "description": "Get the hit boxes for the object.<br>\nThe default implementation returns a basic bouding box based on the result of getWidth and\ngetHeight. You should probably redefine updateHitBoxes instead of this function.",
             "itemtype": "method",
             "name": "getHitBoxes",
@@ -2863,7 +2891,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 688,
+            "line": 690,
             "description": "Update the hit boxes for the object.<br>\nThe default implementation set a basic bouding box based on the result of getWidth and\ngetHeight.\n\nYou should not call this function by yourself, it is called when necessary by getHitBoxes method.\nHowever, you can redefine it if your object need custom hit boxes.",
             "itemtype": "method",
             "name": "updateHitBoxes",
@@ -2872,7 +2900,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 738,
+            "line": 740,
             "description": "Call each automatism stepPreEvents method.",
             "itemtype": "method",
             "name": "stepAutomatismsPreEvents",
@@ -2881,7 +2909,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 748,
+            "line": 750,
             "description": "Call each automatism stepPostEvents method.",
             "itemtype": "method",
             "name": "stepAutomatismsPostEvents",
@@ -2890,7 +2918,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 758,
+            "line": 760,
             "description": "Get an automatism from its name.<br>\nBe careful, the automatism must exists, no check is made on the name.",
             "itemtype": "method",
             "name": "getAutomatism",
@@ -2906,7 +2934,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 768,
+            "line": 770,
             "description": "Check if an automatism is used by the object.",
             "itemtype": "method",
             "name": "hasAutomatism",
@@ -2922,8 +2950,8 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 778,
-            "description": "De/activate an automatism of the object.<br>",
+            "line": 780,
+            "description": "De/activate an automatism of the object.",
             "itemtype": "method",
             "name": "activateAutomatism",
             "params": [
@@ -2943,10 +2971,10 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 791,
-            "description": "De/activate an automatism of the object.<br>",
+            "line": 793,
+            "description": "Check if an automatism is activated",
             "itemtype": "method",
-            "name": "activateAutomatism",
+            "name": "automatismActivated",
             "params": [
                 {
                     "name": "name",
@@ -2962,7 +2990,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 808,
+            "line": 810,
             "description": "Separate the object from others objects, using their hitboxes.",
             "itemtype": "method",
             "name": "separateFromObjects",
@@ -2977,7 +3005,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 859,
+            "line": 861,
             "description": "Put the object around a position, with a specific distance and angle.<br>\nThe distance is computed between the position and the center of the object.",
             "itemtype": "method",
             "name": "putAround",
@@ -3008,7 +3036,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 876,
+            "line": 878,
             "description": "Put the object around another object, with a specific distance and angle.<br>\nThe distance is computed between the centers of the objects.",
             "itemtype": "method",
             "name": "putAround",
@@ -3033,7 +3061,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 890,
+            "line": 892,
             "itemtype": "method",
             "name": "separateObjectsWithoutForces",
             "deprecated": true,
@@ -3048,7 +3076,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 923,
+            "line": 925,
             "itemtype": "method",
             "name": "SeparateObjectsWithForces",
             "deprecated": true,
@@ -3063,7 +3091,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 973,
+            "line": 968,
             "description": "Return true if the hitboxes of two objects are overlapping",
             "itemtype": "method",
             "name": "collisionTest",
@@ -3083,7 +3111,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 1017,
+            "line": 1012,
             "description": "Check the distance between two objects.",
             "itemtype": "method",
             "name": "distanceTest",
@@ -3093,7 +3121,7 @@
         },
         {
             "file": "..\\Runtime\\runtimeobject.js",
-            "line": 1029,
+            "line": 1024,
             "description": "Get the identifier associated to an object name :<br>\nSome features may want to compare objects name a large number of time. In this case,\nit may be more efficient to compare objects name identifier ( see gdjs.RuntimeObject.getNameId ).",
             "itemtype": "method",
             "name": "getNameIdentifier",
@@ -3127,7 +3155,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 149,
+            "line": 148,
             "description": "Create objects from initial instances data ( for example, the initial instances\nof the scene or from an external layout ).",
             "itemtype": "method",
             "name": "createObjectsFrom",
@@ -3150,7 +3178,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 175,
+            "line": 174,
             "description": "Set the function called each time the runtimeScene is stepped.<br>\nThe function will be passed the runtimeScene as argument.\n\nNote this.this is already set up by the runtimeScene constructor and this.you should\nnot need to use this method.",
             "itemtype": "method",
             "name": "setEventsFunction",
@@ -3165,7 +3193,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 189,
+            "line": 188,
             "description": "Step and render the scene.<br>\nShould be called in a game loop.",
             "itemtype": "method",
             "name": "renderAndStep",
@@ -3177,7 +3205,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 209,
+            "line": 208,
             "description": "Render the PIXI stage associated to the runtimeScene.",
             "itemtype": "method",
             "name": "render",
@@ -3186,7 +3214,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 218,
+            "line": 217,
             "description": "Called when rendering to do all times related tasks.",
             "itemtype": "method",
             "name": "_updateTime",
@@ -3197,7 +3225,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 238,
+            "line": 237,
             "description": "Empty the list of the removed objects:<br>\nWhen an object is removed from the scene, it is still kept in the _instancesRemoved member\nof the RuntimeScene.<br>\nThis method should be called regularly ( after events or automatisms steps ) so as to clear this list\nand allows the removed objects to be cached ( or destroyed if the cache is full ).<br>\nThe removed objects could not be sent directly to the cache, as events may still be using them after\nremoving them from the scene for example.",
             "itemtype": "method",
             "name": "_cacheOrClearRemovedInstances",
@@ -3208,7 +3236,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 260,
+            "line": 259,
             "description": "Tool function filling _allObjectsList member with all the instances.",
             "itemtype": "method",
             "name": "_constructListOfAllObjects",
@@ -3219,7 +3247,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 285,
+            "line": 284,
             "description": "Update the objects before launching the events.",
             "itemtype": "method",
             "name": "_updateObjectsPreEvents",
@@ -3230,7 +3258,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 302,
+            "line": 301,
             "description": "Update the objects (update positions, time management...)",
             "itemtype": "method",
             "name": "_updateObjects",
@@ -3241,7 +3269,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 324,
+            "line": 323,
             "description": "Change the background color",
             "itemtype": "method",
             "name": "setBackgroundColor",
@@ -3250,7 +3278,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 332,
+            "line": 331,
             "description": "Get the name of the scene.",
             "itemtype": "method",
             "name": "getName",
@@ -3259,7 +3287,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 340,
+            "line": 339,
             "description": "Update the objects positions according to their forces",
             "itemtype": "method",
             "name": "updateObjectsForces",
@@ -3268,7 +3296,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 361,
+            "line": 360,
             "description": "Add an object to the instances living on the scene.",
             "itemtype": "method",
             "name": "addObject",
@@ -3283,7 +3311,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 375,
+            "line": 374,
             "description": "Get all the instances of the object called name.",
             "itemtype": "method",
             "name": "getObjects",
@@ -3298,7 +3326,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 389,
+            "line": 388,
             "description": "Create a new object from its name. The object is also added to the instances\nliving on the scene ( No need to call RuntimeScene.addObject )",
             "params": [
                 {
@@ -3315,7 +3343,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 419,
+            "line": 418,
             "description": "Must be called whenever an object must be removed from the scene.",
             "itemtype": "method",
             "name": "markObjectForDeletion",
@@ -3330,7 +3358,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 455,
+            "line": 454,
             "description": "Return the time elapsed since the last frame, in milliseconds.",
             "itemtype": "method",
             "name": "getElapsedTime",
@@ -3339,7 +3367,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 463,
+            "line": 462,
             "description": "Create an identifier for a new object of the scene.",
             "itemtype": "method",
             "name": "createNewUniqueId",
@@ -3348,7 +3376,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 472,
+            "line": 471,
             "description": "Get the PIXI.Stage associated to the RuntimeScene.",
             "itemtype": "method",
             "name": "getPIXIStage",
@@ -3357,7 +3385,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 480,
+            "line": 479,
             "description": "Get the PIXI renderer associated to the RuntimeScene.",
             "itemtype": "method",
             "name": "getPIXIRenderer",
@@ -3366,7 +3394,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 488,
+            "line": 487,
             "description": "Get the PIXI DisplayObjectContainer associated to the RuntimeScene.",
             "itemtype": "method",
             "name": "getPIXIContainer",
@@ -3375,7 +3403,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 496,
+            "line": 495,
             "description": "Get the runtimeGame associated to the RuntimeScene.",
             "itemtype": "method",
             "name": "getGame",
@@ -3384,7 +3412,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 504,
+            "line": 503,
             "description": "Get the variables of the runtimeScene.",
             "itemtype": "method",
             "name": "getVariables",
@@ -3396,7 +3424,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 513,
+            "line": 512,
             "description": "Get the data representing the initial shared data of the scene for the specified automatism.",
             "itemtype": "method",
             "name": "getInitialSharedDataForAutomatism",
@@ -3412,7 +3440,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 557,
+            "line": 556,
             "description": "Get the soundManager of the scene.",
             "return": {
                 "description": "The soundManager of the scene."
@@ -3422,7 +3450,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 565,
+            "line": 564,
             "description": "Return true if the scene is rendering its first frame.",
             "itemtype": "method",
             "name": "isFirstFrame",
@@ -3431,7 +3459,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 573,
+            "line": 572,
             "description": "Set the time scale of the scene",
             "itemtype": "method",
             "name": "setTimeScale",
@@ -3447,7 +3475,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 582,
+            "line": 581,
             "description": "Get the time scale of the scene",
             "itemtype": "method",
             "name": "getTimeScale",
@@ -3456,7 +3484,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 590,
+            "line": 589,
             "description": "Return true if the scene requested the game to be stopped.",
             "itemtype": "method",
             "name": "gameStopRequested",
@@ -3465,7 +3493,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 598,
+            "line": 597,
             "description": "When called, the scene will be flagged as requesting the game to be stopped.<br>\n( i.e: gameStopRequested will return true ).",
             "itemtype": "method",
             "name": "requestGameStop",
@@ -3474,7 +3502,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 608,
+            "line": 607,
             "description": "Return the name of the new scene to be launched instead of this one.",
             "itemtype": "method",
             "name": "getRequestedScene",
@@ -3483,7 +3511,7 @@
         },
         {
             "file": "..\\Runtime\\runtimescene.js",
-            "line": 616,
+            "line": 615,
             "description": "When called, the scene will be flagged as requesting a new scene to be launched.",
             "itemtype": "method",
             "name": "requestSceneChange",
@@ -3659,7 +3687,7 @@
         {
             "file": "..\\Runtime\\storagetools.js",
             "line": 38,
-            "description": "Unload from memory a JSON object, which is then stored in the local storage \nobject provided by the browser.\nThe JSON object is named GDJS_filename in the localStorage object.",
+            "description": "Unload from memory a JSON object, which is then stored in the local storage\nobject provided by the browser.\nThe JSON object is named GDJS_filename in the localStorage object.",
             "itemtype": "method",
             "name": "loadJSONFileFromStorage",
             "params": [
@@ -4118,7 +4146,7 @@
         },
         {
             "message": "Missing item type\nUpdate the position of the PIXI container. To be called after each change\nmade to position, zoom or rotation of the camera.",
-            "line": " ..\\Runtime\\layer.js:37"
+            "line": " ..\\Runtime\\layer.js:38"
         },
         {
             "message": "Missing item type\nDo the work of creating a new object",
@@ -4138,19 +4166,19 @@
         },
         {
             "message": "Missing item type\nSet if the aspect ratio must be kept when the game canvas is resized.",
-            "line": " ..\\Runtime\\runtimegame.js:493"
+            "line": " ..\\Runtime\\runtimegame.js:519"
         },
         {
             "message": "Missing item type\nChange the margin that must be preserved around the game canvas.",
-            "line": " ..\\Runtime\\runtimegame.js:504"
+            "line": " ..\\Runtime\\runtimegame.js:530"
         },
         {
             "message": "Missing item type\nCreate a new object from its name. The object is also added to the instances\nliving on the scene ( No need to call RuntimeScene.addObject )",
-            "line": " ..\\Runtime\\runtimescene.js:389"
+            "line": " ..\\Runtime\\runtimescene.js:388"
         },
         {
             "message": "Missing item type\nGet the soundManager of the scene.",
-            "line": " ..\\Runtime\\runtimescene.js:557"
+            "line": " ..\\Runtime\\runtimescene.js:556"
         },
         {
             "message": "Missing item type\nInitialize the extra parameters that could be set for an instance.",

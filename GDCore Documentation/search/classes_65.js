@@ -23,6 +23,7 @@ var searchData=
   ['eventsrefactorer',['EventsRefactorer',['../classgd_1_1_events_refactorer.html',1,'gd']]],
   ['eventsrenderinghelper',['EventsRenderingHelper',['../classgd_1_1_events_rendering_helper.html',1,'gd']]],
   ['eventssearchresult',['EventsSearchResult',['../classgd_1_1_events_search_result.html',1,'gd']]],
+  ['eventstoredialog',['EventStoreDialog',['../classgd_1_1_event_store_dialog.html',1,'gd']]],
   ['eventsvariablesfinder',['EventsVariablesFinder',['../classgd_1_1_events_variables_finder.html',1,'gd']]],
   ['expression',['Expression',['../classgd_1_1_expression.html',1,'gd']]],
   ['expressioncodegenerationinformation',['ExpressionCodeGenerationInformation',['../classgd_1_1_expression_code_generation_information.html',1,'gd']]],

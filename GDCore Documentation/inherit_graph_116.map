@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_ti_xml_parsing_data.html" title="Part of the tinyxml library. " alt="" coords="6,5,130,32"/>
+<area shape="rect" id="node1" href="$class_ti_xml_base.html" title="Part of the tinyxml library. " alt="" coords="5,107,88,133"/>
+<area shape="rect" id="node3" href="$class_ti_xml_attribute.html" title="Part of the tinyxml library. " alt="" coords="137,81,239,108"/>
+<area shape="rect" id="node5" href="$class_ti_xml_node.html" title="Part of the tinyxml library. " alt="" coords="147,132,229,159"/>
+<area shape="rect" id="node7" href="$class_ti_xml_comment.html" title="Part of the tinyxml library. " alt="" coords="293,5,403,32"/>
+<area shape="rect" id="node9" href="$class_ti_xml_declaration.html" title="Part of the tinyxml library. " alt="" coords="289,56,407,83"/>
+<area shape="rect" id="node11" href="$class_ti_xml_document.html" title="Part of the tinyxml library. " alt="" coords="292,107,404,133"/>
+<area shape="rect" id="node13" href="$class_ti_xml_element.html" title="Part of the tinyxml library. " alt="" coords="297,157,399,184"/>
+<area shape="rect" id="node15" href="$class_ti_xml_text.html" title="Part of the tinyxml library. " alt="" coords="309,208,387,235"/>
+<area shape="rect" id="node17" href="$class_ti_xml_unknown.html" title="Part of the tinyxml library. " alt="" coords="295,259,401,285"/>
 </map>

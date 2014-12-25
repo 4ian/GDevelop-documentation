@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Game Develop Core: LayoutEditorCanvasOptions.h Source File</title>
+<title>GDevelop Core: LayoutEditorCanvasOptions.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="glogo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Game Develop Core
+   <div id="projectname">GDevelop Core
    </div>
-   <div id="projectbrief">Core library for developing platforms and tools compatible with Game Develop.</div>
+   <div id="projectbrief">Core library for developing platforms and tools compatible with GDevelop.</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,9 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Game Develop Core</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the GNU Lesser General Public License.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef SCENECANVASSETTINGS_H</span></div>
@@ -118,22 +118,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a965b63ba9f971800a13c625d89ae83d9">   42</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a965b63ba9f971800a13c625d89ae83d9" title="True if snap to grid activated in editor. ">snap</a>; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a0b77d20dceee1d39698cda9ec2ab070e">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a0b77d20dceee1d39698cda9ec2ab070e" title="Grid width in editor. ">gridWidth</a>; </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#ab8c884be1baa2514ab1c2ee41be0d567">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#ab8c884be1baa2514ab1c2ee41be0d567" title="Grid height in editor. ">gridHeight</a>; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a96ba4265574a6650008aed46b166dc7f">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a96ba4265574a6650008aed46b166dc7f" title="Grid red color in editor. ">gridR</a>; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a4eae0d0ad5d7689c0ef32d5fd273d6ef">   46</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a4eae0d0ad5d7689c0ef32d5fd273d6ef" title="Grid green color in editor. ">gridG</a>; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8710ae85858f8d3a5619e56be7024fdf">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8710ae85858f8d3a5619e56be7024fdf" title="Grid blue color in editor. ">gridB</a>; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a7739a9482a1f412cbf2b4f81d8875d92">   48</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a7739a9482a1f412cbf2b4f81d8875d92" title="Stores the zoom factor. ">zoomFactor</a>; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7">   49</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7" title="True if window mask displayed in editor. ">windowMask</a>; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8149853210c5acab5d7654659988c55f">   50</a></span>&#160;    std::string <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8149853210c5acab5d7654659988c55f" title="Only used for external layout: Contains the name of the layout used ( for loading objects ) when edit...">associatedLayout</a>; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a7029e7a9ff4878f38703b95d14f222fc">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a7029e7a9ff4878f38703b95d14f222fc" title="Grid X offset. ">gridOffsetX</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a05be858738f2a40a02a328fa77e45bd5">   46</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a05be858738f2a40a02a328fa77e45bd5" title="Grid Y offset. ">gridOffsetY</a>; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a96ba4265574a6650008aed46b166dc7f">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a96ba4265574a6650008aed46b166dc7f" title="Grid red color in editor. ">gridR</a>; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a4eae0d0ad5d7689c0ef32d5fd273d6ef">   48</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a4eae0d0ad5d7689c0ef32d5fd273d6ef" title="Grid green color in editor. ">gridG</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8710ae85858f8d3a5619e56be7024fdf">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8710ae85858f8d3a5619e56be7024fdf" title="Grid blue color in editor. ">gridB</a>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a7739a9482a1f412cbf2b4f81d8875d92">   50</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a7739a9482a1f412cbf2b4f81d8875d92" title="Stores the zoom factor. ">zoomFactor</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7">   51</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7" title="True if window mask displayed in editor. ">windowMask</a>; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8149853210c5acab5d7654659988c55f">   52</a></span>&#160;    std::string <a class="code" href="classgd_1_1_layout_editor_canvas_options.html#a8149853210c5acab5d7654659988c55f" title="Only used for external layout: Contains the name of the layout used ( for loading objects ) when edit...">associatedLayout</a>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // SCENECANVASSETTINGS_H</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // SCENECANVASSETTINGS_H</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 3 2014 10:58:37 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 25 2014 20:53:29 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

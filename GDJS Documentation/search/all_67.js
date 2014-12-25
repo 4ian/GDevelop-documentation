@@ -15,5 +15,6 @@ var searchData=
   ['getobjectlistname',['GetObjectListName',['../d7/d4f/classgdjs_1_1_events_code_generator.html#aac85bdacf51322b6c8f3177eaa19b19c',1,'gdjs::EventsCodeGenerator']]],
   ['getprojectexportbuttonlabel',['GetProjectExportButtonLabel',['../dc/dda/classgdjs_1_1_exporter.html#ac821ac29d2998b0dca9fdb54cd2cd59e',1,'gdjs::Exporter']]],
   ['getprojectexporter',['GetProjectExporter',['../d2/d3d/classgdjs_1_1_js_platform.html#a5652f890672d6ccc2c951c791ed64598',1,'gdjs::JsPlatform']]],
-  ['getrenderedheight',['GetRenderedHeight',['../dc/d13/classgdjs_1_1_js_code_event.html#a5519149c626baf6443d3e0c0dcead471',1,'gdjs::JsCodeEvent']]]
+  ['getrenderedheight',['GetRenderedHeight',['../dc/d13/classgdjs_1_1_js_code_event.html#a5519149c626baf6443d3e0c0dcead471',1,'gdjs::JsCodeEvent']]],
+  ['gdevelop_20js_20platform',['GDevelop JS Platform',['../index.html',1,'']]]
 ];

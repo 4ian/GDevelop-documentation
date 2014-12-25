@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Game Develop Core: Project.h Source File</title>
+<title>GDevelop Core: Project.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="glogo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Game Develop Core
+   <div id="projectname">GDevelop Core
    </div>
-   <div id="projectbrief">Core library for developing platforms and tools compatible with Game Develop.</div>
+   <div id="projectbrief">Core library for developing platforms and tools compatible with GDevelop.</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,9 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Game Develop Core</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the GNU Lesser General Public License.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef GDCORE_PROJECT_H</span></div>
@@ -358,64 +358,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordtype">bool</span> ValidateObjectName(<span class="keyword">const</span> std::string &amp; objectName);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> ValidateObjectName(<span class="keyword">const</span> std::string &amp; objectName);</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    std::string GetBadObjectNameWarning();</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="keyword">static</span> std::string GetBadObjectNameWarning();</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="comment">//TODO: Put this in private part</span></div>
-<div class="line"><a name="l00665"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a875311bfbc230a80515970024b7c54c5">  665</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_project.html#a875311bfbc230a80515970024b7c54c5" title="True if game used external source files. ">useExternalSourceFiles</a>; </div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00668"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec">  668</a></span>&#160;<span class="preprocessor"></span>    std::vector &lt; std::string &gt; <a class="code" href="classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec" title="Images that have been changed and which have to be reloaded. ">imagesChanged</a>; </div>
-<div class="line"><a name="l00669"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1">  669</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1" title="Windows executable name. ">winExecutableFilename</a>; </div>
-<div class="line"><a name="l00670"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c">  670</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c" title="Icon for Windows executable. ">winExecutableIconFile</a>; </div>
-<div class="line"><a name="l00671"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a2c1b9359a9aec43f93719f4898bd9062">  671</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#a2c1b9359a9aec43f93719f4898bd9062" title="Linux executable name. ">linuxExecutableFilename</a>;  </div>
-<div class="line"><a name="l00672"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a533a3a87af6b1e992a12945b67708c9e">  672</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#a533a3a87af6b1e992a12945b67708c9e" title="Mac executable name. ">macExecutableFilename</a>;  </div>
-<div class="line"><a name="l00673"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#af7b0374d27f43d6b5db5b6ded0b757b8">  673</a></span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::SourceFile&gt; &gt; <a class="code" href="classgd_1_1_project.html#af7b0374d27f43d6b5db5b6ded0b757b8" title="List of C++ source files used. ">externalSourceFiles</a>; </div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html" title="Base class used to represent a project of a platform. ">gd::Project</a> &amp; project);</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordtype">void</span> LoadProjectInformationFromXml(<span class="keyword">const</span> <a class="code" href="class_ti_xml_element.html" title="Part of the tinyxml library. ">TiXmlElement</a> * elem);</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    std::string                                         name; </div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        windowWidth; </div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        windowHeight; </div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="keywordtype">int</span>                                                 maxFPS; </div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        minFPS; </div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="keywordtype">bool</span>                                                verticalSync; </div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::Layout&gt; &gt;       scenes; </div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <a class="code" href="classgd_1_1_variables_container.html" title="Class defining a container for gd::Variable. ">gd::VariablesContainer</a>                              variables; </div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::ExternalLayout&gt; &gt;   externalLayouts; </div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <a class="code" href="classgd_1_1_resources_manager.html" title="Inventory all resources used by a project. ">gd::ResourcesManager</a>                                resourcesManager; </div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    boost::shared_ptr&lt;gd::ImageManager&gt;                 imageManager;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    std::vector &lt; std::string &gt;                         extensionsUsed; </div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    std::vector &lt; gd::Platform* &gt;                       platforms; </div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    std::string                                         firstLayout;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="preprocessor"></span>    std::vector&lt;ObjectGroup&gt;                            objectGroups; </div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    std::string                                         author; </div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    std::string                                         gameFile; </div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    std::string                                         latestCompilationDirectory; </div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <a class="code" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">gd::Platform</a>*                                       currentPlatform; </div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::ExternalEvents&gt; &gt;   externalEvents; </div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                GDMajorVersion; </div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                GDMinorVersion; </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">bool</span>                                        dirty; </div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;}</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor">#endif // GDCORE_PROJECT_H</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00672"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a2cc41ffb2f7bb3b8d0ece93928833a10">  672</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_project.html#a2cc41ffb2f7bb3b8d0ece93928833a10" title="Return true if the game activated the use of external source files. ">UseExternalSourceFiles</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> useExternalSourceFiles; }</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
+<div class="line"><a name="l00678"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a339b41143a2cda7add574ae952698d1a">  678</a></span>&#160;    <span class="keyword">const</span> std::vector &lt; boost::shared_ptr&lt;gd::SourceFile&gt; &gt; &amp; <a class="code" href="classgd_1_1_project.html#a339b41143a2cda7add574ae952698d1a" title="Return a const reference to the vector containing all the source files used by the game...">GetAllSourceFiles</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalSourceFiles; }</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordtype">bool</span> HasSourceFile(std::string name, std::string language = <span class="stringliteral">&quot;&quot;</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <a class="code" href="classgd_1_1_source_file.html" title="Represents a &quot;physical&quot; source file. ">SourceFile</a> &amp; GetSourceFile(<span class="keyword">const</span> std::string &amp; name);</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_source_file.html" title="Represents a &quot;physical&quot; source file. ">SourceFile</a> &amp; GetSourceFile(<span class="keyword">const</span> std::string &amp; name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keywordtype">void</span> RemoveSourceFile(<span class="keyword">const</span> std::string &amp; name);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <a class="code" href="classgd_1_1_source_file.html" title="Represents a &quot;physical&quot; source file. ">gd::SourceFile</a> &amp; InsertNewSourceFile(<span class="keyword">const</span> std::string &amp; name, <span class="keyword">const</span> std::string &amp; language, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> position = -1);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="comment">//TODO: Put this in private part</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec">  711</a></span>&#160;<span class="preprocessor"></span>    std::vector &lt; std::string &gt; <a class="code" href="classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec" title="Images that have been changed and which have to be reloaded. ">imagesChanged</a>; </div>
+<div class="line"><a name="l00712"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1">  712</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1" title="Windows executable name. ">winExecutableFilename</a>; </div>
+<div class="line"><a name="l00713"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c">  713</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c" title="Icon for Windows executable. ">winExecutableIconFile</a>; </div>
+<div class="line"><a name="l00714"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a2c1b9359a9aec43f93719f4898bd9062">  714</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#a2c1b9359a9aec43f93719f4898bd9062" title="Linux executable name. ">linuxExecutableFilename</a>;  </div>
+<div class="line"><a name="l00715"></a><span class="lineno"><a class="code" href="classgd_1_1_project.html#a533a3a87af6b1e992a12945b67708c9e">  715</a></span>&#160;    std::string <a class="code" href="classgd_1_1_project.html#a533a3a87af6b1e992a12945b67708c9e" title="Mac executable name. ">macExecutableFilename</a>;  </div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html" title="Base class used to represent a project of a platform. ">gd::Project</a> &amp; project);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keywordtype">void</span> LoadProjectInformationFromXml(<span class="keyword">const</span> <a class="code" href="class_ti_xml_element.html" title="Part of the tinyxml library. ">TiXmlElement</a> * elem);</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    std::string                                         name; </div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        windowWidth; </div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        windowHeight; </div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keywordtype">int</span>                                                 maxFPS; </div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        minFPS; </div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keywordtype">bool</span>                                                verticalSync; </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::Layout&gt; &gt;       scenes; </div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <a class="code" href="classgd_1_1_variables_container.html" title="Class defining a container for gd::Variable. ">gd::VariablesContainer</a>                              variables; </div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::ExternalLayout&gt; &gt;   externalLayouts; </div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <a class="code" href="classgd_1_1_resources_manager.html" title="Inventory all resources used by a project. ">gd::ResourcesManager</a>                                resourcesManager; </div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    boost::shared_ptr&lt;gd::ImageManager&gt;                 imageManager;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    std::vector &lt; std::string &gt;                         extensionsUsed; </div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    std::vector &lt; gd::Platform* &gt;                       platforms; </div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    std::string                                         firstLayout;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span>                                                useExternalSourceFiles; </div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::SourceFile&gt; &gt;   externalSourceFiles; </div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    std::vector&lt;ObjectGroup&gt;                            objectGroups; </div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    std::string                                         author; </div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    std::string                                         gameFile; </div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    std::string                                         latestCompilationDirectory; </div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <a class="code" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">gd::Platform</a>*                                       currentPlatform; </div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    std::vector &lt; boost::shared_ptr&lt;gd::ExternalEvents&gt; &gt;   externalEvents; </div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                GDMajorVersion; </div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                GDMinorVersion; </div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">bool</span>                                        dirty; </div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;}</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="preprocessor">#endif // GDCORE_PROJECT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 3 2014 10:58:37 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 25 2014 20:53:29 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

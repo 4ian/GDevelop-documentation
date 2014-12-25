@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['parametercontrolshelper',['ParameterControlsHelper',['../classgd_1_1_parameter_controls_helper.html',1,'gd']]],
+  ['parametercontrolshelper',['ParameterControlsHelper',['../classgd_1_1_parameter_controls_helper.html#ae38508c9c8d2b53b5b49d389087cbdc3',1,'gd::ParameterControlsHelper']]],
   ['parameterhighlighted',['ParameterHighLighted',['../classgd_1_1_events_editor_selection.html#aaaf726c36b3b72c4afc2d6627fd1d74f',1,'gd::EventsEditorSelection']]],
   ['parameteritem',['ParameterItem',['../classgd_1_1_parameter_item.html',1,'gd']]],
   ['parametermetadata',['ParameterMetadata',['../classgd_1_1_parameter_metadata.html',1,'gd']]],
@@ -20,6 +22,7 @@ var searchData=
   ['platformmanager',['PlatformManager',['../classgd_1_1_platform_manager.html',1,'gd']]],
   ['point',['Point',['../class_point.html',1,'']]],
   ['polygon2d',['Polygon2d',['../class_polygon2d.html',1,'']]],
+  ['polygoneditionhelper',['PolygonEditionHelper',['../classgd_1_1_polygon_edition_helper.html',1,'gd']]],
   ['populatepropertygrid',['PopulatePropertyGrid',['../classgd_1_1_project.html#ac59f520839109fa42d603a536915f37c',1,'gd::Project']]],
   ['preprocess',['Preprocess',['../classgd_1_1_base_event.html#a1a3ab437eb72963243aea074630c6d07',1,'gd::BaseEvent::Preprocess()'],['../classgd_1_1_event_metadata_1_1_code_generator.html#aa83d07c0410ae811497c02c253b6f7e1',1,'gd::EventMetadata::CodeGenerator::Preprocess()']]],
   ['preprocesseventlist',['PreprocessEventList',['../classgd_1_1_events_code_generator.html#ac60c41bf25f04fb048f576711e97fdc7',1,'gd::EventsCodeGenerator']]],
@@ -36,6 +39,7 @@ var searchData=
   ['projectextensionsdialog',['ProjectExtensionsDialog',['../classgd_1_1_project_extensions_dialog.html',1,'gd']]],
   ['projectresourcesadder',['ProjectResourcesAdder',['../classgd_1_1_project_resources_adder.html',1,'gd']]],
   ['projectresourcescopier',['ProjectResourcesCopier',['../classgd_1_1_project_resources_copier.html',1,'gd']]],
+  ['projectstripper',['ProjectStripper',['../classgd_1_1_project_stripper.html',1,'gd']]],
   ['projectupdatedialog',['ProjectUpdateDialog',['../class_project_update_dialog.html',1,'']]],
   ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html',1,'gd']]],
   ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html#ab68d8cbc3167e8490321ef6aa797f97d',1,'gd::PropertyDescriptor::PropertyDescriptor(std::string propertyValue)'],['../classgd_1_1_property_descriptor.html#a85f0493da16ca3b1d7e7e5f797e73ae3',1,'gd::PropertyDescriptor::PropertyDescriptor()']]]

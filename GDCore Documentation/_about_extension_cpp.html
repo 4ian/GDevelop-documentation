@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Game Develop Core: About Extension.cpp</title>
+<title>GDevelop Core: About Extension.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="glogo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Game Develop Core
+   <div id="projectname">GDevelop Core
    </div>
-   <div id="projectbrief">Core library for developing platforms and tools compatible with Game Develop.</div>
+   <div id="projectbrief">Core library for developing platforms and tools compatible with GDevelop.</div>
   </td>
  </tr>
  </tbody>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="index.html">Game Develop Core</a></li><li class="navelem"><a class="el" href="overview.html">Overview of GDCore</a></li>  </ul>
+<li class="navelem"><a class="el" href="overview.html">Overview of GDCore</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,7 +95,7 @@ Declare the extension information</h1>
 <div class="line">                              _(<span class="stringliteral">&quot;Text object&quot;</span>),</div>
 <div class="line">                              _(<span class="stringliteral">&quot;Extension allowing to use an object displaying a text.&quot;</span>),</div>
 <div class="line">                              <span class="stringliteral">&quot;Florian Rival&quot;</span>,</div>
-<div class="line">                              <span class="stringliteral">&quot;zlib/libpng License (Open Source)&quot;</span>);</div>
+<div class="line">                              <span class="stringliteral">&quot;Open Source (MIT License)&quot;</span>);</div>
 </div><!-- fragment --><p>The first parameter is the name of the extension. Choose carefully the name of the extension, as projects are directly referring to it.</p>
 <h1><a class="anchor" id="instructionsDeclaration"></a>
 Declare actions, conditions and expressions</h1>
@@ -178,7 +178,7 @@ Declaring the automatisms</h1>
  Call AddAction/AddCondition/AddExpression on the <em>aut</em> object.</p>
 <h1><a class="anchor" id="excludingNonRuntimeDeclaration"></a>
 (C++ platform) Excluding elements declaration from runtime</h1>
-<p>When your extension is compiled for the C++ platform Runtime, Game Develop does not known anything about action/condition or even events classes.<br/>
+<p>When your extension is compiled for the C++ platform Runtime, GDevelop does not known anything about action/condition or even events classes.<br/>
  You have then to exclude all actions/conditions/expressions/events declaration from extension at runtime (only Extension/Object/Automatisms declarations have to be kept).</p>
 <p>Use the *<code>GD_IDE_ONLY</code> define* to achieve this goal, as demonstrated in this skeleton of a complete extension declaration: </p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>Extension : <span class="keyword">public</span> ExtensionBase <span class="comment">//For C++ platform, extensions must derive from ExtensionBase</span></div>
@@ -245,13 +245,13 @@ Declaring the automatisms</h1>
 <div class="line">    <span class="keyword">virtual</span> ~Extension() {};</div>
 <div class="line">};</div>
 <div class="line"></div>
-<div class="line"><span class="comment">// Used by Game Develop to create the extension class</span></div>
+<div class="line"><span class="comment">// Used by GDevelop to create the extension class</span></div>
 <div class="line"><span class="comment">// -- Do not need to be modified. --</span></div>
 <div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> ExtensionBase * GD_EXTENSION_API CreateGDExtension() {</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">new</span> Extension;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="comment">// Used by Game Develop to destroy the extension class</span></div>
+<div class="line"><span class="comment">// Used by GDevelop to destroy the extension class</span></div>
 <div class="line"><span class="comment">// -- Do not need to be modified. --</span></div>
 <div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> GD_EXTENSION_API DestroyGDExtension(ExtensionBase * p) {</div>
 <div class="line">    <span class="keyword">delete</span> p;</div>
@@ -259,7 +259,7 @@ Declaring the automatisms</h1>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 3 2014 10:58:38 for Game Develop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 25 2014 20:53:30 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

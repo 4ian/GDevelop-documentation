@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game_20develop_20core',['Game Develop Core',['../index.html',1,'']]]
+  ['gdevelop_20core',['GDevelop Core',['../index.html',1,'']]]
 ];

@@ -6,7 +6,7 @@
 <area shape="rect" id="node11" href="$d0/d3b/class_runtime_object.html#af4b35cb33489286ddb225ad2885f7c99" title="Get the real Y position where is renderer the object. " alt="" coords="257,360,455,387"/>
 <area shape="rect" id="node13" href="$d0/d3b/class_runtime_object.html#aacc50de5e06f1a74040e696775e0c1ae" title="Get the Y position of the center, relative to the position returned by GetDrawableY(). " alt="" coords="504,309,688,336"/>
 <area shape="rect" id="node15" href="$d0/d3b/class_runtime_object.html#a15f03c46b15118ce0cbdf99a1aeb33fa" title="Get the object hitbox(es) " alt="" coords="261,157,451,184"/>
-<area shape="rect" id="node27" href="$da/df4/group___game_engine.html#gaee95df64b6b81395c1ae6222ef2d20ae" title="PolygonCollisionTest" alt="" coords="285,411,427,437"/>
+<area shape="rect" id="node27" href="$da/df4/group___game_engine.html#ga7a5b7643e8e5e8cf401b5c4fceb4d9b3" title="PolygonCollisionTest" alt="" coords="285,411,427,437"/>
 <area shape="rect" id="node19" href="$d0/d3b/class_runtime_object.html#a93ff1974abb09355d1cb208980f32cf8" title="Get the angle of the object, in degrees. " alt="" coords="511,107,681,133"/>
 <area shape="rect" id="node21" href="$d0/d3b/class_runtime_object.html#a145cbfa2cf53ab5b4f7ede3ab4feb2a3" title="Get the X coordinate of the object in the layout. " alt="" coords="524,157,668,184"/>
 <area shape="rect" id="node24" href="$d0/d3b/class_runtime_object.html#a09f91467e1b8f7831f5c6d7c9eee0159" title="Get the Y coordinate of the object in the layout. " alt="" coords="523,208,669,235"/>

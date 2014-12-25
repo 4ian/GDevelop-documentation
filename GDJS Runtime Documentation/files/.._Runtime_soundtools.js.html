@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>..\Runtime\soundtools.js - Game Develop JS Runtime API</title>
+    <title>..\Runtime\soundtools.js - GDevelop JS Runtime API</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -16,9 +16,9 @@
     <div class="navbar-inner">
         <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
         
-	    <img alt="Game Develop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="Game Develop JS Runtime API">
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
         
-            Game Develop JS Runtime API
+            GDevelop JS Runtime API
         </h1>
 	<div class="nav">
             <li class="divider-vertical"></li>
@@ -132,9 +132,9 @@
 <div class="file">
     <pre class="prettyprint linenums">
 /*
- * Game Develop JS Platform
+ * GDevelop JS Platform
  * Copyright 2013-2014 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
- * This project is released under the GNU Lesser General Public License.
+ * This project is released under the MIT License.
  */
 
 /**
@@ -212,7 +212,7 @@ gdjs.evtTools.sound.isMusicOnChannelStopped = function(runtimeScene, channel) {
 };
 
 gdjs.evtTools.sound.getMusicOnChannelVolume = function(runtimeScene, channel) {
-    runtimeScene.getSoundManager().getMusicOnChannelVolume(channel);
+    return runtimeScene.getSoundManager().getMusicOnChannelVolume(channel);
 };
 
 gdjs.evtTools.sound.setMusicOnChannelVolume = function(runtimeScene, channel, volume) {
@@ -220,7 +220,7 @@ gdjs.evtTools.sound.setMusicOnChannelVolume = function(runtimeScene, channel, vo
 };
 
 gdjs.evtTools.sound.getMusicOnChannelPlayingOffset = function(runtimeScene, channel) {
-    runtimeScene.getSoundManager().getMusicOnChannelPlayingOffset(channel);
+    return runtimeScene.getSoundManager().getMusicOnChannelPlayingOffset(channel);
 };
 
 gdjs.evtTools.sound.setMusicOnChannelPlayingOffset = function(runtimeScene, channel, playingOffset) {
@@ -228,7 +228,7 @@ gdjs.evtTools.sound.setMusicOnChannelPlayingOffset = function(runtimeScene, chan
 };
 
 gdjs.evtTools.sound.getSoundOnChannelVolume = function(runtimeScene, channel) {
-    runtimeScene.getSoundManager().getSoundOnChannelVolume(channel);
+    return runtimeScene.getSoundManager().getSoundOnChannelVolume(channel);
 };
 
 gdjs.evtTools.sound.setSoundOnChannelVolume = function(runtimeScene, channel, volume) {
@@ -236,7 +236,7 @@ gdjs.evtTools.sound.setSoundOnChannelVolume = function(runtimeScene, channel, vo
 };
 
 gdjs.evtTools.sound.getSoundOnChannelPlayingOffset = function(runtimeScene, channel) {
-    runtimeScene.getSoundManager().getSoundOnChannelPlayingOffset(channel);
+    return runtimeScene.getSoundManager().getSoundOnChannelPlayingOffset(channel);
 };
 
 gdjs.evtTools.sound.setSoundOnChannelPlayingOffset = function(runtimeScene, channel, playingOffset) {

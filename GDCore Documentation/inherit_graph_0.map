@@ -1,5 +1,27 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$class_dnd_text_resources_editor.html" title="Tool class used by ResourcesEditor to enable inserting resources using drag&#39;n&#39;drop. " alt="" coords="202,5,369,32"/>
-<area shape="rect" id="node5" href="$classgd_1_1_dnd_text_sprite_object_editor.html" title="Tool class used by SpriteObjectEditor to enable inserting images using drag&#39;n&#39;drop. " alt="" coords="186,56,385,83"/>
-<area shape="rect" id="node7" href="$classgd_1_1_layout_editor_canvas_text_dnd.html" title="Tool class used by LayoutEditorCanvas to enable inserting object using drag&#39;n&#39;drop. " alt="" coords="182,107,389,133"/>
+<area shape="rect" id="node3" href="$class_base_event_store_dialog.html" title="BaseEventStoreDialog" alt="" coords="151,5,302,32"/>
+<area shape="rect" id="node7" href="$class_base_group_event_dialog.html" title="BaseGroupEventDialog" alt="" coords="149,56,304,83"/>
+<area shape="rect" id="node11" href="$classgd_1_1_advanced_text_entry_dialog.html" title="Dialog used to enter a math or string expression, with a button to open a full editor. " alt="" coords="131,107,323,133"/>
+<area shape="rect" id="node13" href="$classgd_1_1_choose_automatism_dialog.html" title="Dialog used to choose an automatism of an object. " alt="" coords="129,157,324,184"/>
+<area shape="rect" id="node15" href="$classgd_1_1_choose_automatism_type_dialog.html" title="Dialog displaying all the automatisms types available in a project, allowing the user to choose one..." alt="" coords="133,209,320,250"/>
+<area shape="rect" id="node17" href="$classgd_1_1_choose_layer_dialog.html" title="Dialog used to choose a layer from a layout. " alt="" coords="149,275,305,301"/>
+<area shape="rect" id="node19" href="$classgd_1_1_choose_object_dialog.html" title="Dialog used to choose an object (or a group) among project/layout objects or groups. " alt="" coords="145,325,308,352"/>
+<area shape="rect" id="node21" href="$classgd_1_1_choose_object_type_dialog.html" title="Dialog used to choose an object type, typically when an object must be created. " alt="" coords="131,376,322,403"/>
+<area shape="rect" id="node23" href="$classgd_1_1_choose_variable_dialog.html" title="Dialog used to display variables of a gd::VariablesContainer, edit them and/or choose one..." alt="" coords="141,427,312,453"/>
+<area shape="rect" id="node25" href="$classgd_1_1_edit_comment.html" title="Editor for the comments events. " alt="" coords="165,477,288,504"/>
+<area shape="rect" id="node27" href="$classgd_1_1_edit_expression_dialog.html" title="Dialog used to edit an expression. " alt="" coords="143,528,311,555"/>
+<area shape="rect" id="node29" href="$classgd_1_1_edit_for_each_event.html" title="Editor for the for each events. " alt="" coords="153,579,301,605"/>
+<area shape="rect" id="node31" href="$classgd_1_1_edit_layer_dialog.html" title="Dialog used to edit a layer. " alt="" coords="159,629,294,656"/>
+<area shape="rect" id="node33" href="$classgd_1_1_edit_link.html" title="Editor for the link events. " alt="" coords="181,680,272,707"/>
+<area shape="rect" id="node35" href="$classgd_1_1_edit_repeat_event.html" title="Editor for Repeat events. " alt="" coords="157,731,297,757"/>
+<area shape="rect" id="node37" href="$classgd_1_1_edit_str_expression_dialog.html" title="Dialog used to edit a string expression. " alt="" coords="134,781,319,808"/>
+<area shape="rect" id="node39" href="$classgd_1_1_grid_setup_dialog.html" title="Tiny dialog used to parameter the grid showed on a layout editor canvas. " alt="" coords="157,832,296,859"/>
+<area shape="rect" id="node41" href="$classgd_1_1_instances_advanced_paste_dialog.html" title="Dialogs allowing to choose options before doing an advanced paste. " alt="" coords="131,883,322,925"/>
+<area shape="rect" id="node43" href="$classgd_1_1_objects_on_bad_layer_dialog.html" title="Tool dialog used by LayersEditorPanel to ask the user what to do of instances which are on a layer be..." alt="" coords="128,949,325,976"/>
+<area shape="rect" id="node45" href="$classgd_1_1_project_extensions_dialog.html" title="Dialog designed for editing the extensions used by a project. " alt="" coords="133,1000,320,1027"/>
+<area shape="rect" id="node47" href="$classgd_1_1_resource_library_dialog.html" title="Dialog used to display &quot;resource libraries&quot; located in a folder. " alt="" coords="139,1051,314,1077"/>
+<area shape="rect" id="node49" href="$classgd_1_1_sprite_object_editor.html" title="Dialog to edit Sprite objects from SpriteExtension. " alt="" coords="151,1101,302,1128"/>
+<area shape="rect" id="node51" href="$class_project_update_dialog.html" title="ProjectUpdateDialog" alt="" coords="157,1152,297,1179"/>
+<area shape="rect" id="node5" href="$classgd_1_1_event_store_dialog.html" title="The dialog displaying the event store from GDevApp.com and allowing customization and instantiation o..." alt="" coords="374,5,517,32"/>
+<area shape="rect" id="node9" href="$class_group_event_dialog.html" title="A small dialog used to change a events group properties. " alt="" coords="383,56,508,83"/>
 </map>
