@@ -3179,7 +3179,7 @@
         {
             "file": "..\\Runtime\\runtimescene.js",
             "line": 174,
-            "description": "Set the function called each time the runtimeScene is stepped.<br>\nThe function will be passed the runtimeScene as argument.\n\nNote this.this is already set up by the runtimeScene constructor and this.you should\nnot need to use this method.",
+            "description": "Set the function called each time the runtimeScene is stepped.<br>\nThe function will be passed the runtimeScene as argument.\n\nNote that this is already set up by the runtimeScene constructor and that you should\nnot need to use this method.",
             "itemtype": "method",
             "name": "setEventsFunction",
             "params": [
@@ -3226,7 +3226,7 @@
         {
             "file": "..\\Runtime\\runtimescene.js",
             "line": 237,
-            "description": "Empty the list of the removed objects:<br>\nWhen an object is removed from the scene, it is still kept in the _instancesRemoved member\nof the RuntimeScene.<br>\nThis method should be called regularly ( after events or automatisms steps ) so as to clear this list\nand allows the removed objects to be cached ( or destroyed if the cache is full ).<br>\nThe removed objects could not be sent directly to the cache, as events may still be using them after\nremoving them from the scene for example.",
+            "description": "Empty the list of the removed objects:<br>\nWhen an object is removed from the scene, it is still kept in the _instancesRemoved member\nof the RuntimeScene.<br>\nThis method should be called regularly (after events or automatisms steps) so as to clear this list\nand allows the removed objects to be cached (or destroyed if the cache is full).<br>\nThe removed objects could not be sent directly to the cache, as events may still be using them after\nremoving them from the scene for example.",
             "itemtype": "method",
             "name": "_cacheOrClearRemovedInstances",
             "access": "private",
@@ -3466,7 +3466,7 @@
             "params": [
                 {
                     "name": "timeScale",
-                    "description": "The new time scale ( Must be positive ).",
+                    "description": "The new time scale (must be positive).",
                     "type": "Number"
                 }
             ],

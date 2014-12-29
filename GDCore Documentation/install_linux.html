@@ -76,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="index.html">GDevelop Core</a></li><li class="navelem"><a class="el" href="setup_dev_env.html">Setting up the development environnement</a></li>  </ul>
+<li class="navelem"><a class="el" href="index.html">GDevelop Core</a></li><li class="navelem"><a class="el" href="setup_dev_env.html">Setting up the development environment</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,46 +84,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">(Linux) Install development files </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="downloadGD"></a>
-Download and extract GDevelop for Linux</h1>
-<p>If you didn't already downloaded GDevelop for Linux, do it now from <a href="http://www.compilgames.net/">the official website</a>.</p>
-<p>Then extract all the files inside the <b>GameDevelop</b> folder inside the *Binaries/Output/Release_Linux/ * folder of the SDK. ( You should have files like libGDCore.so now present in Binaries/Output/Release_Linux )</p>
-<h1><a class="anchor" id="download"></a>
-Download, (build) and install libraries</h1>
+<div class="textblock"><h1><a class="anchor" id="installLibs"></a>
+Install development libraries</h1>
 <p>GDevelop is compiled with gcc under Linux.<br/>
- So as to prevent incompatibilities between the compiler ( and the standard C++ library provided with ) used by GDevelop and the compiler used by the extensions, GDevelop require the extensions and the platforms to use the same version of gcc.<br/>
-</p>
-<h2><a class="anchor" id="sfml"></a>
-SFML</h2>
-<p>GDevelop may uses some specific version of SFML library. You can download the version used here: <a href="http://www.compilgames.net/code/GameDevelopSDK/SFMLlinux.7z">http://www.compilgames.net/code/GameDevelopSDK/SFMLlinux.7z</a> <br/>
-</p>
-<p>The archive contains a precompiled version of SFML, compiled <b>for Ubuntu</b>, and only for the version for which GDevelop is distributed officially:</p>
-<ul>
-<li>If you compile GD on <b>this</b> version of Ubuntu, just extract the archive inside the folder ExtLibs.</li>
-<li>If you compile GD for another version of Ubuntu or a different distro, extract the archive inside the folder ExtLibs, and <em>recompile</em> SFML using CMake into a folder called <b>build-linux</b>. It's easy, just follow <a href="http://www.sfml-dev.org/tutorials/2.1/compile-with-cmake.php">this tutorial</a>. Again, be sure to build the binaries into <b>ExtLibs/SFML/build-linux</b>. If you have difficulties, read this page: <a class="el" href="build_s_f_m_l.html">(Linux) Manually build SFML</a>, it details the dependencies you need to install.</li>
-</ul>
-<h2><a class="anchor" id="boost"></a>
-Boost</h2>
-<p>Boost version used by GDevelop can be downloaded here: <a href="http://www.compilgames.net/code/GameDevelopSDK/boost_1_55_0.7z">http://www.compilgames.net/code/GameDevelopSDK/boost_1_55_0.7z</a> <br/>
- Just extract the archive inside the folder ExtLibs (located at the root of the SDK). </p>
-<h2><a class="anchor" id="wxWidgets"></a>
-wxWidgets</h2>
-<p>wxWidgets version used by GDevelop can be downloaded here: <a href="https://sourceforge.net/projects/wxwindows/files/3.0.2/wxWidgets-3.0.2.tar.bz2">https://sourceforge.net/projects/wxwindows/files/3.0.2/wxWidgets-3.0.2.tar.bz2</a> <br/>
- First extract the archive inside the folder ExtLibs.</p>
-<p>Be sure to have GTK+ 3.0 and WebKitGTK development files installed: </p>
-<div class="fragment"><div class="line">sudo apt-<span class="keyword">get</span> install libgtk-3-dev</div>
-<div class="line">sudo apt-<span class="keyword">get</span> install libwebkitgtk-3.0-dev</div>
-</div><!-- fragment --><p>You then have to build and install the library: Open a terminal, go to the ExtLibs/wxWidgets directory and follow the classical configure/make/make install process: </p>
-<div class="fragment"><div class="line">./configure --enable-ribbon --enable-webview</div>
-<div class="line">make</div>
-<div class="line">sudo make install</div>
+ You need to have some packages to be installed before starting to build GD. These packages can vary according to the distribution you use. On Ubuntu, you may want to install these packages: </p>
+<div class="fragment"><div class="line">sudo apt-<span class="keyword">get</span> install libopenal-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libjpeg-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libglew-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libudev-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libxrandr-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libsndfile1-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libglu1-mesa-dev</div>
+<div class="line">sudo apt-<span class="keyword">get</span> install libfreetype6-dev</div>
+</div><!-- fragment --><h2><a class="anchor" id="wxWidgets"></a>
+Install wxWidgets development libraries</h2>
+<p>Most distributions have wxWidgets 3 development libraries available: install them using your package manager. On Ubuntu: </p>
+<div class="fragment"><div class="line">sudo apt-<span class="keyword">get</span> install libwxgtk3.0-dev</div>
 </div><!-- fragment --><h2><a class="anchor" id="installcmake"></a>
 Install CMake</h2>
-<p>You'll need CMake to build GDevelop: See more on <a class="el" href="install_and_use_c_make.html">(All) Install and use Cmake</a>. </p>
+<p>You'll need CMake to build GDevelop: See more on <a class="el" href="install_and_use_c_make.html">(All) Install CMake &amp; launch the build</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 21:02:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 29 2014 18:15:10 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
