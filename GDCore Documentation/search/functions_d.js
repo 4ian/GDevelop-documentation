@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['parametercontrolshelper',['ParameterControlsHelper',['../classgd_1_1_parameter_controls_helper.html#ae38508c9c8d2b53b5b49d389087cbdc3',1,'gd::ParameterControlsHelper']]],
   ['parameterhighlighted',['ParameterHighLighted',['../classgd_1_1_events_editor_selection.html#aaaf726c36b3b72c4afc2d6627fd1d74f',1,'gd::EventsEditorSelection']]],
   ['parent',['Parent',['../class_ti_xml_node.html#ab643043132ffd794f8602685d34a982e',1,'TiXmlNode']]],
   ['parse',['Parse',['../classgd_1_1_variable_parser.html#a78719ebeb2d2661c2356c36a95268086',1,'gd::VariableParser::Parse()'],['../class_ti_xml_document.html#a789ad2f06f93d52bdb5570b2f3670289',1,'TiXmlDocument::Parse()']]],

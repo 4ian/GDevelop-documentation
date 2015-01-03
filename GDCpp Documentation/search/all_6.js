@@ -10,7 +10,6 @@ var searchData=
   ['getautomatismshareddatas',['GetAutomatismSharedDatas',['../d7/d7f/class_runtime_scene.html#a245be0436804bf1eb1ccf1a4d47e5654',1,'RuntimeScene']]],
   ['getbadvariable',['GetBadVariable',['../d3/de0/class_runtime_variables_container.html#a52c115f6287afe327dcafc82d0a34f14',1,'RuntimeVariablesContainer']]],
   ['getbadvariablescontainer',['GetBadVariablesContainer',['../d3/de0/class_runtime_variables_container.html#abbcba85b9be66be8611a7d3b7e3d6799',1,'RuntimeVariablesContainer']]],
-  ['getbinaryfilesize',['GetBinaryFileSize',['../da/de2/classgd_1_1_ressources_loader.html#a10a71a64b5ce1cdaae031163f3dd9c79',1,'gd::RessourcesLoader']]],
   ['getcamera',['GetCamera',['../dd/daf/class_runtime_layer.html#ae3039fcc787913f60344e64ea71d36f3',1,'RuntimeLayer::GetCamera(unsigned int n) const '],['../dd/daf/class_runtime_layer.html#ad68e46f2b243e82522dc5a870b40621c',1,'RuntimeLayer::GetCamera(unsigned int n)']]],
   ['getcameracount',['GetCameraCount',['../dd/daf/class_runtime_layer.html#a5fdd64ebb8250cf557200c5fd0c61056',1,'RuntimeLayer']]],
   ['getcenterx',['GetCenterX',['../d0/d3b/class_runtime_object.html#add684c08e01b0705448d04f000980489',1,'RuntimeObject::GetCenterX()'],['../dd/d1a/class_runtime_sprite_object.html#aa6237b85ae34868fd33c527a13b11eca',1,'RuntimeSpriteObject::GetCenterX()']]],

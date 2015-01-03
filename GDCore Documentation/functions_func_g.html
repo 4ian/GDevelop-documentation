@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
     </ul>
   </div>
@@ -107,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -401,7 +402,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgd_1_1_project.html#acacb92cb75f20e1f1b05d19c3b5ec997">gd::Project</a>
 </li>
 <li>GetBinaryFileSize()
-: <a class="el" href="classgd_1_1_ressources_loader.html#a10a71a64b5ce1cdaae031163f3dd9c79">gd::RessourcesLoader</a>
+: <a class="el" href="classgd_1_1_resources_loader.html#a9b2301fa4ad977a278cce535860f67c1">gd::ResourcesLoader</a>
 </li>
 <li>GetBool()
 : <a class="el" href="classgd_1_1_serializer_value.html#a62c70c32e7be3ddeebbe0b551a99c237">gd::SerializerValue</a>
@@ -460,6 +461,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GetContextDepth()
 : <a class="el" href="classgd_1_1_events_code_generation_context.html#ad88f6df78a6d06c8f8c72bcbf68a980c">gd::EventsCodeGenerationContext</a>
+</li>
+<li>GetCreationParameters()
+: <a class="el" href="classgd_1_1_group_event.html#aae4b837e4572637a336bb7aff7acfa17">gd::GroupEvent</a>
+</li>
+<li>GetCreationTimestamp()
+: <a class="el" href="classgd_1_1_group_event.html#aa4f86e870b512e2aebfc79660475618e">gd::GroupEvent</a>
 </li>
 <li>GetCurrentConditionDepth()
 : <a class="el" href="classgd_1_1_events_code_generation_context.html#a7809a146c167ddf524d04ee6a74f83d2">gd::EventsCodeGenerationContext</a>
@@ -596,6 +603,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgd_1_1_platform.html#ab9a2b961112ce4894f5706e6749dd74f">gd::Platform</a>
 , <a class="el" href="classgd_1_1_platform_extension.html#a706a9d62176746fa639b489f262d1cee">gd::PlatformExtension</a>
 </li>
+<li>GetGroupEvent()
+: <a class="el" href="classgd_1_1_event_store_dialog.html#ad32acd9186a75420d9f2ba3ab5979ba2">gd::EventStoreDialog</a>
+</li>
 <li>GetHighestZOrder()
 : <a class="el" href="classgd_1_1_highest_z_order_finder.html#aa95317ce1d1f287f2fb73e6efe1e4607">gd::HighestZOrderFinder</a>
 </li>
@@ -649,7 +659,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classgd_1_1_sprite_object.html#a36943f4daf057f20e3b81c3df627cb82">gd::SpriteObject</a>
 </li>
 <li>GetInitialInstances()
-: <a class="el" href="classgd_1_1_external_layout.html#a2d4a45f7036dadec66d9c1040c87abe5">gd::ExternalLayout</a>
+: <a class="el" href="classgd_1_1_external_layout.html#a9db85d1897c159b31e59ce22bfde530a">gd::ExternalLayout</a>
 , <a class="el" href="classgd_1_1_layout.html#aa42d78ac9d071566b9c72766fe2dd6b9">gd::Layout</a>
 </li>
 <li>GetInitialInstanceUnderCursor()
@@ -694,7 +704,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GetLayer()
 : <a class="el" href="classgd_1_1_initial_instance.html#ac7f1d9ebfa3f99b2d329c9b06d75cf84">gd::InitialInstance</a>
-, <a class="el" href="classgd_1_1_layout.html#a76807b5e45bb84c6c4edfcac0af7e6c8">gd::Layout</a>
+, <a class="el" href="classgd_1_1_layout.html#ae973e45bff6d3e5c1db8396dbab282ae">gd::Layout</a>
 </li>
 <li>GetLayerPosition()
 : <a class="el" href="classgd_1_1_layout.html#a8098bb2485697676fe0f8c8144512350">gd::Layout</a>
@@ -705,7 +715,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetLayout()
 : <a class="el" href="classgd_1_1_events_code_generator.html#acfb34ddc549dcc56c8ee69a12ef995c0">gd::EventsCodeGenerator</a>
 , <a class="el" href="classgd_1_1_layout_editor_canvas.html#a157afe107e7532282ff05922a9a785a1">gd::LayoutEditorCanvas</a>
-, <a class="el" href="classgd_1_1_project.html#a74203d664fcc6a6268dde57840638a2c">gd::Project</a>
+, <a class="el" href="classgd_1_1_project.html#a395f5bdedbbb640996e98c05941f8f70">gd::Project</a>
 </li>
 <li>GetLayoutPosition()
 : <a class="el" href="classgd_1_1_project.html#ab0663c1737f1072d0cef6cf20a8d1043">gd::Project</a>
@@ -782,7 +792,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgd_1_1_platform_extension.html#a96c88b10deae3b096596a2bb47542d75">gd::PlatformExtension</a>
 </li>
 <li>GetObject()
-: <a class="el" href="classgd_1_1_class_with_objects.html#a69c34e05bc3905f5e3d57ddf38c1a64b">gd::ClassWithObjects</a>
+: <a class="el" href="classgd_1_1_class_with_objects.html#a07deb0b993bb51b4c52fdc95d5db5c5e">gd::ClassWithObjects</a>
 </li>
 <li>GetObjectCreationFunctionPtr()
 : <a class="el" href="classgd_1_1_platform_extension.html#ac5092f814990bd1f6ba7f9ee03edbbb9">gd::PlatformExtension</a>
@@ -792,7 +802,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GetObjectGroups()
 : <a class="el" href="classgd_1_1_layout.html#a0cb7cf2415e2a266de9d6a67b896e374">gd::Layout</a>
-, <a class="el" href="classgd_1_1_project.html#a390354db2ebe8fda0901392788b8ba63">gd::Project</a>
+, <a class="el" href="classgd_1_1_project.html#a4025ad6e984f1cf0075c591fb5bda9b2">gd::Project</a>
 </li>
 <li>GetObjectLinkedToInitialInstance()
 : <a class="el" href="classgd_1_1_layout_editor_canvas.html#a662dddaef742061b3c834fee3c2bd85b">gd::LayoutEditorCanvas</a>
@@ -811,7 +821,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgd_1_1_class_with_objects.html#a717ac52433262828cb65982e72735d99">gd::ClassWithObjects</a>
 </li>
 <li>GetObjects()
-: <a class="el" href="classgd_1_1_class_with_objects.html#abbbf26154890825e5b233c79f025b74a">gd::ClassWithObjects</a>
+: <a class="el" href="classgd_1_1_class_with_objects.html#a50faf36f6b7f1e9dd7c799349bd9d663">gd::ClassWithObjects</a>
 </li>
 <li>GetObjectsCount()
 : <a class="el" href="classgd_1_1_class_with_objects.html#a3bdf83e6280f41cc66fc329717d74b00">gd::ClassWithObjects</a>
@@ -878,7 +888,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classgd_1_1_platform_manager.html#ab8c542a71baae02a70144dc4e630189b">gd::PlatformManager</a>
 </li>
 <li>GetPoint()
-: <a class="el" href="classgd_1_1_sprite.html#ad792187c8a4d7d908bffc2e1fb54cf80">gd::Sprite</a>
+: <a class="el" href="classgd_1_1_sprite.html#ae171cda76b7125a660b273596647b8d5">gd::Sprite</a>
 </li>
 <li>GetPosition()
 : <a class="el" href="classgd_1_1_variables_container.html#a75c526ec29e1c40313503d84ded2ecf1">gd::VariablesContainer</a>
@@ -927,8 +937,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classgd_1_1_while_event.html#a13e358be617f78ab8e97db1039ba7b38">gd::WhileEvent</a>
 </li>
 <li>GetResource()
-: <a class="el" href="classgd_1_1_resource_folder.html#a2d8719f644208478ad0c2869bf092438">gd::ResourceFolder</a>
-, <a class="el" href="classgd_1_1_resources_manager.html#aa8dd9a0ca81e5b28d399f1181b791ced">gd::ResourcesManager</a>
+: <a class="el" href="classgd_1_1_resource_folder.html#a88e3a37e0326f0453137cc3c95f25f27">gd::ResourceFolder</a>
+, <a class="el" href="classgd_1_1_resources_manager.html#a352de5fd392601d578e940d374c03e9d">gd::ResourcesManager</a>
 </li>
 <li>GetResourcesManager()
 : <a class="el" href="classgd_1_1_project.html#a0fd8e381ad1940e24d00aa5a69560a79">gd::Project</a>
@@ -967,14 +977,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgd_1_1_layout_editor_canvas.html#a0a9a92a1ea38d10292ca14e65fef3dc2">gd::LayoutEditorCanvas</a>
 </li>
 <li>GetSFMLSprite()
-: <a class="el" href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">gd::Sprite</a>
+: <a class="el" href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">gd::Sprite</a>
 </li>
 <li>GetSFMLTexture()
 : <a class="el" href="classgd_1_1_image_manager.html#ac7a53474b3ae46e6de80162648b8ddb7">gd::ImageManager</a>
 , <a class="el" href="classgd_1_1_sprite.html#a73c7cbfa3fc22471d9a05e4f0e8fc698">gd::Sprite</a>
 </li>
+<li>GetSource()
+: <a class="el" href="classgd_1_1_group_event.html#ab6d0825d1c066a2b21bae7070cc2e7d7">gd::GroupEvent</a>
+</li>
 <li>GetSourceFile()
-: <a class="el" href="classgd_1_1_project.html#aafb3d9b183ad4040bfda5f15b3ff09b9">gd::Project</a>
+: <a class="el" href="classgd_1_1_project.html#a5bf26e847135a4dacdb06562b41140dd">gd::Project</a>
 </li>
 <li>GetSprite()
 : <a class="el" href="classgd_1_1_direction.html#a2eb9d57573cad4e64d37611ff4731536">gd::Direction</a>
@@ -993,15 +1006,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgd_1_1_serializer_element.html#a56e90291b4fa7c659f1df70119337af3">gd::SerializerElement</a>
 </li>
 <li>GetSubEvents()
-: <a class="el" href="classgd_1_1_base_event.html#a3c00ce4d4d8c1e0e6ff6d9c6b3801b0c">gd::BaseEvent</a>
+: <a class="el" href="classgd_1_1_base_event.html#aa341b80a4073c17f4ecae98119a848e3">gd::BaseEvent</a>
 , <a class="el" href="classgd_1_1_for_each_event.html#a0361b570495b269265fa15c46dfefbc6">gd::ForEachEvent</a>
 , <a class="el" href="classgd_1_1_group_event.html#a200e38bf3c636a7542f063fd2f3e4d5a">gd::GroupEvent</a>
-, <a class="el" href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">gd::RepeatEvent</a>
+, <a class="el" href="classgd_1_1_repeat_event.html#a2f11c29c117e9ebe777ad132208097a1">gd::RepeatEvent</a>
 , <a class="el" href="classgd_1_1_standard_event.html#a8b009ff8c79fa8de8aebe0500d4c9120">gd::StandardEvent</a>
-, <a class="el" href="classgd_1_1_while_event.html#a97c39222f2ac1fd9483faecdd5dfc121">gd::WhileEvent</a>
+, <a class="el" href="classgd_1_1_while_event.html#a5b9b2d85b3ce41818896f3a93d51cfd9">gd::WhileEvent</a>
 </li>
 <li>GetSubInstructions()
-: <a class="el" href="classgd_1_1_instruction.html#a492872c7da48eb17a568d4f724044cb0">gd::Instruction</a>
+: <a class="el" href="classgd_1_1_instruction.html#aaea8abb93f9c3a21a25fd44a5656dcb0">gd::Instruction</a>
 </li>
 <li>GetSubtitle()
 : <a class="el" href="classgd_1_1_platform.html#ac5e285c2ff3b9ae6dbe157f45e62f8d5">gd::Platform</a>
@@ -1084,7 +1097,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 30 2014 16:53:43 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 3 2015 16:57:23 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

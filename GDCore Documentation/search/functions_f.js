@@ -8,6 +8,7 @@ var searchData=
   ['refreshlist',['RefreshList',['../classgd_1_1_object_list_dialogs_helper.html#aaa1e2055b0346e1e1c3d28368112f5ec',1,'gd::ObjectListDialogsHelper']]],
   ['refreshlists',['RefreshLists',['../classgd_1_1_object_list_dialogs_helper.html#a6b1612b7d6264e11cb8d7ba6f5f498b8',1,'gd::ObjectListDialogsHelper']]],
   ['refreshneeded',['RefreshNeeded',['../classgd_1_1_layout.html#a075920c153ac2859298fe60a87cadaba',1,'gd::Layout']]],
+  ['refreshwith',['RefreshWith',['../classgd_1_1_event_store_dialog.html#a4e7df6cedeb4e6a13446aa6d98c87937',1,'gd::EventStoreDialog']]],
   ['reloadimage',['ReloadImage',['../classgd_1_1_image_manager.html#ad717b5c4cb37b0f75f05863fbfac7f2b',1,'gd::ImageManager']]],
   ['reloadresources',['ReloadResources',['../classgd_1_1_layout_editor_canvas.html#ace5bbbb0f2f1f45fa735fc56c7bce18f',1,'gd::LayoutEditorCanvas']]],
   ['remove',['Remove',['../classgd_1_1_variables_container.html#a46bfe9e2cf428a3d948e07cd8c7f99a7',1,'gd::VariablesContainer']]],

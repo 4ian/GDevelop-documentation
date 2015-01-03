@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ressourcesloader',['RessourcesLoader',['../da/de2/classgd_1_1_ressources_loader.html',1,'gd']]],
+  ['resourcesloader',['ResourcesLoader',['../de/dd6/classgd_1_1_resources_loader.html',1,'gd']]],
   ['runtimecamera',['RuntimeCamera',['../d4/d47/class_runtime_camera.html',1,'']]],
   ['runtimecontext',['RuntimeContext',['../dd/de6/class_runtime_context.html',1,'']]],
   ['runtimegame',['RuntimeGame',['../d8/ddb/class_runtime_game.html',1,'']]],

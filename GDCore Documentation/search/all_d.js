@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['parametercontrolshelper',['ParameterControlsHelper',['../classgd_1_1_parameter_controls_helper.html',1,'gd']]],
+  ['parametercontrolshelper',['ParameterControlsHelper',['../classgd_1_1_parameter_controls_helper.html#ae38508c9c8d2b53b5b49d389087cbdc3',1,'gd::ParameterControlsHelper']]],
   ['parameterhighlighted',['ParameterHighLighted',['../classgd_1_1_events_editor_selection.html#aaaf726c36b3b72c4afc2d6627fd1d74f',1,'gd::EventsEditorSelection']]],
   ['parameteritem',['ParameterItem',['../classgd_1_1_parameter_item.html',1,'gd']]],
   ['parametermetadata',['ParameterMetadata',['../classgd_1_1_parameter_metadata.html',1,'gd']]],
@@ -39,6 +41,6 @@ var searchData=
   ['projectresourcescopier',['ProjectResourcesCopier',['../classgd_1_1_project_resources_copier.html',1,'gd']]],
   ['projectstripper',['ProjectStripper',['../classgd_1_1_project_stripper.html',1,'gd']]],
   ['projectupdatedialog',['ProjectUpdateDialog',['../class_project_update_dialog.html',1,'']]],
-  ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html#ab68d8cbc3167e8490321ef6aa797f97d',1,'gd::PropertyDescriptor::PropertyDescriptor(std::string propertyValue)'],['../classgd_1_1_property_descriptor.html#a85f0493da16ca3b1d7e7e5f797e73ae3',1,'gd::PropertyDescriptor::PropertyDescriptor()']]],
-  ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html',1,'gd']]]
+  ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html',1,'gd']]],
+  ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html#ab68d8cbc3167e8490321ef6aa797f97d',1,'gd::PropertyDescriptor::PropertyDescriptor(std::string propertyValue)'],['../classgd_1_1_property_descriptor.html#a85f0493da16ca3b1d7e7e5f797e73ae3',1,'gd::PropertyDescriptor::PropertyDescriptor()']]]
 ];

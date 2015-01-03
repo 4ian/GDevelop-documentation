@@ -38,7 +38,6 @@ var searchData=
   ['hassubevents',['HasSubEvents',['../classgd_1_1_base_event.html#abfac7dcfd722cd1dae332d9c34e15688',1,'gd::BaseEvent']]],
   ['helpfileaccess',['HelpFileAccess',['../classgd_1_1_help_file_access.html',1,'gd']]],
   ['helpprovider',['HelpProvider',['../classgd_1_1_help_provider.html',1,'gd']]],
-  ['hidewarnings',['HideWarnings',['../classgd_1_1_serializer_element.html#add834450cfeb167a5ebac79d11505764',1,'gd::SerializerElement']]],
   ['highestzorderfinder',['HighestZOrderFinder',['../classgd_1_1_highest_z_order_finder.html',1,'gd']]],
   ['history',['history',['../classgd_1_1_layout_editor_canvas.html#a9ca782f0fe96a775480074fdefb802ba',1,'gd::LayoutEditorCanvas']]]
 ];

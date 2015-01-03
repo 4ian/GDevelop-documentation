@@ -39,5 +39,5 @@ var searchData=
   ['treeitemexpressionmetadata',['TreeItemExpressionMetadata',['../classgd_1_1_tree_item_expression_metadata.html',1,'gd']]],
   ['treeitemstringdata',['TreeItemStringData',['../classgd_1_1_tree_item_string_data.html',1,'gd']]],
   ['triggerdrop',['TriggerDrop',['../class_resources_editor.html#a5bf57fe5ccf997212a85d2ef236291c9',1,'ResourcesEditor']]],
-  ['type',['Type',['../class_ti_xml_node.html#a57b99d5c97d67a42b9752f5210a1ba5e',1,'TiXmlNode::Type()'],['../classgd_1_1_parameter_metadata.html#a57b4f6a08da62a16572138895bd988bb',1,'gd::ParameterMetadata::type()'],['../classgd_1_1_automatism.html#a84b2535412f5523d868380648366d11a',1,'gd::Automatism::type()'],['../classgd_1_1_object.html#a8b2ad71f805a93a24b1d4b984fd1404f',1,'gd::Object::type()']]]
+  ['type',['type',['../classgd_1_1_parameter_metadata.html#a57b4f6a08da62a16572138895bd988bb',1,'gd::ParameterMetadata::type()'],['../classgd_1_1_automatism.html#a84b2535412f5523d868380648366d11a',1,'gd::Automatism::type()'],['../classgd_1_1_object.html#a8b2ad71f805a93a24b1d4b984fd1404f',1,'gd::Object::type()'],['../class_ti_xml_node.html#a57b99d5c97d67a42b9752f5210a1ba5e',1,'TiXmlNode::Type()']]]
 ];
