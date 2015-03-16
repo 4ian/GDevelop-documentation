@@ -15,6 +15,11 @@ var searchData=
   ['hasexternaleventsnamed',['HasExternalEventsNamed',['../classgd_1_1_project.html#a8ec120d6b2c55165a84a8c67703b1749',1,'gd::Project']]],
   ['hasexternallayoutnamed',['HasExternalLayoutNamed',['../classgd_1_1_project.html#a25de640b19224e7f2d853100ff53775b',1,'gd::Project']]],
   ['hasfolder',['HasFolder',['../classgd_1_1_resources_manager.html#a0b76604003ff10061ec603dde50c54ef',1,'gd::ResourcesManager']]],
+  ['hash_3c_20gd_3a_3aeventitem_20_3e',['hash&lt; gd::EventItem &gt;',['../structstd_1_1hash_3_01gd_1_1_event_item_01_4.html',1,'std']]],
+  ['hash_3c_20gd_3a_3afoldingitem_20_3e',['hash&lt; gd::FoldingItem &gt;',['../structstd_1_1hash_3_01gd_1_1_folding_item_01_4.html',1,'std']]],
+  ['hash_3c_20gd_3a_3ainstructionitem_20_3e',['hash&lt; gd::InstructionItem &gt;',['../structstd_1_1hash_3_01gd_1_1_instruction_item_01_4.html',1,'std']]],
+  ['hash_3c_20gd_3a_3ainstructionlistitem_20_3e',['hash&lt; gd::InstructionListItem &gt;',['../structstd_1_1hash_3_01gd_1_1_instruction_list_item_01_4.html',1,'std']]],
+  ['hash_3c_20gd_3a_3aparameteritem_20_3e',['hash&lt; gd::ParameterItem &gt;',['../structstd_1_1hash_3_01gd_1_1_parameter_item_01_4.html',1,'std']]],
   ['haslayernamed',['HasLayerNamed',['../classgd_1_1_layout.html#aa7d81e2be207b9a21f1852cfcb73a085',1,'gd::Layout']]],
   ['haslayoutnamed',['HasLayoutNamed',['../classgd_1_1_project.html#a6cd5606ab24a35ad07a5a321127a984e',1,'gd::Project']]],
   ['hasloadedsfmltexture',['HasLoadedSFMLTexture',['../classgd_1_1_image_manager.html#ae3cd25126d9feb80446779c7df4c35c6',1,'gd::ImageManager']]],
@@ -39,5 +44,5 @@ var searchData=
   ['helpfileaccess',['HelpFileAccess',['../classgd_1_1_help_file_access.html',1,'gd']]],
   ['helpprovider',['HelpProvider',['../classgd_1_1_help_provider.html',1,'gd']]],
   ['highestzorderfinder',['HighestZOrderFinder',['../classgd_1_1_highest_z_order_finder.html',1,'gd']]],
-  ['history',['history',['../classgd_1_1_layout_editor_canvas.html#a9ca782f0fe96a775480074fdefb802ba',1,'gd::LayoutEditorCanvas']]]
+  ['history',['history',['../classgd_1_1_layout_editor_canvas.html#a73e400de9bec7f76600b837f0e034d45',1,'gd::LayoutEditorCanvas']]]
 ];

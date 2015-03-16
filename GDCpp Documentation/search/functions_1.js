@@ -14,8 +14,8 @@ var searchData=
   ['codeexecutionengine',['CodeExecutionEngine',['../db/dbc/class_code_execution_engine.html#aeba3976e751c94b991ef95da65667223',1,'CodeExecutionEngine::CodeExecutionEngine()'],['../db/dbc/class_code_execution_engine.html#ad13d384d573c5da5de805252655a9fad',1,'CodeExecutionEngine::CodeExecutionEngine(const CodeExecutionEngine &amp;other)']]],
   ['column',['Column',['../dc/d52/class_ti_xml_base.html#ab54bfb9b70fe6dd276e7b279cab7f003',1,'TiXmlBase']]],
   ['containsfile',['ContainsFile',['../dc/dd1/class_dat_file.html#aa044083ead1ad08afe11c6a2cc8ce2ed',1,'DatFile']]],
-  ['copyandcloneallobjects',['CopyAndCloneAllObjects',['../d3/de4/class_obj_instances_holder.html#a6ce24b0aff330eeaf1d35bcf669f0424',1,'ObjInstancesHolder']]],
-  ['createobjectsfrom',['CreateObjectsFrom',['../d7/d7f/class_runtime_scene.html#ae08e820d46ca953e38ebee8ee5cd4eea',1,'RuntimeScene']]],
-  ['createruntimeobject',['CreateRuntimeObject',['../d3/d7d/class_cpp_platform.html#acb2512d3de2a8703ef9698d639ae040b',1,'CppPlatform']]],
-  ['cstr',['CStr',['../d4/de6/class_ti_xml_printer.html#a859eede9597d3e0355b77757be48735e',1,'TiXmlPrinter']]]
+  ['createobjectsfrom',['CreateObjectsFrom',['../d7/d7f/class_runtime_scene.html#a905f240c94a5a75c25ff52654ead6998',1,'RuntimeScene']]],
+  ['createruntimeobject',['CreateRuntimeObject',['../d3/d7d/class_cpp_platform.html#a313eb17a3ac20ed7a117463bb88fef6b',1,'CppPlatform']]],
+  ['cstr',['CStr',['../d4/de6/class_ti_xml_printer.html#a859eede9597d3e0355b77757be48735e',1,'TiXmlPrinter']]],
+  ['cursoronobject',['CursorOnObject',['../d0/d3b/class_runtime_object.html#aa55430a8b445c116a8bb69714e5fa082',1,'RuntimeObject::CursorOnObject()'],['../dd/d1a/class_runtime_sprite_object.html#a65f51c605cd0ecb760fdc3c8a8ce52f5',1,'RuntimeSpriteObject::CursorOnObject()']]]
 ];

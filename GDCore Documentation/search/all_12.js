@@ -14,6 +14,7 @@ var searchData=
   ['updateinitialinstanceproperty',['UpdateInitialInstanceProperty',['../classgd_1_1_sprite_object.html#a05f337d3328621593fd337475c277f03',1,'gd::SpriteObject::UpdateInitialInstanceProperty()'],['../classgd_1_1_object.html#a0f2c0f218e81b47fc76f4948c88e7223',1,'gd::Object::UpdateInitialInstanceProperty()']]],
   ['updateinstructionsfromgd2x',['UpdateInstructionsFromGD2x',['../classgd_1_1_events_list_serialization.html#a8e7634ae6c2de01e51746a35e1ce35ed',1,'gd::EventsListSerialization']]],
   ['updateinstructionsfromgd31x',['UpdateInstructionsFromGD31x',['../classgd_1_1_events_list_serialization.html#a31d884e93568ce11f20d49561e3fea98',1,'gd::EventsListSerialization']]],
+  ['updatemodebuttonsstate',['UpdateModeButtonsState',['../classgd_1_1_layout_editor_canvas.html#ab6bc6ab3536028fd2d32750c0cf0c29a',1,'gd::LayoutEditorCanvas']]],
   ['updatemouseresizecursor',['UpdateMouseResizeCursor',['../classgd_1_1_layout_editor_canvas.html#a20e45969b00482a23b3cf5815b63b51d',1,'gd::LayoutEditorCanvas']]],
   ['updateparametercontent',['UpdateParameterContent',['../classgd_1_1_parameter_controls_helper.html#ab9f0015f89f6966c2e70d56f3cd55dc9',1,'gd::ParameterControlsHelper']]],
   ['updateproperty',['UpdateProperty',['../classgd_1_1_automatism.html#aa105d39fa20432efeaef12923fc0221c',1,'gd::Automatism']]],

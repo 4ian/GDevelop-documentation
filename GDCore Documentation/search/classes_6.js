@@ -6,5 +6,6 @@ var searchData=
   ['gridsetupdialog',['GridSetupDialog',['../classgd_1_1_grid_setup_dialog.html',1,'gd']]],
   ['groupevent',['GroupEvent',['../classgd_1_1_group_event.html',1,'gd']]],
   ['groupeventdialog',['GroupEventDialog',['../class_group_event_dialog.html',1,'']]],
-  ['grouphasthesamename',['GroupHasTheSameName',['../structgd_1_1_group_has_the_same_name.html',1,'gd']]]
+  ['grouphasthesamename',['GroupHasTheSameName',['../structgd_1_1_group_has_the_same_name.html',1,'gd']]],
+  ['guicontentscalefactor',['GUIContentScaleFactor',['../classgd_1_1_g_u_i_content_scale_factor.html',1,'gd']]]
 ];

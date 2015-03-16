@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gd::ObjectsPropgridHelper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_objects_propgrid_helper.html",tooltip="Helper class used to easily use a wxPropertyGrid so as to view and edit the properties of a gd::Objec..."];
+}

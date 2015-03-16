@@ -1,6 +1,7 @@
 var searchData=
 [
   ['date',['Date',['../classgd_1_1_version_wrapper.html#a16750e7270fab12f9f040740ec80902f',1,'gd::VersionWrapper']]],
+  ['deduceautomatism',['DeduceAutomatism',['../classgd_1_1_choose_automatism_dialog.html#ae35137edc81fde003f48f389cc3c0b3e',1,'gd::ChooseAutomatismDialog']]],
   ['defaultvalue',['defaultValue',['../classgd_1_1_parameter_metadata.html#abfb2857f1148407c2ebf768850260f69',1,'gd::ParameterMetadata']]],
   ['deleteallinstructionselected',['DeleteAllInstructionSelected',['../classgd_1_1_events_editor_selection.html#a66e64949623d8e81487f38642e535061',1,'gd::EventsEditorSelection']]],
   ['deletecamera',['DeleteCamera',['../classgd_1_1_layer.html#ab6acd691326d628a50f632ea7ecc5781',1,'gd::Layer']]],
@@ -19,6 +20,7 @@ var searchData=
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
   ['dndtextresourceseditor',['DndTextResourcesEditor',['../class_dnd_text_resources_editor.html',1,'']]],
   ['dndtextspriteobjecteditor',['DndTextSpriteObjectEditor',['../classgd_1_1_dnd_text_sprite_object_editor.html',1,'gd']]],
+  ['do',['Do',['../classgd_1_1_safe_yield.html#abc78c9108c4f2ead5f8534af0e8f2f2f',1,'gd::SafeYield']]],
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a7a41837ada2553926ab7aade944c0e10',1,'gd::Object']]],
   ['dosteppostevents',['DoStepPostEvents',['../classgd_1_1_automatism.html#a3490e1062b04268dee90307b97c867e9',1,'gd::Automatism']]],
   ['dosteppreevents',['DoStepPreEvents',['../classgd_1_1_automatism.html#aa5341430fde256df7ee053fbd544817f',1,'gd::Automatism']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joystickextension',['JoystickExtension',['../d0/d19/class_joystick_extension.html',1,'']]]
+  ['inputmanager',['InputManager',['../df/dd1/class_input_manager.html',1,'']]]
 ];

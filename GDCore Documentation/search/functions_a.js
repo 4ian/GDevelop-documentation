@@ -3,6 +3,8 @@ var searchData=
   ['mainframewrapper',['MainFrameWrapper',['../classgd_1_1_main_frame_wrapper.html#a559097924ab5dbb7077b7ff5f47e5921',1,'gd::MainFrameWrapper']]],
   ['major',['Major',['../classgd_1_1_version_wrapper.html#aaebc3f91baf360317ba94b3ee626dc7d',1,'gd::VersionWrapper']]],
   ['makeabsolute',['MakeAbsolute',['../classgd_1_1_abstract_file_system.html#a64085ea851e2c9fbb0eb321035d4a1dd',1,'gd::AbstractFileSystem::MakeAbsolute()'],['../classgd_1_1_native_file_system.html#abff839d14aa6223db52e7d91a9ab44e8',1,'gd::NativeFileSystem::MakeAbsolute()']]],
+  ['makegroupitem',['MakeGroupItem',['../classgd_1_1_object_list_dialogs_helper.html#a36b1bcd9fd5d04f1f71854d6bca0feff',1,'gd::ObjectListDialogsHelper']]],
+  ['makeobjectitem',['MakeObjectItem',['../classgd_1_1_object_list_dialogs_helper.html#a1df17dccc9c291b426e017d5b7a83e84',1,'gd::ObjectListDialogsHelper']]],
   ['makerelative',['MakeRelative',['../classgd_1_1_abstract_file_system.html#abe14722f2b16c8361af561889198f849',1,'gd::AbstractFileSystem::MakeRelative()'],['../classgd_1_1_native_file_system.html#a2765e9dc96b942be82e6e0c0f4ade87d',1,'gd::NativeFileSystem::MakeRelative()']]],
   ['makespriteownsitsimage',['MakeSpriteOwnsItsImage',['../classgd_1_1_sprite.html#ae64bcb28e3c8607362604c5ff4374913',1,'gd::Sprite']]],
   ['markasadvanced',['MarkAsAdvanced',['../classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277',1,'gd::InstructionMetadata']]],

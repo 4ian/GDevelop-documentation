@@ -1,0 +1,11 @@
+digraph "RuntimeScene::ChangeRenderWindow"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RuntimeScene::ChangeRender\lWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="InputManager::SetWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/dd1/class_input_manager.html#aa3af19f334d2020cda8c053562b6a3f9",tooltip="Set the window managed by the input manager. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RuntimeScene::SetupOpenGLProjection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d7f/class_runtime_scene.html#a8d28a244555bbe468780c5013d0ccaa1",tooltip="Set the OpenGL projection according to the window size and OpenGL scene options. "];
+}

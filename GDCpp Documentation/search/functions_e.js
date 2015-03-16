@@ -8,7 +8,6 @@ var searchData=
   ['removeobjects',['RemoveObjects',['../d3/de4/class_obj_instances_holder.html#a128619e5f15a2b7d117f22af6a7c9987',1,'ObjInstancesHolder']]],
   ['render',['Render',['../d7/d7f/class_runtime_scene.html#a94762e139b325609f870c3239a3e75c6',1,'RuntimeScene']]],
   ['renderandstep',['RenderAndStep',['../d7/d7f/class_runtime_scene.html#a5006e83b6c16df9aa0efa2471ead643b',1,'RuntimeScene']]],
-  ['renderwindowhasfocus',['RenderWindowHasFocus',['../d7/d7f/class_runtime_scene.html#a7ca8a0df1ce8f49a602baa8a0f0a4177',1,'RuntimeScene']]],
   ['renderwindowisfullscreen',['RenderWindowIsFullScreen',['../d7/d7f/class_runtime_scene.html#a23d38c17df25e3ebdd7cbe92c16fac04',1,'RuntimeScene']]],
   ['renderwithoutstep',['RenderWithoutStep',['../d7/d7f/class_runtime_scene.html#a4fad02cbb389465cb750a7ccd8c9a15c',1,'RuntimeScene']]],
   ['replacechild',['ReplaceChild',['../d9/dca/class_ti_xml_node.html#a543208c2c801c84a213529541e904b9f',1,'TiXmlNode']]],

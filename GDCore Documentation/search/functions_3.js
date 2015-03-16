@@ -1,6 +1,7 @@
 var searchData=
 [
   ['date',['Date',['../classgd_1_1_version_wrapper.html#a16750e7270fab12f9f040740ec80902f',1,'gd::VersionWrapper']]],
+  ['deduceautomatism',['DeduceAutomatism',['../classgd_1_1_choose_automatism_dialog.html#ae35137edc81fde003f48f389cc3c0b3e',1,'gd::ChooseAutomatismDialog']]],
   ['deleteallinstructionselected',['DeleteAllInstructionSelected',['../classgd_1_1_events_editor_selection.html#a66e64949623d8e81487f38642e535061',1,'gd::EventsEditorSelection']]],
   ['deletecamera',['DeleteCamera',['../classgd_1_1_layer.html#ab6acd691326d628a50f632ea7ecc5781',1,'gd::Layer']]],
   ['deleteinstances',['DeleteInstances',['../classgd_1_1_layout_editor_canvas.html#a8d85572b93154dfc353cf898cc05d20c',1,'gd::LayoutEditorCanvas']]],
@@ -13,6 +14,7 @@ var searchData=
   ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a890a3618012ed9fd7d0cffc070194a4a',1,'gd::AbstractFileSystem::DirNameFrom()'],['../classgd_1_1_native_file_system.html#af032dbd8fb7bf2a815c01285ac00190e',1,'gd::NativeFileSystem::DirNameFrom()']]],
   ['disablecontrolsforscenepreviewing',['DisableControlsForScenePreviewing',['../classgd_1_1_main_frame_wrapper.html#a68dced529ef83491987ee3710bf46959',1,'gd::MainFrameWrapper']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
+  ['do',['Do',['../classgd_1_1_safe_yield.html#abc78c9108c4f2ead5f8534af0e8f2f2f',1,'gd::SafeYield']]],
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a7a41837ada2553926ab7aade944c0e10',1,'gd::Object']]],
   ['dosteppostevents',['DoStepPostEvents',['../classgd_1_1_automatism.html#a3490e1062b04268dee90307b97c867e9',1,'gd::Automatism']]],
   ['dosteppreevents',['DoStepPreEvents',['../classgd_1_1_automatism.html#aa5341430fde256df7ee053fbd544817f',1,'gd::Automatism']]],

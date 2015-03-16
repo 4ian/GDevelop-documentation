@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keyboardextension',['KeyboardExtension',['../d7/d08/class_keyboard_extension.html',1,'']]]
+  ['joystickextension',['JoystickExtension',['../d0/d19/class_joystick_extension.html',1,'']]]
 ];

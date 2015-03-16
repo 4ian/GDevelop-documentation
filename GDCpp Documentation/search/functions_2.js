@@ -3,6 +3,7 @@ var searchData=
   ['datfile',['DatFile',['../dc/dd1/class_dat_file.html#aa2866c948ea9ebf62b2949a2ec54a9d1',1,'DatFile']]],
   ['deletecamera',['DeleteCamera',['../dd/daf/class_runtime_layer.html#add090b767c166af89d0e8034e67055c5',1,'RuntimeLayer']]],
   ['destroysingleton',['DestroySingleton',['../d3/d7d/class_cpp_platform.html#ab07aa4781dcfb5a94461139aab64a3c2',1,'CppPlatform::DestroySingleton()'],['../d8/dfc/class_font_manager.html#ab7b7e1e95ea4abacec707d9c8e95adeb',1,'FontManager::DestroySingleton()']]],
+  ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../df/dd1/class_input_manager.html#a22f8058cf238c89e0561795ce23efbd7',1,'InputManager']]],
   ['displaytext',['DisplayText',['../d7/d7f/class_runtime_scene.html#a5a5c66442fd84fe4ff3488e295b0a848',1,'RuntimeScene']]],
   ['doautomatismspostevents',['DoAutomatismsPostEvents',['../d0/d3b/class_runtime_object.html#a1d93e96d3124322d07b579a490f5f162',1,'RuntimeObject']]],
   ['doautomatismspreevents',['DoAutomatismsPreEvents',['../d0/d3b/class_runtime_object.html#a97d9ec10d773c9020fbc3810e1e01679',1,'RuntimeObject']]],
