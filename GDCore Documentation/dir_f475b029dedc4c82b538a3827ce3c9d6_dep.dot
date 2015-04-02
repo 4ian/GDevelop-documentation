@@ -1,0 +1,13 @@
+digraph "Events" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abd3e9346511fbf501c65c6da6d93dcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCore" fontname="Helvetica", fontsize="10", URL="dir_abd3e9346511fbf501c65c6da6d93dcd.html"]
+  subgraph clusterdir_f475b029dedc4c82b538a3827ce3c9d6 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f475b029dedc4c82b538a3827ce3c9d6.html"];
+    dir_f475b029dedc4c82b538a3827ce3c9d6 [shape=plaintext label="Events"];
+    dir_8502417aec46b81550977013213da1c7 [shape=box label="Builtin" color="black" fillcolor="white" style="filled" URL="dir_8502417aec46b81550977013213da1c7.html"];
+  }
+  }
+}

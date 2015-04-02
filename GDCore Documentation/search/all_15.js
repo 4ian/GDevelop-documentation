@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['year',['Year',['../classgd_1_1_version_wrapper.html#aee78b1aaa0d4244b26ce6b558f045fbe',1,'gd::VersionWrapper']]]
+  ['zoomfactor',['zoomFactor',['../classgd_1_1_layout_editor_canvas_options.html#a7739a9482a1f412cbf2b4f81d8875d92',1,'gd::LayoutEditorCanvasOptions']]]
 ];

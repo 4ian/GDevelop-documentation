@@ -1,4 +1,0 @@
-<map id="Sound::SetVolume" name="Sound::SetVolume">
-<area shape="rect" id="node3" href="$d0/d9e/class_sound.html#a04fa543cd2086469bcfe4eaf64215819" title="Sound::UpdateVolume" alt="" coords="184,5,336,32"/>
-<area shape="rect" id="node5" href="$d5/dd9/class_sound_manager.html#a4e241edbbe7e34738cd6de059d0e5e6c" title="SoundManager::GetGlobalVolume" alt="" coords="384,5,603,32"/>
-</map>

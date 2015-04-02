@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>wxPropertyGrid;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>wxPropertyGridEvent;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_ti_xml_element.html">TiXmlElement</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>TiXmlElement;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/ObjectGroup.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/ClassWithObjects.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/ChangesNotifier.h&quot;</span></div>
@@ -395,7 +395,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project);</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordtype">void</span> LoadProjectInformationFromXml(<span class="keyword">const</span> <a class="code" href="class_ti_xml_element.html">TiXmlElement</a> * elem);</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordtype">void</span> LoadProjectInformationFromXml(<span class="keyword">const</span> TiXmlElement * elem);</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    std::string                                         name; </div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                        windowWidth; </div>
@@ -474,7 +474,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classgd_1_1_project_html_a696af1a42432d67bca5af66fc04ef546"><div class="ttname"><a href="classgd_1_1_project.html#a696af1a42432d67bca5af66fc04ef546">gd::Project::IsVerticalSynchronizationEnabledByDefault</a></div><div class="ttdeci">bool IsVerticalSynchronizationEnabledByDefault() const </div><div class="ttdef"><b>Definition:</b> Project.h:145</div></div>
 <div class="ttc" id="classgd_1_1_project_html_a2c1b9359a9aec43f93719f4898bd9062"><div class="ttname"><a href="classgd_1_1_project.html#a2c1b9359a9aec43f93719f4898bd9062">gd::Project::linuxExecutableFilename</a></div><div class="ttdeci">std::string linuxExecutableFilename</div><div class="ttdoc">Linux executable name. </div><div class="ttdef"><b>Definition:</b> Project.h:715</div></div>
 <div class="ttc" id="classgd_1_1_project_html_a4213048a5334c7759aed9c90abc3c651"><div class="ttname"><a href="classgd_1_1_project.html#a4213048a5334c7759aed9c90abc3c651">gd::Project::SetFirstLayout</a></div><div class="ttdeci">void SetFirstLayout(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> Project.h:559</div></div>
-<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdoc">Part of the tinyxml library. </div><div class="ttdef"><b>Definition:</b> tinyxml.h:944</div></div>
 <div class="ttc" id="classgd_1_1_project_html_aaed275a68671d9b61badaaa9a731f7f1"><div class="ttname"><a href="classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1">gd::Project::winExecutableFilename</a></div><div class="ttdeci">std::string winExecutableFilename</div><div class="ttdoc">Windows executable name. </div><div class="ttdef"><b>Definition:</b> Project.h:713</div></div>
 <div class="ttc" id="classgd_1_1_project_html_a4025ad6e984f1cf0075c591fb5bda9b2"><div class="ttname"><a href="classgd_1_1_project.html#a4025ad6e984f1cf0075c591fb5bda9b2">gd::Project::GetObjectGroups</a></div><div class="ttdeci">const std::vector&lt; ObjectGroup &gt; &amp; GetObjectGroups() const </div><div class="ttdoc">Return a const reference to the vector containing the project&#39;s objects groups. </div><div class="ttdef"><b>Definition:</b> Project.h:582</div></div>
 <div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
@@ -490,7 +489,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 17 2015 11:09:43 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 2 2015 23:23:24 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

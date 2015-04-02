@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['recommended_20tools_20and_20advices_20to_20work_20with_20gd',['Recommended tools and advices to work with GD',['../recommended_tools_and_conventions.html',1,'setupDevEnv']]]
+  ['setting_20up_20the_20development_20environment',['Setting up the development environment',['../setup_dev_env.html',1,'index']]]
 ];

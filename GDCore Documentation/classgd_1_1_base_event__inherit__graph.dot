@@ -13,7 +13,7 @@ digraph "gd::BaseEvent"
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="gd::GroupEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_group_event.html",tooltip="A group event, containing only sub events and some (visual only) properties. "];
   Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="gd::LinkEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_link_event.html",tooltip="A link pointing to external events ( or events of another layout ) that should be included and run in..."];
+  Node6 [label="gd::LinkEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_link_event.html",tooltip="A link pointing to external events (or events of another layout) that should be included and run inst..."];
   Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="gd::RepeatEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_repeat_event.html",tooltip="Event being repeated a specified number of times. "];
   Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

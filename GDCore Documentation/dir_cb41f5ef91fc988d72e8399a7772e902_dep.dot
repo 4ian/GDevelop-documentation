@@ -1,0 +1,11 @@
+digraph "PlatformDefinition" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abd3e9346511fbf501c65c6da6d93dcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCore" fontname="Helvetica", fontsize="10", URL="dir_abd3e9346511fbf501c65c6da6d93dcd.html"]
+  dir_cb41f5ef91fc988d72e8399a7772e902 [shape=box, label="PlatformDefinition", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_cb41f5ef91fc988d72e8399a7772e902.html"];
+  }
+  dir_f0e478594b4c2fa2818f86f5d16936c1 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_f0e478594b4c2fa2818f86f5d16936c1.html"];
+  dir_cb41f5ef91fc988d72e8399a7772e902->dir_f0e478594b4c2fa2818f86f5d16936c1 [headlabel="1", labeldistance=1.5 headhref="dir_000007_000010.html"];
+}

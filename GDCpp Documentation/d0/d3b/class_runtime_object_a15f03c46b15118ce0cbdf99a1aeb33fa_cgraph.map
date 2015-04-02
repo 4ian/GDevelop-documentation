@@ -1,9 +1,0 @@
-<map id="RuntimeObject::GetHitBoxes" name="RuntimeObject::GetHitBoxes">
-<area shape="rect" id="node3" href="$d0/d3b/class_runtime_object.html#ab7f45e473387e34cfe121e2b772d0649" title="Get the width of the object. " alt="" coords="252,5,423,32"/>
-<area shape="rect" id="node5" href="$d0/d3b/class_runtime_object.html#a9fdc8ed08039f5c2cd692e9c22e26e9b" title="Get the height of the object. " alt="" coords="250,56,425,83"/>
-<area shape="rect" id="node7" href="$d0/d3b/class_runtime_object.html#a93ff1974abb09355d1cb208980f32cf8" title="Get the angle of the object, in degrees. " alt="" coords="252,107,423,133"/>
-<area shape="rect" id="node9" href="$d0/d3b/class_runtime_object.html#a145cbfa2cf53ab5b4f7ede3ab4feb2a3" title="Get the X coordinate of the object in the layout. " alt="" coords="265,157,409,184"/>
-<area shape="rect" id="node11" href="$d0/d3b/class_runtime_object.html#add684c08e01b0705448d04f000980489" title="Get the X position of the center, relative to the position returned by GetDrawableX(). " alt="" coords="246,208,429,235"/>
-<area shape="rect" id="node13" href="$d0/d3b/class_runtime_object.html#a09f91467e1b8f7831f5c6d7c9eee0159" title="Get the Y coordinate of the object in the layout. " alt="" coords="264,259,411,285"/>
-<area shape="rect" id="node15" href="$d0/d3b/class_runtime_object.html#aacc50de5e06f1a74040e696775e0c1ae" title="Get the Y position of the center, relative to the position returned by GetDrawableY(). " alt="" coords="245,309,429,336"/>
-</map>

@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['whileevent',['WhileEvent',['../classgd_1_1_while_event.html',1,'gd']]],
-  ['win_5fgtk_2eh',['win_gtk.h',['../win__gtk_8h.html',1,'']]],
-  ['windowmask',['windowMask',['../classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7',1,'gd::LayoutEditorCanvasOptions']]],
-  ['winexecutablefilename',['winExecutableFilename',['../classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1',1,'gd::Project']]],
-  ['winexecutableiconfile',['winExecutableIconFile',['../classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c',1,'gd::Project']]],
-  ['write_20a_20new_20extension',['Write a new extension',['../write_a_new_extension.html',1,'overview']]],
-  ['wxpizza',['wxPizza',['../structwx_pizza.html',1,'']]]
+  ['year',['Year',['../classgd_1_1_version_wrapper.html#aee78b1aaa0d4244b26ce6b558f045fbe',1,'gd::VersionWrapper']]]
 ];

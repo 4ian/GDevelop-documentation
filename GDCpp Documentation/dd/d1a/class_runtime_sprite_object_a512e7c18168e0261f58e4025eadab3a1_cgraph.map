@@ -1,5 +1,0 @@
-<map id="RuntimeSpriteObject::GetHitBoxes" name="RuntimeSpriteObject::GetHitBoxes">
-<area shape="rect" id="node3" href="$dd/d1a/class_runtime_sprite_object.html#ae0638cad11391ac353a252d46e302882" title="RuntimeSpriteObject\l::GetCurrentSFMLSprite" alt="" coords="197,5,360,46"/>
-<area shape="rect" id="node7" href="$dd/d1a/class_runtime_sprite_object.html#a3a461be84dfca2e5e11ce16fdaf30a91" title="RuntimeSpriteObject\l::GetCurrentSprite" alt="" coords="207,70,350,111"/>
-<area shape="rect" id="node5" href="$dd/d1a/class_runtime_sprite_object.html#a51a1331cb303af16df425f5bbafd0ad0" title="RuntimeSpriteObject\l::UpdateCurrentSprite" alt="" coords="408,38,555,79"/>
-</map>

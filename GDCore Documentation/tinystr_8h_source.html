@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   The buffer allocation is made by a simplistic power of 2 like mechanism : if we increase</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   a string and there&#39;s no more room, we allocate a buffer twice as big as we need.</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_ti_xml_string.html">   72</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="class_ti_xml_string.html">TiXmlString</a></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">class </span>GD_CORE_API TiXmlString</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">public</span> :</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// The size type used</span></div>
@@ -167,19 +167,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// TiXmlString empty constructor</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="class_ti_xml_string.html">TiXmlString</a> () : rep_(&amp;nullrep_)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        TiXmlString () : rep_(&amp;nullrep_)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// TiXmlString copy constructor</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_ti_xml_string.html">TiXmlString</a> ( <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; copy) : rep_(0)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        TiXmlString ( <span class="keyword">const</span> TiXmlString &amp; copy) : rep_(0)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                init(copy.length());</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                memcpy(start(), copy.data(), length());</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// TiXmlString constructor, based on a string</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        TIXML_EXPLICIT <a class="code" href="class_ti_xml_string.html">TiXmlString</a> ( <span class="keyword">const</span> <span class="keywordtype">char</span> * copy) : rep_(0)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        TIXML_EXPLICIT TiXmlString ( <span class="keyword">const</span> <span class="keywordtype">char</span> * copy) : rep_(0)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                init( static_cast&lt;size_type&gt;( strlen(copy) ));</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                memcpy(start(), copy, length());</div>
@@ -358,48 +358,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;} ;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b)</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">return</span>    ( a.length() == b.length() )                          <span class="comment">// optimization on some platforms</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;               &amp;&amp; ( strcmp(a.c_str(), b.c_str()) == 0 );        <span class="comment">// actual compare</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &lt; (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b)</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &lt; (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b)</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;{</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">return</span> strcmp(a.c_str(), b.c_str()) &lt; 0;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator != (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b) { <span class="keywordflow">return</span> !(a == b); }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &gt;  (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b) { <span class="keywordflow">return</span> b &lt; a; }</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &lt;= (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b) { <span class="keywordflow">return</span> !(b &lt; a); }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &gt;= (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b) { <span class="keywordflow">return</span> !(a &lt; b); }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator != (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b) { <span class="keywordflow">return</span> !(a == b); }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &gt;  (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b) { <span class="keywordflow">return</span> b &lt; a; }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &lt;= (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b) { <span class="keywordflow">return</span> !(b &lt; a); }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator &gt;= (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b) { <span class="keywordflow">return</span> !(a &lt; b); }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) { <span class="keywordflow">return</span> strcmp(a.c_str(), b) == 0; }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b) { <span class="keywordflow">return</span> b == a; }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator != (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) { <span class="keywordflow">return</span> !(a == b); }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator != (<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b) { <span class="keywordflow">return</span> !(b == a); }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) { <span class="keywordflow">return</span> strcmp(a.c_str(), b) == 0; }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> TiXmlString &amp; b) { <span class="keywordflow">return</span> b == a; }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator != (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) { <span class="keywordflow">return</span> !(a == b); }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator != (<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> TiXmlString &amp; b) { <span class="keywordflow">return</span> !(b == a); }</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<a class="code" href="class_ti_xml_string.html">TiXmlString</a> operator + (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<a class="code" href="class_ti_xml_string.html">TiXmlString</a> operator + (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<a class="code" href="class_ti_xml_string.html">TiXmlString</a> operator + (<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; b);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;TiXmlString operator + (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> TiXmlString &amp; b);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;TiXmlString operator + (<span class="keyword">const</span> TiXmlString &amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;TiXmlString operator + (<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> TiXmlString &amp; b);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">   TiXmlOutStream is an emulation of std::ostream. It is based on TiXmlString.</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">   Only the operators that we need for TinyXML have been developped.</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="class_ti_xml_out_stream.html">  303</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="class_ti_xml_out_stream.html">TiXmlOutStream</a> : <span class="keyword">public</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">class </span>GD_CORE_API TiXmlOutStream : <span class="keyword">public</span> TiXmlString</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">public</span> :</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="comment">// TiXmlOutStream &lt;&lt; operator.</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <a class="code" href="class_ti_xml_out_stream.html">TiXmlOutStream</a> &amp; operator &lt;&lt; (<span class="keyword">const</span> <a class="code" href="class_ti_xml_string.html">TiXmlString</a> &amp; in)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        TiXmlOutStream &amp; operator &lt;&lt; (<span class="keyword">const</span> TiXmlString &amp; in)</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        {</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                *<span class="keyword">this</span> += in;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="comment">// TiXmlOutStream &lt;&lt; operator.</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="class_ti_xml_out_stream.html">TiXmlOutStream</a> &amp; operator &lt;&lt; (<span class="keyword">const</span> <span class="keywordtype">char</span> * in)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        TiXmlOutStream &amp; operator &lt;&lt; (<span class="keyword">const</span> <span class="keywordtype">char</span> * in)</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        {</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                *<span class="keyword">this</span> += in;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -410,12 +410,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif  // TIXML_STRING_INCLUDED</span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#endif  // TIXML_USE_STL</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="ttc" id="class_ti_xml_string_html"><div class="ttname"><a href="class_ti_xml_string.html">TiXmlString</a></div><div class="ttdoc">Part of the tinyxml library. </div><div class="ttdef"><b>Definition:</b> tinystr.h:72</div></div>
-<div class="ttc" id="class_ti_xml_out_stream_html"><div class="ttname"><a href="class_ti_xml_out_stream.html">TiXmlOutStream</a></div><div class="ttdoc">Part of the tinyxml library. </div><div class="ttdef"><b>Definition:</b> tinystr.h:303</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 17 2015 11:09:43 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 2 2015 23:23:24 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

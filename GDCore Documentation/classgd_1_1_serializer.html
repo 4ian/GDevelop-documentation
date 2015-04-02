@@ -106,10 +106,10 @@ Static Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Serialize a <a class="el" href="classgd_1_1_serializer_element.html" title="An element used during serialization from/to XML or JSON. ">SerializerElement</a> from/to XML. </p>
 </div></td></tr>
 <tr class="memitem:a42a2f4a143b857dfcc23684629770a5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42a2f4a143b857dfcc23684629770a5a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ToXML</b> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element, <a class="el" href="class_ti_xml_element.html">TiXmlElement</a> *xmlElement)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ToXML</b> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element, TiXmlElement *xmlElement)</td></tr>
 <tr class="separator:a42a2f4a143b857dfcc23684629770a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85214e8f762ccdea2d41934e0ec3a47e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85214e8f762ccdea2d41934e0ec3a47e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>FromXML</b> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element, const <a class="el" href="class_ti_xml_element.html">TiXmlElement</a> *xmlElement)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FromXML</b> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element, const TiXmlElement *xmlElement)</td></tr>
 <tr class="separator:a85214e8f762ccdea2d41934e0ec3a47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">JSON serialization.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Serialize a <a class="el" href="classgd_1_1_serializer_element.html" title="An element used during serialization from/to XML or JSON. ">SerializerElement</a> from/to JSON. </p>
@@ -124,11 +124,11 @@ static <a class="el" href="classgd_1_1_serializer_element.html">SerializerElemen
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class used to save/load projects and GDCore classes from/to XML or JSON. </p>
 <p>Usage example, with TinyXML: </p><div class="fragment"><div class="line"><span class="comment">//Unserialize from a XML string:</span></div>
-<div class="line"><a class="code" href="class_ti_xml_document.html">TiXmlDocument</a> doc;</div>
-<div class="line"><span class="keywordflow">if</span> ( !doc.<a class="code" href="class_ti_xml_document.html#a789ad2f06f93d52bdb5570b2f3670289">Parse</a>(xmlString.c_str()) )</div>
+<div class="line">TiXmlDocument doc;</div>
+<div class="line"><span class="keywordflow">if</span> ( !doc.Parse(xmlString.c_str()) )</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">//Error in XML file!</span></div>
 <div class="line"></div>
-<div class="line"><a class="code" href="class_ti_xml_handle.html">TiXmlHandle</a> hdl(&amp;doc);</div>
+<div class="line">TiXmlHandle hdl(&amp;doc);</div>
 <div class="line"><a class="code" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> rootElement;</div>
 <div class="line">gd::Serializer::FromXML(rootElement, hdl.FirstChildElement().Element());</div>
 <div class="line">game.UnserializeFrom(rootElement);</div>
@@ -139,7 +139,7 @@ static <a class="el" href="classgd_1_1_serializer_element.html">SerializerElemen
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 17 2015 11:09:44 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 2 2015 23:23:25 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

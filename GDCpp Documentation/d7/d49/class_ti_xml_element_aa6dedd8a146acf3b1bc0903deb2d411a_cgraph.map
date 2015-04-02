@@ -1,5 +1,0 @@
-<map id="TiXmlElement::GetText" name="TiXmlElement::GetText">
-<area shape="rect" id="node3" href="$d9/dca/class_ti_xml_node.html#a44c8eee26bbe2d1b2762038df9dde2f0" title="The first child of this node. Will be null if there are no children. " alt="" coords="208,5,355,32"/>
-<area shape="rect" id="node5" href="$d9/dca/class_ti_xml_node.html#a95a46a52c525992d6b4ee08beb14cd69" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="216,56,347,83"/>
-<area shape="rect" id="node7" href="$d9/dca/class_ti_xml_node.html#a77943eb90d12c2892b1337a9f5918b41" title="TiXmlNode::Value" alt="" coords="219,107,343,133"/>
-</map>

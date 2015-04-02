@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AutomatismsRuntimeSharedData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d99/class_automatisms_runtime_shared_data.html",tooltip="Base class for defining automatisms shared datas used at runtime. "];
+}

@@ -1,0 +1,9 @@
+digraph "BuiltinExtensions" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d2357026098860ba2e16e48ff3d9516a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCpp" fontname="Helvetica", fontsize="10", URL="dir_d2357026098860ba2e16e48ff3d9516a.html"]
+  dir_ffd9572640b0276196628fca0b0e429e [shape=box, label="BuiltinExtensions", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ffd9572640b0276196628fca0b0e429e.html"];
+  }
+}

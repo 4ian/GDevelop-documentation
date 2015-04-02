@@ -7,7 +7,6 @@ var searchData=
   ['displaytext',['DisplayText',['../d7/d7f/class_runtime_scene.html#a5a5c66442fd84fe4ff3488e295b0a848',1,'RuntimeScene']]],
   ['doautomatismspostevents',['DoAutomatismsPostEvents',['../d0/d3b/class_runtime_object.html#a1d93e96d3124322d07b579a490f5f162',1,'RuntimeObject']]],
   ['doautomatismspreevents',['DoAutomatismsPreEvents',['../d0/d3b/class_runtime_object.html#a97d9ec10d773c9020fbc3810e1e01679',1,'RuntimeObject']]],
-  ['doublevalue',['DoubleValue',['../d7/d61/class_ti_xml_attribute.html#a2880ddef53fc7522c99535273954d230',1,'TiXmlAttribute']]],
   ['draw',['Draw',['../d0/d3b/class_runtime_object.html#a8e6eb963d213a0580890ce3edcd5a4f0',1,'RuntimeObject::Draw()'],['../dd/d1a/class_runtime_sprite_object.html#a79601b41465c524c00d35d76abd89fa4',1,'RuntimeSpriteObject::Draw()']]],
   ['dumpallvariables',['DumpAllVariables',['../d3/de0/class_runtime_variables_container.html#a316e0c424d1dfd271eb3c0279bb5456f',1,'RuntimeVariablesContainer']]]
 ];

@@ -161,30 +161,30 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   The buffer allocation is made by a simplistic power of 2 like mechanism : if we increase</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   a string and there&#39;s no more room, we allocate a buffer twice as big as we need.</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../dd/d51/class_ti_xml_string.html">   79</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../dd/d51/class_ti_xml_string.html">TiXmlString</a></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">class </span>GD_API TiXmlString</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">public</span> :</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// The size type used</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">size_t</span> size_type;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// Error value for find primitive</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../dd/d51/class_ti_xml_string.html#a8f4422d227088dc7bec96f479b275d0a">   86</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> size_type <a class="code" href="../../dd/d51/class_ti_xml_string.html#a8f4422d227088dc7bec96f479b275d0a">npos</a>; <span class="comment">// = -1;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> size_type npos; <span class="comment">// = -1;</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// TiXmlString empty constructor</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="../../dd/d51/class_ti_xml_string.html">TiXmlString</a> () : rep_(&amp;nullrep_)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        TiXmlString () : rep_(&amp;nullrep_)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// TiXmlString copy constructor</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="../../dd/d51/class_ti_xml_string.html">TiXmlString</a> ( <span class="keyword">const</span> <a class="code" href="../../dd/d51/class_ti_xml_string.html">TiXmlString</a> &amp; copy) : rep_(0)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        TiXmlString ( <span class="keyword">const</span> TiXmlString &amp; copy) : rep_(0)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                init(copy.length());</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                memcpy(start(), copy.data(), length());</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// TiXmlString constructor, based on a string</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        TIXML_EXPLICIT <a class="code" href="../../dd/d51/class_ti_xml_string.html">TiXmlString</a> ( <span class="keyword">const</span> <span class="keywordtype">char</span> * copy) : rep_(0)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        TIXML_EXPLICIT TiXmlString ( <span class="keyword">const</span> <span class="keywordtype">char</span> * copy) : rep_(0)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                init( static_cast&lt;size_type&gt;( strlen(copy) ));</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                memcpy(start(), copy, length());</div>
@@ -392,19 +392,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">   TiXmlOutStream is an emulation of std::ostream. It is based on TiXmlString.</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">   Only the operators that we need for TinyXML have been developped.</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="../../d9/d15/class_ti_xml_out_stream.html">  310</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d9/d15/class_ti_xml_out_stream.html">TiXmlOutStream</a> : <span class="keyword">public</span> TiXmlString</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="keyword">class </span>GD_API TiXmlOutStream : <span class="keyword">public</span> TiXmlString</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="keyword">public</span> :</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="comment">// TiXmlOutStream &lt;&lt; operator.</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="../../d9/d15/class_ti_xml_out_stream.html">TiXmlOutStream</a> &amp; operator &lt;&lt; (<span class="keyword">const</span> TiXmlString &amp; in)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        TiXmlOutStream &amp; operator &lt;&lt; (<span class="keyword">const</span> TiXmlString &amp; in)</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        {</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                *<span class="keyword">this</span> += in;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        }</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">// TiXmlOutStream &lt;&lt; operator.</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="../../d9/d15/class_ti_xml_out_stream.html">TiXmlOutStream</a> &amp; operator &lt;&lt; (<span class="keyword">const</span> <span class="keywordtype">char</span> * in)</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        TiXmlOutStream &amp; operator &lt;&lt; (<span class="keyword">const</span> <span class="keywordtype">char</span> * in)</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        {</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                *<span class="keyword">this</span> += in;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -416,13 +416,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#endif  // TIXML_USE_STL</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_ti_xml_string_html"><div class="ttname"><a href="../../dd/d51/class_ti_xml_string.html">TiXmlString</a></div><div class="ttdoc">Part of the tinyxml library. </div><div class="ttdef"><b>Definition:</b> tinystr.h:79</div></div>
-<div class="ttc" id="class_ti_xml_string_html_a8f4422d227088dc7bec96f479b275d0a"><div class="ttname"><a href="../../dd/d51/class_ti_xml_string.html#a8f4422d227088dc7bec96f479b275d0a">TiXmlString::npos</a></div><div class="ttdeci">static const size_type npos</div><div class="ttdef"><b>Definition:</b> tinystr.h:86</div></div>
-<div class="ttc" id="class_ti_xml_out_stream_html"><div class="ttname"><a href="../../d9/d15/class_ti_xml_out_stream.html">TiXmlOutStream</a></div><div class="ttdoc">Part of the tinyxml library. </div><div class="ttdef"><b>Definition:</b> tinystr.h:310</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 17 2015 11:09:48 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 2 2015 23:23:29 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

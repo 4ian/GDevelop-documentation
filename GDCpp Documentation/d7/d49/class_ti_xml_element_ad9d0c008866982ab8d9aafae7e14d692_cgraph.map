@@ -1,6 +1,0 @@
-<map id="TiXmlElement::Print" name="TiXmlElement::Print">
-<area shape="rect" id="node3" href="$d7/d61/class_ti_xml_attribute.html#a776478980776a024f7c2846eec640f65" title="Get the next sibling attribute in the DOM. Returns null at end. " alt="" coords="199,5,337,32"/>
-<area shape="rect" id="node5" href="$d9/dca/class_ti_xml_node.html#a95a46a52c525992d6b4ee08beb14cd69" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="203,56,333,83"/>
-<area shape="rect" id="node7" href="$dc/d52/class_ti_xml_base.html#a0de56b3f2ef14c65091a3b916437b512" title="TiXmlBase::Print" alt="" coords="209,107,327,133"/>
-<area shape="rect" id="node9" href="$d9/dca/class_ti_xml_node.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="189,157,347,184"/>
-</map>

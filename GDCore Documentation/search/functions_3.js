@@ -18,7 +18,6 @@ var searchData=
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a7a41837ada2553926ab7aade944c0e10',1,'gd::Object']]],
   ['dosteppostevents',['DoStepPostEvents',['../classgd_1_1_automatism.html#a3490e1062b04268dee90307b97c867e9',1,'gd::Automatism']]],
   ['dosteppreevents',['DoStepPreEvents',['../classgd_1_1_automatism.html#aa5341430fde256df7ee053fbd544817f',1,'gd::Automatism']]],
-  ['doublevalue',['DoubleValue',['../class_ti_xml_attribute.html#a2880ddef53fc7522c99535273954d230',1,'TiXmlAttribute']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
   ['drawactionslist',['DrawActionsList',['../classgd_1_1_events_rendering_helper.html#aebfe746208f697c7716cdfaa78f81a6e',1,'gd::EventsRenderingHelper']]],
   ['drawconditionslist',['DrawConditionsList',['../classgd_1_1_events_rendering_helper.html#a872b6d7cb6151af4df8b69231d4def89',1,'gd::EventsRenderingHelper']]],

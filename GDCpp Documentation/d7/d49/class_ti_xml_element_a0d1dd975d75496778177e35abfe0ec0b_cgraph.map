@@ -1,6 +1,0 @@
-<map id="TiXmlElement::SetDoubleAttribute" name="TiXmlElement::SetDoubleAttribute">
-<area shape="rect" id="node3" href="$d7/d49/class_ti_xml_element.html#abf0b3bd7f0e4c746a89ec6e7f101fc32" title="TiXmlElement::SetAttribute" alt="" coords="272,31,451,57"/>
-<area shape="rect" id="node5" href="$d7/d61/class_ti_xml_attribute.html#a2dae44178f668b3cb48101be4f2236a0" title="Set the value. " alt="" coords="503,5,665,32"/>
-<area shape="rect" id="node7" href="$d9/dca/class_ti_xml_node.html#aa66f4ebcd175204a168ed7c2d7b43071" title="TiXmlNode::GetDocument" alt="" coords="499,56,669,83"/>
-<area shape="rect" id="node9" href="$d9/dca/class_ti_xml_node.html#a8a4cda4b15c29f64cff419309aebed08" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="718,56,882,83"/>
-</map>

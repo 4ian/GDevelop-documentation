@@ -1,0 +1,9 @@
+digraph "PlatformDefinition" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d2357026098860ba2e16e48ff3d9516a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCpp" fontname="Helvetica", fontsize="10", URL="dir_d2357026098860ba2e16e48ff3d9516a.html"]
+  dir_7da0f0891a5b4c01eaa7adee6ec9ff2a [shape=box, label="PlatformDefinition", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7da0f0891a5b4c01eaa7adee6ec9ff2a.html"];
+  }
+}

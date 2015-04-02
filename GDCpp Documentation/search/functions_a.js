@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['name',['Name',['../d7/d61/class_ti_xml_attribute.html#a298a57287d305904ba6bd96ae6f78d3d',1,'TiXmlAttribute']]],
-  ['next',['Next',['../d7/d61/class_ti_xml_attribute.html#a776478980776a024f7c2846eec640f65',1,'TiXmlAttribute']]],
-  ['nextframe',['NextFrame',['../df/dd1/class_input_manager.html#af3877f7a8bc52b937353d9d98892a809',1,'InputManager']]],
-  ['nextsibling',['NextSibling',['../d9/dca/class_ti_xml_node.html#af854baeba384f5fe9859f5aee03b548e',1,'TiXmlNode::NextSibling() const '],['../d9/dca/class_ti_xml_node.html#acaf9dc17531ac041f602f9ad579573ea',1,'TiXmlNode::NextSibling(const char *) const ']]],
-  ['nextsiblingelement',['NextSiblingElement',['../d9/dca/class_ti_xml_node.html#a7667217e269e0da01d1f82aee94d1a3d',1,'TiXmlNode::NextSiblingElement() const '],['../d9/dca/class_ti_xml_node.html#a3d7897999f99cf4870dd59df6331d7ff',1,'TiXmlNode::NextSiblingElement(const char *) const ']]],
-  ['nochildren',['NoChildren',['../d9/dca/class_ti_xml_node.html#aeed21ad30630ef6e7faf096127edc9f3',1,'TiXmlNode']]],
-  ['node',['Node',['../d3/d19/class_ti_xml_handle.html#ab44b723a8dc9af72838a303c079d0376',1,'TiXmlHandle']]],
-  ['notifypausewasmade',['NotifyPauseWasMade',['../d7/d7f/class_runtime_scene.html#a06919a6d92e146b81854b9f6b9a2622f',1,'RuntimeScene']]]
+  ['objectdeletedfromscene',['ObjectDeletedFromScene',['../d5/de6/class_extension_base.html#a38e5ed7fcdc60b731a03bf7ede5c950d',1,'ExtensionBase']]],
+  ['objectnamehaschanged',['ObjectNameHasChanged',['../d3/de4/class_obj_instances_holder.html#a73eb38c0e16431d7a193039665b3f950',1,'ObjInstancesHolder']]],
+  ['objinstancesholder',['ObjInstancesHolder',['../d3/de4/class_obj_instances_holder.html#a4c5b925c319eb121d423cf71dc45413c',1,'ObjInstancesHolder::ObjInstancesHolder()'],['../d3/de4/class_obj_instances_holder.html#afd19ef6a9090c5c7774d09ef6ece2c9a',1,'ObjInstancesHolder::ObjInstancesHolder(const ObjInstancesHolder &amp;other)']]],
+  ['onpositionchanged',['OnPositionChanged',['../d0/d3b/class_runtime_object.html#a04fcfc042dfc329796a78fe3e886f94a',1,'RuntimeObject::OnPositionChanged()'],['../dd/d1a/class_runtime_sprite_object.html#a3dc42587760bca58aeff88ccc7343497',1,'RuntimeSpriteObject::OnPositionChanged()']]],
+  ['openfromfile',['OpenFromFile',['../db/d96/class_music.html#a5ab3c8a3666bbe09b1d0edbe1ee1f1b3',1,'Music']]],
+  ['openfrommemory',['OpenFromMemory',['../db/d96/class_music.html#a2417ccf250f0dc15e0a52076ac059977',1,'Music']]],
+  ['operator_3d',['operator=',['../db/dbc/class_code_execution_engine.html#a6faa4ae0167489101a426069553f6f93',1,'CodeExecutionEngine::operator=()'],['../d3/de4/class_obj_instances_holder.html#a7e8c6be3e90671ff3ca1c6ba2751bd4f',1,'ObjInstancesHolder::operator=()'],['../d0/d3b/class_runtime_object.html#ac4eba869a2089faae697c1a223632300',1,'RuntimeObject::operator=()'],['../d3/de0/class_runtime_variables_container.html#a6e784f6c1ba9d6342e718f58f4cef3c1',1,'RuntimeVariablesContainer::operator=()']]],
+  ['orderobjectsbyzorder',['OrderObjectsByZOrder',['../d7/d7f/class_runtime_scene.html#afda4af0cb7d266a4b8f13d160267c62c',1,'RuntimeScene']]]
 ];

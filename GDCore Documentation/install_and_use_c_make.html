@@ -85,22 +85,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">(All) Install CMake &amp; launch the build </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Building is done using CMake: It is an open-source build system that can generate build files for lots of IDE and build tools (Makefiles...).</p>
+<div class="textblock"><p>Building is done using CMake: it is an open-source build system that can generate build files for lots of IDE and build tools (Makefiles...).</p>
 <h1><a class="anchor" id="installAndUseCMake_download"></a>
 Download and install CMake</h1>
-<p>First, install CMake: Download it <a href="http://www.cmake.org/cmake/resources/software.html">here</a> or get it using your package manager if you're using a Linux distribution.</p>
+<p>First, install CMake: Download it <a href="http://www.cmake.org/cmake/resources/software.html">here</a> for Windows, get it using your package manager if you're using a Linux distribution or using Homebrew for Mac OS X.</p>
 <h1><a class="anchor" id="installAndUseCMake_use"></a>
 Using CMake to generate the build files</h1>
+<p>Using CMake is not difficult and require only a few clicks/commands to enter. Windows users may use the GUI as shown in the next section. Linux and Mac OS X users may prefer to use the command line as shown as the end of this page.</p>
 <h2><a class="anchor" id="installAndUseCMake_use_gui"></a>
 Using the GUI</h2>
 <ul>
-<li>Start the CMake user interface (<em>cmake-gui</em>). Choose the GD root directory as the source directory, and Binaries/.build as the directory where to build the binaries:</li>
+<li>Start the CMake user interface (<em>cmake-gui</em>). Choose the GD root directory as the source directory, and Binaries/build as the directory where to build the binaries:</li>
 </ul>
 <div class="image">
 <img src="usecmake1.png" alt="usecmake1.png"/>
 </div>
 <ul>
-<li>Click on <em>Configure</em>. If asked to create the build directory, answer yes. Choose then your favorite generator: <em>MinGW Makefiles</em> (on Windows) or <em>Unix Makefiles</em> (on Linux) generate a traditional Makefile that can be built using the <em>mingw32-make</em> (on Windows) or <em>make</em> (on Linux) command. You can also choose the <em>Ninja</em> generator to use the <a href="http://martine.github.io/ninja/">Ninja build system</a>.</li>
+<li>Click on <em>Configure</em>. If asked to create the build directory, answer yes. Choose then your favorite generator: <em>MinGW Makefiles</em> (on Windows) or <em>Unix Makefiles</em> (on Linux/OS X) generate a traditional Makefile that can be built using the <em>mingw32-make</em> (on Windows) or <em>make</em> (on Linux/OS X) command. You can also choose the <em>Ninja</em> generator to use the <a href="http://martine.github.io/ninja/">Ninja build system</a>.</li>
 </ul>
 <div class="image">
 <img src="usecmake2.png" alt="usecmake2.png"/>
@@ -113,19 +114,20 @@ Using the GUI</h2>
 <img src="usecmake3.png" alt="usecmake3.png"/>
 </div>
 <ul>
-<li>You can then launch a terminal/command prompt, go to the .build folder ( <code>cd GDRootFolder/Binaries/.build</code> ) and launch the build using the generator you've choosen: <code>mingw32-make</code>, or <code>make</code> on Linux.</li>
+<li>You can then launch a terminal/command prompt, go to the build folder (<code>cd path/to/GD/Binaries/build</code>) and launch the build using the generator you've choosen: <code>mingw32-make</code>, or <code>make</code> on Linux/OS X.</li>
 </ul>
 <h2><a class="anchor" id="installAndUseCMake_use_cmd"></a>
 Using the command line</h2>
 <p>Using the commandline with CMake is also easy:</p>
-<div class="fragment"><div class="line">cd GDRootFolder/Binaries</div>
-<div class="line">mkdir .build</div>
-<div class="line">cd .build</div>
-<div class="line">cmake ../.. -G <span class="stringliteral">&quot;MinGW Makefiles&quot;</span></div>
-<div class="line">mingw32-make</div>
-</div><!-- fragment --><p>or using the fast <a href="http://martine.github.io/ninja/">Ninja build system</a> : </p><div class="fragment"><div class="line">cd GDRootFolder/Binaries</div>
-<div class="line">mkdir .build</div>
-<div class="line">cd .build</div>
+<div class="fragment"><div class="line">cd /path/to/GD/Binaries</div>
+<div class="line">mkdir build</div>
+<div class="line">cd build</div>
+<div class="line">cmake ../..</div>
+<div class="line">make</div>
+</div><!-- fragment --><p>For Windows, replace <code>cmake ../..</code> by <code>cmake ../.. -G "MinGW Makefiles"</code> and <code>make</code> by <code>mingw32-make</code>.</p>
+<p>or using the fast <a href="http://martine.github.io/ninja/">Ninja build system</a> : </p><div class="fragment"><div class="line">cd /path/to/GD/Binaries</div>
+<div class="line">mkdir build</div>
+<div class="line">cd build</div>
 <div class="line">cmake ../.. -G <span class="stringliteral">&quot;Ninja&quot;</span></div>
 <div class="line">ninja</div>
 </div><!-- fragment --><h1><a class="anchor" id="installAndUseCMake_launch"></a>
@@ -136,7 +138,7 @@ Launch GDevelop</h1>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 17 2015 11:09:43 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 2 2015 23:23:24 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

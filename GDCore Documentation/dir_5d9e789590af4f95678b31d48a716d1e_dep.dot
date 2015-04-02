@@ -1,0 +1,17 @@
+digraph "IDE" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abd3e9346511fbf501c65c6da6d93dcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCore" fontname="Helvetica", fontsize="10", URL="dir_abd3e9346511fbf501c65c6da6d93dcd.html"]
+  subgraph clusterdir_5d9e789590af4f95678b31d48a716d1e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_5d9e789590af4f95678b31d48a716d1e.html"];
+    dir_5d9e789590af4f95678b31d48a716d1e [shape=plaintext label="IDE"];
+    dir_a266278f3fcec786c8aaf6cda74d72b0 [shape=box label="Analytics" color="black" fillcolor="white" style="filled" URL="dir_a266278f3fcec786c8aaf6cda74d72b0.html"];
+    dir_bcf6ec501aeeb9d3358543e670fbff9c [shape=box label="Dialogs" color="red" fillcolor="white" style="filled" URL="dir_bcf6ec501aeeb9d3358543e670fbff9c.html"];
+    dir_f37459fc4203c2869a5bc96a5b13c1a8 [shape=box label="wxTools" color="black" fillcolor="white" style="filled" URL="dir_f37459fc4203c2869a5bc96a5b13c1a8.html"];
+  }
+  }
+  dir_f0e478594b4c2fa2818f86f5d16936c1 [shape=box label="Tools" fillcolor="white" style="filled" color="red" URL="dir_f0e478594b4c2fa2818f86f5d16936c1.html"];
+  dir_a266278f3fcec786c8aaf6cda74d72b0->dir_f0e478594b4c2fa2818f86f5d16936c1 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000010.html"];
+}
