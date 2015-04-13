@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>gdjs.RuntimeScene - GDevelop JS Runtime API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+	    <img alt="GDevelop JS Runtime API" src="../assets/css/logo.png" style="max-height: 65%;" title="GDevelop JS Runtime API">
+            GDevelop JS Runtime API
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/gdjs.EventsContext", "classes/gdjs.evtTools.camera", "classes/gdjs.evtTools.common", "classes/gdjs.evtTools.input", "classes/gdjs.evtTools.network", "classes/gdjs.evtTools.object", "classes/gdjs.evtTools.runtimeScene", "classes/gdjs.evtTools.sound", "classes/gdjs.evtTools.storage", "classes/gdjs.evtTools.string", "classes/gdjs.evtTools.window", "classes/gdjs.Force", "classes/gdjs.ImageManager", "classes/gdjs.InputManager", "classes/gdjs.Layer", "classes/gdjs.Polygon", "classes/gdjs.RuntimeAutomatism", "classes/gdjs.RuntimeGame", "classes/gdjs.RuntimeObject", "classes/gdjs.RuntimeScene", "classes/gdjs.Sound", "classes/gdjs.SoundManager", "classes/gdjs.SpriteAnimation", "classes/gdjs.SpriteAnimationFrame", "classes/gdjs.SpriteRuntimeObject", "classes/gdjs.Timer", "classes/gdjs.Variable", "classes/gdjs.VariablesContainer"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+	        <h3>APIs</h3>
+	        <div id="sidebar">
+	            <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+	                <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+	                <li><a href="#modules" data-toggle="tab">Modules</a></li>
+	            </ul>
+	    
+	            <div id="api-tabview-filter">
+	                <input type="search" placeholder="Type to filter APIs">
+	            </div>
+	    
+	            <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+	                <div class="tab-pane active" id="classes">
+	                    <ul id="api-classes" class="nav nav-list">
+	                            <li><a href="../classes/gdjs.EventsContext.html">gdjs.EventsContext</a></li>
+	                            <li><a href="../classes/gdjs.Force.html">gdjs.Force</a></li>
+	                            <li><a href="../classes/gdjs.ImageManager.html">gdjs.ImageManager</a></li>
+	                            <li><a href="../classes/gdjs.InputManager.html">gdjs.InputManager</a></li>
+	                            <li><a href="../classes/gdjs.Layer.html">gdjs.Layer</a></li>
+	                            <li><a href="../classes/gdjs.Polygon.html">gdjs.Polygon</a></li>
+	                            <li><a href="../classes/gdjs.RuntimeAutomatism.html">gdjs.RuntimeAutomatism</a></li>
+	                            <li><a href="../classes/gdjs.RuntimeGame.html">gdjs.RuntimeGame</a></li>
+	                            <li><a href="../classes/gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></li>
+	                            <li><a href="../classes/gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></li>
+	                            <li><a href="../classes/gdjs.SoundManager.html">gdjs.SoundManager</a></li>
+	                            <li><a href="../classes/gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a></li>
+	                            <li><a href="../classes/gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a></li>
+	                            <li><a href="../classes/gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a></li>
+	                            <li><a href="../classes/gdjs.Timer.html">gdjs.Timer</a></li>
+	                            <li><a href="../classes/gdjs.Variable.html">gdjs.Variable</a></li>
+	                            <li><a href="../classes/gdjs.VariablesContainer.html">gdjs.VariablesContainer</a></li>
+	                    </ul>
+	                </div>
+	    
+	                <div class="tab-pane" id="modules">
+	                    <ul id="api-modules" class="nav nav-list">
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+                    Show:
+                    <label for="api-show-inherited" class="checkbox">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected" class="checkbox">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private" class="checkbox">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated" class="checkbox">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </form>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+                            <h1>gdjs.RuntimeScene <small>Class</small></h1>
+                        </div>
+                        
+                        <div class="well well-small">
+                        
+                        
+                                <div class="foundat">
+                                    Defined in: <a href="../files/.._Runtime_runtimescene.js.html#l7"><code>..&#x2F;Runtime&#x2F;runtimescene.js:7</code></a>
+                                </div>
+                        
+                        
+                        </div>
+                        
+                        
+                        <div class="well well-small">
+                            <p>The runtimeScene object represents a scene being played and rendered in the browser in a canvas.</p>
+                        
+                        </div>
+                        
+                        
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
+                        
+                                    <li><a data-toggle="tab" href="#methods">Methods</a></li>
+                            </ul>
+                        
+                            <div class="tab-content">
+                                <div id="index" class="tab-pane active">
+                                    <h2 class="off-left">Item Index</h2>
+                        
+                                        <div class="index-section methods">
+                                            <h3>Methods</h3>
+                        
+                                            <ul class="index-list methods">
+                                                    <li class="index-item method private">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method__cacheOrClearRemovedInstances" data-tablink="_cacheOrClearRemovedInstances">_cacheOrClearRemovedInstances</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method private">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method__constructListOfAllObjects" data-tablink="_constructListOfAllObjects">_constructListOfAllObjects</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method private">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method__updateObjects" data-tablink="_updateObjects">_updateObjects</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method private">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method__updateObjectsPreEvents" data-tablink="_updateObjectsPreEvents">_updateObjectsPreEvents</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method private">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method__updateTime" data-tablink="_updateTime">_updateTime</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_addObject" data-tablink="addObject">addObject</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_createNewUniqueId" data-tablink="createNewUniqueId">createNewUniqueId</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_createObjectsFrom" data-tablink="createObjectsFrom">createObjectsFrom</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_gameStopRequested" data-tablink="gameStopRequested">gameStopRequested</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getElapsedTime" data-tablink="getElapsedTime">getElapsedTime</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getGame" data-tablink="getGame">getGame</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getInitialSharedDataForAutomatism" data-tablink="getInitialSharedDataForAutomatism">getInitialSharedDataForAutomatism</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getName" data-tablink="getName">getName</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getObjects" data-tablink="getObjects">getObjects</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getPIXIContainer" data-tablink="getPIXIContainer">getPIXIContainer</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getPIXIRenderer" data-tablink="getPIXIRenderer">getPIXIRenderer</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getPIXIStage" data-tablink="getPIXIStage">getPIXIStage</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getRequestedScene" data-tablink="getRequestedScene">getRequestedScene</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getTimeScale" data-tablink="getTimeScale">getTimeScale</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getVariables" data-tablink="getVariables">getVariables</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_isFirstFrame" data-tablink="isFirstFrame">isFirstFrame</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_loadFromScene" data-tablink="loadFromScene">loadFromScene</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_markObjectForDeletion" data-tablink="markObjectForDeletion">markObjectForDeletion</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_onCanvasResized" data-tablink="onCanvasResized">onCanvasResized</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_render" data-tablink="render">render</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_renderAndStep" data-tablink="renderAndStep">renderAndStep</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_requestGameStop" data-tablink="requestGameStop">requestGameStop</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_requestSceneChange" data-tablink="requestSceneChange">requestSceneChange</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_setBackgroundColor" data-tablink="setBackgroundColor">setBackgroundColor</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_setEventsFunction" data-tablink="setEventsFunction">setEventsFunction</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_setTimeScale" data-tablink="setTimeScale">setTimeScale</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_updateObjectsForces" data-tablink="updateObjectsForces">updateObjectsForces</a>
+                        
+                                                    </li>
+                                            </ul>
+                                        </div>
+                        
+                        
+                        
+                                </div>
+                        
+                                    <div id="methods" class="tab-pane">
+                                        <h2 class="off-left">Methods</h2>
+                        
+                                            <div id="method__cacheOrClearRemovedInstances" class="method item private">
+                                                <h3 class="name"><code>_cacheOrClearRemovedInstances</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l245"><code>..&#x2F;Runtime&#x2F;runtimescene.js:245</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Empty the list of the removed objects:&lt;br&gt;
+                                            When an object is removed from the scene, it is still kept in the _instancesRemoved member
+                                            of the RuntimeScene.&lt;br&gt;
+                                            This method should be called regularly (after events or automatisms steps) so as to clear this list
+                                            and allows the removed objects to be cached (or destroyed if the cache is full).&lt;br&gt;
+                                            The removed objects could not be sent directly to the cache, as events may still be using them after
+                                            removing them from the scene for example.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method__constructListOfAllObjects" class="method item private">
+                                                <h3 class="name"><code>_constructListOfAllObjects</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l267"><code>..&#x2F;Runtime&#x2F;runtimescene.js:267</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Tool function filling _allObjectsList member with all the instances.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method__updateObjects" class="method item private">
+                                                <h3 class="name"><code>_updateObjects</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l309"><code>..&#x2F;Runtime&#x2F;runtimescene.js:309</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Update the objects (update positions, time management...)</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method__updateObjectsPreEvents" class="method item private">
+                                                <h3 class="name"><code>_updateObjectsPreEvents</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l292"><code>..&#x2F;Runtime&#x2F;runtimescene.js:292</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Update the objects before launching the events.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method__updateTime" class="method item private">
+                                                <h3 class="name"><code>_updateTime</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l225"><code>..&#x2F;Runtime&#x2F;runtimescene.js:225</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Called when rendering to do all times related tasks.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_addObject" class="method item">
+                                                <h3 class="name"><code>addObject</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>obj</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l368"><code>..&#x2F;Runtime&#x2F;runtimescene.js:368</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Add an object to the instances living on the scene.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">obj</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The object to be added.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_createNewUniqueId" class="method item">
+                                                <h3 class="name"><code>createNewUniqueId</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l470"><code>..&#x2F;Runtime&#x2F;runtimescene.js:470</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Create an identifier for a new object of the scene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_createObjectsFrom" class="method item">
+                                                <h3 class="name"><code>createObjectsFrom</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>data</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code>xPos</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code>yPos</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l154"><code>..&#x2F;Runtime&#x2F;runtimescene.js:154</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Create objects from initial instances data ( for example, the initial instances
+                                            of the scene or from an external layout ).</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">data</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The instances data</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name">xPos</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The offset on X axis</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name">yPos</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The offset on Y axis</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_gameStopRequested" class="method item">
+                                                <h3 class="name"><code>gameStopRequested</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l597"><code>..&#x2F;Runtime&#x2F;runtimescene.js:597</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Return true if the scene requested the game to be stopped.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getElapsedTime" class="method item">
+                                                <h3 class="name"><code>getElapsedTime</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l462"><code>..&#x2F;Runtime&#x2F;runtimescene.js:462</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Return the time elapsed since the last frame, in milliseconds.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getGame" class="method item">
+                                                <h3 class="name"><code>getGame</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l503"><code>..&#x2F;Runtime&#x2F;runtimescene.js:503</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the runtimeGame associated to the RuntimeScene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getInitialSharedDataForAutomatism" class="method item">
+                                                <h3 class="name"><code>getInitialSharedDataForAutomatism</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>name</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l520"><code>..&#x2F;Runtime&#x2F;runtimescene.js:520</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the data representing the initial shared data of the scene for the specified automatism.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">name</code>
+                                                                    <span class="type">String</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The name of the automatism</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getName" class="method item">
+                                                <h3 class="name"><code>getName</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l339"><code>..&#x2F;Runtime&#x2F;runtimescene.js:339</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the name of the scene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getObjects" class="method item">
+                                                <h3 class="name"><code>getObjects</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>name</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l382"><code>..&#x2F;Runtime&#x2F;runtimescene.js:382</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get all the instances of the object called name.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">name</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>Name of the object the instances must be returned.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getPIXIContainer" class="method item">
+                                                <h3 class="name"><code>getPIXIContainer</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l495"><code>..&#x2F;Runtime&#x2F;runtimescene.js:495</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the PIXI DisplayObjectContainer associated to the RuntimeScene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getPIXIRenderer" class="method item">
+                                                <h3 class="name"><code>getPIXIRenderer</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l487"><code>..&#x2F;Runtime&#x2F;runtimescene.js:487</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the PIXI renderer associated to the RuntimeScene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getPIXIStage" class="method item">
+                                                <h3 class="name"><code>getPIXIStage</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l479"><code>..&#x2F;Runtime&#x2F;runtimescene.js:479</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the PIXI.Stage associated to the RuntimeScene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getRequestedScene" class="method item">
+                                                <h3 class="name"><code>getRequestedScene</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l615"><code>..&#x2F;Runtime&#x2F;runtimescene.js:615</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Return the name of the new scene to be launched instead of this one.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getTimeScale" class="method item">
+                                                <h3 class="name"><code>getTimeScale</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l589"><code>..&#x2F;Runtime&#x2F;runtimescene.js:589</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the time scale of the scene</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getVariables" class="method item">
+                                                <h3 class="name"><code>getVariables</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                                    <span class="returns-inline">
+                                                        <span class="type"></span>
+                                                    </span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l511"><code>..&#x2F;Runtime&#x2F;runtimescene.js:511</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the variables of the runtimeScene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                                    <div class="returns">
+                                                        <h4>Returns:</h4>
+                                            
+                                                        <div class="returns-description">
+                                                                <p>The container holding the variables of the scene.</p>
+                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                            <div id="method_isFirstFrame" class="method item">
+                                                <h3 class="name"><code>isFirstFrame</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l572"><code>..&#x2F;Runtime&#x2F;runtimescene.js:572</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Return true if the scene is rendering its first frame.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_loadFromScene" class="method item">
+                                                <h3 class="name"><code>loadFromScene</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>sceneData</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l60"><code>..&#x2F;Runtime&#x2F;runtimescene.js:60</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Load the runtime scene from the given scene.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">sceneData</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>An object containing the scene data.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_markObjectForDeletion" class="method item">
+                                                <h3 class="name"><code>markObjectForDeletion</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>object</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l426"><code>..&#x2F;Runtime&#x2F;runtimescene.js:426</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Must be called whenever an object must be removed from the scene.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">object</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The object to be removed.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_onCanvasResized" class="method item">
+                                                <h3 class="name"><code>onCanvasResized</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l49"><code>..&#x2F;Runtime&#x2F;runtimescene.js:49</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Should be called when the canvas where the scene is rendered has been resized.
+                                            See gdjs.RuntimeGame.startStandardGameLoop in particular.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_render" class="method item">
+                                                <h3 class="name"><code>render</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l214"><code>..&#x2F;Runtime&#x2F;runtimescene.js:214</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Render the PIXI stage associated to the runtimeScene.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_renderAndStep" class="method item">
+                                                <h3 class="name"><code>renderAndStep</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                                    <span class="returns-inline">
+                                                        <span class="type"></span>
+                                                    </span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l194"><code>..&#x2F;Runtime&#x2F;runtimescene.js:194</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Step and render the scene.&lt;br&gt;
+                                            Should be called in a game loop.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                                    <div class="returns">
+                                                        <h4>Returns:</h4>
+                                            
+                                                        <div class="returns-description">
+                                                                <p>true if the game loop should continue, false if a scene change or a game stop was
+                                            requested.</p>
+                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                            <div id="method_requestGameStop" class="method item">
+                                                <h3 class="name"><code>requestGameStop</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l605"><code>..&#x2F;Runtime&#x2F;runtimescene.js:605</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>When called, the scene will be flagged as requesting the game to be stopped.&lt;br&gt;
+                                            ( i.e: gameStopRequested will return true ).</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_requestSceneChange" class="method item">
+                                                <h3 class="name"><code>requestSceneChange</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l623"><code>..&#x2F;Runtime&#x2F;runtimescene.js:623</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>When called, the scene will be flagged as requesting a new scene to be launched.</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_setBackgroundColor" class="method item">
+                                                <h3 class="name"><code>setBackgroundColor</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l331"><code>..&#x2F;Runtime&#x2F;runtimescene.js:331</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Change the background color</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                            <div id="method_setEventsFunction" class="method item">
+                                                <h3 class="name"><code>setEventsFunction</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>The</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l180"><code>..&#x2F;Runtime&#x2F;runtimescene.js:180</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Set the function called each time the runtimeScene is stepped.&lt;br&gt;
+                                            The function will be passed the runtimeScene as argument.</p>
+                                            <p>Note that this is already set up by the runtimeScene constructor and that you should
+                                            not need to use this method.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">The</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>function to be called.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_setTimeScale" class="method item">
+                                                <h3 class="name"><code>setTimeScale</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>timeScale</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l580"><code>..&#x2F;Runtime&#x2F;runtimescene.js:580</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Set the time scale of the scene</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">timeScale</code>
+                                                                    <span class="type">Number</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The new time scale (must be positive).</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_updateObjectsForces" class="method item">
+                                                <h3 class="name"><code>updateObjectsForces</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimescene.js.html#l347"><code>..&#x2F;Runtime&#x2F;runtimescene.js:347</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Update the objects positions according to their forces</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                            
+                                            </div>
+                                    </div>
+                        
+                        
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
