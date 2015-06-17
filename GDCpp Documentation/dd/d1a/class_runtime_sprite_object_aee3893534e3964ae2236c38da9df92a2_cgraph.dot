@@ -5,5 +5,7 @@ digraph "RuntimeSpriteObject::ExtraInitializationFromInitialInstance"
   rankdir="LR";
   Node1 [label="RuntimeSpriteObject\l::ExtraInitializationFromInitial\lInstance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="RuntimeSpriteObject\l::SetCurrentAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a28008792dc44dd307e02d7590f270dca"];
+  Node2 [label="RuntimeSpriteObject\l::SetCurrentAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a28008792dc44dd307e02d7590f270dca",tooltip="Change the animation to play. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RuntimeSpriteObject\l::GetAnimationsCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#afe3313b2c27cbf534fa58de46fdf3fcc",tooltip="Get the number of animations inside this object. "];
 }

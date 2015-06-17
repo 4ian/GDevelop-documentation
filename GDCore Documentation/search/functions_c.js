@@ -3,6 +3,7 @@ var searchData=
   ['object',['Object',['../classgd_1_1_object.html#a9b9708833384bdf5cd6609bd8d98d2fd',1,'gd::Object::Object(const std::string &amp;name)'],['../classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968',1,'gd::Object::Object(const gd::Object &amp;object)']]],
   ['objectalreadydeclared',['ObjectAlreadyDeclared',['../classgd_1_1_events_code_generation_context.html#abc17a4510a1944d091b0f44d0541e419',1,'gd::EventsCodeGenerationContext']]],
   ['objectlistdialogshelper',['ObjectListDialogsHelper',['../classgd_1_1_object_list_dialogs_helper.html#ae0b68fe5eb7a148ff1758a84cb425ac0',1,'gd::ObjectListDialogsHelper']]],
+  ['objectorgroupfinder',['ObjectOrGroupFinder',['../classgd_1_1_object_or_group_finder.html#a641bf038964d93e54141ae0f2d40fb4c',1,'gd::ObjectOrGroupFinder']]],
   ['objectslistneeded',['ObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#a41bc6ff13847d2d567e73ae58444d42c',1,'gd::EventsCodeGenerationContext']]],
   ['objectspropgridhelper',['ObjectsPropgridHelper',['../classgd_1_1_objects_propgrid_helper.html#a0683114d13f348a3e7f7aa8f42a4b27e',1,'gd::ObjectsPropgridHelper']]],
   ['objectsupdated',['ObjectsUpdated',['../classgd_1_1_layout_editor_canvas_associated_editor.html#a81483778c93c0229892321d4fccb7aa7',1,'gd::LayoutEditorCanvasAssociatedEditor']]],
@@ -57,9 +58,9 @@ var searchData=
   ['onupdate',['OnUpdate',['../classgd_1_1_layout_editor_previewer.html#aafb2fb85c133b4d7451ff9e4455ea8a4',1,'gd::LayoutEditorPreviewer']]],
   ['onvariablesmodified',['OnVariablesModified',['../classgd_1_1_changes_notifier.html#aefba73147143ffc30ae1ff01e4051c7e',1,'gd::ChangesNotifier']]],
   ['onvscrollbarscroll',['OnvScrollbarScroll',['../classgd_1_1_layout_editor_canvas.html#aa88156023e417cc34243f80e3e1c9760',1,'gd::LayoutEditorCanvas']]],
-  ['openactions',['OpenActions',['../classgd_1_1_events_list_serialization.html#afc08d7a42e794b2264d89d1259fab746',1,'gd::EventsListSerialization']]],
-  ['openconditions',['OpenConditions',['../classgd_1_1_events_list_serialization.html#aee9fe84379a68b232abfbcaef0632ee0',1,'gd::EventsListSerialization']]],
+  ['openactions',['OpenActions',['../classgd_1_1_events_list_serialization.html#ae279d10de9273e137f19742d46e31297',1,'gd::EventsListSerialization']]],
+  ['openconditions',['OpenConditions',['../classgd_1_1_events_list_serialization.html#ae8dbbfb2efcbca4692c19cecba884bab',1,'gd::EventsListSerialization']]],
   ['openurl',['OpenURL',['../classgd_1_1_help_file_access.html#aa12e67a96ac5d3590523ddbe52208d35',1,'gd::HelpFileAccess']]],
   ['operator_3d',['operator=',['../classgd_1_1_object.html#ad2e3a7f23b60a41ae16c2f85ba242e49',1,'gd::Object']]],
-  ['operator_5b_5d',['operator[]',['../classgd_1_1_events_list.html#af9f6b2b941f5c7696fc8ffef5ca2c5f5',1,'gd::EventsList::operator[](size_t index)'],['../classgd_1_1_events_list.html#a93af1a6ffcbae1737e09c4228cdf2013',1,'gd::EventsList::operator[](size_t index) const ']]]
+  ['operator_5b_5d',['operator[]',['../classgd_1_1_events_list.html#af9f6b2b941f5c7696fc8ffef5ca2c5f5',1,'gd::EventsList::operator[](size_t index)'],['../classgd_1_1_events_list.html#a93af1a6ffcbae1737e09c4228cdf2013',1,'gd::EventsList::operator[](size_t index) const '],['../classgd_1_1_s_ptr_list.html#a3d42a8c1ac1a8bd65fd017842e67b164',1,'gd::SPtrList::operator[](size_t index)'],['../classgd_1_1_s_ptr_list.html#a177ff71a7faaf12ca263ba4b10ae142b',1,'gd::SPtrList::operator[](size_t index) const ']]]
 ];

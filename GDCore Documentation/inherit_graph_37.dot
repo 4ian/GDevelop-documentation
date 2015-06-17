@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::Expression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_expression.html",tooltip="Class representing an expression used as a parameter of a gd::Instruction. This class is nothing more..."];
+  Node1 [label="gd::ExpressionCodeGeneration\lInformation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_expression_code_generation_information.html",tooltip="Information about how generate code for an expression. "];
 }

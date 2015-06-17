@@ -184,6 +184,9 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout_editor_canvas.html#aeea2bae46652aea726e12a6c724f06bd">GoToEditingState</a> ()</td></tr>
 <tr class="memdesc:aeea2bae46652aea726e12a6c724f06bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be called ( by previewers for example ) to ask the editor to go back to editing state. <br /></td></tr>
 <tr class="separator:aeea2bae46652aea726e12a6c724f06bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31578aefcfe2a2a956dab1efd049caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout_editor_canvas.html#af31578aefcfe2a2a956dab1efd049caa">EnableIdleEvents</a> (bool enable=true)</td></tr>
+<tr class="memdesc:af31578aefcfe2a2a956dab1efd049caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable idle events. Disabling them avoid the scene to be constantly rendered.  <a href="#af31578aefcfe2a2a956dab1efd049caa">More...</a><br /></td></tr>
+<tr class="separator:af31578aefcfe2a2a956dab1efd049caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e27a044a68ac593594afb0e5647adb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e27a044a68ac593594afb0e5647adb4"></a>
 virtual sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><b>GetInitialInstanceSize</b> (<a class="el" href="classgd_1_1_initial_instance.html">gd::InitialInstance</a> &amp;instance) const </td></tr>
 <tr class="separator:a8e27a044a68ac593594afb0e5647adb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -581,6 +584,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 std::shared_ptr&lt; <a class="el" href="classgd_1_1_layout_editor_previewer.html">gd::LayoutEditorPreviewer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout_editor_canvas.html#a737d70cf5fe2860b2e7da1e555b08c4e">currentPreviewer</a></td></tr>
 <tr class="memdesc:a737d70cf5fe2860b2e7da1e555b08c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The previewer being used to preview the layout. <br /></td></tr>
 <tr class="separator:a737d70cf5fe2860b2e7da1e555b08c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6ba9ae4e8077af7b2bf16ebf196658"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd6ba9ae4e8077af7b2bf16ebf196658"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enableIdleEvents</b></td></tr>
+<tr class="separator:abd6ba9ae4e8077af7b2bf16ebf196658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44548bc2a787f455acacd0db873ac1d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44548bc2a787f455acacd0db873ac1d4"></a>
 wxMenu&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenu</b></td></tr>
 <tr class="separator:a44548bc2a787f455acacd0db873ac1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -976,6 +982,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SmallestInstanceUnde
       </table>
 </div><div class="memdoc">
 <p>Delete the specified instance, notifying associated editors. </p>
+
+</div>
+</div>
+<a class="anchor" id="af31578aefcfe2a2a956dab1efd049caa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::LayoutEditorCanvas::EnableIdleEvents </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable or disable idle events. Disabling them avoid the scene to be constantly rendered. </p>
+<dl class="section note"><dt>Note</dt><dd>Used by the scene editor when the user switch to the event editor. </dd></dl>
 
 </div>
 </div>
@@ -1627,7 +1660,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SmallestInstanceUnde
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:44 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

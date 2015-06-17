@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classgd_1_1_event_metadata-members.html">List of all members</a>  </div>
@@ -103,16 +102,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_event_metadata_8h_source.html">EventMetadata.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_event_metadata_1_1_code_generator.html">CodeGenerator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class used to define the code generated for a single event.  <a href="classgd_1_1_event_metadata_1_1_code_generator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5a081486816466cd7bbd877157e494b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_event_metadata.html#ab5a081486816466cd7bbd877157e494b">SetCodeGenerator</a> (std::shared_ptr&lt; <a class="el" href="classgd_1_1_event_metadata_1_1_code_generator.html">gd::EventMetadata::CodeGenerator</a> &gt; codeGenerator)</td></tr>
-<tr class="separator:ab5a081486816466cd7bbd877157e494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae03f915fc1048bf6a1796b5f1601ea7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae03f915fc1048bf6a1796b5f1601ea7"></a>
+<a class="el" href="classgd_1_1_event_metadata.html">EventMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_event_metadata.html#aae03f915fc1048bf6a1796b5f1601ea7">SetCodeGenerator</a> (std::function&lt; std::string(<a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;event, <a class="el" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp;codeGenerator, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)&gt; function)</td></tr>
+<tr class="memdesc:aae03f915fc1048bf6a1796b5f1601ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the code generator used when generating code from events. <br /></td></tr>
+<tr class="separator:aae03f915fc1048bf6a1796b5f1601ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bc118785e4aafc89c2f22eb4d703d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48bc118785e4aafc89c2f22eb4d703d9"></a>
+<a class="el" href="classgd_1_1_event_metadata.html">EventMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_event_metadata.html#a48bc118785e4aafc89c2f22eb4d703d9">SetPreprocessing</a> (std::function&lt; void(<a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;event, <a class="el" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp;codeGenerator, <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;eventList, unsigned int indexOfTheEventInThisList)&gt; function)</td></tr>
+<tr class="memdesc:a48bc118785e4aafc89c2f22eb4d703d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the code to preprocess the event. <br /></td></tr>
+<tr class="separator:a48bc118785e4aafc89c2f22eb4d703d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023672e0f21b33d6b0ff0bb675c73e25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a023672e0f21b33d6b0ff0bb675c73e25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_event_metadata.html#a023672e0f21b33d6b0ff0bb675c73e25">ClearCodeGenerationAndPreprocessing</a> ()</td></tr>
+<tr class="memdesc:a023672e0f21b33d6b0ff0bb675c73e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the code generation and preprocessing functions of the event. <br /></td></tr>
+<tr class="separator:a023672e0f21b33d6b0ff0bb675c73e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85b040f835873ceac408875fd4fec8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab85b040f835873ceac408875fd4fec8c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_event_metadata.html#ab85b040f835873ceac408875fd4fec8c">HasCustomCodeGenerator</a> () const </td></tr>
+<tr class="memdesc:ab85b040f835873ceac408875fd4fec8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if SetCodeGenerator was called to set a function to call to generate the event code. <br /></td></tr>
+<tr class="separator:ab85b040f835873ceac408875fd4fec8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add4c8f71e51dc4b770a0776604d57672"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add4c8f71e51dc4b770a0776604d57672"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventMetadata</b> (const std::string &amp;name_, const std::string &amp;fullname_, const std::string &amp;description_, const std::string &amp;group_, const std::string &amp;smallicon_, std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt; instance)</td></tr>
 <tr class="separator:add4c8f71e51dc4b770a0776604d57672"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,47 +153,27 @@ wxBitmap&#160;</td><td class="memItemRight" valign="bottom"><b>smallicon</b></td
 <tr class="memitem:af84a1bc7cea936bd03b757ca7151098f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af84a1bc7cea936bd03b757ca7151098f"></a>
 std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b></td></tr>
 <tr class="separator:af84a1bc7cea936bd03b757ca7151098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbb562d90f95e6494f404c61e295b962"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbb562d90f95e6494f404c61e295b962"></a>
-std::shared_ptr&lt; <a class="el" href="classgd_1_1_event_metadata_1_1_code_generator.html">gd::EventMetadata::CodeGenerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>codeGeneration</b></td></tr>
-<tr class="separator:afbb562d90f95e6494f404c61e295b962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6d0a33f871b50e6c47047fe8884db8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b6d0a33f871b50e6c47047fe8884db8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasCustomCodeGenerator</b></td></tr>
+<tr class="separator:a3b6d0a33f871b50e6c47047fe8884db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382e5576c50d82e299ef9c36ca9e0a17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a382e5576c50d82e299ef9c36ca9e0a17"></a>
+std::function&lt; std::string(<a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;event, <a class="el" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp;codeGenerator, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>codeGeneration</b></td></tr>
+<tr class="separator:a382e5576c50d82e299ef9c36ca9e0a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1864a607eed299988b4386ff648c406b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1864a607eed299988b4386ff648c406b"></a>
+std::function&lt; void(<a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;event, <a class="el" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp;codeGenerator, <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;eventList, unsigned int indexOfTheEventInThisList)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>preprocessing</b></td></tr>
+<tr class="separator:a1864a607eed299988b4386ff648c406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describe an event provided by an extension of a platform. </p>
 <p>Extensions writers, you should most of the time be using <a class="el" href="classgd_1_1_platform_extension.html#a7acfb5a1851c05f58f25e026107658cb" title="Declare a new event as being part of the extension. ">PlatformExtension::AddEvent</a> method to add events. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab5a081486816466cd7bbd877157e494b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::EventMetadata::SetCodeGenerator </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgd_1_1_event_metadata_1_1_code_generator.html">gd::EventMetadata::CodeGenerator</a> &gt;&#160;</td>
-          <td class="paramname"><em>codeGenerator</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the code generator used when generating code from events. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_event_metadata_8h_source.html">EventMetadata.h</a></li>
 <li>EventMetadata.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:44 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -188,6 +188,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a5dd9731037c161b560c7059dfcebdf22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a5dd9731037c161b560c7059dfcebdf22">SetManipulatedType</a> (const std::string &amp;type_)</td></tr>
 <tr class="memdesc:a5dd9731037c161b560c7059dfcebdf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the instruction being declared is somewhat manipulating in a standard way.  <a href="#a5dd9731037c161b560c7059dfcebdf22">More...</a><br /></td></tr>
 <tr class="separator:a5dd9731037c161b560c7059dfcebdf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3973a7d388c9663dad936b1afccb82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a1f3973a7d388c9663dad936b1afccb82">SetFunctionName</a> (const std::string &amp;functionName)</td></tr>
+<tr class="memdesc:a1f3973a7d388c9663dad936b1afccb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the function that should be called when generating the source code from events.  <a href="#a1f3973a7d388c9663dad936b1afccb82">More...</a><br /></td></tr>
+<tr class="separator:a1f3973a7d388c9663dad936b1afccb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56a0830051d57ca20ce3d917850bc47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#ab56a0830051d57ca20ce3d917850bc47">InstructionMetadata</a> ()</td></tr>
 <tr class="memdesc:ab56a0830051d57ca20ce3d917850bc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">DefaultConstructor.  <a href="#ab56a0830051d57ca20ce3d917850bc47">More...</a><br /></td></tr>
 <tr class="separator:ab56a0830051d57ca20ce3d917850bc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,7 +222,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </div><div class="memdoc">
 
 <p>DefaultConstructor. </p>
-<p>Please do not use this constructor. Only here to fulfill std::map requirements </p>
+<dl class="section warning"><dt>Warning</dt><dd>Please do not use this constructor. Only here to fulfill std::map requirements. </dd></dl>
 
 </div>
 </div>
@@ -371,6 +374,39 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 
 </div>
 </div>
+<a class="anchor" id="a1f3973a7d388c9663dad936b1afccb82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a>&amp; gd::InstructionMetadata::SetFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>functionName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the function that should be called when generating the source code from events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functionName</td><td>the name of the function to call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Shortcut for <code>codeExtraInformation.SetFunctionName</code>. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab48275cfd8aae0ac2637a71f7869a58a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -420,7 +456,13 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </div><div class="memdoc">
 
 <p>Declare if the instruction being declared is somewhat manipulating in a standard way. </p>
-<p>Shortcut for "codeExtraInformation.SetManipulatedType(type)". </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>"number" or "string" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Shortcut for <code>codeExtraInformation.SetManipulatedType(type)</code>. </dd></dl>
 
 </div>
 </div>
@@ -431,7 +473,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:44 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

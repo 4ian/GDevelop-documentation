@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::EventsCodeGeneration\lContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_events_code_generation_context.html",tooltip="Used to manage the context when generating code for events. "];
+  Node1 [label="gd::EventsCodeGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_events_code_generator.html",tooltip="Internal class used to generate code from events. "];
 }

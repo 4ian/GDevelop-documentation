@@ -3,5 +3,17 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::InstructionMetadata\l::ExtraInformation::CustomCode\lGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html",tooltip="Class used to redefine instruction code generation. "];
+  Node1 [label="gd::LayoutEditorCanvasAssociated\lEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layout_editor_canvas_associated_editor.html",tooltip="Base class meant to be used by the IDE for its editors that are associated with a gd::LayoutEditorCan..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gd::LayersEditorPanel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layers_editor_panel.html",tooltip="Panel showing the layers of a layout and allowing to edit them. "];
+  Node3 [label="RenderWindow",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gd::LayoutEditorCanvas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_layout_editor_canvas.html",tooltip="Base class for implementing the main canvas of layout editors. "];
+  Node5 [label="wxPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LayersEditorPanelBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_layers_editor_panel_base.html"];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ResourcesEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_resources_editor.html",tooltip="Panel for editing the resources of a game. "];
 }

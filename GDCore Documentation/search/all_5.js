@@ -10,7 +10,6 @@ var searchData=
   ['flatauitabart',['FlatAuiTabArt',['../classgd_1_1_flat_aui_tab_art.html',1,'gd']]],
   ['flatauitoolbarart',['FlatAuiToolBarArt',['../classgd_1_1_flat_aui_tool_bar_art.html',1,'gd']]],
   ['floatinfos',['floatInfos',['../classgd_1_1_initial_instance.html#a5cc5aa7c70649610e716342a71b83590',1,'gd::InitialInstance']]],
-  ['folded',['folded',['../classgd_1_1_base_event.html#adb7e06d6fd2635f18a31acf2a61eacd5',1,'gd::BaseEvent']]],
   ['foldingitem',['FoldingItem',['../classgd_1_1_folding_item.html',1,'gd']]],
   ['forcerefreshribbonandconnect',['ForceRefreshRibbonAndConnect',['../class_resources_editor.html#a3b40b322b5f088649530b80c2be50ea1',1,'ResourcesEditor']]],
   ['foreachevent',['ForEachEvent',['../classgd_1_1_for_each_event.html',1,'gd']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nodetype',['NodeType',['../class_ti_xml_node.html#a836eded4920ab9e9ef28496f48cd95a2',1,'TiXmlNode']]]
+  ['hassamename',['HasSameName',['../classgd_1_1_object_or_group_finder.html#ad10e4c1585562f557ad909b065f86296',1,'gd::ObjectOrGroupFinder']]]
 ];

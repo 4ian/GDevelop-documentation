@@ -2,6 +2,7 @@ var searchData=
 [
   ['init',['Init',['../d0/d3b/class_runtime_object.html#ad910735716e8920eddec09321bf0f01a',1,'RuntimeObject']]],
   ['inputmanager',['InputManager',['../df/dd1/class_input_manager.html',1,'InputManager'],['../df/dd1/class_input_manager.html#a8be46886da639b26d67181c29dab6d6c',1,'InputManager::InputManager()'],['../df/dd1/class_input_manager.html#a18f0e41567af95c1e303b1415bbb51a1',1,'InputManager::InputManager(sf::Window *win)']]],
+  ['isanimationstopped',['IsAnimationStopped',['../dd/d1a/class_runtime_sprite_object.html#a9c05469fd9973856a2e355c53009b3e8',1,'RuntimeSpriteObject']]],
   ['iscollidingwith',['IsCollidingWith',['../d0/d3b/class_runtime_object.html#aceb9e9f87b7c1bd7f27ded452ab20e24',1,'RuntimeObject']]],
   ['isfirstloop',['IsFirstLoop',['../d7/d7f/class_runtime_scene.html#ac9070d60bb74bb6365bdd5f377f0aa98',1,'RuntimeScene']]],
   ['isfullscreen',['isFullScreen',['../d7/d7f/class_runtime_scene.html#a599aff82163ff41d10e3e257faf988f8',1,'RuntimeScene']]],

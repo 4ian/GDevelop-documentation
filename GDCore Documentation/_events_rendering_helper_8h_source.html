@@ -101,148 +101,150 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wx/dc.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wx/html/htmprint.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Instruction; }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Platform; }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventsEditorItemsAreas; }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventsEditorSelection; }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>InstructionMetadata;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> {<span class="keyword">class </span>InstructionsMetadataHolder;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classgd_1_1_events_rendering_helper.html">   33</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a> * Get();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> DestroySingleton();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> DrawNiceRectangle(wxDC &amp; dc, <span class="keyword">const</span> wxRect &amp; rect) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> DrawConditionsList(std::vector &lt; gd::Instruction &gt; &amp; conditions, wxDC &amp; dc, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                           <a class="code" href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a> &amp; areas, <a class="code" href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a> &amp; selection, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> DrawActionsList(std::vector &lt; gd::Instruction &gt; &amp; actions, wxDC &amp; dc, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        <a class="code" href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a> &amp; areas, <a class="code" href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a> &amp; selection, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetRenderedConditionsListHeight(<span class="keyword">const</span> std::vector &lt; gd::Instruction &gt; &amp; conditions, <span class="keywordtype">int</span> width, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetRenderedActionsListHeight(<span class="keyword">const</span> std::vector &lt; gd::Instruction &gt; &amp; actions, <span class="keywordtype">int</span> width, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetConditionsColumnWidth()<span class="keyword"> const </span>{<span class="keywordflow">return</span> conditionsColumnWidth;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> SetConditionsColumnWidth(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> conditionsColumnWidth_) { conditionsColumnWidth = conditionsColumnWidth_; };</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    wxPoint DrawTextInArea(std::string text, wxDC &amp; dc, wxRect rect, wxPoint point);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetTextHeightInArea(<span class="keyword">const</span> std::string &amp; text, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> widthAvailable);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> DrawInstruction(<a class="code" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp; instruction,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; instructionMetadata,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        <span class="keywordtype">bool</span> isCondition, wxDC &amp; dc, wxPoint point, <span class="keywordtype">int</span> freeWidth,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event, <a class="code" href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a> &amp; areas, <a class="code" href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a> &amp; selection);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> SetFont(<span class="keyword">const</span> wxFont &amp; font);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> wxFont &amp; GetFont()<span class="keyword"> const </span>{<span class="keywordflow">return</span> font;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">inline</span> wxFont &amp; GetFont() {<span class="keywordflow">return</span> font;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> wxFont &amp; GetNiceFont()<span class="keyword"> const </span>{<span class="keywordflow">return</span> niceFont;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">inline</span> wxFont &amp; GetNiceFont() {<span class="keywordflow">return</span> niceFont;};</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> wxHtmlDCRenderer &amp; GetHTMLRenderer()<span class="keyword"> const </span>{<span class="keywordflow">return</span> htmlRenderer;};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">inline</span> wxHtmlDCRenderer &amp; GetHTMLRenderer() {<span class="keywordflow">return</span> htmlRenderer;};</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetSelectedRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> selectionRectangleFill; }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    wxBrush &amp; GetSelectedRectangleFillBrush() { <span class="keywordflow">return</span> selectionRectangleFill; }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetSelectedRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> selectionRectangleOutline; }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    wxPen &amp; GetSelectedRectangleOutlinePen() { <span class="keywordflow">return</span> selectionRectangleOutline; }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetHighlightedRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> highlightRectangleFill; }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    wxBrush &amp; GetHighlightedRectangleFillBrush() { <span class="keywordflow">return</span> highlightRectangleFill; }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetHighlightedRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> highlightRectangleOutline; }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    wxPen &amp; GetHighlightedRectangleOutlinePen() { <span class="keywordflow">return</span> highlightRectangleOutline; }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetConditionsRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> conditionsRectangleOutline; }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    wxPen &amp; GetConditionsRectangleOutlinePen() { <span class="keywordflow">return</span> conditionsRectangleOutline; }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetActionsRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actionsRectangleOutline; }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    wxPen &amp; GetActionsRectangleOutlinePen() { <span class="keywordflow">return</span> actionsRectangleOutline; }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetConditionsRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> conditionsRectangleFill; }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    wxBrush &amp; GetConditionsRectangleFillBrush() { <span class="keywordflow">return</span> conditionsRectangleFill; }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetActionsRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actionsRectangleFill; }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    wxBrush &amp; GetActionsRectangleFillBrush() { <span class="keywordflow">return</span> actionsRectangleFill; }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::string GetHTMLText(std::string text);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    wxColor eventGradient1;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    wxColor eventGradient2;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    wxColor eventGradient3;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    wxColor eventGradient4;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    wxColor eventBorderColor;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    wxColor eventConditionsGradient1;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    wxColor eventConditionsGradient2;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    wxColor eventConditionsGradient3;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    wxColor eventConditionsGradient4;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    wxColor eventConditionsBorderColor;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    wxColor selectionColor;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    wxColor disabledColor;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    wxColor disabledColor2;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">int</span> instructionsListBorder;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">int</span> separationBetweenInstructions;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a>();</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a>() {};</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> conditionsColumnWidth;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    wxPen selectionRectangleOutline;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    wxBrush selectionRectangleFill;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    wxPen highlightRectangleOutline;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    wxBrush highlightRectangleFill;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    wxPen niceRectangleOutline;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    wxColour niceRectangleFill1;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    wxColour niceRectangleFill2;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    wxPen actionsRectangleOutline;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    wxPen conditionsRectangleOutline;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    wxBrush actionsRectangleFill;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    wxBrush conditionsRectangleFill;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    wxFont font; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">float</span> fontCharacterWidth;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    wxFont niceFont;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    wxHtmlDCRenderer htmlRenderer;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a> *singleton;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    wxBitmap fakeBmp;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif // EventsRenderingHelper_H</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classgd_1_1_events_editor_items_areas_html"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a></div><div class="ttdoc">Allow events to indicate where is displayed an instruction or parameter. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:127</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/InstructionsList.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Instruction; }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Platform; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventsEditorItemsAreas; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventsEditorSelection; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>InstructionMetadata;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> {<span class="keyword">class </span>InstructionsMetadataHolder;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classgd_1_1_events_rendering_helper.html">   34</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a> * Get();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> DestroySingleton();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> DrawNiceRectangle(wxDC &amp; dc, <span class="keyword">const</span> wxRect &amp; rect) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> DrawConditionsList(<a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; conditions, wxDC &amp; dc, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                           <a class="code" href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a> &amp; areas, <a class="code" href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a> &amp; selection, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> DrawActionsList(<a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; actions, wxDC &amp; dc, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> width, <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <a class="code" href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a> &amp; areas, <a class="code" href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a> &amp; selection, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetRenderedConditionsListHeight(<span class="keyword">const</span> <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; conditions, <span class="keywordtype">int</span> width, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetRenderedActionsListHeight(<span class="keyword">const</span> <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; actions, <span class="keywordtype">int</span> width, <span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetConditionsColumnWidth()<span class="keyword"> const </span>{<span class="keywordflow">return</span> conditionsColumnWidth;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> SetConditionsColumnWidth(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> conditionsColumnWidth_) { conditionsColumnWidth = conditionsColumnWidth_; };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    wxPoint DrawTextInArea(std::string text, wxDC &amp; dc, wxRect rect, wxPoint point);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetTextHeightInArea(<span class="keyword">const</span> std::string &amp; text, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> widthAvailable);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> DrawInstruction(<a class="code" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp; instruction,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; instructionMetadata,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        <span class="keywordtype">bool</span> isCondition, wxDC &amp; dc, wxPoint point, <span class="keywordtype">int</span> freeWidth,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                        <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event, <a class="code" href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a> &amp; areas, <a class="code" href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a> &amp; selection);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> SetFont(<span class="keyword">const</span> wxFont &amp; font);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> wxFont &amp; GetFont()<span class="keyword"> const </span>{<span class="keywordflow">return</span> font;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">inline</span> wxFont &amp; GetFont() {<span class="keywordflow">return</span> font;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> wxFont &amp; GetNiceFont()<span class="keyword"> const </span>{<span class="keywordflow">return</span> niceFont;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">inline</span> wxFont &amp; GetNiceFont() {<span class="keywordflow">return</span> niceFont;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> wxHtmlDCRenderer &amp; GetHTMLRenderer()<span class="keyword"> const </span>{<span class="keywordflow">return</span> htmlRenderer;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">inline</span> wxHtmlDCRenderer &amp; GetHTMLRenderer() {<span class="keywordflow">return</span> htmlRenderer;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetSelectedRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> selectionRectangleFill; }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    wxBrush &amp; GetSelectedRectangleFillBrush() { <span class="keywordflow">return</span> selectionRectangleFill; }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetSelectedRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> selectionRectangleOutline; }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    wxPen &amp; GetSelectedRectangleOutlinePen() { <span class="keywordflow">return</span> selectionRectangleOutline; }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetHighlightedRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> highlightRectangleFill; }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    wxBrush &amp; GetHighlightedRectangleFillBrush() { <span class="keywordflow">return</span> highlightRectangleFill; }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetHighlightedRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> highlightRectangleOutline; }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    wxPen &amp; GetHighlightedRectangleOutlinePen() { <span class="keywordflow">return</span> highlightRectangleOutline; }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetConditionsRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> conditionsRectangleOutline; }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    wxPen &amp; GetConditionsRectangleOutlinePen() { <span class="keywordflow">return</span> conditionsRectangleOutline; }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">const</span> wxPen &amp; GetActionsRectangleOutlinePen()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actionsRectangleOutline; }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    wxPen &amp; GetActionsRectangleOutlinePen() { <span class="keywordflow">return</span> actionsRectangleOutline; }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetConditionsRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> conditionsRectangleFill; }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    wxBrush &amp; GetConditionsRectangleFillBrush() { <span class="keywordflow">return</span> conditionsRectangleFill; }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetActionsRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actionsRectangleFill; }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    wxBrush &amp; GetActionsRectangleFillBrush() { <span class="keywordflow">return</span> actionsRectangleFill; }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::string GetHTMLText(std::string text);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    wxColor eventGradient1;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    wxColor eventGradient2;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    wxColor eventGradient3;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    wxColor eventGradient4;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    wxColor eventBorderColor;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    wxColor eventConditionsGradient1;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    wxColor eventConditionsGradient2;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    wxColor eventConditionsGradient3;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    wxColor eventConditionsGradient4;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    wxColor eventConditionsBorderColor;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    wxColor selectionColor;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    wxColor disabledColor;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    wxColor disabledColor2;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">int</span> instructionsListBorder;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">int</span> separationBetweenInstructions;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a>() {};</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> conditionsColumnWidth;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    wxPen selectionRectangleOutline;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    wxBrush selectionRectangleFill;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    wxPen highlightRectangleOutline;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    wxBrush highlightRectangleFill;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    wxPen niceRectangleOutline;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    wxColour niceRectangleFill1;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    wxColour niceRectangleFill2;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    wxPen actionsRectangleOutline;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    wxPen conditionsRectangleOutline;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    wxBrush actionsRectangleFill;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    wxBrush conditionsRectangleFill;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    wxFont font; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">float</span> fontCharacterWidth;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    wxFont niceFont;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    wxHtmlDCRenderer htmlRenderer;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a> *singleton;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    wxBitmap fakeBmp;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;};</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif // EventsRenderingHelper_H</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classgd_1_1_events_editor_items_areas_html"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a></div><div class="ttdoc">Allow events to indicate where is displayed an instruction or parameter. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:128</div></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
 <div class="ttc" id="classgd_1_1_events_editor_selection_html"><div class="ttname"><a href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a></div><div class="ttdoc">Represents the selection in an event editor. </div><div class="ttdef"><b>Definition:</b> EventsEditorSelection.h:27</div></div>
-<div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:44</div></div>
-<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:89</div></div>
+<div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
+<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:90</div></div>
 <div class="ttc" id="classgd_1_1_platform_html"><div class="ttname"><a href="classgd_1_1_platform.html">gd::Platform</a></div><div class="ttdoc">Base class for implementing a platform. </div><div class="ttdef"><b>Definition:</b> Platform.h:40</div></div>
-<div class="ttc" id="classgd_1_1_events_rendering_helper_html"><div class="ttname"><a href="classgd_1_1_events_rendering_helper.html">gd::EventsRenderingHelper</a></div><div class="ttdoc">Provides tools to draw events using wxWidgets toolkit. </div><div class="ttdef"><b>Definition:</b> EventsRenderingHelper.h:33</div></div>
-<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:26</div></div>
+<div class="ttc" id="classgd_1_1_events_rendering_helper_html"><div class="ttname"><a href="classgd_1_1_events_rendering_helper.html">gd::EventsRenderingHelper</a></div><div class="ttdoc">Provides tools to draw events using wxWidgets toolkit. </div><div class="ttdef"><b>Definition:</b> EventsRenderingHelper.h:34</div></div>
+<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:32</div></div>
+<div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList&lt; Instruction &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:43 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

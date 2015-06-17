@@ -15,10 +15,7 @@ var searchData=
   ['choosevariabledialog',['ChooseVariableDialog',['../classgd_1_1_choose_variable_dialog.html',1,'gd']]],
   ['classwithobjects',['ClassWithObjects',['../classgd_1_1_class_with_objects.html',1,'gd']]],
   ['clipboard',['Clipboard',['../classgd_1_1_clipboard.html',1,'gd']]],
-  ['codegenerator',['CodeGenerator',['../classgd_1_1_event_metadata_1_1_code_generator.html',1,'gd::EventMetadata']]],
   ['commentevent',['CommentEvent',['../classgd_1_1_comment_event.html',1,'gd']]],
   ['commonbitmapmanager',['CommonBitmapManager',['../classgd_1_1_common_bitmap_manager.html',1,'gd']]],
-  ['compilationinfo',['CompilationInfo',['../classgd_1_1_compilation_info.html',1,'gd']]],
-  ['customcodegenerator',['CustomCodeGenerator',['../classgd_1_1_expression_code_generation_information_1_1_custom_code_generator.html',1,'gd::ExpressionCodeGenerationInformation']]],
-  ['customcodegenerator',['CustomCodeGenerator',['../classgd_1_1_instruction_metadata_1_1_extra_information_1_1_custom_code_generator.html',1,'gd::InstructionMetadata::ExtraInformation']]]
+  ['compilationinfo',['CompilationInfo',['../classgd_1_1_compilation_info.html',1,'gd']]]
 ];

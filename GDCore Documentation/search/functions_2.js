@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['c_5fstr',['c_str',['../classgd_1_1_expression.html#a0654f6cc990f6b4c73d5ea4898028957',1,'gd::Expression']]],
   ['canhavesubevents',['CanHaveSubEvents',['../classgd_1_1_for_each_event.html#ae74c83a385555bdaf501e1944144d84b',1,'gd::ForEachEvent::CanHaveSubEvents()'],['../classgd_1_1_group_event.html#afd1ce4bf9cc769f0e0f0bea89e189fc6',1,'gd::GroupEvent::CanHaveSubEvents()'],['../classgd_1_1_repeat_event.html#aaa9574a8e1dfdc4e3dbee13dc67b27d8',1,'gd::RepeatEvent::CanHaveSubEvents()'],['../classgd_1_1_standard_event.html#a46a4a1c7d4eccbb101f4c59846587af3',1,'gd::StandardEvent::CanHaveSubEvents()'],['../classgd_1_1_while_event.html#a9ca52093532300b81247f1ed5accaf94',1,'gd::WhileEvent::CanHaveSubEvents()'],['../classgd_1_1_base_event.html#aee79f95c29e8409586385d93fd690fe2',1,'gd::BaseEvent::CanHaveSubEvents()']]],
   ['changeproperty',['ChangeProperty',['../classgd_1_1_resource.html#aee719b7736020842a8fb5f385f4d9b31',1,'gd::Resource::ChangeProperty()'],['../classgd_1_1_image_resource.html#a530fc77f50ef6f8c78765563bef00f8e',1,'gd::ImageResource::ChangeProperty()']]],
   ['changesmade',['ChangesMade',['../classgd_1_1_layout_editor_canvas.html#a73cb6841d2758a93bde960075798e941',1,'gd::LayoutEditorCanvas']]],
@@ -11,8 +12,9 @@ var searchData=
   ['chooseobjecttypedialog',['ChooseObjectTypeDialog',['../classgd_1_1_choose_object_type_dialog.html#a17a33ebe4933c0f62a199b4e5900a305',1,'gd::ChooseObjectTypeDialog']]],
   ['choosevariabledialog',['ChooseVariableDialog',['../classgd_1_1_choose_variable_dialog.html#a6482fb5f0a98f587336d653e7ceb4e7a',1,'gd::ChooseVariableDialog']]],
   ['classwithobjects',['ClassWithObjects',['../classgd_1_1_class_with_objects.html#a762c26c2a86249e61a9fd0a239e0ff4b',1,'gd::ClassWithObjects']]],
-  ['clear',['Clear',['../classgd_1_1_events_list.html#a764749b769c327f5d76ee14044e1ec37',1,'gd::EventsList::Clear()'],['../classgd_1_1_events_editor_items_areas.html#a442b425433dff507b897230593b49166',1,'gd::EventsEditorItemsAreas::Clear()'],['../classgd_1_1_variables_container.html#a9d2b4285cd7f57034cb9fa71ae65c6db',1,'gd::VariablesContainer::Clear()']]],
+  ['clear',['Clear',['../classgd_1_1_events_list.html#a764749b769c327f5d76ee14044e1ec37',1,'gd::EventsList::Clear()'],['../classgd_1_1_events_editor_items_areas.html#a442b425433dff507b897230593b49166',1,'gd::EventsEditorItemsAreas::Clear()'],['../classgd_1_1_variables_container.html#a9d2b4285cd7f57034cb9fa71ae65c6db',1,'gd::VariablesContainer::Clear()'],['../classgd_1_1_s_ptr_list.html#a785ba77ebe2bb1c29d223be462a82ccd',1,'gd::SPtrList::Clear()']]],
   ['clearallguielements',['ClearAllGuiElements',['../classgd_1_1_layout_editor_canvas.html#a8a6d613baf440aff002222c2fb1449d3',1,'gd::LayoutEditorCanvas']]],
+  ['clearcodegenerationandpreprocessing',['ClearCodeGenerationAndPreprocessing',['../classgd_1_1_event_metadata.html#a023672e0f21b33d6b0ff0bb675c73e25',1,'gd::EventMetadata']]],
   ['cleardir',['ClearDir',['../classgd_1_1_abstract_file_system.html#aea70019416b7a9460900a44cad94f590',1,'gd::AbstractFileSystem::ClearDir()'],['../classgd_1_1_native_file_system.html#a51f28379343c7238277000dc8fc41b50',1,'gd::NativeFileSystem::ClearDir()']]],
   ['cleariconcache',['ClearIconCache',['../classgd_1_1_skin_helper.html#a01356a1b4aa447beba0d18cd0fe2394f',1,'gd::SkinHelper']]],
   ['clearselection',['ClearSelection',['../classgd_1_1_layout_editor_canvas.html#a58acbce878a9d181b5b80be6df09efbd',1,'gd::LayoutEditorCanvas::ClearSelection()'],['../classgd_1_1_events_editor_selection.html#ac778255fe924adc565552b0d384801b9',1,'gd::EventsEditorSelection::ClearSelection()']]],
@@ -27,7 +29,7 @@ var searchData=
   ['connectpreviewribbontoolsevents',['ConnectPreviewRibbonToolsEvents',['../classgd_1_1_layout_editor_previewer.html#a534e50728318e50b634361205c602977',1,'gd::LayoutEditorPreviewer']]],
   ['considerasarrayof',['ConsiderAsArrayOf',['../classgd_1_1_serializer_element.html#a4f51560f41544452ad82857eaa0b38c3',1,'gd::SerializerElement']]],
   ['consideredasarrayof',['ConsideredAsArrayOf',['../classgd_1_1_serializer_element.html#a23b604ee00d41f9557909b7d07c99f43',1,'gd::SerializerElement']]],
-  ['contains',['Contains',['../classgd_1_1_events_list.html#a6e71b8b96f8386152f398fd98360073e',1,'gd::EventsList']]],
+  ['contains',['Contains',['../classgd_1_1_events_list.html#a6e71b8b96f8386152f398fd98360073e',1,'gd::EventsList::Contains()'],['../classgd_1_1_s_ptr_list.html#afed8dc58f63095d73de0d0dbf9a9abb5',1,'gd::SPtrList::Contains()']]],
   ['converttostring',['ConvertToString',['../classgd_1_1_events_code_generator.html#a3b2b4c2eef15873c0fc8cae3f1ae334b',1,'gd::EventsCodeGenerator']]],
   ['converttostringexplicit',['ConvertToStringExplicit',['../classgd_1_1_events_code_generator.html#a1809f49a6f9e3afbd37e3e2eaf300077',1,'gd::EventsCodeGenerator']]],
   ['copyallresourcesto',['CopyAllResourcesTo',['../classgd_1_1_project_resources_copier.html#a747447e100db74eb4f2547a5dc303cb2',1,'gd::ProjectResourcesCopier']]],

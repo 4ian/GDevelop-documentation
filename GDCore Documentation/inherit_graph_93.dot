@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::ResourceFolder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_resource_folder.html"];
+  Node1 [label="gd::ResourcesManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_resources_manager.html",tooltip="Inventory all resources used by a project. "];
 }

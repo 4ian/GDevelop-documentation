@@ -8,9 +8,11 @@ var searchData=
   ['editobject',['EditObject',['../classgd_1_1_sprite_object.html#a7b6213b9c3d55ec2f30ccbc97bdfd92c',1,'gd::SpriteObject::EditObject()'],['../classgd_1_1_object.html#a25e67805b095947404f86a8401bc53ef',1,'gd::Object::EditObject()']]],
   ['editproperty',['EditProperty',['../classgd_1_1_resource.html#a4368876f285cf418ce9f56325764df6d',1,'gd::Resource::EditProperty()'],['../classgd_1_1_image_resource.html#a013cad9a86ffc3e697e0afabe35dc9b8',1,'gd::ImageResource::EditProperty()']]],
   ['editstrexpressiondialog',['EditStrExpressionDialog',['../classgd_1_1_edit_str_expression_dialog.html#a11b05970f120162b6f762c48d023989b',1,'gd::EditStrExpressionDialog']]],
+  ['empty',['empty',['../classgd_1_1_s_ptr_list.html#a815ec79a187713d318f08951e6c505d9',1,'gd::SPtrList']]],
   ['emptyobjectslistneeded',['EmptyObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#a6a43feb5e04083e1d0fc7e124ffa690e',1,'gd::EventsCodeGenerationContext']]],
   ['enable',['Enable',['../classgd_1_1_layers_editor_panel.html#a99652bb3cfe9d6130e8b7e754461e282',1,'gd::LayersEditorPanel::Enable()'],['../classgd_1_1_layout_editor_canvas_associated_editor.html#ab8f534b12ee076b0dd2b41d496965ac4',1,'gd::LayoutEditorCanvasAssociatedEditor::Enable()']]],
   ['enablecontrolsafterscenepreviewing',['EnableControlsAfterScenePreviewing',['../classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321',1,'gd::MainFrameWrapper']]],
+  ['enableidleevents',['EnableIdleEvents',['../classgd_1_1_layout_editor_canvas.html#af31578aefcfe2a2a956dab1efd049caa',1,'gd::LayoutEditorCanvas']]],
   ['enableimagesunloading',['EnableImagesUnloading',['../classgd_1_1_image_manager.html#a6143e62ac3c27b17617a15baadb93a84',1,'gd::ImageManager']]],
   ['ensurevisible',['EnsureVisible',['../classgd_1_1_layout_editor_canvas.html#a66062b38c6e80f2a5fc388f054ac9133',1,'gd::LayoutEditorCanvas']]],
   ['entercustomcondition',['EnterCustomCondition',['../classgd_1_1_events_code_generation_context.html#a69469bf336a0e1219502c4aad00273fa',1,'gd::EventsCodeGenerationContext']]],
@@ -26,7 +28,7 @@ var searchData=
   ['exposeconditionsresources',['ExposeConditionsResources',['../classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815',1,'gd::PlatformExtension']]],
   ['exposefile',['ExposeFile',['../classgd_1_1_resources_absolute_path_checker.html#aa41c643c6e842891c7c68311b0847d65',1,'gd::ResourcesAbsolutePathChecker::ExposeFile()'],['../classgd_1_1_resources_merging_helper.html#ac1628e451cf708cb0102962f6f272650',1,'gd::ResourcesMergingHelper::ExposeFile()']]],
   ['exposeresources',['ExposeResources',['../classgd_1_1_sprite_object.html#a1a66f9f7a3a049177278c961d8b85db6',1,'gd::SpriteObject::ExposeResources()'],['../classgd_1_1_object.html#ad02a158af2c102e394f63c4852636b93',1,'gd::Object::ExposeResources()'],['../classgd_1_1_project.html#a0eefaf0417c4848a5dfd0c08938b3624',1,'gd::Project::ExposeResources()']]],
-  ['expression',['Expression',['../classgd_1_1_expression.html#a452b8034236a32b1dd4af0a7e1aeacc1',1,'gd::Expression::Expression()'],['../classgd_1_1_expression.html#aed29a9b299f400c6c10bd5041635b001',1,'gd::Expression::Expression(std::string plainString_)']]],
+  ['expression',['Expression',['../classgd_1_1_expression.html#a452b8034236a32b1dd4af0a7e1aeacc1',1,'gd::Expression::Expression()'],['../classgd_1_1_expression.html#aed29a9b299f400c6c10bd5041635b001',1,'gd::Expression::Expression(std::string plainString_)'],['../classgd_1_1_expression.html#aa1ff91b3bdec0fc256901440c9f24bd2',1,'gd::Expression::Expression(const char *plainString_)']]],
   ['expressionmetadata',['ExpressionMetadata',['../classgd_1_1_expression_metadata.html#a9e1c61f1965fbe6b6bf0965d051a8a4f',1,'gd::ExpressionMetadata']]],
   ['extensionsloadingdone',['ExtensionsLoadingDone',['../classgd_1_1_extensions_loader.html#a6f6d560480848ada0e6f98c80324057f',1,'gd::ExtensionsLoader']]]
 ];

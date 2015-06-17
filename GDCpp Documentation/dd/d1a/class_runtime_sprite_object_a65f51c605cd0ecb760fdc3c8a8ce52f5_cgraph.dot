@@ -17,21 +17,21 @@ digraph "RuntimeSpriteObject::CursorOnObject"
   Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="RuntimeCamera::GetSFMLView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d47/class_runtime_camera.html#afe64393c6deb05ecf0851dd4100aa9e8"];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="RuntimeSpriteObject\l::GetDrawableX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a7bac50886a0e9d26f15fe3300575ed98"];
+  Node8 [label="RuntimeSpriteObject\l::GetDrawableX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a7bac50886a0e9d26f15fe3300575ed98",tooltip="Get the real X position where is renderer the object. "];
   Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="RuntimeSpriteObject\l::GetCurrentSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a3a461be84dfca2e5e11ce16fdaf30a91"];
+  Node9 [label="RuntimeSpriteObject\l::GetCurrentSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a3a461be84dfca2e5e11ce16fdaf30a91",tooltip="Get the current gd::Sprite being displayed. "];
   Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="RuntimeSpriteObject\l::UpdateCurrentSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a51a1331cb303af16df425f5bbafd0ad0"];
+  Node10 [label="RuntimeSpriteObject\l::UpdateCurrentSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a51a1331cb303af16df425f5bbafd0ad0",tooltip="Update the SFML sprite according to position, angle and all parameters of the object. "];
   Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 [label="RuntimeSpriteObject\l::GetWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#aaf10a1897fe1c5a6a94358024a89b4d9"];
+  Node11 [label="RuntimeSpriteObject\l::GetWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#aaf10a1897fe1c5a6a94358024a89b4d9",tooltip="Get the width of the object, in pixels. "];
   Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="RuntimeSpriteObject\l::GetCurrentSFMLSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#ae0638cad11391ac353a252d46e302882"];
+  Node12 [label="RuntimeSpriteObject\l::GetCurrentSFMLSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#ae0638cad11391ac353a252d46e302882",tooltip="Get the SFML sprite used to display the object on the scene. "];
   Node12 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="RuntimeSpriteObject\l::GetDrawableY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#aa82fb001a120db1701a299f934851cc2"];
+  Node13 [label="RuntimeSpriteObject\l::GetDrawableY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#aa82fb001a120db1701a299f934851cc2",tooltip="Get the real Y position where is renderer the object. "];
   Node13 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node14 [label="RuntimeSpriteObject\l::GetHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a26fcbdcd7bff4842679e9f735f702499"];
+  Node14 [label="RuntimeSpriteObject\l::GetHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a26fcbdcd7bff4842679e9f735f702499",tooltip="Get the height of the object, in pixels. "];
   Node14 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

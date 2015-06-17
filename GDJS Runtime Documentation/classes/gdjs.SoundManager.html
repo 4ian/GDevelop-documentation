@@ -112,7 +112,7 @@
                         
                         
                                 <div class="foundat">
-                                    Defined in: <a href="../files/.._Runtime_soundmanager.js.html#l97"><code>..&#x2F;Runtime&#x2F;soundmanager.js:97</code></a>
+                                    Defined in: <a href="../files/.._Runtime_soundmanager.js.html#l63"><code>..&#x2F;Runtime&#x2F;soundmanager.js:63</code></a>
                                 </div>
                         
                         
@@ -121,6 +121,8 @@
                         
                         <div class="well well-small">
                             <p>SoundManager is used to manage the sounds and musics of a RuntimeScene.</p>
+                        <p>It is basically a container to associate channels to sounds and keep a list
+                        of all sounds being played.</p>
                         
                         </div>
                         
@@ -141,7 +143,7 @@
                                     <div class="meta">
                                                 <p>
                                                 Defined in
-                                        <a href="../files/.._Runtime_soundmanager.js.html#l97"><code>..&#x2F;Runtime&#x2F;soundmanager.js:97</code></a>
+                                        <a href="../files/.._Runtime_soundmanager.js.html#l63"><code>..&#x2F;Runtime&#x2F;soundmanager.js:63</code></a>
                                         </p>
                                 
                                 
@@ -161,17 +163,158 @@
                             <ul class="nav nav-tabs">
                                 <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
                         
+                                    <li><a data-toggle="tab" href="#methods">Methods</a></li>
                             </ul>
                         
                             <div class="tab-content">
                                 <div id="index" class="tab-pane active">
                                     <h2 class="off-left">Item Index</h2>
                         
+                                        <div class="index-section methods">
+                                            <h3>Methods</h3>
+                        
+                                            <ul class="index-list methods">
+                                                    <li class="index-item method private">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method__storeSoundInArray" data-tablink="_storeSoundInArray">_storeSoundInArray</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_clampRate" data-tablink="clampRate">clampRate</a>
+                        
+                                                    </li>
+                                            </ul>
+                                        </div>
                         
                         
                         
                                 </div>
                         
+                                    <div id="methods" class="tab-pane">
+                                        <h2 class="off-left">Methods</h2>
+                        
+                                            <div id="method__storeSoundInArray" class="method item private">
+                                                <h3 class="name"><code>_storeSoundInArray</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>arr</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code>arr</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                                    <span class="returns-inline">
+                                                        <span class="type"></span>
+                                                    </span>
+                                            
+                                            
+                                                    <span class="flag private">private</span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_soundmanager.js.html#l93"><code>..&#x2F;Runtime&#x2F;soundmanager.js:93</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Store the sound in the specified array, put it at the first index that
+                                            is free, or add it at the end if no element is free
+                                            ("free" means that the gdjs.Sound can be destroyed).</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">arr</code>
+                                                                    <span class="type">Array</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The array containing the sounds.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name">arr</code>
+                                                                    <span class="type"><a href="../classes/gdjs.Sound.html" class="crosslink">gdjs.Sound</a></span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The gdjs.Sound to add.</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                                    <div class="returns">
+                                                        <h4>Returns:</h4>
+                                            
+                                                        <div class="returns-description">
+                                                                <p>The gdjs.Sound that have been added (i.e: the second parameter).</p>
+                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                            <div id="method_clampRate" class="method item">
+                                                <h3 class="name"><code>clampRate</code></h3>
+                                            
+                                                    <span class="paren">()</span>
+                                            
+                                                    <span class="returns-inline">
+                                                        <span class="type"></span>
+                                                    </span>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_soundmanager.js.html#l81"><code>..&#x2F;Runtime&#x2F;soundmanager.js:81</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Ensure rate is in a range valid for Howler.js</p>
+                                            
+                                                </div>
+                                            
+                                            
+                                                    <div class="returns">
+                                                        <h4>Returns:</h4>
+                                            
+                                                        <div class="returns-description">
+                                                                <p>The clamped rate</p>
+                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                    </div>
                         
                         
                         

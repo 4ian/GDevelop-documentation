@@ -127,58 +127,60 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">bool</span> GD_API PickRandomObject(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, std::map &lt;std::string, std::vector&lt;RuntimeObject*&gt; *&gt; pickedObjectLists);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> GD_API ChangeSceneBackground(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, std::string newColor);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">bool</span> GD_API SceneVariableExists(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> gd::Variable &amp; variable);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">bool</span> GD_API GlobalVariableExists(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> gd::Variable &amp; variable);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">bool</span> GD_API VariableChildExists(<span class="keyword">const</span> gd::Variable &amp; variable, <span class="keyword">const</span> std::string &amp; childName);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> GD_API VariableRemoveChild(gd::Variable &amp; variable, <span class="keyword">const</span> std::string &amp; childName);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;gd::Variable &amp; GD_API ReturnVariable(gd::Variable &amp; variable);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">double</span> GD_API GetVariableValue(<span class="keyword">const</span> gd::Variable &amp; variable);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">const</span> std::string&amp; GD_API GetVariableString(<span class="keyword">const</span> gd::Variable &amp; variable);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> GD_API SetFullScreen(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keywordtype">bool</span> fullscreen, <span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> GD_API SetWindowSize(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> useTheNewSizeForCameraDefaultSize);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span> GD_API SetWindowIcon(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> std::string &amp; imageName);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">void</span> GD_API SetWindowTitle(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> std::string &amp; newName);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">const</span> std::string &amp; GD_API GetWindowTitle(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetSceneWindowWidth(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetSceneWindowHeight(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetScreenWidth();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetScreenHeight();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetScreenColorDepth();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">void</span> GD_API DisplayLegacyTextOnScene(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> std::string &amp; str, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keyword">const</span> std::string &amp; color, <span class="keywordtype">float</span> characterSize, <span class="keyword">const</span> std::string &amp; fontName, <span class="keyword">const</span> std::string &amp; <a class="code" href="../../d0/d3b/class_runtime_object.html#a6b7f94a51820819ec71c6684c7d69025">layer</a>);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">bool</span> GD_API PickNearestObject(std::map &lt;std::string, std::vector&lt;RuntimeObject*&gt; *&gt; pickedObjectLists, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">bool</span> inverted);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> GD_API ChangeSceneBackground(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, std::string newColor);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> GD_API SceneVariableExists(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> gd::Variable &amp; variable);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">bool</span> GD_API GlobalVariableExists(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> gd::Variable &amp; variable);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">bool</span> GD_API VariableChildExists(<span class="keyword">const</span> gd::Variable &amp; variable, <span class="keyword">const</span> std::string &amp; childName);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> GD_API VariableRemoveChild(gd::Variable &amp; variable, <span class="keyword">const</span> std::string &amp; childName);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;gd::Variable &amp; GD_API ReturnVariable(gd::Variable &amp; variable);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">double</span> GD_API GetVariableValue(<span class="keyword">const</span> gd::Variable &amp; variable);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">const</span> std::string&amp; GD_API GetVariableString(<span class="keyword">const</span> gd::Variable &amp; variable);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> GD_API SetFullScreen(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keywordtype">bool</span> fullscreen, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">void</span> GD_API SetWindowSize(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> useTheNewSizeForCameraDefaultSize);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">void</span> GD_API SetWindowIcon(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> std::string &amp; imageName);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> GD_API SetWindowTitle(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> std::string &amp; newName);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">const</span> std::string &amp; GD_API GetWindowTitle(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetSceneWindowWidth(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetSceneWindowHeight(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetScreenWidth();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetScreenHeight();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GD_API GetScreenColorDepth();</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keywordtype">bool</span> GD_API WarnAboutInfiniteLoop(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif // RUNTIMESCENETOOLS_H</span></div>
-<div class="ttc" id="class_runtime_object_html_a6b7f94a51820819ec71c6684c7d69025"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html#a6b7f94a51820819ec71c6684c7d69025">RuntimeObject::layer</a></div><div class="ttdeci">std::string layer</div><div class="ttdoc">Name of the layer on which the object is. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.h:436</div></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">void</span> GD_API DisplayLegacyTextOnScene(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keyword">const</span> std::string &amp; str, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keyword">const</span> std::string &amp; color, <span class="keywordtype">float</span> characterSize, <span class="keyword">const</span> std::string &amp; fontName, <span class="keyword">const</span> std::string &amp; <a class="code" href="../../d0/d3b/class_runtime_object.html#a6b7f94a51820819ec71c6684c7d69025">layer</a>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">bool</span> GD_API WarnAboutInfiniteLoop(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif // RUNTIMESCENETOOLS_H</span></div>
+<div class="ttc" id="class_runtime_object_html_a6b7f94a51820819ec71c6684c7d69025"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html#a6b7f94a51820819ec71c6684c7d69025">RuntimeObject::layer</a></div><div class="ttdeci">std::string layer</div><div class="ttdoc">Name of the layer on which the object is. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.h:442</div></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AutomatismsRuntimeSharedData.h:10</div></div>
 <div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:50</div></div>
 <div class="ttc" id="class_runtime_object_html"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a></div><div class="ttdoc">A RuntimeObject is something displayed on the scene. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:26 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:47 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

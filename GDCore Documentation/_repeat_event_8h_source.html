@@ -123,20 +123,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classgd_1_1_repeat_event.html#a2f11c29c117e9ebe777ad132208097a1">   34</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; <a class="code" href="classgd_1_1_repeat_event.html#a2f11c29c117e9ebe777ad132208097a1">GetSubEvents</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> events;};</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">   35</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; <a class="code" href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">GetSubEvents</a>() {<span class="keywordflow">return</span> events;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> std::vector &lt; gd::Instruction &gt; &amp; GetConditions()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> conditions; };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::vector &lt; gd::Instruction &gt; &amp; GetConditions() { <span class="keywordflow">return</span> conditions; };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; GetConditions()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> conditions; };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; GetConditions() { <span class="keywordflow">return</span> conditions; };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> std::vector &lt; gd::Instruction &gt; &amp; GetActions()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actions; };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector &lt; gd::Instruction &gt; &amp; GetActions() { <span class="keywordflow">return</span> actions; };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; GetActions()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actions; };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; GetActions() { <span class="keywordflow">return</span> actions; };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> std::string &amp; GetRepeatExpression()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> repeatNumberExpression.GetPlainString(); };</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> SetRepeatExpression(std::string repeatNumberExpression_) { repeatNumberExpression = <a class="code" href="classgd_1_1_expression.html">gd::Expression</a>(repeatNumberExpression_); };</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; std::vector&lt;gd::Instruction&gt;* &gt; GetAllConditionsVectors();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; std::vector&lt;gd::Instruction&gt;* &gt; GetAllActionsVectors();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; gd::InstructionsList* &gt; GetAllConditionsVectors();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; gd::InstructionsList* &gt; GetAllActionsVectors();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; gd::Expression* &gt; GetAllExpressions();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; const std::vector&lt;gd::Instruction&gt;* &gt; GetAllConditionsVectors() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; const std::vector&lt;gd::Instruction&gt;* &gt; GetAllActionsVectors() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; const gd::InstructionsList* &gt; GetAllConditionsVectors() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; const gd::InstructionsList* &gt; GetAllActionsVectors() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> std::vector &lt; const gd::Expression* &gt; GetAllExpressions() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SerializeTo(SerializerElement &amp; element) <span class="keyword">const</span>;</div>
@@ -150,8 +150,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classgd_1_1_expression.html">gd::Expression</a> repeatNumberExpression;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::vector &lt; gd::Instruction &gt; conditions;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::vector &lt; gd::Instruction &gt; actions;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> conditions;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> actions;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    EventsList events;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> repeatNumberExpressionSelected;</div>
@@ -160,10 +160,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // GDCORE_REPEATEVENT_H</span></div>
-<div class="ttc" id="classgd_1_1_events_editor_items_areas_html"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a></div><div class="ttdoc">Allow events to indicate where is displayed an instruction or parameter. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:127</div></div>
+<div class="ttc" id="classgd_1_1_events_editor_items_areas_html"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a></div><div class="ttdoc">Allow events to indicate where is displayed an instruction or parameter. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:128</div></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
 <div class="ttc" id="classgd_1_1_events_editor_selection_html"><div class="ttname"><a href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a></div><div class="ttdoc">Represents the selection in an event editor. </div><div class="ttdef"><b>Definition:</b> EventsEditorSelection.h:27</div></div>
-<div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:44</div></div>
+<div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
 <div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:27</div></div>
 <div class="ttc" id="classgd_1_1_repeat_event_html_a025e2a92044ce32313d4e0f25aa5ccc3"><div class="ttname"><a href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">gd::RepeatEvent::GetSubEvents</a></div><div class="ttdeci">virtual gd::EventsList &amp; GetSubEvents()</div><div class="ttdef"><b>Definition:</b> RepeatEvent.h:35</div></div>
 <div class="ttc" id="classgd_1_1_repeat_event_html"><div class="ttname"><a href="classgd_1_1_repeat_event.html">gd::RepeatEvent</a></div><div class="ttdoc">Event being repeated a specified number of times. </div><div class="ttdef"><b>Definition:</b> RepeatEvent.h:24</div></div>
@@ -176,10 +176,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
 <div class="ttc" id="classgd_1_1_repeat_event_html_aa81fbded88598212c81669019461eae7"><div class="ttname"><a href="classgd_1_1_repeat_event.html#aa81fbded88598212c81669019461eae7">gd::RepeatEvent::IsExecutable</a></div><div class="ttdeci">virtual bool IsExecutable() const </div><div class="ttdef"><b>Definition:</b> RepeatEvent.h:31</div></div>
 <div class="ttc" id="classgd_1_1_repeat_event_html_a2f11c29c117e9ebe777ad132208097a1"><div class="ttname"><a href="classgd_1_1_repeat_event.html#a2f11c29c117e9ebe777ad132208097a1">gd::RepeatEvent::GetSubEvents</a></div><div class="ttdeci">virtual const gd::EventsList &amp; GetSubEvents() const </div><div class="ttdef"><b>Definition:</b> RepeatEvent.h:34</div></div>
+<div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList&lt; Instruction &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:43 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

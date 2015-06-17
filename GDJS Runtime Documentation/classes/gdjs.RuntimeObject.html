@@ -289,6 +289,10 @@
                         
                                                     </li>
                                                     <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getDistanceToObject" data-tablink="getDistanceToObject">getDistanceToObject</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
                                                         <a href="#" data-tabid="#methods" data-anchor="#method_getDrawableX" data-tablink="getDrawableX">getDrawableX</a>
                         
                                                     </li>
@@ -323,6 +327,14 @@
                                                     </li>
                                                     <li class="index-item method private">
                                                         <a href="#" data-tabid="#methods" data-anchor="#method_getRecycledForce" data-tablink="getRecycledForce">getRecycledForce</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getSqDistanceTo" data-tablink="getSqDistanceTo">getSqDistanceTo</a>
+                        
+                                                    </li>
+                                                    <li class="index-item method">
+                                                        <a href="#" data-tabid="#methods" data-anchor="#method_getSqDistanceToObject" data-tablink="getSqDistanceToObject">getSqDistanceToObject</a>
                         
                                                     </li>
                                                     <li class="index-item method">
@@ -672,7 +684,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Add a force oriented toward another object.&lt;br&gt;
+                                                    <p>Add a force oriented toward another object.<br>
                                             (Shortcut for addForceTowardPosition)</p>
                                             
                                                 </div>
@@ -1095,7 +1107,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l974"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:974</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l997"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:997</code></a>
                                                     </p>
                                             
                                             
@@ -1156,7 +1168,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1045"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1045</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1065"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1065</code></a>
                                                     </p>
                                             
                                             
@@ -1208,7 +1220,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Remove an object from a scene.&lt;br&gt;
+                                                    <p>Remove an object from a scene.<br>
                                             Extensions writers, do not change this method. Instead, redefine the onDeletedFromScene method.</p>
                                             
                                                 </div>
@@ -1249,7 +1261,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1018"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1018</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1041"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1041</code></a>
                                                     </p>
                                             
                                             
@@ -1293,7 +1305,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Called when the object is created from an initial instance at the startup of the scene.&lt;br&gt;
+                                                    <p>Called when the object is created from an initial instance at the startup of the scene.<br>
                                             Note this.common properties ( position, angle, z order... ) have already been setup.</p>
                                             
                                                 </div>
@@ -1389,7 +1401,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get an automatism from its name.&lt;br&gt;
+                                                    <p>Get an automatism from its name.<br>
                                             Be careful, the automatism must exists, no check is made on the name.</p>
                                             
                                                 </div>
@@ -1516,6 +1528,59 @@
                                             
                                             
                                             </div>
+                                            <div id="method_getDistanceToObject" class="method item">
+                                                <h3 class="name"><code>getDistanceToObject</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>otherObject</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l854"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:854</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the distance, in pixels, to another object.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">otherObject</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The other object</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
                                             <div id="method_getDrawableX" class="method item">
                                                 <h3 class="name"><code>getDrawableX</code></h3>
                                             
@@ -1542,9 +1607,9 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get the X position of the rendered object.&lt;br&gt;
+                                                    <p>Get the X position of the rendered object.<br>
                                             For most objects, this will returns the same value as getX(). But if the object
-                                            has an origin this.is not the same as the point (0,0) of the object displayed,
+                                            has an origin <a href="http://this.is">this.is</a> not the same as the point (0,0) of the object displayed,
                                             getDrawableX will differs.</p>
                                             
                                                 </div>
@@ -1587,9 +1652,9 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get the Y position of the rendered object.&lt;br&gt;
+                                                    <p>Get the Y position of the rendered object.<br>
                                             For most objects, this will returns the same value as getY(). But if the object
-                                            has an origin this.is not the same as the point (0,0) of the object displayed,
+                                            has an origin <a href="http://this.is">this.is</a> not the same as the point (0,0) of the object displayed,
                                             getDrawableY will differs.</p>
                                             
                                                 </div>
@@ -1674,7 +1739,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get the hit boxes for the object.&lt;br&gt;
+                                                    <p>Get the hit boxes for the object.<br>
                                             The default implementation returns a basic bouding box based on the result of getWidth and
                                             getHeight. You should probably redefine updateHitBoxes instead of this function.</p>
                                             
@@ -1834,7 +1899,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1074"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1074</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1094"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1094</code></a>
                                                     </p>
                                             
                                             
@@ -1842,7 +1907,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get the identifier associated to an object name :&lt;br&gt;
+                                                    <p>Get the identifier associated to an object name :<br>
                                             Some features may want to compare objects name a large number of time. In this case,
                                             it may be more efficient to compare objects name identifier ( see gdjs.RuntimeObject.getNameId ).</p>
                                             
@@ -1887,7 +1952,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get a force from the garbage, or create a new force is garbage is empty.&lt;br&gt;
+                                                    <p>Get a force from the garbage, or create a new force is garbage is empty.<br>
                                             To be used each time a force is created so as to avoid temporaries objects.</p>
                                             
                                                 </div>
@@ -1934,6 +1999,126 @@
                                             
                                             
                                             </div>
+                                            <div id="method_getSqDistanceTo" class="method item">
+                                                <h3 class="name"><code>getSqDistanceTo</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>pointX</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code>pointY</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l877"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:877</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the squared distance, in pixels, to a position.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">pointX</code>
+                                                                    <span class="type">Number</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>X position</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name">pointY</code>
+                                                                    <span class="type">Number</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>Y position</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
+                                            <div id="method_getSqDistanceToObject" class="method item">
+                                                <h3 class="name"><code>getSqDistanceToObject</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code>otherObject</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                <div class="meta">
+                                                            <p>
+                                                            Defined in
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l863"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:863</code></a>
+                                                    </p>
+                                            
+                                            
+                                            
+                                                </div>
+                                            
+                                                <div class="description">
+                                                    <p>Get the squared distance, in pixels, to another object.</p>
+                                            
+                                                </div>
+                                            
+                                                    <div class="params">
+                                                        <h4>Parameters:</h4>
+                                            
+                                                        <ul class="params-list">
+                                                            <li class="param">
+                                                                    <code class="param-name">otherObject</code>
+                                                                    <span class="type">Object</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The other object</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            
+                                            
+                                            </div>
                                             <div id="method_getUniqueId" class="method item">
                                                 <h3 class="name"><code>getUniqueId</code></h3>
                                             
@@ -1960,8 +2145,8 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Get the unique identifier of the object.&lt;br&gt;
-                                            The identifier is set by the runtimeScene owning the object.&lt;br&gt;
+                                                    <p>Get the unique identifier of the object.<br>
+                                            The identifier is set by the runtimeScene owning the object.<br>
                                             You can also use the id property (this._object.id) for increased efficiency instead of
                                             calling this method.</p>
                                             
@@ -2535,7 +2720,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1030"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1030</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l1050"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:1050</code></a>
                                                     </p>
                                             
                                             
@@ -2760,10 +2945,7 @@
                                                     <div class="args">
                                                         <span class="paren">(</span><ul class="args-list inline commas">
                                                             <li class="arg">
-                                                                    <code>x</code>
-                                                            </li>
-                                                            <li class="arg">
-                                                                    <code>y</code>
+                                                                    <code>obj</code>
                                                             </li>
                                                             <li class="arg">
                                                                     <code>distance</code>
@@ -2784,7 +2966,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l867"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:867</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l907"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:907</code></a>
                                                     </p>
                                             
                                             
@@ -2792,8 +2974,8 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Put the object around a position, with a specific distance and angle.&lt;br&gt;
-                                            The distance is computed between the position and the center of the object.</p>
+                                                    <p>Put the object around another object, with a specific distance and angle.<br>
+                                            The distance is computed between the centers of the objects.</p>
                                             
                                                 </div>
                                             
@@ -2802,23 +2984,12 @@
                                             
                                                         <ul class="params-list">
                                                             <li class="param">
-                                                                    <code class="param-name">x</code>
-                                                                    <span class="type">Number</span>
+                                                                    <code class="param-name">obj</code>
+                                                                    <span class="type">Object</span>
                                             
                                             
                                                                 <div class="param-description">
-                                                                    <p>The x position of the target</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                            <li class="param">
-                                                                    <code class="param-name">y</code>
-                                                                    <span class="type">Number</span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>The y position of the target</p>
+                                                                    <p>The target object</p>
                                             
                                                                 </div>
                                             
@@ -2856,7 +3027,10 @@
                                                     <div class="args">
                                                         <span class="paren">(</span><ul class="args-list inline commas">
                                                             <li class="arg">
-                                                                    <code>obj</code>
+                                                                    <code>x</code>
+                                                            </li>
+                                                            <li class="arg">
+                                                                    <code>y</code>
                                                             </li>
                                                             <li class="arg">
                                                                     <code>distance</code>
@@ -2877,7 +3051,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l884"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:884</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l890"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:890</code></a>
                                                     </p>
                                             
                                             
@@ -2885,8 +3059,8 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Put the object around another object, with a specific distance and angle.&lt;br&gt;
-                                            The distance is computed between the centers of the objects.</p>
+                                                    <p>Put the object around a position, with a specific distance and angle.<br>
+                                            The distance is computed between the position and the center of the object.</p>
                                             
                                                 </div>
                                             
@@ -2895,12 +3069,23 @@
                                             
                                                         <ul class="params-list">
                                                             <li class="param">
-                                                                    <code class="param-name">obj</code>
-                                                                    <span class="type">Object</span>
+                                                                    <code class="param-name">x</code>
+                                                                    <span class="type">Number</span>
                                             
                                             
                                                                 <div class="param-description">
-                                                                    <p>The target object</p>
+                                                                    <p>The x position of the target</p>
+                                            
+                                                                </div>
+                                            
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name">y</code>
+                                                                    <span class="type">Number</span>
+                                            
+                                            
+                                                                <div class="param-description">
+                                                                    <p>The y position of the target</p>
                                             
                                                                 </div>
                                             
@@ -3018,7 +3203,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l931"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:931</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l954"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:954</code></a>
                                                     </p>
                                             
                                             
@@ -3071,7 +3256,7 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l898"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:898</code></a>
+                                                    <a href="../files/.._Runtime_runtimeobject.js.html#l921"><code>..&#x2F;Runtime&#x2F;runtimeobject.js:921</code></a>
                                                     </p>
                                             
                                             
@@ -3671,7 +3856,7 @@
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Update the hit boxes for the object.&lt;br&gt;
+                                                    <p>Update the hit boxes for the object.<br>
                                             The default implementation set a basic bouding box based on the result of getWidth and
                                             getHeight.</p>
                                             <p>You should not call this function by yourself, it is called when necessary by getHitBoxes method.

@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::InitialInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_initial_instance.html",tooltip="Represents an instance of an object to be created on a layout start up. "];
+  Node1 [label="gd::InitialInstancesContainer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_initial_instances_container.html",tooltip="Defines a container of gd::InitialInstances. "];
 }

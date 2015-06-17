@@ -143,6 +143,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaa1d480484bd0f065a95d597e1021272c"><td class="memItemLeft" align="right" valign="top">void GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df4/group___game_engine.html#gaa1d480484bd0f065a95d597e1021272c">PickOnly</a> (RuntimeObjectsLists &amp;pickedObjectsLists, <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> *thisOne)</td></tr>
+<tr class="memdesc:gaa1d480484bd0f065a95d597e1021272c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep only the specified object in the lists of picked objects.  <a href="#gaa1d480484bd0f065a95d597e1021272c">More...</a><br /></td></tr>
+<tr class="separator:gaa1d480484bd0f065a95d597e1021272c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac98aa2cc10635a56ea668acad20ddc3e"><td class="memTemplParams" colspan="2">template&lt;typename Pred &gt; </td></tr>
 <tr class="memitem:gac98aa2cc10635a56ea668acad20ddc3e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df4/group___game_engine.html#gac98aa2cc10635a56ea668acad20ddc3e">PickObjectsIf</a> (const RuntimeObjectsLists &amp;pickedObjectsLists, bool negatePredicate, Pred predicate)</td></tr>
 <tr class="memdesc:gac98aa2cc10635a56ea668acad20ddc3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter objects to keep only the one that fullfil the predicate.  <a href="#gac98aa2cc10635a56ea668acad20ddc3e">More...</a><br /></td></tr>
@@ -199,6 +202,50 @@ template&lt;typename Pred &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if at least one object fulfill the predicate. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa1d480484bd0f065a95d597e1021272c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GD_API PickOnly </td>
+          <td>(</td>
+          <td class="paramtype">RuntimeObjectsLists &amp;&#160;</td>
+          <td class="paramname"><em>pickedObjectsLists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> *&#160;</td>
+          <td class="paramname"><em>thisOne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Keep only the specified object in the lists of picked objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objectsLists</td><td>The lists of objects to trim </td></tr>
+    <tr><td class="paramname">thisOne</td><td>The object to keep in the lists </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/df4/group___game_engine_gaa1d480484bd0f065a95d597e1021272c_cgraph.png" border="0" usemap="#da/df4/group___game_engine_gaa1d480484bd0f065a95d597e1021272c_cgraph" alt=""/></div>
+<map name="da/df4/group___game_engine_gaa1d480484bd0f065a95d597e1021272c_cgraph" id="da/df4/group___game_engine_gaa1d480484bd0f065a95d597e1021272c_cgraph">
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -288,7 +335,7 @@ template&lt;typename Pred &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:26 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:47 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

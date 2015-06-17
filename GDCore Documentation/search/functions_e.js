@@ -10,7 +10,7 @@ var searchData=
   ['refreshwith',['RefreshWith',['../classgd_1_1_event_store_dialog.html#a4e7df6cedeb4e6a13446aa6d98c87937',1,'gd::EventStoreDialog']]],
   ['reloadimage',['ReloadImage',['../classgd_1_1_image_manager.html#ad717b5c4cb37b0f75f05863fbfac7f2b',1,'gd::ImageManager']]],
   ['reloadresources',['ReloadResources',['../classgd_1_1_layout_editor_canvas.html#ace5bbbb0f2f1f45fa735fc56c7bce18f',1,'gd::LayoutEditorCanvas']]],
-  ['remove',['Remove',['../classgd_1_1_variables_container.html#a46bfe9e2cf428a3d948e07cd8c7f99a7',1,'gd::VariablesContainer']]],
+  ['remove',['Remove',['../classgd_1_1_variables_container.html#a46bfe9e2cf428a3d948e07cd8c7f99a7',1,'gd::VariablesContainer::Remove()'],['../classgd_1_1_s_ptr_list.html#a5d6fae6a6e0dc451f4ecbc82c47adf49',1,'gd::SPtrList::Remove(const T &amp;element)'],['../classgd_1_1_s_ptr_list.html#a2dee04de80b9901972c04d57cfa7cedd',1,'gd::SPtrList::Remove(size_t index)']]],
   ['removeallanimations',['RemoveAllAnimations',['../classgd_1_1_sprite_object.html#a0799f7b38f5914f5f0b72b013a820674',1,'gd::SpriteObject']]],
   ['removeallinstancesonlayer',['RemoveAllInstancesOnLayer',['../classgd_1_1_initial_instances_container.html#a12771fbd9bea88b4053555e40e049bc9',1,'gd::InitialInstancesContainer']]],
   ['removeallsprites',['RemoveAllSprites',['../classgd_1_1_direction.html#a1a9afaf92ed28613a03c24d35deaed3c',1,'gd::Direction']]],

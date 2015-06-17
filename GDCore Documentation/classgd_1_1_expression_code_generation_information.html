@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classgd_1_1_expression_code_generation_information-members.html">List of all members</a>  </div>
@@ -98,23 +97,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Defines information about how generate code for an expression.  
+<p>Information about how generate code for an expression.  
  <a href="classgd_1_1_expression_code_generation_information.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_expression_metadata_8h_source.html">ExpressionMetadata.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information_1_1_custom_code_generator.html">CustomCodeGenerator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class used to redefine instruction code generation.  <a href="classgd_1_1_expression_code_generation_information_1_1_custom_code_generator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a122c7b2763d4c54a9d07b2ac0783b299"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a122c7b2763d4c54a9d07b2ac0783b299"></a>
-<a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information.html#a122c7b2763d4c54a9d07b2ac0783b299">SetFunctionName</a> (const std::string &amp;cppCallingName_)</td></tr>
-<tr class="memdesc:a122c7b2763d4c54a9d07b2ac0783b299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the function name which will be used when generating the code. <br /></td></tr>
-<tr class="separator:a122c7b2763d4c54a9d07b2ac0783b299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8464766a74dd12807ec0930011824b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information.html#a8464766a74dd12807ec0930011824b1b">SetFunctionName</a> (const std::string &amp;functionName)</td></tr>
+<tr class="memdesc:a8464766a74dd12807ec0930011824b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the function name which will be used when generating the code.  <a href="#a8464766a74dd12807ec0930011824b1b">More...</a><br /></td></tr>
+<tr class="separator:a8464766a74dd12807ec0930011824b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a774f6463904871b9d2cb9e450111a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a774f6463904871b9d2cb9e450111a6"></a>
 <a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information.html#a0a774f6463904871b9d2cb9e450111a6">SetStatic</a> ()</td></tr>
 <tr class="memdesc:a0a774f6463904871b9d2cb9e450111a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set that the function is static. <br /></td></tr>
@@ -123,10 +115,16 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information.html#abdc1d97805fb9c928c8632c6a2963959">SetIncludeFile</a> (const std::string &amp;optionalIncludeFile_)</td></tr>
 <tr class="memdesc:abdc1d97805fb9c928c8632c6a2963959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set that the function is located in a specific include file. <br /></td></tr>
 <tr class="separator:abdc1d97805fb9c928c8632c6a2963959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1785f4aa0b15e78520fd605978cf3bbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1785f4aa0b15e78520fd605978cf3bbd"></a>
-<a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information.html#a1785f4aa0b15e78520fd605978cf3bbd">SetCustomCodeGenerator</a> (std::shared_ptr&lt; <a class="el" href="classgd_1_1_expression_code_generation_information_1_1_custom_code_generator.html">CustomCodeGenerator</a> &gt; codeGenerator)</td></tr>
-<tr class="memdesc:a1785f4aa0b15e78520fd605978cf3bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set that the function must be generated using a custom code generator. <br /></td></tr>
-<tr class="separator:a1785f4aa0b15e78520fd605978cf3bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade40c079c29c971091d2bf24127c430c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade40c079c29c971091d2bf24127c430c"></a>
+<a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_code_generation_information.html#ade40c079c29c971091d2bf24127c430c">SetCustomCodeGenerator</a> (std::function&lt; std::string(const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, <a class="el" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp;codeGenerator, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)&gt; codeGenerator)</td></tr>
+<tr class="memdesc:ade40c079c29c971091d2bf24127c430c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set that the function must be generated using a custom code generator. <br /></td></tr>
+<tr class="separator:ade40c079c29c971091d2bf24127c430c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13914b527fe0f6c887d7622351add978"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13914b527fe0f6c887d7622351add978"></a>
+<a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCustomCodeGenerator</b> ()</td></tr>
+<tr class="separator:a13914b527fe0f6c887d7622351add978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0dc298a7f2093b94fe2b60127e964c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0dc298a7f2093b94fe2b60127e964c7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCustomCodeGenerator</b> () const </td></tr>
+<tr class="separator:ad0dc298a7f2093b94fe2b60127e964c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -139,19 +137,55 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>functionCallNa
 <tr class="memitem:a3b2217bbd55244dbb412e9b994334744"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b2217bbd55244dbb412e9b994334744"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>optionalIncludeFile</b></td></tr>
 <tr class="separator:a3b2217bbd55244dbb412e9b994334744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee048c6411f7b245aceda175c7175abb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee048c6411f7b245aceda175c7175abb"></a>
-std::shared_ptr&lt; <a class="el" href="classgd_1_1_expression_code_generation_information_1_1_custom_code_generator.html">CustomCodeGenerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>optionalCustomCodeGenerator</b></td></tr>
-<tr class="separator:aee048c6411f7b245aceda175c7175abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae108346987e827d83fca94690802643b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae108346987e827d83fca94690802643b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasCustomCodeGenerator</b></td></tr>
+<tr class="separator:ae108346987e827d83fca94690802643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e415e32f0528bf74782d5ca29d633c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e415e32f0528bf74782d5ca29d633c8"></a>
+std::function&lt; std::string(const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, <a class="el" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp;codeGenerator, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>customCodeGenerator</b></td></tr>
+<tr class="separator:a3e415e32f0528bf74782d5ca29d633c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines information about how generate code for an expression. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Information about how generate code for an expression. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8464766a74dd12807ec0930011824b1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_expression_code_generation_information.html">ExpressionCodeGenerationInformation</a>&amp; gd::ExpressionCodeGenerationInformation::SetFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>functionName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the function name which will be used when generating the code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functionName</td><td>the name of the function to call </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_expression_metadata_8h_source.html">ExpressionMetadata.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:44 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

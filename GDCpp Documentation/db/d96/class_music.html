@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Used to play a music.  
+<p>Represents a music to be played.  
  <a href="../../db/d96/class_music.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d8/d08/_music_8h_source.html">Music.h</a>&gt;</code></p>
@@ -142,13 +142,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#aa69a558155f5c6b0d4da9ad00b07cd6f">GetPitch</a> () const </td></tr>
 <tr class="memdesc:aa69a558155f5c6b0d4da9ad00b07cd6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the music pitch. <br /></td></tr>
 <tr class="separator:aa69a558155f5c6b0d4da9ad00b07cd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3935ab4d820c4731726583e05852ee69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#a3935ab4d820c4731726583e05852ee69">SetPlayingOffset</a> (unsigned int timeOffset)</td></tr>
-<tr class="memdesc:a3935ab4d820c4731726583e05852ee69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current playing position of the music.  <a href="#a3935ab4d820c4731726583e05852ee69">More...</a><br /></td></tr>
-<tr class="separator:a3935ab4d820c4731726583e05852ee69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f9b60c42afcd916bd181da2afbaa46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8f9b60c42afcd916bd181da2afbaa46"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#aa8f9b60c42afcd916bd181da2afbaa46">GetPlayingOffset</a> () const </td></tr>
-<tr class="memdesc:aa8f9b60c42afcd916bd181da2afbaa46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current playing position of the music, in seconds. <br /></td></tr>
-<tr class="separator:aa8f9b60c42afcd916bd181da2afbaa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079b764742bdbed57c42be1ce8d77e2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#a079b764742bdbed57c42be1ce8d77e2f">SetPlayingOffset</a> (double timeOffset)</td></tr>
+<tr class="memdesc:a079b764742bdbed57c42be1ce8d77e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current playing position of the music.  <a href="#a079b764742bdbed57c42be1ce8d77e2f">More...</a><br /></td></tr>
+<tr class="separator:a079b764742bdbed57c42be1ce8d77e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbcd562a0f0301f12d2fe963dbd94a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacbcd562a0f0301f12d2fe963dbd94a3"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#aacbcd562a0f0301f12d2fe963dbd94a3">GetPlayingOffset</a> () const </td></tr>
+<tr class="memdesc:aacbcd562a0f0301f12d2fe963dbd94a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current playing position of the music, in seconds. <br /></td></tr>
+<tr class="separator:aacbcd562a0f0301f12d2fe963dbd94a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c0609257243f60004970da0f11f86f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#a38c0609257243f60004970da0f11f86f">UpdateVolume</a> ()</td></tr>
 <tr class="memdesc:a38c0609257243f60004970da0f11f86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal member functions to update music volume according to global volume.  <a href="#a38c0609257243f60004970da0f11f86f">More...</a><br /></td></tr>
 <tr class="separator:a38c0609257243f60004970da0f11f86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,15 +157,16 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5b300a70ca62ec94d0e41c71bc0f9e40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b300a70ca62ec94d0e41c71bc0f9e40"></a>
 sf::Music&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#a5b300a70ca62ec94d0e41c71bc0f9e40">music</a></td></tr>
-<tr class="memdesc:a5b300a70ca62ec94d0e41c71bc0f9e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">SFML <a class="el" href="../../db/d96/class_music.html" title="Used to play a music. ">Music</a>. <br /></td></tr>
+<tr class="memdesc:a5b300a70ca62ec94d0e41c71bc0f9e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">SFML <a class="el" href="../../db/d96/class_music.html" title="Represents a music to be played. ">Music</a>. <br /></td></tr>
 <tr class="separator:a5b300a70ca62ec94d0e41c71bc0f9e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f9f4b341f24bb96379513ac7611367d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f9f4b341f24bb96379513ac7611367d"></a>
 char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d96/class_music.html#a6f9f4b341f24bb96379513ac7611367d">buffer</a></td></tr>
-<tr class="memdesc:a6f9f4b341f24bb96379513ac7611367d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d96/class_music.html" title="Used to play a music. ">Music</a> buffer when music have been loaded from memory. <br /></td></tr>
+<tr class="memdesc:a6f9f4b341f24bb96379513ac7611367d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d96/class_music.html" title="Represents a music to be played. ">Music</a> buffer when music have been loaded from memory. <br /></td></tr>
 <tr class="separator:a6f9f4b341f24bb96379513ac7611367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Used to play a music. </p>
+<div class="textblock"><p>Represents a music to be played. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/dd9/class_sound_manager.html" title="Manage sounds and musics played by games. ">SoundManager</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4b91618383cbc93904acd583baa1586c"></a>
 <div class="memitem">
@@ -227,7 +228,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="..
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Open sound stored in buffer ( See SetBuffer ). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Open music stored in buffer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>The buffer size. </td></tr>
   </table>
@@ -287,7 +288,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="..
 
 </div>
 </div>
-<a class="anchor" id="a3935ab4d820c4731726583e05852ee69"></a>
+<a class="anchor" id="a079b764742bdbed57c42be1ce8d77e2f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -297,7 +298,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="..
         <tr>
           <td class="memname">void Music::SetPlayingOffset </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>timeOffset</em></td><td>)</td>
           <td></td>
         </tr>
@@ -377,7 +378,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 13 2015 21:05:26 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 08:36:48 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
