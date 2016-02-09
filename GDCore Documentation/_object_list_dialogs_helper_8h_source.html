@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,14 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef GDCORE_OBJECTLISTDIALOGSHELPER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define GDCORE_OBJECTLISTDIALOGSHELPER_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
@@ -130,13 +131,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_object_list_dialogs_helper.html">ObjectListDialogsHelper</a>() {};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> SetSearchText(std::string searchText_);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> SetSearchText(<a class="code" href="classgd_1_1_string.html">gd::String</a> searchText_);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classgd_1_1_object_list_dialogs_helper.html#a82f0d43f635d38b6b801ec3b10bb9cf1">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_object_list_dialogs_helper.html#a82f0d43f635d38b6b801ec3b10bb9cf1">SetAllowedObjectType</a>(std::string allowedObjectType_) { objectTypeAllowed = allowedObjectType_; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classgd_1_1_object_list_dialogs_helper.html#a7d8daeac7149c7e37cde4c307d760640">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_object_list_dialogs_helper.html#a7d8daeac7149c7e37cde4c307d760640">SetAllowedObjectType</a>(<a class="code" href="classgd_1_1_string.html">gd::String</a> allowedObjectType_) { objectTypeAllowed = allowedObjectType_; }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classgd_1_1_object_list_dialogs_helper.html#aaa2ed4eb5295e7f695290b49eb6ebd8c">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_object_list_dialogs_helper.html#aaa2ed4eb5295e7f695290b49eb6ebd8c">SetGroupsAllowed</a>(<span class="keywordtype">bool</span> canSelectGroup) { groupsAllowed = canSelectGroup; }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::vector&lt;std::string&gt; GetMatchingObjects() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::vector&lt;gd::String&gt; GetMatchingObjects() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    #if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -164,8 +165,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">Project</a> &amp; project;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">Layout</a> &amp; layout;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    std::string objectTypeAllowed;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    std::string searchText;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> objectTypeAllowed;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> searchText;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> groupsAllowed;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">bool</span> hasGroupExtraRendering;</div>
@@ -176,20 +177,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // GDCORE_OBJECTLISTDIALOGSHELPER_H</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classgd_1_1_class_with_objects_html"><div class="ttname"><a href="classgd_1_1_class_with_objects.html">gd::ClassWithObjects</a></div><div class="ttdoc">Used as a base class for classes that will own objects (see gd::Object). </div><div class="ttdef"><b>Definition:</b> ClassWithObjects.h:31</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_object_list_dialogs_helper_html_aaa2ed4eb5295e7f695290b49eb6ebd8c"><div class="ttname"><a href="classgd_1_1_object_list_dialogs_helper.html#aaa2ed4eb5295e7f695290b49eb6ebd8c">gd::ObjectListDialogsHelper::SetGroupsAllowed</a></div><div class="ttdeci">void SetGroupsAllowed(bool canSelectGroup)</div><div class="ttdoc">Set if groups of objects are displayed when calling RefreshList (true by default). </div><div class="ttdef"><b>Definition:</b> ObjectListDialogsHelper.h:71</div></div>
 <div class="ttc" id="classgd_1_1_object_list_dialogs_helper_html_a4a4fbf0052128cd0f34b9c015c15017b"><div class="ttname"><a href="classgd_1_1_object_list_dialogs_helper.html#a4a4fbf0052128cd0f34b9c015c15017b">gd::ObjectListDialogsHelper::SetGroupExtraRendering</a></div><div class="ttdeci">void SetGroupExtraRendering(std::function&lt; void(wxTreeItemId)&gt; function)</div><div class="ttdoc">Set a callback that will be called whenever a group item is being rendered. </div><div class="ttdef"><b>Definition:</b> ObjectListDialogsHelper.h:102</div></div>
 <div class="ttc" id="classgd_1_1_object_list_dialogs_helper_html_ae0b68fe5eb7a148ff1758a84cb425ac0"><div class="ttname"><a href="classgd_1_1_object_list_dialogs_helper.html#ae0b68fe5eb7a148ff1758a84cb425ac0">gd::ObjectListDialogsHelper::ObjectListDialogsHelper</a></div><div class="ttdeci">ObjectListDialogsHelper(const gd::Project &amp;project_, const gd::Layout &amp;layout_)</div><div class="ttdef"><b>Definition:</b> ObjectListDialogsHelper.h:43</div></div>
-<div class="ttc" id="classgd_1_1_object_list_dialogs_helper_html_a82f0d43f635d38b6b801ec3b10bb9cf1"><div class="ttname"><a href="classgd_1_1_object_list_dialogs_helper.html#a82f0d43f635d38b6b801ec3b10bb9cf1">gd::ObjectListDialogsHelper::SetAllowedObjectType</a></div><div class="ttdeci">void SetAllowedObjectType(std::string allowedObjectType_)</div><div class="ttdoc">Specify a type of object to display. Only objects of this type will be shown when calling RefreshList...</div><div class="ttdef"><b>Definition:</b> ObjectListDialogsHelper.h:65</div></div>
 <div class="ttc" id="classgd_1_1_object_group_html"><div class="ttname"><a href="classgd_1_1_object_group.html">gd::ObjectGroup</a></div><div class="ttdoc">Represents an object group. </div><div class="ttdef"><b>Definition:</b> ObjectGroup.h:25</div></div>
 <div class="ttc" id="classgd_1_1_object_html"><div class="ttname"><a href="classgd_1_1_object.html">gd::Object</a></div><div class="ttdoc">Base class used to represent an object of a platform. </div><div class="ttdef"><b>Definition:</b> Object.h:34</div></div>
-<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:44</div></div>
 <div class="ttc" id="classgd_1_1_object_list_dialogs_helper_html"><div class="ttname"><a href="classgd_1_1_object_list_dialogs_helper.html">gd::ObjectListDialogsHelper</a></div><div class="ttdoc">Utility class used to display objects lists into controls. </div><div class="ttdef"><b>Definition:</b> ObjectListDialogsHelper.h:35</div></div>
+<div class="ttc" id="classgd_1_1_object_list_dialogs_helper_html_a7d8daeac7149c7e37cde4c307d760640"><div class="ttname"><a href="classgd_1_1_object_list_dialogs_helper.html#a7d8daeac7149c7e37cde4c307d760640">gd::ObjectListDialogsHelper::SetAllowedObjectType</a></div><div class="ttdeci">void SetAllowedObjectType(gd::String allowedObjectType_)</div><div class="ttdoc">Specify a type of object to display. Only objects of this type will be shown when calling RefreshList...</div><div class="ttdef"><b>Definition:</b> ObjectListDialogsHelper.h:65</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_ffd9572640b0276196628fca0b0e429e.html">BuiltinExtensions</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_8c00a3db46f67d827986a77955cf3ce2.html">Extensions</a></li><li class="navelem"><a class="el" href="../../dir_cfa2ad18eae5e698051340cb133c8feb.html">Builtin</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,14 +93,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef TIMEEXTENSION_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define TIMEEXTENSION_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCpp/ExtensionBase.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Extensions/ExtensionBase.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../df/d97/class_time_extension.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/d97/class_time_extension.html">TimeExtension</a> : <span class="keyword">public</span> <a class="code" href="../../d5/de6/class_extension_base.html">ExtensionBase</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
@@ -109,24 +109,27 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../df/d97/class_time_extension.html">TimeExtension</a>() {};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        #if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">bool</span> HasDebuggingProperties()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> GetPropertyForDebugger(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> propertyNb, std::string &amp; name, std::string &amp; value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">bool</span> ChangeProperty(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> propertyNb, std::string newValue);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetNumberOfProperties(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../df/d97/class_time_extension.html#a016c213729269b37c0063a003b72a3c0">   24</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="../../df/d97/class_time_extension.html#a016c213729269b37c0063a003b72a3c0">HasDebuggingProperties</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../df/d97/class_time_extension.html#ad006a7e266cc39c21019b4e672e263ac">GetPropertyForDebugger</a>(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, std::size_t propertyNb, gd::String &amp; name, gd::String &amp; value) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="../../df/d97/class_time_extension.html#a3079a8fc82c723de44d837c2df3996b2">ChangeProperty</a>(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, std::size_t propertyNb, gd::String newValue);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::size_t <a class="code" href="../../df/d97/class_time_extension.html#ace63f37158413e8214945902f562f440">GetNumberOfProperties</a>(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // TIMEEXTENSION_H</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:50</div></div>
-<div class="ttc" id="class_extension_base_html"><div class="ttname"><a href="../../d5/de6/class_extension_base.html">ExtensionBase</a></div><div class="ttdoc">Base class for C++ extensions. Extensions can provide : </div><div class="ttdef"><b>Definition:</b> ExtensionBase.h:49</div></div>
+<div class="ttc" id="class_time_extension_html_a016c213729269b37c0063a003b72a3c0"><div class="ttname"><a href="../../df/d97/class_time_extension.html#a016c213729269b37c0063a003b72a3c0">TimeExtension::HasDebuggingProperties</a></div><div class="ttdeci">bool HasDebuggingProperties() const </div><div class="ttdoc">Must return true if the extension has something to display in debugger. </div><div class="ttdef"><b>Definition:</b> TimeExtension.h:24</div></div>
+<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:45</div></div>
+<div class="ttc" id="class_extension_base_html"><div class="ttname"><a href="../../d5/de6/class_extension_base.html">ExtensionBase</a></div><div class="ttdoc">Base class for C++ extensions. Extensions can provide : </div><div class="ttdef"><b>Definition:</b> ExtensionBase.h:52</div></div>
+<div class="ttc" id="class_time_extension_html_ace63f37158413e8214945902f562f440"><div class="ttname"><a href="../../df/d97/class_time_extension.html#ace63f37158413e8214945902f562f440">TimeExtension::GetNumberOfProperties</a></div><div class="ttdeci">std::size_t GetNumberOfProperties(RuntimeScene &amp;scene) const </div><div class="ttdoc">Must return the number of available properties for the debugger. </div><div class="ttdef"><b>Definition:</b> TimeExtension.cpp:71</div></div>
 <div class="ttc" id="class_time_extension_html"><div class="ttname"><a href="../../df/d97/class_time_extension.html">TimeExtension</a></div><div class="ttdoc">Internal built-in extension providing time features. </div><div class="ttdef"><b>Definition:</b> TimeExtension.h:17</div></div>
+<div class="ttc" id="class_time_extension_html_ad006a7e266cc39c21019b4e672e263ac"><div class="ttname"><a href="../../df/d97/class_time_extension.html#ad006a7e266cc39c21019b4e672e263ac">TimeExtension::GetPropertyForDebugger</a></div><div class="ttdeci">void GetPropertyForDebugger(RuntimeScene &amp;scene, std::size_t propertyNb, gd::String &amp;name, gd::String &amp;value) const </div><div class="ttdoc">Called by the debugger so as to get a property value and name. </div><div class="ttdef"><b>Definition:</b> TimeExtension.cpp:44</div></div>
+<div class="ttc" id="class_time_extension_html_a3079a8fc82c723de44d837c2df3996b2"><div class="ttname"><a href="../../df/d97/class_time_extension.html#a3079a8fc82c723de44d837c2df3996b2">TimeExtension::ChangeProperty</a></div><div class="ttdeci">bool ChangeProperty(RuntimeScene &amp;scene, std::size_t propertyNb, gd::String newValue)</div><div class="ttdoc">Called by the debugger so as to update a property. </div><div class="ttdef"><b>Definition:</b> TimeExtension.cpp:57</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

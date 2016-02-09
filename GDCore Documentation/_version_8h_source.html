@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -96,31 +97,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_auto_version.html">AutoVersion</a>{</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="comment">//Date Version Types</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_DATE[] = <span class="stringliteral">&quot;20&quot;</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_MONTH[] = <span class="stringliteral">&quot;04&quot;</span>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_YEAR[] = <span class="stringliteral">&quot;2015&quot;</span>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_DATE[] = <span class="stringliteral">&quot;17&quot;</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_MONTH[] = <span class="stringliteral">&quot;01&quot;</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_YEAR[] = <span class="stringliteral">&quot;2016&quot;</span>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="comment">//Software Status</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_STATUS[] = <span class="stringliteral">&quot;Release&quot;</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_STATUS_SHORT[] = <span class="stringliteral">&quot;r&quot;</span>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">//Standard Version Type</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_MAJOR = 3;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_MINOR = 6;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_BUILD = 80;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_MAJOR = 4;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_MINOR = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_BUILD = 89;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> GDCore_REVISION = 0;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">//Miscellaneous Version Types</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        #define GDCore_RC_FILEVERSION 3,6,80,0</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        #define GDCore_RC_FILEVERSION_STRING &quot;3, 6, 80, 0\0&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_FULLVERSION_STRING[] = <span class="stringliteral">&quot;3.6.80.0&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        #define GDCore_RC_FILEVERSION 4,0,89,0</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        #define GDCore_RC_FILEVERSION_STRING &quot;4, 0, 89, 0\0&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> GDCore_FULLVERSION_STRING[] = <span class="stringliteral">&quot;4.0.89.0&quot;</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif //GDCORE_VERSION_H</span></div>
 <div class="ttc" id="namespace_auto_version_html"><div class="ttname"><a href="namespace_auto_version.html">AutoVersion</a></div><div class="ttdef"><b>Definition:</b> Version.h:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

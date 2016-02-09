@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_133005aee98dc14e9b45053ba4beb69f.html">BuiltinExtensions</a></li><li class="navelem"><a class="el" href="dir_00eaefe2bdcf4006a95d230b470d4584.html">SpriteExtension</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_4aeb9e7b053513ba8882cbc67130aab6.html">Extensions</a></li><li class="navelem"><a class="el" href="dir_9aa8ee2e901fdf21a3daf12a91d8273f.html">Builtin</a></li><li class="navelem"><a class="el" href="dir_fdb6912ec07860efcf6ce0c8faac629e.html">SpriteExtension</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,23 +93,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef GDCORE_POINT_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define GDCORE_POINT_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_point.html">   16</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="class_point.html">Point</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_point.html">Point</a>(<span class="keyword">const</span> std::string &amp; name_);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_point.html">Point</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_point.html">Point</a>() {};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_point.html#ac29bcd79e43fe9a4e28eb9b4a9b1041b">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#ac29bcd79e43fe9a4e28eb9b4a9b1041b">SetName</a>(<span class="keyword">const</span> std::string &amp; name_) { name = name_; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_point.html#ad45e7fb97f9b889fb7fa22b3b7f46051">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#ad45e7fb97f9b889fb7fa22b3b7f46051">SetName</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_) { name = name_; }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_point.html#a36fa718ee11f26789a5bb0a7ecbe158f">   30</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="class_point.html#a36fa718ee11f26789a5bb0a7ecbe158f">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_point.html#ae48746e4c0427dd328fb4706b6d6fcbc">   30</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="class_point.html#ae48746e4c0427dd328fb4706b6d6fcbc">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_point.html#a65858f5c4719627d546ea3e0e275b93b">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point.html#a65858f5c4719627d546ea3e0e275b93b">SetXY</a>(<span class="keywordtype">float</span> x_, <span class="keywordtype">float</span> y_) { x = x_;y = y_; }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
@@ -121,7 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_point.html#abe6ec4dd268f1bdf764764eb73ee6043">   55</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point.html#abe6ec4dd268f1bdf764764eb73ee6043">GetY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> y; }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::string name;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> name;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">float</span> x;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> y;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
@@ -129,17 +130,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // GDCORE_POINT_H</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="ttc" id="class_point_html_a27225dd1620d4b403c3206c3078df79a"><div class="ttname"><a href="class_point.html#a27225dd1620d4b403c3206c3078df79a">Point::SetX</a></div><div class="ttdeci">void SetX(float x_)</div><div class="ttdef"><b>Definition:</b> Point.h:40</div></div>
+<div class="ttc" id="class_point_html_ad45e7fb97f9b889fb7fa22b3b7f46051"><div class="ttname"><a href="class_point.html#ad45e7fb97f9b889fb7fa22b3b7f46051">Point::SetName</a></div><div class="ttdeci">void SetName(const gd::String &amp;name_)</div><div class="ttdef"><b>Definition:</b> Point.h:25</div></div>
 <div class="ttc" id="class_point_html_a65858f5c4719627d546ea3e0e275b93b"><div class="ttname"><a href="class_point.html#a65858f5c4719627d546ea3e0e275b93b">Point::SetXY</a></div><div class="ttdeci">void SetXY(float x_, float y_)</div><div class="ttdef"><b>Definition:</b> Point.h:35</div></div>
-<div class="ttc" id="class_point_html_a36fa718ee11f26789a5bb0a7ecbe158f"><div class="ttname"><a href="class_point.html#a36fa718ee11f26789a5bb0a7ecbe158f">Point::GetName</a></div><div class="ttdeci">const std::string &amp; GetName() const </div><div class="ttdef"><b>Definition:</b> Point.h:30</div></div>
 <div class="ttc" id="class_point_html_a1ba1189214486e1ce2d39d245ac321d7"><div class="ttname"><a href="class_point.html#a1ba1189214486e1ce2d39d245ac321d7">Point::GetX</a></div><div class="ttdeci">float GetX() const </div><div class="ttdef"><b>Definition:</b> Point.h:50</div></div>
-<div class="ttc" id="class_point_html_ac29bcd79e43fe9a4e28eb9b4a9b1041b"><div class="ttname"><a href="class_point.html#ac29bcd79e43fe9a4e28eb9b4a9b1041b">Point::SetName</a></div><div class="ttdeci">void SetName(const std::string &amp;name_)</div><div class="ttdef"><b>Definition:</b> Point.h:25</div></div>
+<div class="ttc" id="class_point_html_ae48746e4c0427dd328fb4706b6d6fcbc"><div class="ttname"><a href="class_point.html#ae48746e4c0427dd328fb4706b6d6fcbc">Point::GetName</a></div><div class="ttdeci">const gd::String &amp; GetName() const </div><div class="ttdef"><b>Definition:</b> Point.h:30</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
 <div class="ttc" id="class_point_html_ade26ff15ad16ceea3c46e65b22d795f5"><div class="ttname"><a href="class_point.html#ade26ff15ad16ceea3c46e65b22d795f5">Point::SetY</a></div><div class="ttdeci">void SetY(float y_)</div><div class="ttdef"><b>Definition:</b> Point.h:45</div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Named point used by Sprite. </div><div class="ttdef"><b>Definition:</b> Point.h:16</div></div>
 <div class="ttc" id="class_point_html_abe6ec4dd268f1bdf764764eb73ee6043"><div class="ttname"><a href="class_point.html#abe6ec4dd268f1bdf764764eb73ee6043">Point::GetY</a></div><div class="ttdeci">float GetY() const </div><div class="ttdef"><b>Definition:</b> Point.h:55</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

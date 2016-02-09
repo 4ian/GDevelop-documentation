@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab263176e90e8b96075a666cc0f695447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_objects_propgrid_helper.html#ab263176e90e8b96075a666cc0f695447">RefreshFrom</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> *object, bool displayedAfterInstanceProperties=false)</td></tr>
 <tr class="memdesc:ab263176e90e8b96075a666cc0f695447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the property grid from an object.  <a href="#ab263176e90e8b96075a666cc0f695447">More...</a><br /></td></tr>
 <tr class="separator:ab263176e90e8b96075a666cc0f695447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f83680df967c9257dd987420ccbae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_objects_propgrid_helper.html#a81f83680df967c9257dd987420ccbae8">RefreshFrom</a> (const std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; &amp;properties, <a class="el" href="classgd_1_1_string.html">gd::String</a> propertiesNames)</td></tr>
+<tr class="memdesc:a81f83680df967c9257dd987420ccbae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to the grid a list of properties.  <a href="#a81f83680df967c9257dd987420ccbae8">More...</a><br /></td></tr>
+<tr class="separator:a81f83680df967c9257dd987420ccbae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade7fc0a248b4029395abffcffb24a936"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_objects_propgrid_helper.html#ade7fc0a248b4029395abffcffb24a936">OnPropertySelected</a> (<a class="el" href="classgd_1_1_object.html">gd::Object</a> *object, <a class="el" href="classgd_1_1_layout.html">gd::Layout</a> *layout, wxPropertyGridEvent &amp;event)</td></tr>
 <tr class="memdesc:ade7fc0a248b4029395abffcffb24a936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when the event wxEVT_PG_SELECTED of wxPropertyGrid is triggered.  <a href="#ade7fc0a248b4029395abffcffb24a936">More...</a><br /></td></tr>
 <tr class="separator:ade7fc0a248b4029395abffcffb24a936"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +292,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a81f83680df967c9257dd987420ccbae8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::ObjectsPropgridHelper::RefreshFrom </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
+          <td class="paramname"><em>propertiesNames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to the grid a list of properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">properties</td><td>The properties to display </td></tr>
+    <tr><td class="paramname">propertiesName</td><td>The name associated to the properties </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_objects_propgrid_helper_8h_source.html">ObjectsPropgridHelper.h</a></li>
 <li>ObjectsPropgridHelper.cpp</li>
@@ -296,7 +334,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

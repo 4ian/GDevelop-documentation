@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RenderWindow",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="wxSFMLCanvas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d38/classwx_s_f_m_l_canvas.html",tooltip="wxSFMLCanvas allows to run SFML in a wxWidgets control "];
+  Node3 [label="wxControl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

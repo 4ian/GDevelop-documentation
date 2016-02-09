@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -104,46 +104,46 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;SFML/System.hpp&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCpp/profile.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/profile.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>ProfileLink</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../dc/d12/class_profile_link.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d12/class_profile_link.html">ProfileLink</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ProfileLink() : time(0) {};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../dc/d12/class_profile_link.html">ProfileLink</a>() : time(0) {};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> Stop();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d12/class_profile_link.html#af61ad730f90100ebc2dd6cb28456817c">Reset</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d12/class_profile_link.html#a4e05076b2576977b4823d7e59dc4cf21">Stop</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> GetTime()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> time; }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    btClock profileClock;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d1/d14/classbt_clock.html">btClock</a> profileClock;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> time;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::weak_ptr&lt;gd::BaseEvent&gt; originalEvent;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>GD_API BaseProfiler</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html">   37</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d6/da7/class_base_profiler.html">BaseProfiler</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BaseProfiler();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~BaseProfiler() {};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d6/da7/class_base_profiler.html">BaseProfiler</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a6769fef7a8f01eca691c0e603770d0ad">   41</a></span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d6/da7/class_base_profiler.html">BaseProfiler</a>() {};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> profilingActivated; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> lastEventsTime; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> lastRenderingTime; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> totalSceneTime; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> totalEventsTime; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a74b28bd2ef3e8b4da190ad94f347cf82">   45</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/da7/class_base_profiler.html#a74b28bd2ef3e8b4da190ad94f347cf82">lastEventsTime</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#ad39e3780c69fc306877c424b6b16f8ee">   46</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/da7/class_base_profiler.html#ad39e3780c69fc306877c424b6b16f8ee">lastRenderingTime</a>; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a9608b2b6507e69022f67651bbcd8e980">   47</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/da7/class_base_profiler.html#a9608b2b6507e69022f67651bbcd8e980">totalSceneTime</a>; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#ae98c5c6efe7d49a1c75e01eb6f267c90">   48</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="../../d6/da7/class_base_profiler.html#ae98c5c6efe7d49a1c75e01eb6f267c90">totalEventsTime</a>; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    btClock eventsClock; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    btClock renderingClock; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a771c5255a2ffe39cb6daf6914ffa6eef">   50</a></span>&#160;    <a class="code" href="../../d1/d14/classbt_clock.html">btClock</a> <a class="code" href="../../d6/da7/class_base_profiler.html#a771c5255a2ffe39cb6daf6914ffa6eef">eventsClock</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a984aaa32f3eb278eb3d74fc9df91dda6">   51</a></span>&#160;    <a class="code" href="../../d1/d14/classbt_clock.html">btClock</a> <a class="code" href="../../d6/da7/class_base_profiler.html#a984aaa32f3eb278eb3d74fc9df91dda6">renderingClock</a>; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::vector&lt;ProfileLink&gt; profileEventsInformation; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a157760481c826bb6dcb2992695f9ce01">   53</a></span>&#160;    std::vector&lt;ProfileLink&gt; <a class="code" href="../../d6/da7/class_base_profiler.html#a157760481c826bb6dcb2992695f9ce01">profileEventsInformation</a>; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> Update();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> Reset();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    sf::Uint32 stepTime; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d6/da7/class_base_profiler.html#a0667f0d27783d4edbc4877ec53b82906">   59</a></span>&#160;    sf::Uint32 <a class="code" href="../../d6/da7/class_base_profiler.html#a0667f0d27783d4edbc4877ec53b82906">stepTime</a>; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> UpdateGUI() = 0;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
@@ -153,11 +153,24 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // BASEPROFILER_H</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AutomatismsRuntimeSharedData.h:10</div></div>
+<div class="ttc" id="class_profile_link_html_af61ad730f90100ebc2dd6cb28456817c"><div class="ttname"><a href="../../dc/d12/class_profile_link.html#af61ad730f90100ebc2dd6cb28456817c">ProfileLink::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> BaseProfiler.cpp:13</div></div>
+<div class="ttc" id="class_base_profiler_html"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html">BaseProfiler</a></div><div class="ttdoc">Base class to create a profiler. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:37</div></div>
+<div class="ttc" id="class_base_profiler_html_a157760481c826bb6dcb2992695f9ce01"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#a157760481c826bb6dcb2992695f9ce01">BaseProfiler::profileEventsInformation</a></div><div class="ttdeci">std::vector&lt; ProfileLink &gt; profileEventsInformation</div><div class="ttdoc">Used by events generated code. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:53</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CppCodeEvent.h:13</div></div>
+<div class="ttc" id="class_base_profiler_html_a9608b2b6507e69022f67651bbcd8e980"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#a9608b2b6507e69022f67651bbcd8e980">BaseProfiler::totalSceneTime</a></div><div class="ttdeci">unsigned long int totalSceneTime</div><div class="ttdoc">Total time used by events and rendering since the beginning. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:47</div></div>
+<div class="ttc" id="class_base_profiler_html_a0667f0d27783d4edbc4877ec53b82906"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#a0667f0d27783d4edbc4877ec53b82906">BaseProfiler::stepTime</a></div><div class="ttdeci">sf::Uint32 stepTime</div><div class="ttdoc">Time between each UpdateGUI, in milliseconds. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:59</div></div>
+<div class="ttc" id="classbt_clock_html"><div class="ttname"><a href="../../d1/d14/classbt_clock.html">btClock</a></div><div class="ttdoc">The btClock is a portable basic clock that measures accurate time in seconds, use for profiling...</div><div class="ttdef"><b>Definition:</b> profile.h:69</div></div>
+<div class="ttc" id="class_base_profiler_html_a984aaa32f3eb278eb3d74fc9df91dda6"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#a984aaa32f3eb278eb3d74fc9df91dda6">BaseProfiler::renderingClock</a></div><div class="ttdeci">btClock renderingClock</div><div class="ttdoc">Used to compute time used by rendering during the frame. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:51</div></div>
+<div class="ttc" id="class_base_profiler_html_ad39e3780c69fc306877c424b6b16f8ee"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#ad39e3780c69fc306877c424b6b16f8ee">BaseProfiler::lastRenderingTime</a></div><div class="ttdeci">unsigned long int lastRenderingTime</div><div class="ttdoc">Time used by rendering during the last frame. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:46</div></div>
+<div class="ttc" id="class_base_profiler_html_a74b28bd2ef3e8b4da190ad94f347cf82"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#a74b28bd2ef3e8b4da190ad94f347cf82">BaseProfiler::lastEventsTime</a></div><div class="ttdeci">unsigned long int lastEventsTime</div><div class="ttdoc">Time used by events during the last frame. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:45</div></div>
+<div class="ttc" id="class_profile_link_html"><div class="ttname"><a href="../../dc/d12/class_profile_link.html">ProfileLink</a></div><div class="ttdoc">Internal class used as a link between compiled events code and events. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:20</div></div>
+<div class="ttc" id="class_base_profiler_html_a771c5255a2ffe39cb6daf6914ffa6eef"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#a771c5255a2ffe39cb6daf6914ffa6eef">BaseProfiler::eventsClock</a></div><div class="ttdeci">btClock eventsClock</div><div class="ttdoc">Used to compute time used by events during the frame. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:50</div></div>
+<div class="ttc" id="class_profile_link_html_a4e05076b2576977b4823d7e59dc4cf21"><div class="ttname"><a href="../../dc/d12/class_profile_link.html#a4e05076b2576977b4823d7e59dc4cf21">ProfileLink::Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdef"><b>Definition:</b> BaseProfiler.cpp:21</div></div>
+<div class="ttc" id="class_base_profiler_html_ae98c5c6efe7d49a1c75e01eb6f267c90"><div class="ttname"><a href="../../d6/da7/class_base_profiler.html#ae98c5c6efe7d49a1c75e01eb6f267c90">BaseProfiler::totalEventsTime</a></div><div class="ttdeci">unsigned long int totalEventsTime</div><div class="ttdoc">Total time used by events since the beginning. </div><div class="ttdef"><b>Definition:</b> BaseProfiler.h:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:23 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,0 +1,17 @@
+digraph "RuntimeSpriteObject::ChangeScale"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RuntimeSpriteObject\l::ChangeScale",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RuntimeSpriteObject\l::SetScaleX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a1323d41f16779b2fe33c015e4cfc040f",tooltip="Change the scale factor of the object on X axis. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RuntimeSpriteObject\l::GetScaleX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a8ae2847a3beaeb88494b6b4addd19a22",tooltip="Get the scale factor of the object on X axis. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RuntimeSpriteObject\l::SetScaleY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a6bb0a9b76d6b7c7be44ae57f6cb63e0c",tooltip="Change the scale factor of the object on Y axis. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RuntimeSpriteObject\l::GetScaleY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a295dd9a49d2eb3724bc949514ab713f3",tooltip="Get the scale factor of the object on Y axis. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

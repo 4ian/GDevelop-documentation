@@ -117,31 +117,84 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a1cf43deaeeaee9bf32d507d39cfb5b8c">ShowProjectExportDialog</a> (gd::Project &amp;project)</td></tr>
 <tr class="memdesc:a1cf43deaeeaee9bf32d507d39cfb5b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a dialog that will enable the user to export the project. <br /></td></tr>
 <tr class="separator:a1cf43deaeeaee9bf32d507d39cfb5b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac821ac29d2998b0dca9fdb54cd2cd59e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac821ac29d2998b0dca9fdb54cd2cd59e"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#ac821ac29d2998b0dca9fdb54cd2cd59e">GetProjectExportButtonLabel</a> ()</td></tr>
-<tr class="memdesc:ac821ac29d2998b0dca9fdb54cd2cd59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the label that will be displayed on the button or menu item allowing the user to export the project for the JS Platform. <br /></td></tr>
-<tr class="separator:ac821ac29d2998b0dca9fdb54cd2cd59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c0c13da2d714e4c9143c8397e0b20b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a39c0c13da2d714e4c9143c8397e0b20b">ExportLayoutForPreview</a> (gd::Project &amp;project, gd::Layout &amp;layout, std::string exportDir)</td></tr>
-<tr class="memdesc:a39c0c13da2d714e4c9143c8397e0b20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview for the specified layout.  <a href="#a39c0c13da2d714e4c9143c8397e0b20b">More...</a><br /></td></tr>
-<tr class="separator:a39c0c13da2d714e4c9143c8397e0b20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff24bc9c5410c94b83c0654fc827b10a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#aff24bc9c5410c94b83c0654fc827b10a">ExportWholeProject</a> (gd::Project &amp;project, std::string exportDir, bool minify, bool exportForCocoonJS, bool exportForIntelXDK)</td></tr>
-<tr class="memdesc:aff24bc9c5410c94b83c0654fc827b10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the specified project.  <a href="#aff24bc9c5410c94b83c0654fc827b10a">More...</a><br /></td></tr>
-<tr class="separator:aff24bc9c5410c94b83c0654fc827b10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0babb1e8acd48cc030ae1cfd3492b08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0babb1e8acd48cc030ae1cfd3492b08"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#ac0babb1e8acd48cc030ae1cfd3492b08">GetLastError</a> () const </td></tr>
-<tr class="memdesc:ac0babb1e8acd48cc030ae1cfd3492b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the error that occurred during the last export. <br /></td></tr>
-<tr class="separator:ac0babb1e8acd48cc030ae1cfd3492b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca1c799a9fcea04eb09e3d5680fa650"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adca1c799a9fcea04eb09e3d5680fa650"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#adca1c799a9fcea04eb09e3d5680fa650">GetProjectExportButtonLabel</a> ()</td></tr>
+<tr class="memdesc:adca1c799a9fcea04eb09e3d5680fa650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the label that will be displayed on the button or menu item allowing the user to export the project for the JS Platform. <br /></td></tr>
+<tr class="separator:adca1c799a9fcea04eb09e3d5680fa650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38db374bf09efec1d4c7d67930df8307"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a38db374bf09efec1d4c7d67930df8307">ExportLayoutForPreview</a> (gd::Project &amp;project, gd::Layout &amp;layout, gd::String exportDir)</td></tr>
+<tr class="memdesc:a38db374bf09efec1d4c7d67930df8307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview for the specified layout.  <a href="#a38db374bf09efec1d4c7d67930df8307">More...</a><br /></td></tr>
+<tr class="separator:a38db374bf09efec1d4c7d67930df8307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fada8547cc20e9595f6f9cca43c831f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a2fada8547cc20e9595f6f9cca43c831f">ExportExternalLayoutForPreview</a> (gd::Project &amp;project, gd::Layout &amp;layout, gd::ExternalLayout &amp;externalLayout, gd::String exportDir)</td></tr>
+<tr class="memdesc:a2fada8547cc20e9595f6f9cca43c831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview for the specified external layout and layout.  <a href="#a2fada8547cc20e9595f6f9cca43c831f">More...</a><br /></td></tr>
+<tr class="separator:a2fada8547cc20e9595f6f9cca43c831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2d668dc0a90bd8e390261589fc8c60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#adc2d668dc0a90bd8e390261589fc8c60">ExportWholeProject</a> (gd::Project &amp;project, gd::String exportDir, bool minify, bool exportForCocoonJS, bool exportForCordova)</td></tr>
+<tr class="memdesc:adc2d668dc0a90bd8e390261589fc8c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the specified project.  <a href="#adc2d668dc0a90bd8e390261589fc8c60">More...</a><br /></td></tr>
+<tr class="separator:adc2d668dc0a90bd8e390261589fc8c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ee505f4658a252da53fb35f47bc36b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66ee505f4658a252da53fb35f47bc36b"></a>
+const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a66ee505f4658a252da53fb35f47bc36b">GetLastError</a> () const </td></tr>
+<tr class="memdesc:a66ee505f4658a252da53fb35f47bc36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the error that occurred during the last export. <br /></td></tr>
+<tr class="separator:a66ee505f4658a252da53fb35f47bc36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:affd74f683a7a3a5d8572e7b72d06d8ec"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#affd74f683a7a3a5d8572e7b72d06d8ec">GetNodeExecutablePath</a> ()</td></tr>
-<tr class="memdesc:affd74f683a7a3a5d8572e7b72d06d8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to locate the Node.js executable. (Node must be installed in a standard folder).  <a href="#affd74f683a7a3a5d8572e7b72d06d8ec">More...</a><br /></td></tr>
-<tr class="separator:affd74f683a7a3a5d8572e7b72d06d8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4054246e47d22b5b68bcc87007a37a"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a5f4054246e47d22b5b68bcc87007a37a">GetNodeExecutablePath</a> ()</td></tr>
+<tr class="memdesc:a5f4054246e47d22b5b68bcc87007a37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to locate the Node.js executable. (Node must be installed in a standard folder).  <a href="#a5f4054246e47d22b5b68bcc87007a37a">More...</a><br /></td></tr>
+<tr class="separator:a5f4054246e47d22b5b68bcc87007a37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Export a project or a layout to a playable HTML5/Javascript based game. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a39c0c13da2d714e4c9143c8397e0b20b"></a>
+<a class="anchor" id="a2fada8547cc20e9595f6f9cca43c831f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gdjs::Exporter::ExportExternalLayoutForPreview </td>
+          <td>(</td>
+          <td class="paramtype">gd::Project &amp;&#160;</td>
+          <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gd::Layout &amp;&#160;</td>
+          <td class="paramname"><em>layout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gd::ExternalLayout &amp;&#160;</td>
+          <td class="paramname"><em>externalLayout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gd::String&#160;</td>
+          <td class="paramname"><em>exportDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a preview for the specified external layout and layout. </p>
+<dl class="section note"><dt>Note</dt><dd>The preview is not launched, it is the caller responsibility to open a browser pointing to the preview.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layout</td><td>The layout to be previewed. </td></tr>
+    <tr><td class="paramname">externalLayout</td><td>The external layout with objects to be created at scene startup. </td></tr>
+    <tr><td class="paramname">exportDir</td><td>The directory where the preview must be created. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if export was successful. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38db374bf09efec1d4c7d67930df8307"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -160,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">gd::String&#160;</td>
           <td class="paramname"><em>exportDir</em>&#160;</td>
         </tr>
         <tr>
@@ -184,7 +237,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aff24bc9c5410c94b83c0654fc827b10a"></a>
+<a class="anchor" id="adc2d668dc0a90bd8e390261589fc8c60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -197,7 +250,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">gd::String&#160;</td>
           <td class="paramname"><em>exportDir</em>, </td>
         </tr>
         <tr>
@@ -216,7 +269,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>exportForIntelXDK</em>&#160;</td>
+          <td class="paramname"><em>exportForCordova</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,7 +284,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="affd74f683a7a3a5d8572e7b72d06d8ec"></a>
+<a class="anchor" id="a5f4054246e47d22b5b68bcc87007a37a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -239,7 +292,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gdjs::Exporter::GetNodeExecutablePath </td>
+          <td class="memname">gd::String gdjs::Exporter::GetNodeExecutablePath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -264,7 +317,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:22 for GDevelop JS Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:04 for GDevelop JS Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

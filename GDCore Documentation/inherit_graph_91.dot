@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::ResourceFolder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_resource_folder.html"];
+  Node1 [label="gd::RebrandingHelper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_rebranding_helper.html",tooltip="Provide tool functions to easily rebrand wxWidgets dialogs (basically: replace a word by another..."];
 }

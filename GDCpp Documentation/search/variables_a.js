@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['objectsinstances',['objectsInstances',['../d7/d7f/class_runtime_scene.html#aaec085ea78c0fdb7549224cd7352a07b',1,'RuntimeScene']]],
-  ['objectvariables',['objectVariables',['../d0/d3b/class_runtime_object.html#a4171ef2ed3e6a85b52da717ade19435e',1,'RuntimeObject']]],
-  ['offset',['offset',['../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd',1,'sFileEntry']]]
+  ['name',['name',['../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0',1,'RuntimeObject']]],
+  ['nb_5ffiles',['nb_files',['../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1',1,'sDATHeader']]]
 ];

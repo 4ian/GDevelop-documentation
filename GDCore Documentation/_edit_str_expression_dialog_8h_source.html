@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
@@ -110,9 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;wx/dialog.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;wx/stc/stc.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//*)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/ExpressionMetadata.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Metadata/ExpressionMetadata.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Layout; }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ParameterMetadata; }</div>
@@ -124,10 +125,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classgd_1_1_edit_str_expression_dialog.html">EditStrExpressionDialog</a>(wxWindow* parent, std::string expression, <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project_, <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout_);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classgd_1_1_edit_str_expression_dialog.html">EditStrExpressionDialog</a>(wxWindow* parent, <a class="code" href="classgd_1_1_string.html">gd::String</a> expression, <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project_, <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout_);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_edit_str_expression_dialog.html">EditStrExpressionDialog</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classgd_1_1_edit_str_expression_dialog.html#a081bfd3d6fa6eb8d22221f4a0221ebb0">   53</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_edit_str_expression_dialog.html#a081bfd3d6fa6eb8d22221f4a0221ebb0">GetExpression</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> returnedExpression;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classgd_1_1_edit_str_expression_dialog.html#a3f5723b904efda2b88adcf87c8abefcc">   53</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_edit_str_expression_dialog.html#a3f5723b904efda2b88adcf87c8abefcc">GetExpression</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> returnedExpression;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//(*Declarations(EditStrExpressionDialog)</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    wxPanel* objectsFunctionsPanel;</div>
@@ -184,9 +185,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> TextModified(wxStyledTextEvent&amp; event);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> UpdateTextCtrl(wxStyledTextEvent&amp; event);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string ShowParameterDialog(<span class="keyword">const</span> <a class="code" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp; <a class="code" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a>, <span class="keywordtype">bool</span> &amp; userCancelled, std::string <span class="keywordtype">object</span> = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> ShowParameterDialog(<span class="keyword">const</span> <a class="code" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp; <a class="code" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a>, <span class="keywordtype">bool</span> &amp; userCancelled, <a class="code" href="classgd_1_1_string.html">gd::String</a> <span class="keywordtype">object</span> = <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::string returnedExpression;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> returnedExpression;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//Items selected</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    wxTreeItemId itemObj;</div>
@@ -196,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    wxImageList * imageListVal;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//Utile pour selectionner un objet</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//( quand on souhaite accéder aux propriétés d&#39;un objet )</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//( quand on souhaite accï¿½der aux propriï¿½tï¿½s d&#39;un objet )</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
@@ -208,16 +209,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_edit_str_expression_dialog_html_a081bfd3d6fa6eb8d22221f4a0221ebb0"><div class="ttname"><a href="classgd_1_1_edit_str_expression_dialog.html#a081bfd3d6fa6eb8d22221f4a0221ebb0">gd::EditStrExpressionDialog::GetExpression</a></div><div class="ttdeci">const std::string &amp; GetExpression() const </div><div class="ttdef"><b>Definition:</b> EditStrExpressionDialog.h:53</div></div>
-<div class="ttc" id="classgd_1_1_parameter_metadata_html"><div class="ttname"><a href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a></div><div class="ttdoc">Contains user-friendly info about a parameter, and information about what a parameter need...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:31</div></div>
-<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_edit_str_expression_dialog_html_a3f5723b904efda2b88adcf87c8abefcc"><div class="ttname"><a href="classgd_1_1_edit_str_expression_dialog.html#a3f5723b904efda2b88adcf87c8abefcc">gd::EditStrExpressionDialog::GetExpression</a></div><div class="ttdeci">const gd::String &amp; GetExpression() const </div><div class="ttdef"><b>Definition:</b> EditStrExpressionDialog.h:53</div></div>
+<div class="ttc" id="classgd_1_1_parameter_metadata_html"><div class="ttname"><a href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a></div><div class="ttdoc">Contains user-friendly info about a parameter, and information about what a parameter need...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:32</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:44</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
-<div class="ttc" id="classgd_1_1_edit_str_expression_dialog_html"><div class="ttname"><a href="classgd_1_1_edit_str_expression_dialog.html">gd::EditStrExpressionDialog</a></div><div class="ttdoc">Dialog used to edit a string expression. </div><div class="ttdef"><b>Definition:</b> EditStrExpressionDialog.h:36</div></div>
+<div class="ttc" id="classgd_1_1_edit_str_expression_dialog_html"><div class="ttname"><a href="classgd_1_1_edit_str_expression_dialog.html">gd::EditStrExpressionDialog</a></div><div class="ttdoc">Dialog used to edit a gd::String expression. </div><div class="ttdef"><b>Definition:</b> EditStrExpressionDialog.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

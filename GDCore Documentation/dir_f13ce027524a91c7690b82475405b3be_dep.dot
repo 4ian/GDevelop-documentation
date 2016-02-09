@@ -1,0 +1,9 @@
+digraph "EventsEditor" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bcf6ec501aeeb9d3358543e670fbff9c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Dialogs" fontname="Helvetica", fontsize="10", URL="dir_bcf6ec501aeeb9d3358543e670fbff9c.html"]
+  dir_f13ce027524a91c7690b82475405b3be [shape=box, label="EventsEditor", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f13ce027524a91c7690b82475405b3be.html"];
+  }
+}

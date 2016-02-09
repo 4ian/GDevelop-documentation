@@ -9,6 +9,8 @@ var searchData=
   ['skinhelper',['SkinHelper',['../classgd_1_1_skin_helper.html',1,'gd']]],
   ['smallestinstanceundercursorpicker',['SmallestInstanceUnderCursorPicker',['../classgd_1_1_smallest_instance_under_cursor_picker.html',1,'gd']]],
   ['sourcefile',['SourceFile',['../classgd_1_1_source_file.html',1,'gd']]],
+  ['splitelement',['SplitElement',['../structgd_1_1_splitter_1_1_split_element.html',1,'gd::Splitter']]],
+  ['splitter',['Splitter',['../classgd_1_1_splitter.html',1,'gd']]],
   ['sprite',['Sprite',['../classgd_1_1_sprite.html',1,'gd']]],
   ['spriteobject',['SpriteObject',['../classgd_1_1_sprite_object.html',1,'gd']]],
   ['spriteobjecteditor',['SpriteObjectEditor',['../classgd_1_1_sprite_object_editor.html',1,'gd']]],
@@ -16,5 +18,7 @@ var searchData=
   ['sptrlist',['SPtrList',['../classgd_1_1_s_ptr_list.html',1,'gd']]],
   ['sptrlist_3c_20instruction_20_3e',['SPtrList&lt; Instruction &gt;',['../classgd_1_1_s_ptr_list.html',1,'gd']]],
   ['standardevent',['StandardEvent',['../classgd_1_1_standard_event.html',1,'gd']]],
+  ['string',['String',['../classgd_1_1_string.html',1,'gd']]],
+  ['stringiterator',['StringIterator',['../classgd_1_1_string_1_1_string_iterator.html',1,'gd::String']]],
   ['systemstats',['SystemStats',['../classgd_1_1_system_stats.html',1,'gd']]]
 ];

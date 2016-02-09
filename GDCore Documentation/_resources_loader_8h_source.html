@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_cb41f5ef91fc988d72e8399a7772e902.html">PlatformDefinition</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_129090375540cd296b14a737bb10e859.html">Project</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,14 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef RESSOURCESLOADER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define RESSOURCESLOADER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;SFML/Audio.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#undef LoadImage //Undef macro from windows.h</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
@@ -109,17 +110,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    sf::Texture LoadSFMLTexture( <span class="keyword">const</span> std::string &amp; filename );</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    sf::Texture LoadSFMLTexture( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; filename );</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::pair&lt;sf::Font *, char *&gt; LoadFont( <span class="keyword">const</span> std::string &amp; filename );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::pair&lt;sf::Font *, char *&gt; LoadFont( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; filename );</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    sf::SoundBuffer LoadSoundBuffer( <span class="keyword">const</span> std::string &amp; filename );</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    sf::SoundBuffer LoadSoundBuffer( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; filename );</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::string LoadPlainText( <span class="keyword">const</span> std::string &amp; filename );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> LoadPlainText( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; filename );</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">char</span>* LoadBinaryFile( <span class="keyword">const</span> std::string &amp; filename );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">char</span>* LoadBinaryFile( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; filename );</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">int</span> GetBinaryFileSize( <span class="keyword">const</span> std::string &amp; filename);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">int</span> GetBinaryFileSize( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; filename);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_resources_loader.html">ResourcesLoader</a> *Get()</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
@@ -149,12 +150,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // RESSOURCESLOADER_H</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_resources_loader_html"><div class="ttname"><a href="classgd_1_1_resources_loader.html">gd::ResourcesLoader</a></div><div class="ttdoc">Class used by games to load resources from files: this is purely an abstraction to most SFML loadFrom...</div><div class="ttdef"><b>Definition:</b> ResourcesLoader.h:24</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

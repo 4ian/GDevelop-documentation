@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_7aefbae60249d8db3c9a686a9296d9b4.html">Runtime</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,58 +93,50 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef MANUALTIMER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MANUALTIMER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html">   17</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/String.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html">   16</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a>() {};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a>(std::string name_);</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb">   27</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb">UpdateTime</a>(<span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> time_) { <span class="keywordflow">if</span> (!isPaused) time += time_; };</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../d4/d5f/class_manual_timer.html">ManualTimer</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a57bc07f3b42deef6975bca24691a341f">   35</a></span>&#160;        <span class="keyword">inline</span> std::string <a class="code" href="../../d4/d5f/class_manual_timer.html#a57bc07f3b42deef6975bca24691a341f">GetName</a>() { <span class="keywordflow">return</span> name; };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb">   41</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb">UpdateTime</a>(<span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> time_) { <span class="keywordflow">if</span> (!isPaused) time += time_; };</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a3d7ffe96836b811f3f6236edd4e1d479">   46</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a3d7ffe96836b811f3f6236edd4e1d479">Reset</a>() { time = 0; };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a917d5a165adf8526cdeda610c7bd6936">   52</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a917d5a165adf8526cdeda610c7bd6936">GetTime</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> time; };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a17b5c0031bd78e8c6b1a3df45b52a55a">   59</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a17b5c0031bd78e8c6b1a3df45b52a55a">SetTime</a>(<span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> newTime) { time = newTime; };</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#ab3e5bea3b42c0dc688ab602e4620af33">   65</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#ab3e5bea3b42c0dc688ab602e4620af33">IsPaused</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isPaused; };</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#af075e3f2d5a15734b02fab6befd9b5b3">   71</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#af075e3f2d5a15734b02fab6befd9b5b3">SetPaused</a>(<span class="keywordtype">bool</span> newState = <span class="keyword">true</span>) { isPaused = newState; };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        std::string name; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> time; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> isPaused; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // MANUALTIMER_H</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="ttc" id="class_manual_timer_html_a917d5a165adf8526cdeda610c7bd6936"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a917d5a165adf8526cdeda610c7bd6936">ManualTimer::GetTime</a></div><div class="ttdeci">signed long long GetTime() const </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:52</div></div>
-<div class="ttc" id="class_manual_timer_html_a57bc07f3b42deef6975bca24691a341f"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a57bc07f3b42deef6975bca24691a341f">ManualTimer::GetName</a></div><div class="ttdeci">std::string GetName()</div><div class="ttdef"><b>Definition:</b> ManualTimer.h:35</div></div>
-<div class="ttc" id="class_manual_timer_html"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html">ManualTimer</a></div><div class="ttdoc">Manual timer updated using ManualTimer::UpdateTime member function. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:17</div></div>
-<div class="ttc" id="class_manual_timer_html_a3d7ffe96836b811f3f6236edd4e1d479"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a3d7ffe96836b811f3f6236edd4e1d479">ManualTimer::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> ManualTimer.h:46</div></div>
-<div class="ttc" id="class_manual_timer_html_a83de25b9174f1e93052168643eab2adb"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb">ManualTimer::UpdateTime</a></div><div class="ttdeci">void UpdateTime(signed long long time_)</div><div class="ttdef"><b>Definition:</b> ManualTimer.h:41</div></div>
-<div class="ttc" id="class_manual_timer_html_a17b5c0031bd78e8c6b1a3df45b52a55a"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a17b5c0031bd78e8c6b1a3df45b52a55a">ManualTimer::SetTime</a></div><div class="ttdeci">void SetTime(signed long long newTime)</div><div class="ttdef"><b>Definition:</b> ManualTimer.h:59</div></div>
-<div class="ttc" id="class_manual_timer_html_af075e3f2d5a15734b02fab6befd9b5b3"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#af075e3f2d5a15734b02fab6befd9b5b3">ManualTimer::SetPaused</a></div><div class="ttdeci">void SetPaused(bool newState=true)</div><div class="ttdef"><b>Definition:</b> ManualTimer.h:71</div></div>
-<div class="ttc" id="class_manual_timer_html_ab3e5bea3b42c0dc688ab602e4620af33"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#ab3e5bea3b42c0dc688ab602e4620af33">ManualTimer::IsPaused</a></div><div class="ttdeci">bool IsPaused() const </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:65</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a3d7ffe96836b811f3f6236edd4e1d479">   32</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a3d7ffe96836b811f3f6236edd4e1d479">Reset</a>() { time = 0; };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a917d5a165adf8526cdeda610c7bd6936">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a917d5a165adf8526cdeda610c7bd6936">GetTime</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> time; };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#a17b5c0031bd78e8c6b1a3df45b52a55a">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#a17b5c0031bd78e8c6b1a3df45b52a55a">SetTime</a>(<span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> newTime) { time = newTime; };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#ab3e5bea3b42c0dc688ab602e4620af33">   49</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#ab3e5bea3b42c0dc688ab602e4620af33">IsPaused</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isPaused; };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d4/d5f/class_manual_timer.html#af075e3f2d5a15734b02fab6befd9b5b3">   55</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d5f/class_manual_timer.html#af075e3f2d5a15734b02fab6befd9b5b3">SetPaused</a>(<span class="keywordtype">bool</span> newState = <span class="keyword">true</span>) { isPaused = newState; };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> time; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> isPaused; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // MANUALTIMER_H</span></div>
+<div class="ttc" id="class_manual_timer_html_a917d5a165adf8526cdeda610c7bd6936"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a917d5a165adf8526cdeda610c7bd6936">ManualTimer::GetTime</a></div><div class="ttdeci">signed long long GetTime() const </div><div class="ttdoc">Get the timer elapsed time, in microseconds. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:38</div></div>
+<div class="ttc" id="class_manual_timer_html"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html">ManualTimer</a></div><div class="ttdoc">Manual timer, updated using ManualTimer::UpdateTime member function. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:16</div></div>
+<div class="ttc" id="class_manual_timer_html_a3d7ffe96836b811f3f6236edd4e1d479"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a3d7ffe96836b811f3f6236edd4e1d479">ManualTimer::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Reset time to zero. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:32</div></div>
+<div class="ttc" id="class_manual_timer_html_a83de25b9174f1e93052168643eab2adb"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb">ManualTimer::UpdateTime</a></div><div class="ttdeci">void UpdateTime(signed long long time_)</div><div class="ttdoc">Update the time of the timer. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:27</div></div>
+<div class="ttc" id="class_manual_timer_html_a17b5c0031bd78e8c6b1a3df45b52a55a"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#a17b5c0031bd78e8c6b1a3df45b52a55a">ManualTimer::SetTime</a></div><div class="ttdeci">void SetTime(signed long long newTime)</div><div class="ttdoc">Change the timer&#39;s value. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:44</div></div>
+<div class="ttc" id="class_manual_timer_html_af075e3f2d5a15734b02fab6befd9b5b3"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#af075e3f2d5a15734b02fab6befd9b5b3">ManualTimer::SetPaused</a></div><div class="ttdeci">void SetPaused(bool newState=true)</div><div class="ttdoc">Set the paused state of the timer. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:55</div></div>
+<div class="ttc" id="class_manual_timer_html_ab3e5bea3b42c0dc688ab602e4620af33"><div class="ttname"><a href="../../d4/d5f/class_manual_timer.html#ab3e5bea3b42c0dc688ab602e4620af33">ManualTimer::IsPaused</a></div><div class="ttdeci">bool IsPaused() const </div><div class="ttdoc">Return true if the timer is paused. </div><div class="ttdef"><b>Definition:</b> ManualTimer.h:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

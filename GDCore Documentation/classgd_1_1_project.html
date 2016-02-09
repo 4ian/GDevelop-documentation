@@ -117,25 +117,64 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3058ff9896a5994d78af46d3de23c30b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3058ff9896a5994d78af46d3de23c30b"></a>
 <a class="el" href="classgd_1_1_project.html">Project</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classgd_1_1_project.html">Project</a> &amp;rhs)</td></tr>
 <tr class="separator:a3058ff9896a5994d78af46d3de23c30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d48c37b6df0ba7f23796e7a18812cbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d48c37b6df0ba7f23796e7a18812cbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6d48c37b6df0ba7f23796e7a18812cbd">UnserializeFrom</a> (const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element)</td></tr>
+<tr class="memdesc:a6d48c37b6df0ba7f23796e7a18812cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialize the project from an element. <br /></td></tr>
+<tr class="separator:a6d48c37b6df0ba7f23796e7a18812cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6ea198fae0ab5a84fdc8aace7d4579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9c6ea198fae0ab5a84fdc8aace7d4579">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const </td></tr>
+<tr class="memdesc:a9c6ea198fae0ab5a84fdc8aace7d4579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to serialize the project to a TiXmlElement.  <a href="#a9c6ea198fae0ab5a84fdc8aace7d4579">More...</a><br /></td></tr>
+<tr class="separator:a9c6ea198fae0ab5a84fdc8aace7d4579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81121a62bbf210a7b917a2000d37090"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac81121a62bbf210a7b917a2000d37090"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac81121a62bbf210a7b917a2000d37090">IsDirty</a> ()</td></tr>
+<tr class="memdesc:ac81121a62bbf210a7b917a2000d37090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the project is marked as being modified (The IDE or application using the project should ask to save the project if the project is closed). <br /></td></tr>
+<tr class="separator:ac81121a62bbf210a7b917a2000d37090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07d99e57457577f66bce80ad368777a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa07d99e57457577f66bce80ad368777a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa07d99e57457577f66bce80ad368777a">SetDirty</a> (bool enable=true)</td></tr>
+<tr class="memdesc:aa07d99e57457577f66bce80ad368777a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the project as being modified (The IDE or application using the project should ask to save the project if the project is closed). <br /></td></tr>
+<tr class="separator:aa07d99e57457577f66bce80ad368777a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0206cb4591df24402cf357d0558fce73"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a0206cb4591df24402cf357d0558fce73">GetLastSaveGDMajorVersion</a> ()</td></tr>
+<tr class="separator:a0206cb4591df24402cf357d0558fce73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf2f6ae1e0a41787b8cd165b06692e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aaaf2f6ae1e0a41787b8cd165b06692e9">GetLastSaveGDMinorVersion</a> ()</td></tr>
+<tr class="separator:aaaf2f6ae1e0a41787b8cd165b06692e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Common properties</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Some properties for the project </p>
 </div></td></tr>
-<tr class="memitem:ae83b11e09990fbeb09e68725a762b573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae83b11e09990fbeb09e68725a762b573">SetName</a> (const std::string &amp;name_)</td></tr>
-<tr class="separator:ae83b11e09990fbeb09e68725a762b573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9463dd420b8029bb0d11433636f92847"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9463dd420b8029bb0d11433636f92847">GetName</a> () const </td></tr>
-<tr class="separator:a9463dd420b8029bb0d11433636f92847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9f464b948400c3d17105aa7a8d4655"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a2a9f464b948400c3d17105aa7a8d4655">SetAuthor</a> (const std::string &amp;author_)</td></tr>
-<tr class="separator:a2a9f464b948400c3d17105aa7a8d4655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa94a7063a1e9f1be7cac8ea363830170"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa94a7063a1e9f1be7cac8ea363830170">GetAuthor</a> () const </td></tr>
-<tr class="separator:aa94a7063a1e9f1be7cac8ea363830170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f076240cc31b07309a0a598e0995229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9f076240cc31b07309a0a598e0995229">SetProjectFile</a> (const std::string &amp;file)</td></tr>
-<tr class="separator:a9f076240cc31b07309a0a598e0995229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eff511d624d29127193b9a46ce344b5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9eff511d624d29127193b9a46ce344b5">GetProjectFile</a> () const </td></tr>
-<tr class="separator:a9eff511d624d29127193b9a46ce344b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4bcf87781ba19a4e9cf99f4af5efad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a4f4bcf87781ba19a4e9cf99f4af5efad">SetLastCompilationDirectory</a> (const std::string &amp;dir)</td></tr>
-<tr class="separator:a4f4bcf87781ba19a4e9cf99f4af5efad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d5c28cabcb92a58c29ec340848f949"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a08d5c28cabcb92a58c29ec340848f949">GetLastCompilationDirectory</a> () const </td></tr>
-<tr class="separator:a08d5c28cabcb92a58c29ec340848f949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6cd9faf61f432511901cb447a2e70d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba6cd9faf61f432511901cb447a2e70d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aba6cd9faf61f432511901cb447a2e70d">SetName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_)</td></tr>
+<tr class="memdesc:aba6cd9faf61f432511901cb447a2e70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change project name. <br /></td></tr>
+<tr class="separator:aba6cd9faf61f432511901cb447a2e70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaab147918c429aa6fc86cd793bb6aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accaab147918c429aa6fc86cd793bb6aa"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#accaab147918c429aa6fc86cd793bb6aa">GetName</a> () const </td></tr>
+<tr class="memdesc:accaab147918c429aa6fc86cd793bb6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get project name. <br /></td></tr>
+<tr class="separator:accaab147918c429aa6fc86cd793bb6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2993fb723ac0eb546d7b988b8771ddc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2993fb723ac0eb546d7b988b8771ddc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa2993fb723ac0eb546d7b988b8771ddc">SetAuthor</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;author_)</td></tr>
+<tr class="memdesc:aa2993fb723ac0eb546d7b988b8771ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the author of the project. <br /></td></tr>
+<tr class="separator:aa2993fb723ac0eb546d7b988b8771ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044916cacfad437d4e7b24fb2b6b8a97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a044916cacfad437d4e7b24fb2b6b8a97"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a044916cacfad437d4e7b24fb2b6b8a97">GetAuthor</a> () const </td></tr>
+<tr class="memdesc:a044916cacfad437d4e7b24fb2b6b8a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get project author name. <br /></td></tr>
+<tr class="separator:a044916cacfad437d4e7b24fb2b6b8a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d556b9e3ed34867b8664e5844ae5b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7d556b9e3ed34867b8664e5844ae5b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac7d556b9e3ed34867b8664e5844ae5b7">SetPackageName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;packageName_)</td></tr>
+<tr class="memdesc:ac7d556b9e3ed34867b8664e5844ae5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change project package name. <br /></td></tr>
+<tr class="separator:ac7d556b9e3ed34867b8664e5844ae5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d90b220b35c38d4e61b600101e176d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0d90b220b35c38d4e61b600101e176d"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af0d90b220b35c38d4e61b600101e176d">GetPackageName</a> () const </td></tr>
+<tr class="memdesc:af0d90b220b35c38d4e61b600101e176d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get project package name. <br /></td></tr>
+<tr class="separator:af0d90b220b35c38d4e61b600101e176d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f88dda26fda8c00fa8c722f4a73a014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a4f88dda26fda8c00fa8c722f4a73a014">SetProjectFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;file)</td></tr>
+<tr class="separator:a4f88dda26fda8c00fa8c722f4a73a014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0ba51bacd5a00a90280ce11ffd9c61"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acd0ba51bacd5a00a90280ce11ffd9c61">GetProjectFile</a> () const </td></tr>
+<tr class="separator:acd0ba51bacd5a00a90280ce11ffd9c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a1a84864ead9f4cd0f6ddc38b2797e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a60a1a84864ead9f4cd0f6ddc38b2797e">SetFolderProject</a> (bool enable=true)</td></tr>
+<tr class="separator:a60a1a84864ead9f4cd0f6ddc38b2797e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ae1f6911057f2e7ec37bdf7e9563ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af4ae1f6911057f2e7ec37bdf7e9563ef">IsFolderProject</a> () const </td></tr>
+<tr class="separator:af4ae1f6911057f2e7ec37bdf7e9563ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52d5d7290185aa4d6e8d0d797e5e1a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae52d5d7290185aa4d6e8d0d797e5e1a4">SetLastCompilationDirectory</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;dir)</td></tr>
+<tr class="separator:ae52d5d7290185aa4d6e8d0d797e5e1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509741ddfeeb4a3116942c6b7137774c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a509741ddfeeb4a3116942c6b7137774c">GetLastCompilationDirectory</a> () const </td></tr>
+<tr class="separator:a509741ddfeeb4a3116942c6b7137774c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5256765779c468f6f7e1003eea5d4966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5256765779c468f6f7e1003eea5d4966">SetDefaultWidth</a> (unsigned int width)</td></tr>
 <tr class="separator:a5256765779c468f6f7e1003eea5d4966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08eb554ec0862c134fdfbf1ae6e55e11"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a08eb554ec0862c134fdfbf1ae6e55e11">GetMainWindowDefaultWidth</a> () const </td></tr>
@@ -156,34 +195,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a696af1a42432d67bca5af66fc04ef546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d88f9e9cc2355a445a7ff079d20203f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a0d88f9e9cc2355a445a7ff079d20203f">SetVerticalSyncActivatedByDefault</a> (bool enable)</td></tr>
 <tr class="separator:a0d88f9e9cc2355a445a7ff079d20203f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b7bd4739d0830582c5d40e703e7104"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae0b7bd4739d0830582c5d40e703e7104">GetUsedExtensions</a> () const </td></tr>
-<tr class="separator:ae0b7bd4739d0830582c5d40e703e7104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d0376a5b2f4cee42ca4819e8fd6e3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ad5d0376a5b2f4cee42ca4819e8fd6e3d">GetUsedExtensions</a> ()</td></tr>
-<tr class="separator:ad5d0376a5b2f4cee42ca4819e8fd6e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fc3c6b46caa8e245b93c9aa580b86b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af7fc3c6b46caa8e245b93c9aa580b86b">GetUsedExtensions</a> () const </td></tr>
+<tr class="separator:af7fc3c6b46caa8e245b93c9aa580b86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68a1dc09bf9fb526e33ca6a7b9296e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae68a1dc09bf9fb526e33ca6a7b9296e9">GetUsedExtensions</a> ()</td></tr>
+<tr class="separator:ae68a1dc09bf9fb526e33ca6a7b9296e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f34a1cff14f10f6efb0b170cf92b14"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classgd_1_1_platform.html">Platform</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a54f34a1cff14f10f6efb0b170cf92b14">GetUsedPlatforms</a> () const </td></tr>
 <tr class="separator:a54f34a1cff14f10f6efb0b170cf92b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c5903a2cbd6df1c2b558a2ab825adb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9c5903a2cbd6df1c2b558a2ab825adb8">AddPlatform</a> (<a class="el" href="classgd_1_1_platform.html">Platform</a> &amp;platform)</td></tr>
 <tr class="separator:a9c5903a2cbd6df1c2b558a2ab825adb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef803b306f9a33d71e30f1b4c5f9a922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aef803b306f9a33d71e30f1b4c5f9a922">RemovePlatform</a> (const std::string &amp;platformName)</td></tr>
-<tr class="separator:aef803b306f9a33d71e30f1b4c5f9a922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1b67eb584b4533db105ac97fb55804"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aeb1b67eb584b4533db105ac97fb55804">RemovePlatform</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName)</td></tr>
+<tr class="separator:aeb1b67eb584b4533db105ac97fb55804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00537a42a6b48a6ad41a40d3e54b3bcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00537a42a6b48a6ad41a40d3e54b3bcc"></a>
 <a class="el" href="classgd_1_1_platform.html">Platform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a00537a42a6b48a6ad41a40d3e54b3bcc">GetCurrentPlatform</a> () const </td></tr>
 <tr class="memdesc:a00537a42a6b48a6ad41a40d3e54b3bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the platform being currently used to edit the project. <br /></td></tr>
 <tr class="separator:a00537a42a6b48a6ad41a40d3e54b3bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acafd41eb551ab8c46eae42a1a8959493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acafd41eb551ab8c46eae42a1a8959493">SetCurrentPlatform</a> (const std::string &amp;platformName)</td></tr>
-<tr class="memdesc:acafd41eb551ab8c46eae42a1a8959493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the platform to be used to edit the project.  <a href="#acafd41eb551ab8c46eae42a1a8959493">More...</a><br /></td></tr>
-<tr class="separator:acafd41eb551ab8c46eae42a1a8959493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdadabd218529629b7e9155e40bdaf91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acdadabd218529629b7e9155e40bdaf91">SetCurrentPlatform</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName)</td></tr>
+<tr class="memdesc:acdadabd218529629b7e9155e40bdaf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the platform to be used to edit the project.  <a href="#acdadabd218529629b7e9155e40bdaf91">More...</a><br /></td></tr>
+<tr class="separator:acdadabd218529629b7e9155e40bdaf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Factory method</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Member functions used to create objects for the project </p>
 </div></td></tr>
-<tr class="memitem:a75c3d03dd1a8b4ea13c4ce6a09df20fc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a75c3d03dd1a8b4ea13c4ce6a09df20fc">CreateObject</a> (const std::string &amp;type, const std::string &amp;name, const std::string &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:a75c3d03dd1a8b4ea13c4ce6a09df20fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726b59bdecaa88245bfd9858eafa6b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_automatism.html">gd::Automatism</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a726b59bdecaa88245bfd9858eafa6b26">CreateAutomatism</a> (const std::string &amp;type, const std::string &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:a726b59bdecaa88245bfd9858eafa6b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5530cbad7134e4353e7fa9268c45bbdd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_automatisms_shared_data.html">gd::AutomatismsSharedData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5530cbad7134e4353e7fa9268c45bbdd">CreateAutomatismSharedDatas</a> (const std::string &amp;type, const std::string &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:a5530cbad7134e4353e7fa9268c45bbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e5d70c21ffedb1e0ff6bdc75b1976c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a33e5d70c21ffedb1e0ff6bdc75b1976c">CreateEvent</a> (const std::string &amp;type, const std::string &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:a33e5d70c21ffedb1e0ff6bdc75b1976c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95889aadecc8a4b753b27cad644efbe1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a95889aadecc8a4b753b27cad644efbe1">CreateObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
+<tr class="separator:a95889aadecc8a4b753b27cad644efbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af926d06050eb6165653f175b26c43ece"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af926d06050eb6165653f175b26c43ece">CreateBehavior</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
+<tr class="separator:af926d06050eb6165653f175b26c43ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cebfc94282e6769ea5b2425dd357b6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_behaviors_shared_data.html">gd::BehaviorsSharedData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae1cebfc94282e6769ea5b2425dd357b6">CreateBehaviorSharedDatas</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
+<tr class="separator:ae1cebfc94282e6769ea5b2425dd357b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da6d07e2fd9be6775f809438ef7561c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a7da6d07e2fd9be6775f809438ef7561c">CreateEvent</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
+<tr class="separator:a7da6d07e2fd9be6775f809438ef7561c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">GUI property grid management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to managing the wxWidgets property grid used to display the properties of the project. </p>
 </div></td></tr>
@@ -198,138 +237,102 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Layouts management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to layout management. </p>
 </div></td></tr>
-<tr class="memitem:a6cd5606ab24a35ad07a5a321127a984e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cd5606ab24a35ad07a5a321127a984e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6cd5606ab24a35ad07a5a321127a984e">HasLayoutNamed</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a6cd5606ab24a35ad07a5a321127a984e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if layout called "name" exists. <br /></td></tr>
-<tr class="separator:a6cd5606ab24a35ad07a5a321127a984e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab521551e041635437aed5ce70f1b3469"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab521551e041635437aed5ce70f1b3469"></a>
-<a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab521551e041635437aed5ce70f1b3469">GetLayout</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:ab521551e041635437aed5ce70f1b3469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout called "name". <br /></td></tr>
-<tr class="separator:ab521551e041635437aed5ce70f1b3469"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acebca83be6b7bb5f751733f4151c99fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acebca83be6b7bb5f751733f4151c99fa"></a>
-const <a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acebca83be6b7bb5f751733f4151c99fa">GetLayout</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:acebca83be6b7bb5f751733f4151c99fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout called "name". <br /></td></tr>
-<tr class="separator:acebca83be6b7bb5f751733f4151c99fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74203d664fcc6a6268dde57840638a2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74203d664fcc6a6268dde57840638a2c"></a>
-<a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a74203d664fcc6a6268dde57840638a2c">GetLayout</a> (unsigned int index)</td></tr>
-<tr class="memdesc:a74203d664fcc6a6268dde57840638a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout at position "index" in the layout list. <br /></td></tr>
-<tr class="separator:a74203d664fcc6a6268dde57840638a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a395f5bdedbbb640996e98c05941f8f70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395f5bdedbbb640996e98c05941f8f70"></a>
-const <a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a395f5bdedbbb640996e98c05941f8f70">GetLayout</a> (unsigned int index) const </td></tr>
-<tr class="memdesc:a395f5bdedbbb640996e98c05941f8f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout at position "index" in the layout list. <br /></td></tr>
-<tr class="separator:a395f5bdedbbb640996e98c05941f8f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0663c1737f1072d0cef6cf20a8d1043"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0663c1737f1072d0cef6cf20a8d1043"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab0663c1737f1072d0cef6cf20a8d1043">GetLayoutPosition</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:ab0663c1737f1072d0cef6cf20a8d1043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the layout called "name" in the layout list. <br /></td></tr>
-<tr class="separator:ab0663c1737f1072d0cef6cf20a8d1043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04731017c376cfd0c16eaabde2598091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a04731017c376cfd0c16eaabde2598091">SwapLayouts</a> (unsigned int first, unsigned int second)</td></tr>
-<tr class="memdesc:a04731017c376cfd0c16eaabde2598091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the specified layouts.  <a href="#a04731017c376cfd0c16eaabde2598091">More...</a><br /></td></tr>
-<tr class="separator:a04731017c376cfd0c16eaabde2598091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b33f28312071916ab6dd22dae50abc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b33f28312071916ab6dd22dae50abc9"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9b33f28312071916ab6dd22dae50abc9">GetLayoutsCount</a> () const </td></tr>
-<tr class="memdesc:a9b33f28312071916ab6dd22dae50abc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of layouts. <br /></td></tr>
-<tr class="separator:a9b33f28312071916ab6dd22dae50abc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a0774505706f1662ac5a3c4fc6a401"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19a0774505706f1662ac5a3c4fc6a401"></a>
-<a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a19a0774505706f1662ac5a3c4fc6a401">InsertNewLayout</a> (const std::string &amp;name, unsigned int position)</td></tr>
-<tr class="memdesc:a19a0774505706f1662ac5a3c4fc6a401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must add a new empty layout called "name" at the specified position in the layout list. <br /></td></tr>
-<tr class="separator:a19a0774505706f1662ac5a3c4fc6a401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f47a97994d7d2cde992083d821b47e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a63f47a97994d7d2cde992083d821b47e">InsertLayout</a> (const <a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;layout, unsigned int position)</td></tr>
-<tr class="memdesc:a63f47a97994d7d2cde992083d821b47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must add a new layout constructed from the layout passed as parameter.  <a href="#a63f47a97994d7d2cde992083d821b47e">More...</a><br /></td></tr>
-<tr class="separator:a63f47a97994d7d2cde992083d821b47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3346338cca3f0717189effb45adb94da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a3346338cca3f0717189effb45adb94da">RemoveLayout</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:a3346338cca3f0717189effb45adb94da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Saving and loading</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Members functions related to saving and loading the project. </p>
-</div></td></tr>
-<tr class="memitem:a6627df966099fc37ca7f6a87226fbb79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6627df966099fc37ca7f6a87226fbb79"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6627df966099fc37ca7f6a87226fbb79">LoadFromFile</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a6627df966099fc37ca7f6a87226fbb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the project from a XML file. <br /></td></tr>
-<tr class="separator:a6627df966099fc37ca7f6a87226fbb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5ad75e15ae8a87ab283637be832a7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a5ad75e15ae8a87ab283637be832a7e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9a5ad75e15ae8a87ab283637be832a7e">LoadFromJSONFile</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a9a5ad75e15ae8a87ab283637be832a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the project from a JSON file. <br /></td></tr>
-<tr class="separator:a9a5ad75e15ae8a87ab283637be832a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d48c37b6df0ba7f23796e7a18812cbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d48c37b6df0ba7f23796e7a18812cbd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6d48c37b6df0ba7f23796e7a18812cbd">UnserializeFrom</a> (const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element)</td></tr>
-<tr class="memdesc:a6d48c37b6df0ba7f23796e7a18812cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialize the project from an element. <br /></td></tr>
-<tr class="separator:a6d48c37b6df0ba7f23796e7a18812cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ffb0881997517b6991f7e7774183b6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a2ffb0881997517b6991f7e7774183b6b">SaveToFile</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a2ffb0881997517b6991f7e7774183b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the project to a XML file.  <a href="#a2ffb0881997517b6991f7e7774183b6b">More...</a><br /></td></tr>
-<tr class="separator:a2ffb0881997517b6991f7e7774183b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7dc92ad99054a2af07ca38b400ed3aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac7dc92ad99054a2af07ca38b400ed3aa">SaveToJSONFile</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:ac7dc92ad99054a2af07ca38b400ed3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the project to a JSON file.  <a href="#ac7dc92ad99054a2af07ca38b400ed3aa">More...</a><br /></td></tr>
-<tr class="separator:ac7dc92ad99054a2af07ca38b400ed3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c6ea198fae0ab5a84fdc8aace7d4579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9c6ea198fae0ab5a84fdc8aace7d4579">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const </td></tr>
-<tr class="memdesc:a9c6ea198fae0ab5a84fdc8aace7d4579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to serialize the project to a TiXmlElement.  <a href="#a9c6ea198fae0ab5a84fdc8aace7d4579">More...</a><br /></td></tr>
-<tr class="separator:a9c6ea198fae0ab5a84fdc8aace7d4579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81121a62bbf210a7b917a2000d37090"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac81121a62bbf210a7b917a2000d37090"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac81121a62bbf210a7b917a2000d37090">IsDirty</a> ()</td></tr>
-<tr class="memdesc:ac81121a62bbf210a7b917a2000d37090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the project is marked as being modified (The IDE or application using the project should ask for save the project if the project is closed). <br /></td></tr>
-<tr class="separator:ac81121a62bbf210a7b917a2000d37090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07d99e57457577f66bce80ad368777a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa07d99e57457577f66bce80ad368777a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa07d99e57457577f66bce80ad368777a">SetDirty</a> (bool enable=true)</td></tr>
-<tr class="memdesc:aa07d99e57457577f66bce80ad368777a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the project as being modified (The IDE or application using the project should ask for save the project if the project is closed). <br /></td></tr>
-<tr class="separator:aa07d99e57457577f66bce80ad368777a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0206cb4591df24402cf357d0558fce73"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a0206cb4591df24402cf357d0558fce73">GetLastSaveGDMajorVersion</a> ()</td></tr>
-<tr class="separator:a0206cb4591df24402cf357d0558fce73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf2f6ae1e0a41787b8cd165b06692e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aaaf2f6ae1e0a41787b8cd165b06692e9">GetLastSaveGDMinorVersion</a> ()</td></tr>
-<tr class="separator:aaaf2f6ae1e0a41787b8cd165b06692e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413825e1a0fe5f46e9a7364760a84257"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a413825e1a0fe5f46e9a7364760a84257"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a413825e1a0fe5f46e9a7364760a84257">HasLayoutNamed</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="memdesc:a413825e1a0fe5f46e9a7364760a84257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if layout called "name" exists. <br /></td></tr>
+<tr class="separator:a413825e1a0fe5f46e9a7364760a84257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b979e0b20e281b26f761564ebb47d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6b979e0b20e281b26f761564ebb47d4"></a>
+<a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac6b979e0b20e281b26f761564ebb47d4">GetLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="memdesc:ac6b979e0b20e281b26f761564ebb47d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout called "name". <br /></td></tr>
+<tr class="separator:ac6b979e0b20e281b26f761564ebb47d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f62f2f043350f622ff5cd37e5bca00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67f62f2f043350f622ff5cd37e5bca00"></a>
+const <a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a67f62f2f043350f622ff5cd37e5bca00">GetLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="memdesc:a67f62f2f043350f622ff5cd37e5bca00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout called "name". <br /></td></tr>
+<tr class="separator:a67f62f2f043350f622ff5cd37e5bca00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564e851f3867eed8534f5d7024487480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a564e851f3867eed8534f5d7024487480"></a>
+<a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a564e851f3867eed8534f5d7024487480">GetLayout</a> (std::size_t index)</td></tr>
+<tr class="memdesc:a564e851f3867eed8534f5d7024487480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout at position "index" in the layout list. <br /></td></tr>
+<tr class="separator:a564e851f3867eed8534f5d7024487480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9372658b2cc27c3981088614c53f8e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9372658b2cc27c3981088614c53f8e4"></a>
+const <a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab9372658b2cc27c3981088614c53f8e4">GetLayout</a> (std::size_t index) const </td></tr>
+<tr class="memdesc:ab9372658b2cc27c3981088614c53f8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the layout at position "index" in the layout list. <br /></td></tr>
+<tr class="separator:ab9372658b2cc27c3981088614c53f8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7814c2788b450363ec94b07a8a87efe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7814c2788b450363ec94b07a8a87efe7"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a7814c2788b450363ec94b07a8a87efe7">GetLayoutPosition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="memdesc:a7814c2788b450363ec94b07a8a87efe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the layout called "name" in the layout list. <br /></td></tr>
+<tr class="separator:a7814c2788b450363ec94b07a8a87efe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd4b7980babd1625cd666a98c1cd92f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aacd4b7980babd1625cd666a98c1cd92f">SwapLayouts</a> (std::size_t first, std::size_t second)</td></tr>
+<tr class="memdesc:aacd4b7980babd1625cd666a98c1cd92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the specified layouts.  <a href="#aacd4b7980babd1625cd666a98c1cd92f">More...</a><br /></td></tr>
+<tr class="separator:aacd4b7980babd1625cd666a98c1cd92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28b14633ae1e9600ba4c2567082d987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad28b14633ae1e9600ba4c2567082d987"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ad28b14633ae1e9600ba4c2567082d987">GetLayoutsCount</a> () const </td></tr>
+<tr class="memdesc:ad28b14633ae1e9600ba4c2567082d987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of layouts. <br /></td></tr>
+<tr class="separator:ad28b14633ae1e9600ba4c2567082d987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ff5a4fb6928fc26fe340bef90ce989"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03ff5a4fb6928fc26fe340bef90ce989"></a>
+<a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a03ff5a4fb6928fc26fe340bef90ce989">InsertNewLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, std::size_t position)</td></tr>
+<tr class="memdesc:a03ff5a4fb6928fc26fe340bef90ce989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must add a new empty layout called "name" at the specified position in the layout list. <br /></td></tr>
+<tr class="separator:a03ff5a4fb6928fc26fe340bef90ce989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72f6395d9f48fa5b5e90d116f8cd79c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac72f6395d9f48fa5b5e90d116f8cd79c">InsertLayout</a> (const <a class="el" href="classgd_1_1_layout.html">Layout</a> &amp;layout, std::size_t position)</td></tr>
+<tr class="memdesc:ac72f6395d9f48fa5b5e90d116f8cd79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must add a new layout constructed from the layout passed as parameter.  <a href="#ac72f6395d9f48fa5b5e90d116f8cd79c">More...</a><br /></td></tr>
+<tr class="separator:ac72f6395d9f48fa5b5e90d116f8cd79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae234e527041f08893b518b6dfb631a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae234e527041f08893b518b6dfb631a68">RemoveLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:ae234e527041f08893b518b6dfb631a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">External events management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to external events management. </p>
 </div></td></tr>
-<tr class="memitem:a8ec120d6b2c55165a84a8c67703b1749"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a8ec120d6b2c55165a84a8c67703b1749">HasExternalEventsNamed</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a8ec120d6b2c55165a84a8c67703b1749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29676d21c55411cf3506f7d9390d299"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af29676d21c55411cf3506f7d9390d299">GetExternalEvents</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:af29676d21c55411cf3506f7d9390d299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a078eb8acaecdf78a624bb61fcfd4a75c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a078eb8acaecdf78a624bb61fcfd4a75c">GetExternalEvents</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a078eb8acaecdf78a624bb61fcfd4a75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a938bf400ccb394812a166c83338a1ed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a938bf400ccb394812a166c83338a1ed0">GetExternalEvents</a> (unsigned int index)</td></tr>
-<tr class="separator:a938bf400ccb394812a166c83338a1ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc1a8283818424af13d46b6b94a39d0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a7cc1a8283818424af13d46b6b94a39d0">GetExternalEvents</a> (unsigned int index) const </td></tr>
-<tr class="separator:a7cc1a8283818424af13d46b6b94a39d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd1e74a7db383fe3857d5703fde2eacb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#afd1e74a7db383fe3857d5703fde2eacb">GetExternalEventsPosition</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:afd1e74a7db383fe3857d5703fde2eacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c74a5f10a1d2ab620a234f42c588bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6c74a5f10a1d2ab620a234f42c588bd0">SwapExternalEvents</a> (unsigned int first, unsigned int second)</td></tr>
-<tr class="memdesc:a6c74a5f10a1d2ab620a234f42c588bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the specified external events.  <a href="#a6c74a5f10a1d2ab620a234f42c588bd0">More...</a><br /></td></tr>
-<tr class="separator:a6c74a5f10a1d2ab620a234f42c588bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d576f120d4c26e90732baf42af997e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af2d576f120d4c26e90732baf42af997e">GetExternalEventsCount</a> () const </td></tr>
-<tr class="separator:af2d576f120d4c26e90732baf42af997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06176c915ecc9f4e9878f012df9234e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab06176c915ecc9f4e9878f012df9234e">InsertNewExternalEvents</a> (const std::string &amp;name, unsigned int position)</td></tr>
-<tr class="separator:ab06176c915ecc9f4e9878f012df9234e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601e72adf431987aa60368f8ed1e9518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a601e72adf431987aa60368f8ed1e9518">InsertExternalEvents</a> (const <a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;externalEvents, unsigned int position)</td></tr>
-<tr class="separator:a601e72adf431987aa60368f8ed1e9518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec3d653257b8aac1d7a645668a989e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9ec3d653257b8aac1d7a645668a989e8">RemoveExternalEvents</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:a9ec3d653257b8aac1d7a645668a989e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8333187410bd16adacd8b046f075168"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae8333187410bd16adacd8b046f075168">HasExternalEventsNamed</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:ae8333187410bd16adacd8b046f075168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacafbedb491b91b95cf9c20670d1f56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#abacafbedb491b91b95cf9c20670d1f56">GetExternalEvents</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:abacafbedb491b91b95cf9c20670d1f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace54f70fde4531244129ab52220db5bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ace54f70fde4531244129ab52220db5bb">GetExternalEvents</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:ace54f70fde4531244129ab52220db5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a73edc939d6c8de907a7960409271e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a1a73edc939d6c8de907a7960409271e4">GetExternalEvents</a> (std::size_t index)</td></tr>
+<tr class="separator:a1a73edc939d6c8de907a7960409271e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b65d207f547154559d39c1f583d85b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af7b65d207f547154559d39c1f583d85b">GetExternalEvents</a> (std::size_t index) const </td></tr>
+<tr class="separator:af7b65d207f547154559d39c1f583d85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec5fbc4de5e5e4c62ff33288800e5b2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acec5fbc4de5e5e4c62ff33288800e5b2">GetExternalEventsPosition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:acec5fbc4de5e5e4c62ff33288800e5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3211d7780d846ed1fbb9ae1c0bea8393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a3211d7780d846ed1fbb9ae1c0bea8393">SwapExternalEvents</a> (std::size_t first, std::size_t second)</td></tr>
+<tr class="memdesc:a3211d7780d846ed1fbb9ae1c0bea8393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the specified external events.  <a href="#a3211d7780d846ed1fbb9ae1c0bea8393">More...</a><br /></td></tr>
+<tr class="separator:a3211d7780d846ed1fbb9ae1c0bea8393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630cd2fd5e44e03e1114a870a84d24ac"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a630cd2fd5e44e03e1114a870a84d24ac">GetExternalEventsCount</a> () const </td></tr>
+<tr class="separator:a630cd2fd5e44e03e1114a870a84d24ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadcc04b48c299aeb73d4abc82d5736a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#abadcc04b48c299aeb73d4abc82d5736a">InsertNewExternalEvents</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, std::size_t position)</td></tr>
+<tr class="separator:abadcc04b48c299aeb73d4abc82d5736a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fdf139f6e543a4812fbfa1b4b167d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a06fdf139f6e543a4812fbfa1b4b167d3">InsertExternalEvents</a> (const <a class="el" href="classgd_1_1_external_events.html">ExternalEvents</a> &amp;externalEvents, std::size_t position)</td></tr>
+<tr class="separator:a06fdf139f6e543a4812fbfa1b4b167d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2731878e4a6311fb7b528ad9e246a31c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a2731878e4a6311fb7b528ad9e246a31c">RemoveExternalEvents</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:a2731878e4a6311fb7b528ad9e246a31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">External layout management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to external layout management. </p>
 </div></td></tr>
-<tr class="memitem:a25de640b19224e7f2d853100ff53775b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a25de640b19224e7f2d853100ff53775b">HasExternalLayoutNamed</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a25de640b19224e7f2d853100ff53775b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bca17b5bed84748dacc5c9fbbdc5cf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a0bca17b5bed84748dacc5c9fbbdc5cf0">GetExternalLayout</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:a0bca17b5bed84748dacc5c9fbbdc5cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071a8784f132e878217d208b336960d4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a071a8784f132e878217d208b336960d4">GetExternalLayout</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a071a8784f132e878217d208b336960d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8f35a021248bce32cff18d882006c7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ad8f35a021248bce32cff18d882006c7d">GetExternalLayout</a> (unsigned int index)</td></tr>
-<tr class="separator:ad8f35a021248bce32cff18d882006c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f02bd16387a07bf5a04ac93fba76e0e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9f02bd16387a07bf5a04ac93fba76e0e">GetExternalLayout</a> (unsigned int index) const </td></tr>
-<tr class="separator:a9f02bd16387a07bf5a04ac93fba76e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f76145618522b1c7c5dd3ccf157f85a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a4f76145618522b1c7c5dd3ccf157f85a">GetExternalLayoutPosition</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a4f76145618522b1c7c5dd3ccf157f85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adddd0b091839e0ecfe1ecb117cc81e01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#adddd0b091839e0ecfe1ecb117cc81e01">SwapExternalLayouts</a> (unsigned int first, unsigned int second)</td></tr>
-<tr class="memdesc:adddd0b091839e0ecfe1ecb117cc81e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the specified external layouts.  <a href="#adddd0b091839e0ecfe1ecb117cc81e01">More...</a><br /></td></tr>
-<tr class="separator:adddd0b091839e0ecfe1ecb117cc81e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752d8976e059e92eec255508eee673b2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a752d8976e059e92eec255508eee673b2">GetExternalLayoutsCount</a> () const </td></tr>
-<tr class="separator:a752d8976e059e92eec255508eee673b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b872b840dd2e58a6b5369372a60ab49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9b872b840dd2e58a6b5369372a60ab49">InsertNewExternalLayout</a> (const std::string &amp;name, unsigned int position)</td></tr>
-<tr class="separator:a9b872b840dd2e58a6b5369372a60ab49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6083b36c09a5117d767407d2a0db43e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6083b36c09a5117d767407d2a0db43e9">InsertExternalLayout</a> (const <a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;externalLayout, unsigned int position)</td></tr>
-<tr class="separator:a6083b36c09a5117d767407d2a0db43e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeab2f7da666f6534629baad16d38f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#adeab2f7da666f6534629baad16d38f93">RemoveExternalLayout</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:adeab2f7da666f6534629baad16d38f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4213048a5334c7759aed9c90abc3c651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a4213048a5334c7759aed9c90abc3c651">SetFirstLayout</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:a4213048a5334c7759aed9c90abc3c651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58692e5e9cd01c9ba0a9045e61befd14"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a58692e5e9cd01c9ba0a9045e61befd14">GetFirstLayout</a> ()</td></tr>
-<tr class="separator:a58692e5e9cd01c9ba0a9045e61befd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6d086e268c9bfaafb827eef6012e87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a8f6d086e268c9bfaafb827eef6012e87">HasExternalLayoutNamed</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:a8f6d086e268c9bfaafb827eef6012e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af504d6e2b8ba659b0ed725ea32c100df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af504d6e2b8ba659b0ed725ea32c100df">GetExternalLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:af504d6e2b8ba659b0ed725ea32c100df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91d518c80c384da8736c6537f62dd77"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af91d518c80c384da8736c6537f62dd77">GetExternalLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:af91d518c80c384da8736c6537f62dd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3906cf90e26813ea8f214ff88d36c5ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a3906cf90e26813ea8f214ff88d36c5ea">GetExternalLayout</a> (std::size_t index)</td></tr>
+<tr class="separator:a3906cf90e26813ea8f214ff88d36c5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319676a30ac7dc2260b0f998bdfdb17d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a319676a30ac7dc2260b0f998bdfdb17d">GetExternalLayout</a> (std::size_t index) const </td></tr>
+<tr class="separator:a319676a30ac7dc2260b0f998bdfdb17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cca934248c60478b82a99da0f32f193"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a1cca934248c60478b82a99da0f32f193">GetExternalLayoutPosition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:a1cca934248c60478b82a99da0f32f193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b8a107945c29f6b79bcbea86035b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ad5b8a107945c29f6b79bcbea86035b04">SwapExternalLayouts</a> (std::size_t first, std::size_t second)</td></tr>
+<tr class="memdesc:ad5b8a107945c29f6b79bcbea86035b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the specified external layouts.  <a href="#ad5b8a107945c29f6b79bcbea86035b04">More...</a><br /></td></tr>
+<tr class="separator:ad5b8a107945c29f6b79bcbea86035b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd3c3a714ac434cf8dd5c9851a52c36"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#afbd3c3a714ac434cf8dd5c9851a52c36">GetExternalLayoutsCount</a> () const </td></tr>
+<tr class="separator:afbd3c3a714ac434cf8dd5c9851a52c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336056c4ddba168f580e424ad0f6d714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a336056c4ddba168f580e424ad0f6d714">InsertNewExternalLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, std::size_t position)</td></tr>
+<tr class="separator:a336056c4ddba168f580e424ad0f6d714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa618297b9edc07e704024803f42886d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa618297b9edc07e704024803f42886d7">InsertExternalLayout</a> (const <a class="el" href="classgd_1_1_external_layout.html">ExternalLayout</a> &amp;externalLayout, std::size_t position)</td></tr>
+<tr class="separator:aa618297b9edc07e704024803f42886d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e702d84619600d7df40f4fa3ffec54b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a2e702d84619600d7df40f4fa3ffec54b">RemoveExternalLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:a2e702d84619600d7df40f4fa3ffec54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca132134e31018e4088d1150a4e31e3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aca132134e31018e4088d1150a4e31e3a">SetFirstLayout</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:aca132134e31018e4088d1150a4e31e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4d96d9a7f1aba56bf0623e926842eb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ada4d96d9a7f1aba56bf0623e926842eb">GetFirstLayout</a> ()</td></tr>
+<tr class="separator:ada4d96d9a7f1aba56bf0623e926842eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Global objects groups management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to global objects groups management. </p>
 </div></td></tr>
@@ -385,63 +388,63 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ade1a1c29961a6c531ead06d29deaca32">GetAllSourceFiles</a> () const </td></tr>
 <tr class="memdesc:ade1a1c29961a6c531ead06d29deaca32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the vector containing all the source files used by the game. <br /></td></tr>
 <tr class="separator:ade1a1c29961a6c531ead06d29deaca32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a515427ba7054058f2e93068eb5ba1dab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a515427ba7054058f2e93068eb5ba1dab">HasSourceFile</a> (std::string name, std::string language=&quot;&quot;) const </td></tr>
-<tr class="memdesc:a515427ba7054058f2e93068eb5ba1dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the source file with the specified name is used by the game.  <a href="#a515427ba7054058f2e93068eb5ba1dab">More...</a><br /></td></tr>
-<tr class="separator:a515427ba7054058f2e93068eb5ba1dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bf26e847135a4dacdb06562b41140dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_source_file.html">SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5bf26e847135a4dacdb06562b41140dd">GetSourceFile</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:a5bf26e847135a4dacdb06562b41140dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb3d9b183ad4040bfda5f15b3ff09b9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_source_file.html">SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aafb3d9b183ad4040bfda5f15b3ff09b9">GetSourceFile</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:aafb3d9b183ad4040bfda5f15b3ff09b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2cd5d44ecd5504e665178fe99375032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab2cd5d44ecd5504e665178fe99375032">RemoveSourceFile</a> (const std::string &amp;name)</td></tr>
-<tr class="separator:ab2cd5d44ecd5504e665178fe99375032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4d505a58eb242de6ed176a532d12b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5c4d505a58eb242de6ed176a532d12b7">InsertNewSourceFile</a> (const std::string &amp;name, const std::string &amp;language, unsigned int position=-1)</td></tr>
-<tr class="separator:a5c4d505a58eb242de6ed176a532d12b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820a9178a1568b9b83450906f03c8dea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a820a9178a1568b9b83450906f03c8dea">HasSourceFile</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> name, <a class="el" href="classgd_1_1_string.html">gd::String</a> language=&quot;&quot;) const </td></tr>
+<tr class="memdesc:a820a9178a1568b9b83450906f03c8dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the source file with the specified name is used by the game.  <a href="#a820a9178a1568b9b83450906f03c8dea">More...</a><br /></td></tr>
+<tr class="separator:a820a9178a1568b9b83450906f03c8dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4934451153c5c61625ccdbbc4900b1c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_source_file.html">SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a4934451153c5c61625ccdbbc4900b1c6">GetSourceFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:a4934451153c5c61625ccdbbc4900b1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc43fe372b04a96620ec64c9628a480"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_source_file.html">SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#addc43fe372b04a96620ec64c9628a480">GetSourceFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="separator:addc43fe372b04a96620ec64c9628a480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7204a078efaee64f3d8637bbe6748863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a7204a078efaee64f3d8637bbe6748863">RemoveSourceFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="separator:a7204a078efaee64f3d8637bbe6748863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7d2deaf9f389a85763586907b7293f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aad7d2deaf9f389a85763586907b7293f">InsertNewSourceFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;language, std::size_t position=-1)</td></tr>
+<tr class="separator:aad7d2deaf9f389a85763586907b7293f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgd_1_1_class_with_objects"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgd_1_1_class_with_objects')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgd_1_1_class_with_objects.html">gd::ClassWithObjects</a></td></tr>
 <tr class="memitem:a762c26c2a86249e61a9fd0a239e0ff4b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a762c26c2a86249e61a9fd0a239e0ff4b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a762c26c2a86249e61a9fd0a239e0ff4b">ClassWithObjects</a> ()</td></tr>
 <tr class="memdesc:a762c26c2a86249e61a9fd0a239e0ff4b inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor creating a container without any objects. <br /></td></tr>
 <tr class="separator:a762c26c2a86249e61a9fd0a239e0ff4b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0000d51501265a340c4ee45062a496fa inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0000d51501265a340c4ee45062a496fa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a0000d51501265a340c4ee45062a496fa">HasObjectNamed</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a0000d51501265a340c4ee45062a496fa inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if object called <em>name</em> exists. <br /></td></tr>
-<tr class="separator:a0000d51501265a340c4ee45062a496fa inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07deb0b993bb51b4c52fdc95d5db5c5e inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07deb0b993bb51b4c52fdc95d5db5c5e"></a>
-<a class="el" href="classgd_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a07deb0b993bb51b4c52fdc95d5db5c5e">GetObject</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a07deb0b993bb51b4c52fdc95d5db5c5e inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object called <em>name</em>. <br /></td></tr>
-<tr class="separator:a07deb0b993bb51b4c52fdc95d5db5c5e inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c34e05bc3905f5e3d57ddf38c1a64b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69c34e05bc3905f5e3d57ddf38c1a64b"></a>
-const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a69c34e05bc3905f5e3d57ddf38c1a64b">GetObject</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a69c34e05bc3905f5e3d57ddf38c1a64b inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object called <em>name</em>. <br /></td></tr>
-<tr class="separator:a69c34e05bc3905f5e3d57ddf38c1a64b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88a177c0824b8c20c5dfda8306c6f48b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88a177c0824b8c20c5dfda8306c6f48b"></a>
-<a class="el" href="classgd_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a88a177c0824b8c20c5dfda8306c6f48b">GetObject</a> (unsigned int index)</td></tr>
-<tr class="memdesc:a88a177c0824b8c20c5dfda8306c6f48b inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object at position <em>index</em> in the objects list. <br /></td></tr>
-<tr class="separator:a88a177c0824b8c20c5dfda8306c6f48b inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b04d6579651fb7c954dbff73240414 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5b04d6579651fb7c954dbff73240414"></a>
-const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#ac5b04d6579651fb7c954dbff73240414">GetObject</a> (unsigned int index) const </td></tr>
-<tr class="memdesc:ac5b04d6579651fb7c954dbff73240414 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object at position <em>index</em> in the objects list. <br /></td></tr>
-<tr class="separator:ac5b04d6579651fb7c954dbff73240414 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717ac52433262828cb65982e72735d99 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a717ac52433262828cb65982e72735d99">GetObjectPosition</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a717ac52433262828cb65982e72735d99 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the object called <em>name</em> in the objects list.  <a href="#a717ac52433262828cb65982e72735d99">More...</a><br /></td></tr>
-<tr class="separator:a717ac52433262828cb65982e72735d99 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bdf83e6280f41cc66fc329717d74b00 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bdf83e6280f41cc66fc329717d74b00"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a3bdf83e6280f41cc66fc329717d74b00">GetObjectsCount</a> () const </td></tr>
-<tr class="memdesc:a3bdf83e6280f41cc66fc329717d74b00 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of object. <br /></td></tr>
-<tr class="separator:a3bdf83e6280f41cc66fc329717d74b00 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89b42dc91a9f6898fbc3dfe98837e03 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#ae89b42dc91a9f6898fbc3dfe98837e03">InsertNewObject</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const std::string &amp;objectType, const std::string &amp;name, unsigned int position)</td></tr>
-<tr class="memdesc:ae89b42dc91a9f6898fbc3dfe98837e03 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new empty object of type <em>objectType</em> called <em>name</em> at the specified position in the list.<br />
-  <a href="#ae89b42dc91a9f6898fbc3dfe98837e03">More...</a><br /></td></tr>
-<tr class="separator:ae89b42dc91a9f6898fbc3dfe98837e03 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af32228b2e57a755f4eaace2952c624e4 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#af32228b2e57a755f4eaace2952c624e4">InsertObject</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object, unsigned int position)</td></tr>
-<tr class="memdesc:af32228b2e57a755f4eaace2952c624e4 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new object to the list.  <a href="#af32228b2e57a755f4eaace2952c624e4">More...</a><br /></td></tr>
-<tr class="separator:af32228b2e57a755f4eaace2952c624e4 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5e39887f6b15ae6b5e9e5fce6e27f5 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#aad5e39887f6b15ae6b5e9e5fce6e27f5">RemoveObject</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:aad5e39887f6b15ae6b5e9e5fce6e27f5 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an object.  <a href="#aad5e39887f6b15ae6b5e9e5fce6e27f5">More...</a><br /></td></tr>
-<tr class="separator:aad5e39887f6b15ae6b5e9e5fce6e27f5 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3bbec6e3552f820db493c6d4c94bd68 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3bbec6e3552f820db493c6d4c94bd68"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#ae3bbec6e3552f820db493c6d4c94bd68">SwapObjects</a> (unsigned int firstObjectIndex, unsigned int secondObjectIndex)</td></tr>
-<tr class="memdesc:ae3bbec6e3552f820db493c6d4c94bd68 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the position of the specified objects. <br /></td></tr>
-<tr class="separator:ae3bbec6e3552f820db493c6d4c94bd68 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3871da043947cd3bc24ea0682e207a69 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3871da043947cd3bc24ea0682e207a69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a3871da043947cd3bc24ea0682e207a69">HasObjectNamed</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="memdesc:a3871da043947cd3bc24ea0682e207a69 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if object called <em>name</em> exists. <br /></td></tr>
+<tr class="separator:a3871da043947cd3bc24ea0682e207a69 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e860afa2c0b74bda5e065eec03b6948 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e860afa2c0b74bda5e065eec03b6948"></a>
+<a class="el" href="classgd_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a4e860afa2c0b74bda5e065eec03b6948">GetObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="memdesc:a4e860afa2c0b74bda5e065eec03b6948 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object called <em>name</em>. <br /></td></tr>
+<tr class="separator:a4e860afa2c0b74bda5e065eec03b6948 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9729f71ac6d93ae59d33181a4cbe092c inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9729f71ac6d93ae59d33181a4cbe092c"></a>
+const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a9729f71ac6d93ae59d33181a4cbe092c">GetObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="memdesc:a9729f71ac6d93ae59d33181a4cbe092c inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object called <em>name</em>. <br /></td></tr>
+<tr class="separator:a9729f71ac6d93ae59d33181a4cbe092c inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3def84600a2f4b69be2d7775009af67 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3def84600a2f4b69be2d7775009af67"></a>
+<a class="el" href="classgd_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#ae3def84600a2f4b69be2d7775009af67">GetObject</a> (std::size_t index)</td></tr>
+<tr class="memdesc:ae3def84600a2f4b69be2d7775009af67 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object at position <em>index</em> in the objects list. <br /></td></tr>
+<tr class="separator:ae3def84600a2f4b69be2d7775009af67 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c967b84ff4e1acd261e042e97984043 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c967b84ff4e1acd261e042e97984043"></a>
+const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a0c967b84ff4e1acd261e042e97984043">GetObject</a> (std::size_t index) const </td></tr>
+<tr class="memdesc:a0c967b84ff4e1acd261e042e97984043 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the object at position <em>index</em> in the objects list. <br /></td></tr>
+<tr class="separator:a0c967b84ff4e1acd261e042e97984043 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbeba12c2dec826e30f128b71d8a282 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a0fbeba12c2dec826e30f128b71d8a282">GetObjectPosition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const </td></tr>
+<tr class="memdesc:a0fbeba12c2dec826e30f128b71d8a282 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the object called <em>name</em> in the objects list.  <a href="#a0fbeba12c2dec826e30f128b71d8a282">More...</a><br /></td></tr>
+<tr class="separator:a0fbeba12c2dec826e30f128b71d8a282 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cc466e869ac44d592f5f68de895acf inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8cc466e869ac44d592f5f68de895acf"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#ae8cc466e869ac44d592f5f68de895acf">GetObjectsCount</a> () const </td></tr>
+<tr class="memdesc:ae8cc466e869ac44d592f5f68de895acf inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of object. <br /></td></tr>
+<tr class="separator:ae8cc466e869ac44d592f5f68de895acf inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158b3dc07396d37138b866a3bf31485d inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a158b3dc07396d37138b866a3bf31485d">InsertNewObject</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectType, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, std::size_t position)</td></tr>
+<tr class="memdesc:a158b3dc07396d37138b866a3bf31485d inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new empty object of type <em>objectType</em> called <em>name</em> at the specified position in the list.<br />
+  <a href="#a158b3dc07396d37138b866a3bf31485d">More...</a><br /></td></tr>
+<tr class="separator:a158b3dc07396d37138b866a3bf31485d inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf49aa973fbb82141b0618126f175665 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#adf49aa973fbb82141b0618126f175665">InsertObject</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object, std::size_t position)</td></tr>
+<tr class="memdesc:adf49aa973fbb82141b0618126f175665 inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new object to the list.  <a href="#adf49aa973fbb82141b0618126f175665">More...</a><br /></td></tr>
+<tr class="separator:adf49aa973fbb82141b0618126f175665 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3cb9becd24085d12b2c3b5a531d25a inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a2f3cb9becd24085d12b2c3b5a531d25a">RemoveObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="memdesc:a2f3cb9becd24085d12b2c3b5a531d25a inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an object.  <a href="#a2f3cb9becd24085d12b2c3b5a531d25a">More...</a><br /></td></tr>
+<tr class="separator:a2f3cb9becd24085d12b2c3b5a531d25a inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466da19275f3e74118bd7f363693000e inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a466da19275f3e74118bd7f363693000e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a466da19275f3e74118bd7f363693000e">SwapObjects</a> (std::size_t firstObjectIndex, std::size_t secondObjectIndex)</td></tr>
+<tr class="memdesc:a466da19275f3e74118bd7f363693000e inherit pub_methods_classgd_1_1_class_with_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the position of the specified objects. <br /></td></tr>
+<tr class="separator:a466da19275f3e74118bd7f363693000e inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2549ddae38c088213c4d7bb97fa74dcb inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#a2549ddae38c088213c4d7bb97fa74dcb">GetObjects</a> ()</td></tr>
 <tr class="separator:a2549ddae38c088213c4d7bb97fa74dcb inherit pub_methods_classgd_1_1_class_with_objects"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6e144f123788913875526784aaa480 inherit pub_methods_classgd_1_1_class_with_objects"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_class_with_objects.html#aef6e144f123788913875526784aaa480">GetObjects</a> () const </td></tr>
@@ -458,33 +461,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Other</div></td></tr>
-<tr class="memitem:a73af0d5fcac469f0a9b2ff511367ec2a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a73af0d5fcac469f0a9b2ff511367ec2a">ValidateObjectName</a> (const std::string &amp;objectName)</td></tr>
-<tr class="separator:a73af0d5fcac469f0a9b2ff511367ec2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acacb92cb75f20e1f1b05d19c3b5ec997"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#acacb92cb75f20e1f1b05d19c3b5ec997">GetBadObjectNameWarning</a> ()</td></tr>
-<tr class="separator:acacb92cb75f20e1f1b05d19c3b5ec997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3018a8367b5bf7317d42aef484b92e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a9f3018a8367b5bf7317d42aef484b92e">ValidateObjectName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName)</td></tr>
+<tr class="separator:a9f3018a8367b5bf7317d42aef484b92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac599445f8e7eae8bb5e2f0d89abf1e8d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac599445f8e7eae8bb5e2f0d89abf1e8d">GetBadObjectNameWarning</a> ()</td></tr>
+<tr class="separator:ac599445f8e7eae8bb5e2f0d89abf1e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a71caec23d009ea6f10e6aedba121f3ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71caec23d009ea6f10e6aedba121f3ec"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a71caec23d009ea6f10e6aedba121f3ec">imagesChanged</a></td></tr>
-<tr class="memdesc:a71caec23d009ea6f10e6aedba121f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images that have been changed and which have to be reloaded. <br /></td></tr>
-<tr class="separator:a71caec23d009ea6f10e6aedba121f3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed275a68671d9b61badaaa9a731f7f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaed275a68671d9b61badaaa9a731f7f1"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1">winExecutableFilename</a></td></tr>
-<tr class="memdesc:aaed275a68671d9b61badaaa9a731f7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows executable name. <br /></td></tr>
-<tr class="separator:aaed275a68671d9b61badaaa9a731f7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d49503a5ee675927ea68e573ad3b7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9d49503a5ee675927ea68e573ad3b7c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c">winExecutableIconFile</a></td></tr>
-<tr class="memdesc:af9d49503a5ee675927ea68e573ad3b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon for Windows executable. <br /></td></tr>
-<tr class="separator:af9d49503a5ee675927ea68e573ad3b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1b9359a9aec43f93719f4898bd9062"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c1b9359a9aec43f93719f4898bd9062"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a2c1b9359a9aec43f93719f4898bd9062">linuxExecutableFilename</a></td></tr>
-<tr class="memdesc:a2c1b9359a9aec43f93719f4898bd9062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linux executable name. <br /></td></tr>
-<tr class="separator:a2c1b9359a9aec43f93719f4898bd9062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a533a3a87af6b1e992a12945b67708c9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a533a3a87af6b1e992a12945b67708c9e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a533a3a87af6b1e992a12945b67708c9e">macExecutableFilename</a></td></tr>
-<tr class="memdesc:a533a3a87af6b1e992a12945b67708c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mac executable name. <br /></td></tr>
-<tr class="separator:a533a3a87af6b1e992a12945b67708c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3506dfb191f65d33351931b2aabeb74e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3506dfb191f65d33351931b2aabeb74e"></a>
+std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a3506dfb191f65d33351931b2aabeb74e">imagesChanged</a></td></tr>
+<tr class="memdesc:a3506dfb191f65d33351931b2aabeb74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images that have been changed and which have to be reloaded. <br /></td></tr>
+<tr class="separator:a3506dfb191f65d33351931b2aabeb74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93188c6e72ec698bf9b2d9789e2e598"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac93188c6e72ec698bf9b2d9789e2e598"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac93188c6e72ec698bf9b2d9789e2e598">winExecutableFilename</a></td></tr>
+<tr class="memdesc:ac93188c6e72ec698bf9b2d9789e2e598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows executable name. <br /></td></tr>
+<tr class="separator:ac93188c6e72ec698bf9b2d9789e2e598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a266e13b9efeb58473834f1691c4f74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a266e13b9efeb58473834f1691c4f74"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a8a266e13b9efeb58473834f1691c4f74">winExecutableIconFile</a></td></tr>
+<tr class="memdesc:a8a266e13b9efeb58473834f1691c4f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Icon for Windows executable. <br /></td></tr>
+<tr class="separator:a8a266e13b9efeb58473834f1691c4f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f59b96578e7c80b8d2dfc41ffbb3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f59b96578e7c80b8d2dfc41ffbb3a"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae66f59b96578e7c80b8d2dfc41ffbb3a">linuxExecutableFilename</a></td></tr>
+<tr class="memdesc:ae66f59b96578e7c80b8d2dfc41ffbb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linux executable name. <br /></td></tr>
+<tr class="separator:ae66f59b96578e7c80b8d2dfc41ffbb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6cfcd27c735b2f11618a8b2bccb7c94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6cfcd27c735b2f11618a8b2bccb7c94"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae6cfcd27c735b2f11618a8b2bccb7c94">macExecutableFilename</a></td></tr>
+<tr class="memdesc:ae6cfcd27c735b2f11618a8b2bccb7c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mac executable name. <br /></td></tr>
+<tr class="separator:ae6cfcd27c735b2f11618a8b2bccb7c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -514,20 +517,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a726b59bdecaa88245bfd9858eafa6b26"></a>
+<a class="anchor" id="af926d06050eb6165653f175b26c43ece"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_automatism.html">gd::Automatism</a> * gd::Project::CreateAutomatism </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> &gt; gd::Project::CreateBehavior </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -537,13 +540,13 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create an automatism of the given type.</p>
-<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the automatism is used, unless <em>platformName</em> argument is not empty.<br />
- It is assumed that each platform provides an equivalent automatism.</dd></dl>
+<p>Create a behavior of the given type.</p>
+<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the behavior is used, unless <em>platformName</em> argument is not empty.<br />
+ It is assumed that each platform provides an equivalent behavior.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">project</td><td>The project for which the object must be created. </td></tr>
-    <tr><td class="paramname">type</td><td>The type of the automatism </td></tr>
+    <tr><td class="paramname">type</td><td>The type of the behavior </td></tr>
     <tr><td class="paramname">platformName</td><td>The name of the platform to be used. If empty, the first platform supporting the object is used. </td></tr>
   </table>
   </dd>
@@ -551,20 +554,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a5530cbad7134e4353e7fa9268c45bbdd"></a>
+<a class="anchor" id="ae1cebfc94282e6769ea5b2425dd357b6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classgd_1_1_automatisms_shared_data.html">gd::AutomatismsSharedData</a> &gt; gd::Project::CreateAutomatismSharedDatas </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classgd_1_1_behaviors_shared_data.html">gd::BehaviorsSharedData</a> &gt; gd::Project::CreateBehaviorSharedDatas </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -574,13 +577,13 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create automatism shared data of the given type.</p>
-<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the automatism shared data is used, unless <em>platformName</em> argument is not empty.<br />
- It is assumed that each platform provides equivalent automatism shared data.</dd></dl>
+<p>Create behavior shared data of the given type.</p>
+<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the behavior shared data is used, unless <em>platformName</em> argument is not empty.<br />
+ It is assumed that each platform provides equivalent behavior shared data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">project</td><td>The project for which the automatism shared data must be created. </td></tr>
-    <tr><td class="paramname">type</td><td>The type of automatism shared data </td></tr>
+    <tr><td class="paramname">project</td><td>The project for which the behavior shared data must be created. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of behavior shared data </td></tr>
     <tr><td class="paramname">platformName</td><td>The name of the platform to be used. If empty, the first platform supporting the object is used. </td></tr>
   </table>
   </dd>
@@ -588,20 +591,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a33e5d70c21ffedb1e0ff6bdc75b1976c"></a>
+<a class="anchor" id="a7da6d07e2fd9be6775f809438ef7561c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt; gd::Project::CreateEvent </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -625,26 +628,26 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a75c3d03dd1a8b4ea13c4ce6a09df20fc"></a>
+<a class="anchor" id="a95889aadecc8a4b753b27cad644efbe1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt; gd::Project::CreateObject </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -687,7 +690,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="aa94a7063a1e9f1be7cac8ea363830170"></a>
+<a class="anchor" id="ac599445f8e7eae8bb5e2f0d89abf1e8d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -695,31 +698,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; gd::Project::GetAuthor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return the name of the project. </p>
-
-</div>
-</div>
-<a class="anchor" id="acacb92cb75f20e1f1b05d19c3b5ec997"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string gd::Project::GetBadObjectNameWarning </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::Project::GetBadObjectNameWarning </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -736,14 +715,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="af29676d21c55411cf3506f7d9390d299"></a>
+<a class="anchor" id="abacafbedb491b91b95cf9c20670d1f56"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_external_events.html">gd::ExternalEvents</a> &amp; gd::Project::GetExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -753,14 +732,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a078eb8acaecdf78a624bb61fcfd4a75c"></a>
+<a class="anchor" id="ace54f70fde4531244129ab52220db5bb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classgd_1_1_external_events.html">gd::ExternalEvents</a> &amp; gd::Project::GetExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -770,14 +749,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a938bf400ccb394812a166c83338a1ed0"></a>
+<a class="anchor" id="a1a73edc939d6c8de907a7960409271e4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_external_events.html">gd::ExternalEvents</a> &amp; gd::Project::GetExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -787,14 +766,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a7cc1a8283818424af13d46b6b94a39d0"></a>
+<a class="anchor" id="af7b65d207f547154559d39c1f583d85b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classgd_1_1_external_events.html">gd::ExternalEvents</a> &amp; gd::Project::GetExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -804,12 +783,12 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="af2d576f120d4c26e90732baf42af997e"></a>
+<a class="anchor" id="a630cd2fd5e44e03e1114a870a84d24ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int gd::Project::GetExternalEventsCount </td>
+          <td class="memname">std::size_t gd::Project::GetExternalEventsCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -820,14 +799,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="afd1e74a7db383fe3857d5703fde2eacb"></a>
+<a class="anchor" id="acec5fbc4de5e5e4c62ff33288800e5b2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int gd::Project::GetExternalEventsPosition </td>
+          <td class="memname">std::size_t gd::Project::GetExternalEventsPosition </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -837,14 +816,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a0bca17b5bed84748dacc5c9fbbdc5cf0"></a>
+<a class="anchor" id="af504d6e2b8ba659b0ed725ea32c100df"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp; gd::Project::GetExternalLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -854,14 +833,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a071a8784f132e878217d208b336960d4"></a>
+<a class="anchor" id="af91d518c80c384da8736c6537f62dd77"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp; gd::Project::GetExternalLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -871,14 +850,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="ad8f35a021248bce32cff18d882006c7d"></a>
+<a class="anchor" id="a3906cf90e26813ea8f214ff88d36c5ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp; gd::Project::GetExternalLayout </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -888,14 +867,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a9f02bd16387a07bf5a04ac93fba76e0e"></a>
+<a class="anchor" id="a319676a30ac7dc2260b0f998bdfdb17d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp; gd::Project::GetExternalLayout </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -905,14 +884,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a4f76145618522b1c7c5dd3ccf157f85a"></a>
+<a class="anchor" id="a1cca934248c60478b82a99da0f32f193"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int gd::Project::GetExternalLayoutPosition </td>
+          <td class="memname">std::size_t gd::Project::GetExternalLayoutPosition </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -922,12 +901,12 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a752d8976e059e92eec255508eee673b2"></a>
+<a class="anchor" id="afbd3c3a714ac434cf8dd5c9851a52c36"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int gd::Project::GetExternalLayoutsCount </td>
+          <td class="memname">std::size_t gd::Project::GetExternalLayoutsCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -938,7 +917,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a58692e5e9cd01c9ba0a9045e61befd14"></a>
+<a class="anchor" id="ada4d96d9a7f1aba56bf0623e926842eb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -946,7 +925,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; gd::Project::GetFirstLayout </td>
+          <td class="memname">const <a class="el" href="classgd_1_1_string.html">gd::String</a>&amp; gd::Project::GetFirstLayout </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -962,7 +941,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a08d5c28cabcb92a58c29ec340848f949"></a>
+<a class="anchor" id="a509741ddfeeb4a3116942c6b7137774c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -970,7 +949,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; gd::Project::GetLastCompilationDirectory </td>
+          <td class="memname">const <a class="el" href="classgd_1_1_string.html">gd::String</a>&amp; gd::Project::GetLastCompilationDirectory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -982,7 +961,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the latest directory used to compile the game </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_project.html#a4f4bcf87781ba19a4e9cf99f4af5efad">gd::Project::SetLastCompilationDirectory</a> </dd></dl>
+<p>Return the latest directory used to compile the game </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_project.html#ae52d5d7290185aa4d6e8d0d797e5e1a4">gd::Project::SetLastCompilationDirectory</a> </dd></dl>
 
 </div>
 </div>
@@ -1130,7 +1109,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a9463dd420b8029bb0d11433636f92847"></a>
+<a class="anchor" id="acd0ba51bacd5a00a90280ce11ffd9c61"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1138,7 +1117,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; gd::Project::GetName </td>
+          <td class="memname">const <a class="el" href="classgd_1_1_string.html">gd::String</a>&amp; gd::Project::GetProjectFile </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1150,42 +1129,18 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get project name </p>
+<p>Return project file </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_project.html#a4f88dda26fda8c00fa8c722f4a73a014">gd::Project::SetProjectFile</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a9eff511d624d29127193b9a46ce344b5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string&amp; gd::Project::GetProjectFile </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return project file </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_project.html#a9f076240cc31b07309a0a598e0995229">gd::Project::SetProjectFile</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5bf26e847135a4dacdb06562b41140dd"></a>
+<a class="anchor" id="a4934451153c5c61625ccdbbc4900b1c6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp; gd::Project::GetSourceFile </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1195,14 +1150,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="aafb3d9b183ad4040bfda5f15b3ff09b9"></a>
+<a class="anchor" id="addc43fe372b04a96620ec64c9628a480"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp; gd::Project::GetSourceFile </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1212,7 +1167,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="ae0b7bd4739d0830582c5d40e703e7104"></a>
+<a class="anchor" id="af7fc3c6b46caa8e245b93c9aa580b86b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1220,7 +1175,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::string &gt;&amp; gd::Project::GetUsedExtensions </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&amp; gd::Project::GetUsedExtensions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1236,7 +1191,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="ad5d0376a5b2f4cee42ca4819e8fd6e3d"></a>
+<a class="anchor" id="ae68a1dc09bf9fb526e33ca6a7b9296e9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1244,7 +1199,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt;&amp; gd::Project::GetUsedExtensions </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&amp; gd::Project::GetUsedExtensions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1332,14 +1287,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a8ec120d6b2c55165a84a8c67703b1749"></a>
+<a class="anchor" id="ae8333187410bd16adacd8b046f075168"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool gd::Project::HasExternalEventsNamed </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1349,14 +1304,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a25de640b19224e7f2d853100ff53775b"></a>
+<a class="anchor" id="a8f6d086e268c9bfaafb827eef6012e87"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool gd::Project::HasExternalLayoutNamed </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1366,20 +1321,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a515427ba7054058f2e93068eb5ba1dab"></a>
+<a class="anchor" id="a820a9178a1568b9b83450906f03c8dea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool gd::Project::HasSourceFile </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>language</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -1401,7 +1356,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a601e72adf431987aa60368f8ed1e9518"></a>
+<a class="anchor" id="a06fdf139f6e543a4812fbfa1b4b167d3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1414,7 +1369,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -1435,7 +1390,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a6083b36c09a5117d767407d2a0db43e9"></a>
+<a class="anchor" id="aa618297b9edc07e704024803f42886d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1448,7 +1403,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -1469,7 +1424,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a63f47a97994d7d2cde992083d821b47e"></a>
+<a class="anchor" id="ac72f6395d9f48fa5b5e90d116f8cd79c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1482,7 +1437,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -1505,20 +1460,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="ab06176c915ecc9f4e9878f012df9234e"></a>
+<a class="anchor" id="abadcc04b48c299aeb73d4abc82d5736a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_external_events.html">gd::ExternalEvents</a> &amp; gd::Project::InsertNewExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -1532,20 +1487,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a9b872b840dd2e58a6b5369372a60ab49"></a>
+<a class="anchor" id="a336056c4ddba168f580e424ad0f6d714"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_external_layout.html">gd::ExternalLayout</a> &amp; gd::Project::InsertNewExternalLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -1559,26 +1514,26 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a5c4d505a58eb242de6ed176a532d12b7"></a>
+<a class="anchor" id="aad7d2deaf9f389a85763586907b7293f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_source_file.html">gd::SourceFile</a> &amp; gd::Project::InsertNewSourceFile </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>language</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>position</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
@@ -1589,6 +1544,30 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
       </table>
 </div><div class="memdoc">
 <p>Add a new source file the specified position in the external source files list. </p>
+
+</div>
+</div>
+<a class="anchor" id="af4ae1f6911057f2e7ec37bdf7e9563ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Project::IsFolderProject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the project is saved as a folder project. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_project.html#a60a1a84864ead9f4cd0f6ddc38b2797e">gd::Project::SetFolderProject</a> </dd></dl>
 
 </div>
 </div>
@@ -1687,14 +1666,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a9ec3d653257b8aac1d7a645668a989e8"></a>
+<a class="anchor" id="a2731878e4a6311fb7b528ad9e246a31c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::RemoveExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1704,14 +1683,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="adeab2f7da666f6534629baad16d38f93"></a>
+<a class="anchor" id="a2e702d84619600d7df40f4fa3ffec54b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::RemoveExternalLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1721,14 +1700,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a3346338cca3f0717189effb45adb94da"></a>
+<a class="anchor" id="ae234e527041f08893b518b6dfb631a68"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::RemoveLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1738,14 +1717,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="aef803b306f9a33d71e30f1b4c5f9a922"></a>
+<a class="anchor" id="aeb1b67eb584b4533db105ac97fb55804"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool gd::Project::RemovePlatform </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1757,58 +1736,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="ab2cd5d44ecd5504e665178fe99375032"></a>
+<a class="anchor" id="a7204a078efaee64f3d8637bbe6748863"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::RemoveSourceFile </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Remove the specified source file. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2ffb0881997517b6991f7e7774183b6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gd::Project::SaveToFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Save the project to a XML file. </p>
-<p>"Dirty" flag is set to false when save is done. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac7dc92ad99054a2af07ca38b400ed3aa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gd::Project::SaveToJSONFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Save the project to a JSON file. </p>
-<p>"Dirty" flag is set to false when save is done. </p>
 
 </div>
 </div>
@@ -1831,39 +1772,14 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a2a9f464b948400c3d17105aa7a8d4655"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::Project::SetAuthor </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>author_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Must change the name of the project with the name passed as parameter. </p>
-
-</div>
-</div>
-<a class="anchor" id="acafd41eb551ab8c46eae42a1a8959493"></a>
+<a class="anchor" id="acdadabd218529629b7e9155e40bdaf91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::SetCurrentPlatform </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1931,7 +1847,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a4213048a5334c7759aed9c90abc3c651"></a>
+<a class="anchor" id="aca132134e31018e4088d1150a4e31e3a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1941,7 +1857,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="memname">void gd::Project::SetFirstLayout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1956,7 +1872,37 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a4f4bcf87781ba19a4e9cf99f4af5efad"></a>
+<a class="anchor" id="a60a1a84864ead9f4cd0f6ddc38b2797e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Project::SetFolderProject </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set that the project should be saved as a folder project. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>True to flag as a folder project, false to set it as single file project. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae52d5d7290185aa4d6e8d0d797e5e1a4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1966,7 +1912,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="memname">void gd::Project::SetLastCompilationDirectory </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>dir</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2031,32 +1977,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="ae83b11e09990fbeb09e68725a762b573"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::Project::SetName </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Change project name </p>
-
-</div>
-</div>
-<a class="anchor" id="a9f076240cc31b07309a0a598e0995229"></a>
+<a class="anchor" id="a4f88dda26fda8c00fa8c722f4a73a014"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2066,7 +1987,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="memname">void gd::Project::SetProjectFile </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2106,20 +2027,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a6c74a5f10a1d2ab620a234f42c588bd0"></a>
+<a class="anchor" id="a3211d7780d846ed1fbb9ae1c0bea8393"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::SwapExternalEvents </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>second</em>&#160;</td>
         </tr>
         <tr>
@@ -2135,20 +2056,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="adddd0b091839e0ecfe1ecb117cc81e01"></a>
+<a class="anchor" id="ad5b8a107945c29f6b79bcbea86035b04"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::SwapExternalLayouts </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>second</em>&#160;</td>
         </tr>
         <tr>
@@ -2164,20 +2085,20 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a04731017c376cfd0c16eaabde2598091"></a>
+<a class="anchor" id="aacd4b7980babd1625cd666a98c1cd92f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gd::Project::SwapLayouts </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>second</em>&#160;</td>
         </tr>
         <tr>
@@ -2210,7 +2131,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a class="anchor" id="a73af0d5fcac469f0a9b2ff511367ec2a"></a>
+<a class="anchor" id="a9f3018a8367b5bf7317d42aef484b92e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2220,7 +2141,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
         <tr>
           <td class="memname">bool gd::Project::ValidateObjectName </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>objectName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2243,7 +2164,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

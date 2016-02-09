@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['nextframe',['NextFrame',['../df/dd1/class_input_manager.html#af3877f7a8bc52b937353d9d98892a809',1,'InputManager']]],
-  ['notifypausewasmade',['NotifyPauseWasMade',['../d7/d7f/class_runtime_scene.html#a06919a6d92e146b81854b9f6b9a2622f',1,'RuntimeScene']]]
+  ['managegarbage',['ManageGarbage',['../d5/dd9/class_sound_manager.html#a9e1e814d3a132f76cdddaf6a29960e10',1,'SoundManager']]],
+  ['manageobjectsafterevents',['ManageObjectsAfterEvents',['../d7/d7f/class_runtime_scene.html#a00106cf58b657b510502161e560977b3',1,'RuntimeScene']]],
+  ['manageobjectsbeforeevents',['ManageObjectsBeforeEvents',['../d7/d7f/class_runtime_scene.html#ac5bc38170a0d7bf8162d0278d5bd3106',1,'RuntimeScene']]],
+  ['managerendertargetevents',['ManageRenderTargetEvents',['../d7/d7f/class_runtime_scene.html#a2bfcda6922792be89dc66cb79e6f2afe',1,'RuntimeScene']]],
+  ['markasmodified',['MarkAsModified',['../d1/da5/class_xml_file.html#a3ca97cb015dd84621e9e0d26fe71148b',1,'XmlFile']]],
+  ['merge',['Merge',['../d3/de0/class_runtime_variables_container.html#a3ebb91546985db96228adeefd7f53100',1,'RuntimeVariablesContainer::Merge()'],['../d8/d5f/class_bad_runtime_variables_container.html#af896659703e041862e3363fd1f927029',1,'BadRuntimeVariablesContainer::Merge()']]],
+  ['mustdeletetemporaries',['MustDeleteTemporaries',['../d2/d33/class_code_compiler.html#aa6e83c4b8fd27dd9ab9ec7832fc669b5',1,'CodeCompiler']]]
 ];

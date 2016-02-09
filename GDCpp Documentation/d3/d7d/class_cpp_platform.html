@@ -116,9 +116,18 @@ Collaboration diagram for CppPlatform:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa924b3eaadfa7a82d8a9313eb692337d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa924b3eaadfa7a82d8a9313eb692337d"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const </td></tr>
-<tr class="separator:aa924b3eaadfa7a82d8a9313eb692337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac4d32ffe8769e8a3e856f9a3fb34d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ac4d32ffe8769e8a3e856f9a3fb34d2"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const </td></tr>
+<tr class="separator:a4ac4d32ffe8769e8a3e856f9a3fb34d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab111da38b7e8c72eb2e6ab4feac0c5b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab111da38b7e8c72eb2e6ab4feac0c5b6"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullName</b> () const </td></tr>
+<tr class="separator:ab111da38b7e8c72eb2e6ab4feac0c5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1583bfca08ec5d317580d58f69e93ec8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1583bfca08ec5d317580d58f69e93ec8"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubtitle</b> () const </td></tr>
+<tr class="separator:a1583bfca08ec5d317580d58f69e93ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cd69ada65ff18651d46ee88a029d84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2cd69ada65ff18651d46ee88a029d84"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const </td></tr>
+<tr class="separator:af2cd69ada65ff18651d46ee88a029d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a313eb17a3ac20ed7a117463bb88fef6b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a313eb17a3ac20ed7a117463bb88fef6b">CreateRuntimeObject</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, gd::Object &amp;object)</td></tr>
 <tr class="memdesc:a313eb17a3ac20ed7a117463bb88fef6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../d0/d3b/class_runtime_object.html" title="A RuntimeObject is something displayed on the scene. ">RuntimeObject</a> from a gd::Object for a scene.  <a href="#a313eb17a3ac20ed7a117463bb88fef6b">More...</a><br /></td></tr>
 <tr class="separator:a313eb17a3ac20ed7a117463bb88fef6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,10 +135,29 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNam
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a19bfa1550803b4e2ba3c6b3bfad754b3">AddExtension</a> (std::shared_ptr&lt; gd::PlatformExtension &gt; platformExtension)</td></tr>
 <tr class="memdesc:a19bfa1550803b4e2ba3c6b3bfad754b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our platform need to do a bit of extra work when adding an extension ( i.e : Storing pointers to creation/destruction functions ). <br /></td></tr>
 <tr class="separator:a19bfa1550803b4e2ba3c6b3bfad754b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2422792552afcddfa910e2947cc7d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f2422792552afcddfa910e2947cc7d0"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a3f2422792552afcddfa910e2947cc7d0">GetExtensionCreateFunctionName</a> ()</td></tr>
-<tr class="memdesc:a3f2422792552afcddfa910e2947cc7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the function searched in an extension file to create the extension. <br /></td></tr>
-<tr class="separator:a3f2422792552afcddfa910e2947cc7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2980b9e4c0e96ab05f83c4057ea5542"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2980b9e4c0e96ab05f83c4057ea5542"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#ac2980b9e4c0e96ab05f83c4057ea5542">GetExtensionCreateFunctionName</a> ()</td></tr>
+<tr class="memdesc:ac2980b9e4c0e96ab05f83c4057ea5542"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the function searched in an extension file to create the extension. <br /></td></tr>
+<tr class="separator:ac2980b9e4c0e96ab05f83c4057ea5542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45d428d91cd5e5a5cd277fa1a04a0be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae45d428d91cd5e5a5cd277fa1a04a0be"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GetIcon</b> () const </td></tr>
+<tr class="separator:ae45d428d91cd5e5a5cd277fa1a04a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83169d16b33fae33ee4d5caf75ea143c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83169d16b33fae33ee4d5caf75ea143c"></a>
+virtual <a class="el" href="../../d2/d03/class_changes_notifier.html">ChangesNotifier</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a83169d16b33fae33ee4d5caf75ea143c">GetChangesNotifier</a> () const </td></tr>
+<tr class="memdesc:a83169d16b33fae33ee4d5caf75ea143c"><td class="mdescLeft">&#160;</td><td class="mdescRight">We provide a specific <a class="el" href="../../d2/d03/class_changes_notifier.html" title="Internal class used to trigger some custom works after changes have been made. ">ChangesNotifier</a> to ensure that compilation jobs are done properly. <br /></td></tr>
+<tr class="separator:a83169d16b33fae33ee4d5caf75ea143c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95677cf542d0e95addc494ee84f5229d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95677cf542d0e95addc494ee84f5229d"></a>
+virtual std::shared_ptr&lt; gd::LayoutEditorPreviewer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a95677cf542d0e95addc494ee84f5229d">GetLayoutPreviewer</a> (gd::LayoutEditorCanvas &amp;editor) const </td></tr>
+<tr class="memdesc:a95677cf542d0e95addc494ee84f5229d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preview can be done directly inside the editor thanks to <a class="el" href="../../dc/dfb/class_cpp_layout_previewer.html" title="The new scene editor canvas. ">CppLayoutPreviewer</a>. <br /></td></tr>
+<tr class="separator:a95677cf542d0e95addc494ee84f5229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe905df9b40979865e4263c8dc3b8a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fe905df9b40979865e4263c8dc3b8a1"></a>
+virtual std::shared_ptr&lt; gd::ProjectExporter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a8fe905df9b40979865e4263c8dc3b8a1">GetProjectExporter</a> () const </td></tr>
+<tr class="memdesc:a8fe905df9b40979865e4263c8dc3b8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose to the IDE how to export games. <br /></td></tr>
+<tr class="separator:a8fe905df9b40979865e4263c8dc3b8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f8ae404b9eb34a43b67ee914e05e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55f8ae404b9eb34a43b67ee914e05e80"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7d/class_cpp_platform.html#a55f8ae404b9eb34a43b67ee914e05e80">OnIDEClosed</a> ()</td></tr>
+<tr class="memdesc:a55f8ae404b9eb34a43b67ee914e05e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">When destroyed, our platform need to do ensure the destruction of some singletons. <br /></td></tr>
+<tr class="separator:a55f8ae404b9eb34a43b67ee914e05e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -213,7 +241,7 @@ static <a class="el" href="../../d3/d7d/class_cpp_platform.html">CppPlatform</a>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

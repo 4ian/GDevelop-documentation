@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_133005aee98dc14e9b45053ba4beb69f.html">BuiltinExtensions</a></li><li class="navelem"><a class="el" href="dir_00eaefe2bdcf4006a95d230b470d4584.html">SpriteExtension</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_4aeb9e7b053513ba8882cbc67130aab6.html">Extensions</a></li><li class="navelem"><a class="el" href="dir_9aa8ee2e901fdf21a3daf12a91d8273f.html">Builtin</a></li><li class="navelem"><a class="el" href="dir_fdb6912ec07860efcf6ce0c8faac629e.html">SpriteExtension</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,132 +93,133 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef SPRITE_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define SPRITE_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics/Sprite.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/BuiltinExtensions/SpriteExtension/Point.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/BuiltinExtensions/SpriteExtension/Polygon2d.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Builtin/SpriteExtension/Point.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Builtin/SpriteExtension/Polygon2d.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_s_f_m_l_texture_wrapper.html">SFMLTextureWrapper</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#undef LoadImage //prevent windows.h to be polluting everything</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html">   29</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_sprite.html">Sprite</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classgd_1_1_sprite.html">Sprite</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_sprite.html">Sprite</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a76c6c8c053270ddec92485abc5d017d8">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_sprite.html#a76c6c8c053270ddec92485abc5d017d8">SetImageName</a>(<span class="keyword">const</span> std::string &amp; image_) { image = image_; }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a552708a3fdf5e8960cd871c413e80e50">   43</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_sprite.html#a552708a3fdf5e8960cd871c413e80e50">GetImageName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> image; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a338e75535a06c68465df0f5143e8e700">   48</a></span>&#160;    <span class="keyword">inline</span> std::string &amp; <a class="code" href="classgd_1_1_sprite.html#a338e75535a06c68465df0f5143e8e700">GetImageName</a>() { <span class="keywordflow">return</span> image; }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::vector&lt;Polygon2d&gt; GetCollisionMask() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> SetCustomCollisionMask(<span class="keyword">const</span> std::vector&lt;Polygon2d&gt; &amp; collisionMask);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a337e17aad0209c84147a8c290a3e8295">   67</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_sprite.html#a337e17aad0209c84147a8c290a3e8295">IsCollisionMaskAutomatic</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> automaticCollisionMask; }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593">   72</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593">SetCollisionMaskAutomatic</a>(<span class="keywordtype">bool</span> enabled) { automaticCollisionMask = enabled; };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac537e5c016b409fb873d72fb4abf8b95">   77</a></span>&#160;    <span class="keyword">inline</span> std::vector &lt; Point &gt; &amp; <a class="code" href="classgd_1_1_sprite.html#ac537e5c016b409fb873d72fb4abf8b95">GetAllNonDefaultPoints</a>() { <span class="keywordflow">return</span> points; }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#adad532002d3864a5305e1e3573c6e41d">   82</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::vector &lt; Point &gt; &amp; <a class="code" href="classgd_1_1_sprite.html#adad532002d3864a5305e1e3573c6e41d">GetAllNonDefaultPoints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> points; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> AddPoint( <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; point );</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> DelPoint( <span class="keyword">const</span> std::string &amp; name );</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; GetPoint( <span class="keyword">const</span> std::string &amp; name) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_point.html">Point</a> &amp; GetPoint(<span class="keyword">const</span> std::string &amp; name);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> HasPoint( <span class="keyword">const</span> std::string &amp; name ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a54483991fa050a2a207423fea976b6fe">  112</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a54483991fa050a2a207423fea976b6fe">GetOrigin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> origine; }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">  117</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">GetOrigin</a>() { <span class="keywordflow">return</span> origine; }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a6e65e7a5c18f085537867fe4c12e50fb">  125</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a6e65e7a5c18f085537867fe4c12e50fb">GetCenter</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> centre; }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a67a76debe7a76a110585f18fbb29c7f6">  133</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a67a76debe7a76a110585f18fbb29c7f6">GetCenter</a>() { automaticCentre = <span class="keyword">false</span>; <span class="keywordflow">return</span> centre; }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a31a00b60433d337f47bd2c036c702fe6">  138</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_sprite.html#a31a00b60433d337f47bd2c036c702fe6">IsDefaultCenterPoint</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> automaticCentre; }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">bool</span> SetDefaultCenterPoint(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">    #if !defined(EMSCRIPTEN)</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">  153</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> sf::Sprite &amp; <a class="code" href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">GetSFMLSprite</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sfmlSprite; }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">  158</a></span>&#160;    <span class="keyword">inline</span> sf::Sprite &amp; <a class="code" href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">GetSFMLSprite</a>() { <span class="keywordflow">return</span> sfmlSprite; }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> LoadImage(std::shared_ptr&lt;SFMLTextureWrapper&gt; image);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">  168</a></span>&#160;    std::shared_ptr&lt;SFMLTextureWrapper&gt; <a class="code" href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">GetSFMLTexture</a>() { <span class="keywordflow">return</span> sfmlImage; };</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a501ff38e314a3acf4bfb4595199f9bbc">  173</a></span>&#160;    <span class="keyword">const</span> std::shared_ptr&lt;SFMLTextureWrapper&gt; <a class="code" href="classgd_1_1_sprite.html#a501ff38e314a3acf4bfb4595199f9bbc">GetSFMLTexture</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sfmlImage; };</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> MakeSpriteOwnsItsImage();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">    #if !defined(EMSCRIPTEN)</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    sf::Sprite sfmlSprite; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::shared_ptr&lt;SFMLTextureWrapper&gt; sfmlImage; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">bool</span> hasItsOwnImage; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    std::string image; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">bool</span> automaticCollisionMask; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    std::vector&lt;Polygon2d&gt; customCollisionMask; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    std::vector &lt; Point &gt; points; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="class_point.html">Point</a> origine; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="class_point.html">Point</a> centre; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">bool</span> automaticCentre; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_point.html">Point</a> badPoint; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html">   30</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_sprite.html">Sprite</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classgd_1_1_sprite.html">Sprite</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_sprite.html">Sprite</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a0e90a711a2ecec01e3251ec544d4af8c">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_sprite.html#a0e90a711a2ecec01e3251ec544d4af8c">SetImageName</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; image_) { image = image_; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a1cee9ecab8bb4f825eb66868f1792553">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a1cee9ecab8bb4f825eb66868f1792553">GetImageName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> image; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a933cae0d115ea59e1595c17c9b5ee0fd">   49</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a933cae0d115ea59e1595c17c9b5ee0fd">GetImageName</a>() { <span class="keywordflow">return</span> image; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::vector&lt;Polygon2d&gt; GetCollisionMask() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> SetCustomCollisionMask(<span class="keyword">const</span> std::vector&lt;Polygon2d&gt; &amp; collisionMask);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a337e17aad0209c84147a8c290a3e8295">   68</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_sprite.html#a337e17aad0209c84147a8c290a3e8295">IsCollisionMaskAutomatic</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> automaticCollisionMask; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593">   73</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593">SetCollisionMaskAutomatic</a>(<span class="keywordtype">bool</span> enabled) { automaticCollisionMask = enabled; };</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac537e5c016b409fb873d72fb4abf8b95">   78</a></span>&#160;    <span class="keyword">inline</span> std::vector &lt; Point &gt; &amp; <a class="code" href="classgd_1_1_sprite.html#ac537e5c016b409fb873d72fb4abf8b95">GetAllNonDefaultPoints</a>() { <span class="keywordflow">return</span> points; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#adad532002d3864a5305e1e3573c6e41d">   83</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::vector &lt; Point &gt; &amp; <a class="code" href="classgd_1_1_sprite.html#adad532002d3864a5305e1e3573c6e41d">GetAllNonDefaultPoints</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> points; }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> AddPoint( <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; point );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> DelPoint( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name );</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; GetPoint( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="class_point.html">Point</a> &amp; GetPoint(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> HasPoint( <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a54483991fa050a2a207423fea976b6fe">  113</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a54483991fa050a2a207423fea976b6fe">GetOrigin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> origine; }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">  118</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">GetOrigin</a>() { <span class="keywordflow">return</span> origine; }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a6e65e7a5c18f085537867fe4c12e50fb">  126</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a6e65e7a5c18f085537867fe4c12e50fb">GetCenter</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> centre; }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a67a76debe7a76a110585f18fbb29c7f6">  134</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_point.html">Point</a> &amp; <a class="code" href="classgd_1_1_sprite.html#a67a76debe7a76a110585f18fbb29c7f6">GetCenter</a>() { automaticCentre = <span class="keyword">false</span>; <span class="keywordflow">return</span> centre; }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a31a00b60433d337f47bd2c036c702fe6">  139</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_sprite.html#a31a00b60433d337f47bd2c036c702fe6">IsDefaultCenterPoint</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> automaticCentre; }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> SetDefaultCenterPoint(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">    #if !defined(EMSCRIPTEN)</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">  154</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> sf::Sprite &amp; <a class="code" href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">GetSFMLSprite</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sfmlSprite; }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">  159</a></span>&#160;    <span class="keyword">inline</span> sf::Sprite &amp; <a class="code" href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">GetSFMLSprite</a>() { <span class="keywordflow">return</span> sfmlSprite; }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">void</span> LoadImage(std::shared_ptr&lt;SFMLTextureWrapper&gt; image);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">  169</a></span>&#160;    std::shared_ptr&lt;SFMLTextureWrapper&gt; <a class="code" href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">GetSFMLTexture</a>() { <span class="keywordflow">return</span> sfmlImage; };</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classgd_1_1_sprite.html#a501ff38e314a3acf4bfb4595199f9bbc">  174</a></span>&#160;    <span class="keyword">const</span> std::shared_ptr&lt;SFMLTextureWrapper&gt; <a class="code" href="classgd_1_1_sprite.html#a501ff38e314a3acf4bfb4595199f9bbc">GetSFMLTexture</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sfmlImage; };</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> MakeSpriteOwnsItsImage();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">    #if !defined(EMSCRIPTEN)</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    sf::Sprite sfmlSprite; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::shared_ptr&lt;SFMLTextureWrapper&gt; sfmlImage; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> hasItsOwnImage; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> image; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">bool</span> automaticCollisionMask; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::vector&lt;Polygon2d&gt; customCollisionMask; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    std::vector &lt; Point &gt; points; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="class_point.html">Point</a> origine; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="class_point.html">Point</a> centre; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">bool</span> automaticCentre; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_point.html">Point</a> badPoint; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif // SPRITE_H</span></div>
-<div class="ttc" id="classgd_1_1_sprite_html_adad532002d3864a5305e1e3573c6e41d"><div class="ttname"><a href="classgd_1_1_sprite.html#adad532002d3864a5305e1e3573c6e41d">gd::Sprite::GetAllNonDefaultPoints</a></div><div class="ttdeci">const std::vector&lt; Point &gt; &amp; GetAllNonDefaultPoints() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:82</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a552708a3fdf5e8960cd871c413e80e50"><div class="ttname"><a href="classgd_1_1_sprite.html#a552708a3fdf5e8960cd871c413e80e50">gd::Sprite::GetImageName</a></div><div class="ttdeci">const std::string &amp; GetImageName() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:43</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a76c6c8c053270ddec92485abc5d017d8"><div class="ttname"><a href="classgd_1_1_sprite.html#a76c6c8c053270ddec92485abc5d017d8">gd::Sprite::SetImageName</a></div><div class="ttdeci">void SetImageName(const std::string &amp;image_)</div><div class="ttdef"><b>Definition:</b> Sprite.h:38</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html"><div class="ttname"><a href="classgd_1_1_sprite.html">gd::Sprite</a></div><div class="ttdoc">Represents a sprite to be included in a Direction and to display on the screen. </div><div class="ttdef"><b>Definition:</b> Sprite.h:29</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a54483991fa050a2a207423fea976b6fe"><div class="ttname"><a href="classgd_1_1_sprite.html#a54483991fa050a2a207423fea976b6fe">gd::Sprite::GetOrigin</a></div><div class="ttdeci">const Point &amp; GetOrigin() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:112</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a310e8a0e5b09c8e441f204120f826237"><div class="ttname"><a href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">gd::Sprite::GetOrigin</a></div><div class="ttdeci">Point &amp; GetOrigin()</div><div class="ttdef"><b>Definition:</b> Sprite.h:117</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_ac537e5c016b409fb873d72fb4abf8b95"><div class="ttname"><a href="classgd_1_1_sprite.html#ac537e5c016b409fb873d72fb4abf8b95">gd::Sprite::GetAllNonDefaultPoints</a></div><div class="ttdeci">std::vector&lt; Point &gt; &amp; GetAllNonDefaultPoints()</div><div class="ttdef"><b>Definition:</b> Sprite.h:77</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_ac4bf5cbeaa6524e2dbc0adddee6ebe65"><div class="ttname"><a href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">gd::Sprite::GetSFMLSprite</a></div><div class="ttdeci">sf::Sprite &amp; GetSFMLSprite()</div><div class="ttdef"><b>Definition:</b> Sprite.h:158</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a6e65e7a5c18f085537867fe4c12e50fb"><div class="ttname"><a href="classgd_1_1_sprite.html#a6e65e7a5c18f085537867fe4c12e50fb">gd::Sprite::GetCenter</a></div><div class="ttdeci">const Point &amp; GetCenter() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:125</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a31a00b60433d337f47bd2c036c702fe6"><div class="ttname"><a href="classgd_1_1_sprite.html#a31a00b60433d337f47bd2c036c702fe6">gd::Sprite::IsDefaultCenterPoint</a></div><div class="ttdeci">bool IsDefaultCenterPoint() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:138</div></div>
-<div class="ttc" id="class_s_f_m_l_texture_wrapper_html"><div class="ttname"><a href="class_s_f_m_l_texture_wrapper.html">SFMLTextureWrapper</a></div><div class="ttdoc">Class wrapping an SFML texture. </div><div class="ttdef"><b>Definition:</b> ImageManager.h:133</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a67a76debe7a76a110585f18fbb29c7f6"><div class="ttname"><a href="classgd_1_1_sprite.html#a67a76debe7a76a110585f18fbb29c7f6">gd::Sprite::GetCenter</a></div><div class="ttdeci">Point &amp; GetCenter()</div><div class="ttdef"><b>Definition:</b> Sprite.h:133</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_ac8721f7f5546cf97b443fc604d6b3593"><div class="ttname"><a href="classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593">gd::Sprite::SetCollisionMaskAutomatic</a></div><div class="ttdeci">void SetCollisionMaskAutomatic(bool enabled)</div><div class="ttdef"><b>Definition:</b> Sprite.h:72</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_af7f97d0cc8ca3ede36b9822034fa54cb"><div class="ttname"><a href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">gd::Sprite::GetSFMLSprite</a></div><div class="ttdeci">const sf::Sprite &amp; GetSFMLSprite() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:153</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a501ff38e314a3acf4bfb4595199f9bbc"><div class="ttname"><a href="classgd_1_1_sprite.html#a501ff38e314a3acf4bfb4595199f9bbc">gd::Sprite::GetSFMLTexture</a></div><div class="ttdeci">const std::shared_ptr&lt; SFMLTextureWrapper &gt; GetSFMLTexture() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:173</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a338e75535a06c68465df0f5143e8e700"><div class="ttname"><a href="classgd_1_1_sprite.html#a338e75535a06c68465df0f5143e8e700">gd::Sprite::GetImageName</a></div><div class="ttdeci">std::string &amp; GetImageName()</div><div class="ttdef"><b>Definition:</b> Sprite.h:48</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_a337e17aad0209c84147a8c290a3e8295"><div class="ttname"><a href="classgd_1_1_sprite.html#a337e17aad0209c84147a8c290a3e8295">gd::Sprite::IsCollisionMaskAutomatic</a></div><div class="ttdeci">bool IsCollisionMaskAutomatic() const </div><div class="ttdef"><b>Definition:</b> Sprite.h:67</div></div>
-<div class="ttc" id="classgd_1_1_sprite_html_ac547dd051923d90450dfeb18e65227e9"><div class="ttname"><a href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">gd::Sprite::GetSFMLTexture</a></div><div class="ttdeci">std::shared_ptr&lt; SFMLTextureWrapper &gt; GetSFMLTexture()</div><div class="ttdef"><b>Definition:</b> Sprite.h:168</div></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif // SPRITE_H</span></div>
+<div class="ttc" id="classgd_1_1_sprite_html_adad532002d3864a5305e1e3573c6e41d"><div class="ttname"><a href="classgd_1_1_sprite.html#adad532002d3864a5305e1e3573c6e41d">gd::Sprite::GetAllNonDefaultPoints</a></div><div class="ttdeci">const std::vector&lt; Point &gt; &amp; GetAllNonDefaultPoints() const </div><div class="ttdoc">Return all points, excluding origin and center. </div><div class="ttdef"><b>Definition:</b> Sprite.h:83</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a1cee9ecab8bb4f825eb66868f1792553"><div class="ttname"><a href="classgd_1_1_sprite.html#a1cee9ecab8bb4f825eb66868f1792553">gd::Sprite::GetImageName</a></div><div class="ttdeci">const gd::String &amp; GetImageName() const </div><div class="ttdoc">Get the name of the sprite image. </div><div class="ttdef"><b>Definition:</b> Sprite.h:44</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html"><div class="ttname"><a href="classgd_1_1_sprite.html">gd::Sprite</a></div><div class="ttdoc">Represents a sprite to be displayed on the screen. </div><div class="ttdef"><b>Definition:</b> Sprite.h:30</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a54483991fa050a2a207423fea976b6fe"><div class="ttname"><a href="classgd_1_1_sprite.html#a54483991fa050a2a207423fea976b6fe">gd::Sprite::GetOrigin</a></div><div class="ttdeci">const Point &amp; GetOrigin() const </div><div class="ttdoc">Return Origin point. </div><div class="ttdef"><b>Definition:</b> Sprite.h:113</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a310e8a0e5b09c8e441f204120f826237"><div class="ttname"><a href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">gd::Sprite::GetOrigin</a></div><div class="ttdeci">Point &amp; GetOrigin()</div><div class="ttdoc">Return Origin point. </div><div class="ttdef"><b>Definition:</b> Sprite.h:118</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_ac537e5c016b409fb873d72fb4abf8b95"><div class="ttname"><a href="classgd_1_1_sprite.html#ac537e5c016b409fb873d72fb4abf8b95">gd::Sprite::GetAllNonDefaultPoints</a></div><div class="ttdeci">std::vector&lt; Point &gt; &amp; GetAllNonDefaultPoints()</div><div class="ttdoc">Return all points, excluding origin and center. </div><div class="ttdef"><b>Definition:</b> Sprite.h:78</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_ac4bf5cbeaa6524e2dbc0adddee6ebe65"><div class="ttname"><a href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">gd::Sprite::GetSFMLSprite</a></div><div class="ttdeci">sf::Sprite &amp; GetSFMLSprite()</div><div class="ttdoc">Get the SFML sprite associated with the sprite. </div><div class="ttdef"><b>Definition:</b> Sprite.h:159</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a6e65e7a5c18f085537867fe4c12e50fb"><div class="ttname"><a href="classgd_1_1_sprite.html#a6e65e7a5c18f085537867fe4c12e50fb">gd::Sprite::GetCenter</a></div><div class="ttdeci">const Point &amp; GetCenter() const </div><div class="ttdoc">Return Center point. </div><div class="ttdef"><b>Definition:</b> Sprite.h:126</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a31a00b60433d337f47bd2c036c702fe6"><div class="ttname"><a href="classgd_1_1_sprite.html#a31a00b60433d337f47bd2c036c702fe6">gd::Sprite::IsDefaultCenterPoint</a></div><div class="ttdeci">bool IsDefaultCenterPoint() const </div><div class="ttdoc">Return true if the center point is automatically computed. </div><div class="ttdef"><b>Definition:</b> Sprite.h:139</div></div>
+<div class="ttc" id="class_s_f_m_l_texture_wrapper_html"><div class="ttname"><a href="class_s_f_m_l_texture_wrapper.html">SFMLTextureWrapper</a></div><div class="ttdoc">Class wrapping an SFML texture. </div><div class="ttdef"><b>Definition:</b> ImageManager.h:134</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a0e90a711a2ecec01e3251ec544d4af8c"><div class="ttname"><a href="classgd_1_1_sprite.html#a0e90a711a2ecec01e3251ec544d4af8c">gd::Sprite::SetImageName</a></div><div class="ttdeci">void SetImageName(const gd::String &amp;image_)</div><div class="ttdoc">Change the name of the sprite image. </div><div class="ttdef"><b>Definition:</b> Sprite.h:39</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a67a76debe7a76a110585f18fbb29c7f6"><div class="ttname"><a href="classgd_1_1_sprite.html#a67a76debe7a76a110585f18fbb29c7f6">gd::Sprite::GetCenter</a></div><div class="ttdeci">Point &amp; GetCenter()</div><div class="ttdoc">Return Center point. </div><div class="ttdef"><b>Definition:</b> Sprite.h:134</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_ac8721f7f5546cf97b443fc604d6b3593"><div class="ttname"><a href="classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593">gd::Sprite::SetCollisionMaskAutomatic</a></div><div class="ttdeci">void SetCollisionMaskAutomatic(bool enabled)</div><div class="ttdoc">Un/set use of the custom collision mask. </div><div class="ttdef"><b>Definition:</b> Sprite.h:73</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_af7f97d0cc8ca3ede36b9822034fa54cb"><div class="ttname"><a href="classgd_1_1_sprite.html#af7f97d0cc8ca3ede36b9822034fa54cb">gd::Sprite::GetSFMLSprite</a></div><div class="ttdeci">const sf::Sprite &amp; GetSFMLSprite() const </div><div class="ttdoc">Get the SFML sprite associated with the sprite. </div><div class="ttdef"><b>Definition:</b> Sprite.h:154</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a501ff38e314a3acf4bfb4595199f9bbc"><div class="ttname"><a href="classgd_1_1_sprite.html#a501ff38e314a3acf4bfb4595199f9bbc">gd::Sprite::GetSFMLTexture</a></div><div class="ttdeci">const std::shared_ptr&lt; SFMLTextureWrapper &gt; GetSFMLTexture() const </div><div class="ttdoc">Get SFML texture used by the sprite. </div><div class="ttdef"><b>Definition:</b> Sprite.h:174</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a933cae0d115ea59e1595c17c9b5ee0fd"><div class="ttname"><a href="classgd_1_1_sprite.html#a933cae0d115ea59e1595c17c9b5ee0fd">gd::Sprite::GetImageName</a></div><div class="ttdeci">gd::String &amp; GetImageName()</div><div class="ttdoc">Get the name of the sprite image. </div><div class="ttdef"><b>Definition:</b> Sprite.h:49</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_a337e17aad0209c84147a8c290a3e8295"><div class="ttname"><a href="classgd_1_1_sprite.html#a337e17aad0209c84147a8c290a3e8295">gd::Sprite::IsCollisionMaskAutomatic</a></div><div class="ttdeci">bool IsCollisionMaskAutomatic() const </div><div class="ttdoc">Return true if the collision mask is a bounding box, false if a custom collision mask is used...</div><div class="ttdef"><b>Definition:</b> Sprite.h:68</div></div>
+<div class="ttc" id="classgd_1_1_sprite_html_ac547dd051923d90450dfeb18e65227e9"><div class="ttname"><a href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">gd::Sprite::GetSFMLTexture</a></div><div class="ttdeci">std::shared_ptr&lt; SFMLTextureWrapper &gt; GetSFMLTexture()</div><div class="ttdoc">Get SFML texture used by the sprite. </div><div class="ttdef"><b>Definition:</b> Sprite.h:169</div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Named point used by Sprite. </div><div class="ttdef"><b>Definition:</b> Point.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

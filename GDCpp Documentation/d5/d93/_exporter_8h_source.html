@@ -97,24 +97,27 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;GDCore/IDE/ProjectExporter.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>Exporter : <span class="keyword">public</span> gd::ProjectExporter</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d6/d5a/class_exporter.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d5a/class_exporter.html">Exporter</a> : <span class="keyword">public</span> gd::ProjectExporter</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Exporter() {};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> ~Exporter();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d6/d5a/class_exporter.html">Exporter</a>() {};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d6/d5a/class_exporter.html">Exporter</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ShowProjectExportDialog(gd::Project &amp; project);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d6/d5a/class_exporter.html#aabe3c503a5c59d55026f2ba79f45d20a">ShowProjectExportDialog</a>(gd::Project &amp; project);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> std::string GetProjectExportButtonLabel();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> gd::String <a class="code" href="../../d6/d5a/class_exporter.html#a35c1a8b6c8718acf7c66f1155496fe41">GetProjectExportButtonLabel</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // EXPORTER_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_exporter_html"><div class="ttname"><a href="../../d6/d5a/class_exporter.html">Exporter</a></div><div class="ttdoc">The class exposing to the IDE the functions to export a game. </div><div class="ttdef"><b>Definition:</b> Exporter.h:10</div></div>
+<div class="ttc" id="class_exporter_html_a35c1a8b6c8718acf7c66f1155496fe41"><div class="ttname"><a href="../../d6/d5a/class_exporter.html#a35c1a8b6c8718acf7c66f1155496fe41">Exporter::GetProjectExportButtonLabel</a></div><div class="ttdeci">virtual gd::String GetProjectExportButtonLabel()</div><div class="ttdoc">Return the label that will be displayed on the button or menu item allowing the user to export the pr...</div><div class="ttdef"><b>Definition:</b> Exporter.cpp:24</div></div>
+<div class="ttc" id="class_exporter_html_aabe3c503a5c59d55026f2ba79f45d20a"><div class="ttname"><a href="../../d6/d5a/class_exporter.html#aabe3c503a5c59d55026f2ba79f45d20a">Exporter::ShowProjectExportDialog</a></div><div class="ttdeci">virtual void ShowProjectExportDialog(gd::Project &amp;project)</div><div class="ttdoc">Show a dialog that will enable the user to export the project. </div><div class="ttdef"><b>Definition:</b> Exporter.cpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

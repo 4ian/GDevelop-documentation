@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::SystemStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_system_stats.html",tooltip="Tool class to provide information about the system. "];
+  Node1 [label="gd::Splitter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_splitter.html",tooltip="Split a tree of SerializerElement according to tags name. It replaces cut subtree by a SerializerElem..."];
 }

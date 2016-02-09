@@ -123,29 +123,33 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a59590b1abdaa1b35e188343a7def371e">~RuntimeVariablesContainer</a> ()</td></tr>
 <tr class="memdesc:a59590b1abdaa1b35e188343a7def371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor: Properly clear the container. <br /></td></tr>
 <tr class="separator:a59590b1abdaa1b35e188343a7def371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ebff12976a2cc8d804a7c00a7983b6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ebff12976a2cc8d804a7c00a7983b6e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a5ebff12976a2cc8d804a7c00a7983b6e">Has</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a5ebff12976a2cc8d804a7c00a7983b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified variable is in the container. <br /></td></tr>
-<tr class="separator:a5ebff12976a2cc8d804a7c00a7983b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a0f9667e0e5b102d306ebc63661d8bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a0f9667e0e5b102d306ebc63661d8bb"></a>
-virtual gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a0a0f9667e0e5b102d306ebc63661d8bb">Get</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a0a0f9667e0e5b102d306ebc63661d8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable called <em>name</em>. <br /></td></tr>
-<tr class="separator:a0a0f9667e0e5b102d306ebc63661d8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc48e9f8a44afd631c3c469301ecc40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dc48e9f8a44afd631c3c469301ecc40"></a>
-virtual const gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a0dc48e9f8a44afd631c3c469301ecc40">Get</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a0dc48e9f8a44afd631c3c469301ecc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable called <em>name</em>. <br /></td></tr>
-<tr class="separator:a0dc48e9f8a44afd631c3c469301ecc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b55aebe8ddde41be616296183a44e4"><td class="memItemLeft" align="right" valign="top">virtual gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a62b55aebe8ddde41be616296183a44e4">Get</a> (unsigned int index)</td></tr>
-<tr class="memdesc:a62b55aebe8ddde41be616296183a44e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable at the @ index position in the list.  <a href="#a62b55aebe8ddde41be616296183a44e4">More...</a><br /></td></tr>
-<tr class="separator:a62b55aebe8ddde41be616296183a44e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8945e696e5df4ba0ed75eb7f474519"><td class="memItemLeft" align="right" valign="top">virtual const gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a5a8945e696e5df4ba0ed75eb7f474519">Get</a> (unsigned int index) const </td></tr>
-<tr class="memdesc:a5a8945e696e5df4ba0ed75eb7f474519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable at the @ index position in the list.  <a href="#a5a8945e696e5df4ba0ed75eb7f474519">More...</a><br /></td></tr>
-<tr class="separator:a5a8945e696e5df4ba0ed75eb7f474519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52d28556e33a2493c2a977f9308dc55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52d28556e33a2493c2a977f9308dc55"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#ac52d28556e33a2493c2a977f9308dc55">Has</a> (const gd::String &amp;name) const </td></tr>
+<tr class="memdesc:ac52d28556e33a2493c2a977f9308dc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified variable is in the container. <br /></td></tr>
+<tr class="separator:ac52d28556e33a2493c2a977f9308dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7bdc551e622cfdbb1a4a32acd54ad7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add7bdc551e622cfdbb1a4a32acd54ad7"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#add7bdc551e622cfdbb1a4a32acd54ad7">Count</a> ()</td></tr>
+<tr class="memdesc:add7bdc551e622cfdbb1a4a32acd54ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of variables in the container. <br /></td></tr>
+<tr class="separator:add7bdc551e622cfdbb1a4a32acd54ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3aa810bc4a0047002a34daeee6bd64b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3aa810bc4a0047002a34daeee6bd64b"></a>
+virtual gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#ab3aa810bc4a0047002a34daeee6bd64b">Get</a> (const gd::String &amp;name)</td></tr>
+<tr class="memdesc:ab3aa810bc4a0047002a34daeee6bd64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable called <em>name</em>. <br /></td></tr>
+<tr class="separator:ab3aa810bc4a0047002a34daeee6bd64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06be7bd247132604d0f91b62fbfea010"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06be7bd247132604d0f91b62fbfea010"></a>
+virtual const gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a06be7bd247132604d0f91b62fbfea010">Get</a> (const gd::String &amp;name) const </td></tr>
+<tr class="memdesc:a06be7bd247132604d0f91b62fbfea010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable called <em>name</em>. <br /></td></tr>
+<tr class="separator:a06be7bd247132604d0f91b62fbfea010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab8511937ac97476483fad8d2e41b68"><td class="memItemLeft" align="right" valign="top">virtual gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a1ab8511937ac97476483fad8d2e41b68">Get</a> (std::size_t index)</td></tr>
+<tr class="memdesc:a1ab8511937ac97476483fad8d2e41b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable at the @ index position in the list.  <a href="#a1ab8511937ac97476483fad8d2e41b68">More...</a><br /></td></tr>
+<tr class="separator:a1ab8511937ac97476483fad8d2e41b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9dbcd869c9b95c147671173b9f26204"><td class="memItemLeft" align="right" valign="top">virtual const gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#af9dbcd869c9b95c147671173b9f26204">Get</a> (std::size_t index) const </td></tr>
+<tr class="memdesc:af9dbcd869c9b95c147671173b9f26204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the variable at the @ index position in the list.  <a href="#af9dbcd869c9b95c147671173b9f26204">More...</a><br /></td></tr>
+<tr class="separator:af9dbcd869c9b95c147671173b9f26204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebb91546985db96228adeefd7f53100"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a3ebb91546985db96228adeefd7f53100">Merge</a> (const gd::VariablesContainer &amp;container)</td></tr>
 <tr class="memdesc:a3ebb91546985db96228adeefd7f53100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge the variables from the container with the already existing variables.  <a href="#a3ebb91546985db96228adeefd7f53100">More...</a><br /></td></tr>
 <tr class="separator:a3ebb91546985db96228adeefd7f53100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316e0c424d1dfd271eb3c0279bb5456f"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, gd::Variable * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#a316e0c424d1dfd271eb3c0279bb5456f">DumpAllVariables</a> ()</td></tr>
-<tr class="separator:a316e0c424d1dfd271eb3c0279bb5456f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6913dace74ec3c821fd771834f9332a"><td class="memItemLeft" align="right" valign="top">const std::map&lt; gd::String, gd::Variable * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/class_runtime_variables_container.html#af6913dace74ec3c821fd771834f9332a">DumpAllVariables</a> ()</td></tr>
+<tr class="separator:af6913dace74ec3c821fd771834f9332a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -196,7 +200,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a316e0c424d1dfd271eb3c0279bb5456f"></a>
+<a class="anchor" id="af6913dace74ec3c821fd771834f9332a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -204,7 +208,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::map&lt; std::string, gd::Variable* &gt;&amp; RuntimeVariablesContainer::DumpAllVariables </td>
+          <td class="memname">const std::map&lt; gd::String, gd::Variable* &gt;&amp; RuntimeVariablesContainer::DumpAllVariables </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -220,7 +224,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a62b55aebe8ddde41be616296183a44e4"></a>
+<a class="anchor" id="a1ab8511937ac97476483fad8d2e41b68"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +234,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">virtual gd::Variable&amp; RuntimeVariablesContainer::Get </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -246,11 +250,11 @@ Here is the call graph for this function:</div>
 <dl class="section warning"><dt>Warning</dt><dd>No bound check is made. Please use other overload of gd::VariablesContainer::Get when you do not have any efficiency request. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This specific overload can used by code generated from events when a variable index is known at the time of the code generation. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d8/d5f/class_bad_runtime_variables_container.html#a65f735356d183a2639ce41409399a7a1">BadRuntimeVariablesContainer</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d8/d5f/class_bad_runtime_variables_container.html#a5653dc00d7f11478599b49a2e4652932">BadRuntimeVariablesContainer</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5a8945e696e5df4ba0ed75eb7f474519"></a>
+<a class="anchor" id="af9dbcd869c9b95c147671173b9f26204"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -260,7 +264,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">virtual const gd::Variable&amp; RuntimeVariablesContainer::Get </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -276,7 +280,7 @@ Here is the call graph for this function:</div>
 <dl class="section warning"><dt>Warning</dt><dd>No bound check is made. Please use other overload of gd::VariablesContainer::GetVariable when you do not have any efficiency request. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This specific overload can used by code generated from events when a variable index is known at the time of the code generation. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d8/d5f/class_bad_runtime_variables_container.html#a25c6c9375b1a787356c2c98e331b6091">BadRuntimeVariablesContainer</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d8/d5f/class_bad_runtime_variables_container.html#aa045b6761bb83a891bea80ff4adeeb52">BadRuntimeVariablesContainer</a>.</p>
 
 </div>
 </div>
@@ -354,7 +358,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:25 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

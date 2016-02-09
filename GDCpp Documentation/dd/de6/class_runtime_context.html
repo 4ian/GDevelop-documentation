@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19639e3b361295de6d1aff4e1867a6ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#a19639e3b361295de6d1aff4e1867a6ec">RuntimeContext</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> *scene_)</td></tr>
 <tr class="memdesc:a19639e3b361295de6d1aff4e1867a6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the context for a scene.  <a href="#a19639e3b361295de6d1aff4e1867a6ec">More...</a><br /></td></tr>
 <tr class="separator:a19639e3b361295de6d1aff4e1867a6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78cf0546d601a15f60fb078b0bcc6db3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#a78cf0546d601a15f60fb078b0bcc6db3">GetObjectsRawPointers</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a78cf0546d601a15f60fb078b0bcc6db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut to get a "raw pointers" list to objects with a specific name. Equivalent to :  <a href="#a78cf0546d601a15f60fb078b0bcc6db3">More...</a><br /></td></tr>
-<tr class="separator:a78cf0546d601a15f60fb078b0bcc6db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a4374fb93de0ceb6b49f5cb6abb841"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#a49a4374fb93de0ceb6b49f5cb6abb841">GetObjectsRawPointers</a> (const gd::String &amp;name)</td></tr>
+<tr class="memdesc:a49a4374fb93de0ceb6b49f5cb6abb841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut to get a "raw pointers" list to objects with a specific name. Equivalent to :  <a href="#a49a4374fb93de0ceb6b49f5cb6abb841">More...</a><br /></td></tr>
+<tr class="separator:a49a4374fb93de0ceb6b49f5cb6abb841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475b2e098a0d686e8082a18585f3cdb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a475b2e098a0d686e8082a18585f3cdb8"></a>
 <a class="el" href="../../d3/de0/class_runtime_variables_container.html">RuntimeVariablesContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#a475b2e098a0d686e8082a18585f3cdb8">GetSceneVariables</a> ()</td></tr>
 <tr class="memdesc:a475b2e098a0d686e8082a18585f3cdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for scene-&gt;GetVariables();. <br /></td></tr>
@@ -123,10 +123,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../d3/de0/class_runtime_variables_container.html">RuntimeVariablesContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#ae8865319a74fa4cd353bc700be5a0ca9">GetGameVariables</a> ()</td></tr>
 <tr class="memdesc:ae8865319a74fa4cd353bc700be5a0ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for scene.game-&gt;GetVariables();. <br /></td></tr>
 <tr class="separator:ae8865319a74fa4cd353bc700be5a0ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a062fa562eda6b7d31d09218ea860222d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a062fa562eda6b7d31d09218ea860222d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#a062fa562eda6b7d31d09218ea860222d">TriggerOnce</a> (unsigned int conditionId)</td></tr>
-<tr class="memdesc:a062fa562eda6b7d31d09218ea860222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by "Trigger once" conditions: Return true only if this method was not called with the same identifier during the last frame. <br /></td></tr>
-<tr class="separator:a062fa562eda6b7d31d09218ea860222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a78f38f9ef3193b49eb3a9f67603c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05a78f38f9ef3193b49eb3a9f67603c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#a05a78f38f9ef3193b49eb3a9f67603c8">TriggerOnce</a> (std::size_t conditionId)</td></tr>
+<tr class="memdesc:a05a78f38f9ef3193b49eb3a9f67603c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by "Trigger once" conditions: Return true only if this method was not called with the same identifier during the last frame. <br /></td></tr>
+<tr class="separator:a05a78f38f9ef3193b49eb3a9f67603c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2962b3f6d51aebaaa32e1675cca5806"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2962b3f6d51aebaaa32e1675cca5806"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/class_runtime_context.html#ac2962b3f6d51aebaaa32e1675cca5806">StartNewFrame</a> ()</td></tr>
 <tr class="memdesc:ac2962b3f6d51aebaaa32e1675cca5806"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called when events begin so that "Trigger once" conditions are properly handled. <br /></td></tr>
@@ -134,12 +134,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a770ba82c369c98f20599ecec71b61e81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a770ba82c369c98f20599ecec71b61e81"></a>
 <a class="el" href="../../dd/de6/class_runtime_context.html">RuntimeContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ClearObjectListsMap</b> ()</td></tr>
 <tr class="separator:a770ba82c369c98f20599ecec71b61e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55963d4d46bfde7e6b5771316ed0c39c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55963d4d46bfde7e6b5771316ed0c39c"></a>
-<a class="el" href="../../dd/de6/class_runtime_context.html">RuntimeContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AddObjectListToMap</b> (const std::string &amp;objectName, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; &amp;list)</td></tr>
-<tr class="separator:a55963d4d46bfde7e6b5771316ed0c39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00cb1439a9c553f70fec39258cca2b55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00cb1439a9c553f70fec39258cca2b55"></a>
-std::map&lt; std::string, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnObjectListsMap</b> ()</td></tr>
-<tr class="separator:a00cb1439a9c553f70fec39258cca2b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8dc5731ce0e94c71490f5c1c2ab453"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd8dc5731ce0e94c71490f5c1c2ab453"></a>
+<a class="el" href="../../dd/de6/class_runtime_context.html">RuntimeContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AddObjectListToMap</b> (const gd::String &amp;objectName, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; &amp;list)</td></tr>
+<tr class="separator:afd8dc5731ce0e94c71490f5c1c2ab453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f0d277509622eb68f5ecfec337c1cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2f0d277509622eb68f5ecfec337c1cc"></a>
+std::map&lt; gd::String, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnObjectListsMap</b> ()</td></tr>
+<tr class="separator:af2f0d277509622eb68f5ecfec337c1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -184,14 +184,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a78cf0546d601a15f60fb078b0bcc6db3"></a>
+<a class="anchor" id="a49a4374fb93de0ceb6b49f5cb6abb841"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; RuntimeContext::GetObjectsRawPointers </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -199,13 +199,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shortcut to get a "raw pointers" list to objects with a specific name. Equivalent to : </p>
-<div class="fragment"><div class="line"><a class="code" href="../../dd/de6/class_runtime_context.html#a9b2290cb4861f19fca7e74ad540d12c7">scene</a>-&gt;<a class="code" href="../../d7/d7f/class_runtime_scene.html#aaec085ea78c0fdb7549224cd7352a07b">objectsInstances</a>.<a class="code" href="../../d3/de4/class_obj_instances_holder.html#ae15ddb64f1dd5a888ca93ce7f98006d7">GetObjectsRawPointers</a>(name)</div>
+<div class="fragment"><div class="line"><a class="code" href="../../dd/de6/class_runtime_context.html#a9b2290cb4861f19fca7e74ad540d12c7">scene</a>-&gt;<a class="code" href="../../d7/d7f/class_runtime_scene.html#aaec085ea78c0fdb7549224cd7352a07b">objectsInstances</a>.<a class="code" href="../../d3/de4/class_obj_instances_holder.html#ad87b873c61a58b53ec00e7e113aebd54">GetObjectsRawPointers</a>(name)</div>
 </div><!-- fragment --> 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/de6/class_runtime_context_a78cf0546d601a15f60fb078b0bcc6db3_cgraph.png" border="0" usemap="#dd/de6/class_runtime_context_a78cf0546d601a15f60fb078b0bcc6db3_cgraph" alt=""/></div>
-<map name="dd/de6/class_runtime_context_a78cf0546d601a15f60fb078b0bcc6db3_cgraph" id="dd/de6/class_runtime_context_a78cf0546d601a15f60fb078b0bcc6db3_cgraph">
+<div class="center"><img src="../../dd/de6/class_runtime_context_a49a4374fb93de0ceb6b49f5cb6abb841_cgraph.png" border="0" usemap="#dd/de6/class_runtime_context_a49a4374fb93de0ceb6b49f5cb6abb841_cgraph" alt=""/></div>
+<map name="dd/de6/class_runtime_context_a49a4374fb93de0ceb6b49f5cb6abb841_cgraph" id="dd/de6/class_runtime_context_a49a4374fb93de0ceb6b49f5cb6abb841_cgraph">
 </map>
 </div>
 </p>
@@ -219,7 +219,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

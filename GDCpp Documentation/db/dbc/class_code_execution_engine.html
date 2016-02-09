@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d4/df0/class_code_execution_engine-members.html">List of all members</a>  </div>
@@ -107,6 +108,12 @@ Collaboration diagram for CodeExecutionEngine:</div>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a57a64d61389a6436f0dfe7fa61125c21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57a64d61389a6436f0dfe7fa61125c21"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>functionType</b>) (<a class="el" href="../../dd/de6/class_runtime_context.html">RuntimeContext</a> *)</td></tr>
+<tr class="separator:a57a64d61389a6436f0dfe7fa61125c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeba3976e751c94b991ef95da65667223"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbc/class_code_execution_engine.html#aeba3976e751c94b991ef95da65667223">CodeExecutionEngine</a> ()</td></tr>
@@ -123,8 +130,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52e37530cc30244bdaef32fffd8e989c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d989fdc89710d852c59d55aff8fcd33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbc/class_code_execution_engine.html#a0d989fdc89710d852c59d55aff8fcd33">Unload</a> ()</td></tr>
 <tr class="separator:a0d989fdc89710d852c59d55aff8fcd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a3a9585de1d71aba02373dfae6bba6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbc/class_code_execution_engine.html#ab3a3a9585de1d71aba02373dfae6bba6">LoadFromDynamicLibrary</a> (const std::string &amp;filename, const std::string &amp;mainFunctionName)</td></tr>
-<tr class="separator:ab3a3a9585de1d71aba02373dfae6bba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11473f4db6daab79e2541b3614d69cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbc/class_code_execution_engine.html#ac11473f4db6daab79e2541b3614d69cb">LoadFromDynamicLibrary</a> (const gd::String &amp;filename, const gd::String &amp;mainFunctionName)</td></tr>
+<tr class="separator:ac11473f4db6daab79e2541b3614d69cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eff2f7e067345cc695cc10f333cb3f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eff2f7e067345cc695cc10f333cb3f9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFunction</b> (functionType fn)</td></tr>
+<tr class="separator:a6eff2f7e067345cc695cc10f333cb3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -136,9 +146,9 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper allowing to load a dynamic library and launch a specific function. </p>
 <p><a class="el" href="../../d7/d7f/class_runtime_scene.html" title="Represents a scene being played. ">RuntimeScene</a> uses this class to launch compiled events. In particular, the signature of the function of the dynamic library must be : </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> functionName(<a class="code" href="../../dd/de6/class_runtime_context.html">RuntimeContext</a> *);</div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>CodeCompilationHelpers </dd>
+</div><!-- fragment --><p>: This class is unecessarily complicated. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de0/class_code_compilation_helpers.html" title="Class containing helper functions for using CodeCompiler See CreateSceneEventsCompilationTask to auto...">CodeCompilationHelpers</a> </dd>
 <dd>
-CodeCompiler </dd></dl>
+<a class="el" href="../../d2/d33/class_code_compiler.html" title="C++ Code compiler This class uses a thread to launch Clang compiler according to the task added using...">CodeCompiler</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aeba3976e751c94b991ef95da65667223"></a>
 <div class="memitem">
@@ -235,25 +245,24 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Execute the function specified during the call to LoadFromDynamicLibrary</p>
-<dl class="section warning"><dt>Warning</dt><dd>Beware, there is no protection against calling Execute on an <a class="el" href="../../db/dbc/class_code_execution_engine.html" title="Wrapper allowing to load a dynamic library and launch a specific function. ">CodeExecutionEngine</a> that is not (or badly) initialized. </dd></dl>
+<p>Execute the loaded function. </p>
 
 </div>
 </div>
-<a class="anchor" id="ab3a3a9585de1d71aba02373dfae6bba6"></a>
+<a class="anchor" id="ac11473f4db6daab79e2541b3614d69cb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool CodeExecutionEngine::LoadFromDynamicLibrary </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
           <td class="paramname"><em>mainFunctionName</em>&#160;</td>
         </tr>
         <tr>
@@ -276,8 +285,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../db/dbc/class_code_execution_engine_ab3a3a9585de1d71aba02373dfae6bba6_cgraph.png" border="0" usemap="#db/dbc/class_code_execution_engine_ab3a3a9585de1d71aba02373dfae6bba6_cgraph" alt=""/></div>
-<map name="db/dbc/class_code_execution_engine_ab3a3a9585de1d71aba02373dfae6bba6_cgraph" id="db/dbc/class_code_execution_engine_ab3a3a9585de1d71aba02373dfae6bba6_cgraph">
+<div class="center"><img src="../../db/dbc/class_code_execution_engine_ac11473f4db6daab79e2541b3614d69cb_cgraph.png" border="0" usemap="#db/dbc/class_code_execution_engine_ac11473f4db6daab79e2541b3614d69cb_cgraph" alt=""/></div>
+<map name="db/dbc/class_code_execution_engine_ac11473f4db6daab79e2541b3614d69cb_cgraph" id="db/dbc/class_code_execution_engine_ac11473f4db6daab79e2541b3614d69cb_cgraph">
 </map>
 </div>
 </p>
@@ -357,7 +366,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

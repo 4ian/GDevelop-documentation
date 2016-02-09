@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Music",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d96/class_music.html",tooltip="Represents a music to be played. "];
+  Node1 [label="CollisionResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d2d/struct_collision_result.html",tooltip="Contains the result of PolygonCollisionTest. "];
 }

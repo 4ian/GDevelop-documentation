@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_4aeb9e7b053513ba8882cbc67130aab6.html">Extensions</a></li><li class="navelem"><a class="el" href="dir_8e09389479d3b4f15790ccb594568191.html">Metadata</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,14 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef METADATAPROVIDER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define METADATAPROVIDER_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/InstructionMetadata.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>AutomatismMetadata; }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Metadata/InstructionMetadata.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BehaviorMetadata; }</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ObjectMetadata; }</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ExpressionMetadata; }</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ExpressionMetadata; }</div>
@@ -108,80 +109,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classgd_1_1_metadata_provider.html">   24</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_metadata_provider.html">MetadataProvider</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_automatism_metadata.html">AutomatismMetadata</a> &amp; GetAutomatismMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string automatismType);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp; GetObjectMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string type);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; GetActionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string actionType);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; GetConditionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string conditionType);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string exprType);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetObjectExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string objectType, std::string exprType);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetAutomatismExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string autoType, std::string exprType);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetStrExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string exprType);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetObjectStrExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string objectType, std::string exprType);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetAutomatismStrExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string autoType, std::string exprType);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string name);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string name);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string objectType, std::string name);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string objectType, std::string name);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasAutomatismAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string automatismType, std::string name);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasAutomatismCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string automatismType, std::string name);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string name);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string objectType, std::string name);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasAutomatismExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string automatismType, std::string name);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string name);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string objectType, std::string name);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasAutomatismStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, std::string automatismType, std::string name);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_metadata_provider.html">MetadataProvider</a>();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="classgd_1_1_metadata_provider.html">MetadataProvider</a>();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_automatism_metadata.html">AutomatismMetadata</a> badAutomatismInfo;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> badObjectInfo;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> badInstructionMetadata;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> badExpressionMetadata;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> badStrExpressionMetadata;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">int</span> useless; <span class="comment">//Useless member to avoid emscripten &quot;must have a positive integer typeid pointer&quot; runtime error.</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif // METADATAPROVIDER_H</span></div>
-<div class="ttc" id="classgd_1_1_automatism_metadata_html"><div class="ttname"><a href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a></div><div class="ttdoc">Contains user-friendly information about an automatism type. </div><div class="ttdef"><b>Definition:</b> AutomatismMetadata.h:32</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:90</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classgd_1_1_metadata_provider.html">   25</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_metadata_provider.html">MetadataProvider</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> &amp; GetBehaviorMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp; GetObjectMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> type);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; GetActionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> actionType);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; GetConditionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> conditionType);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> exprType);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetObjectExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> objectType, <a class="code" href="classgd_1_1_string.html">gd::String</a> exprType);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetBehaviorExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> autoType, <a class="code" href="classgd_1_1_string.html">gd::String</a> exprType);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetStrExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> exprType);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetObjectStrExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> objectType, <a class="code" href="classgd_1_1_string.html">gd::String</a> exprType);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; GetBehaviorStrExpressionMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> autoType, <a class="code" href="classgd_1_1_string.html">gd::String</a> exprType);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> objectType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> objectType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasBehaviorAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasBehaviorCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> objectType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasBehaviorExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasObjectStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> objectType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasBehaviorStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform, <a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType, <a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_metadata_provider.html">MetadataProvider</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="classgd_1_1_metadata_provider.html">MetadataProvider</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> badBehaviorInfo;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> badObjectInfo;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> badInstructionMetadata;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> badExpressionMetadata;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> badStrExpressionMetadata;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">int</span> useless; <span class="comment">//Useless member to avoid emscripten &quot;must have a positive integer typeid pointer&quot; runtime error.</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif // METADATAPROVIDER_H</span></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_behavior_metadata_html"><div class="ttname"><a href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a></div><div class="ttdoc">Contains user-friendly information about a behavior type. </div><div class="ttdef"><b>Definition:</b> BehaviorMetadata.h:32</div></div>
+<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:91</div></div>
 <div class="ttc" id="classgd_1_1_platform_html"><div class="ttname"><a href="classgd_1_1_platform.html">gd::Platform</a></div><div class="ttdoc">Base class for implementing a platform. </div><div class="ttdef"><b>Definition:</b> Platform.h:40</div></div>
 <div class="ttc" id="classgd_1_1_expression_metadata_html"><div class="ttname"><a href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about expressions and members needed to setup an expression. </div><div class="ttdef"><b>Definition:</b> ExpressionMetadata.h:97</div></div>
-<div class="ttc" id="classgd_1_1_object_metadata_html"><div class="ttname"><a href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a></div><div class="ttdoc">Contains user-friendly information about an object type, and a function to create a new gd::Object of...</div><div class="ttdef"><b>Definition:</b> ObjectMetadata.h:31</div></div>
-<div class="ttc" id="classgd_1_1_metadata_provider_html"><div class="ttname"><a href="classgd_1_1_metadata_provider.html">gd::MetadataProvider</a></div><div class="ttdoc">Deliver metadata for instructions ( i.e. Actions and conditions ) </div><div class="ttdef"><b>Definition:</b> MetadataProvider.h:24</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_object_metadata_html"><div class="ttname"><a href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a></div><div class="ttdoc">Contains user-friendly information about an object type, and a function to create a new gd::Object of...</div><div class="ttdef"><b>Definition:</b> ObjectMetadata.h:32</div></div>
+<div class="ttc" id="classgd_1_1_metadata_provider_html"><div class="ttname"><a href="classgd_1_1_metadata_provider.html">gd::MetadataProvider</a></div><div class="ttdoc">Allow to easily get metadata for instructions (i.e actions and conditions), objects and behaviors...</div><div class="ttdef"><b>Definition:</b> MetadataProvider.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

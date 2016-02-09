@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
@@ -135,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_main_frame_wrapper.html">MainFrameWrapper</a>() {};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#a23759ab1661d04fa716de00b6cbf20b7">   55</a></span>&#160;    wxRibbonBar * <a class="code" href="classgd_1_1_main_frame_wrapper.html#a23759ab1661d04fa716de00b6cbf20b7">GetRibbon</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> ribbon; };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> SetRibbonPage(wxString pageName);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#a929a78e7a72ba7b2320305aea86619d6">   60</a></span>&#160;    wxRibbonButtonBar * <a class="code" href="classgd_1_1_main_frame_wrapper.html#a929a78e7a72ba7b2320305aea86619d6">GetRibbonSceneEditorButtonBar</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> ribbonSceneEditorButtonBar; };</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
@@ -152,53 +153,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#ad4a263a3575ee6003aa642d93494d2aa">   88</a></span>&#160;    wxInfoBar * <a class="code" href="classgd_1_1_main_frame_wrapper.html#ad4a263a3575ee6003aa642d93494d2aa">GetInfoBar</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> infoBar; };</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#aded6a8dc63cdc1cfe816105e20aec3fd">   93</a></span>&#160;    wxAuiNotebook * <a class="code" href="classgd_1_1_main_frame_wrapper.html#aded6a8dc63cdc1cfe816105e20aec3fd">GetEditorsNotebook</a>() { <span class="keywordflow">return</span> editorsNotebook; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">   93</a></span>&#160;    wxString <a class="code" href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">GetIDEWorkingDirectory</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> workingDirectory; }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">   98</a></span>&#160;    wxString <a class="code" href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">GetIDEWorkingDirectory</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> workingDirectory; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> DisableControlsForScenePreviewing();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> DisableControlsForScenePreviewing();</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321">  103</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321">EnableControlsAfterScenePreviewing</a>() { <span class="keywordflow">for</span> (std::size_t i = 0;i&lt;disableOnPreview.size();++i) disableOnPreview[i]-&gt;Enable(); };</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321">  108</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321">EnableControlsAfterScenePreviewing</a>() { <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i&lt;disableOnPreview.size();++i) disableOnPreview[i]-&gt;Enable(); };</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#a8b56443e9b90d110aa07346e94b839c6">  108</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_main_frame_wrapper.html#a8b56443e9b90d110aa07346e94b839c6">AddControlToBeDisabledOnPreview</a>(wxWindow * control) { <span class="keywordflow">if</span> ( find(disableOnPreview.begin(), disableOnPreview.end(), control) == disableOnPreview.end() ) disableOnPreview.push_back(control); }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classgd_1_1_main_frame_wrapper.html#a8b56443e9b90d110aa07346e94b839c6">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_main_frame_wrapper.html#a8b56443e9b90d110aa07346e94b839c6">AddControlToBeDisabledOnPreview</a>(wxWindow * control) { <span class="keywordflow">if</span> ( find(disableOnPreview.begin(), disableOnPreview.end(), control) == disableOnPreview.end() ) disableOnPreview.push_back(control); }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> RemoveControlToBeDisabledOnPreview(wxWindow * control);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> RemoveControlToBeDisabledOnPreview(wxWindow * control);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    wxRibbonBar * ribbon;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    wxRibbonButtonBar * ribbonSceneEditorButtonBar;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    wxTopLevelWindow * mainEditor;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    wxAuiManager * paneManager;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    wxAuiNotebook * editorsNotebook;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    wxInfoBar * infoBar;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    std::vector&lt;wxWindow*&gt; * scenesLockingShortcuts; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::vector&lt;wxWindow*&gt; disableOnPreview; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    wxString workingDirectory; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif // MAINFRAMEWRAPPER_H</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    wxRibbonBar * ribbon;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    wxRibbonButtonBar * ribbonSceneEditorButtonBar;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    wxTopLevelWindow * mainEditor;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    wxAuiManager * paneManager;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    wxAuiNotebook * editorsNotebook;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    wxInfoBar * infoBar;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::vector&lt;wxWindow*&gt; * scenesLockingShortcuts; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::vector&lt;wxWindow*&gt; disableOnPreview; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    wxString workingDirectory; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif // MAINFRAMEWRAPPER_H</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_ac75b650d1ecdd902a371382fb1fd1ae2"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#ac75b650d1ecdd902a371382fb1fd1ae2">gd::MainFrameWrapper::LockShortcuts</a></div><div class="ttdeci">void LockShortcuts(wxWindow *window)</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:75</div></div>
-<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a51383e14c07efbd92ed0dcde325b5d92"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">gd::MainFrameWrapper::GetIDEWorkingDirectory</a></div><div class="ttdeci">wxString GetIDEWorkingDirectory() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:98</div></div>
+<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a51383e14c07efbd92ed0dcde325b5d92"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">gd::MainFrameWrapper::GetIDEWorkingDirectory</a></div><div class="ttdeci">wxString GetIDEWorkingDirectory() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:93</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a559097924ab5dbb7077b7ff5f47e5921"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a559097924ab5dbb7077b7ff5f47e5921">gd::MainFrameWrapper::MainFrameWrapper</a></div><div class="ttdeci">MainFrameWrapper(wxRibbonBar *ribbon_, wxRibbonButtonBar *ribbonSceneEditorButtonBar_, wxTopLevelWindow *mainEditor_, wxAuiManager *paneManager_, wxAuiNotebook *editorsNotebook_, wxInfoBar *infoBar_, std::vector&lt; wxWindow * &gt; *scenesLockingShortcuts_, const wxString &amp;workingDirectory_)</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:31</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a7686dfff124067589b3089712f3f9f77"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a7686dfff124067589b3089712f3f9f77">gd::MainFrameWrapper::GetMainEditor</a></div><div class="ttdeci">wxTopLevelWindow * GetMainEditor() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:70</div></div>
-<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a8b56443e9b90d110aa07346e94b839c6"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a8b56443e9b90d110aa07346e94b839c6">gd::MainFrameWrapper::AddControlToBeDisabledOnPreview</a></div><div class="ttdeci">void AddControlToBeDisabledOnPreview(wxWindow *control)</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:113</div></div>
+<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a8b56443e9b90d110aa07346e94b839c6"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a8b56443e9b90d110aa07346e94b839c6">gd::MainFrameWrapper::AddControlToBeDisabledOnPreview</a></div><div class="ttdeci">void AddControlToBeDisabledOnPreview(wxWindow *control)</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:108</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_ac20256760173af9599ca326c1665138a"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#ac20256760173af9599ca326c1665138a">gd::MainFrameWrapper::UnLockShortcuts</a></div><div class="ttdeci">void UnLockShortcuts(wxWindow *window)</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:80</div></div>
-<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_aded6a8dc63cdc1cfe816105e20aec3fd"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#aded6a8dc63cdc1cfe816105e20aec3fd">gd::MainFrameWrapper::GetEditorsNotebook</a></div><div class="ttdeci">wxAuiNotebook * GetEditorsNotebook()</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:93</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html">gd::MainFrameWrapper</a></div><div class="ttdoc">Provides access to some specific features or members of the IDE. </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:25</div></div>
-<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a23759ab1661d04fa716de00b6cbf20b7"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a23759ab1661d04fa716de00b6cbf20b7">gd::MainFrameWrapper::GetRibbon</a></div><div class="ttdeci">wxRibbonBar * GetRibbon() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:55</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_a929a78e7a72ba7b2320305aea86619d6"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#a929a78e7a72ba7b2320305aea86619d6">gd::MainFrameWrapper::GetRibbonSceneEditorButtonBar</a></div><div class="ttdeci">wxRibbonButtonBar * GetRibbonSceneEditorButtonBar() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:60</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_ac7cecd9d433e2c860f89651ccee82ef8"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#ac7cecd9d433e2c860f89651ccee82ef8">gd::MainFrameWrapper::GetPaneManager</a></div><div class="ttdeci">wxAuiManager &amp; GetPaneManager() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:65</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html_ad4a263a3575ee6003aa642d93494d2aa"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#ad4a263a3575ee6003aa642d93494d2aa">gd::MainFrameWrapper::GetInfoBar</a></div><div class="ttdeci">wxInfoBar * GetInfoBar() const </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:88</div></div>
-<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_add47ab6aded2f7143652d29459ee0321"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321">gd::MainFrameWrapper::EnableControlsAfterScenePreviewing</a></div><div class="ttdeci">void EnableControlsAfterScenePreviewing()</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:108</div></div>
+<div class="ttc" id="classgd_1_1_main_frame_wrapper_html_add47ab6aded2f7143652d29459ee0321"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html#add47ab6aded2f7143652d29459ee0321">gd::MainFrameWrapper::EnableControlsAfterScenePreviewing</a></div><div class="ttdeci">void EnableControlsAfterScenePreviewing()</div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:103</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -105,8 +105,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a559097924ab5dbb7077b7ff5f47e5921"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#a559097924ab5dbb7077b7ff5f47e5921">MainFrameWrapper</a> (wxRibbonBar *ribbon_, wxRibbonButtonBar *ribbonSceneEditorButtonBar_, wxTopLevelWindow *mainEditor_, wxAuiManager *paneManager_, wxAuiNotebook *editorsNotebook_, wxInfoBar *infoBar_, std::vector&lt; wxWindow * &gt; *scenesLockingShortcuts_, const wxString &amp;workingDirectory_)</td></tr>
 <tr class="separator:a559097924ab5dbb7077b7ff5f47e5921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23759ab1661d04fa716de00b6cbf20b7"><td class="memItemLeft" align="right" valign="top">wxRibbonBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#a23759ab1661d04fa716de00b6cbf20b7">GetRibbon</a> () const </td></tr>
-<tr class="separator:a23759ab1661d04fa716de00b6cbf20b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976c8c44c256a5889bdcebe2e334d942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#a976c8c44c256a5889bdcebe2e334d942">SetRibbonPage</a> (wxString pageName)</td></tr>
+<tr class="separator:a976c8c44c256a5889bdcebe2e334d942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929a78e7a72ba7b2320305aea86619d6"><td class="memItemLeft" align="right" valign="top">wxRibbonButtonBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#a929a78e7a72ba7b2320305aea86619d6">GetRibbonSceneEditorButtonBar</a> () const </td></tr>
 <tr class="separator:a929a78e7a72ba7b2320305aea86619d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7cecd9d433e2c860f89651ccee82ef8"><td class="memItemLeft" align="right" valign="top">wxAuiManager &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#ac7cecd9d433e2c860f89651ccee82ef8">GetPaneManager</a> () const </td></tr>
@@ -119,8 +119,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac20256760173af9599ca326c1665138a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a263a3575ee6003aa642d93494d2aa"><td class="memItemLeft" align="right" valign="top">wxInfoBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#ad4a263a3575ee6003aa642d93494d2aa">GetInfoBar</a> () const </td></tr>
 <tr class="separator:ad4a263a3575ee6003aa642d93494d2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded6a8dc63cdc1cfe816105e20aec3fd"><td class="memItemLeft" align="right" valign="top">wxAuiNotebook *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#aded6a8dc63cdc1cfe816105e20aec3fd">GetEditorsNotebook</a> ()</td></tr>
-<tr class="separator:aded6a8dc63cdc1cfe816105e20aec3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51383e14c07efbd92ed0dcde325b5d92"><td class="memItemLeft" align="right" valign="top">wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#a51383e14c07efbd92ed0dcde325b5d92">GetIDEWorkingDirectory</a> () const </td></tr>
 <tr class="separator:a51383e14c07efbd92ed0dcde325b5d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68dced529ef83491987ee3710bf46959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_main_frame_wrapper.html#a68dced529ef83491987ee3710bf46959">DisableControlsForScenePreviewing</a> ()</td></tr>
@@ -272,30 +270,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aded6a8dc63cdc1cfe816105e20aec3fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wxAuiNotebook* gd::MainFrameWrapper::GetEditorsNotebook </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return a pointer to the notebook holding editors </p>
-
-</div>
-</div>
 <a class="anchor" id="a51383e14c07efbd92ed0dcde325b5d92"></a>
 <div class="memitem">
 <div class="memproto">
@@ -392,30 +366,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a23759ab1661d04fa716de00b6cbf20b7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">wxRibbonBar* gd::MainFrameWrapper::GetRibbon </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return the pointer to the ribbon of the IDE. </p>
-
-</div>
-</div>
 <a class="anchor" id="a929a78e7a72ba7b2320305aea86619d6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -482,6 +432,23 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a976c8c44c256a5889bdcebe2e334d942"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::MainFrameWrapper::SetRibbonPage </td>
+          <td>(</td>
+          <td class="paramtype">wxString&#160;</td>
+          <td class="paramname"><em>pageName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change the current page of the ribbon. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac20256760173af9599ca326c1665138a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +481,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

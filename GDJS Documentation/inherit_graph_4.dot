@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gdjs::HttpServer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d19/classgdjs_1_1_http_server.html",tooltip="A very simple web server. "];
+  Node1 [label="dir_scan_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dae/structdir__scan__data.html"];
 }

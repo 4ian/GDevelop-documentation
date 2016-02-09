@@ -1,0 +1,14 @@
+digraph "Extensions" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_abd3e9346511fbf501c65c6da6d93dcd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GDCore" fontname="Helvetica", fontsize="10", URL="dir_abd3e9346511fbf501c65c6da6d93dcd.html"]
+  subgraph clusterdir_4aeb9e7b053513ba8882cbc67130aab6 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_4aeb9e7b053513ba8882cbc67130aab6.html"];
+    dir_4aeb9e7b053513ba8882cbc67130aab6 [shape=plaintext label="Extensions"];
+    dir_9aa8ee2e901fdf21a3daf12a91d8273f [shape=box label="Builtin" color="red" fillcolor="white" style="filled" URL="dir_9aa8ee2e901fdf21a3daf12a91d8273f.html"];
+    dir_8e09389479d3b4f15790ccb594568191 [shape=box label="Metadata" color="black" fillcolor="white" style="filled" URL="dir_8e09389479d3b4f15790ccb594568191.html"];
+  }
+  }
+}

@@ -93,13 +93,13 @@ RuntimeScene</h2>
 <p>When a game is played, a <a class="el" href="../../d7/d7f/class_runtime_scene.html" title="Represents a scene being played. ">RuntimeScene</a> is used to represent a scene. A <a class="el" href="../../d7/d7f/class_runtime_scene.html" title="Represents a scene being played. ">RuntimeScene</a> contains the objects instances or functions for rendering the scene in a window.</p>
 <h2><a class="anchor" id="runtimeObject"></a>
 RuntimeObject</h2>
-<p>The <a class="el" href="../../d0/d3b/class_runtime_object.html" title="A RuntimeObject is something displayed on the scene. ">RuntimeObject</a> is used as a base class for all objects. It defines some common properties like position, angle, size or visibility of an object.</p>
+<p><a class="el" href="../../d0/d3b/class_runtime_object.html" title="A RuntimeObject is something displayed on the scene. ">RuntimeObject</a> is used as a base class for all objects. It defines some common properties like position, angle, size or visibility of an object.</p>
 <h1><a class="anchor" id="storageAndIdeClasses"></a>
 Some important classes used by the IDE or for storage</h1>
 <p>The C++ platform also make uses of some classes provide by GDevelop Core: These classes are in the namespace <em>gd</em>.<br />
  <br />
  It is important to make the distinction between the classes used by the IDE or for storage only and the classes used by the game engine.<br />
- When a game is being played, it is first loaded using the classes listed below. Then, in a second part, the game engine classes are initialized, most of the time using their <em>edittime</em> class counterpart (For example, a <a class="el" href="../../d7/d7f/class_runtime_scene.html" title="Represents a scene being played. ">RuntimeScene</a> can be loaded from a gd::Layout: See below).<br />
+ When a game is being played, it is first loaded using the classes listed below. Then, in a second part, the game engine classes are initialized, most of the time using their <em>edittime</em> class counterpart (For example, a <a class="el" href="../../d7/d7f/class_runtime_scene.html" title="Represents a scene being played. ">RuntimeScene</a> is loaded from a gd::Layout: see below).<br />
  <br />
  <em>Edittime</em> is often used to refer to a class being used for storage or by the IDE, while <em>Runtime</em> is used to refer to the class belonging to the game engine.</p>
 <h2><a class="anchor" id="game"></a>
@@ -114,24 +114,28 @@ gd::Layout</h2>
 gd::Object</h2>
 <p>Objects are represented by the gd::Object class. Again, this class is used only for the storage or by the IDE: When a game is played, <a class="el" href="../../d0/d3b/class_runtime_object.html" title="A RuntimeObject is something displayed on the scene. ">RuntimeObject</a> is used.<br />
 </p>
-<h2><a class="anchor" id="automatism"></a>
-gd::Automatism</h2>
-<p>Each automatism is an instance of a class that derive from gd::Automatism. Automatisms are linked to an object (thus, automatisms can access to their object by using their member <code>object</code>) and they are also managed by this object.<br />
- gd::Automatism is the only exception to the rule explained below: Whereas the classes described in this section are used only for storage, this class is used both for storage and by the game engine.</p>
+<h2><a class="anchor" id="behavior"></a>
+gd::Behavior</h2>
+<p>Each behavior is an instance of a class that derive from gd::Behavior. Behaviors are linked to an object (thus, behaviors can access to their object by using their member <code>object</code>) and they are also managed by this object.<br />
+ gd::Behavior is the only exception to the rule explained below: Whereas the classes described in this section are used only for storage, this class is used both for storage and by the game engine.</p>
 <h2><a class="anchor" id="event"></a>
 gd::BaseEvent</h2>
 <p>BaseEvent is the base class for all events.<br />
  Each event type is represented by a class, which define how the event is rendered (BaseEvent::Render), how the code is generated (BaseEvent::GenerateEventCode), and various properties (BaseEvent::CanHaveSubEvents for example)...<br />
  As the other classes list in this section, this class is only at <em>edittime</em> used by the IDE.</p>
-<p>The classes described in this section are not documented here: Please refer to the documentation of <b>GDevelop Core</b> if you need help using them.</p>
+<p>The classes described in this section are not documented here: please refer to the documentation of <b>GDevelop Core</b> if you need help using them.</p>
 <h1><a class="anchor" id="aboutShared_ptr"></a>
 About shared pointers</h1>
 <p>GDevelop use shared pointers (<code>std::shared_ptr</code>), for managing lots of objects like scenes or objects.</p>
-<p>Shared pointers are used like raw pointers (*myPointer to dereference the pointer and get the object, myPointer-&gt;myMember to access to a function/member of the object...). They don't need to be deleted manually: The pointed object is deleted when no more shared pointers are pointing to the object. For instance, scenes don't have to manually delete the objects they own in their destructors. </p>
+<p>Shared pointers are used like raw pointers (<code>*myPointer</code> to dereference the pointer and get the object, <code>myPointer-&gt;myMember</code> to access to a function/member of the object...). They don't need to be deleted manually: The pointed object is deleted when no more shared pointers are pointing to the object. For instance, scenes don't have to manually delete the objects they own in their destructors.</p>
+<h1><a class="anchor" id="utf8section"></a>
+UTF8 strings</h1>
+<p>GDevelop uses UTF8 encoded gd::String as string parameters passed to actions/conditions and expressions and as return value for string expressions. This class is a wrapper around std::string and is UTF8-aware.</p>
+<p>For more information, see <a href="../../../GDCore Documentation/classgd_1_1_string.html">gd::String</a> reference in the <a href="../../../GDCore Documentation/index.html">GDCore documentation</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

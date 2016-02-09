@@ -111,55 +111,58 @@ Inheritance diagram for gd::NativeFileSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ce9b15b6931173accc5b15dc1a0616e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a4ce9b15b6931173accc5b15dc1a0616e">MkDir</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:a4ce9b15b6931173accc5b15dc1a0616e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the specified directory.  <a href="#a4ce9b15b6931173accc5b15dc1a0616e">More...</a><br /></td></tr>
-<tr class="separator:a4ce9b15b6931173accc5b15dc1a0616e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaddd8d55a11e72c72584e93760fe4d13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaddd8d55a11e72c72584e93760fe4d13"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#aaddd8d55a11e72c72584e93760fe4d13">DirExists</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:aaddd8d55a11e72c72584e93760fe4d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified directory exists. <br /></td></tr>
-<tr class="separator:aaddd8d55a11e72c72584e93760fe4d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae596f5acb493cf72d22e759f620e3adc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae596f5acb493cf72d22e759f620e3adc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#ae596f5acb493cf72d22e759f620e3adc">FileExists</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:ae596f5acb493cf72d22e759f620e3adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified file exists. <br /></td></tr>
-<tr class="separator:ae596f5acb493cf72d22e759f620e3adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa12e01163e678ce67456f8f4442192aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa12e01163e678ce67456f8f4442192aa"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#aa12e01163e678ce67456f8f4442192aa">FileNameFrom</a> (const std::string &amp;file)</td></tr>
-<tr class="memdesc:aa12e01163e678ce67456f8f4442192aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the name of the file (with its extension) from a path. <br /></td></tr>
-<tr class="separator:aa12e01163e678ce67456f8f4442192aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af032dbd8fb7bf2a815c01285ac00190e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af032dbd8fb7bf2a815c01285ac00190e"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#af032dbd8fb7bf2a815c01285ac00190e">DirNameFrom</a> (const std::string &amp;file)</td></tr>
-<tr class="memdesc:af032dbd8fb7bf2a815c01285ac00190e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the path without the filename. <br /></td></tr>
-<tr class="separator:af032dbd8fb7bf2a815c01285ac00190e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff839d14aa6223db52e7d91a9ab44e8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#abff839d14aa6223db52e7d91a9ab44e8">MakeAbsolute</a> (std::string &amp;filename, const std::string &amp;baseDirectory)</td></tr>
-<tr class="memdesc:abff839d14aa6223db52e7d91a9ab44e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the filename so that it is absolute, using the base directory passed as parameter.  <a href="#abff839d14aa6223db52e7d91a9ab44e8">More...</a><br /></td></tr>
-<tr class="separator:abff839d14aa6223db52e7d91a9ab44e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2765e9dc96b942be82e6e0c0f4ade87d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a2765e9dc96b942be82e6e0c0f4ade87d">MakeRelative</a> (std::string &amp;filename, const std::string &amp;baseDirectory)</td></tr>
-<tr class="memdesc:a2765e9dc96b942be82e6e0c0f4ade87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the filename so that it is relative to the base directory passed as parameter.  <a href="#a2765e9dc96b942be82e6e0c0f4ade87d">More...</a><br /></td></tr>
-<tr class="separator:a2765e9dc96b942be82e6e0c0f4ade87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf87b72c3c7317ef790ff0b7e1b741a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecf87b72c3c7317ef790ff0b7e1b741a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#aecf87b72c3c7317ef790ff0b7e1b741a">IsAbsolute</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:aecf87b72c3c7317ef790ff0b7e1b741a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the filename is absolute. <br /></td></tr>
-<tr class="separator:aecf87b72c3c7317ef790ff0b7e1b741a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42706197655c5bdc1e9bf828aa86a4f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42706197655c5bdc1e9bf828aa86a4f6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyFile</b> (const std::string &amp;file, const std::string &amp;destination)</td></tr>
-<tr class="separator:a42706197655c5bdc1e9bf828aa86a4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f28379343c7238277000dc8fc41b50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51f28379343c7238277000dc8fc41b50"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a51f28379343c7238277000dc8fc41b50">ClearDir</a> (const std::string &amp;directory)</td></tr>
-<tr class="memdesc:a51f28379343c7238277000dc8fc41b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the directory given as parameter, removing all the files. <br /></td></tr>
-<tr class="separator:a51f28379343c7238277000dc8fc41b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ada7034522fbe034451d185030f04a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ada7034522fbe034451d185030f04a8"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>WriteToFile</b> (const std::string &amp;file, const std::string &amp;content)</td></tr>
-<tr class="separator:a1ada7034522fbe034451d185030f04a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0a966a0477989a74eb11bb9d3a192d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd0a966a0477989a74eb11bb9d3a192d"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (const std::string &amp;file)</td></tr>
-<tr class="separator:abd0a966a0477989a74eb11bb9d3a192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe98bce323aeb9d5ecae6d4c430f8e68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe98bce323aeb9d5ecae6d4c430f8e68"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#afe98bce323aeb9d5ecae6d4c430f8e68">GetTempDir</a> ()</td></tr>
-<tr class="memdesc:afe98bce323aeb9d5ecae6d4c430f8e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a directory suitable for temporary files. <br /></td></tr>
-<tr class="separator:afe98bce323aeb9d5ecae6d4c430f8e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073baac1d2c49a50fab71bc14390c5a5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a073baac1d2c49a50fab71bc14390c5a5">ReadDir</a> (const std::string &amp;path, const std::string &amp;extension=&quot;&quot;)</td></tr>
-<tr class="memdesc:a073baac1d2c49a50fab71bc14390c5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector containing the files in the specified path.  <a href="#a073baac1d2c49a50fab71bc14390c5a5">More...</a><br /></td></tr>
-<tr class="separator:a073baac1d2c49a50fab71bc14390c5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d63c1cb35f6795cc6731319ca8bd20f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a2d63c1cb35f6795cc6731319ca8bd20f">MkDir</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;path)</td></tr>
+<tr class="memdesc:a2d63c1cb35f6795cc6731319ca8bd20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the specified directory.  <a href="#a2d63c1cb35f6795cc6731319ca8bd20f">More...</a><br /></td></tr>
+<tr class="separator:a2d63c1cb35f6795cc6731319ca8bd20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a7d8d494576b435afafaf8a9645d0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42a7d8d494576b435afafaf8a9645d0f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a42a7d8d494576b435afafaf8a9645d0f">DirExists</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;path)</td></tr>
+<tr class="memdesc:a42a7d8d494576b435afafaf8a9645d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified directory exists. <br /></td></tr>
+<tr class="separator:a42a7d8d494576b435afafaf8a9645d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c4bba1dc28b5fe6d51ca1620a7f7ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64c4bba1dc28b5fe6d51ca1620a7f7ad"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a64c4bba1dc28b5fe6d51ca1620a7f7ad">FileExists</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;path)</td></tr>
+<tr class="memdesc:a64c4bba1dc28b5fe6d51ca1620a7f7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified file exists. <br /></td></tr>
+<tr class="separator:a64c4bba1dc28b5fe6d51ca1620a7f7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed56994eb2079a0bcea7e8365eddcc95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed56994eb2079a0bcea7e8365eddcc95"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#aed56994eb2079a0bcea7e8365eddcc95">FileNameFrom</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;file)</td></tr>
+<tr class="memdesc:aed56994eb2079a0bcea7e8365eddcc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the name of the file (with its extension) from a path. <br /></td></tr>
+<tr class="separator:aed56994eb2079a0bcea7e8365eddcc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76e7456cbfbf3c7960871276810eeab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa76e7456cbfbf3c7960871276810eeab"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#aa76e7456cbfbf3c7960871276810eeab">DirNameFrom</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;file)</td></tr>
+<tr class="memdesc:aa76e7456cbfbf3c7960871276810eeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the path without the filename. <br /></td></tr>
+<tr class="separator:aa76e7456cbfbf3c7960871276810eeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b154c2136f66978804bae1492b587d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a96b154c2136f66978804bae1492b587d">MakeAbsolute</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;filename, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;baseDirectory)</td></tr>
+<tr class="memdesc:a96b154c2136f66978804bae1492b587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the filename so that it is absolute, using the base directory passed as parameter.  <a href="#a96b154c2136f66978804bae1492b587d">More...</a><br /></td></tr>
+<tr class="separator:a96b154c2136f66978804bae1492b587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd3026834582e1468b3b27e465e73eb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a4cd3026834582e1468b3b27e465e73eb">MakeRelative</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;filename, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;baseDirectory)</td></tr>
+<tr class="memdesc:a4cd3026834582e1468b3b27e465e73eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the filename so that it is relative to the base directory passed as parameter.  <a href="#a4cd3026834582e1468b3b27e465e73eb">More...</a><br /></td></tr>
+<tr class="separator:a4cd3026834582e1468b3b27e465e73eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae73ab0b40bc3f3a7c39522fafa2d370"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae73ab0b40bc3f3a7c39522fafa2d370"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#aae73ab0b40bc3f3a7c39522fafa2d370">IsAbsolute</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;filename)</td></tr>
+<tr class="memdesc:aae73ab0b40bc3f3a7c39522fafa2d370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the filename is absolute. <br /></td></tr>
+<tr class="separator:aae73ab0b40bc3f3a7c39522fafa2d370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd25d39b8cd9a06001e0b7322557c81"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#acbd25d39b8cd9a06001e0b7322557c81">CopyFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;file, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;destination)</td></tr>
+<tr class="memdesc:acbd25d39b8cd9a06001e0b7322557c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a file.  <a href="#acbd25d39b8cd9a06001e0b7322557c81">More...</a><br /></td></tr>
+<tr class="separator:acbd25d39b8cd9a06001e0b7322557c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c2c6a401d48ffc918437993158cd41"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a14c2c6a401d48ffc918437993158cd41">CopyDir</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;source, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;destination)</td></tr>
+<tr class="memdesc:a14c2c6a401d48ffc918437993158cd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a whole directory.  <a href="#a14c2c6a401d48ffc918437993158cd41">More...</a><br /></td></tr>
+<tr class="separator:a14c2c6a401d48ffc918437993158cd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baa49886b5a24dd97f047c44429d287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4baa49886b5a24dd97f047c44429d287"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a4baa49886b5a24dd97f047c44429d287">ClearDir</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;directory)</td></tr>
+<tr class="memdesc:a4baa49886b5a24dd97f047c44429d287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the directory given as parameter, removing all the files. <br /></td></tr>
+<tr class="separator:a4baa49886b5a24dd97f047c44429d287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7792333c108800d18032f322ab388a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a4c7792333c108800d18032f322ab388a">WriteToFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;file, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;content)</td></tr>
+<tr class="memdesc:a4c7792333c108800d18032f322ab388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the content of a string to a file.  <a href="#a4c7792333c108800d18032f322ab388a">More...</a><br /></td></tr>
+<tr class="separator:a4c7792333c108800d18032f322ab388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c526f7cba255322676859d418017b36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#a8c526f7cba255322676859d418017b36">ReadFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;file)</td></tr>
+<tr class="memdesc:a8c526f7cba255322676859d418017b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the content of a file.  <a href="#a8c526f7cba255322676859d418017b36">More...</a><br /></td></tr>
+<tr class="separator:a8c526f7cba255322676859d418017b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0edf0b40ec3ec2bfdc594f5cf637e31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0edf0b40ec3ec2bfdc594f5cf637e31"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#ad0edf0b40ec3ec2bfdc594f5cf637e31">GetTempDir</a> ()</td></tr>
+<tr class="memdesc:ad0edf0b40ec3ec2bfdc594f5cf637e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a directory suitable for temporary files. <br /></td></tr>
+<tr class="separator:ad0edf0b40ec3ec2bfdc594f5cf637e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53c7a382f2198a7bd63387d2e9a1c52"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_native_file_system.html#ac53c7a382f2198a7bd63387d2e9a1c52">ReadDir</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;path, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extension=&quot;&quot;)</td></tr>
+<tr class="memdesc:ac53c7a382f2198a7bd63387d2e9a1c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector containing the files in the specified path.  <a href="#ac53c7a382f2198a7bd63387d2e9a1c52">More...</a><br /></td></tr>
+<tr class="separator:ac53c7a382f2198a7bd63387d2e9a1c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -171,13 +174,91 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 <tr class="memdesc:a09a39e7e7322d3c919f58dee19837584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the singleton.  <a href="#a09a39e7e7322d3c919f58dee19837584">More...</a><br /></td></tr>
 <tr class="separator:a09a39e7e7322d3c919f58dee19837584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classgd_1_1_abstract_file_system"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgd_1_1_abstract_file_system')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgd_1_1_abstract_file_system.html">gd::AbstractFileSystem</a></td></tr>
-<tr class="memitem:a6f10abbaabaad25704da483ff0937ffb inherit pub_static_methods_classgd_1_1_abstract_file_system"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_abstract_file_system.html#a6f10abbaabaad25704da483ff0937ffb">NormalizeSeparator</a> (std::string filename)</td></tr>
-<tr class="memdesc:a6f10abbaabaad25704da483ff0937ffb inherit pub_static_methods_classgd_1_1_abstract_file_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that only slash are used as a path separator: all backslashs are converted to forward slashs.  <a href="#a6f10abbaabaad25704da483ff0937ffb">More...</a><br /></td></tr>
-<tr class="separator:a6f10abbaabaad25704da483ff0937ffb inherit pub_static_methods_classgd_1_1_abstract_file_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87424272a61c3ad3e1a6212c248fd2df inherit pub_static_methods_classgd_1_1_abstract_file_system"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_abstract_file_system.html#a87424272a61c3ad3e1a6212c248fd2df">NormalizeSeparator</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> filename)</td></tr>
+<tr class="memdesc:a87424272a61c3ad3e1a6212c248fd2df inherit pub_static_methods_classgd_1_1_abstract_file_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that only slash are used as a path separator: all backslashs are converted to forward slashs.  <a href="#a87424272a61c3ad3e1a6212c248fd2df">More...</a><br /></td></tr>
+<tr class="separator:a87424272a61c3ad3e1a6212c248fd2df inherit pub_static_methods_classgd_1_1_abstract_file_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a class="el" href="classgd_1_1_abstract_file_system.html" title="AbstractFileSystem is used to do classical file manipulation in a way that is agnostic of the platfor...">AbstractFileSystem</a> using wxWidgets to manipulate files as usual: Most calls are redirected to wxWidgets call. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a14c2c6a401d48ffc918437993158cd41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::NativeFileSystem::CopyDir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy a whole directory. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the operation succeeded. </dd></dl>
+
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#ac0ae749232a7232c4041b5ef2654b745">gd::AbstractFileSystem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbd25d39b8cd9a06001e0b7322557c81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::NativeFileSystem::CopyFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy a file. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the operation succeeded. </dd></dl>
+
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#aea9054a2a73f97bf3b533d7c0f6cf12b">gd::AbstractFileSystem</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a09a39e7e7322d3c919f58dee19837584"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +285,7 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 
 </div>
 </div>
-<a class="anchor" id="abff839d14aa6223db52e7d91a9ab44e8"></a>
+<a class="anchor" id="a96b154c2136f66978804bae1492b587d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -214,13 +295,13 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
         <tr>
           <td class="memname">bool gd::NativeFileSystem::MakeAbsolute </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>baseDirectory</em>&#160;</td>
         </tr>
         <tr>
@@ -239,11 +320,11 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 <p>Change the filename so that it is absolute, using the base directory passed as parameter. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the operation succeeded. </dd></dl>
 
-<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a64085ea851e2c9fbb0eb321035d4a1dd">gd::AbstractFileSystem</a>.</p>
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a2bad621100bc066b06e8e85748f4253c">gd::AbstractFileSystem</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2765e9dc96b942be82e6e0c0f4ade87d"></a>
+<a class="anchor" id="a4cd3026834582e1468b3b27e465e73eb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -253,13 +334,13 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
         <tr>
           <td class="memname">bool gd::NativeFileSystem::MakeRelative </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>baseDirectory</em>&#160;</td>
         </tr>
         <tr>
@@ -278,11 +359,11 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 <p>Change the filename so that it is relative to the base directory passed as parameter. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the operation succeeded. </dd></dl>
 
-<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#abe14722f2b16c8361af561889198f849">gd::AbstractFileSystem</a>.</p>
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a67c0bb25312dd5b7968f27e0896082cc">gd::AbstractFileSystem</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4ce9b15b6931173accc5b15dc1a0616e"></a>
+<a class="anchor" id="a2d63c1cb35f6795cc6731319ca8bd20f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -292,7 +373,7 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
         <tr>
           <td class="memname">void gd::NativeFileSystem::MkDir </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
@@ -312,11 +393,11 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a4a109a448df4972039e6cbf5a1ae4eb8">gd::AbstractFileSystem</a>.</p>
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#aded7ea22bce3dcf6b4b54cc52a4d8eb6">gd::AbstractFileSystem</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a073baac1d2c49a50fab71bc14390c5a5"></a>
+<a class="anchor" id="ac53c7a382f2198a7bd63387d2e9a1c52"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -324,15 +405,15 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; gd::NativeFileSystem::ReadDir </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; gd::NativeFileSystem::ReadDir </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>extension</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -358,7 +439,75 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector with all the matched files </dd></dl>
 
-<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a812961ed9e72f4039caa8301cf47648b">gd::AbstractFileSystem</a>.</p>
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a357cdb44a69000cc56b595e9575536da">gd::AbstractFileSystem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c526f7cba255322676859d418017b36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::NativeFileSystem::ReadFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the content of a file. </p>
+<dl class="section return"><dt>Returns</dt><dd>The content of the file. </dd></dl>
+
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#ac0291a1e95a428112d97d7eb34c362c7">gd::AbstractFileSystem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c7792333c108800d18032f322ab388a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::NativeFileSystem::WriteToFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the content of a string to a file. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the operation succeeded. </dd></dl>
+
+<p>Implements <a class="el" href="classgd_1_1_abstract_file_system.html#a6a785375d2cb6067731ef224920dffb2">gd::AbstractFileSystem</a>.</p>
 
 </div>
 </div>
@@ -369,7 +518,7 @@ static <a class="el" href="classgd_1_1_native_file_system.html">NativeFileSystem
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

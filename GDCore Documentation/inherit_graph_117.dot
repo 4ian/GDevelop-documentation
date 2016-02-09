@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="std::hash\< gd::EventItem \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstd_1_1hash_3_01gd_1_1_event_item_01_4.html"];
+  Node1 [label="gd::VariableParserCallbacks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_variable_parser_callbacks.html",tooltip="Callbacks called by VariableParser when parsing a variable expression. "];
 }

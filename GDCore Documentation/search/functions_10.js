@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['todouble',['ToDouble',['../group___common_programming_tools.html#ga2d8e5765050ad2a2a0f0cf26d31e53ba',1,'gd']]],
-  ['tofloat',['ToFloat',['../group___common_programming_tools.html#ga1157fcf9f7536cf4a149e321aa530ee3',1,'gd']]],
-  ['toint',['ToInt',['../group___common_programming_tools.html#gaa7bff48d9cc0226054933ce23e4852a6',1,'gd']]],
-  ['tostring',['ToString',['../group___common_programming_tools.html#ga0cbc9c07ed0a193bfe5488173ada228f',1,'gd::ToString(const wxString &amp;value)'],['../group___common_programming_tools.html#ga22bc3b49a365c71996939ee0185a069f',1,'gd::ToString(const T &amp;value)']]],
-  ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04eb4afed1ec53e3f9f46db9f044b340',1,'gd::InstructionSentenceFormatter']]],
-  ['triggerdrop',['TriggerDrop',['../class_resources_editor.html#a5bf57fe5ccf997212a85d2ef236291c9',1,'ResourcesEditor']]]
+  ['to',['To',['../classgd_1_1_string.html#a7e82c50e2c70129cac93f1b8e1ad2fa8',1,'gd::String']]],
+  ['tolocale',['ToLocale',['../classgd_1_1_string.html#a5326549a2e9986b88af55c9b76f1c2a5',1,'gd::String']]],
+  ['tosfstring',['ToSfString',['../classgd_1_1_string.html#a13d87a3a41cee940800f067417e1cbf2',1,'gd::String']]],
+  ['toutf32',['ToUTF32',['../classgd_1_1_string.html#a3052a07c562e87426cc413dafce7e604',1,'gd::String']]],
+  ['toutf8',['ToUTF8',['../classgd_1_1_string.html#af740b712d9ac5a6c71858c51c445d50b',1,'gd::String']]],
+  ['towide',['ToWide',['../classgd_1_1_string.html#ab857ed5dd673bf67cd21d3420483a5e2',1,'gd::String']]],
+  ['towxstring',['ToWxString',['../classgd_1_1_string.html#ac7f90d02bbbbed2e4afc9ee2d7889b62',1,'gd::String']]],
+  ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4',1,'gd::InstructionSentenceFormatter']]],
+  ['triggerdrop',['TriggerDrop',['../class_resources_editor.html#af186a3aeb3a8d2b0676d843595b756de',1,'ResourcesEditor']]]
 ];

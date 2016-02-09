@@ -115,9 +115,9 @@ Collaboration diagram for RuntimeSpriteObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08043751139e1a05d5aa7a4c39c298cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08043751139e1a05d5aa7a4c39c298cc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeSpriteObject</b> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, const gd::Object &amp;object)</td></tr>
-<tr class="separator:a08043751139e1a05d5aa7a4c39c298cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0405e6ad9b0d6fea1f547ab5b8f903a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0405e6ad9b0d6fea1f547ab5b8f903a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeSpriteObject</b> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, const gd::SpriteObject &amp;spriteObject)</td></tr>
+<tr class="separator:a0405e6ad9b0d6fea1f547ab5b8f903a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5137093e8beeacdfb94481ff293360f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a5137093e8beeacdfb94481ff293360f8">Clone</a> () const </td></tr>
 <tr class="memdesc:a5137093e8beeacdfb94481ff293360f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must return a pointer to a copy of the object. A such method is needed to do polymorphic copies.  <a href="#a5137093e8beeacdfb94481ff293360f8">More...</a><br /></td></tr>
 <tr class="separator:a5137093e8beeacdfb94481ff293360f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +127,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a79601b41465c524c00d35d76abd89fa4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a79601b41465c524c00d35d76abd89fa4">Draw</a> (sf::RenderTarget &amp;renderTarget)</td></tr>
 <tr class="memdesc:a79601b41465c524c00d35d76abd89fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the object.  <a href="#a79601b41465c524c00d35d76abd89fa4">More...</a><br /></td></tr>
 <tr class="separator:a79601b41465c524c00d35d76abd89fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991869a8c183a6df713f8045cd7ca075"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a991869a8c183a6df713f8045cd7ca075">GetPropertyForDebugger</a> (std::size_t propertyNb, gd::String &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a>, gd::String &amp;value) const </td></tr>
+<tr class="memdesc:a991869a8c183a6df713f8045cd7ca075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the debugger so as to get a property value and name.  <a href="#a991869a8c183a6df713f8045cd7ca075">More...</a><br /></td></tr>
+<tr class="separator:a991869a8c183a6df713f8045cd7ca075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb24da16a0f73593df0dbc566b941f30"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#abb24da16a0f73593df0dbc566b941f30">ChangeProperty</a> (std::size_t propertyNb, gd::String newValue)</td></tr>
+<tr class="memdesc:abb24da16a0f73593df0dbc566b941f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the debugger so as to update a property.  <a href="#abb24da16a0f73593df0dbc566b941f30">More...</a><br /></td></tr>
+<tr class="separator:abb24da16a0f73593df0dbc566b941f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae279b65fd78d899c5a4376f311a62f43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae279b65fd78d899c5a4376f311a62f43"></a>
+virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ae279b65fd78d899c5a4376f311a62f43">GetNumberOfProperties</a> () const </td></tr>
+<tr class="memdesc:ae279b65fd78d899c5a4376f311a62f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must return the number of available properties for the debugger. <br /></td></tr>
+<tr class="separator:ae279b65fd78d899c5a4376f311a62f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4ceb0c869a4ffd6682790c6dd33ad41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ac4ceb0c869a4ffd6682790c6dd33ad41">UpdateTime</a> (float timeElapsed)</td></tr>
 <tr class="memdesc:ac4ceb0c869a4ffd6682790c6dd33ad41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at each frame so as to update internal object's things using time (such as animation for a sprite).  <a href="#ac4ceb0c869a4ffd6682790c6dd33ad41">More...</a><br /></td></tr>
 <tr class="separator:ac4ceb0c869a4ffd6682790c6dd33ad41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,14 +183,14 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memitem:a65f51c605cd0ecb760fdc3c8a8ce52f5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a65f51c605cd0ecb760fdc3c8a8ce52f5">CursorOnObject</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, bool accurate)</td></tr>
 <tr class="memdesc:a65f51c605cd0ecb760fdc3c8a8ce52f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the cursor is on the object.  <a href="#a65f51c605cd0ecb760fdc3c8a8ce52f5">More...</a><br /></td></tr>
 <tr class="separator:a65f51c605cd0ecb760fdc3c8a8ce52f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a38fd32d1ae3000dca98d402230c17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55a38fd32d1ae3000dca98d402230c17"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a55a38fd32d1ae3000dca98d402230c17">GetPointX</a> (const std::string &amp;point) const </td></tr>
-<tr class="memdesc:a55a38fd32d1ae3000dca98d402230c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X position of a point of the current sprite, in "world" coordinates. <br /></td></tr>
-<tr class="separator:a55a38fd32d1ae3000dca98d402230c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17b1908f57bd8120f30a220e987bb6a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17b1908f57bd8120f30a220e987bb6a6"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a17b1908f57bd8120f30a220e987bb6a6">GetPointY</a> (const std::string &amp;point) const </td></tr>
-<tr class="memdesc:a17b1908f57bd8120f30a220e987bb6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y position of a point of the current sprite, in "world" coordinates. <br /></td></tr>
-<tr class="separator:a17b1908f57bd8120f30a220e987bb6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c1b1aead21df302526427971bc15f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25c1b1aead21df302526427971bc15f9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a25c1b1aead21df302526427971bc15f9">GetPointX</a> (const gd::String &amp;point) const </td></tr>
+<tr class="memdesc:a25c1b1aead21df302526427971bc15f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X position of a point of the current sprite, in "world" coordinates. <br /></td></tr>
+<tr class="separator:a25c1b1aead21df302526427971bc15f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184bdf5ed29ee38be8440c2104dc1212"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a184bdf5ed29ee38be8440c2104dc1212"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a184bdf5ed29ee38be8440c2104dc1212">GetPointY</a> (const gd::String &amp;point) const </td></tr>
+<tr class="memdesc:a184bdf5ed29ee38be8440c2104dc1212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y position of a point of the current sprite, in "world" coordinates. <br /></td></tr>
+<tr class="separator:a184bdf5ed29ee38be8440c2104dc1212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51a1331cb303af16df425f5bbafd0ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a51a1331cb303af16df425f5bbafd0ad0">UpdateCurrentSprite</a> () const </td></tr>
 <tr class="memdesc:a51a1331cb303af16df425f5bbafd0ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the SFML sprite according to position, angle and all parameters of the object.  <a href="#a51a1331cb303af16df425f5bbafd0ad0">More...</a><br /></td></tr>
 <tr class="separator:a51a1331cb303af16df425f5bbafd0ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,17 +205,17 @@ const gd::Sprite &amp;&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:a9832d96795f9f1130f8dbf6c420a9fbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9832d96795f9f1130f8dbf6c420a9fbc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDirection</b> (float nb)</td></tr>
 <tr class="separator:a9832d96795f9f1130f8dbf6c420a9fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f1dedd3cd1de73aa6eb395d7003fee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25f1dedd3cd1de73aa6eb395d7003fee"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentDirection</b> () const </td></tr>
-<tr class="separator:a25f1dedd3cd1de73aa6eb395d7003fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fa58085b1257693c49785c5dab0e64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34fa58085b1257693c49785c5dab0e64"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentDirection</b> () const </td></tr>
+<tr class="separator:a34fa58085b1257693c49785c5dab0e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb1a591bc1afbf7eef1fce5e52bfdc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bb1a591bc1afbf7eef1fce5e52bfdc4"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a3bb1a591bc1afbf7eef1fce5e52bfdc4">GetCurrentDirectionOrAngle</a> () const </td></tr>
 <tr class="memdesc:a3bb1a591bc1afbf7eef1fce5e52bfdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the angle or direction, according to the current direction type. <br /></td></tr>
 <tr class="separator:a3bb1a591bc1afbf7eef1fce5e52bfdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08abdf6f277e2537d28b15670390bc38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a08abdf6f277e2537d28b15670390bc38">TurnTowardObject</a> (<a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> *object, <a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene)</td></tr>
 <tr class="separator:a08abdf6f277e2537d28b15670390bc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35407ddb24b078dd95830a5d321f12a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a35407ddb24b078dd95830a5d321f12a9">ChangeScale</a> (const std::string &amp;operatorStr, double newValue)</td></tr>
-<tr class="separator:a35407ddb24b078dd95830a5d321f12a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a6c8dc2f2a2a16aa4abc32cdfe3959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a66a6c8dc2f2a2a16aa4abc32cdfe3959">ChangeScale</a> (const gd::String &amp;operatorStr, double newValue)</td></tr>
+<tr class="separator:a66a6c8dc2f2a2a16aa4abc32cdfe3959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Current animation</div></td></tr>
 <tr class="memitem:af5578ba288ba2105ec6fd376252eed89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5578ba288ba2105ec6fd376252eed89"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#af5578ba288ba2105ec6fd376252eed89">StopAnimation</a> ()</td></tr>
@@ -219,17 +229,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a9c05469fd9973856a2e355c53009b3e8">IsAnimationStopped</a> () const </td></tr>
 <tr class="memdesc:a9c05469fd9973856a2e355c53009b3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current animation is stopped. <br /></td></tr>
 <tr class="separator:a9c05469fd9973856a2e355c53009b3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3313b2c27cbf534fa58de46fdf3fcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe3313b2c27cbf534fa58de46fdf3fcc"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#afe3313b2c27cbf534fa58de46fdf3fcc">GetAnimationsCount</a> () const </td></tr>
-<tr class="memdesc:afe3313b2c27cbf534fa58de46fdf3fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of animations inside this object. <br /></td></tr>
-<tr class="separator:afe3313b2c27cbf534fa58de46fdf3fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe9f6834f393e30876d2d5ef05b05186"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe9f6834f393e30876d2d5ef05b05186"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#abe9f6834f393e30876d2d5ef05b05186">GetCurrentAnimation</a> () const </td></tr>
-<tr class="memdesc:abe9f6834f393e30876d2d5ef05b05186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the animation being played. <br /></td></tr>
-<tr class="separator:abe9f6834f393e30876d2d5ef05b05186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28008792dc44dd307e02d7590f270dca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a28008792dc44dd307e02d7590f270dca">SetCurrentAnimation</a> (unsigned int nb)</td></tr>
-<tr class="memdesc:a28008792dc44dd307e02d7590f270dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the animation to play.  <a href="#a28008792dc44dd307e02d7590f270dca">More...</a><br /></td></tr>
-<tr class="separator:a28008792dc44dd307e02d7590f270dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3248509b28ea2241eb45b3b58094c82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3248509b28ea2241eb45b3b58094c82"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ae3248509b28ea2241eb45b3b58094c82">GetAnimationsCount</a> () const </td></tr>
+<tr class="memdesc:ae3248509b28ea2241eb45b3b58094c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of animations inside this object. <br /></td></tr>
+<tr class="separator:ae3248509b28ea2241eb45b3b58094c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d62cb07c9d0de74ae3fd577b43754a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0d62cb07c9d0de74ae3fd577b43754a"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ae0d62cb07c9d0de74ae3fd577b43754a">GetCurrentAnimation</a> () const </td></tr>
+<tr class="memdesc:ae0d62cb07c9d0de74ae3fd577b43754a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the animation being played. <br /></td></tr>
+<tr class="separator:ae0d62cb07c9d0de74ae3fd577b43754a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7654a3609e08c63a77e2ad5400c5051"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ab7654a3609e08c63a77e2ad5400c5051">SetCurrentAnimation</a> (std::size_t nb)</td></tr>
+<tr class="memdesc:ab7654a3609e08c63a77e2ad5400c5051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the animation to play.  <a href="#ab7654a3609e08c63a77e2ad5400c5051">More...</a><br /></td></tr>
+<tr class="separator:ab7654a3609e08c63a77e2ad5400c5051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab505e2aef9b2c88fab38da2ccca8e0cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ab505e2aef9b2c88fab38da2ccca8e0cc">AnimationEnded</a> () const </td></tr>
 <tr class="memdesc:ab505e2aef9b2c88fab38da2ccca8e0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current animation has reached its end.  <a href="#ab505e2aef9b2c88fab38da2ccca8e0cc">More...</a><br /></td></tr>
 <tr class="separator:ab505e2aef9b2c88fab38da2ccca8e0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,13 +249,13 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAnimationSpeedSca
 <tr class="memitem:a750a51933eafc3e250a1e25c13dacd87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a750a51933eafc3e250a1e25c13dacd87"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnimationSpeedScale</b> (float ratio)</td></tr>
 <tr class="separator:a750a51933eafc3e250a1e25c13dacd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec78cfab127f7ac5128f4600d2c92b7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#aec78cfab127f7ac5128f4600d2c92b7b">SetSprite</a> (unsigned int nb)</td></tr>
-<tr class="memdesc:aec78cfab127f7ac5128f4600d2c92b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the frame of the animation being displayed.  <a href="#aec78cfab127f7ac5128f4600d2c92b7b">More...</a><br /></td></tr>
-<tr class="separator:aec78cfab127f7ac5128f4600d2c92b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab0bbc838353d621847e13864c0373a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ab0bbc838353d621847e13864c0373a"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a2ab0bbc838353d621847e13864c0373a">GetSpriteNb</a> () const </td></tr>
-<tr class="memdesc:a2ab0bbc838353d621847e13864c0373a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index of the frame of the animation being displayed. <br /></td></tr>
-<tr class="separator:a2ab0bbc838353d621847e13864c0373a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecd247890664c41cc0a8918a03de0ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a5ecd247890664c41cc0a8918a03de0ac">SetSprite</a> (std::size_t nb)</td></tr>
+<tr class="memdesc:a5ecd247890664c41cc0a8918a03de0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the frame of the animation being displayed.  <a href="#a5ecd247890664c41cc0a8918a03de0ac">More...</a><br /></td></tr>
+<tr class="separator:a5ecd247890664c41cc0a8918a03de0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26732328505a8fb5bb46d9233b1a860"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab26732328505a8fb5bb46d9233b1a860"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#ab26732328505a8fb5bb46d9233b1a860">GetSpriteNb</a> () const </td></tr>
+<tr class="memdesc:ab26732328505a8fb5bb46d9233b1a860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index of the frame of the animation being displayed. <br /></td></tr>
+<tr class="separator:ab26732328505a8fb5bb46d9233b1a860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Scaling</div></td></tr>
 <tr class="memitem:a1323d41f16779b2fe33c015e4cfc040f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a1323d41f16779b2fe33c015e4cfc040f">SetScaleX</a> (float val)</td></tr>
 <tr class="memdesc:a1323d41f16779b2fe33c015e4cfc040f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the scale factor of the object on X axis.  <a href="#a1323d41f16779b2fe33c015e4cfc040f">More...</a><br /></td></tr>
@@ -280,8 +290,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a0bdd2d2fa94df3db79a0b7b21ca97074">GetColorB</a> () const </td></tr>
 <tr class="memdesc:a0bdd2d2fa94df3db79a0b7b21ca97074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get blue component of the overall color of the sprite. <br /></td></tr>
 <tr class="separator:a0bdd2d2fa94df3db79a0b7b21ca97074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb80e93f163f19f2cbbce76437af058d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#aeb80e93f163f19f2cbbce76437af058d">SetColor</a> (const std::string &amp;colorStr)</td></tr>
-<tr class="separator:aeb80e93f163f19f2cbbce76437af058d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583e952d8fbddb37992d4cca8d8f3ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a583e952d8fbddb37992d4cca8d8f3ee5">SetColor</a> (const gd::String &amp;colorStr)</td></tr>
+<tr class="separator:a583e952d8fbddb37992d4cca8d8f3ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d206a23f01b011a3b7c08b416498b61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d206a23f01b011a3b7c08b416498b61"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#a0d206a23f01b011a3b7c08b416498b61">SetBlendMode</a> (unsigned int blendMode_)</td></tr>
 <tr class="memdesc:a0d206a23f01b011a3b7c08b416498b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the blend mode used to display the sprite. <br /></td></tr>
@@ -290,12 +300,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/class_runtime_sprite_object.html#afcbb10f19f668912ed0c104c9e09cf5d">GetBlendMode</a> () const </td></tr>
 <tr class="memdesc:afcbb10f19f668912ed0c104c9e09cf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identifier of the blend mode used to display the sprite. <br /></td></tr>
 <tr class="separator:afcbb10f19f668912ed0c104c9e09cf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d88d7b0f3c539f4598c8dcc493dded"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d88d7b0f3c539f4598c8dcc493dded"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyImageOnImageOfCurrentSprite</b> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, const std::string &amp;imageName, float xPosition, float yPosition, bool useTransparency)</td></tr>
-<tr class="separator:a06d88d7b0f3c539f4598c8dcc493dded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87414550e81c4ee7cc73878ed8717b93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87414550e81c4ee7cc73878ed8717b93"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeColorTransparent</b> (const std::string &amp;colorStr)</td></tr>
-<tr class="separator:a87414550e81c4ee7cc73878ed8717b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f081fd631f866b05b1bdaa04a3d1087"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f081fd631f866b05b1bdaa04a3d1087"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyImageOnImageOfCurrentSprite</b> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, const gd::String &amp;imageName, float xPosition, float yPosition, bool useTransparency)</td></tr>
+<tr class="separator:a6f081fd631f866b05b1bdaa04a3d1087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedcb6ce5b556eb6a140cc2ed7a0b067a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedcb6ce5b556eb6a140cc2ed7a0b067a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeColorTransparent</b> (const gd::String &amp;colorStr)</td></tr>
+<tr class="separator:aedcb6ce5b556eb6a140cc2ed7a0b067a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Flipping</div></td></tr>
 <tr class="memitem:ac8b91599ea9312f3b7d19a91c8dee0c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8b91599ea9312f3b7d19a91c8dee0c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlipX</b> (bool flip=true)</td></tr>
@@ -325,14 +335,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFlippedY</b> () con
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a375d7b94fda5a174fd3795c0a1f50cc4">~RuntimeObject</a> ()</td></tr>
 <tr class="memdesc:a375d7b94fda5a174fd3795c0a1f50cc4 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:a375d7b94fda5a174fd3795c0a1f50cc4 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afecd4b6903082446b43ef6297e83ffd5 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afecd4b6903082446b43ef6297e83ffd5"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#afecd4b6903082446b43ef6297e83ffd5">GetName</a> () const </td></tr>
-<tr class="memdesc:afecd4b6903082446b43ef6297e83ffd5 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the object. <br /></td></tr>
-<tr class="separator:afecd4b6903082446b43ef6297e83ffd5 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ed1bff0753c238ff79df81542060b1 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6ed1bff0753c238ff79df81542060b1"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#af6ed1bff0753c238ff79df81542060b1">GetType</a> () const </td></tr>
-<tr class="memdesc:af6ed1bff0753c238ff79df81542060b1 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the object. <br /></td></tr>
-<tr class="separator:af6ed1bff0753c238ff79df81542060b1 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2326101eed6f7d06e3386d29fd78d7 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf2326101eed6f7d06e3386d29fd78d7"></a>
+const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#aaf2326101eed6f7d06e3386d29fd78d7">GetName</a> () const </td></tr>
+<tr class="memdesc:aaf2326101eed6f7d06e3386d29fd78d7 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the object. <br /></td></tr>
+<tr class="separator:aaf2326101eed6f7d06e3386d29fd78d7 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af7df3525137ee70277e88e9b09b7c2 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7af7df3525137ee70277e88e9b09b7c2"></a>
+const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a7af7df3525137ee70277e88e9b09b7c2">GetType</a> () const </td></tr>
+<tr class="memdesc:a7af7df3525137ee70277e88e9b09b7c2 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the object. <br /></td></tr>
+<tr class="separator:a7af7df3525137ee70277e88e9b09b7c2 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889ba3b7ccbba128dbaac9d64803f2ea inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a889ba3b7ccbba128dbaac9d64803f2ea"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a889ba3b7ccbba128dbaac9d64803f2ea">GetZOrder</a> () const </td></tr>
 <tr class="memdesc:a889ba3b7ccbba128dbaac9d64803f2ea inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the Z order of the object. <br /></td></tr>
@@ -353,18 +363,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a8fc4c92cf11bdc6bd323d0e3f75e5742">SetHidden</a> (bool hide=true)</td></tr>
 <tr class="memdesc:a8fc4c92cf11bdc6bd323d0e3f75e5742 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide/Show the object. <br /></td></tr>
 <tr class="separator:a8fc4c92cf11bdc6bd323d0e3f75e5742 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb2a6a4105f60155ec93b5d04800f183 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb2a6a4105f60155ec93b5d04800f183"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#afb2a6a4105f60155ec93b5d04800f183">SetLayer</a> (const std::string &amp;layer_)</td></tr>
-<tr class="memdesc:afb2a6a4105f60155ec93b5d04800f183 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the layer of the object. <br /></td></tr>
-<tr class="separator:afb2a6a4105f60155ec93b5d04800f183 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1d94a9ea2aae07abeb65910b9a6b703 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1d94a9ea2aae07abeb65910b9a6b703"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ab1d94a9ea2aae07abeb65910b9a6b703">GetLayer</a> () const </td></tr>
-<tr class="memdesc:ab1d94a9ea2aae07abeb65910b9a6b703 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the layer of the object. <br /></td></tr>
-<tr class="separator:ab1d94a9ea2aae07abeb65910b9a6b703 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29bc6e33b21eb6f447ee13a4e12028b inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29bc6e33b21eb6f447ee13a4e12028b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#af29bc6e33b21eb6f447ee13a4e12028b">IsOnLayer</a> (const std::string &amp;layer_) const </td></tr>
-<tr class="memdesc:af29bc6e33b21eb6f447ee13a4e12028b inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the object is on a layer. <br /></td></tr>
-<tr class="separator:af29bc6e33b21eb6f447ee13a4e12028b inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0200cbe0bba34caf1143cf2249f5fadc inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0200cbe0bba34caf1143cf2249f5fadc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a0200cbe0bba34caf1143cf2249f5fadc">SetLayer</a> (const gd::String &amp;layer_)</td></tr>
+<tr class="memdesc:a0200cbe0bba34caf1143cf2249f5fadc inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the layer of the object. <br /></td></tr>
+<tr class="separator:a0200cbe0bba34caf1143cf2249f5fadc inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8be135445f9c6fba166cbbbe30acf5 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d8be135445f9c6fba166cbbbe30acf5"></a>
+const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a9d8be135445f9c6fba166cbbbe30acf5">GetLayer</a> () const </td></tr>
+<tr class="memdesc:a9d8be135445f9c6fba166cbbbe30acf5 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the layer of the object. <br /></td></tr>
+<tr class="separator:a9d8be135445f9c6fba166cbbbe30acf5 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc4441a811b02f605e4f193d08887b0 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fc4441a811b02f605e4f193d08887b0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a9fc4441a811b02f605e4f193d08887b0">IsOnLayer</a> (const gd::String &amp;layer_) const </td></tr>
+<tr class="memdesc:a9fc4441a811b02f605e4f193d08887b0 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the object is on a layer. <br /></td></tr>
+<tr class="separator:a9fc4441a811b02f605e4f193d08887b0 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb9e9f87b7c1bd7f27ded452ab20e24 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#aceb9e9f87b7c1bd7f27ded452ab20e24">IsCollidingWith</a> (<a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> *other)</td></tr>
 <tr class="memdesc:aceb9e9f87b7c1bd7f27ded452ab20e24 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check collision between two objects using their hitboxes.  <a href="#aceb9e9f87b7c1bd7f27ded452ab20e24">More...</a><br /></td></tr>
 <tr class="separator:aceb9e9f87b7c1bd7f27ded452ab20e24 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,22 +410,22 @@ const <a class="el" href="../../d3/de0/class_runtime_variables_container.html">R
 <a class="el" href="../../d3/de0/class_runtime_variables_container.html">RuntimeVariablesContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ac11411e790f8232e6be97be56d2b0b1d">GetVariables</a> ()</td></tr>
 <tr class="memdesc:ac11411e790f8232e6be97be56d2b0b1d inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to variables of the object. <br /></td></tr>
 <tr class="separator:ac11411e790f8232e6be97be56d2b0b1d inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d9ec10d773c9020fbc3810e1e01679 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97d9ec10d773c9020fbc3810e1e01679"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a97d9ec10d773c9020fbc3810e1e01679">DoAutomatismsPreEvents</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene)</td></tr>
-<tr class="memdesc:a97d9ec10d773c9020fbc3810e1e01679 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call each automatism so that they do their work before events. <br /></td></tr>
-<tr class="separator:a97d9ec10d773c9020fbc3810e1e01679 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d93e96d3124322d07b579a490f5f162 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d93e96d3124322d07b579a490f5f162"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a1d93e96d3124322d07b579a490f5f162">DoAutomatismsPostEvents</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene)</td></tr>
-<tr class="memdesc:a1d93e96d3124322d07b579a490f5f162 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call each automatism so that they do their work after the events were runn. <br /></td></tr>
-<tr class="separator:a1d93e96d3124322d07b579a490f5f162 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1baf6c275feded6311f30db456d781c4 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">gd::Automatism *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a1baf6c275feded6311f30db456d781c4">GetAutomatismRawPointer</a> (const std::string &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#ac09f9081d555b9fbd660800c53139fcd">name</a>)</td></tr>
-<tr class="separator:a1baf6c275feded6311f30db456d781c4 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b901ad4ccadc6a3a915ac729b5826d inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">gd::Automatism *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ac3b901ad4ccadc6a3a915ac729b5826d">GetAutomatismRawPointer</a> (const std::string &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#ac09f9081d555b9fbd660800c53139fcd">name</a>) const </td></tr>
-<tr class="separator:ac3b901ad4ccadc6a3a915ac729b5826d inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5345ac195007ba76e896aa368abe9514 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5345ac195007ba76e896aa368abe9514"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a5345ac195007ba76e896aa368abe9514">HasAutomatismNamed</a> (const std::string &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#ac09f9081d555b9fbd660800c53139fcd">name</a>) const </td></tr>
-<tr class="memdesc:a5345ac195007ba76e896aa368abe9514 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the object has the automatism with the specified name. <br /></td></tr>
-<tr class="separator:a5345ac195007ba76e896aa368abe9514 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d2f140c6ab6bfb2f75e27d861e0ec4 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8d2f140c6ab6bfb2f75e27d861e0ec4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ad8d2f140c6ab6bfb2f75e27d861e0ec4">DoBehaviorsPreEvents</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene)</td></tr>
+<tr class="memdesc:ad8d2f140c6ab6bfb2f75e27d861e0ec4 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call each behavior so that they do their work before events. <br /></td></tr>
+<tr class="separator:ad8d2f140c6ab6bfb2f75e27d861e0ec4 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc3762074764be5ee3c112b5d595ee6 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc3762074764be5ee3c112b5d595ee6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a4dc3762074764be5ee3c112b5d595ee6">DoBehaviorsPostEvents</a> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene)</td></tr>
+<tr class="memdesc:a4dc3762074764be5ee3c112b5d595ee6 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call each behavior so that they do their work after the events were runn. <br /></td></tr>
+<tr class="separator:a4dc3762074764be5ee3c112b5d595ee6 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1c2d2faf7dd0bf20c9483143c0cc4a inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">gd::Behavior *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#aab1c2d2faf7dd0bf20c9483143c0cc4a">GetBehaviorRawPointer</a> (const gd::String &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a>)</td></tr>
+<tr class="separator:aab1c2d2faf7dd0bf20c9483143c0cc4a inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15114fda95eb8ce9d00367c320e71246 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">gd::Behavior *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a15114fda95eb8ce9d00367c320e71246">GetBehaviorRawPointer</a> (const gd::String &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a>) const </td></tr>
+<tr class="separator:a15114fda95eb8ce9d00367c320e71246 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a9eb10e5eeec78cbdd4ad951406fd0 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8a9eb10e5eeec78cbdd4ad951406fd0"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#aa8a9eb10e5eeec78cbdd4ad951406fd0">HasBehaviorNamed</a> (const gd::String &amp;<a class="el" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a>) const </td></tr>
+<tr class="memdesc:aa8a9eb10e5eeec78cbdd4ad951406fd0 inherit pub_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the object has the behavior with the specified name. <br /></td></tr>
+<tr class="separator:aa8a9eb10e5eeec78cbdd4ad951406fd0 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a562bfe9baae7cc473ca0c9b1f90d2457 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a562bfe9baae7cc473ca0c9b1f90d2457">UpdateForce</a> (float ElapsedTime)</td></tr>
 <tr class="separator:a562bfe9baae7cc473ca0c9b1f90d2457 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0874e6558db383074614d2644017f26f inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0874e6558db383074614d2644017f26f"></a>
@@ -465,21 +475,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RotateTowardAngle</b>
 <tr class="memitem:ad6c5e66bdc987f5dfc1755e2ba819f5c inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c5e66bdc987f5dfc1755e2ba819f5c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Rotate</b> (float speed, <a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene)</td></tr>
 <tr class="separator:ad6c5e66bdc987f5dfc1755e2ba819f5c inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad75c8adcbff0a71a6953d1d1f296b4c9 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad75c8adcbff0a71a6953d1d1f296b4c9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>VariableExists</b> (const std::string &amp;variable)</td></tr>
-<tr class="separator:ad75c8adcbff0a71a6953d1d1f296b4c9 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402f550bec1c6e3bf4d0f880c766320a inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a402f550bec1c6e3bf4d0f880c766320a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>VariableExists</b> (const gd::String &amp;variable)</td></tr>
+<tr class="separator:a402f550bec1c6e3bf4d0f880c766320a inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfe8ea039d0fea4329e24d59fbfa5cf6 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfe8ea039d0fea4329e24d59fbfa5cf6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetXY</b> (const char *xOperator, float xValue, const char *yOperator, float yValue)</td></tr>
 <tr class="separator:adfe8ea039d0fea4329e24d59fbfa5cf6 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f4312bb27bd228601f219363f17bbc inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69f4312bb27bd228601f219363f17bbc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Duplicate</b> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, std::map&lt; std::string, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
-<tr class="separator:a69f4312bb27bd228601f219363f17bbc inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a155dee2d3264c07ac20ca2180d0dd0db inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a155dee2d3264c07ac20ca2180d0dd0db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateAutomatism</b> (const std::string &amp;automatismName, bool activate=true)</td></tr>
-<tr class="separator:a155dee2d3264c07ac20ca2180d0dd0db inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750873369762cfc24077cfe61b89a715 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a750873369762cfc24077cfe61b89a715"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AutomatismActivated</b> (const std::string &amp;automatismName)</td></tr>
-<tr class="separator:a750873369762cfc24077cfe61b89a715 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742f9013604478f9af924ec7b2cf2c95 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a742f9013604478f9af924ec7b2cf2c95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Duplicate</b> (<a class="el" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene, std::map&lt; gd::String, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
+<tr class="separator:a742f9013604478f9af924ec7b2cf2c95 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af059ba815182d1215f0b51e09a3c03b2 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af059ba815182d1215f0b51e09a3c03b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateBehavior</b> (const gd::String &amp;behaviorName, bool activate=true)</td></tr>
+<tr class="separator:af059ba815182d1215f0b51e09a3c03b2 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881b345d8838e8dc957a50fa968df343 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a881b345d8838e8dc957a50fa968df343"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorActivated</b> (const gd::String &amp;behaviorName)</td></tr>
+<tr class="separator:a881b345d8838e8dc957a50fa968df343 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d8a401f9b2fc33fccf0c96758d9b26 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0d8a401f9b2fc33fccf0c96758d9b26"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStopped</b> ()</td></tr>
 <tr class="separator:ae0d8a401f9b2fc33fccf0c96758d9b26 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,13 +502,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSqDistanceWithOb
 <tr class="memitem:ab32f7b5db4d07c8ea7da0877ef5a6890 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab32f7b5db4d07c8ea7da0877ef5a6890"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetDistanceWithObject</b> (<a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> *other)</td></tr>
 <tr class="separator:ab32f7b5db4d07c8ea7da0877ef5a6890 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9373597a57e2b64d0cf996e69ecbe64 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9373597a57e2b64d0cf996e69ecbe64"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SeparateFromObjects</b> (std::map&lt; std::string, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
-<tr class="separator:ad9373597a57e2b64d0cf996e69ecbe64 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ffb1852dcc6f6fc1e98317336867673 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a2ffb1852dcc6f6fc1e98317336867673">SeparateObjectsWithoutForces</a> (std::map&lt; std::string, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
-<tr class="separator:a2ffb1852dcc6f6fc1e98317336867673 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f573e1f66ab522af9f1f7164555342 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ab5f573e1f66ab522af9f1f7164555342">SeparateObjectsWithForces</a> (std::map&lt; std::string, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
-<tr class="separator:ab5f573e1f66ab522af9f1f7164555342 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd810b34dc0d24ffbfe34f123b367b1 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabd810b34dc0d24ffbfe34f123b367b1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SeparateFromObjects</b> (std::map&lt; gd::String, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
+<tr class="separator:aabd810b34dc0d24ffbfe34f123b367b1 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211bf9fd71afa05b776b8d0deec9bc39 inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a211bf9fd71afa05b776b8d0deec9bc39">SeparateObjectsWithoutForces</a> (std::map&lt; gd::String, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
+<tr class="separator:a211bf9fd71afa05b776b8d0deec9bc39 inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36f651892a6ae73f8c29f583c423b2b inherit pub_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ab36f651892a6ae73f8c29f583c423b2b">SeparateObjectsWithForces</a> (std::map&lt; gd::String, std::vector&lt; <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a> * &gt; * &gt; pickedObjectLists)</td></tr>
+<tr class="separator:ab36f651892a6ae73f8c29f583c423b2b inherit pub_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -509,15 +519,15 @@ static gd::Variable &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a03f8829ddb3f1ab94ee94acbd3f0fe37 inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03f8829ddb3f1ab94ee94acbd3f0fe37"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableValue</b> (const gd::Variable &amp;variable)</td></tr>
 <tr class="separator:a03f8829ddb3f1ab94ee94acbd3f0fe37 inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb73e200abd247ffc5cf77b47bd8b63 inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affb73e200abd247ffc5cf77b47bd8b63"></a>
-static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableString</b> (const gd::Variable &amp;variable)</td></tr>
-<tr class="separator:affb73e200abd247ffc5cf77b47bd8b63 inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd21eb382ee079c6069cef508de91d2 inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dd21eb382ee079c6069cef508de91d2"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>VariableChildExists</b> (const gd::Variable &amp;variable, const std::string &amp;childName)</td></tr>
-<tr class="separator:a9dd21eb382ee079c6069cef508de91d2 inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741be4c5595f869eec0ba92182ce95c3 inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a741be4c5595f869eec0ba92182ce95c3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>VariableRemoveChild</b> (gd::Variable &amp;variable, const std::string &amp;childName)</td></tr>
-<tr class="separator:a741be4c5595f869eec0ba92182ce95c3 inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b2597a9267ad5585bdf2f6b2bdfec3 inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15b2597a9267ad5585bdf2f6b2bdfec3"></a>
+static const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableString</b> (const gd::Variable &amp;variable)</td></tr>
+<tr class="separator:a15b2597a9267ad5585bdf2f6b2bdfec3 inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d0a34d5a2a9caf1863b702da1c302a inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8d0a34d5a2a9caf1863b702da1c302a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>VariableChildExists</b> (const gd::Variable &amp;variable, const gd::String &amp;childName)</td></tr>
+<tr class="separator:ae8d0a34d5a2a9caf1863b702da1c302a inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08f1c105d8809e2b90dbb6d83c1102a inherit pub_static_methods_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae08f1c105d8809e2b90dbb6d83c1102a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>VariableRemoveChild</b> (gd::Variable &amp;variable, const gd::String &amp;childName)</td></tr>
+<tr class="separator:ae08f1c105d8809e2b90dbb6d83c1102a inherit pub_static_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_runtime_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_runtime_object')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a></td></tr>
 <tr class="memitem:a589b4d30234a6c4fff1b0e6b150add58 inherit pub_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d88/class_force.html">Force</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a589b4d30234a6c4fff1b0e6b150add58">force5</a></td></tr>
 <tr class="separator:a589b4d30234a6c4fff1b0e6b150add58 inherit pub_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,14 +536,14 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>VariableRemove
 <tr class="memdesc:ad910735716e8920eddec09321bf0f01a inherit pro_methods_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize object using another object. Used by copy-ctor and assign-op.  <a href="#ad910735716e8920eddec09321bf0f01a">More...</a><br /></td></tr>
 <tr class="separator:ad910735716e8920eddec09321bf0f01a inherit pro_methods_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_runtime_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_runtime_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a></td></tr>
-<tr class="memitem:ac09f9081d555b9fbd660800c53139fcd inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09f9081d555b9fbd660800c53139fcd"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#ac09f9081d555b9fbd660800c53139fcd">name</a></td></tr>
-<tr class="memdesc:ac09f9081d555b9fbd660800c53139fcd inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full name of the object. <br /></td></tr>
-<tr class="separator:ac09f9081d555b9fbd660800c53139fcd inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032250054e487ee3ed5f125d6a64d974 inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a032250054e487ee3ed5f125d6a64d974"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a032250054e487ee3ed5f125d6a64d974">type</a></td></tr>
-<tr class="memdesc:a032250054e487ee3ed5f125d6a64d974 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which type is the object. ( To test if we can do something reserved to some objects with it ) <br /></td></tr>
-<tr class="separator:a032250054e487ee3ed5f125d6a64d974 inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7ea276bef6356b2fe8f0158195e3b0 inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea7ea276bef6356b2fe8f0158195e3b0"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a></td></tr>
+<tr class="memdesc:aea7ea276bef6356b2fe8f0158195e3b0 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full name of the object. <br /></td></tr>
+<tr class="separator:aea7ea276bef6356b2fe8f0158195e3b0 inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddd3c99aaed9a48ded0106e6deee525 inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ddd3c99aaed9a48ded0106e6deee525"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a0ddd3c99aaed9a48ded0106e6deee525">type</a></td></tr>
+<tr class="memdesc:a0ddd3c99aaed9a48ded0106e6deee525 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which type is the object. ( To test if we can do something reserved to some objects with it ) <br /></td></tr>
+<tr class="separator:a0ddd3c99aaed9a48ded0106e6deee525 inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13e3561438f14e464b1fc78caa59f694 inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13e3561438f14e464b1fc78caa59f694"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a13e3561438f14e464b1fc78caa59f694">X</a></td></tr>
 <tr class="memdesc:a13e3561438f14e464b1fc78caa59f694 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">X position on the scene. <br /></td></tr>
@@ -550,14 +560,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#afc75ccec85dae1f45299be7e8138a690">hidden</a></td></tr>
 <tr class="memdesc:afc75ccec85dae1f45299be7e8138a690 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">True to prevent the object from being rendered. <br /></td></tr>
 <tr class="separator:afc75ccec85dae1f45299be7e8138a690 inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b7f94a51820819ec71c6684c7d69025 inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b7f94a51820819ec71c6684c7d69025"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a6b7f94a51820819ec71c6684c7d69025">layer</a></td></tr>
-<tr class="memdesc:a6b7f94a51820819ec71c6684c7d69025 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the layer on which the object is. <br /></td></tr>
-<tr class="separator:a6b7f94a51820819ec71c6684c7d69025 inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc8817f9ed2479a6e35ba1cc3cf7f9b inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbc8817f9ed2479a6e35ba1cc3cf7f9b"></a>
-std::map&lt; std::string, gd::Automatism * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#afbc8817f9ed2479a6e35ba1cc3cf7f9b">automatisms</a></td></tr>
-<tr class="memdesc:afbc8817f9ed2479a6e35ba1cc3cf7f9b inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all automatisms of the object. Automatisms are the ownership of the object. <br /></td></tr>
-<tr class="separator:afbc8817f9ed2479a6e35ba1cc3cf7f9b inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977f29e697f7a8450e002e7a8de95bf7 inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977f29e697f7a8450e002e7a8de95bf7"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a977f29e697f7a8450e002e7a8de95bf7">layer</a></td></tr>
+<tr class="memdesc:a977f29e697f7a8450e002e7a8de95bf7 inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the layer on which the object is. <br /></td></tr>
+<tr class="separator:a977f29e697f7a8450e002e7a8de95bf7 inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27af4f89d28759151cee8ceb56149bfb inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27af4f89d28759151cee8ceb56149bfb"></a>
+std::map&lt; gd::String, std::unique_ptr&lt; gd::Behavior &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a27af4f89d28759151cee8ceb56149bfb">behaviors</a></td></tr>
+<tr class="memdesc:a27af4f89d28759151cee8ceb56149bfb inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all behaviors of the object. Behaviors are the ownership of the object. <br /></td></tr>
+<tr class="separator:a27af4f89d28759151cee8ceb56149bfb inherit pro_attribs_class_runtime_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4171ef2ed3e6a85b52da717ade19435e inherit pro_attribs_class_runtime_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4171ef2ed3e6a85b52da717ade19435e"></a>
 <a class="el" href="../../d3/de0/class_runtime_variables_container.html">RuntimeVariablesContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3b/class_runtime_object.html#a4171ef2ed3e6a85b52da717ade19435e">objectVariables</a></td></tr>
 <tr class="memdesc:a4171ef2ed3e6a85b52da717ade19435e inherit pro_attribs_class_runtime_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of the variables of the object. <br /></td></tr>
@@ -597,14 +607,71 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a35407ddb24b078dd95830a5d321f12a9"></a>
+<a class="anchor" id="abb24da16a0f73593df0dbc566b941f30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RuntimeSpriteObject::ChangeProperty </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>propertyNb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gd::String&#160;</td>
+          <td class="paramname"><em>newValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by the debugger so as to update a property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">propertyNb</td><td>the property number </td></tr>
+    <tr><td class="paramname">newValue</td><td>the new value as an UTF8 string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if property was changed, false if it not possible.</dd></dl>
+<p>Implementation example: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>      ( propertyNb == 0 ) {<span class="keywordflow">return</span> SetSomeProperty(ToFloat(newValue));}</div>
+<div class="line"><span class="keywordflow">else</span> <span class="keywordflow">if</span> ( propertyNb == 1 ) {<span class="keywordflow">return</span> <span class="keyword">false</span>;} <span class="comment">//Changing property is not allowed: returning false.</span></div>
+</div><!-- fragment --> 
+<p>Reimplemented from <a class="el" href="../../d0/d3b/class_runtime_object.html#adcf4864dd617d1bf623a4edeab0f91ea">RuntimeObject</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_abb24da16a0f73593df0dbc566b941f30_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_abb24da16a0f73593df0dbc566b941f30_cgraph" alt=""/></div>
+<map name="dd/d1a/class_runtime_sprite_object_abb24da16a0f73593df0dbc566b941f30_cgraph" id="dd/d1a/class_runtime_sprite_object_abb24da16a0f73593df0dbc566b941f30_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a66a6c8dc2f2a2a16aa4abc32cdfe3959"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void RuntimeSpriteObject::ChangeScale </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
           <td class="paramname"><em>operatorStr</em>, </td>
         </tr>
         <tr>
@@ -625,8 +692,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_a35407ddb24b078dd95830a5d321f12a9_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_a35407ddb24b078dd95830a5d321f12a9_cgraph" alt=""/></div>
-<map name="dd/d1a/class_runtime_sprite_object_a35407ddb24b078dd95830a5d321f12a9_cgraph" id="dd/d1a/class_runtime_sprite_object_a35407ddb24b078dd95830a5d321f12a9_cgraph">
+<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_a66a6c8dc2f2a2a16aa4abc32cdfe3959_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_a66a6c8dc2f2a2a16aa4abc32cdfe3959_cgraph" alt=""/></div>
+<map name="dd/d1a/class_runtime_sprite_object_a66a6c8dc2f2a2a16aa4abc32cdfe3959_cgraph" id="dd/d1a/class_runtime_sprite_object_a66a6c8dc2f2a2a16aa4abc32cdfe3959_cgraph">
 </map>
 </div>
 </p>
@@ -934,6 +1001,62 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a991869a8c183a6df713f8045cd7ca075"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RuntimeSpriteObject::GetPropertyForDebugger </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>propertyNb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gd::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gd::String &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by the debugger so as to get a property value and name. </p>
+<dl class="section warning"><dt>Warning</dt><dd>value should be set to an UTF8 encoded string. Implementation example: <div class="fragment"><div class="line"><span class="keywordflow">if</span>      ( propertyNb == 0 ) {<a class="code" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a> = _(<span class="stringliteral">&quot;MyObjectProperty&quot;</span>);      value = gd::String::From(GetSomeProperty());}</div>
+<div class="line"><span class="keywordflow">else</span> <span class="keywordflow">if</span> ( propertyNb == 1 ) {<a class="code" href="../../d0/d3b/class_runtime_object.html#aea7ea276bef6356b2fe8f0158195e3b0">name</a> = _(<span class="stringliteral">&quot;AnotherProperty&quot;</span>);       value = GetAnotherPropety();}</div>
+</div><!-- fragment --> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d0/d3b/class_runtime_object.html#ab59563011fec9fd42d3a13a2dc40311c">RuntimeObject</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_a991869a8c183a6df713f8045cd7ca075_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_a991869a8c183a6df713f8045cd7ca075_cgraph" alt=""/></div>
+<map name="dd/d1a/class_runtime_sprite_object_a991869a8c183a6df713f8045cd7ca075_cgraph" id="dd/d1a/class_runtime_sprite_object_a991869a8c183a6df713f8045cd7ca075_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a8ae2847a3beaeb88494b6b4addd19a22"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1069,14 +1192,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aeb80e93f163f19f2cbbce76437af058d"></a>
+<a class="anchor" id="a583e952d8fbddb37992d4cca8d8f3ee5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void RuntimeSpriteObject::SetColor </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
           <td class="paramname"><em>colorStr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1087,22 +1210,22 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_aeb80e93f163f19f2cbbce76437af058d_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_aeb80e93f163f19f2cbbce76437af058d_cgraph" alt=""/></div>
-<map name="dd/d1a/class_runtime_sprite_object_aeb80e93f163f19f2cbbce76437af058d_cgraph" id="dd/d1a/class_runtime_sprite_object_aeb80e93f163f19f2cbbce76437af058d_cgraph">
+<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_a583e952d8fbddb37992d4cca8d8f3ee5_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_a583e952d8fbddb37992d4cca8d8f3ee5_cgraph" alt=""/></div>
+<map name="dd/d1a/class_runtime_sprite_object_a583e952d8fbddb37992d4cca8d8f3ee5_cgraph" id="dd/d1a/class_runtime_sprite_object_a583e952d8fbddb37992d4cca8d8f3ee5_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a28008792dc44dd307e02d7590f270dca"></a>
+<a class="anchor" id="ab7654a3609e08c63a77e2ad5400c5051"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool RuntimeSpriteObject::SetCurrentAnimation </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>nb</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1121,8 +1244,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_a28008792dc44dd307e02d7590f270dca_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_a28008792dc44dd307e02d7590f270dca_cgraph" alt=""/></div>
-<map name="dd/d1a/class_runtime_sprite_object_a28008792dc44dd307e02d7590f270dca_cgraph" id="dd/d1a/class_runtime_sprite_object_a28008792dc44dd307e02d7590f270dca_cgraph">
+<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_ab7654a3609e08c63a77e2ad5400c5051_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_ab7654a3609e08c63a77e2ad5400c5051_cgraph" alt=""/></div>
+<map name="dd/d1a/class_runtime_sprite_object_ab7654a3609e08c63a77e2ad5400c5051_cgraph" id="dd/d1a/class_runtime_sprite_object_ab7654a3609e08c63a77e2ad5400c5051_cgraph">
 </map>
 </div>
 </p>
@@ -1257,14 +1380,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aec78cfab127f7ac5128f4600d2c92b7b"></a>
+<a class="anchor" id="a5ecd247890664c41cc0a8918a03de0ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool RuntimeSpriteObject::SetSprite </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>nb</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1283,8 +1406,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_aec78cfab127f7ac5128f4600d2c92b7b_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_aec78cfab127f7ac5128f4600d2c92b7b_cgraph" alt=""/></div>
-<map name="dd/d1a/class_runtime_sprite_object_aec78cfab127f7ac5128f4600d2c92b7b_cgraph" id="dd/d1a/class_runtime_sprite_object_aec78cfab127f7ac5128f4600d2c92b7b_cgraph">
+<div class="center"><img src="../../dd/d1a/class_runtime_sprite_object_a5ecd247890664c41cc0a8918a03de0ac_cgraph.png" border="0" usemap="#dd/d1a/class_runtime_sprite_object_a5ecd247890664c41cc0a8918a03de0ac_cgraph" alt=""/></div>
+<map name="dd/d1a/class_runtime_sprite_object_a5ecd247890664c41cc0a8918a03de0ac_cgraph" id="dd/d1a/class_runtime_sprite_object_a5ecd247890664c41cc0a8918a03de0ac_cgraph">
 </map>
 </div>
 </p>
@@ -1352,7 +1475,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Deprecated and only used internally by GD events generated code: Prefer using RotateTowardPosition. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>See RuntimeSpriteObject::RotateTowardPosition instead. </dd></dl>
+<p>Deprecated and only used internally by GD events generated code: Prefer using RotateTowardPosition. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>See RuntimeSpriteObject::RotateTowardPosition instead. </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1429,7 +1552,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:25 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

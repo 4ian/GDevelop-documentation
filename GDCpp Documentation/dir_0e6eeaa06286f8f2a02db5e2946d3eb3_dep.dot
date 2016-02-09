@@ -1,0 +1,9 @@
+digraph "TinyXml" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7aefbae60249d8db3c9a686a9296d9b4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Runtime" fontname="Helvetica", fontsize="10", URL="dir_7aefbae60249d8db3c9a686a9296d9b4.html"]
+  dir_0e6eeaa06286f8f2a02db5e2946d3eb3 [shape=box, label="TinyXml", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0e6eeaa06286f8f2a02db5e2946d3eb3.html"];
+  }
+}

@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_7aefbae60249d8db3c9a686a9296d9b4.html">Runtime</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef GDCPP_COMMONTOOLS_H_INCLUDED</span></div>
@@ -102,98 +102,41 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>wxString;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../dc/d32/group___common_programming_tools.html#ga4b71f3b8a1c7f4078e4f1bc0e3044c6c">   26</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#ga4b71f3b8a1c7f4078e4f1bc0e3044c6c">ToInt</a>( <span class="keyword">const</span> T &amp; value )</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::istringstream oss(value);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    oss &gt;&gt; i;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dc/d32/group___common_programming_tools.html#gac73585d501009788d3bd8eef7decf729">   39</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gac73585d501009788d3bd8eef7decf729">ToFloat</a>( <span class="keyword">const</span> T &amp; value )</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">float</span> f;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::istringstream oss(value);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    oss &gt;&gt; f;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> f;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SFML/System/String.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/String.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>wxString;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/dcc/struct_string_empty.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../db/dcc/struct_string_empty.html">StringEmpty</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="keywordtype">bool</span> operator ()(<span class="keyword">const</span> gd::String &amp; a)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">   </span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">return</span> a.empty();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">GDRound</a>(<span class="keywordtype">float</span> x)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> round(x);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../dc/d32/group___common_programming_tools.html#ga304a29252824cc522043c580a48a2f08">   52</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#ga304a29252824cc522043c580a48a2f08">ToDouble</a>( <span class="keyword">const</span> T &amp; value )</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> d;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::istringstream oss(value);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    oss &gt;&gt; d;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> d;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">   65</a></span>&#160;std::string <a class="code" href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">ToString</a>( <span class="keyword">const</span> T &amp; value )</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::ostringstream oss;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    oss &lt;&lt; value;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> oss.str();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;std::string GD_API <a class="code" href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">ToString</a>( <span class="keyword">const</span> wxString &amp; value );</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;std::vector &lt;T&gt; SplitString( <span class="keyword">const</span> std::string &amp; str, <span class="keywordtype">char</span> separator )</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::istringstream iss( str );</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::string token;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::vector &lt;T&gt; array;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">while</span> ( std::getline( iss, token, separator ) )</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        array.push_back( T(token) );</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> array;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../db/dcc/struct_string_empty.html">  110</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../db/dcc/struct_string_empty.html">StringEmpty</a></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   <span class="keywordtype">bool</span> operator ()(<span class="keyword">const</span> std::string &amp; a)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">   </span>{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> a.empty();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;   }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">GDRound</a>(<span class="keywordtype">float</span> x)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> round(x);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">  132</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">GDRound</a>( <span class="keywordtype">double</span> d )</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> ( d &gt;= 0 ? floor(d+0.5) : ceil(d-0.5) );</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif // GDCPP_COMMONTOOLS_H_INCLUDED</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="ttc" id="group___common_programming_tools_html_ga304a29252824cc522043c580a48a2f08"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#ga304a29252824cc522043c580a48a2f08">ToDouble</a></div><div class="ttdeci">double ToDouble(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:52</div></div>
-<div class="ttc" id="group___common_programming_tools_html_gac73585d501009788d3bd8eef7decf729"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#gac73585d501009788d3bd8eef7decf729">ToFloat</a></div><div class="ttdeci">float ToFloat(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:39</div></div>
-<div class="ttc" id="struct_string_empty_html"><div class="ttname"><a href="../../db/dcc/struct_string_empty.html">StringEmpty</a></div><div class="ttdoc">Functor testing if a std::string is empty. </div><div class="ttdef"><b>Definition:</b> CommonTools.h:110</div></div>
-<div class="ttc" id="group___common_programming_tools_html_gac537ae6812f51865a3f83d34cac04fe0"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">ToString</a></div><div class="ttdeci">std::string ToString(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:65</div></div>
-<div class="ttc" id="group___common_programming_tools_html_gad0c5bff9b8cef8a00b6bf6127ec57245"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">GDRound</a></div><div class="ttdeci">double GDRound(double d)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:132</div></div>
-<div class="ttc" id="group___common_programming_tools_html_ga4b71f3b8a1c7f4078e4f1bc0e3044c6c"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#ga4b71f3b8a1c7f4078e4f1bc0e3044c6c">ToInt</a></div><div class="ttdeci">int ToInt(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">   51</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">GDRound</a>( <span class="keywordtype">double</span> d )</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> ( d &gt;= 0 ? floor(d+0.5) : ceil(d-0.5) );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // GDCPP_COMMONTOOLS_H_INCLUDED</span></div>
+<div class="ttc" id="struct_string_empty_html"><div class="ttname"><a href="../../db/dcc/struct_string_empty.html">StringEmpty</a></div><div class="ttdoc">Functor testing if a gd::String is empty. </div><div class="ttdef"><b>Definition:</b> CommonTools.h:29</div></div>
+<div class="ttc" id="group___common_programming_tools_html_gad0c5bff9b8cef8a00b6bf6127ec57245"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245">GDRound</a></div><div class="ttdeci">double GDRound(double d)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:23 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

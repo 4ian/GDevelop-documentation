@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_manager.html#a31acd7eadbecd45205b5f7507caf703d">AddPlatform</a> (std::shared_ptr&lt; <a class="el" href="classgd_1_1_platform.html">gd::Platform</a> &gt; newPlatform)</td></tr>
 <tr class="memdesc:a31acd7eadbecd45205b5f7507caf703d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new platform to be used by the IDE. <br /></td></tr>
 <tr class="separator:a31acd7eadbecd45205b5f7507caf703d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c542a71baae02a70144dc4e630189b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_platform.html">gd::Platform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_manager.html#ab8c542a71baae02a70144dc4e630189b">GetPlatform</a> (const std::string &amp;platformName) const </td></tr>
-<tr class="memdesc:ab8c542a71baae02a70144dc4e630189b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the platform called <em>platformName</em>.  <a href="#ab8c542a71baae02a70144dc4e630189b">More...</a><br /></td></tr>
-<tr class="separator:ab8c542a71baae02a70144dc4e630189b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac552d6536b1edab93190dbefde0fa549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_platform.html">gd::Platform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_manager.html#ac552d6536b1edab93190dbefde0fa549">GetPlatform</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName) const </td></tr>
+<tr class="memdesc:ac552d6536b1edab93190dbefde0fa549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the platform called <em>platformName</em>.  <a href="#ac552d6536b1edab93190dbefde0fa549">More...</a><br /></td></tr>
+<tr class="separator:ac552d6536b1edab93190dbefde0fa549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512016802ab05fdfec1864b5f063716c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a512016802ab05fdfec1864b5f063716c"></a>
 const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_platform.html">gd::Platform</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_manager.html#a512016802ab05fdfec1864b5f063716c">GetAllPlatforms</a> () const </td></tr>
 <tr class="memdesc:a512016802ab05fdfec1864b5f063716c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of all platforms available. <br /></td></tr>
@@ -132,7 +132,7 @@ static <a class="el" href="classgd_1_1_platform_manager.html">PlatformManager</a
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singleton class managing all the platforms available. </p>
 <p>Platforms can be added thanks to <a class="el" href="classgd_1_1_platform_manager.html#a31acd7eadbecd45205b5f7507caf703d" title="Add a new platform to be used by the IDE. ">gd::PlatformManager::AddPlatform</a>. <br />
- See <a class="el" href="classgd_1_1_platform_loader.html#a594c714073aade0326944538b9fecd96">gd::PlatformLoader::LoadPlatformInManager</a> to load a platform from a file.</p>
+ See <a class="el" href="classgd_1_1_platform_loader.html#a5bd2f74ec611b53756bf84317f50eef7">gd::PlatformLoader::LoadPlatformInManager</a> to load a platform from a file.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_loader.html" title="Load a gd::Platform in memory from a file and add it to the manager. ">gd::PlatformLoader</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ada256738230e1f42861da70347f723d4"></a>
@@ -161,14 +161,14 @@ static <a class="el" href="classgd_1_1_platform_manager.html">PlatformManager</a
 
 </div>
 </div>
-<a class="anchor" id="ab8c542a71baae02a70144dc4e630189b"></a>
+<a class="anchor" id="ac552d6536b1edab93190dbefde0fa549"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgd_1_1_platform.html">gd::Platform</a> * gd::PlatformManager::GetPlatform </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>platformName</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -187,7 +187,7 @@ static <a class="el" href="classgd_1_1_platform_manager.html">PlatformManager</a
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

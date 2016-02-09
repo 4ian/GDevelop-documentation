@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -96,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
@@ -129,30 +130,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classgd_1_1_object_or_group_finder.html">ObjectOrGroupFinder</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">Project</a> &amp;project, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">Layout</a> *layout = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> HasObjectOrGroupNamed(<span class="keyword">const</span> std::string &amp;name, <span class="keywordtype">bool</span> allLayouts = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> HasObjectOrGroupNamed(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp;name, <span class="keywordtype">bool</span> allLayouts = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; GetLayoutsWithSameObjectName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> std::vector&lt;gd::String&gt;&amp; GetLayoutsWithSameObjectName() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> HasGroupNamed(std::string name, <span class="keyword">const</span> std::vector&lt;gd::ObjectGroup&gt; &amp; groups) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> HasGroupNamed(<a class="code" href="classgd_1_1_string.html">gd::String</a> name, <span class="keyword">const</span> std::vector&lt;gd::ObjectGroup&gt; &amp; groups) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">Project</a> &amp;project;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">Layout</a> *layout;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::vector&lt;std::string&gt; layoutsWithSameObjectName;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::vector&lt;gd::String&gt; layoutsWithSameObjectName;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="ttc" id="classgd_1_1_object_or_group_finder_html"><div class="ttname"><a href="classgd_1_1_object_or_group_finder.html">gd::ObjectOrGroupFinder</a></div><div class="ttdoc">Class used to check if other objects or groups have a specific name. </div><div class="ttdef"><b>Definition:</b> ObjectOrGroupFinder.h:20</div></div>
 <div class="ttc" id="classgd_1_1_object_or_group_finder_html_ad10e4c1585562f557ad909b065f86296"><div class="ttname"><a href="classgd_1_1_object_or_group_finder.html#ad10e4c1585562f557ad909b065f86296">gd::ObjectOrGroupFinder::HasSameName</a></div><div class="ttdeci">HasSameName</div><div class="ttdef"><b>Definition:</b> ObjectOrGroupFinder.h:27</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:44</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -115,9 +115,14 @@ Collaboration diagram for RuntimeGame:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7d486841b015a0188b3f634ecafa928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddb/class_runtime_game.html#ab7d486841b015a0188b3f634ecafa928">LoadFromProject</a> (const gd::Project &amp;project)</td></tr>
-<tr class="memdesc:ab7d486841b015a0188b3f634ecafa928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the <a class="el" href="../../d8/ddb/class_runtime_game.html" title="Represents a game being played. ">RuntimeGame</a> using a gd::Project.  <a href="#ab7d486841b015a0188b3f634ecafa928">More...</a><br /></td></tr>
+<tr class="memitem:ab7d486841b015a0188b3f634ecafa928"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d486841b015a0188b3f634ecafa928"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddb/class_runtime_game.html#ab7d486841b015a0188b3f634ecafa928">LoadFromProject</a> (const gd::Project &amp;project)</td></tr>
+<tr class="memdesc:ab7d486841b015a0188b3f634ecafa928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the <a class="el" href="../../d8/ddb/class_runtime_game.html" title="Represents a game being played. ">RuntimeGame</a> using a gd::Project. <br /></td></tr>
 <tr class="separator:ab7d486841b015a0188b3f634ecafa928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6a930cf57c383cc49c8eae1a3e86d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dd9/class_sound_manager.html">SoundManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddb/class_runtime_game.html#a0c6a930cf57c383cc49c8eae1a3e86d6">GetSoundManager</a> ()</td></tr>
+<tr class="separator:a0c6a930cf57c383cc49c8eae1a3e86d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03df89c6dad1ad677716387b91cb88b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/dd9/class_sound_manager.html">SoundManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddb/class_runtime_game.html#aa03df89c6dad1ad677716387b91cb88b">GetSoundManager</a> () const </td></tr>
+<tr class="separator:aa03df89c6dad1ad677716387b91cb88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0993e95c432a0b432d2c787a5d061ea4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0993e95c432a0b432d2c787a5d061ea4"></a>
 const <a class="el" href="../../d3/de0/class_runtime_variables_container.html">RuntimeVariablesContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddb/class_runtime_game.html#a0993e95c432a0b432d2c787a5d061ea4">GetVariables</a> () const </td></tr>
 <tr class="memdesc:a0993e95c432a0b432d2c787a5d061ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the global variables container. <br /></td></tr>
@@ -129,33 +134,53 @@ const <a class="el" href="../../d3/de0/class_runtime_variables_container.html">R
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a game being played. </p>
-<p>A <a class="el" href="../../d8/ddb/class_runtime_game.html" title="Represents a game being played. ">RuntimeGame</a> is used when a game is played.&lt;be&gt; It contains everything a project provide, but also specific functions and members for runtime ( variables... ) </p>
+<p>It contains everything a project provides, but also specific functions and members for runtime (variables...) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab7d486841b015a0188b3f634ecafa928"></a>
+<a class="anchor" id="a0c6a930cf57c383cc49c8eae1a3e86d6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void RuntimeGame::LoadFromProject </td>
+          <td class="memname"><a class="el" href="../../d5/dd9/class_sound_manager.html">SoundManager</a>&amp; RuntimeGame::GetSoundManager </td>
           <td>(</td>
-          <td class="paramtype">const gd::Project &amp;&#160;</td>
-          <td class="paramname"><em>project</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<p>Return the sound manager of the game. </p>
 
-<p>Set up the <a class="el" href="../../d8/ddb/class_runtime_game.html" title="Represents a game being played. ">RuntimeGame</a> using a gd::Project. </p>
-<p>Typically called automatically by the IDE or by the game executable. </p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d8/ddb/class_runtime_game_ab7d486841b015a0188b3f634ecafa928_cgraph.png" border="0" usemap="#d8/ddb/class_runtime_game_ab7d486841b015a0188b3f634ecafa928_cgraph" alt=""/></div>
-<map name="d8/ddb/class_runtime_game_ab7d486841b015a0188b3f634ecafa928_cgraph" id="d8/ddb/class_runtime_game_ab7d486841b015a0188b3f634ecafa928_cgraph">
-</map>
 </div>
-</p>
+</div>
+<a class="anchor" id="aa03df89c6dad1ad677716387b91cb88b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d5/dd9/class_sound_manager.html">SoundManager</a>&amp; RuntimeGame::GetSoundManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the sound manager of the game. </p>
 
 </div>
 </div>
@@ -166,7 +191,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

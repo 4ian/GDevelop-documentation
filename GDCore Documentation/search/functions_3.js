@@ -1,23 +1,23 @@
 var searchData=
 [
-  ['date',['Date',['../classgd_1_1_version_wrapper.html#a16750e7270fab12f9f040740ec80902f',1,'gd::VersionWrapper']]],
-  ['deduceautomatism',['DeduceAutomatism',['../classgd_1_1_choose_automatism_dialog.html#ae35137edc81fde003f48f389cc3c0b3e',1,'gd::ChooseAutomatismDialog']]],
+  ['date',['Date',['../classgd_1_1_version_wrapper.html#a09264564c9a318ad14195a548fa2e5a9',1,'gd::VersionWrapper']]],
+  ['deducebehavior',['DeduceBehavior',['../classgd_1_1_choose_behavior_dialog.html#a019fcf68a595484bd60b4471d28b5a0f',1,'gd::ChooseBehaviorDialog']]],
   ['deleteallinstructionselected',['DeleteAllInstructionSelected',['../classgd_1_1_events_editor_selection.html#a66e64949623d8e81487f38642e535061',1,'gd::EventsEditorSelection']]],
-  ['deletecamera',['DeleteCamera',['../classgd_1_1_layer.html#ab6acd691326d628a50f632ea7ecc5781',1,'gd::Layer']]],
+  ['deletecamera',['DeleteCamera',['../classgd_1_1_layer.html#a70c0e05a05be3d9e80fb13e0fe7c46a5',1,'gd::Layer']]],
   ['deleteinstances',['DeleteInstances',['../classgd_1_1_layout_editor_canvas.html#a8d85572b93154dfc353cf898cc05d20c',1,'gd::LayoutEditorCanvas']]],
   ['deleteuselessevents',['DeleteUselessEvents',['../classgd_1_1_events_code_generator.html#a17244eedd3a2fce1067d5f06b963b1e3',1,'gd::EventsCodeGenerator']]],
-  ['delpoint',['DelPoint',['../classgd_1_1_sprite.html#a53454b0cbf1daf0b373e4fa05ec787a1',1,'gd::Sprite']]],
+  ['delpoint',['DelPoint',['../classgd_1_1_sprite.html#aa5fcee0de5fa85901d7716a5572bb2cc',1,'gd::Sprite']]],
   ['deselectedallinitialinstance',['DeselectedAllInitialInstance',['../classgd_1_1_layout_editor_canvas_associated_editor.html#a19d358009d9c302267abf4ed63c09b3d',1,'gd::LayoutEditorCanvasAssociatedEditor']]],
   ['deselectedinitialinstance',['DeselectedInitialInstance',['../classgd_1_1_layout_editor_canvas_associated_editor.html#a4cd7e6329c5604364536a7bccd8daf4a',1,'gd::LayoutEditorCanvasAssociatedEditor']]],
   ['destroysingleton',['DestroySingleton',['../classgd_1_1_native_file_system.html#a09a39e7e7322d3c919f58dee19837584',1,'gd::NativeFileSystem::DestroySingleton()'],['../classgd_1_1_clipboard.html#abb4cd49b5f703d4b748143eee33ee816',1,'gd::Clipboard::DestroySingleton()'],['../classgd_1_1_platform_manager.html#ada256738230e1f42861da70347f723d4',1,'gd::PlatformManager::DestroySingleton()']]],
-  ['direxists',['DirExists',['../classgd_1_1_abstract_file_system.html#a0005955369b1925bc9bdbd86408f11d7',1,'gd::AbstractFileSystem::DirExists()'],['../classgd_1_1_native_file_system.html#aaddd8d55a11e72c72584e93760fe4d13',1,'gd::NativeFileSystem::DirExists()']]],
-  ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a890a3618012ed9fd7d0cffc070194a4a',1,'gd::AbstractFileSystem::DirNameFrom()'],['../classgd_1_1_native_file_system.html#af032dbd8fb7bf2a815c01285ac00190e',1,'gd::NativeFileSystem::DirNameFrom()']]],
+  ['direxists',['DirExists',['../classgd_1_1_abstract_file_system.html#a32ee1be4d177d37599078d3b22c359f7',1,'gd::AbstractFileSystem::DirExists()'],['../classgd_1_1_native_file_system.html#a42a7d8d494576b435afafaf8a9645d0f',1,'gd::NativeFileSystem::DirExists()']]],
+  ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a2d9e47f43daf3b7a82e53cbacfb5ef6b',1,'gd::AbstractFileSystem::DirNameFrom()'],['../classgd_1_1_native_file_system.html#aa76e7456cbfbf3c7960871276810eeab',1,'gd::NativeFileSystem::DirNameFrom()']]],
   ['disablecontrolsforscenepreviewing',['DisableControlsForScenePreviewing',['../classgd_1_1_main_frame_wrapper.html#a68dced529ef83491987ee3710bf46959',1,'gd::MainFrameWrapper']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
   ['do',['Do',['../classgd_1_1_safe_yield.html#abc78c9108c4f2ead5f8534af0e8f2f2f',1,'gd::SafeYield']]],
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a7a41837ada2553926ab7aade944c0e10',1,'gd::Object']]],
-  ['dosteppostevents',['DoStepPostEvents',['../classgd_1_1_automatism.html#a3490e1062b04268dee90307b97c867e9',1,'gd::Automatism']]],
-  ['dosteppreevents',['DoStepPreEvents',['../classgd_1_1_automatism.html#aa5341430fde256df7ee053fbd544817f',1,'gd::Automatism']]],
+  ['dosteppostevents',['DoStepPostEvents',['../classgd_1_1_behavior.html#a3dc5a4b487a4b443e3d54b28fcb47f22',1,'gd::Behavior']]],
+  ['dosteppreevents',['DoStepPreEvents',['../classgd_1_1_behavior.html#aab03827ab7b6c9f54001896e34c34dfa',1,'gd::Behavior']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
   ['drawactionslist',['DrawActionsList',['../classgd_1_1_events_rendering_helper.html#afaba1d6bc49a03945f88e6f49cfd1530',1,'gd::EventsRenderingHelper']]],
   ['drawconditionslist',['DrawConditionsList',['../classgd_1_1_events_rendering_helper.html#ae69bad362b7a31c7419d4a926ff204e6',1,'gd::EventsRenderingHelper']]],
@@ -25,5 +25,5 @@ var searchData=
   ['drawinitialinstance',['DrawInitialInstance',['../classgd_1_1_sprite_object.html#a90de50011714606635765a53c5ebc4e4',1,'gd::SpriteObject::DrawInitialInstance()'],['../classgd_1_1_object.html#a2891e6e5876b60893e45952ae70186fb',1,'gd::Object::DrawInitialInstance()']]],
   ['drawinstruction',['DrawInstruction',['../classgd_1_1_events_rendering_helper.html#a5bbcbd2f0ce6a56547d99ed3f90e0bd1',1,'gd::EventsRenderingHelper']]],
   ['drawnicerectangle',['DrawNiceRectangle',['../classgd_1_1_events_rendering_helper.html#a7c22702b3979948f7acda078517bbf71',1,'gd::EventsRenderingHelper']]],
-  ['drawtextinarea',['DrawTextInArea',['../classgd_1_1_events_rendering_helper.html#a1198be01e90cbbdcb89404818d45a273',1,'gd::EventsRenderingHelper']]]
+  ['drawtextinarea',['DrawTextInArea',['../classgd_1_1_events_rendering_helper.html#a28091029319e5190c4e2cfc1a61e2431',1,'gd::EventsRenderingHelper']]]
 ];

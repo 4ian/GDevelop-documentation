@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
@@ -115,16 +115,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;wx/dialog.h&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;wx/stc/stc.h&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//*)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>CppCodeEvent;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d9a/class_cpp_code_event.html">CppCodeEvent</a>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Layout; }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>EditCppCodeEvent: <span class="keyword">public</span> wxDialog</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d8/db3/class_edit_cpp_code_event.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d8/db3/class_edit_cpp_code_event.html">EditCppCodeEvent</a>: <span class="keyword">public</span> wxDialog</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                EditCppCodeEvent(wxWindow* parent, CppCodeEvent &amp; event_, gd::Project &amp; game_, gd::Layout &amp; scene_);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keyword">virtual</span> ~EditCppCodeEvent();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="../../d8/db3/class_edit_cpp_code_event.html">EditCppCodeEvent</a>(wxWindow* parent, <a class="code" href="../../dd/d9a/class_cpp_code_event.html">CppCodeEvent</a> &amp; event_, gd::Project &amp; game_, gd::Layout &amp; scene_);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keyword">virtual</span> ~<a class="code" href="../../d8/db3/class_edit_cpp_code_event.html">EditCppCodeEvent</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="comment">//(*Declarations(EditCppCodeEvent)</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                wxTextCtrl* displayedNameEdit;</div>
@@ -186,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> UpdateFunctionPrototype();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                CppCodeEvent &amp; editedEvent;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="../../dd/d9a/class_cpp_code_event.html">CppCodeEvent</a> &amp; editedEvent;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                gd::Project &amp; game;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                gd::Layout &amp; scene;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
@@ -196,11 +196,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AutomatismsRuntimeSharedData.h:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CppCodeEvent.h:13</div></div>
+<div class="ttc" id="class_edit_cpp_code_event_html"><div class="ttname"><a href="../../d8/db3/class_edit_cpp_code_event.html">EditCppCodeEvent</a></div><div class="ttdef"><b>Definition:</b> EditCppCodeEvent.h:29</div></div>
+<div class="ttc" id="class_cpp_code_event_html"><div class="ttname"><a href="../../dd/d9a/class_cpp_code_event.html">CppCodeEvent</a></div><div class="ttdoc">Builtin internal event that pick an object of a list each time it is repeated. </div><div class="ttdef"><b>Definition:</b> CppCodeEvent.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

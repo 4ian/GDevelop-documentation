@@ -1,0 +1,11 @@
+digraph "AudioExtension::GetPropertyForDebugger"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AudioExtension::GetProperty\lForDebugger",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RuntimeGame::GetSoundManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/ddb/class_runtime_game.html#a0c6a930cf57c383cc49c8eae1a3e86d6"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SoundManager::GetGlobalVolume",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dd9/class_sound_manager.html#a4e241edbbe7e34738cd6de059d0e5e6c"];
+}

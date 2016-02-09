@@ -112,29 +112,24 @@ Declare actions, conditions and expressions</h1>
 <div class="line">    .AddParameter(<span class="stringliteral">&quot;theTypeOfTheParameter&quot;</span>, _(<span class="stringliteral">&quot;Parameter2&quot;</span>))</div>
 <div class="line">    .SetFunctionName(<span class="stringliteral">&quot;MyFunctionName&quot;</span>).SetIncludeFile(<span class="stringliteral">&quot;MyExtension/MyIncludeFile.h&quot;</span>);</div>
 </div><!-- fragment --><p> Declare conditions and expressions in a similar way.<br />
- Parameters are added using <a class="el" href="classgd_1_1_instruction_metadata.html#a7d89b891eeaba90c00f99d97eece501b" title="Add a parameter to the instruction ( condition or action ) information class. ">gd::InstructionMetadata::AddParameter</a>.</p>
+ Parameters are added using <a class="el" href="classgd_1_1_instruction_metadata.html#a95486188a843f9ac8cdb1b0700c6c7e5" title="Add a parameter to the instruction ( condition or action ) information class. ">gd::InstructionMetadata::AddParameter</a>.</p>
 <p>The last line set the function name that will be called when generating the code of an event using the action:<br />
  You can either do it after declaring the function, or later using this syntax:</p>
 <div class="fragment"><div class="line">GetAllActions()[<span class="stringliteral">&quot;ExtensionName::ActionName&quot;</span>].SetFunctionName(<span class="stringliteral">&quot;MyFunctionName&quot;</span>);</div>
 </div><!-- fragment --><p>Both methods are ok, but the latest allows to use the same code to declare an extension for the C++ and JS platform, then customize the names of the functions to call.</p>
 <h1><a class="anchor" id="objectsDeclaration"></a>
 Declare objects</h1>
-<p>Adding an object is made using <a class="el" href="classgd_1_1_platform_extension.html#a9fe7c159ea77e19406e0a8374e27c84d" title="Declare a new object as being part of the extension. ">gd::PlatformExtension::AddObject</a> method.</p>
-<div class="fragment"><div class="line"><a class="code" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp; obj = AddObject(<span class="stringliteral">&quot;Name&quot;</span>,</div>
+<p>Adding an object is made using <a class="el" href="classgd_1_1_platform_extension.html#ab21dd06ec7c386cf558b9881232773d8" title="Declare a new object as being part of the extension. ">gd::PlatformExtension::AddObject</a> method.</p>
+<div class="fragment"><div class="line"><a class="code" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp; obj = AddObject&lt;MyObject&gt;(</div>
+<div class="line">                   <span class="stringliteral">&quot;Name&quot;</span>,</div>
 <div class="line">                   _(<span class="stringliteral">&quot;Name displayed to users&quot;</span>),</div>
 <div class="line">                   _(<span class="stringliteral">&quot;Description&quot;</span>),</div>
-<div class="line">                   <span class="stringliteral">&quot;path-to-a-32-by-32-icon.png&quot;</span>,</div>
-<div class="line">                   &amp;FunctionForCreatingTheObject);</div>
-</div><!-- fragment --><p><em>FunctionForCreatingTheObject</em> is a function that must just create the object. It should look like this:</p>
-<div class="fragment"><div class="line"><a class="code" href="classgd_1_1_object.html">gd::Object</a> * CreateTextObject(std::string name)</div>
-<div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <span class="keyword">new</span> TextObject(name);</div>
-<div class="line">}</div>
+<div class="line">                   <span class="stringliteral">&quot;path-to-a-32-by-32-icon.png&quot;</span>);</div>
 </div><!-- fragment --><p>The <em>C++ platform</em> also requires that you call <em>AddRuntimeObject</em> to declare the RuntimeObject class associated to the object being declared:<br />
- You must pass as parameter the name of the class inheriting from RuntimeObject and a function used to create an instance of the RuntimeObject.</p>
-<p>You will also want to specify the .h file associated to the object using <a class="el" href="classgd_1_1_object_metadata.html#afcea120749f53034c45e13872ce2769b" title="Erase any existing include file and add the specified include. ">gd::ObjectMetadata::SetIncludeFile</a>. For example: </p><div class="fragment"><div class="line"><span class="comment">//obj is the gd::ObjectMetadata returned when you called AddObject.</span></div>
-<div class="line">AddRuntimeObject(obj, <span class="stringliteral">&quot;RuntimeTextObject&quot;</span>, CreateRuntimeTextObject);</div>
-<div class="line">obj.<a class="code" href="classgd_1_1_object_metadata.html#afcea120749f53034c45e13872ce2769b">SetIncludeFile</a>(<span class="stringliteral">&quot;TextObject/TextObject.h&quot;</span>);</div>
+ It has two template parameters: the first one is the corresponding object class declared with <em>AddObject</em> (class inheriting from <em><a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a></em>) and the second one is the <em>RuntimeObject</em> class. You must pass as parameter the metadata from the object previously declared and the name of the class inheriting from RuntimeObject.</p>
+<p>You will also want to specify the .h file associated to the object using <a class="el" href="classgd_1_1_object_metadata.html#a68ae37960665ce0287219be05460a882" title="Erase any existing include file and add the specified include. ">gd::ObjectMetadata::SetIncludeFile</a>. For example: </p><div class="fragment"><div class="line"><span class="comment">//obj is the gd::ObjectMetadata returned when you called AddObject.</span></div>
+<div class="line">AddRuntimeObject&lt;TextObject, RuntimeTextObject&gt;(obj, <span class="stringliteral">&quot;RuntimeTextObject&quot;</span>);</div>
+<div class="line">obj.SetIncludeFile(<span class="stringliteral">&quot;TextObject/TextObject.h&quot;</span>);</div>
 </div><!-- fragment --><p>You can then declare the actions, conditions, and expressions related to the objects, using the AddAction/AddCondition/AddExpression methods provided by <em>obj</em>.</p>
 <h1><a class="anchor" id="eventsDeclaration"></a>
 Declaring events</h1>
@@ -153,25 +148,25 @@ Declaring events</h1>
 <div class="line">         <span class="stringliteral">&quot;res/eventaddicon.png&quot;</span>,</div>
 <div class="line">         std::shared_ptr&lt;gd::BaseEvent&gt;(<span class="keyword">new</span> <a class="code" href="classgd_1_1_standard_event.html">gd::StandardEvent</a>))</div>
 <div class="line">        .SetCodeGenerator(std::shared_ptr&lt;gd::EventMetadata::CodeGenerator&gt;(codeGen));</div>
-</div><!-- fragment --><h1><a class="anchor" id="automatismsDeclaration"></a>
-Declaring the automatisms</h1>
-<p>Automatisms are declared like objects:</p>
-<div class="fragment"><div class="line"><a class="code" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp; aut = AddAutomatism(<span class="stringliteral">&quot;Name&quot;</span>,</div>
+</div><!-- fragment --><h1><a class="anchor" id="behaviorsDeclaration"></a>
+Declaring the behaviors</h1>
+<p>Behaviors are declared like objects:</p>
+<div class="fragment"><div class="line"><a class="code" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp; aut = AddBehavior(<span class="stringliteral">&quot;Name&quot;</span>,</div>
 <div class="line">        _(<span class="stringliteral">&quot;Name displayed to users&quot;</span>),</div>
 <div class="line">        _(<span class="stringliteral">&quot;DefaultNameUsedInEditor&quot;</span>),</div>
 <div class="line">        _(<span class="stringliteral">&quot;Description.&quot;</span>),</div>
 <div class="line">        <span class="stringliteral">&quot;Group&quot;</span>,</div>
 <div class="line">        <span class="stringliteral">&quot;path-to-a-32-by-32-icon.png&quot;</span>,</div>
-<div class="line">        <span class="stringliteral">&quot;AutomatismClassName&quot;</span>,</div>
-<div class="line">        std::shared_ptr&lt;gd::Automatism&gt;(<span class="keyword">new</span> AutomatismClassName),</div>
-<div class="line">        std::shared_ptr&lt;gd::AutomatismsSharedData&gt;(<span class="keyword">new</span> AutomatismSharedDataClassName));</div>
-</div><!-- fragment --><p> The last line can be replaced by <code>std::shared_ptr&lt;gd::AutomatismsSharedData&gt;()</code> if no shared data are being used.</p>
-<p>You can then declare the actions, conditions, and expressions related to the automatism like objects:<br />
+<div class="line">        <span class="stringliteral">&quot;BehaviorClassName&quot;</span>,</div>
+<div class="line">        std::shared_ptr&lt;gd::Behavior&gt;(<span class="keyword">new</span> BehaviorClassName),</div>
+<div class="line">        std::shared_ptr&lt;gd::BehaviorsSharedData&gt;(<span class="keyword">new</span> BehaviorSharedDataClassName));</div>
+</div><!-- fragment --><p> The last line can be replaced by <code>std::shared_ptr&lt;gd::BehaviorsSharedData&gt;()</code> if no shared data are being used.</p>
+<p>You can then declare the actions, conditions, and expressions related to the behavior like objects:<br />
  Call AddAction/AddCondition/AddExpression on the <em>aut</em> object.</p>
 <h1><a class="anchor" id="excludingNonRuntimeDeclaration"></a>
 (C++ platform) Excluding elements declaration from runtime</h1>
 <p>When your extension is compiled for the C++ platform Runtime, GDevelop does not known anything about action/condition or even events classes.<br />
- You have then to exclude all actions/conditions/expressions/events declaration from extension at runtime (only Extension/Object/Automatisms declarations have to be kept).</p>
+ You have then to exclude all actions/conditions/expressions/events declaration from extension at runtime (only Extension/Object/Behaviors declarations have to be kept).</p>
 <p>Use the *<code>GD_IDE_ONLY</code> define* to achieve this goal, as demonstrated in this skeleton of a complete extension declaration: </p><div class="fragment"><div class="line"><span class="keyword">class </span>Extension : <span class="keyword">public</span> ExtensionBase <span class="comment">//For C++ platform, extensions must derive from ExtensionBase</span></div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
@@ -200,32 +195,32 @@ Declaring the automatisms</h1>
 <div class="line">            AddRuntimeObject(obj, <span class="stringliteral">&quot;RuntimeObjectName&quot;</span>, CreateRuntimeObjectName);</div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">            #if defined(GD_IDE_ONLY)</span></div>
-<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#afcea120749f53034c45e13872ce2769b">SetIncludeFile</a>(<span class="stringliteral">&quot;MyExtension/MyIncludeFile.h&quot;</span>);</div>
+<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#a68ae37960665ce0287219be05460a882">SetIncludeFile</a>(<span class="stringliteral">&quot;MyExtension/MyIncludeFile.h&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#a00c0bf0273db581bd6104309b7534f1e">AddAction</a>(...);</div>
-<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#aec38f12ad965b073ee12bcdf4c1716c7">AddCondition</a>(...);</div>
-<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#aa2f317aa43ca77cdefbe5412f53ef4d8">AddExpression</a>(...);</div>
+<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#a6d954dc68c00c3ceeace6de4bfefbe5e">AddAction</a>(...);</div>
+<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#ae004d06183e6fe9c394c7fbac9fe70a5">AddCondition</a>(...);</div>
+<div class="line">            obj.<a class="code" href="classgd_1_1_object_metadata.html#a2facc8f46569f77ff79a93affa8b5032">AddExpression</a>(...);</div>
 <div class="line"><span class="preprocessor">            #endif</span></div>
 <div class="line"></div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        {</div>
-<div class="line">            <a class="code" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp; aut = AddAutomatism(<span class="stringliteral">&quot;AutomatismName&quot;</span>,</div>
-<div class="line">                       _(<span class="stringliteral">&quot;Automatism name&quot;</span>),</div>
+<div class="line">            <a class="code" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp; aut = AddBehavior(<span class="stringliteral">&quot;BehaviorName&quot;</span>,</div>
+<div class="line">                       _(<span class="stringliteral">&quot;Behavior name&quot;</span>),</div>
 <div class="line">                       <span class="stringliteral">&quot;defaultGDname&quot;</span>,</div>
 <div class="line">                       _(<span class="stringliteral">&quot;Description&quot;</span>),</div>
 <div class="line">                       <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line">                       <span class="stringliteral">&quot;CppPlatform/Extensions/myicon.png&quot;</span>,</div>
-<div class="line">                       <span class="stringliteral">&quot;PhysicsAutomatism&quot;</span>,</div>
-<div class="line">                       std::shared_ptr&lt;gd::Automatism&gt;(<span class="keyword">new</span> AutomatismClassName),</div>
-<div class="line">                       std::shared_ptr&lt;gd::AutomatismsSharedData&gt;(<span class="keyword">new</span> AutomatismSharedDataClassName));</div>
+<div class="line">                       <span class="stringliteral">&quot;PhysicsBehavior&quot;</span>,</div>
+<div class="line">                       std::shared_ptr&lt;gd::Behavior&gt;(<span class="keyword">new</span> BehaviorClassName),</div>
+<div class="line">                       std::shared_ptr&lt;gd::BehaviorsSharedData&gt;(<span class="keyword">new</span> BehaviorSharedDataClassName));</div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">            #if defined(GD_IDE_ONLY)</span></div>
-<div class="line">            automatismInfo.SetIncludeFile(<span class="stringliteral">&quot;MyExtension/MyIncludeFile.h&quot;</span>);</div>
+<div class="line">            behaviorInfo.SetIncludeFile(<span class="stringliteral">&quot;MyExtension/MyIncludeFile.h&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">            aut.<a class="code" href="classgd_1_1_automatism_metadata.html#a9d3528a87b59bad548f97ad974032b95">AddAction</a>(...);</div>
-<div class="line">            aut.<a class="code" href="classgd_1_1_automatism_metadata.html#abc1efd721c92f4c84c24b2de0dbfe205">AddCondition</a>(...);</div>
-<div class="line">            aut.<a class="code" href="classgd_1_1_automatism_metadata.html#ad584bf7a99eb6370748c9c9116bd8741">AddExpression</a>(...);</div>
+<div class="line">            aut.<a class="code" href="classgd_1_1_behavior_metadata.html#a043c9ce3d4e057e8af275f3b474115e8">AddAction</a>(...);</div>
+<div class="line">            aut.<a class="code" href="classgd_1_1_behavior_metadata.html#a726128f920faf262ef95da507cbfc3ef">AddCondition</a>(...);</div>
+<div class="line">            aut.<a class="code" href="classgd_1_1_behavior_metadata.html#af3b1f3c2515e9db8c170ddba3db87164">AddExpression</a>(...);</div>
 <div class="line"><span class="preprocessor">            #endif</span></div>
 <div class="line"></div>
 <div class="line">        }</div>
@@ -243,7 +238,7 @@ Declaring the automatisms</h1>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

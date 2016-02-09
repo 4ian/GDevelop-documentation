@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_cb41f5ef91fc988d72e8399a7772e902.html">PlatformDefinition</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_4aeb9e7b053513ba8882cbc67130aab6.html">Extensions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,295 +93,306 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef GDCORE_PLATFORMEXTENSION_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define GDCORE_PLATFORMEXTENSION_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright 2016 Victor Levasseur (victorlevasseur52@gmail.com)</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef GDCORE_PLATFORMEXTENSION_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define GDCORE_PLATFORMEXTENSION_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/ObjectMetadata.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/AutomatismMetadata.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/EventMetadata.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Instruction; }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>InstructionMetadata; }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ExpressionMetadata; }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ObjectMetadata; }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>AutomatismMetadata; }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventMetadata; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventCodeGenerator; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ArbitraryResourceWorker; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>AutomatismsSharedData; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Automatism; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Object; }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> void (*DestroyFunPtr)(<a class="code" href="classgd_1_1_object.html">gd::Object</a>*);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classgd_1_1_object.html">gd::Object</a> * (*CreateFunPtr)(std::string name);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgd_1_1_compilation_info.html">   38</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span> :</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a>() : informationCompleted(<span class="keyword">false</span>) {};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a>() {};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> informationCompleted;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Metadata/ObjectMetadata.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Metadata/BehaviorMetadata.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Metadata/EventMetadata.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;GDCore/CommonTools.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Instruction; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>InstructionMetadata; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ExpressionMetadata; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ObjectMetadata; }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BehaviorMetadata; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventMetadata; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>EventCodeGenerator; }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>ArbitraryResourceWorker; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>BehaviorsSharedData; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Behavior; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Object; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">typedef</span> void (*DestroyFunPtr)(<a class="code" href="classgd_1_1_object.html">gd::Object</a>*);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classgd_1_1_object.html">gd::Object</a> * (*CreateFunPtr)(<a class="code" href="classgd_1_1_string.html">gd::String</a> name);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classgd_1_1_compilation_info.html">   40</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a>() : informationCompleted(<span class="keyword">false</span>) {};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a>() {};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3">   46</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3">runtimeOnly</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> informationCompleted;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    #if defined(__GNUC__)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> gccMajorVersion;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> gccMinorVersion;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> gccPatchLevel;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> sfmlMajorVersion;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> sfmlMinorVersion;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> wxWidgetsMajorVersion;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> wxWidgetsMinorVersion;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> wxWidgetsReleaseNumber;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> wxWidgetsSubReleaseNumber;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::string gdCoreVersion;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> sizeOfpInt;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html">   74</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_platform_extension.html">PlatformExtension</a></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a> compilationInfo;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classgd_1_1_platform_extension.html">PlatformExtension</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_platform_extension.html">PlatformExtension</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> SetExtensionInformation(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                 <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                 <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                 <span class="keyword">const</span> std::string &amp; author_,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                 <span class="keyword">const</span> std::string &amp; license_);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; AddCondition(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                           <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                           <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                           <span class="keyword">const</span> std::string &amp; sentence_,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                           <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                           <span class="keyword">const</span> std::string &amp; icon_,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                           <span class="keyword">const</span> std::string &amp; smallicon_);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; AddAction(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                           <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                           <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                           <span class="keyword">const</span> std::string &amp; sentence_,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                           <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                           <span class="keyword">const</span> std::string &amp; icon_,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                           <span class="keyword">const</span> std::string &amp; smallicon_);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; AddExpression(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                           <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                           <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                           <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                           <span class="keyword">const</span> std::string &amp; smallicon_);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; AddStrExpression(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                           <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                           <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                           <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                           <span class="keyword">const</span> std::string &amp; smallicon_);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp; AddObject(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                   <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                   <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                   <span class="keyword">const</span> std::string &amp; icon24x24_,</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                   CreateFunPtr createFunPtrP);</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3">   48</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3">runtimeOnly</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    #if defined(__GNUC__)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> gccMajorVersion;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> gccMinorVersion;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> gccPatchLevel;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> sfmlMajorVersion;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> sfmlMinorVersion;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> wxWidgetsMajorVersion;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> wxWidgetsMinorVersion;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> wxWidgetsReleaseNumber;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> wxWidgetsSubReleaseNumber;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> gdCoreVersion;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> sizeOfpInt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html">   76</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_platform_extension.html">PlatformExtension</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classgd_1_1_compilation_info.html">CompilationInfo</a> compilationInfo;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classgd_1_1_platform_extension.html">PlatformExtension</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_platform_extension.html">PlatformExtension</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> SetExtensionInformation(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; author_,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; license_);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a737fe4f423cfee79efd899b2a236c104">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_platform_extension.html#a737fe4f423cfee79efd899b2a236c104">MarkAsDeprecated</a>() { deprecated = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; AddCondition(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; sentence_,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; icon_,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; smallicon_);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; AddAction(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; sentence_,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; icon_,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; smallicon_);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; AddExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; smallicon_);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; AddStrExpression(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                           <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; smallicon_);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp; AddObject(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                   <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                   <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                   <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; icon24x24_);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp; AddAutomatism(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                          <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                          <span class="keyword">const</span> std::string &amp; defaultName_,</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                          <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                          <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                          <span class="keyword">const</span> std::string &amp; icon24x24_,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                          <span class="keyword">const</span> std::string &amp; className_,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                          std::shared_ptr&lt;gd::Automatism&gt; instance,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                          std::shared_ptr&lt;gd::AutomatismsSharedData&gt; sharedDatasInstance);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp; AddBehavior(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; defaultName_,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; icon24x24_,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                          <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; className_,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                          std::shared_ptr&lt;gd::Behavior&gt; instance,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                          std::shared_ptr&lt;gd::BehaviorsSharedData&gt; sharedDatasInstance);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">gd::EventMetadata</a> &amp; AddEvent(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                 <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                 <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                 <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                 <span class="keyword">const</span> std::string &amp; smallicon_,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">gd::EventMetadata</a> &amp; AddEvent(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; smallicon_,</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                 std::shared_ptr&lt;gd::BaseEvent&gt; instance);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a706a9d62176746fa639b489f262d1cee">  193</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_platform_extension.html#a706a9d62176746fa639b489f262d1cee">GetFullName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fullname; }</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a14a98f34a39171752f281bae60a1bca7">  193</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_platform_extension.html#a14a98f34a39171752f281bae60a1bca7">GetFullName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fullname; }</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a2ce3c8ba80a110184050f291e44c0540">  198</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_platform_extension.html#a2ce3c8ba80a110184050f291e44c0540">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a59f9811b963c60a6bee8254d8b59701c">  198</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_platform_extension.html#a59f9811b963c60a6bee8254d8b59701c">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> name; }</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a2f266b00eb01517c52ac94eece4775e5">  203</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_platform_extension.html#a2f266b00eb01517c52ac94eece4775e5">GetDescription</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> informations; }</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a97bbf3613feec62ef362417f78d49bc7">  203</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_platform_extension.html#a97bbf3613feec62ef362417f78d49bc7">GetDescription</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> informations; }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#acb1c50eae25537e520125c72d89374ad">  208</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_platform_extension.html#acb1c50eae25537e520125c72d89374ad">GetAuthor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> author; }</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a89734c91053050a0397c6cc7d69304f7">  208</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_platform_extension.html#a89734c91053050a0397c6cc7d69304f7">GetAuthor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> author; }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a67cd2b81f1382664dc3c77dc74f1d15e">  213</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_platform_extension.html#a67cd2b81f1382664dc3c77dc74f1d15e">GetLicense</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> license; }</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a256781017579f8730873fa4d0632a3c3">  213</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_platform_extension.html#a256781017579f8730873fa4d0632a3c3">GetLicense</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> license; }</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">bool</span> IsBuiltin() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a28642921471d9a90f603fdb4ff5c1ee0">  218</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_platform_extension.html#a28642921471d9a90f603fdb4ff5c1ee0">IsDeprecated</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> deprecated; }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a572afbf9dcaef5b000145d25a60ec74f">  224</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_platform_extension.html#a572afbf9dcaef5b000145d25a60ec74f">GetNameSpace</a>() { <span class="keywordflow">return</span> nameSpace; };</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    std::vector &lt; std::string &gt; GetExtensionObjectsTypes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> IsBuiltin() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a4c40e3c3d6a15ec67776cf17272be979">  229</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_platform_extension.html#a4c40e3c3d6a15ec67776cf17272be979">GetNameSpace</a>() { <span class="keywordflow">return</span> nameSpace; };</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    std::vector &lt; std::string &gt; GetAutomatismsTypes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    std::vector &lt; gd::String &gt; GetExtensionObjectsTypes() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    CreateFunPtr GetObjectCreationFunctionPtr(std::string objectType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    std::vector &lt; gd::String &gt; GetBehaviorsTypes() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    std::shared_ptr&lt;gd::BaseEvent&gt; CreateEvent(std::string eventType) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="classgd_1_1_automatism.html">gd::Automatism</a>* CreateAutomatism(std::string automatismType) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    std::shared_ptr&lt;gd::AutomatismsSharedData&gt; CreateAutomatismSharedDatas(std::string automatismType) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp; GetObjectMetadata(<span class="keyword">const</span> std::string &amp; objectType);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    CreateFunPtr GetObjectCreationFunctionPtr(<a class="code" href="classgd_1_1_string.html">gd::String</a> objectType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    std::shared_ptr&lt;gd::BaseEvent&gt; CreateEvent(<a class="code" href="classgd_1_1_string.html">gd::String</a> eventType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::unique_ptr&lt;gd::Behavior&gt; CreateBehavior(<a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    std::shared_ptr&lt;gd::BehaviorsSharedData&gt; CreateBehaviorSharedDatas(<a class="code" href="classgd_1_1_string.html">gd::String</a> behaviorType) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="classgd_1_1_automatism_metadata.html">AutomatismMetadata</a> &amp; GetAutomatismMetadata(<span class="keyword">const</span> std::string &amp; automatismType);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp; GetObjectMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; objectType);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    std::map&lt;std::string, gd::EventMetadata &gt; &amp; GetAllEvents();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> &amp; GetBehaviorMetadata(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; behaviorType);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; &amp; GetAllActions();</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; &amp; GetAllConditions();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    std::map&lt;gd::String, gd::EventMetadata &gt; &amp; GetAllEvents();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; &amp; GetAllActions();</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; &amp; GetAllExpressions();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; &amp; GetAllConditions();</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; &amp; GetAllStrExpressions();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; &amp; GetAllExpressions();</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; &amp; GetAllActionsForObject(std::string objectType);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; &amp; GetAllStrExpressions();</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; &amp; GetAllConditionsForObject(std::string objectType);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; &amp; GetAllActionsForObject(<a class="code" href="classgd_1_1_string.html">gd::String</a> objectType);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; &amp; GetAllExpressionsForObject(std::string objectType);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; &amp; GetAllConditionsForObject(<a class="code" href="classgd_1_1_string.html">gd::String</a> objectType);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; &amp; GetAllStrExpressionsForObject(std::string objectType);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; &amp; GetAllExpressionsForObject(<a class="code" href="classgd_1_1_string.html">gd::String</a> objectType);</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; &amp; GetAllActionsForAutomatism(std::string autoType);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; &amp; GetAllStrExpressionsForObject(<a class="code" href="classgd_1_1_string.html">gd::String</a> objectType);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; &amp; GetAllConditionsForAutomatism(std::string autoType);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; &amp; GetAllActionsForBehavior(<a class="code" href="classgd_1_1_string.html">gd::String</a> autoType);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; &amp; GetAllExpressionsForAutomatism(std::string autoType);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; &amp; GetAllConditionsForBehavior(<a class="code" href="classgd_1_1_string.html">gd::String</a> autoType);</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; &amp; GetAllStrExpressionsForAutomatism(std::string autoType);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; &amp; GetAllExpressionsForBehavior(<a class="code" href="classgd_1_1_string.html">gd::String</a> autoType);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">  342</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">ExposeConditionsResources</a>(<a class="code" href="classgd_1_1_instruction.html">Instruction</a> &amp; condition, <a class="code" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp; worker) {};</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">  349</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">ExposeActionsResources</a>(<a class="code" href="classgd_1_1_instruction.html">Instruction</a> &amp; action, <a class="code" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp; worker) {};</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">void</span> CloneExtension(<span class="keyword">const</span> std::string &amp; platformName, <span class="keyword">const</span> std::string &amp; extensionName, <span class="keywordtype">bool</span> stripFunctionsNameAndCodeGeneration = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">void</span> StripUnimplementedInstructionsAndExpressions();</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::string&gt; GetBuiltinExtensionsNames();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; &amp; GetAllStrExpressionsForBehavior(<a class="code" href="classgd_1_1_string.html">gd::String</a> autoType);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">  347</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">ExposeConditionsResources</a>(<a class="code" href="classgd_1_1_instruction.html">Instruction</a> &amp; condition, <a class="code" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp; worker) {};</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">  354</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">ExposeActionsResources</a>(<a class="code" href="classgd_1_1_instruction.html">Instruction</a> &amp; action, <a class="code" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp; worker) {};</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">void</span> CloneExtension(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; platformName, <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; extensionName, <span class="keywordtype">bool</span> stripFunctionsNameAndCodeGeneration = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordtype">void</span> StripUnimplementedInstructionsAndExpressions();</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">void</span> SetNameSpace(std::string nameSpace_);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keyword">static</span> std::vector&lt;gd::String&gt; GetBuiltinExtensionsNames();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    std::string name; </div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    std::string nameSpace; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    std::string fullname; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    std::string informations; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    std::string author; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    std::string license;  </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    std::map&lt;std::string, gd::ObjectMetadata &gt; objectsInfos;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    std::map&lt;std::string, gd::AutomatismMetadata &gt; automatismsInfo;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; conditionsInfos;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    std::map&lt;std::string, gd::InstructionMetadata &gt; actionsInfos;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; expressionsInfos;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    std::map&lt;std::string, gd::ExpressionMetadata &gt; strExpressionsInfos;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    std::map&lt;std::string, gd::EventMetadata &gt; eventsInfos;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> badObjectMetadata;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <a class="code" href="classgd_1_1_automatism_metadata.html">AutomatismMetadata</a> badAutomatismMetadata;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, gd::InstructionMetadata &gt; badConditionsMetadata; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, gd::InstructionMetadata &gt; badActionsMetadata;  </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, gd::ExpressionMetadata &gt; badExpressionsMetadata; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">static</span> std::map&lt;std::string, gd::ExpressionMetadata &gt; badStrExpressionsMetadata;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;};</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">    #define GD_COMPLETE_WX_COMPILATION_INFORMATION() compilationInfo.wxWidgetsMajorVersion = wxMAJOR_VERSION; \</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">    compilationInfo.wxWidgetsMinorVersion = wxMINOR_VERSION; \</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">    compilationInfo.wxWidgetsReleaseNumber = wxRELEASE_NUMBER; \</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">    compilationInfo.wxWidgetsSubReleaseNumber = wxSUBRELEASE_NUMBER;</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">    #define GD_COMPLETE_WX_COMPILATION_INFORMATION() ;</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#define GD_COMPLETE_EXTENSION_COMPILATION_INFORMATION() compilationInfo.runtimeOnly = false; \</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMajorVersion = 2; \</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMinorVersion = 0; \</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">    compilationInfo.gdCoreVersion = GDCore_RC_FILEVERSION_STRING; \</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">    compilationInfo.sizeOfpInt = sizeof(int*); \</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">    GD_COMPLETE_WX_COMPILATION_INFORMATION() \</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">    compilationInfo.gccMajorVersion = __GNUC__; \</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">    compilationInfo.gccMinorVersion = __GNUC_MINOR__; \</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">    compilationInfo.gccPatchLevel = __GNUC_PATCHLEVEL__; \</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">    compilationInfo.informationCompleted = true;</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#define GD_COMPLETE_EXTENSION_COMPILATION_INFORMATION() compilationInfo.runtimeOnly = true;\</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMajorVersion = 2; \</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMinorVersion = 0; \</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">    compilationInfo.gdCoreVersion = GDCore_RC_FILEVERSION_STRING; \</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="preprocessor">    compilationInfo.sizeOfpInt = sizeof(int*); \</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor">    compilationInfo.gccMajorVersion = __GNUC__; \</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">    compilationInfo.gccMinorVersion = __GNUC_MINOR__; \</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor">    compilationInfo.gccPatchLevel = __GNUC_PATCHLEVEL__; \</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">    compilationInfo.informationCompleted = true;</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#endif // GDCORE_PLATFORMEXTENSION_H</span></div>
-<div class="ttc" id="classgd_1_1_automatism_metadata_html"><div class="ttname"><a href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a></div><div class="ttdoc">Contains user-friendly information about an automatism type. </div><div class="ttdef"><b>Definition:</b> AutomatismMetadata.h:32</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a2ce3c8ba80a110184050f291e44c0540"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a2ce3c8ba80a110184050f291e44c0540">gd::PlatformExtension::GetName</a></div><div class="ttdeci">const std::string &amp; GetName() const </div><div class="ttdoc">Return the name of the extension. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:198</div></div>
-<div class="ttc" id="classgd_1_1_arbitrary_resource_worker_html"><div class="ttname"><a href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a></div><div class="ttdoc">ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...</div><div class="ttdef"><b>Definition:</b> ArbitraryResourceWorker.h:33</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_compilation_info_html_aac46970dbc2b64f590a34af410eaedc3"><div class="ttname"><a href="classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3">gd::CompilationInfo::runtimeOnly</a></div><div class="ttdeci">bool runtimeOnly</div><div class="ttdoc">True if the extension was compiled for a runtime use only. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:46</div></div>
-<div class="ttc" id="classgd_1_1_compilation_info_html"><div class="ttname"><a href="classgd_1_1_compilation_info.html">gd::CompilationInfo</a></div><div class="ttdoc">Class used by gd::PlatformExtension to ensure that an extension is compiled against the right version...</div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:38</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a67cd2b81f1382664dc3c77dc74f1d15e"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a67cd2b81f1382664dc3c77dc74f1d15e">gd::PlatformExtension::GetLicense</a></div><div class="ttdeci">const std::string &amp; GetLicense() const </div><div class="ttdoc">Return the name of extension license. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:213</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html"><div class="ttname"><a href="classgd_1_1_platform_extension.html">gd::PlatformExtension</a></div><div class="ttdoc">Base class for implementing platform&#39;s extensions. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:74</div></div>
-<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:90</div></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">void</span> SetNameSpace(<a class="code" href="classgd_1_1_string.html">gd::String</a> nameSpace_);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> name; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> nameSpace; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> fullname; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> informations; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> author; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> license;  </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">bool</span> deprecated;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    std::map&lt;gd::String, gd::ObjectMetadata &gt; objectsInfos;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    std::map&lt;gd::String, gd::BehaviorMetadata &gt; behaviorsInfo;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; conditionsInfos;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    std::map&lt;gd::String, gd::InstructionMetadata &gt; actionsInfos;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; expressionsInfos;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    std::map&lt;gd::String, gd::ExpressionMetadata &gt; strExpressionsInfos;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    std::map&lt;gd::String, gd::EventMetadata &gt; eventsInfos;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <a class="code" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> badObjectMetadata;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> badBehaviorMetadata;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keyword">static</span> std::map&lt;gd::String, gd::InstructionMetadata &gt; badConditionsMetadata; </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keyword">static</span> std::map&lt;gd::String, gd::InstructionMetadata &gt; badActionsMetadata;  </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">static</span> std::map&lt;gd::String, gd::ExpressionMetadata &gt; badExpressionsMetadata; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">static</span> std::map&lt;gd::String, gd::ExpressionMetadata &gt; badStrExpressionsMetadata;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;};</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">    #define GD_COMPLETE_WX_COMPILATION_INFORMATION() compilationInfo.wxWidgetsMajorVersion = wxMAJOR_VERSION; \</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">    compilationInfo.wxWidgetsMinorVersion = wxMINOR_VERSION; \</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">    compilationInfo.wxWidgetsReleaseNumber = wxRELEASE_NUMBER; \</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">    compilationInfo.wxWidgetsSubReleaseNumber = wxSUBRELEASE_NUMBER;</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">    #define GD_COMPLETE_WX_COMPILATION_INFORMATION() ;</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#define GD_COMPLETE_EXTENSION_COMPILATION_INFORMATION() compilationInfo.runtimeOnly = false; \</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMajorVersion = 2; \</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMinorVersion = 0; \</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">    compilationInfo.gdCoreVersion = GDCore_RC_FILEVERSION_STRING; \</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">    compilationInfo.sizeOfpInt = sizeof(int*); \</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">    GD_COMPLETE_WX_COMPILATION_INFORMATION() \</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor">    compilationInfo.gccMajorVersion = __GNUC__; \</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">    compilationInfo.gccMinorVersion = __GNUC_MINOR__; \</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">    compilationInfo.gccPatchLevel = __GNUC_PATCHLEVEL__; \</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">    compilationInfo.informationCompleted = true;</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#define GD_COMPLETE_EXTENSION_COMPILATION_INFORMATION() compilationInfo.runtimeOnly = true;\</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMajorVersion = 2; \</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">    compilationInfo.sfmlMinorVersion = 0; \</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="preprocessor">    compilationInfo.gdCoreVersion = GDCore_RC_FILEVERSION_STRING; \</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">    compilationInfo.sizeOfpInt = sizeof(int*); \</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">    compilationInfo.gccMajorVersion = __GNUC__; \</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">    compilationInfo.gccMinorVersion = __GNUC_MINOR__; \</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor">    compilationInfo.gccPatchLevel = __GNUC_PATCHLEVEL__; \</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">    compilationInfo.informationCompleted = true;</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/PlatformExtension.inl&quot;</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor">#endif // GDCORE_PLATFORMEXTENSION_H</span></div>
+<div class="ttc" id="classgd_1_1_arbitrary_resource_worker_html"><div class="ttname"><a href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a></div><div class="ttdoc">ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...</div><div class="ttdef"><b>Definition:</b> ArbitraryResourceWorker.h:34</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_compilation_info_html_aac46970dbc2b64f590a34af410eaedc3"><div class="ttname"><a href="classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3">gd::CompilationInfo::runtimeOnly</a></div><div class="ttdeci">bool runtimeOnly</div><div class="ttdoc">True if the extension was compiled for a runtime use only. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:48</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a256781017579f8730873fa4d0632a3c3"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a256781017579f8730873fa4d0632a3c3">gd::PlatformExtension::GetLicense</a></div><div class="ttdeci">const gd::String &amp; GetLicense() const </div><div class="ttdoc">Return the name of extension license. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:213</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a28642921471d9a90f603fdb4ff5c1ee0"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a28642921471d9a90f603fdb4ff5c1ee0">gd::PlatformExtension::IsDeprecated</a></div><div class="ttdeci">bool IsDeprecated() const </div><div class="ttdoc">Check if the extension is flagged as being deprecated. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:218</div></div>
+<div class="ttc" id="classgd_1_1_behavior_metadata_html"><div class="ttname"><a href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a></div><div class="ttdoc">Contains user-friendly information about a behavior type. </div><div class="ttdef"><b>Definition:</b> BehaviorMetadata.h:32</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a14a98f34a39171752f281bae60a1bca7"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a14a98f34a39171752f281bae60a1bca7">gd::PlatformExtension::GetFullName</a></div><div class="ttdeci">const gd::String &amp; GetFullName() const </div><div class="ttdoc">Return the name extension user friendly name. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:193</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a97bbf3613feec62ef362417f78d49bc7"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a97bbf3613feec62ef362417f78d49bc7">gd::PlatformExtension::GetDescription</a></div><div class="ttdeci">const gd::String &amp; GetDescription() const </div><div class="ttdoc">Return a description of the extension. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:203</div></div>
+<div class="ttc" id="classgd_1_1_compilation_info_html"><div class="ttname"><a href="classgd_1_1_compilation_info.html">gd::CompilationInfo</a></div><div class="ttdoc">Class used by gd::PlatformExtension to ensure that an extension is compiled against the right version...</div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:40</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html"><div class="ttname"><a href="classgd_1_1_platform_extension.html">gd::PlatformExtension</a></div><div class="ttdoc">Base class for implementing platform&#39;s extensions. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:76</div></div>
+<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:91</div></div>
 <div class="ttc" id="classgd_1_1_event_metadata_html"><div class="ttname"><a href="classgd_1_1_event_metadata.html">gd::EventMetadata</a></div><div class="ttdoc">Describe an event provided by an extension of a platform. </div><div class="ttdef"><b>Definition:</b> EventMetadata.h:32</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a2f266b00eb01517c52ac94eece4775e5"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a2f266b00eb01517c52ac94eece4775e5">gd::PlatformExtension::GetDescription</a></div><div class="ttdeci">const std::string &amp; GetDescription() const </div><div class="ttdoc">Return a description of the extension. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:203</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a706a9d62176746fa639b489f262d1cee"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a706a9d62176746fa639b489f262d1cee">gd::PlatformExtension::GetFullName</a></div><div class="ttdeci">const std::string &amp; GetFullName() const </div><div class="ttdoc">Return the name extension user friendly name. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:193</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a8e46e6878e76ae6fa968f5a22137e820"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">gd::PlatformExtension::ExposeActionsResources</a></div><div class="ttdeci">virtual void ExposeActionsResources(Instruction &amp;action, gd::ArbitraryResourceWorker &amp;worker)</div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:349</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a572afbf9dcaef5b000145d25a60ec74f"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a572afbf9dcaef5b000145d25a60ec74f">gd::PlatformExtension::GetNameSpace</a></div><div class="ttdeci">const std::string &amp; GetNameSpace()</div><div class="ttdoc">Get the namespace of the extension. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:224</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a737fe4f423cfee79efd899b2a236c104"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a737fe4f423cfee79efd899b2a236c104">gd::PlatformExtension::MarkAsDeprecated</a></div><div class="ttdeci">void MarkAsDeprecated()</div><div class="ttdoc">Mark this extension as deprecated: the IDE will hide it from the user. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:96</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a8e46e6878e76ae6fa968f5a22137e820"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">gd::PlatformExtension::ExposeActionsResources</a></div><div class="ttdeci">virtual void ExposeActionsResources(Instruction &amp;action, gd::ArbitraryResourceWorker &amp;worker)</div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:354</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a59f9811b963c60a6bee8254d8b59701c"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a59f9811b963c60a6bee8254d8b59701c">gd::PlatformExtension::GetName</a></div><div class="ttdeci">const gd::String &amp; GetName() const </div><div class="ttdoc">Return the name of the extension. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:198</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a4c40e3c3d6a15ec67776cf17272be979"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a4c40e3c3d6a15ec67776cf17272be979">gd::PlatformExtension::GetNameSpace</a></div><div class="ttdeci">const gd::String &amp; GetNameSpace()</div><div class="ttdoc">Get the namespace of the extension. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:229</div></div>
 <div class="ttc" id="classgd_1_1_object_html"><div class="ttname"><a href="classgd_1_1_object.html">gd::Object</a></div><div class="ttdoc">Base class used to represent an object of a platform. </div><div class="ttdef"><b>Definition:</b> Object.h:34</div></div>
 <div class="ttc" id="classgd_1_1_expression_metadata_html"><div class="ttname"><a href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about expressions and members needed to setup an expression. </div><div class="ttdef"><b>Definition:</b> ExpressionMetadata.h:97</div></div>
-<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:32</div></div>
-<div class="ttc" id="classgd_1_1_object_metadata_html"><div class="ttname"><a href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a></div><div class="ttdoc">Contains user-friendly information about an object type, and a function to create a new gd::Object of...</div><div class="ttdef"><b>Definition:</b> ObjectMetadata.h:31</div></div>
-<div class="ttc" id="classgd_1_1_automatism_html"><div class="ttname"><a href="classgd_1_1_automatism.html">gd::Automatism</a></div><div class="ttdoc">Base class used to represents an automatism that can be applied to an object. </div><div class="ttdef"><b>Definition:</b> Automatism.h:29</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_acb1c50eae25537e520125c72d89374ad"><div class="ttname"><a href="classgd_1_1_platform_extension.html#acb1c50eae25537e520125c72d89374ad">gd::PlatformExtension::GetAuthor</a></div><div class="ttdeci">const std::string &amp; GetAuthor() const </div><div class="ttdoc">Return the name of the extension developer. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:208</div></div>
-<div class="ttc" id="classgd_1_1_platform_extension_html_a9ee91447449f4f4ce45885dd2153a815"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">gd::PlatformExtension::ExposeConditionsResources</a></div><div class="ttdeci">virtual void ExposeConditionsResources(Instruction &amp;condition, gd::ArbitraryResourceWorker &amp;worker)</div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:342</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:33</div></div>
+<div class="ttc" id="classgd_1_1_object_metadata_html"><div class="ttname"><a href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a></div><div class="ttdoc">Contains user-friendly information about an object type, and a function to create a new gd::Object of...</div><div class="ttdef"><b>Definition:</b> ObjectMetadata.h:32</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a89734c91053050a0397c6cc7d69304f7"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a89734c91053050a0397c6cc7d69304f7">gd::PlatformExtension::GetAuthor</a></div><div class="ttdeci">const gd::String &amp; GetAuthor() const </div><div class="ttdoc">Return the name of the extension developer. </div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:208</div></div>
+<div class="ttc" id="classgd_1_1_platform_extension_html_a9ee91447449f4f4ce45885dd2153a815"><div class="ttname"><a href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">gd::PlatformExtension::ExposeConditionsResources</a></div><div class="ttdeci">virtual void ExposeConditionsResources(Instruction &amp;condition, gd::ArbitraryResourceWorker &amp;worker)</div><div class="ttdef"><b>Definition:</b> PlatformExtension.h:347</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

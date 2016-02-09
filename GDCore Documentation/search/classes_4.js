@@ -25,6 +25,7 @@ var searchData=
   ['eventssearchresult',['EventsSearchResult',['../classgd_1_1_events_search_result.html',1,'gd']]],
   ['eventstoredialog',['EventStoreDialog',['../classgd_1_1_event_store_dialog.html',1,'gd']]],
   ['eventsvariablesfinder',['EventsVariablesFinder',['../classgd_1_1_events_variables_finder.html',1,'gd']]],
+  ['exception',['exception',['../classutf8_1_1exception.html',1,'utf8']]],
   ['expression',['Expression',['../classgd_1_1_expression.html',1,'gd']]],
   ['expressioncodegenerationinformation',['ExpressionCodeGenerationInformation',['../classgd_1_1_expression_code_generation_information.html',1,'gd']]],
   ['expressionmetadata',['ExpressionMetadata',['../classgd_1_1_expression_metadata.html',1,'gd']]],

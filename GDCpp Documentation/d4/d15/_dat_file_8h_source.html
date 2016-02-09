@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_7aefbae60249d8db3c9a686a9296d9b4.html">Runtime</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -97,53 +97,53 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d8/dcc/namespacestd.html">std</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d9/d24/structs_d_a_t_header.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d9/d24/structs_d_a_t_header.html">sDATHeader</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">char</span> uniqueID[5]; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d9/d24/structs_d_a_t_header.html#af4e96e39d7e1aeb39710be5944d89d0e">   23</a></span>&#160;    <span class="keywordtype">char</span> version[3]; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1">   24</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1">nb_files</a>; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d7/d54/structs_file_entry.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d7/d54/structs_file_entry.html">sFileEntry</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">char</span> name[1024]; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13">   35</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="../../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13">size</a>; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd">   36</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="../../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd">offset</a>; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../dc/dd1/class_dat_file.html">   44</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../dc/dd1/class_dat_file.html">DatFile</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span> :</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::string m_datfile; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d9/d24/structs_d_a_t_header.html">sDATHeader</a> m_header; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::vector&lt;sFileEntry&gt; m_entries; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">char</span>* m_buffer; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> :</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../dc/dd1/class_dat_file.html">DatFile</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ~<a class="code" href="../../dc/dd1/class_dat_file.html">DatFile</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> Create (std::vector&lt;std::string&gt; files, std::string directory, std::string destination);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> ContainsFile(<span class="keyword">const</span> std::string &amp; filename);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> Read (std::string source);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">char</span>* GetFile (std::string filename);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">int</span> GetFileSize (std::string filename);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // DATFILE_H</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="ttc" id="structs_file_entry_html"><div class="ttname"><a href="../../d7/d54/structs_file_entry.html">sFileEntry</a></div><div class="ttdoc">Internal class related to DatFile. </div><div class="ttdef"><b>Definition:</b> DatFile.h:32</div></div>
-<div class="ttc" id="class_dat_file_html"><div class="ttname"><a href="../../dc/dd1/class_dat_file.html">DatFile</a></div><div class="ttdoc">Internal class used to create and access "DAT files". </div><div class="ttdef"><b>Definition:</b> DatFile.h:44</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/String.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="../../d8/dcc/namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d9/d24/structs_d_a_t_header.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d9/d24/structs_d_a_t_header.html">sDATHeader</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">char</span> uniqueID[5]; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d24/structs_d_a_t_header.html#af4e96e39d7e1aeb39710be5944d89d0e">   24</a></span>&#160;    <span class="keywordtype">char</span> version[3]; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1">   25</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1">nb_files</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d7/d54/structs_file_entry.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d7/d54/structs_file_entry.html">sFileEntry</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">char</span> name[1024]; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13">   36</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="../../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13">size</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd">   37</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="../../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd">offset</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../dc/dd1/class_dat_file.html">   45</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../dc/dd1/class_dat_file.html">DatFile</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span> :</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    gd::String m_datfile; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d9/d24/structs_d_a_t_header.html">sDATHeader</a> m_header; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::vector&lt;sFileEntry&gt; m_entries; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* m_buffer; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> :</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../dc/dd1/class_dat_file.html">DatFile</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ~<a class="code" href="../../dc/dd1/class_dat_file.html">DatFile</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> Create (std::vector&lt;gd::String&gt; files, gd::String directory, gd::String destination);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> ContainsFile(<span class="keyword">const</span> gd::String &amp; filename);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> Read (gd::String source);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* GetFile (gd::String filename);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">int</span> GetFileSize (gd::String filename);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // DATFILE_H</span></div>
+<div class="ttc" id="structs_file_entry_html"><div class="ttname"><a href="../../d7/d54/structs_file_entry.html">sFileEntry</a></div><div class="ttdoc">Internal class related to DatFile. </div><div class="ttdef"><b>Definition:</b> DatFile.h:33</div></div>
+<div class="ttc" id="class_dat_file_html"><div class="ttname"><a href="../../dc/dd1/class_dat_file.html">DatFile</a></div><div class="ttdoc">Internal class used to create and access "DAT files". </div><div class="ttdef"><b>Definition:</b> DatFile.h:45</div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div></div>
-<div class="ttc" id="structs_file_entry_html_a0b52ee11fc0b829568ed6074a0a5cdbd"><div class="ttname"><a href="../../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd">sFileEntry::offset</a></div><div class="ttdeci">long offset</div><div class="ttdoc">Size of the data file. </div><div class="ttdef"><b>Definition:</b> DatFile.h:36</div></div>
-<div class="ttc" id="structs_d_a_t_header_html_ad1c8f3a205c03963f419cf7e8417abd1"><div class="ttname"><a href="../../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1">sDATHeader::nb_files</a></div><div class="ttdeci">unsigned int nb_files</div><div class="ttdoc">Version of the DAT file format. </div><div class="ttdef"><b>Definition:</b> DatFile.h:24</div></div>
-<div class="ttc" id="structs_d_a_t_header_html"><div class="ttname"><a href="../../d9/d24/structs_d_a_t_header.html">sDATHeader</a></div><div class="ttdoc">Internal class related to DatFile. </div><div class="ttdef"><b>Definition:</b> DatFile.h:20</div></div>
-<div class="ttc" id="structs_file_entry_html_a5fcf6408116e33eb4b93d67e958c6c13"><div class="ttname"><a href="../../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13">sFileEntry::size</a></div><div class="ttdeci">long size</div><div class="ttdoc">Name of the data file. </div><div class="ttdef"><b>Definition:</b> DatFile.h:35</div></div>
+<div class="ttc" id="structs_file_entry_html_a0b52ee11fc0b829568ed6074a0a5cdbd"><div class="ttname"><a href="../../d7/d54/structs_file_entry.html#a0b52ee11fc0b829568ed6074a0a5cdbd">sFileEntry::offset</a></div><div class="ttdeci">long offset</div><div class="ttdoc">Size of the data file. </div><div class="ttdef"><b>Definition:</b> DatFile.h:37</div></div>
+<div class="ttc" id="structs_d_a_t_header_html_ad1c8f3a205c03963f419cf7e8417abd1"><div class="ttname"><a href="../../d9/d24/structs_d_a_t_header.html#ad1c8f3a205c03963f419cf7e8417abd1">sDATHeader::nb_files</a></div><div class="ttdeci">unsigned int nb_files</div><div class="ttdoc">Version of the DAT file format. </div><div class="ttdef"><b>Definition:</b> DatFile.h:25</div></div>
+<div class="ttc" id="structs_d_a_t_header_html"><div class="ttname"><a href="../../d9/d24/structs_d_a_t_header.html">sDATHeader</a></div><div class="ttdoc">Internal class related to DatFile. </div><div class="ttdef"><b>Definition:</b> DatFile.h:21</div></div>
+<div class="ttc" id="structs_file_entry_html_a5fcf6408116e33eb4b93d67e958c6c13"><div class="ttname"><a href="../../d7/d54/structs_file_entry.html#a5fcf6408116e33eb4b93d67e958c6c13">sFileEntry::size</a></div><div class="ttdeci">long size</div><div class="ttdoc">Name of the data file. </div><div class="ttdef"><b>Definition:</b> DatFile.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:23 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

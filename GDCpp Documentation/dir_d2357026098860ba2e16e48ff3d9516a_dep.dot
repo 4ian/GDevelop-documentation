@@ -5,12 +5,10 @@ digraph "GDCpp" {
   subgraph clusterdir_d2357026098860ba2e16e48ff3d9516a {
     graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d2357026098860ba2e16e48ff3d9516a.html"];
     dir_d2357026098860ba2e16e48ff3d9516a [shape=plaintext label="GDCpp"];
-    dir_ffd9572640b0276196628fca0b0e429e [shape=box label="BuiltinExtensions" color="black" fillcolor="white" style="filled" URL="dir_ffd9572640b0276196628fca0b0e429e.html"];
-    dir_ec7a34ec7e9f2cc7a23d100f3443b3f5 [shape=box label="Events" color="black" fillcolor="white" style="filled" URL="dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html"];
+    dir_ec7a34ec7e9f2cc7a23d100f3443b3f5 [shape=box label="Events" color="red" fillcolor="white" style="filled" URL="dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html"];
+    dir_8c00a3db46f67d827986a77955cf3ce2 [shape=box label="Extensions" color="red" fillcolor="white" style="filled" URL="dir_8c00a3db46f67d827986a77955cf3ce2.html"];
     dir_3a2be82186ec7cb4ff5d24d32705824f [shape=box label="IDE" color="red" fillcolor="white" style="filled" URL="dir_3a2be82186ec7cb4ff5d24d32705824f.html"];
-    dir_7da0f0891a5b4c01eaa7adee6ec9ff2a [shape=box label="PlatformDefinition" color="black" fillcolor="white" style="filled" URL="dir_7da0f0891a5b4c01eaa7adee6ec9ff2a.html"];
-    dir_a77affc7b238a75b8a7c9bed86ddb451 [shape=box label="Serialization" color="black" fillcolor="white" style="filled" URL="dir_a77affc7b238a75b8a7c9bed86ddb451.html"];
-    dir_8a462f2a2c295e75d295d83a0388d803 [shape=box label="tinyxml" color="black" fillcolor="white" style="filled" URL="dir_8a462f2a2c295e75d295d83a0388d803.html"];
-    dir_04db4b40f91f563c5027677ba19883d0 [shape=box label="Tools" color="black" fillcolor="white" style="filled" URL="dir_04db4b40f91f563c5027677ba19883d0.html"];
+    dir_7aefbae60249d8db3c9a686a9296d9b4 [shape=box label="Runtime" color="red" fillcolor="white" style="filled" URL="dir_7aefbae60249d8db3c9a686a9296d9b4.html"];
   }
+  dir_3a2be82186ec7cb4ff5d24d32705824f->dir_7aefbae60249d8db3c9a686a9296d9b4 [headlabel="2", labeldistance=1.5 headhref="dir_000005_000003.html"];
 }

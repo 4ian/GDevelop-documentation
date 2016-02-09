@@ -3,7 +3,13 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="binary_function",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="wxDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="ObjectHasName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d3c/struct_object_has_name.html",tooltip="Functor testing object name. "];
+  Node2 [label="CompilationErrorDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/daa/class_compilation_error_dialog.html",tooltip="Dialog used to warn the user that the compilation failed. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="EditCppCodeEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/db3/class_edit_cpp_code_event.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ProjectExportDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d9d/class_project_export_dialog.html",tooltip="Dialog used to export a project to a native executable. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RenderDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d31/class_render_dialog.html",tooltip="Window used to mimic a sf::RenderWindow inside an IDE. "];
 }

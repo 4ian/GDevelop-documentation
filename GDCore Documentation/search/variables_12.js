@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['windowmask',['windowMask',['../classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7',1,'gd::LayoutEditorCanvasOptions']]],
-  ['winexecutablefilename',['winExecutableFilename',['../classgd_1_1_project.html#aaed275a68671d9b61badaaa9a731f7f1',1,'gd::Project']]],
-  ['winexecutableiconfile',['winExecutableIconFile',['../classgd_1_1_project.html#af9d49503a5ee675927ea68e573ad3b7c',1,'gd::Project']]]
+  ['v',['v',['../classgd_1_1_comment_event.html#adc9e5f8d956562e4878785a347910cd6',1,'gd::CommentEvent']]],
+  ['vertices',['vertices',['../class_polygon2d.html#a9c7da828e5f97e1cf85ad15b05e20b97',1,'Polygon2d']]]
 ];

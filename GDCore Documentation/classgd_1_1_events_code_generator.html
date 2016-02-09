@@ -114,67 +114,67 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac60c41bf25f04fb048f576711e97fdc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ac60c41bf25f04fb048f576711e97fdc7">PreprocessEventList</a> (<a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;listEvent)</td></tr>
 <tr class="memdesc:ac60c41bf25f04fb048f576711e97fdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocess an events list ( Replacing for example links with the linked event ).  <a href="#ac60c41bf25f04fb048f576711e97fdc7">More...</a><br /></td></tr>
 <tr class="separator:ac60c41bf25f04fb048f576711e97fdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33240574ed1704ae12be1b63230f6cdb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a33240574ed1704ae12be1b63230f6cdb">GenerateEventsListCode</a> (<a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;events, const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a33240574ed1704ae12be1b63230f6cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing an event list.  <a href="#a33240574ed1704ae12be1b63230f6cdb">More...</a><br /></td></tr>
-<tr class="separator:a33240574ed1704ae12be1b63230f6cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eb79786bab30a0efca084da2c696e37"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a5eb79786bab30a0efca084da2c696e37">GenerateConditionsListCode</a> (<a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp;conditions, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a5eb79786bab30a0efca084da2c696e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing a condition list.  <a href="#a5eb79786bab30a0efca084da2c696e37">More...</a><br /></td></tr>
-<tr class="separator:a5eb79786bab30a0efca084da2c696e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c94898b40e6e8d194e1954c2958178"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a42c94898b40e6e8d194e1954c2958178">GenerateActionsListCode</a> (<a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp;actions, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a42c94898b40e6e8d194e1954c2958178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing an action list.  <a href="#a42c94898b40e6e8d194e1954c2958178">More...</a><br /></td></tr>
-<tr class="separator:a42c94898b40e6e8d194e1954c2958178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fec2bf3828d38910c92ee9dacfd672e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a2fec2bf3828d38910c92ee9dacfd672e">GenerateParametersCodes</a> (std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; parameters, const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;parametersInfo, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context, std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; *supplementaryParametersTypes=0)</td></tr>
-<tr class="memdesc:a2fec2bf3828d38910c92ee9dacfd672e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the code for a parameter of an action/condition/expression.  <a href="#a2fec2bf3828d38910c92ee9dacfd672e">More...</a><br /></td></tr>
-<tr class="separator:a2fec2bf3828d38910c92ee9dacfd672e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9e91f747b1eed82384d04c8dd63dec5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#af9e91f747b1eed82384d04c8dd63dec5">GenerateConditionCode</a> (<a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;condition, std::string returnBoolean, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:af9e91f747b1eed82384d04c8dd63dec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for a single condition.  <a href="#af9e91f747b1eed82384d04c8dd63dec5">More...</a><br /></td></tr>
-<tr class="separator:af9e91f747b1eed82384d04c8dd63dec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c5d7fb47e2de35fe20ee3dd19b9ed3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#af8c5d7fb47e2de35fe20ee3dd19b9ed3">GenerateActionCode</a> (<a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;action, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:af8c5d7fb47e2de35fe20ee3dd19b9ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for a single action.  <a href="#af8c5d7fb47e2de35fe20ee3dd19b9ed3">More...</a><br /></td></tr>
-<tr class="separator:af8c5d7fb47e2de35fe20ee3dd19b9ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa12c6dbf48f0282a706d70f32fd0fe1"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#aaa12c6dbf48f0282a706d70f32fd0fe1">GenerateObjectsDeclarationCode</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:aaa12c6dbf48f0282a706d70f32fd0fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for declaring objects lists.  <a href="#aaa12c6dbf48f0282a706d70f32fd0fe1">More...</a><br /></td></tr>
-<tr class="separator:aaa12c6dbf48f0282a706d70f32fd0fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2b4c2eef15873c0fc8cae3f1ae334b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a3b2b4c2eef15873c0fc8cae3f1ae334b">ConvertToString</a> (std::string plainString)</td></tr>
-<tr class="memdesc:a3b2b4c2eef15873c0fc8cae3f1ae334b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must convert a plain string ( with line feed, quotes ) to a string that can be inserted into code.  <a href="#a3b2b4c2eef15873c0fc8cae3f1ae334b">More...</a><br /></td></tr>
-<tr class="separator:a3b2b4c2eef15873c0fc8cae3f1ae334b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1809f49a6f9e3afbd37e3e2eaf300077"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a1809f49a6f9e3afbd37e3e2eaf300077">ConvertToStringExplicit</a> (std::string plainString)</td></tr>
-<tr class="memdesc:a1809f49a6f9e3afbd37e3e2eaf300077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a plain string ( with line feed, quotes ) to a string that can be inserted into code. The string construction must be explicit : for example, quotes must be added if the target language need quotes.  <a href="#a1809f49a6f9e3afbd37e3e2eaf300077">More...</a><br /></td></tr>
-<tr class="separator:a1809f49a6f9e3afbd37e3e2eaf300077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e5312e859b8c2f7de9f5fe4ef16dda3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a8e5312e859b8c2f7de9f5fe4ef16dda3">AddIncludeFile</a> (std::string file)</td></tr>
-<tr class="memdesc:a8e5312e859b8c2f7de9f5fe4ef16dda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare an include file to be added.  <a href="#a8e5312e859b8c2f7de9f5fe4ef16dda3">More...</a><br /></td></tr>
-<tr class="separator:a8e5312e859b8c2f7de9f5fe4ef16dda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac407e2d981608b468afb13d2ae017cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ac407e2d981608b468afb13d2ae017cf4">AddIncludeFiles</a> (std::vector&lt; std::string &gt; files)</td></tr>
-<tr class="memdesc:ac407e2d981608b468afb13d2ae017cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a list of include files to be added.  <a href="#ac407e2d981608b468afb13d2ae017cf4">More...</a><br /></td></tr>
-<tr class="separator:ac407e2d981608b468afb13d2ae017cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a498b97464671ec707c935b07995c11c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a498b97464671ec707c935b07995c11c4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a498b97464671ec707c935b07995c11c4">AddGlobalDeclaration</a> (std::string declaration)</td></tr>
-<tr class="memdesc:a498b97464671ec707c935b07995c11c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a declaration which will be inserted after includes. <br /></td></tr>
-<tr class="separator:a498b97464671ec707c935b07995c11c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e38667c6313c0ec0785c90916f17dc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e38667c6313c0ec0785c90916f17dc9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a6e38667c6313c0ec0785c90916f17dc9">AddCustomCodeOutsideMain</a> (std::string code)</td></tr>
-<tr class="memdesc:a6e38667c6313c0ec0785c90916f17dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add some code before events outside the main function. <br /></td></tr>
-<tr class="separator:a6e38667c6313c0ec0785c90916f17dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732680cc9dc37ac800bd68340e967b86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a732680cc9dc37ac800bd68340e967b86"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a732680cc9dc37ac800bd68340e967b86">AddCustomCodeInMain</a> (std::string code)</td></tr>
-<tr class="memdesc:a732680cc9dc37ac800bd68340e967b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add some code before events in the main function. <br /></td></tr>
-<tr class="separator:a732680cc9dc37ac800bd68340e967b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c1bbb567543d56b1480cbfb7144a2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c1bbb567543d56b1480cbfb7144a2d"></a>
-const std::set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a32c1bbb567543d56b1480cbfb7144a2d">GetIncludeFiles</a> () const </td></tr>
-<tr class="memdesc:a32c1bbb567543d56b1480cbfb7144a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the set containing the include files. <br /></td></tr>
-<tr class="separator:a32c1bbb567543d56b1480cbfb7144a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeda72019bd2571f8bc9d25d2ac79c0e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeda72019bd2571f8bc9d25d2ac79c0e7"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#aeda72019bd2571f8bc9d25d2ac79c0e7">GetCustomCodeOutsideMain</a> () const </td></tr>
-<tr class="memdesc:aeda72019bd2571f8bc9d25d2ac79c0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom code to be inserted outside main. <br /></td></tr>
-<tr class="separator:aeda72019bd2571f8bc9d25d2ac79c0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5797dc7844cd4c964bdf0f16c966cb08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5797dc7844cd4c964bdf0f16c966cb08"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a5797dc7844cd4c964bdf0f16c966cb08">GetCustomCodeInMain</a> () const </td></tr>
-<tr class="memdesc:a5797dc7844cd4c964bdf0f16c966cb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom code to be inserted inside main function. <br /></td></tr>
-<tr class="separator:a5797dc7844cd4c964bdf0f16c966cb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd387d4dbb666d0ae031dda1fd64aee6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd387d4dbb666d0ae031dda1fd64aee6"></a>
-const std::set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#afd387d4dbb666d0ae031dda1fd64aee6">GetCustomGlobalDeclaration</a> () const </td></tr>
-<tr class="memdesc:afd387d4dbb666d0ae031dda1fd64aee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom declaration to be inserted after includes. <br /></td></tr>
-<tr class="separator:afd387d4dbb666d0ae031dda1fd64aee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d120d95fb5310ee72d0a9db1e17c3c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a6d120d95fb5310ee72d0a9db1e17c3c5">GenerateEventsListCode</a> (<a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;events, const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a6d120d95fb5310ee72d0a9db1e17c3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing an event list.  <a href="#a6d120d95fb5310ee72d0a9db1e17c3c5">More...</a><br /></td></tr>
+<tr class="separator:a6d120d95fb5310ee72d0a9db1e17c3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c64f5a8d1c4d4b801c08c74dfebb3e1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a2c64f5a8d1c4d4b801c08c74dfebb3e1">GenerateConditionsListCode</a> (<a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp;conditions, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a2c64f5a8d1c4d4b801c08c74dfebb3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing a condition list.  <a href="#a2c64f5a8d1c4d4b801c08c74dfebb3e1">More...</a><br /></td></tr>
+<tr class="separator:a2c64f5a8d1c4d4b801c08c74dfebb3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b69a1fd1fa71c0718436b35a4f8ccc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a16b69a1fd1fa71c0718436b35a4f8ccc">GenerateActionsListCode</a> (<a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp;actions, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a16b69a1fd1fa71c0718436b35a4f8ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing an action list.  <a href="#a16b69a1fd1fa71c0718436b35a4f8ccc">More...</a><br /></td></tr>
+<tr class="separator:a16b69a1fd1fa71c0718436b35a4f8ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff3e67c941e71d07b2d0977838397cc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#aaff3e67c941e71d07b2d0977838397cc">GenerateParametersCodes</a> (std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; parameters, const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;parametersInfo, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context, std::vector&lt; std::pair&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &gt; *supplementaryParametersTypes=0)</td></tr>
+<tr class="memdesc:aaff3e67c941e71d07b2d0977838397cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the code for a parameter of an action/condition/expression.  <a href="#aaff3e67c941e71d07b2d0977838397cc">More...</a><br /></td></tr>
+<tr class="separator:aaff3e67c941e71d07b2d0977838397cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2dec8255c8a82e5fc9a5315046863d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a5e2dec8255c8a82e5fc9a5315046863d">GenerateConditionCode</a> (<a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;condition, <a class="el" href="classgd_1_1_string.html">gd::String</a> returnBoolean, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a5e2dec8255c8a82e5fc9a5315046863d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for a single condition.  <a href="#a5e2dec8255c8a82e5fc9a5315046863d">More...</a><br /></td></tr>
+<tr class="separator:a5e2dec8255c8a82e5fc9a5315046863d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5f7ae07d29549a45b554031e9af9db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a1c5f7ae07d29549a45b554031e9af9db">GenerateActionCode</a> (<a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;action, <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a1c5f7ae07d29549a45b554031e9af9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for a single action.  <a href="#a1c5f7ae07d29549a45b554031e9af9db">More...</a><br /></td></tr>
+<tr class="separator:a1c5f7ae07d29549a45b554031e9af9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd272198c208a1c8096d3d53f8581cb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a7bd272198c208a1c8096d3d53f8581cb">GenerateObjectsDeclarationCode</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a7bd272198c208a1c8096d3d53f8581cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for declaring objects lists.  <a href="#a7bd272198c208a1c8096d3d53f8581cb">More...</a><br /></td></tr>
+<tr class="separator:a7bd272198c208a1c8096d3d53f8581cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2844ac35e5bfc3cb16d0d060e836a4e7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a2844ac35e5bfc3cb16d0d060e836a4e7">ConvertToString</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> plainString)</td></tr>
+<tr class="memdesc:a2844ac35e5bfc3cb16d0d060e836a4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must convert a plain string ( with line feed, quotes ) to a string that can be inserted into code.  <a href="#a2844ac35e5bfc3cb16d0d060e836a4e7">More...</a><br /></td></tr>
+<tr class="separator:a2844ac35e5bfc3cb16d0d060e836a4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec996b45fa9d2c539975fd5c10b1569"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a7ec996b45fa9d2c539975fd5c10b1569">ConvertToStringExplicit</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> plainString)</td></tr>
+<tr class="memdesc:a7ec996b45fa9d2c539975fd5c10b1569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a plain string ( with line feed, quotes ) to a string that can be inserted into code. The string construction must be explicit : for example, quotes must be added if the target language need quotes.  <a href="#a7ec996b45fa9d2c539975fd5c10b1569">More...</a><br /></td></tr>
+<tr class="separator:a7ec996b45fa9d2c539975fd5c10b1569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8bdc7001edc095a76d92be70499562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#adb8bdc7001edc095a76d92be70499562">AddIncludeFile</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> file)</td></tr>
+<tr class="memdesc:adb8bdc7001edc095a76d92be70499562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare an include file to be added.  <a href="#adb8bdc7001edc095a76d92be70499562">More...</a><br /></td></tr>
+<tr class="separator:adb8bdc7001edc095a76d92be70499562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b1cd22c5b482e29bf0958a0db5c3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a12b1cd22c5b482e29bf0958a0db5c3d3">AddIncludeFiles</a> (std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; files)</td></tr>
+<tr class="memdesc:a12b1cd22c5b482e29bf0958a0db5c3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a list of include files to be added.  <a href="#a12b1cd22c5b482e29bf0958a0db5c3d3">More...</a><br /></td></tr>
+<tr class="separator:a12b1cd22c5b482e29bf0958a0db5c3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1caa113c4c231f0f56300e4625500579"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1caa113c4c231f0f56300e4625500579"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a1caa113c4c231f0f56300e4625500579">AddGlobalDeclaration</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> declaration)</td></tr>
+<tr class="memdesc:a1caa113c4c231f0f56300e4625500579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a declaration which will be inserted after includes. <br /></td></tr>
+<tr class="separator:a1caa113c4c231f0f56300e4625500579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac771554a5ae344bdbe82aeff005fadbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac771554a5ae344bdbe82aeff005fadbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ac771554a5ae344bdbe82aeff005fadbb">AddCustomCodeOutsideMain</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> code)</td></tr>
+<tr class="memdesc:ac771554a5ae344bdbe82aeff005fadbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add some code before events outside the main function. <br /></td></tr>
+<tr class="separator:ac771554a5ae344bdbe82aeff005fadbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9141abfbb3f6a07926486076031b994"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9141abfbb3f6a07926486076031b994"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#af9141abfbb3f6a07926486076031b994">AddCustomCodeInMain</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> code)</td></tr>
+<tr class="memdesc:af9141abfbb3f6a07926486076031b994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add some code before events in the main function. <br /></td></tr>
+<tr class="separator:af9141abfbb3f6a07926486076031b994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f9be4c78f76c18c76b80ce0b930677"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08f9be4c78f76c18c76b80ce0b930677"></a>
+const std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a08f9be4c78f76c18c76b80ce0b930677">GetIncludeFiles</a> () const </td></tr>
+<tr class="memdesc:a08f9be4c78f76c18c76b80ce0b930677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the set containing the include files. <br /></td></tr>
+<tr class="separator:a08f9be4c78f76c18c76b80ce0b930677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9588685da25ad92059b8b20168551e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e9588685da25ad92059b8b20168551e"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a8e9588685da25ad92059b8b20168551e">GetCustomCodeOutsideMain</a> () const </td></tr>
+<tr class="memdesc:a8e9588685da25ad92059b8b20168551e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom code to be inserted outside main. <br /></td></tr>
+<tr class="separator:a8e9588685da25ad92059b8b20168551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add63ec85b71c4c761f61a45bc1b1a4b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add63ec85b71c4c761f61a45bc1b1a4b7"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#add63ec85b71c4c761f61a45bc1b1a4b7">GetCustomCodeInMain</a> () const </td></tr>
+<tr class="memdesc:add63ec85b71c4c761f61a45bc1b1a4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom code to be inserted inside main function. <br /></td></tr>
+<tr class="separator:add63ec85b71c4c761f61a45bc1b1a4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62adf758f476579da174e527fc88047c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62adf758f476579da174e527fc88047c"></a>
+const std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a62adf758f476579da174e527fc88047c">GetCustomGlobalDeclaration</a> () const </td></tr>
+<tr class="memdesc:a62adf758f476579da174e527fc88047c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the custom declaration to be inserted after includes. <br /></td></tr>
+<tr class="separator:a62adf758f476579da174e527fc88047c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d9c1660f1478ccf47676999b26cb4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66d9c1660f1478ccf47676999b26cb4f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a66d9c1660f1478ccf47676999b26cb4f">GenerateCodeForRuntime</a> ()</td></tr>
 <tr class="memdesc:a66d9c1660f1478ccf47676999b26cb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if code generation is made for runtime only. <br /></td></tr>
@@ -203,9 +203,9 @@ const <a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</t
 const <a class="el" href="classgd_1_1_platform.html">gd::Platform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ac180e6c4d041e102b4c6bcf6111e7f2c">GetPlatform</a> () const </td></tr>
 <tr class="memdesc:ac180e6c4d041e102b4c6bcf6111e7f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the platform the code is being generated for. <br /></td></tr>
 <tr class="separator:ac180e6c4d041e102b4c6bcf6111e7f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98f2d736f35bbadb2ad45362e6e6442"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ac98f2d736f35bbadb2ad45362e6e6442">ExpandObjectsName</a> (const std::string &amp;objectName, const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context) const </td></tr>
-<tr class="memdesc:ac98f2d736f35bbadb2ad45362e6e6442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a group name to the full list of objects contained in the group.  <a href="#ac98f2d736f35bbadb2ad45362e6e6442">More...</a><br /></td></tr>
-<tr class="separator:ac98f2d736f35bbadb2ad45362e6e6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd7b1e177a2d0e0ef2d824a934cb9d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a9bd7b1e177a2d0e0ef2d824a934cb9d9">ExpandObjectsName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName, const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;context) const </td></tr>
+<tr class="memdesc:a9bd7b1e177a2d0e0ef2d824a934cb9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a group name to the full list of objects contained in the group.  <a href="#a9bd7b1e177a2d0e0ef2d824a934cb9d9">More...</a><br /></td></tr>
+<tr class="separator:a9bd7b1e177a2d0e0ef2d824a934cb9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19457c0c0bc0a5dcef9e238380e3adca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19457c0c0bc0a5dcef9e238380e3adca"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a19457c0c0bc0a5dcef9e238380e3adca">GetMaxCustomConditionsDepth</a> () const </td></tr>
 <tr class="memdesc:a19457c0c0bc0a5dcef9e238380e3adca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum depth of custom conditions reached during code generation. <br /></td></tr>
@@ -214,15 +214,15 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#af638679d5c2a87700f8fb18b51761b64">GetMaxConditionsListsSize</a> () const </td></tr>
 <tr class="memdesc:af638679d5c2a87700f8fb18b51761b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum size of a list of conditions. <br /></td></tr>
 <tr class="separator:af638679d5c2a87700f8fb18b51761b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b166cd333adc7232121022d84f74f4"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a13b166cd333adc7232121022d84f74f4">GenerateBooleanFullName</a> (const std::string &amp;boolName, const <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a13b166cd333adc7232121022d84f74f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the full name for accessing to a boolean variable used for conditions.  <a href="#a13b166cd333adc7232121022d84f74f4">More...</a><br /></td></tr>
-<tr class="separator:a13b166cd333adc7232121022d84f74f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee87e62aded069c969b0a729eeda52c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#abee87e62aded069c969b0a729eeda52c">GenerateBooleanInitializationToFalse</a> (const std::string &amp;boolName, const <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:abee87e62aded069c969b0a729eeda52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must create a boolean. Its value must be false.  <a href="#abee87e62aded069c969b0a729eeda52c">More...</a><br /></td></tr>
-<tr class="separator:abee87e62aded069c969b0a729eeda52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0202cae82dc72f57b040a760c8911639"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a0202cae82dc72f57b040a760c8911639">GetObjectListName</a> (const std::string &amp;name, const <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a0202cae82dc72f57b040a760c8911639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full name for accessing to a list of objects.  <a href="#a0202cae82dc72f57b040a760c8911639">More...</a><br /></td></tr>
-<tr class="separator:a0202cae82dc72f57b040a760c8911639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37e789d3ec8373da9d5e293ae52811f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ab37e789d3ec8373da9d5e293ae52811f">GenerateBooleanFullName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;boolName, const <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:ab37e789d3ec8373da9d5e293ae52811f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the full name for accessing to a boolean variable used for conditions.  <a href="#ab37e789d3ec8373da9d5e293ae52811f">More...</a><br /></td></tr>
+<tr class="separator:ab37e789d3ec8373da9d5e293ae52811f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a884f621ded153c2f1efe7b61b3e50"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a57a884f621ded153c2f1efe7b61b3e50">GenerateBooleanInitializationToFalse</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;boolName, const <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a57a884f621ded153c2f1efe7b61b3e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must create a boolean. Its value must be false.  <a href="#a57a884f621ded153c2f1efe7b61b3e50">More...</a><br /></td></tr>
+<tr class="separator:a57a884f621ded153c2f1efe7b61b3e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d952438f2ac3f39baa73008de845f0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a65d952438f2ac3f39baa73008de845f0">GetObjectListName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a65d952438f2ac3f39baa73008de845f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full name for accessing to a list of objects.  <a href="#a65d952438f2ac3f39baa73008de845f0">More...</a><br /></td></tr>
+<tr class="separator:a65d952438f2ac3f39baa73008de845f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -233,59 +233,59 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:adc8ddc46ac09c461be5844fab727c5c7"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#adc8ddc46ac09c461be5844fab727c5c7">GenerateParameterCodes</a> (const std::string &amp;parameter, const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;metadata, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context, const std::string &amp;previousParameter, std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; *supplementaryParametersTypes)</td></tr>
-<tr class="memdesc:adc8ddc46ac09c461be5844fab727c5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the code for a single parameter.  <a href="#adc8ddc46ac09c461be5844fab727c5c7">More...</a><br /></td></tr>
-<tr class="separator:adc8ddc46ac09c461be5844fab727c5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e10c94187aa5a11603d999c3886573"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a20e10c94187aa5a11603d999c3886573">GenerateObjectFunctionCall</a> (std::string objectListName, const <a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;objMetadata, const <a class="el" href="classgd_1_1_expression_code_generation_information.html">gd::ExpressionCodeGenerationInformation</a> &amp;codeInfo, std::string parametersStr, std::string defaultOutput, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a20e10c94187aa5a11603d999c3886573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function of the current object.  <a href="#a20e10c94187aa5a11603d999c3886573">More...</a><br /></td></tr>
-<tr class="separator:a20e10c94187aa5a11603d999c3886573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91b441173a2ffec36237038d1c2cefa"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ae91b441173a2ffec36237038d1c2cefa">GenerateObjectAutomatismFunctionCall</a> (std::string objectListName, std::string automatismName, const <a class="el" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp;autoInfo, const <a class="el" href="classgd_1_1_expression_code_generation_information.html">gd::ExpressionCodeGenerationInformation</a> &amp;codeInfo, std::string parametersStr, std::string defaultOutput, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:ae91b441173a2ffec36237038d1c2cefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function of an automatism of the current object.  <a href="#ae91b441173a2ffec36237038d1c2cefa">More...</a><br /></td></tr>
-<tr class="separator:ae91b441173a2ffec36237038d1c2cefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5745419439e5b11caacb154e458f71c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ae5745419439e5b11caacb154e458f71c">GenerateScopeBegin</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context, const std::string &amp;extraVariable=&quot;&quot;)</td></tr>
-<tr class="memdesc:ae5745419439e5b11caacb154e458f71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new scope must be entered.  <a href="#ae5745419439e5b11caacb154e458f71c">More...</a><br /></td></tr>
-<tr class="separator:ae5745419439e5b11caacb154e458f71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372db7fbf781a2bf1946bcfbd8b3716b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a372db7fbf781a2bf1946bcfbd8b3716b">GenerateScopeEnd</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context, const std::string &amp;extraVariable=&quot;&quot;)</td></tr>
-<tr class="memdesc:a372db7fbf781a2bf1946bcfbd8b3716b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new must be ended.  <a href="#a372db7fbf781a2bf1946bcfbd8b3716b">More...</a><br /></td></tr>
-<tr class="separator:a372db7fbf781a2bf1946bcfbd8b3716b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5e3c8a987c3fbaf7b825588e224dc"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a14b5e3c8a987c3fbaf7b825588e224dc">GenerateNegatedPredicat</a> (const std::string &amp;predicat) const </td></tr>
-<tr class="memdesc:a14b5e3c8a987c3fbaf7b825588e224dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must negate a predicat.  <a href="#a14b5e3c8a987c3fbaf7b825588e224dc">More...</a><br /></td></tr>
-<tr class="separator:a14b5e3c8a987c3fbaf7b825588e224dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e1cfc05583c427505f8897118751f99"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a5e1cfc05583c427505f8897118751f99">GenerateReferenceToUpperScopeBoolean</a> (const std::string &amp;referenceName, const std::string &amp;referencedBoolean, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a5e1cfc05583c427505f8897118751f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must create a boolean which is a reference to a boolean declared in the parent scope.  <a href="#a5e1cfc05583c427505f8897118751f99">More...</a><br /></td></tr>
-<tr class="separator:a5e1cfc05583c427505f8897118751f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae74fe2bf2d8348c86cf63fc0eb0d01ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae74fe2bf2d8348c86cf63fc0eb0d01ae"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFreeCondition</b> (const std::vector&lt; std::string &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::string &amp;returnBoolean, bool conditionInverted, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="separator:ae74fe2bf2d8348c86cf63fc0eb0d01ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38a0e98986bab8d07d77b976d1bdff03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38a0e98986bab8d07d77b976d1bdff03"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectCondition</b> (const std::string &amp;objectName, const <a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;objInfo, const std::vector&lt; std::string &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::string &amp;returnBoolean, bool conditionInverted, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="separator:a38a0e98986bab8d07d77b976d1bdff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e3a516d898e92681e79e928afa55b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44e3a516d898e92681e79e928afa55b6"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateAutomatismCondition</b> (const std::string &amp;objectName, const std::string &amp;automatismName, const <a class="el" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp;autoInfo, const std::vector&lt; std::string &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::string &amp;returnBoolean, bool conditionInverted, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="separator:a44e3a516d898e92681e79e928afa55b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997e4c0feb49e70b04ed662ce3654214"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a997e4c0feb49e70b04ed662ce3654214"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFreeAction</b> (const std::vector&lt; std::string &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="separator:a997e4c0feb49e70b04ed662ce3654214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a0f578104f554cb627fefffeca0bae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44a0f578104f554cb627fefffeca0bae"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectAction</b> (const std::string &amp;objectName, const <a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;objInfo, const std::vector&lt; std::string &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="separator:a44a0f578104f554cb627fefffeca0bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8838b934c838297e8473d465a5467f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8838b934c838297e8473d465a5467f6"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateAutomatismAction</b> (const std::string &amp;objectName, const std::string &amp;automatismName, const <a class="el" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp;autoInfo, const std::vector&lt; std::string &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
-<tr class="separator:ad8838b934c838297e8473d465a5467f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68065bd951c472ff9527d7bd29a9b9e8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a68065bd951c472ff9527d7bd29a9b9e8">GenerateRelationalOperatorCall</a> (const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::vector&lt; std::string &gt; &amp;arguments, const std::string &amp;callStartString, unsigned int startFromArgument=0)</td></tr>
-<tr class="separator:a68065bd951c472ff9527d7bd29a9b9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4cbb2eb19bf54e50fbb2e7e8bfa6402"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ad4cbb2eb19bf54e50fbb2e7e8bfa6402">GenerateOperatorCall</a> (const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::vector&lt; std::string &gt; &amp;arguments, const std::string &amp;callStartString, const std::string &amp;getterStartString, unsigned int startFromArgument=0)</td></tr>
-<tr class="separator:ad4cbb2eb19bf54e50fbb2e7e8bfa6402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba4cab47d5a2dfd227b79c33d8005fdb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#aba4cab47d5a2dfd227b79c33d8005fdb">GenerateCompoundOperatorCall</a> (const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::vector&lt; std::string &gt; &amp;arguments, const std::string &amp;callStartString, unsigned int startFromArgument=0)</td></tr>
-<tr class="separator:aba4cab47d5a2dfd227b79c33d8005fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ec55c02ff75c8051ccb99764fadf885"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ec55c02ff75c8051ccb99764fadf885"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a6ec55c02ff75c8051ccb99764fadf885">GenerateTrue</a> () const </td></tr>
-<tr class="memdesc:a6ec55c02ff75c8051ccb99764fadf885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must return an expression whose value is true. <br /></td></tr>
-<tr class="separator:a6ec55c02ff75c8051ccb99764fadf885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492f2016261e239ab1d86706e5c94e76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492f2016261e239ab1d86706e5c94e76"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a492f2016261e239ab1d86706e5c94e76">GenerateFalse</a> () const </td></tr>
-<tr class="memdesc:a492f2016261e239ab1d86706e5c94e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must return an expression whose value is false. <br /></td></tr>
-<tr class="separator:a492f2016261e239ab1d86706e5c94e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8a6366a93c7a144ceb608b241a2813"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#adb8a6366a93c7a144ceb608b241a2813">GenerateParameterCodes</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameter, const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;metadata, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;previousParameter, std::vector&lt; std::pair&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &gt; *supplementaryParametersTypes)</td></tr>
+<tr class="memdesc:adb8a6366a93c7a144ceb608b241a2813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the code for a single parameter.  <a href="#adb8a6366a93c7a144ceb608b241a2813">More...</a><br /></td></tr>
+<tr class="separator:adb8a6366a93c7a144ceb608b241a2813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75eab23a5745385a6dcd6f739861afa8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a75eab23a5745385a6dcd6f739861afa8">GenerateObjectFunctionCall</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> objectListName, const <a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;objMetadata, const <a class="el" href="classgd_1_1_expression_code_generation_information.html">gd::ExpressionCodeGenerationInformation</a> &amp;codeInfo, <a class="el" href="classgd_1_1_string.html">gd::String</a> parametersStr, <a class="el" href="classgd_1_1_string.html">gd::String</a> defaultOutput, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a75eab23a5745385a6dcd6f739861afa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function of the current object.  <a href="#a75eab23a5745385a6dcd6f739861afa8">More...</a><br /></td></tr>
+<tr class="separator:a75eab23a5745385a6dcd6f739861afa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1917e48389db03a533f1e34736f425"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#abd1917e48389db03a533f1e34736f425">GenerateObjectBehaviorFunctionCall</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> objectListName, <a class="el" href="classgd_1_1_string.html">gd::String</a> behaviorName, const <a class="el" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp;autoInfo, const <a class="el" href="classgd_1_1_expression_code_generation_information.html">gd::ExpressionCodeGenerationInformation</a> &amp;codeInfo, <a class="el" href="classgd_1_1_string.html">gd::String</a> parametersStr, <a class="el" href="classgd_1_1_string.html">gd::String</a> defaultOutput, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:abd1917e48389db03a533f1e34736f425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a function of a behavior of the current object.  <a href="#abd1917e48389db03a533f1e34736f425">More...</a><br /></td></tr>
+<tr class="separator:abd1917e48389db03a533f1e34736f425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e47ceeab37ed1c3dd9c32eaeb707c4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a3e47ceeab37ed1c3dd9c32eaeb707c4c">GenerateScopeBegin</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extraVariable=&quot;&quot;)</td></tr>
+<tr class="memdesc:a3e47ceeab37ed1c3dd9c32eaeb707c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new scope must be entered.  <a href="#a3e47ceeab37ed1c3dd9c32eaeb707c4c">More...</a><br /></td></tr>
+<tr class="separator:a3e47ceeab37ed1c3dd9c32eaeb707c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af736c1e537f006532df912087ecbb26c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#af736c1e537f006532df912087ecbb26c">GenerateScopeEnd</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extraVariable=&quot;&quot;)</td></tr>
+<tr class="memdesc:af736c1e537f006532df912087ecbb26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new must be ended.  <a href="#af736c1e537f006532df912087ecbb26c">More...</a><br /></td></tr>
+<tr class="separator:af736c1e537f006532df912087ecbb26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1962b166945e4781ebebf39845c1be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a4f1962b166945e4781ebebf39845c1be">GenerateNegatedPredicat</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;predicat) const </td></tr>
+<tr class="memdesc:a4f1962b166945e4781ebebf39845c1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must negate a predicat.  <a href="#a4f1962b166945e4781ebebf39845c1be">More...</a><br /></td></tr>
+<tr class="separator:a4f1962b166945e4781ebebf39845c1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7234f33c883a385d7a95df00b13a054c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a7234f33c883a385d7a95df00b13a054c">GenerateReferenceToUpperScopeBoolean</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;referenceName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;referencedBoolean, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a7234f33c883a385d7a95df00b13a054c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must create a boolean which is a reference to a boolean declared in the parent scope.  <a href="#a7234f33c883a385d7a95df00b13a054c">More...</a><br /></td></tr>
+<tr class="separator:a7234f33c883a385d7a95df00b13a054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f32a2d2be44137c3ad58786bedbb673"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f32a2d2be44137c3ad58786bedbb673"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFreeCondition</b> (const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;returnBoolean, bool conditionInverted, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="separator:a9f32a2d2be44137c3ad58786bedbb673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839f00cbeb11975ff060f4e00569cc76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a839f00cbeb11975ff060f4e00569cc76"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectCondition</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName, const <a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;objInfo, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;returnBoolean, bool conditionInverted, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="separator:a839f00cbeb11975ff060f4e00569cc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355772da2f50f33383fa209a6318d8ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a355772da2f50f33383fa209a6318d8ca"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateBehaviorCondition</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;behaviorName, const <a class="el" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp;autoInfo, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;returnBoolean, bool conditionInverted, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="separator:a355772da2f50f33383fa209a6318d8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a607a63cf59204c971fcad03f015c73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a607a63cf59204c971fcad03f015c73"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFreeAction</b> (const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="separator:a1a607a63cf59204c971fcad03f015c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66add94c8fbc69155d5c8a30682d25c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af66add94c8fbc69155d5c8a30682d25c"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectAction</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName, const <a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;objInfo, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="separator:af66add94c8fbc69155d5c8a30682d25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3376e9d46f35190aa237c4d7438f2d21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3376e9d46f35190aa237c4d7438f2d21"></a>
+virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateBehaviorAction</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;behaviorName, const <a class="el" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp;autoInfo, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, <a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;context)</td></tr>
+<tr class="separator:a3376e9d46f35190aa237c4d7438f2d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3d9f6ca5afe732bad07eb37dbb9e76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a7f3d9f6ca5afe732bad07eb37dbb9e76">GenerateRelationalOperatorCall</a> (const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;callStartString, std::size_t startFromArgument=0)</td></tr>
+<tr class="separator:a7f3d9f6ca5afe732bad07eb37dbb9e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413087dcb1c65992946d078b6be61dac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a413087dcb1c65992946d078b6be61dac">GenerateOperatorCall</a> (const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;callStartString, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;getterStartString, std::size_t startFromArgument=0)</td></tr>
+<tr class="separator:a413087dcb1c65992946d078b6be61dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3aac6075561e2aebc4f73887269a468"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#aa3aac6075561e2aebc4f73887269a468">GenerateCompoundOperatorCall</a> (const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;instrInfos, const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;arguments, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;callStartString, std::size_t startFromArgument=0)</td></tr>
+<tr class="separator:aa3aac6075561e2aebc4f73887269a468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2431a5950626215d188383a7ee23dda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2431a5950626215d188383a7ee23dda"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ad2431a5950626215d188383a7ee23dda">GenerateTrue</a> () const </td></tr>
+<tr class="memdesc:ad2431a5950626215d188383a7ee23dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must return an expression whose value is true. <br /></td></tr>
+<tr class="separator:ad2431a5950626215d188383a7ee23dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0eec4755d9d1938950503a240cbf536"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0eec4755d9d1938950503a240cbf536"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#aa0eec4755d9d1938950503a240cbf536">GenerateFalse</a> () const </td></tr>
+<tr class="memdesc:aa0eec4755d9d1938950503a240cbf536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must return an expression whose value is false. <br /></td></tr>
+<tr class="separator:aa0eec4755d9d1938950503a240cbf536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -309,22 +309,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a440f6ac796579a721eb4b2c100d11547">compilationForRuntime</a></td></tr>
 <tr class="memdesc:a440f6ac796579a721eb4b2c100d11547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is set to true if the code generation is made for runtime only. <br /></td></tr>
 <tr class="separator:a440f6ac796579a721eb4b2c100d11547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b5825ac1f13c398894f88c0694b748a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b5825ac1f13c398894f88c0694b748a"></a>
-std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a6b5825ac1f13c398894f88c0694b748a">includeFiles</a></td></tr>
-<tr class="memdesc:a6b5825ac1f13c398894f88c0694b748a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of headers files used by instructions. A (shared) pointer is used so as context created from another one can share the same list. <br /></td></tr>
-<tr class="separator:a6b5825ac1f13c398894f88c0694b748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a101ebe38624643f82ff114b62f9d8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a101ebe38624643f82ff114b62f9d8c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a0a101ebe38624643f82ff114b62f9d8c">customCodeOutsideMain</a></td></tr>
-<tr class="memdesc:a0a101ebe38624643f82ff114b62f9d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom code inserted before events ( and not in events function ) <br /></td></tr>
-<tr class="separator:a0a101ebe38624643f82ff114b62f9d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51556e203ada3ff09fa825c098285975"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51556e203ada3ff09fa825c098285975"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a51556e203ada3ff09fa825c098285975">customCodeInMain</a></td></tr>
-<tr class="memdesc:a51556e203ada3ff09fa825c098285975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom code inserted before events ( in main function ) <br /></td></tr>
-<tr class="separator:a51556e203ada3ff09fa825c098285975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6538606650370414317fecf53f9347eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6538606650370414317fecf53f9347eb"></a>
-std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a6538606650370414317fecf53f9347eb">customGlobalDeclaration</a></td></tr>
-<tr class="memdesc:a6538606650370414317fecf53f9347eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom global C++ declarations inserted after includes. <br /></td></tr>
-<tr class="separator:a6538606650370414317fecf53f9347eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac899e9a90dcceced5391b6348b9fb1d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac899e9a90dcceced5391b6348b9fb1d0"></a>
+std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ac899e9a90dcceced5391b6348b9fb1d0">includeFiles</a></td></tr>
+<tr class="memdesc:ac899e9a90dcceced5391b6348b9fb1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of headers files used by instructions. A (shared) pointer is used so as context created from another one can share the same list. <br /></td></tr>
+<tr class="separator:ac899e9a90dcceced5391b6348b9fb1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e496700c1dd61b0dcaee38520da0948"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e496700c1dd61b0dcaee38520da0948"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a8e496700c1dd61b0dcaee38520da0948">customCodeOutsideMain</a></td></tr>
+<tr class="memdesc:a8e496700c1dd61b0dcaee38520da0948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom code inserted before events ( and not in events function ) <br /></td></tr>
+<tr class="separator:a8e496700c1dd61b0dcaee38520da0948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d202390a8f2af35cf09f4b1eaf0049f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d202390a8f2af35cf09f4b1eaf0049f"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a3d202390a8f2af35cf09f4b1eaf0049f">customCodeInMain</a></td></tr>
+<tr class="memdesc:a3d202390a8f2af35cf09f4b1eaf0049f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom code inserted before events ( in main function ) <br /></td></tr>
+<tr class="separator:a3d202390a8f2af35cf09f4b1eaf0049f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7692a50c9727933770e900f7d86b29df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7692a50c9727933770e900f7d86b29df"></a>
+std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a7692a50c9727933770e900f7d86b29df">customGlobalDeclaration</a></td></tr>
+<tr class="memdesc:a7692a50c9727933770e900f7d86b29df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom global C++ declarations inserted after includes. <br /></td></tr>
+<tr class="separator:a7692a50c9727933770e900f7d86b29df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35db61f766059e5ca8f87bd4b1367407"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35db61f766059e5ca8f87bd4b1367407"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a35db61f766059e5ca8f87bd4b1367407">maxCustomConditionsDepth</a></td></tr>
 <tr class="memdesc:a35db61f766059e5ca8f87bd4b1367407"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum depth value for all the custom conditions created. <br /></td></tr>
@@ -345,7 +345,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>For now, this class generates only C++ code for GD C++ <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">Platform</a>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_callbacks_for_generating_expression_code.html" title="Used to generate code from expressions. ">CallbacksForGeneratingExpressionCode</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8e5312e859b8c2f7de9f5fe4ef16dda3"></a>
+<a class="anchor" id="adb8bdc7001edc095a76d92be70499562"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -355,7 +355,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="memname">void gd::EventsCodeGenerator::AddIncludeFile </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
@@ -376,7 +376,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="ac407e2d981608b468afb13d2ae017cf4"></a>
+<a class="anchor" id="a12b1cd22c5b482e29bf0958a0db5c3d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -386,7 +386,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="memname">void gd::EventsCodeGenerator::AddIncludeFiles </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td>
           <td class="paramname"><em>files</em></td><td>)</td>
           <td></td>
         </tr>
@@ -399,11 +399,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 </div><div class="memdoc">
 
 <p>Declare a list of include files to be added. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_events_code_generator.html#a8e5312e859b8c2f7de9f5fe4ef16dda3" title="Declare an include file to be added. ">gd::EventsCodeGenerator::AddIncludeFile</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_events_code_generator.html#adb8bdc7001edc095a76d92be70499562" title="Declare an include file to be added. ">gd::EventsCodeGenerator::AddIncludeFile</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3b2b4c2eef15873c0fc8cae3f1ae334b"></a>
+<a class="anchor" id="a2844ac35e5bfc3cb16d0d060e836a4e7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -411,9 +411,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::ConvertToString </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::ConvertToString </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>plainString</em></td><td>)</td>
           <td></td>
         </tr>
@@ -427,7 +427,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 <p>Must convert a plain string ( with line feed, quotes ) to a string that can be inserted into code. </p>
 <dl class="section note"><dt>Note</dt><dd>It is the caller responsibility to add proper code need to create a full string.</dd></dl>
-<p>Usage example : </p><div class="fragment"><div class="line">   code += <span class="stringliteral">&quot;std::string(\&quot;&quot;</span>+codeGenerator.ConvertToString(name)+<span class="stringliteral">&quot;\&quot;)&quot;</span>;</div>
+<p>Usage example : </p><div class="fragment"><div class="line">   code += <span class="stringliteral">&quot;gd::String(\&quot;&quot;</span>+codeGenerator.ConvertToString(name)+<span class="stringliteral">&quot;\&quot;)&quot;</span>;</div>
 <div class="line">/ </div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -439,7 +439,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a1809f49a6f9e3afbd37e3e2eaf300077"></a>
+<a class="anchor" id="a7ec996b45fa9d2c539975fd5c10b1569"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -447,9 +447,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::ConvertToStringExplicit </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::ConvertToStringExplicit </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>plainString</em></td><td>)</td>
           <td></td>
         </tr>
@@ -474,14 +474,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="ac98f2d736f35bbadb2ad45362e6e6442"></a>
+<a class="anchor" id="a9bd7b1e177a2d0e0ef2d824a934cb9d9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; gd::EventsCodeGenerator::ExpandObjectsName </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; gd::EventsCodeGenerator::ExpandObjectsName </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>objectName</em>, </td>
         </tr>
         <tr>
@@ -506,12 +506,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="af8c5d7fb47e2de35fe20ee3dd19b9ed3"></a>
+<a class="anchor" id="a1c5f7ae07d29549a45b554031e9af9db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GenerateActionCode </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateActionCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;&#160;</td>
           <td class="paramname"><em>action</em>, </td>
@@ -531,7 +531,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 </div><div class="memdoc">
 
 <p>Generate code for a single action. </p>
-<p>The generation is really done in GenerateFreeAction/GenerateObjectAction or GenerateAutomatismAction.</p>
+<p>The generation is really done in GenerateFreeAction/GenerateObjectAction or GenerateBehaviorAction.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">condition</td><td>instruction to be done. </td></tr>
@@ -544,7 +544,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a42c94898b40e6e8d194e1954c2958178"></a>
+<a class="anchor" id="a16b69a1fd1fa71c0718436b35a4f8ccc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -552,7 +552,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string gd::EventsCodeGenerator::GenerateActionsListCode </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateActionsListCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp;&#160;</td>
           <td class="paramname"><em>actions</em>, </td>
@@ -592,7 +592,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a13b166cd333adc7232121022d84f74f4"></a>
+<a class="anchor" id="ab37e789d3ec8373da9d5e293ae52811f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -600,9 +600,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string gd::EventsCodeGenerator::GenerateBooleanFullName </td>
+          <td class="memname">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateBooleanFullName </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>boolName</em>, </td>
         </tr>
         <tr>
@@ -629,7 +629,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="abee87e62aded069c969b0a729eeda52c"></a>
+<a class="anchor" id="a57a884f621ded153c2f1efe7b61b3e50"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -637,9 +637,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string gd::EventsCodeGenerator::GenerateBooleanInitializationToFalse </td>
+          <td class="memname">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateBooleanInitializationToFalse </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>boolName</em>, </td>
         </tr>
         <tr>
@@ -666,7 +666,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="aba4cab47d5a2dfd227b79c33d8005fdb"></a>
+<a class="anchor" id="aa3aac6075561e2aebc4f73887269a468"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -674,7 +674,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string gd::EventsCodeGenerator::GenerateCompoundOperatorCall </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateCompoundOperatorCall </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td>
           <td class="paramname"><em>instrInfos</em>, </td>
@@ -682,19 +682,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>arguments</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>callStartString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>startFromArgument</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -714,7 +714,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <table class="params">
     <tr><td class="paramname">Information</td><td>about the instruction </td></tr>
     <tr><td class="paramname">Arguments,in</td><td>their C++ form. </td></tr>
-    <tr><td class="paramname">String</td><td>to be placed at the start of the call ( the function to be called typically ). Example : MyObject-&gt;Set </td></tr>
+    <tr><td class="paramname"><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a></td><td>to be placed at the start of the call ( the function to be called typically ). Example : MyObject-&gt;Set </td></tr>
     <tr><td class="paramname">Arguments</td><td>will be generated starting from this number. For example, set this to 1 to skip the first argument. </td></tr>
   </table>
   </dd>
@@ -722,12 +722,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="af9e91f747b1eed82384d04c8dd63dec5"></a>
+<a class="anchor" id="a5e2dec8255c8a82e5fc9a5315046863d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GenerateConditionCode </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateConditionCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;&#160;</td>
           <td class="paramname"><em>condition</em>, </td>
@@ -735,7 +735,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>returnBoolean</em>, </td>
         </tr>
         <tr>
@@ -753,7 +753,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 </div><div class="memdoc">
 
 <p>Generate code for a single condition. </p>
-<p>The generation is really done in GenerateFreeCondition/GenerateObjectCondition or GenerateAutomatismCondition.</p>
+<p>The generation is really done in GenerateFreeCondition/GenerateObjectCondition or GenerateBehaviorCondition.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">condition</td><td>instruction to be done. </td></tr>
@@ -766,7 +766,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a5eb79786bab30a0efca084da2c696e37"></a>
+<a class="anchor" id="a2c64f5a8d1c4d4b801c08c74dfebb3e1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -774,7 +774,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string gd::EventsCodeGenerator::GenerateConditionsListCode </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateConditionsListCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp;&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -814,12 +814,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a33240574ed1704ae12be1b63230f6cdb"></a>
+<a class="anchor" id="a6d120d95fb5310ee72d0a9db1e17c3c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string gd::EventsCodeGenerator::GenerateEventsListCode </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateEventsListCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;&#160;</td>
           <td class="paramname"><em>events</em>, </td>
@@ -851,7 +851,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a14b5e3c8a987c3fbaf7b825588e224dc"></a>
+<a class="anchor" id="a4f1962b166945e4781ebebf39845c1be"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -859,9 +859,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string gd::EventsCodeGenerator::GenerateNegatedPredicat </td>
+          <td class="memname">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateNegatedPredicat </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>predicat</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -878,7 +878,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="ae91b441173a2ffec36237038d1c2cefa"></a>
+<a class="anchor" id="abd1917e48389db03a533f1e34736f425"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -886,21 +886,21 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GenerateObjectAutomatismFunctionCall </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateObjectBehaviorFunctionCall </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>objectListName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>automatismName</em>, </td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
+          <td class="paramname"><em>behaviorName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_automatism_metadata.html">gd::AutomatismMetadata</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_behavior_metadata.html">gd::BehaviorMetadata</a> &amp;&#160;</td>
           <td class="paramname"><em>autoInfo</em>, </td>
         </tr>
         <tr>
@@ -912,13 +912,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>parametersStr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>defaultOutput</em>, </td>
         </tr>
         <tr>
@@ -940,13 +940,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 </table>
 </div><div class="memdoc">
 
-<p>Call a function of an automatism of the current object. </p>
+<p>Call a function of a behavior of the current object. </p>
 <dl class="section note"><dt>Note</dt><dd>The current object is the object being manipulated by a condition or an action.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectListName</td><td>The full name of the object list being used </td></tr>
-    <tr><td class="paramname">automatismName</td><td>The full name of the automatism to be used </td></tr>
-    <tr><td class="paramname">objMetadata</td><td>Metadata about the automatism being used. </td></tr>
+    <tr><td class="paramname">behaviorName</td><td>The full name of the behavior to be used </td></tr>
+    <tr><td class="paramname">objMetadata</td><td>Metadata about the behavior being used. </td></tr>
     <tr><td class="paramname">functionCallName</td><td>The function to be called on this object. </td></tr>
     <tr><td class="paramname">parametersStr</td><td>The parameters of the function </td></tr>
     <tr><td class="paramname">context</td><td>The context : May be used to get information about the current scope. </td></tr>
@@ -956,7 +956,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a20e10c94187aa5a11603d999c3886573"></a>
+<a class="anchor" id="a75eab23a5745385a6dcd6f739861afa8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -964,9 +964,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GenerateObjectFunctionCall </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateObjectFunctionCall </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>objectListName</em>, </td>
         </tr>
         <tr>
@@ -984,13 +984,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>parametersStr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>defaultOutput</em>, </td>
         </tr>
         <tr>
@@ -1027,7 +1027,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="aaa12c6dbf48f0282a706d70f32fd0fe1"></a>
+<a class="anchor" id="a7bd272198c208a1c8096d3d53f8581cb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1035,7 +1035,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GenerateObjectsDeclarationCode </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateObjectsDeclarationCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
@@ -1060,7 +1060,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="ad4cbb2eb19bf54e50fbb2e7e8bfa6402"></a>
+<a class="anchor" id="a413087dcb1c65992946d078b6be61dac"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1068,7 +1068,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string gd::EventsCodeGenerator::GenerateOperatorCall </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateOperatorCall </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td>
           <td class="paramname"><em>instrInfos</em>, </td>
@@ -1076,25 +1076,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>arguments</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>callStartString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>getterStartString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>startFromArgument</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -1114,8 +1114,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <table class="params">
     <tr><td class="paramname">Information</td><td>about the instruction </td></tr>
     <tr><td class="paramname">Arguments,in</td><td>their C++ form. </td></tr>
-    <tr><td class="paramname">String</td><td>to be placed at the start of the call ( the function to be called typically ). Example : MyObject-&gt;Set </td></tr>
-    <tr><td class="paramname">String</td><td>to be placed at the start of the call of the getter ( the "getter" function to be called typically ). Example : MyObject-&gt;Get </td></tr>
+    <tr><td class="paramname"><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a></td><td>to be placed at the start of the call ( the function to be called typically ). Example : MyObject-&gt;Set </td></tr>
+    <tr><td class="paramname"><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a></td><td>to be placed at the start of the call of the getter ( the "getter" function to be called typically ). Example : MyObject-&gt;Get </td></tr>
     <tr><td class="paramname">Arguments</td><td>will be generated starting from this number. For example, set this to 1 to skip the first argument. </td></tr>
   </table>
   </dd>
@@ -1123,7 +1123,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="adc8ddc46ac09c461be5844fab727c5c7"></a>
+<a class="anchor" id="adb8a6366a93c7a144ceb608b241a2813"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1131,9 +1131,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GenerateParameterCodes </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateParameterCodes </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>parameter</em>, </td>
         </tr>
         <tr>
@@ -1151,13 +1151,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>previousParameter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; *&#160;</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &gt; *&#160;</td>
           <td class="paramname"><em>supplementaryParametersTypes</em>&#160;</td>
         </tr>
         <tr>
@@ -1194,25 +1194,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 <br />
  Other standard parameters type that should be implemented by platforms:</p><ul>
 <li>currentScene: Reference to the current runtime scene.</li>
-<li>objectList : a map containing lists of objects which are specified by the object name in another parameter. (C++: std::map &lt;std::string, std::vector&lt;RuntimeObject*&gt; *&gt;). Example: <div class="fragment"><div class="line">AddExpression(<span class="stringliteral">&quot;Count&quot;</span>, _(<span class="stringliteral">&quot;Object count&quot;</span>), _(<span class="stringliteral">&quot;Count the number of picked objects&quot;</span>), _(<span class="stringliteral">&quot;Objects&quot;</span>), <span class="stringliteral">&quot;res/conditions/nbObjet.png&quot;</span>)</div>
+<li>objectList : a map containing lists of objects which are specified by the object name in another parameter. (C++: std::map &lt;<a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a>, std::vector&lt;RuntimeObject*&gt; *&gt;). Example: <div class="fragment"><div class="line">AddExpression(<span class="stringliteral">&quot;Count&quot;</span>, _(<span class="stringliteral">&quot;Object count&quot;</span>), _(<span class="stringliteral">&quot;Count the number of picked objects&quot;</span>), _(<span class="stringliteral">&quot;Objects&quot;</span>), <span class="stringliteral">&quot;res/conditions/nbObjet.png&quot;</span>)</div>
 <div class="line">.AddParameter(<span class="stringliteral">&quot;objectList&quot;</span>, _(<span class="stringliteral">&quot;Object&quot;</span>))</div>
-<div class="line">.SetFunctionName(<span class="stringliteral">&quot;PickedObjectsCount&quot;</span>).SetIncludeFile(<span class="stringliteral">&quot;GDCpp/BuiltinExtensions/ObjectTools.h&quot;</span>);</div>
+<div class="line">.SetFunctionName(<span class="stringliteral">&quot;PickedObjectsCount&quot;</span>).SetIncludeFile(<span class="stringliteral">&quot;GDCpp/Extensions/Builtin/ObjectTools.h&quot;</span>);</div>
 </div><!-- fragment --></li>
 <li>objectListWithoutPicking : Same as objectList but do not pick object if they are not already picked.</li>
 <li>objectPtr : Return a pointer to object specified by the object name in another parameter ( C++: RuntimeObject* ). Example: <div class="fragment"><div class="line">.AddParameter(<span class="stringliteral">&quot;object&quot;</span>, _(<span class="stringliteral">&quot;Object&quot;</span>))</div>
 <div class="line">.AddParameter(<span class="stringliteral">&quot;objectPtr&quot;</span>, _(<span class="stringliteral">&quot;Target object&quot;</span>))</div>
-<div class="line"><span class="comment">//The called function will be called with this signature on the C++ platform: Function(std::string, RuntimeObject*)</span></div>
+<div class="line"><span class="comment">//The called function will be called with this signature on the C++ platform: Function(gd::String, RuntimeObject*)</span></div>
 </div><!-- fragment --> </li>
 </ul>
 
 </div>
 </div>
-<a class="anchor" id="a2fec2bf3828d38910c92ee9dacfd672e"></a>
+<a class="anchor" id="aaff3e67c941e71d07b2d0977838397cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; string &gt; gd::EventsCodeGenerator::GenerateParametersCodes </td>
+          <td class="memname">vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; gd::EventsCodeGenerator::GenerateParametersCodes </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt;&#160;</td>
           <td class="paramname"><em>parameters</em>, </td>
@@ -1232,7 +1232,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; *&#160;</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &gt; *&#160;</td>
           <td class="paramname"><em>supplementaryParametersTypes</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -1251,14 +1251,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
     <tr><td class="paramname">parameters</td><td>std::vector of actual parameters. </td></tr>
     <tr><td class="paramname">parametersInfo</td><td>std::vector of information about parameters </td></tr>
     <tr><td class="paramname">context</td><td>Context used for generation </td></tr>
-    <tr><td class="paramname">supplementaryParametersTypes</td><td>Optional std::vector of new parameters types ( std::vector of pair&lt;std::string,std::string&gt;("type", "valueToBeInserted") ) </td></tr>
+    <tr><td class="paramname">supplementaryParametersTypes</td><td>Optional std::vector of new parameters types ( std::vector of pair&lt;gd::String,gd::String&gt;("type", "valueToBeInserted") ) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a5e1cfc05583c427505f8897118751f99"></a>
+<a class="anchor" id="a7234f33c883a385d7a95df00b13a054c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1266,15 +1266,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string gd::EventsCodeGenerator::GenerateReferenceToUpperScopeBoolean </td>
+          <td class="memname">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateReferenceToUpperScopeBoolean </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>referenceName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>referencedBoolean</em>, </td>
         </tr>
         <tr>
@@ -1301,7 +1301,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a68065bd951c472ff9527d7bd29a9b9e8"></a>
+<a class="anchor" id="a7f3d9f6ca5afe732bad07eb37dbb9e76"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1309,7 +1309,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string gd::EventsCodeGenerator::GenerateRelationalOperatorCall </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateRelationalOperatorCall </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td>
           <td class="paramname"><em>instrInfos</em>, </td>
@@ -1317,19 +1317,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>arguments</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>callStartString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>startFromArgument</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -1349,7 +1349,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <table class="params">
     <tr><td class="paramname">Information</td><td>about the instruction </td></tr>
     <tr><td class="paramname">Arguments,in</td><td>their C++ form. </td></tr>
-    <tr><td class="paramname">String</td><td>to be placed at the start of the call ( the function to be called typically ). Example : MyObject-&gt;Get </td></tr>
+    <tr><td class="paramname"><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a></td><td>to be placed at the start of the call ( the function to be called typically ). Example : MyObject-&gt;Get </td></tr>
     <tr><td class="paramname">Arguments</td><td>will be generated starting from this number. For example, set this to 1 to skip the first argument. </td></tr>
   </table>
   </dd>
@@ -1357,7 +1357,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="ae5745419439e5b11caacb154e458f71c"></a>
+<a class="anchor" id="a3e47ceeab37ed1c3dd9c32eaeb707c4c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1365,7 +1365,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string gd::EventsCodeGenerator::GenerateScopeBegin </td>
+          <td class="memname">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateScopeBegin </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -1373,7 +1373,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>extraVariable</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -1400,7 +1400,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a372db7fbf781a2bf1946bcfbd8b3716b"></a>
+<a class="anchor" id="af736c1e537f006532df912087ecbb26c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1408,7 +1408,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string gd::EventsCodeGenerator::GenerateScopeEnd </td>
+          <td class="memname">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GenerateScopeEnd </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp;&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -1416,7 +1416,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>extraVariable</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
@@ -1443,7 +1443,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 
 </div>
 </div>
-<a class="anchor" id="a0202cae82dc72f57b040a760c8911639"></a>
+<a class="anchor" id="a65d952438f2ac3f39baa73008de845f0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1451,9 +1451,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string gd::EventsCodeGenerator::GetObjectListName </td>
+          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::EventsCodeGenerator::GetObjectListName </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -1507,7 +1507,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbacksForGenerati
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

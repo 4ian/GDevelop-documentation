@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_133005aee98dc14e9b45053ba4beb69f.html">BuiltinExtensions</a></li><li class="navelem"><a class="el" href="dir_00eaefe2bdcf4006a95d230b470d4584.html">SpriteExtension</a></li><li class="navelem"><a class="el" href="dir_ede6fff8d8004f7c4fa976f49a336aeb.html">Dialogs</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_4aeb9e7b053513ba8882cbc67130aab6.html">Extensions</a></li><li class="navelem"><a class="el" href="dir_9aa8ee2e901fdf21a3daf12a91d8273f.html">Builtin</a></li><li class="navelem"><a class="el" href="dir_fdb6912ec07860efcf6ce0c8faac629e.html">SpriteExtension</a></li><li class="navelem"><a class="el" href="dir_0da184d98735199fe14b847047606172.html">Dialogs</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
@@ -324,10 +325,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; game;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="classgd_1_1_sprite_object.html">SpriteObject</a> &amp; object;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> selectedAnimation;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> selectedDirection;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> selectedImage;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    std::string selectedPoint;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::size_t selectedAnimation;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    std::size_t selectedDirection;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::size_t selectedImage;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> selectedPoint;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">float</span> spritePosX; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">float</span> spritePosY; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">float</span> spriteWidth; </div>
@@ -337,7 +338,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">bool</span> editingPoint;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">bool</span> deletingMaskTreeItems; <span class="comment">//Used to workaround an event being called when using maskTree-&gt;DeleteAllItems().</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    std::string renamedPointOldName;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> renamedPointOldName;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="classgd_1_1_polygon_edition_helper.html">gd::PolygonEditionHelper</a> polygonEditionHelper;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
@@ -362,20 +363,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classgd_1_1_sprite_object_editor_html_a474496837f089d29e1e442675c51f662"><div class="ttname"><a href="classgd_1_1_sprite_object_editor.html#a474496837f089d29e1e442675c51f662">gd::SpriteObjectEditor::AddImageToCurrentAnimation</a></div><div class="ttdeci">void AddImageToCurrentAnimation(wxString image, bool refresh=true)</div><div class="ttdoc">Can be called to add an image to the current animation. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.cpp:994</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="classgd_1_1_sprite_object_editor_html_a474496837f089d29e1e442675c51f662"><div class="ttname"><a href="classgd_1_1_sprite_object_editor.html#a474496837f089d29e1e442675c51f662">gd::SpriteObjectEditor::AddImageToCurrentAnimation</a></div><div class="ttdeci">void AddImageToCurrentAnimation(wxString image, bool refresh=true)</div><div class="ttdoc">Can be called to add an image to the current animation. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.cpp:996</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_dnd_text_sprite_object_editor_html"><div class="ttname"><a href="classgd_1_1_dnd_text_sprite_object_editor.html">gd::DndTextSpriteObjectEditor</a></div><div class="ttdoc">Tool class used by SpriteObjectEditor to enable inserting images using drag&#39;n&#39;drop. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.h:281</div></div>
 <div class="ttc" id="classgd_1_1_sprite_object_html"><div class="ttname"><a href="classgd_1_1_sprite_object.html">gd::SpriteObject</a></div><div class="ttdoc">Standard sprite object for extensions that implements the standard SpriteExtension (see gd::BuiltinEx...</div><div class="ttdef"><b>Definition:</b> SpriteObject.h:41</div></div>
 <div class="ttc" id="classgd_1_1_resource_html"><div class="ttname"><a href="classgd_1_1_resource.html">gd::Resource</a></div><div class="ttdoc">Base class to describe a resource used by a game. </div><div class="ttdef"><b>Definition:</b> ResourcesManager.h:25</div></div>
 <div class="ttc" id="classgd_1_1_main_frame_wrapper_html"><div class="ttname"><a href="classgd_1_1_main_frame_wrapper.html">gd::MainFrameWrapper</a></div><div class="ttdoc">Provides access to some specific features or members of the IDE. </div><div class="ttdef"><b>Definition:</b> MainFrameWrapper.h:25</div></div>
-<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:44</div></div>
 <div class="ttc" id="classgd_1_1_sprite_object_editor_html"><div class="ttname"><a href="classgd_1_1_sprite_object_editor.html">gd::SpriteObjectEditor</a></div><div class="ttdoc">Dialog to edit Sprite objects from SpriteExtension. </div><div class="ttdef"><b>Definition:</b> SpriteObjectEditor.h:42</div></div>
 <div class="ttc" id="classgd_1_1_polygon_edition_helper_html"><div class="ttname"><a href="classgd_1_1_polygon_edition_helper.html">gd::PolygonEditionHelper</a></div><div class="ttdoc">PolygonEditionHelper provides features to make the polygon edition easier. Can be easily integrated i...</div><div class="ttdef"><b>Definition:</b> PolygonEditionHelper.h:28</div></div>
-<div class="ttc" id="class_resources_editor_html"><div class="ttname"><a href="class_resources_editor.html">ResourcesEditor</a></div><div class="ttdoc">Panel for editing the resources of a game. </div><div class="ttdef"><b>Definition:</b> ResourcesEditor.h:31</div></div>
+<div class="ttc" id="class_resources_editor_html"><div class="ttname"><a href="class_resources_editor.html">ResourcesEditor</a></div><div class="ttdoc">Panel for editing the resources of a game. </div><div class="ttdef"><b>Definition:</b> ResourcesEditor.h:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

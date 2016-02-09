@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_f475b029dedc4c82b538a3827ce3c9d6.html">Events</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_4aeb9e7b053513ba8882cbc67130aab6.html">Extensions</a></li><li class="navelem"><a class="el" href="dir_8e09389479d3b4f15790ccb594568191.html">Metadata</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,14 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef EVENTMETADATA_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define EVENTMETADATA_H</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
@@ -118,15 +119,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classgd_1_1_event_metadata.html">   32</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgd_1_1_event_metadata.html#aae03f915fc1048bf6a1796b5f1601ea7">   38</a></span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a> &amp; <a class="code" href="classgd_1_1_event_metadata.html#aae03f915fc1048bf6a1796b5f1601ea7">SetCodeGenerator</a>(std::function&lt;std::string(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classgd_1_1_event_metadata.html#a769e1d27f987b9d185a7600e005a0394">   38</a></span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a> &amp; <a class="code" href="classgd_1_1_event_metadata.html#a769e1d27f987b9d185a7600e005a0394">SetCodeGenerator</a>(std::function&lt;<a class="code" href="classgd_1_1_string.html">gd::String</a>(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp; context)&gt; <span class="keyword">function</span>) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        hasCustomCodeGenerator = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        codeGeneration = <span class="keyword">function</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgd_1_1_event_metadata.html#a48bc118785e4aafc89c2f22eb4d703d9">   48</a></span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a> &amp; <a class="code" href="classgd_1_1_event_metadata.html#a48bc118785e4aafc89c2f22eb4d703d9">SetPreprocessing</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; eventList, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indexOfTheEventInThisList)&gt; <span class="keyword">function</span>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgd_1_1_event_metadata.html#a97833b0bc30ce98f163841231eef96cd">   48</a></span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a> &amp; <a class="code" href="classgd_1_1_event_metadata.html#a97833b0bc30ce98f163841231eef96cd">SetPreprocessing</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; eventList, std::size_t indexOfTheEventInThisList)&gt; <span class="keyword">function</span>) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        preprocessing = <span class="keyword">function</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
@@ -135,55 +136,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classgd_1_1_event_metadata.html#ab85b040f835873ceac408875fd4fec8c">   63</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_event_metadata.html#ab85b040f835873ceac408875fd4fec8c">HasCustomCodeGenerator</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> hasCustomCodeGenerator; }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a>(<span class="keyword">const</span> std::string &amp; name_,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                 <span class="keyword">const</span> std::string &amp; fullname_,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                 <span class="keyword">const</span> std::string &amp; description_,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                 <span class="keyword">const</span> std::string &amp; group_,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                 <span class="keyword">const</span> std::string &amp; smallicon_,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name_,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; fullname_,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; description_,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; group_,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                 <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; smallicon_,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                 std::shared_ptr&lt;gd::BaseEvent&gt; instance);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classgd_1_1_event_metadata.html">EventMetadata</a>() {};</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> ~EventMetadata() {};</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> std::string &amp; GetFullName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fullname; }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> std::string &amp; GetDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> description; }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> std::string &amp; GetGroup()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> group; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; GetFullName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fullname; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; GetDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> description; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; GetGroup()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> group; }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> wxBitmap &amp; GetBitmapIcon()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> smallicon; }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string fullname;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::string description;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::string group;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> fullname;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> description;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> group;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    wxBitmap smallicon;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::shared_ptr&lt;gd::BaseEvent&gt; instance;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> hasCustomCodeGenerator;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::function&lt;std::string(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::function&lt;<a class="code" href="classgd_1_1_string.html">gd::String</a>(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a> &amp; context)&gt; codeGeneration;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::function&lt;void(<a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp; event, <a class="code" href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a> &amp; codeGenerator,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; eventList, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indexOfTheEventInThisList)&gt; preprocessing;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; eventList, std::size_t indexOfTheEventInThisList)&gt; preprocessing;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // EVENTMETADATA_H</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_event_metadata_html_aae03f915fc1048bf6a1796b5f1601ea7"><div class="ttname"><a href="classgd_1_1_event_metadata.html#aae03f915fc1048bf6a1796b5f1601ea7">gd::EventMetadata::SetCodeGenerator</a></div><div class="ttdeci">EventMetadata &amp; SetCodeGenerator(std::function&lt; std::string(gd::BaseEvent &amp;event, gd::EventsCodeGenerator &amp;codeGenerator, gd::EventsCodeGenerationContext &amp;context)&gt; function)</div><div class="ttdoc">Set the code generator used when generating code from events. </div><div class="ttdef"><b>Definition:</b> EventMetadata.h:38</div></div>
+<div class="ttc" id="classgd_1_1_event_metadata_html_a97833b0bc30ce98f163841231eef96cd"><div class="ttname"><a href="classgd_1_1_event_metadata.html#a97833b0bc30ce98f163841231eef96cd">gd::EventMetadata::SetPreprocessing</a></div><div class="ttdeci">EventMetadata &amp; SetPreprocessing(std::function&lt; void(gd::BaseEvent &amp;event, gd::EventsCodeGenerator &amp;codeGenerator, gd::EventsList &amp;eventList, std::size_t indexOfTheEventInThisList)&gt; function)</div><div class="ttdoc">Set the code to preprocess the event. </div><div class="ttdef"><b>Definition:</b> EventMetadata.h:48</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
 <div class="ttc" id="classgd_1_1_event_metadata_html_ab85b040f835873ceac408875fd4fec8c"><div class="ttname"><a href="classgd_1_1_event_metadata.html#ab85b040f835873ceac408875fd4fec8c">gd::EventMetadata::HasCustomCodeGenerator</a></div><div class="ttdeci">bool HasCustomCodeGenerator() const </div><div class="ttdoc">Return true if SetCodeGenerator was called to set a function to call to generate the event code...</div><div class="ttdef"><b>Definition:</b> EventMetadata.h:63</div></div>
 <div class="ttc" id="classgd_1_1_events_code_generation_context_html"><div class="ttname"><a href="classgd_1_1_events_code_generation_context.html">gd::EventsCodeGenerationContext</a></div><div class="ttdoc">Used to manage the context when generating code for events. </div><div class="ttdef"><b>Definition:</b> EventsCodeGenerationContext.h:27</div></div>
-<div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:27</div></div>
-<div class="ttc" id="classgd_1_1_event_metadata_html_a48bc118785e4aafc89c2f22eb4d703d9"><div class="ttname"><a href="classgd_1_1_event_metadata.html#a48bc118785e4aafc89c2f22eb4d703d9">gd::EventMetadata::SetPreprocessing</a></div><div class="ttdeci">EventMetadata &amp; SetPreprocessing(std::function&lt; void(gd::BaseEvent &amp;event, gd::EventsCodeGenerator &amp;codeGenerator, gd::EventsList &amp;eventList, unsigned int indexOfTheEventInThisList)&gt; function)</div><div class="ttdoc">Set the code to preprocess the event. </div><div class="ttdef"><b>Definition:</b> EventMetadata.h:48</div></div>
+<div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:28</div></div>
 <div class="ttc" id="classgd_1_1_event_metadata_html"><div class="ttname"><a href="classgd_1_1_event_metadata.html">gd::EventMetadata</a></div><div class="ttdoc">Describe an event provided by an extension of a platform. </div><div class="ttdef"><b>Definition:</b> EventMetadata.h:32</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
 <div class="ttc" id="classgd_1_1_events_code_generator_html"><div class="ttname"><a href="classgd_1_1_events_code_generator.html">gd::EventsCodeGenerator</a></div><div class="ttdoc">Internal class used to generate code from events. </div><div class="ttdef"><b>Definition:</b> EventsCodeGenerator.h:33</div></div>
+<div class="ttc" id="classgd_1_1_event_metadata_html_a769e1d27f987b9d185a7600e005a0394"><div class="ttname"><a href="classgd_1_1_event_metadata.html#a769e1d27f987b9d185a7600e005a0394">gd::EventMetadata::SetCodeGenerator</a></div><div class="ttdeci">EventMetadata &amp; SetCodeGenerator(std::function&lt; gd::String(gd::BaseEvent &amp;event, gd::EventsCodeGenerator &amp;codeGenerator, gd::EventsCodeGenerationContext &amp;context)&gt; function)</div><div class="ttdoc">Set the code generator used when generating code from events. </div><div class="ttdef"><b>Definition:</b> EventMetadata.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,0 +1,16 @@
+digraph "ExternalEventsCodeCompilerPreWork::Execute"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ExternalEventsCodeCompiler\lPreWork::Execute",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DependenciesAnalyzer\l::Analyze",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d4e/class_dependencies_analyzer.html#ae67760b123d47225f42b9bbbe6795360",tooltip="Search the dependencies and return true if there are no circular dependencies in the events of the la..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DependenciesAnalyzer\l::ExternalEventsCanBeCompiled\lForAScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d4e/class_dependencies_analyzer.html#af18794789ad871c78b02a44a5b43b2d1"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DependenciesAnalyzer\l::GetExternalEventsDependencies",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d4e/class_dependencies_analyzer.html#a504fcf41c94c67f7922850bbe5ade1cb",tooltip="Return the external events being dependencies of the scene or external events passed in the construct..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="EventsCodeGenerator\l::GenerateExternalEventsCompleteCode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d05/class_events_code_generator.html#a491f996c8baa30bddd9e1f93d2fe1bf4"];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

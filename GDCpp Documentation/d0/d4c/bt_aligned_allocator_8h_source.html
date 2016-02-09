@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_7aefbae60249d8db3c9a686a9296d9b4.html">Runtime</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define BT_ALIGNED_ALLOCATOR</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;GDCpp/btScalar.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/btScalar.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//#define BT_DEBUG_MEMORY_ALLOCATIONS 1</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef BT_DEBUG_MEMORY_ALLOCATIONS</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -145,20 +145,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> T , <span class="keywordtype">unsigned</span> Alignment &gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">class </span>btAlignedAllocator {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../db/d22/classbt_aligned_allocator.html">   62</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator</a> {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">typedef</span> btAlignedAllocator&lt; T , Alignment &gt; self_type;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator&lt; T , Alignment &gt;</a> <a class="code" href="../../db/d22/classbt_aligned_allocator.html">self_type</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//just going down a list:</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        btAlignedAllocator() {}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator</a>() {}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">/*</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">        btAlignedAllocator( const self_type &amp; ) {}</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">        */</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">template</span> &lt; <span class="keyword">typename</span> Other &gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        btAlignedAllocator( <span class="keyword">const</span> btAlignedAllocator&lt; Other , Alignment &gt; &amp; ) {}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator</a>( <span class="keyword">const</span> <a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator&lt; Other , Alignment &gt;</a> &amp; ) {}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">const</span> T*         const_pointer;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">const</span> T&amp;         const_reference;</div>
@@ -179,11 +179,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span>          destroy   ( pointer          ptr )                                 { ptr-&gt;~value_type(); }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">template</span> &lt; <span class="keyword">typename</span> O &gt; <span class="keyword">struct </span>rebind {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keyword">typedef</span> btAlignedAllocator&lt; O , Alignment &gt; other;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d9/d97/structbt_aligned_allocator_1_1rebind.html">   96</a></span>&#160;        <span class="keyword">template</span> &lt; <span class="keyword">typename</span> O &gt; <span class="keyword">struct </span><a class="code" href="../../d9/d97/structbt_aligned_allocator_1_1rebind.html">rebind</a> {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keyword">typedef</span> <a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator&lt; O , Alignment &gt;</a> <a class="code" href="../../db/d22/classbt_aligned_allocator.html">other</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        };</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">template</span> &lt; <span class="keyword">typename</span> O &gt;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        self_type &amp; operator=( <span class="keyword">const</span> btAlignedAllocator&lt; O , Alignment &gt; &amp; ) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        self_type &amp; operator=( <span class="keyword">const</span> <a class="code" href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator&lt; O , Alignment &gt;</a> &amp; ) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator==( <span class="keyword">const</span> self_type &amp; , <span class="keyword">const</span> self_type &amp; ) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
@@ -191,10 +191,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="ttc" id="classbt_aligned_allocator_html"><div class="ttname"><a href="../../db/d22/classbt_aligned_allocator.html">btAlignedAllocator</a></div><div class="ttdef"><b>Definition:</b> btAlignedAllocator.h:62</div></div>
+<div class="ttc" id="structbt_aligned_allocator_1_1rebind_html"><div class="ttname"><a href="../../d9/d97/structbt_aligned_allocator_1_1rebind.html">btAlignedAllocator::rebind</a></div><div class="ttdef"><b>Definition:</b> btAlignedAllocator.h:96</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:23 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

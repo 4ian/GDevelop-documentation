@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,75 +93,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef GDCORE_SERIALIZERVALUE_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define GDCORE_SERIALIZERVALUE_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html">   19</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keywordtype">bool</span> val);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(std::string val);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keywordtype">int</span> val);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>() {};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> SetBool(<span class="keywordtype">bool</span> val);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> SetString(<span class="keyword">const</span> std::string &amp; val);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> SetInt(<span class="keywordtype">int</span> val);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> SetDouble(<span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> Set(<span class="keyword">const</span> std::string &amp; val);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span> GetBool() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::string GetString() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">int</span> GetInt() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">double</span> GetDouble() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#a85dbdb846cff2fd1b522d069f05a1834">   77</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#a85dbdb846cff2fd1b522d069f05a1834">IsBoolean</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isBoolean; };</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#a65ac5058366ded9166944119b553602d">   81</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#a65ac5058366ded9166944119b553602d">IsString</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isString; };</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#a9c4d820eb05258db8513902b4810b18d">   85</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#a9c4d820eb05258db8513902b4810b18d">IsInt</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isInt; };</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#afac5b0c33ea0aa1ddbadaef838028bfe">   89</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#afac5b0c33ea0aa1ddbadaef838028bfe">IsDouble</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isDouble; };</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">bool</span> isUnknown; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">bool</span> isBoolean;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">bool</span> isString;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">bool</span> isInt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> isDouble;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">bool</span> booleanValue;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::string stringValue;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> intValue;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">double</span> doubleValue;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_serializer_value_html_a85dbdb846cff2fd1b522d069f05a1834"><div class="ttname"><a href="classgd_1_1_serializer_value.html#a85dbdb846cff2fd1b522d069f05a1834">gd::SerializerValue::IsBoolean</a></div><div class="ttdeci">bool IsBoolean() const </div><div class="ttdoc">Return true if the value is a boolean. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:77</div></div>
-<div class="ttc" id="classgd_1_1_serializer_value_html_a9c4d820eb05258db8513902b4810b18d"><div class="ttname"><a href="classgd_1_1_serializer_value.html#a9c4d820eb05258db8513902b4810b18d">gd::SerializerValue::IsInt</a></div><div class="ttdeci">bool IsInt() const </div><div class="ttdoc">Return true if the value is an int. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:85</div></div>
-<div class="ttc" id="classgd_1_1_serializer_value_html_a65ac5058366ded9166944119b553602d"><div class="ttname"><a href="classgd_1_1_serializer_value.html#a65ac5058366ded9166944119b553602d">gd::SerializerValue::IsString</a></div><div class="ttdeci">bool IsString() const </div><div class="ttdoc">Return true if the value is a string. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:81</div></div>
-<div class="ttc" id="classgd_1_1_serializer_value_html"><div class="ttname"><a href="classgd_1_1_serializer_value.html">gd::SerializerValue</a></div><div class="ttdoc">A value stored inside a gd::SerializerElement. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:19</div></div>
-<div class="ttc" id="classgd_1_1_serializer_value_html_afac5b0c33ea0aa1ddbadaef838028bfe"><div class="ttname"><a href="classgd_1_1_serializer_value.html#afac5b0c33ea0aa1ddbadaef838028bfe">gd::SerializerValue::IsDouble</a></div><div class="ttdeci">bool IsDouble() const </div><div class="ttdoc">Return true if the value is a double. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:89</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html">   20</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keywordtype">bool</span> val);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp;val);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keywordtype">int</span> val);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>(<span class="keywordtype">double</span> val);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_serializer_value.html">SerializerValue</a>() {};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> SetBool(<span class="keywordtype">bool</span> val);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> SetString(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; val);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> SetInt(<span class="keywordtype">int</span> val);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> SetDouble(<span class="keywordtype">double</span> val);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> Set(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; val);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span> GetBool() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classgd_1_1_string.html">gd::String</a> GetString() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">int</span> GetInt() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">double</span> GetDouble() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#a85dbdb846cff2fd1b522d069f05a1834">   78</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#a85dbdb846cff2fd1b522d069f05a1834">IsBoolean</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isBoolean; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#a65ac5058366ded9166944119b553602d">   82</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#a65ac5058366ded9166944119b553602d">IsString</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isString; }</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#a9c4d820eb05258db8513902b4810b18d">   86</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#a9c4d820eb05258db8513902b4810b18d">IsInt</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isInt; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classgd_1_1_serializer_value.html#afac5b0c33ea0aa1ddbadaef838028bfe">   90</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_serializer_value.html#afac5b0c33ea0aa1ddbadaef838028bfe">IsDouble</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> isDouble; }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">bool</span> isUnknown; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">bool</span> isBoolean;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">bool</span> isString;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> isInt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> isDouble;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> booleanValue;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classgd_1_1_string.html">gd::String</a> stringValue;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">int</span> intValue;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">double</span> doubleValue;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_serializer_value_html_a85dbdb846cff2fd1b522d069f05a1834"><div class="ttname"><a href="classgd_1_1_serializer_value.html#a85dbdb846cff2fd1b522d069f05a1834">gd::SerializerValue::IsBoolean</a></div><div class="ttdeci">bool IsBoolean() const </div><div class="ttdoc">Return true if the value is a boolean. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:78</div></div>
+<div class="ttc" id="classgd_1_1_serializer_value_html_a9c4d820eb05258db8513902b4810b18d"><div class="ttname"><a href="classgd_1_1_serializer_value.html#a9c4d820eb05258db8513902b4810b18d">gd::SerializerValue::IsInt</a></div><div class="ttdeci">bool IsInt() const </div><div class="ttdoc">Return true if the value is an int. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:86</div></div>
+<div class="ttc" id="classgd_1_1_serializer_value_html_a65ac5058366ded9166944119b553602d"><div class="ttname"><a href="classgd_1_1_serializer_value.html#a65ac5058366ded9166944119b553602d">gd::SerializerValue::IsString</a></div><div class="ttdeci">bool IsString() const </div><div class="ttdoc">Return true if the value is a string. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:82</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_serializer_value_html"><div class="ttname"><a href="classgd_1_1_serializer_value.html">gd::SerializerValue</a></div><div class="ttdoc">A value stored inside a gd::SerializerElement. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:20</div></div>
+<div class="ttc" id="classgd_1_1_serializer_value_html_afac5b0c33ea0aa1ddbadaef838028bfe"><div class="ttname"><a href="classgd_1_1_serializer_value.html#afac5b0c33ea0aa1ddbadaef838028bfe">gd::SerializerValue::IsDouble</a></div><div class="ttdeci">bool IsDouble() const </div><div class="ttdoc">Return true if the value is a double. </div><div class="ttdef"><b>Definition:</b> SerializerValue.h:90</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

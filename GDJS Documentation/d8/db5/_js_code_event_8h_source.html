@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_2788447a247d89981b9774cad09bae1c.html">GDJS</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_2788447a247d89981b9774cad09bae1c.html">GDJS</a></li><li class="navelem"><a class="el" href="../../dir_15803e5a79f2c8c1253ec2b10c9507db.html">Events</a></li><li class="navelem"><a class="el" href="../../dir_ea09d065ab26fc796745c7399700964f.html">Builtin</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -116,11 +116,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsExecutable()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="keyword">true</span>;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CanHaveSubEvents()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> std::string &amp; GetInlineCode()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> inlineCode; };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> SetInlineCode(<span class="keyword">const</span> std::string &amp; code) { inlineCode = code; };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> gd::String &amp; GetInlineCode()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> inlineCode; };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> SetInlineCode(<span class="keyword">const</span> gd::String &amp; code) { inlineCode = code; };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string GetParameterObjects()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> parameterObjects; };</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> SetParameterObjects(std::string objectName) { parameterObjects = objectName; };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    gd::String GetParameterObjects()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> parameterObjects; };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> SetParameterObjects(gd::String objectName) { parameterObjects = objectName; };</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SerializeTo(gd::SerializerElement &amp; element) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> UnserializeFrom(gd::Project &amp; project, <span class="keyword">const</span> gd::SerializerElement &amp; element);</div>
@@ -134,23 +134,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keyword">const</span> <a class="code" href="../../dc/d13/classgdjs_1_1_js_code_event.html">JsCodeEvent</a> &amp; event);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::string inlineCode; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::string parameterObjects; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    gd::String inlineCode; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    gd::String parameterObjects; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // JSCODEEVENT_H</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> JsCodeEventDialog.h:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> JsCodeEvent.h:9</div></div>
 <div class="ttc" id="classgdjs_1_1_js_code_event_html_a6d3d95ccfb43686a3f2e7c554feda067"><div class="ttname"><a href="../../dc/d13/classgdjs_1_1_js_code_event.html#a6d3d95ccfb43686a3f2e7c554feda067">gdjs::JsCodeEvent::EditEvent</a></div><div class="ttdeci">virtual EditEventReturnType EditEvent(wxWindow *parent_, gd::Project &amp;game_, gd::Layout &amp;scene_, gd::MainFrameWrapper &amp;mainFrameWrapper_)</div><div class="ttdef"><b>Definition:</b> JsCodeEvent.cpp:84</div></div>
 <div class="ttc" id="classgdjs_1_1_js_code_event_html_ae017a78f1c89b2ed86bcf358878899a4"><div class="ttname"><a href="../../dc/d13/classgdjs_1_1_js_code_event.html#ae017a78f1c89b2ed86bcf358878899a4">gdjs::JsCodeEvent::Render</a></div><div class="ttdeci">virtual void Render(wxDC &amp;dc, int x, int y, unsigned int width, gd::EventsEditorItemsAreas &amp;areas, gd::EventsEditorSelection &amp;selection, const gd::Platform &amp;platform)</div><div class="ttdef"><b>Definition:</b> JsCodeEvent.cpp:38</div></div>
 <div class="ttc" id="classgdjs_1_1_js_code_event_html"><div class="ttname"><a href="../../dc/d13/classgdjs_1_1_js_code_event.html">gdjs::JsCodeEvent</a></div><div class="ttdoc">Event used to insert raw javascript code into events. </div><div class="ttdef"><b>Definition:</b> JsCodeEvent.h:24</div></div>
-<div class="ttc" id="namespacegdjs_html"><div class="ttname"><a href="../../db/d4f/namespacegdjs.html">gdjs</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:12</div></div>
+<div class="ttc" id="namespacegdjs_html"><div class="ttname"><a href="../../db/d4f/namespacegdjs.html">gdjs</a></div><div class="ttdef"><b>Definition:</b> JsCodeEvent.cpp:32</div></div>
 <div class="ttc" id="classgdjs_1_1_js_code_event_html_a5519149c626baf6443d3e0c0dcead471"><div class="ttname"><a href="../../dc/d13/classgdjs_1_1_js_code_event.html#a5519149c626baf6443d3e0c0dcead471">gdjs::JsCodeEvent::GetRenderedHeight</a></div><div class="ttdeci">virtual unsigned int GetRenderedHeight(unsigned int width, const gd::Platform &amp;platform) const </div><div class="ttdef"><b>Definition:</b> JsCodeEvent.cpp:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:22 for GDevelop JS Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:04 for GDevelop JS Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

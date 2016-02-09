@@ -10,4 +10,6 @@ digraph "IDE" {
     dir_56f7d5d3f200ecbfa62550a99f8414d4 [shape=box label="Dialogs" color="black" fillcolor="white" style="filled" URL="dir_56f7d5d3f200ecbfa62550a99f8414d4.html"];
   }
   }
+  dir_7aefbae60249d8db3c9a686a9296d9b4 [shape=box label="Runtime" fillcolor="white" style="filled" color="red" URL="dir_7aefbae60249d8db3c9a686a9296d9b4.html"];
+  dir_56f7d5d3f200ecbfa62550a99f8414d4->dir_7aefbae60249d8db3c9a686a9296d9b4 [headlabel="1", labeldistance=1.5 headhref="dir_000007_000003.html"];
 }

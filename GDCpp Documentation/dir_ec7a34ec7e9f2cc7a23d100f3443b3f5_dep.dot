@@ -4,6 +4,11 @@ digraph "Events" {
   edge [ labelfontsize="10", labelfontname="Helvetica"];
   subgraph clusterdir_d2357026098860ba2e16e48ff3d9516a {
     graph [ bgcolor="#ddddee", pencolor="black", label="GDCpp" fontname="Helvetica", fontsize="10", URL="dir_d2357026098860ba2e16e48ff3d9516a.html"]
-  dir_ec7a34ec7e9f2cc7a23d100f3443b3f5 [shape=box, label="Events", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html"];
+  subgraph clusterdir_ec7a34ec7e9f2cc7a23d100f3443b3f5 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html"];
+    dir_ec7a34ec7e9f2cc7a23d100f3443b3f5 [shape=plaintext label="Events"];
+    dir_bf15e429c6d51833d23a95e8be77d82c [shape=box label="Builtin" color="black" fillcolor="white" style="filled" URL="dir_bf15e429c6d51833d23a95e8be77d82c.html"];
+    dir_837bc1e2dbe0ae70d9e6252c2c50510a [shape=box label="CodeGeneration" color="black" fillcolor="white" style="filled" URL="dir_837bc1e2dbe0ae70d9e6252c2c50510a.html"];
+  }
   }
 }

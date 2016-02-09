@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -119,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Variable; }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;wx/toolbar.h&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
@@ -136,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> SetAssociatedObject(<span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> * project, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> * layout, <span class="keyword">const</span> <a class="code" href="classgd_1_1_object.html">gd::Object</a> * <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classgd_1_1_choose_variable_dialog.html#a5a295d42e71a87dd9fd5abccaec406c2">   80</a></span>&#160;    std::string <a class="code" href="classgd_1_1_choose_variable_dialog.html#a5a295d42e71a87dd9fd5abccaec406c2">GetSelectedVariable</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> selectedVariableFullName; };</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classgd_1_1_choose_variable_dialog.html#aff86019fa72de3af0160a4a9997b2690">   80</a></span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> <a class="code" href="classgd_1_1_choose_variable_dialog.html#aff86019fa72de3af0160a4a9997b2690">GetSelectedVariable</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> selectedVariableFullName; };</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_choose_variable_dialog.html">ChooseVariableDialog</a>();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
@@ -207,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> RefreshAll();</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> UpdateTitle();</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> UpdateSelectedAndParentVariable();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> RefreshVariable(wxTreeListItem item, <span class="keyword">const</span> std::string &amp; name, <span class="keyword">const</span> <a class="code" href="classgd_1_1_variable.html">gd::Variable</a> &amp; variable);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> RefreshVariable(wxTreeListItem item, <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; name, <span class="keyword">const</span> <a class="code" href="classgd_1_1_variable.html">gd::Variable</a> &amp; variable);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    wxTreeListItem GetPreviousSibling(wxTreeListCtrl * ctrl, wxTreeListItem item);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classgd_1_1_variables_container.html">gd::VariablesContainer</a> &amp; variablesContainer; </div>
@@ -217,12 +218,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> * associatedLayout;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_object.html">gd::Object</a> * associatedObject;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::string selectedVariableName; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    std::string selectedVariableFullName; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> selectedVariableName; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> selectedVariableFullName; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="classgd_1_1_variable.html">gd::Variable</a> * selectedVariable; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="classgd_1_1_variable.html">gd::Variable</a> * parentVariable; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    std::string oldName; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> oldName; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> modificationCount; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    DECLARE_EVENT_TABLE()</div>
@@ -232,18 +233,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_choose_variable_dialog_html"><div class="ttname"><a href="classgd_1_1_choose_variable_dialog.html">gd::ChooseVariableDialog</a></div><div class="ttdoc">Dialog used to display variables of a gd::VariablesContainer, edit them and/or choose one...</div><div class="ttdef"><b>Definition:</b> ChooseVariableDialog.h:43</div></div>
 <div class="ttc" id="classgd_1_1_variables_container_html"><div class="ttname"><a href="classgd_1_1_variables_container.html">gd::VariablesContainer</a></div><div class="ttdoc">Class defining a container for gd::Variable. </div><div class="ttdef"><b>Definition:</b> VariablesContainer.h:28</div></div>
-<div class="ttc" id="classgd_1_1_choose_variable_dialog_html_a5a295d42e71a87dd9fd5abccaec406c2"><div class="ttname"><a href="classgd_1_1_choose_variable_dialog.html#a5a295d42e71a87dd9fd5abccaec406c2">gd::ChooseVariableDialog::GetSelectedVariable</a></div><div class="ttdeci">std::string GetSelectedVariable() const </div><div class="ttdoc">Return the full name of the selected variable. </div><div class="ttdef"><b>Definition:</b> ChooseVariableDialog.h:80</div></div>
+<div class="ttc" id="classgd_1_1_choose_variable_dialog_html_aff86019fa72de3af0160a4a9997b2690"><div class="ttname"><a href="classgd_1_1_choose_variable_dialog.html#aff86019fa72de3af0160a4a9997b2690">gd::ChooseVariableDialog::GetSelectedVariable</a></div><div class="ttdeci">gd::String GetSelectedVariable() const </div><div class="ttdoc">Return the full name of the selected variable. </div><div class="ttdef"><b>Definition:</b> ChooseVariableDialog.h:80</div></div>
 <div class="ttc" id="classgd_1_1_object_html"><div class="ttname"><a href="classgd_1_1_object.html">gd::Object</a></div><div class="ttdoc">Base class used to represent an object of a platform. </div><div class="ttdef"><b>Definition:</b> Object.h:34</div></div>
-<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:44</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
 <div class="ttc" id="classgd_1_1_variable_html"><div class="ttname"><a href="classgd_1_1_variable.html">gd::Variable</a></div><div class="ttdoc">Defines a variable which can be used by an object, a layout or a project. </div><div class="ttdef"><b>Definition:</b> Variable.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

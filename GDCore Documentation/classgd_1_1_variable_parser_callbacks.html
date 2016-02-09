@@ -103,20 +103,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a01dcd4947974f1303ef5de1da9f7e251"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable_parser_callbacks.html#a01dcd4947974f1303ef5de1da9f7e251">OnRootVariable</a> (std::string variableName)=0</td></tr>
-<tr class="memdesc:a01dcd4947974f1303ef5de1da9f7e251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the first variable has been parsed. ( varName1 in varName1.child for example. )  <a href="#a01dcd4947974f1303ef5de1da9f7e251">More...</a><br /></td></tr>
-<tr class="separator:a01dcd4947974f1303ef5de1da9f7e251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a77bae8240e27248933120f726230b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable_parser_callbacks.html#a6a77bae8240e27248933120f726230b8">OnChildVariable</a> (std::string variableName)=0</td></tr>
-<tr class="memdesc:a6a77bae8240e27248933120f726230b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when accessing the child of a structure variable. ( child in varName1.child for example. )  <a href="#a6a77bae8240e27248933120f726230b8">More...</a><br /></td></tr>
-<tr class="separator:a6a77bae8240e27248933120f726230b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0a0461ef2f2e1c231a5c75ed7858e7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable_parser_callbacks.html#a0b0a0461ef2f2e1c231a5c75ed7858e7">OnChildSubscript</a> (std::string stringExpression)=0</td></tr>
-<tr class="memdesc:a0b0a0461ef2f2e1c231a5c75ed7858e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when accessing the child of a structure variable using a string expression in square brackets. ( "subscript" in varName1["subscript"] for example. )  <a href="#a0b0a0461ef2f2e1c231a5c75ed7858e7">More...</a><br /></td></tr>
-<tr class="separator:a0b0a0461ef2f2e1c231a5c75ed7858e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff45d7f4168e9f116ae364f6ee35338"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable_parser_callbacks.html#a1ff45d7f4168e9f116ae364f6ee35338">OnRootVariable</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> variableName)=0</td></tr>
+<tr class="memdesc:a1ff45d7f4168e9f116ae364f6ee35338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the first variable has been parsed. ( varName1 in varName1.child for example. )  <a href="#a1ff45d7f4168e9f116ae364f6ee35338">More...</a><br /></td></tr>
+<tr class="separator:a1ff45d7f4168e9f116ae364f6ee35338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02224330720a540b408a36217ab40597"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable_parser_callbacks.html#a02224330720a540b408a36217ab40597">OnChildVariable</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> variableName)=0</td></tr>
+<tr class="memdesc:a02224330720a540b408a36217ab40597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when accessing the child of a structure variable. ( child in varName1.child for example. )  <a href="#a02224330720a540b408a36217ab40597">More...</a><br /></td></tr>
+<tr class="separator:a02224330720a540b408a36217ab40597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbb0727f5fa9b8b2d64a7dc108d830f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable_parser_callbacks.html#a9dbb0727f5fa9b8b2d64a7dc108d830f">OnChildSubscript</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> stringExpression)=0</td></tr>
+<tr class="memdesc:a9dbb0727f5fa9b8b2d64a7dc108d830f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when accessing the child of a structure variable using a string expression in square brackets. ( "subscript" in varName1["subscript"] for example. )  <a href="#a9dbb0727f5fa9b8b2d64a7dc108d830f">More...</a><br /></td></tr>
+<tr class="separator:a9dbb0727f5fa9b8b2d64a7dc108d830f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Callbacks called by <a class="el" href="classgd_1_1_variable_parser.html" title="Parse a variable expression. ">VariableParser</a> when parsing a variable expression. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0b0a0461ef2f2e1c231a5c75ed7858e7"></a>
+<a class="anchor" id="a9dbb0727f5fa9b8b2d64a7dc108d830f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void gd::VariableParserCallbacks::OnChildSubscript </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>stringExpression</em></td><td>)</td>
           <td></td>
         </tr>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6a77bae8240e27248933120f726230b8"></a>
+<a class="anchor" id="a02224330720a540b408a36217ab40597"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -158,7 +158,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void gd::VariableParserCallbacks::OnChildVariable </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>variableName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a01dcd4947974f1303ef5de1da9f7e251"></a>
+<a class="anchor" id="a1ff45d7f4168e9f116ae364f6ee35338"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void gd::VariableParserCallbacks::OnRootVariable </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
           <td class="paramname"><em>variableName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -218,7 +218,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

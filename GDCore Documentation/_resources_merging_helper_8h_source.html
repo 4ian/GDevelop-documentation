@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li><li class="navelem"><a class="el" href="dir_2f72656d9627061cdf1cfb799485c9f1.html">Project</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,17 +93,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef RESOURCESMERGINGHELPER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define RESOURCESMERGINGHELPER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/IDE/ArbitraryResourceWorker.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/IDE/Project/ArbitraryResourceWorker.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>AbstractFileSystem; }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
@@ -114,22 +115,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classgd_1_1_resources_merging_helper.html">ResourcesMergingHelper</a>(<a class="code" href="classgd_1_1_abstract_file_system.html">gd::AbstractFileSystem</a> &amp; fileSystem) : <a class="code" href="classgd_1_1_arbitrary_resource_worker.html">ArbitraryResourceWorker</a>(), preserveDirectoriesStructure(<span class="keyword">false</span>), preserveAbsoluteFilenames(<span class="keyword">false</span>), fs(fileSystem) {};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_resources_merging_helper.html">ResourcesMergingHelper</a>() {};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> SetBaseDirectory(<span class="keyword">const</span> std::string &amp; baseDirectory);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> SetBaseDirectory(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; baseDirectory);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#a7cef0f0b83f5beb637e1c16dbe318d7e">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_resources_merging_helper.html#a7cef0f0b83f5beb637e1c16dbe318d7e">PreserveDirectoriesStructure</a>(<span class="keywordtype">bool</span> preserveDirectoriesStructure_ = <span class="keyword">true</span>) {preserveDirectoriesStructure = preserveDirectoriesStructure_;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#af037de5c7335e07b4effc5a3f3667397">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_resources_merging_helper.html#af037de5c7335e07b4effc5a3f3667397">PreserveAbsoluteFilenames</a>(<span class="keywordtype">bool</span> preserveAbsoluteFilenames_ = <span class="keyword">true</span>) {preserveAbsoluteFilenames = preserveAbsoluteFilenames_;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#af7e2403131142223f80f3a107af3879c">   54</a></span>&#160;    std::map&lt;std::string, std::string&gt; &amp; <a class="code" href="classgd_1_1_resources_merging_helper.html#af7e2403131142223f80f3a107af3879c">GetAllResourcesOldAndNewFilename</a>() { <span class="keywordflow">return</span> resourcesNewFilename; };</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#a841b8b414d0706c5e6107f47e7604323">   54</a></span>&#160;    std::map&lt;gd::String, gd::String&gt; &amp; <a class="code" href="classgd_1_1_resources_merging_helper.html#a841b8b414d0706c5e6107f47e7604323">GetAllResourcesOldAndNewFilename</a>() { <span class="keywordflow">return</span> oldFilenames; };</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeFile(std::string &amp; resource);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeFile(<a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; resource);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeImage(std::string &amp; imageName) {};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeShader(std::string &amp; shaderName) {};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> SetNewFilename(<a class="code" href="classgd_1_1_string.html">gd::String</a> oldFilename, <a class="code" href="classgd_1_1_string.html">gd::String</a> newFilename);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::map&lt;std::string, std::string&gt; resourcesNewFilename;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string baseDirectory;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::map&lt;gd::String, gd::String&gt; oldFilenames;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::map&lt;gd::String, gd::String&gt; newFilenames;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> baseDirectory;</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#af8f9fd27e4fd673b67da6c297db6dae8">   67</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_resources_merging_helper.html#af8f9fd27e4fd673b67da6c297db6dae8">preserveDirectoriesStructure</a>; </div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#a38c5b4e96ae5d872b0873ef63e9794e6">   68</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgd_1_1_resources_merging_helper.html#a38c5b4e96ae5d872b0873ef63e9794e6">preserveAbsoluteFilenames</a>; </div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classgd_1_1_resources_merging_helper.html#a8f982463fd7237d3f1c397274211ce2c">   69</a></span>&#160;    <a class="code" href="classgd_1_1_abstract_file_system.html">gd::AbstractFileSystem</a> &amp; <a class="code" href="classgd_1_1_resources_merging_helper.html#a8f982463fd7237d3f1c397274211ce2c">fs</a>; </div>
@@ -139,19 +140,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // RESOURCESMERGINGHELPER_H</span></div>
 <div class="ttc" id="classgd_1_1_abstract_file_system_html"><div class="ttname"><a href="classgd_1_1_abstract_file_system.html">gd::AbstractFileSystem</a></div><div class="ttdoc">AbstractFileSystem is used to do classical file manipulation in a way that is agnostic of the platfor...</div><div class="ttdef"><b>Definition:</b> AbstractFileSystem.h:24</div></div>
-<div class="ttc" id="classgd_1_1_arbitrary_resource_worker_html"><div class="ttname"><a href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a></div><div class="ttdoc">ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...</div><div class="ttdef"><b>Definition:</b> ArbitraryResourceWorker.h:33</div></div>
+<div class="ttc" id="classgd_1_1_arbitrary_resource_worker_html"><div class="ttname"><a href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a></div><div class="ttdoc">ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...</div><div class="ttdef"><b>Definition:</b> ArbitraryResourceWorker.h:34</div></div>
 <div class="ttc" id="classgd_1_1_resources_merging_helper_html_af037de5c7335e07b4effc5a3f3667397"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#af037de5c7335e07b4effc5a3f3667397">gd::ResourcesMergingHelper::PreserveAbsoluteFilenames</a></div><div class="ttdeci">void PreserveAbsoluteFilenames(bool preserveAbsoluteFilenames_=true)</div><div class="ttdoc">Set if the absolute filenames must be preserved. </div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:48</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_resources_merging_helper_html_af8f9fd27e4fd673b67da6c297db6dae8"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#af8f9fd27e4fd673b67da6c297db6dae8">gd::ResourcesMergingHelper::preserveDirectoriesStructure</a></div><div class="ttdeci">bool preserveDirectoriesStructure</div><div class="ttdoc">If set to true, the directory structure, starting from baseDirectory, will be preserved in filenames...</div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:67</div></div>
-<div class="ttc" id="classgd_1_1_resources_merging_helper_html_af7e2403131142223f80f3a107af3879c"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#af7e2403131142223f80f3a107af3879c">gd::ResourcesMergingHelper::GetAllResourcesOldAndNewFilename</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; &amp; GetAllResourcesOldAndNewFilename()</div><div class="ttdoc">Return a map containing the resources old absolute filename as key, and the resources new filenames a...</div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:54</div></div>
 <div class="ttc" id="classgd_1_1_resources_merging_helper_html_a38c5b4e96ae5d872b0873ef63e9794e6"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#a38c5b4e96ae5d872b0873ef63e9794e6">gd::ResourcesMergingHelper::preserveAbsoluteFilenames</a></div><div class="ttdeci">bool preserveAbsoluteFilenames</div><div class="ttdoc">If set to true, the filenames which are absolute ( C:.png ) will not be transformed into their filena...</div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:68</div></div>
 <div class="ttc" id="classgd_1_1_resources_merging_helper_html_a7cef0f0b83f5beb637e1c16dbe318d7e"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#a7cef0f0b83f5beb637e1c16dbe318d7e">gd::ResourcesMergingHelper::PreserveDirectoriesStructure</a></div><div class="ttdeci">void PreserveDirectoriesStructure(bool preserveDirectoriesStructure_=true)</div><div class="ttdoc">Set if the directories structure, starting from the base directory, must be preserved. For compilation in GD C++ Platform, all resources must be in a single folder, so that the directories structure is not preserved. </div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:43</div></div>
 <div class="ttc" id="classgd_1_1_resources_merging_helper_html"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html">gd::ResourcesMergingHelper</a></div><div class="ttdoc">ResourcesMergingHelper is used (mainly during compilation) so as to inventory resources and change th...</div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:27</div></div>
 <div class="ttc" id="classgd_1_1_resources_merging_helper_html_a8f982463fd7237d3f1c397274211ce2c"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#a8f982463fd7237d3f1c397274211ce2c">gd::ResourcesMergingHelper::fs</a></div><div class="ttdeci">gd::AbstractFileSystem &amp; fs</div><div class="ttdoc">The gd::AbstractFileSystem used to manipulate files. </div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:69</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_resources_merging_helper_html_a841b8b414d0706c5e6107f47e7604323"><div class="ttname"><a href="classgd_1_1_resources_merging_helper.html#a841b8b414d0706c5e6107f47e7604323">gd::ResourcesMergingHelper::GetAllResourcesOldAndNewFilename</a></div><div class="ttdeci">std::map&lt; gd::String, gd::String &gt; &amp; GetAllResourcesOldAndNewFilename()</div><div class="ttdoc">Return a map containing the resources old absolute filename as key, and the resources new filenames a...</div><div class="ttdef"><b>Definition:</b> ResourcesMergingHelper.h:54</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

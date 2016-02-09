@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::SafeYield",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_safe_yield.html",tooltip="Allow to yield the application to prevent it to look frozen when doing heavy computations. "];
+  Node1 [label="gd::ResourcesLoader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_resources_loader.html",tooltip="Class used by games to load resources from files: this is purely an abstraction to most SFML loadFrom..."];
 }

@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GDpriv::FullProjectCompiler\lDiagnosticManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d35/class_g_dpriv_1_1_full_project_compiler_diagnostic_manager.html",tooltip="Base class for implementing message display for FullProjectCompiler. Inherits from this class and imp..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FullProjectCompilerDialog\lDiagnosticManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/daf/class_full_project_compiler_dialog_diagnostic_manager.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GDpriv::FullProjectCompiler\lConsoleDiagnosticManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d0a/class_g_dpriv_1_1_full_project_compiler_console_diagnostic_manager.html"];
+}

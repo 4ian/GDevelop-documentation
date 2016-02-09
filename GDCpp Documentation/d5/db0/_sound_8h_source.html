@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_7aefbae60249d8db3c9a686a9296d9b4.html">Runtime</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,25 +93,25 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SOUND_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SOUND_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SFML/Audio.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/String.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d0/d9e/class_sound.html">   17</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d0/d9e/class_sound.html">Sound</a> : sf::NonCopyable</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d0/d9e/class_sound.html">Sound</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d0/d9e/class_sound.html">Sound</a>(std::string file);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d0/d9e/class_sound.html">Sound</a>(gd::String file);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d0/d9e/class_sound.html">Sound</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d9e/class_sound.html">Sound</a> &amp; copy);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d9e/class_sound.html">Sound</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d9e/class_sound.html">Sound</a>() {};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d0/d9e/class_sound.html#a84072c7fe810ee2bc4546fa0a83bd152">   29</a></span>&#160;    <span class="keyword">inline</span> sf::Sound::Status <a class="code" href="../../d0/d9e/class_sound.html#a84072c7fe810ee2bc4546fa0a83bd152">GetStatus</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sound.getStatus(); }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> SetVolume(<span class="keywordtype">float</span> volume_);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> SetVolume(<span class="keywordtype">float</span> volume_, <span class="keywordtype">float</span> globalVolume);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d0/d9e/class_sound.html#a673cfb638c0d665220893b22c244367a">   40</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="../../d0/d9e/class_sound.html#a673cfb638c0d665220893b22c244367a">GetVolume</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> volume; }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -127,9 +127,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    sf::SoundBuffer buffer;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    sf::Sound       sound;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::string file;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    gd::String file;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> UpdateVolume();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> UpdateVolume(<span class="keywordtype">float</span> globalVolume);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">float</span> volume; </div>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

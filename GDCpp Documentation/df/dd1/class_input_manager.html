@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8be46886da639b26d67181c29dab6d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f0e41567af95c1e303b1415bbb51a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18f0e41567af95c1e303b1415bbb51a1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a18f0e41567af95c1e303b1415bbb51a1">InputManager</a> (sf::Window *win)</td></tr>
-<tr class="memdesc:a18f0e41567af95c1e303b1415bbb51a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to specify a window to manage. <br /></td></tr>
+<tr class="memdesc:a18f0e41567af95c1e303b1415bbb51a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with a window to manage. <br /></td></tr>
 <tr class="separator:a18f0e41567af95c1e303b1415bbb51a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Connection with window and events management</div></td></tr>
 <tr class="memitem:aa3af19f334d2020cda8c053562b6a3f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3af19f334d2020cda8c053562b6a3f9"></a>
@@ -123,30 +123,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#af3877f7a8bc52b937353d9d98892a809">NextFrame</a> ()</td></tr>
 <tr class="memdesc:af3877f7a8bc52b937353d9d98892a809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call it when a new frame is rendered. <br /></td></tr>
 <tr class="separator:af3877f7a8bc52b937353d9d98892a809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Mouse</div></td></tr>
-<tr class="memitem:a1a8a4e910de8ccc5614df6f5fd8a2d19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a8a4e910de8ccc5614df6f5fd8a2d19"></a>
-sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a1a8a4e910de8ccc5614df6f5fd8a2d19">GetMousePosition</a> () const </td></tr>
-<tr class="memdesc:a1a8a4e910de8ccc5614df6f5fd8a2d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the mouse, in window coordinates. <br /></td></tr>
-<tr class="separator:a1a8a4e910de8ccc5614df6f5fd8a2d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5761c0c23d1447987dd9bd9ceb9ff67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5761c0c23d1447987dd9bd9ceb9ff67"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#ab5761c0c23d1447987dd9bd9ceb9ff67">IsMouseButtonPressed</a> (const std::string &amp;button) const </td></tr>
-<tr class="memdesc:ab5761c0c23d1447987dd9bd9ceb9ff67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified mouse button is pressed. <br /></td></tr>
-<tr class="separator:ab5761c0c23d1447987dd9bd9ceb9ff67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a369c8472be4c2b11b8afed2936dc7554"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a369c8472be4c2b11b8afed2936dc7554"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a369c8472be4c2b11b8afed2936dc7554">GetMouseWheelDelta</a> () const </td></tr>
-<tr class="memdesc:a369c8472be4c2b11b8afed2936dc7554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of ticks the wheel moved during last frame. <br /></td></tr>
-<tr class="separator:a369c8472be4c2b11b8afed2936dc7554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Touches</div></td></tr>
+<tr class="memitem:a5f4e9319fc684eedf85ccceb4081f4fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f4e9319fc684eedf85ccceb4081f4fd"></a>
+const std::map&lt; int, sf::Vector2i &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a5f4e9319fc684eedf85ccceb4081f4fd">GetAllTouches</a> ()</td></tr>
+<tr class="memdesc:a5f4e9319fc684eedf85ccceb4081f4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all touches being made on the screen, along with their coordinates. <br /></td></tr>
+<tr class="separator:a5f4e9319fc684eedf85ccceb4081f4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Keyboard</h2></td></tr>
-<tr class="memitem:a26c9ffd3bc89882b8bd256484a0b950d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26c9ffd3bc89882b8bd256484a0b950d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a26c9ffd3bc89882b8bd256484a0b950d">GetLastPressedKey</a> () const </td></tr>
-<tr class="memdesc:a26c9ffd3bc89882b8bd256484a0b950d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the key name of the latest pressed key. <br /></td></tr>
-<tr class="separator:a26c9ffd3bc89882b8bd256484a0b950d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc2ad4feaa10d0ac83c795a859edebf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fc2ad4feaa10d0ac83c795a859edebf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a9fc2ad4feaa10d0ac83c795a859edebf">IsKeyPressed</a> (std::string key) const </td></tr>
-<tr class="memdesc:a9fc2ad4feaa10d0ac83c795a859edebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified key name is pressed. <br /></td></tr>
-<tr class="separator:a9fc2ad4feaa10d0ac83c795a859edebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd73cf829ee56e7339b7fe105b3e07c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbd73cf829ee56e7339b7fe105b3e07c"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#adbd73cf829ee56e7339b7fe105b3e07c">GetLastPressedKey</a> () const </td></tr>
+<tr class="memdesc:adbd73cf829ee56e7339b7fe105b3e07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the key name of the latest pressed key. <br /></td></tr>
+<tr class="separator:adbd73cf829ee56e7339b7fe105b3e07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6666eedc8f50c6162f51556caedd616"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6666eedc8f50c6162f51556caedd616"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#af6666eedc8f50c6162f51556caedd616">IsKeyPressed</a> (gd::String key) const </td></tr>
+<tr class="memdesc:af6666eedc8f50c6162f51556caedd616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified key name is pressed. <br /></td></tr>
+<tr class="separator:af6666eedc8f50c6162f51556caedd616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05f0f54db2864a936640d5b86b52c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af05f0f54db2864a936640d5b86b52c4f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#af05f0f54db2864a936640d5b86b52c4f">WasKeyReleased</a> (gd::String key) const </td></tr>
+<tr class="memdesc:af05f0f54db2864a936640d5b86b52c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified key name was just released. <br /></td></tr>
+<tr class="separator:af05f0f54db2864a936640d5b86b52c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a029c4a04c184e864fd34b682fa9c6ba8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a029c4a04c184e864fd34b682fa9c6ba8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a029c4a04c184e864fd34b682fa9c6ba8">AnyKeyIsPressed</a> () const </td></tr>
 <tr class="memdesc:a029c4a04c184e864fd34b682fa9c6ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if any key was pressed since the last call to NextFrame. <br /></td></tr>
@@ -155,12 +151,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 std::vector&lt; sf::Uint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#aaca085ae7f40491697279ad4e59c5974">GetCharactersEntered</a> () const </td></tr>
 <tr class="memdesc:aaca085ae7f40491697279ad4e59c5974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unicode value of the characters entered during the last frame. <br /></td></tr>
 <tr class="separator:aaca085ae7f40491697279ad4e59c5974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3929969b3119de532167ce155add7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d3929969b3119de532167ce155add7e"></a>
-static const std::map&lt; std::string, int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeyNameToSfKeyMap</b> ()</td></tr>
-<tr class="separator:a9d3929969b3119de532167ce155add7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e757691ab9e64323ec1c43c687bc21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92e757691ab9e64323ec1c43c687bc21"></a>
-static const std::map&lt; int, std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSfKeyToKeyNameMap</b> ()</td></tr>
-<tr class="separator:a92e757691ab9e64323ec1c43c687bc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa59fccce8dfe4a812551e5f0f15cf22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa59fccce8dfe4a812551e5f0f15cf22"></a>
+static const std::map&lt; gd::String, int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeyNameToSfKeyMap</b> ()</td></tr>
+<tr class="separator:aaa59fccce8dfe4a812551e5f0f15cf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d09b5fa3255776a8f1fe48d46d4d9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31d09b5fa3255776a8f1fe48d46d4d9e"></a>
+static const std::map&lt; int, gd::String &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSfKeyToKeyNameMap</b> ()</td></tr>
+<tr class="separator:a31d09b5fa3255776a8f1fe48d46d4d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Mouse</h2></td></tr>
+<tr class="memitem:a1a8a4e910de8ccc5614df6f5fd8a2d19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a8a4e910de8ccc5614df6f5fd8a2d19"></a>
+sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a1a8a4e910de8ccc5614df6f5fd8a2d19">GetMousePosition</a> () const </td></tr>
+<tr class="memdesc:a1a8a4e910de8ccc5614df6f5fd8a2d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the mouse, in window coordinates. <br /></td></tr>
+<tr class="separator:a1a8a4e910de8ccc5614df6f5fd8a2d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4c464eb07ebd183f2efda636e9595b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b4c464eb07ebd183f2efda636e9595b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a3b4c464eb07ebd183f2efda636e9595b">IsMouseButtonPressed</a> (const gd::String &amp;button) const </td></tr>
+<tr class="memdesc:a3b4c464eb07ebd183f2efda636e9595b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified mouse button is pressed. <br /></td></tr>
+<tr class="separator:a3b4c464eb07ebd183f2efda636e9595b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15ba99dae67081ce07a2f098ccc0fd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa15ba99dae67081ce07a2f098ccc0fd8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#aa15ba99dae67081ce07a2f098ccc0fd8">IsMouseButtonReleased</a> (const gd::String &amp;button) const </td></tr>
+<tr class="memdesc:aa15ba99dae67081ce07a2f098ccc0fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the specified mouse button was released in this frame. <br /></td></tr>
+<tr class="separator:aa15ba99dae67081ce07a2f098ccc0fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369c8472be4c2b11b8afed2936dc7554"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a369c8472be4c2b11b8afed2936dc7554"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd1/class_input_manager.html#a369c8472be4c2b11b8afed2936dc7554">GetMouseWheelDelta</a> () const </td></tr>
+<tr class="memdesc:a369c8472be4c2b11b8afed2936dc7554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of ticks the wheel moved during last frame. <br /></td></tr>
+<tr class="separator:a369c8472be4c2b11b8afed2936dc7554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787e5d84d18cd90da32460baafc00bb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a787e5d84d18cd90da32460baafc00bb4"></a>
+static const std::map&lt; gd::String, int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetButtonNameToSfButtonMap</b> ()</td></tr>
+<tr class="separator:a787e5d84d18cd90da32460baafc00bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd64ce96dbfa576c58468e732edece32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd64ce96dbfa576c58468e732edece32"></a>
+static const std::map&lt; int, gd::String &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSfButtonToButtonNameMap</b> ()</td></tr>
+<tr class="separator:abd64ce96dbfa576c58468e732edece32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manage the events and mouse, keyboard and touches inputs of a sf::Window. </p>
@@ -226,7 +247,7 @@ static const std::map&lt; int, std::string &gt; &amp;&#160;</td><td class="memIt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

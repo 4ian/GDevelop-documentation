@@ -13,11 +13,11 @@ digraph "Graphical Class Hierarchy"
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="GroupEventDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_group_event_dialog.html",tooltip="A small dialog used to change a events group properties. "];
   Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="gd::AdvancedTextEntryDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_advanced_text_entry_dialog.html",tooltip="Dialog used to enter a math or string expression, with a button to open a full editor. "];
+  Node6 [label="gd::AdvancedTextEntryDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_advanced_text_entry_dialog.html",tooltip="Dialog used to enter a math or gd::String expression, with a button to open a full editor..."];
   Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="gd::ChooseAutomatismDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_choose_automatism_dialog.html",tooltip="Dialog used to choose an automatism of an object. "];
+  Node7 [label="gd::ChooseBehaviorDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_choose_behavior_dialog.html",tooltip="Dialog used to choose a behavior of an object. "];
   Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="gd::ChooseAutomatismType\lDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_choose_automatism_type_dialog.html",tooltip="Dialog displaying all the automatisms types available in a project, allowing the user to choose one..."];
+  Node8 [label="gd::ChooseBehaviorTypeDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_choose_behavior_type_dialog.html",tooltip="Dialog displaying all the behaviors types available in a project, allowing the user to choose one..."];
   Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 [label="gd::ChooseLayerDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_choose_layer_dialog.html",tooltip="Dialog used to choose a layer from a layout. "];
   Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -39,7 +39,7 @@ digraph "Graphical Class Hierarchy"
   Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node18 [label="gd::EditRepeatEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_edit_repeat_event.html",tooltip="Editor for Repeat events. "];
   Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node19 [label="gd::EditStrExpressionDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_edit_str_expression_dialog.html",tooltip="Dialog used to edit a string expression. "];
+  Node19 [label="gd::EditStrExpressionDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_edit_str_expression_dialog.html",tooltip="Dialog used to edit a gd::String expression. "];
   Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 [label="gd::GridSetupDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_grid_setup_dialog.html",tooltip="Tiny dialog used to parameter the grid showed on a layout editor canvas. "];
   Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

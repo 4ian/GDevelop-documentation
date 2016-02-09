@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::ParameterMetadata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_parameter_metadata.html",tooltip="Contains user-friendly info about a parameter, and information about what a parameter need..."];
+  Node1 [label="gd::ParameterItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_parameter_item.html",tooltip="Used to indicate to EventsEditorItemsAreas that a parameter is displayed somewhere. "];
 }

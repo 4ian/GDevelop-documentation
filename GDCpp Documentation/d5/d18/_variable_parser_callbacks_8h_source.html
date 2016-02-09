@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html">Events</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html">Events</a></li><li class="navelem"><a class="el" href="../../dir_837bc1e2dbe0ae70d9e6252c2c50510a.html">CodeGeneration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
@@ -101,44 +101,50 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define VARIABLEPARSERCALLBACKS_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/VariableParser.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>VariableCodeGenerationCallbacks : <span class="keyword">public</span> gd::VariableParserCallbacks</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">enum</span> VariableScope {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        LAYOUT_VARIABLE = 0,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        PROJECT_VARIABLE,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        OBJECT_VARIABLE</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    VariableCodeGenerationCallbacks(std::string &amp; output, gd::EventsCodeGenerator &amp; codeGenerator_,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        gd::EventsCodeGenerationContext &amp; context_, <span class="keyword">const</span> VariableScope &amp; scope_);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    VariableCodeGenerationCallbacks(std::string &amp; output, gd::EventsCodeGenerator &amp; codeGenerator_,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        gd::EventsCodeGenerationContext &amp; context_, <span class="keyword">const</span> std::string &amp; <span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRootVariable(std::string variableName);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnChildVariable(std::string variableName);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnChildSubscript(std::string stringExpression);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::string &amp; output;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    gd::EventsCodeGenerator &amp; codeGenerator;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    gd::EventsCodeGenerationContext &amp; context;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    VariableScope scope;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> std::string object; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // VARIABLEPARSERCALLBACKS_H</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/String.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/Parsers/VariableParser.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d3/d05/class_variable_code_generation_callbacks.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d05/class_variable_code_generation_callbacks.html">VariableCodeGenerationCallbacks</a> : <span class="keyword">public</span> gd::VariableParserCallbacks</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">enum</span> VariableScope {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        LAYOUT_VARIABLE = 0,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        PROJECT_VARIABLE,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        OBJECT_VARIABLE</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d3/d05/class_variable_code_generation_callbacks.html#ae644e2d22c2ac49f1090976aff88d36b">VariableCodeGenerationCallbacks</a>(gd::String &amp; output, gd::EventsCodeGenerator &amp; codeGenerator_,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        gd::EventsCodeGenerationContext &amp; context_, <span class="keyword">const</span> VariableScope &amp; scope_);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d3/d05/class_variable_code_generation_callbacks.html#ae644e2d22c2ac49f1090976aff88d36b">VariableCodeGenerationCallbacks</a>(gd::String &amp; output, gd::EventsCodeGenerator &amp; codeGenerator_,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        gd::EventsCodeGenerationContext &amp; context_, <span class="keyword">const</span> gd::String &amp; <span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d05/class_variable_code_generation_callbacks.html#af7b63df4b6ab6961a330dfa76ab9f216">OnRootVariable</a>(gd::String variableName);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d05/class_variable_code_generation_callbacks.html#a3d08d50f5c00c78e5f377b69520a7c95">OnChildVariable</a>(gd::String variableName);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d05/class_variable_code_generation_callbacks.html#a7f777aa3b1522f4ad0e89eeabdbb800b">OnChildSubscript</a>(gd::String stringExpression);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    gd::String &amp; output;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    gd::EventsCodeGenerator &amp; codeGenerator;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    gd::EventsCodeGenerationContext &amp; context;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    VariableScope scope;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">const</span> gd::String object; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // VARIABLEPARSERCALLBACKS_H</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_variable_code_generation_callbacks_html_a3d08d50f5c00c78e5f377b69520a7c95"><div class="ttname"><a href="../../d3/d05/class_variable_code_generation_callbacks.html#a3d08d50f5c00c78e5f377b69520a7c95">VariableCodeGenerationCallbacks::OnChildVariable</a></div><div class="ttdeci">virtual void OnChildVariable(gd::String variableName)</div><div class="ttdoc">Called when accessing the child of a structure variable. </div><div class="ttdef"><b>Definition:</b> VariableParserCallbacks.cpp:98</div></div>
+<div class="ttc" id="class_variable_code_generation_callbacks_html_a7f777aa3b1522f4ad0e89eeabdbb800b"><div class="ttname"><a href="../../d3/d05/class_variable_code_generation_callbacks.html#a7f777aa3b1522f4ad0e89eeabdbb800b">VariableCodeGenerationCallbacks::OnChildSubscript</a></div><div class="ttdeci">virtual void OnChildSubscript(gd::String stringExpression)</div><div class="ttdoc">Called when accessing the child of a structure variable using a string expression in square brackets...</div><div class="ttdef"><b>Definition:</b> VariableParserCallbacks.cpp:103</div></div>
+<div class="ttc" id="class_variable_code_generation_callbacks_html"><div class="ttname"><a href="../../d3/d05/class_variable_code_generation_callbacks.html">VariableCodeGenerationCallbacks</a></div><div class="ttdoc">Callbacks called to generate the code for getting a variable. </div><div class="ttdef"><b>Definition:</b> VariableParserCallbacks.h:32</div></div>
+<div class="ttc" id="class_variable_code_generation_callbacks_html_af7b63df4b6ab6961a330dfa76ab9f216"><div class="ttname"><a href="../../d3/d05/class_variable_code_generation_callbacks.html#af7b63df4b6ab6961a330dfa76ab9f216">VariableCodeGenerationCallbacks::OnRootVariable</a></div><div class="ttdeci">virtual void OnRootVariable(gd::String variableName)</div><div class="ttdoc">Called when the first variable has been parsed. </div><div class="ttdef"><b>Definition:</b> VariableParserCallbacks.cpp:50</div></div>
+<div class="ttc" id="class_variable_code_generation_callbacks_html_ae644e2d22c2ac49f1090976aff88d36b"><div class="ttname"><a href="../../d3/d05/class_variable_code_generation_callbacks.html#ae644e2d22c2ac49f1090976aff88d36b">VariableCodeGenerationCallbacks::VariableCodeGenerationCallbacks</a></div><div class="ttdeci">VariableCodeGenerationCallbacks(gd::String &amp;output, gd::EventsCodeGenerator &amp;codeGenerator_, gd::EventsCodeGenerationContext &amp;context_, const VariableScope &amp;scope_)</div><div class="ttdoc">Default constructor for generating code for a layout/global variable. </div><div class="ttdef"><b>Definition:</b> VariableParserCallbacks.cpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

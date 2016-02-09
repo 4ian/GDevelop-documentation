@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rebrandinghelper',['RebrandingHelper',['../classgd_1_1_rebranding_helper.html',1,'gd']]],
   ['recursivemkdir',['RecursiveMkDir',['../classgd_1_1_recursive_mk_dir.html',1,'gd']]],
   ['repeatevent',['RepeatEvent',['../classgd_1_1_repeat_event.html',1,'gd']]],
   ['resource',['Resource',['../classgd_1_1_resource.html',1,'gd']]],

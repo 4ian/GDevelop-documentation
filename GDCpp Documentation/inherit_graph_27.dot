@@ -3,7 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Scene",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="RuntimeScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d7f/class_runtime_scene.html",tooltip="Represents a scene being played. "];
+  Node1 [label="DatFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd1/class_dat_file.html",tooltip="Internal class used to create and access \"DAT files\". "];
 }

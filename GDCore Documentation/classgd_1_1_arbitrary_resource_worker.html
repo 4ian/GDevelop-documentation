@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classgd_1_1_arbitrary_resource_worker-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::ArbitraryResourceWorker Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___i_d_e.html">IDE Classes (Classes to be used to implement a development environment)</a></div></div>  </div>
@@ -110,18 +111,31 @@ Inheritance diagram for gd::ArbitraryResourceWorker:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a1ff07a89d495e4ddb8e62a1d8c94d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a1ff07a89d495e4ddb8e62a1d8c94d3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExposeImage</b> (std::string &amp;imageName)=0</td></tr>
-<tr class="separator:a9a1ff07a89d495e4ddb8e62a1d8c94d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586247ba5cd280ed61f72b2d5d45ac9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a586247ba5cd280ed61f72b2d5d45ac9a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExposeShader</b> (std::string &amp;shaderName)=0</td></tr>
-<tr class="separator:a586247ba5cd280ed61f72b2d5d45ac9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58914d2b19b1a365e62583a3809377f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58914d2b19b1a365e62583a3809377f8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExposeFile</b> (std::string &amp;resourceFileName)=0</td></tr>
-<tr class="separator:a58914d2b19b1a365e62583a3809377f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74831a20def0f13024de249f12bc2c2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74831a20def0f13024de249f12bc2c2b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ExposeResource</b> (<a class="el" href="classgd_1_1_resource.html">gd::Resource</a> &amp;resource)</td></tr>
-<tr class="separator:a74831a20def0f13024de249f12bc2c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f46fa8187b8d834bc092bd4cd247fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#a7f46fa8187b8d834bc092bd4cd247fa4">ExposeResources</a> (<a class="el" href="classgd_1_1_resources_manager.html">gd::ResourcesManager</a> *resourcesManager)</td></tr>
+<tr class="memdesc:a7f46fa8187b8d834bc092bd4cd247fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a set of resources.  <a href="#a7f46fa8187b8d834bc092bd4cd247fa4">More...</a><br /></td></tr>
+<tr class="separator:a7f46fa8187b8d834bc092bd4cd247fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345f5c6dc952e194d925b1ec94baeca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a345f5c6dc952e194d925b1ec94baeca2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#a345f5c6dc952e194d925b1ec94baeca2">ExposeImage</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;imageName)</td></tr>
+<tr class="memdesc:a345f5c6dc952e194d925b1ec94baeca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose an image, which is always a reference to a "image" resource. <br /></td></tr>
+<tr class="separator:a345f5c6dc952e194d925b1ec94baeca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4de092a2a346ba1565f78289bf8be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e4de092a2a346ba1565f78289bf8be5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#a7e4de092a2a346ba1565f78289bf8be5">ExposeAudio</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;audioName)</td></tr>
+<tr class="memdesc:a7e4de092a2a346ba1565f78289bf8be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose an audio, which is either a reference to an "audio" resource, or a filename if no resource with this name exists. <br /></td></tr>
+<tr class="separator:a7e4de092a2a346ba1565f78289bf8be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285af1d18689e64c39b7a962d0a4fadd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a285af1d18689e64c39b7a962d0a4fadd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#a285af1d18689e64c39b7a962d0a4fadd">ExposeShader</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;shaderName)</td></tr>
+<tr class="memdesc:a285af1d18689e64c39b7a962d0a4fadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a shader.  Currently unsupported. <br /></td></tr>
+<tr class="separator:a285af1d18689e64c39b7a962d0a4fadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeed1c45b417ecdaeea04ac54bc9c5cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeed1c45b417ecdaeea04ac54bc9c5cb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#abeed1c45b417ecdaeea04ac54bc9c5cb">ExposeFile</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;resourceFileName)=0</td></tr>
+<tr class="memdesc:abeed1c45b417ecdaeea04ac54bc9c5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a raw filename. <br /></td></tr>
+<tr class="separator:abeed1c45b417ecdaeea04ac54bc9c5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9e3b926baddacd4b27c722eec1eaf2b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e3b926baddacd4b27c722eec1eaf2b5"></a>
+const std::vector&lt; <a class="el" href="classgd_1_1_resources_manager.html">gd::ResourcesManager</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResources</b> ()</td></tr>
+<tr class="separator:a9e3b926baddacd4b27c722eec1eaf2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classgd_1_1_arbitrary_resource_worker.html" title="ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...">ArbitraryResourceWorker</a> is used so as to inventory resources and sometimes update them. </p>
@@ -130,14 +144,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ExposeResource</b> (<
 <a class="el" href="classgd_1_1_images_used_inventorizer.html" title="Class used to track all images used in a game. ">gd::ImagesUsedInventorizer</a></dd>
 <dd>
 gd::LaunchResourceWorkerOnEvents </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7f46fa8187b8d834bc092bd4cd247fa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::ArbitraryResourceWorker::ExposeResources </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_resources_manager.html">gd::ResourcesManager</a> *&#160;</td>
+          <td class="paramname"><em>resourcesManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Expose a set of resources. </p>
+<dl class="section note"><dt>Note</dt><dd>When launching an <a class="el" href="classgd_1_1_arbitrary_resource_worker.html" title="ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...">ArbitraryResourceWorker</a>, this should be called first to ensure that resources are known so that images, shaders &amp; audio can make reference to them. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_arbitrary_resource_worker_8h_source.html">ArbitraryResourceWorker.h</a></li>
 <li>ArbitraryResourceWorker.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

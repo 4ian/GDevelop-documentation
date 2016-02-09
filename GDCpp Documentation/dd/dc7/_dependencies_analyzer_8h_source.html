@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
@@ -103,66 +103,76 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>EventsList; }</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Layout; }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>ExternalEvents; }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>DependenciesAnalyzer</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    DependenciesAnalyzer(gd::Project &amp; project_, gd::Layout &amp; layout_);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    DependenciesAnalyzer(gd::Project &amp; project_, gd::ExternalEvents &amp; externalEvents);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~DependenciesAnalyzer();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> Analyze();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::string ExternalEventsCanBeCompiledForAScene();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> std::set&lt; std::string &gt; &amp; GetScenesDependencies()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> scenesDependencies; };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> std::set&lt; std::string &gt; &amp; GetExternalEventsDependencies()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalEventsDependencies; };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">const</span> std::set&lt; std::string &gt; &amp; GetSourceFilesDependencies()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sourceFilesDependencies; };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> std::set&lt; std::string &gt; &amp; GetNotTopLevelScenesDependencies()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> notTopLevelScenesDependencies; };</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> std::set&lt; std::string &gt; &amp; GetNotTopLevelExternalEventsDependencies()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> notTopLevelExternalEventsDependencies; };</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> Analyze(gd::EventsList &amp; events, <span class="keywordtype">bool</span> isOnTopLevel);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    DependenciesAnalyzer(<span class="keyword">const</span> DependenciesAnalyzer &amp; parent);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> AddParentScene(std::string parentScene) { parentScenes.push_back(parentScene); };</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> AddParentExternalEvents(std::string parentExternalEvents_) { parentExternalEvents.push_back(parentExternalEvents_); };</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> CheckIfExternalEventsIsLinkedOnlyAtTopLevel(<span class="keyword">const</span> std::string &amp; externalEventsName, std::vector&lt; std::shared_ptr&lt;gd::BaseEvent&gt; &gt; &amp; events);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::set&lt; std::string &gt; scenesDependencies;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::set&lt; std::string &gt; externalEventsDependencies;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::set&lt; std::string &gt; sourceFilesDependencies;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::set&lt; std::string &gt; notTopLevelScenesDependencies;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::set&lt; std::string &gt; notTopLevelExternalEventsDependencies;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::vector&lt;std::string&gt; parentScenes; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;std::string&gt; parentExternalEvents; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    gd::Project &amp; project;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    gd::Layout * layout;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    gd::ExternalEvents * externalEvents;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // DEPENDENCIESANALYZER_H</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AutomatismsRuntimeSharedData.h:10</div></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/String.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>EventsList; }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>BaseEvent; }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Layout; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>ExternalEvents; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d1/d4e/class_dependencies_analyzer.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d4e/class_dependencies_analyzer.html">DependenciesAnalyzer</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#a9368e8d3f66b47c440efaf30a612f59a">DependenciesAnalyzer</a>(gd::Project &amp; project_, gd::Layout &amp; layout_);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#a9368e8d3f66b47c440efaf30a612f59a">DependenciesAnalyzer</a>(gd::Project &amp; project_, gd::ExternalEvents &amp; externalEvents);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d1/d4e/class_dependencies_analyzer.html">DependenciesAnalyzer</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#ae67760b123d47225f42b9bbbe6795360">Analyze</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    gd::String <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#af18794789ad871c78b02a44a5b43b2d1">ExternalEventsCanBeCompiledForAScene</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d1/d4e/class_dependencies_analyzer.html#ae3de68ac14afab8f57a63de71d7e7dc7">   64</a></span>&#160;    <span class="keyword">const</span> std::set&lt; gd::String &gt; &amp; <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#ae3de68ac14afab8f57a63de71d7e7dc7">GetScenesDependencies</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> scenesDependencies; };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d1/d4e/class_dependencies_analyzer.html#a504fcf41c94c67f7922850bbe5ade1cb">   69</a></span>&#160;    <span class="keyword">const</span> std::set&lt; gd::String &gt; &amp; <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#a504fcf41c94c67f7922850bbe5ade1cb">GetExternalEventsDependencies</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> externalEventsDependencies; };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d1/d4e/class_dependencies_analyzer.html#ac2d8adcc2787115b7f23bfe8c76a13ea">   74</a></span>&#160;    <span class="keyword">const</span> std::set&lt; gd::String &gt; &amp; <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#ac2d8adcc2787115b7f23bfe8c76a13ea">GetSourceFilesDependencies</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sourceFilesDependencies; };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d1/d4e/class_dependencies_analyzer.html#acbc8e28f7441f2cc2723f1b9a9836cc6">   80</a></span>&#160;    <span class="keyword">const</span> std::set&lt; gd::String &gt; &amp; <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#acbc8e28f7441f2cc2723f1b9a9836cc6">GetNotTopLevelScenesDependencies</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> notTopLevelScenesDependencies; };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d1/d4e/class_dependencies_analyzer.html#a0a4f7aeebb7d3c55da7f280b447f3ac9">   86</a></span>&#160;    <span class="keyword">const</span> std::set&lt; gd::String &gt; &amp; <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#a0a4f7aeebb7d3c55da7f280b447f3ac9">GetNotTopLevelExternalEventsDependencies</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> notTopLevelExternalEventsDependencies; };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#ae67760b123d47225f42b9bbbe6795360">Analyze</a>(gd::EventsList &amp; events, <span class="keywordtype">bool</span> isOnTopLevel);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html#a9368e8d3f66b47c440efaf30a612f59a">DependenciesAnalyzer</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d4e/class_dependencies_analyzer.html">DependenciesAnalyzer</a> &amp; parent);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> AddParentScene(gd::String parentScene) { parentScenes.push_back(parentScene); };</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> AddParentExternalEvents(gd::String parentExternalEvents_) { parentExternalEvents.push_back(parentExternalEvents_); };</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> CheckIfExternalEventsIsLinkedOnlyAtTopLevel(<span class="keyword">const</span> gd::String &amp; externalEventsName, std::vector&lt; std::shared_ptr&lt;gd::BaseEvent&gt; &gt; &amp; events);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::set&lt; gd::String &gt; scenesDependencies;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::set&lt; gd::String &gt; externalEventsDependencies;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::set&lt; gd::String &gt; sourceFilesDependencies;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::set&lt; gd::String &gt; notTopLevelScenesDependencies;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::set&lt; gd::String &gt; notTopLevelExternalEventsDependencies;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;gd::String&gt; parentScenes; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::vector&lt;gd::String&gt; parentExternalEvents; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    gd::Project &amp; project;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    gd::Layout * layout;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    gd::ExternalEvents * externalEvents;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif // DEPENDENCIESANALYZER_H</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_dependencies_analyzer_html_ac2d8adcc2787115b7f23bfe8c76a13ea"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#ac2d8adcc2787115b7f23bfe8c76a13ea">DependenciesAnalyzer::GetSourceFilesDependencies</a></div><div class="ttdeci">const std::set&lt; gd::String &gt; &amp; GetSourceFilesDependencies() const </div><div class="ttdoc">Return the source files being dependencies of the scene or external events passed in the constructor...</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.h:74</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_a504fcf41c94c67f7922850bbe5ade1cb"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#a504fcf41c94c67f7922850bbe5ade1cb">DependenciesAnalyzer::GetExternalEventsDependencies</a></div><div class="ttdeci">const std::set&lt; gd::String &gt; &amp; GetExternalEventsDependencies() const </div><div class="ttdoc">Return the external events being dependencies of the scene or external events passed in the construct...</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.h:69</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_a0a4f7aeebb7d3c55da7f280b447f3ac9"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#a0a4f7aeebb7d3c55da7f280b447f3ac9">DependenciesAnalyzer::GetNotTopLevelExternalEventsDependencies</a></div><div class="ttdeci">const std::set&lt; gd::String &gt; &amp; GetNotTopLevelExternalEventsDependencies() const </div><div class="ttdoc">Return the external events being dependencies of the scene or external events passed in the construct...</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.h:86</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_ae67760b123d47225f42b9bbbe6795360"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#ae67760b123d47225f42b9bbbe6795360">DependenciesAnalyzer::Analyze</a></div><div class="ttdeci">bool Analyze()</div><div class="ttdoc">Search the dependencies and return true if there are no circular dependencies in the events of the la...</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.cpp:38</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CppCodeEvent.h:13</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_acbc8e28f7441f2cc2723f1b9a9836cc6"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#acbc8e28f7441f2cc2723f1b9a9836cc6">DependenciesAnalyzer::GetNotTopLevelScenesDependencies</a></div><div class="ttdeci">const std::set&lt; gd::String &gt; &amp; GetNotTopLevelScenesDependencies() const </div><div class="ttdoc">Return the scenes being dependencies of the scene or external events passed in the constructor...</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.h:80</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_af18794789ad871c78b02a44a5b43b2d1"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#af18794789ad871c78b02a44a5b43b2d1">DependenciesAnalyzer::ExternalEventsCanBeCompiledForAScene</a></div><div class="ttdeci">gd::String ExternalEventsCanBeCompiledForAScene()</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.cpp:119</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html">DependenciesAnalyzer</a></div><div class="ttdoc">Compute the dependencies of a scene or external events. </div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.h:23</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_ae3de68ac14afab8f57a63de71d7e7dc7"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#ae3de68ac14afab8f57a63de71d7e7dc7">DependenciesAnalyzer::GetScenesDependencies</a></div><div class="ttdeci">const std::set&lt; gd::String &gt; &amp; GetScenesDependencies() const </div><div class="ttdoc">Return the scenes being dependencies of the scene or external events passed in the constructor...</div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.h:64</div></div>
+<div class="ttc" id="class_dependencies_analyzer_html_a9368e8d3f66b47c440efaf30a612f59a"><div class="ttname"><a href="../../d1/d4e/class_dependencies_analyzer.html#a9368e8d3f66b47c440efaf30a612f59a">DependenciesAnalyzer::DependenciesAnalyzer</a></div><div class="ttdeci">DependenciesAnalyzer(gd::Project &amp;project_, gd::Layout &amp;layout_)</div><div class="ttdoc">Constructor for analyzing the dependencies of a layout. </div><div class="ttdef"><b>Definition:</b> DependenciesAnalyzer.cpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

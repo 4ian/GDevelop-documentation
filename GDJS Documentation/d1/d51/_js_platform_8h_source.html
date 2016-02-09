@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_2788447a247d89981b9774cad09bae1c.html">GDJS</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_2788447a247d89981b9774cad09bae1c.html">GDJS</a></li><li class="navelem"><a class="el" href="../../dir_55c83c53a3b962f47a5f3a77eeaa6e6e.html">Extensions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,16 +91,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop JS Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef JSPLATFORM_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define JSPLATFORM_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/Platform.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/PlatformExtension.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Platform.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/PlatformExtension.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/CommonTools.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/Tools/Localization.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;HttpServer.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDJS/IDE/HttpServer.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;wx/bitmap.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -112,13 +112,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> std::string GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GDevelop JS platform&quot;</span>; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> std::string GetFullName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gd::ToString(_(<span class="stringliteral">&quot;HTML5 (Web and Android games)&quot;</span>)); }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> std::string GetSubtitle()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gd::ToString(_(<span class="stringliteral">&quot;HTML5 and javascript based games for web browsers.&quot;</span>)); }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> std::string GetDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gd::ToString(_(<span class="stringliteral">&quot;2D games which can be played in a web browser or exported to Android with third-party tools.&quot;</span>)); }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> std::string GetIcon()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;JsPlatform/icon32.png&quot;</span>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> gd::String GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GDevelop JS platform&quot;</span>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> gd::String GetFullName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _(<span class="stringliteral">&quot;HTML5 (Web and Android games)&quot;</span>); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> gd::String GetSubtitle()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _(<span class="stringliteral">&quot;HTML5 and javascript based games for web browsers.&quot;</span>); }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> gd::String GetDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _(<span class="stringliteral">&quot;2D games which can be played in a web browser or exported to Android with third-party tools.&quot;</span>); }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> gd::String GetIcon()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;JsPlatform/icon32.png&quot;</span>; }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d2/d3d/classgdjs_1_1_js_platform.html#a47a7ef37ca150006ae4948bed121329e">   40</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="../../d2/d3d/classgdjs_1_1_js_platform.html#a47a7ef37ca150006ae4948bed121329e">GetExtensionCreateFunctionName</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;CreateGDJSExtension&quot;</span>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d2/d3d/classgdjs_1_1_js_platform.html#a693d18edd1891ae1303aaaa918c99200">   40</a></span>&#160;    <span class="keyword">virtual</span> gd::String <a class="code" href="../../d2/d3d/classgdjs_1_1_js_platform.html#a693d18edd1891ae1303aaaa918c99200">GetExtensionCreateFunctionName</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;CreateGDJSExtension&quot;</span>; }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
@@ -148,13 +148,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // JSPLATFORM_H</span></div>
-<div class="ttc" id="classgdjs_1_1_js_platform_html_a47a7ef37ca150006ae4948bed121329e"><div class="ttname"><a href="../../d2/d3d/classgdjs_1_1_js_platform.html#a47a7ef37ca150006ae4948bed121329e">gdjs::JsPlatform::GetExtensionCreateFunctionName</a></div><div class="ttdeci">virtual std::string GetExtensionCreateFunctionName()</div><div class="ttdoc">The name of the function searched in an extension file to create the extension. </div><div class="ttdef"><b>Definition:</b> JsPlatform.h:40</div></div>
+<div class="ttc" id="classgdjs_1_1_js_platform_html_a693d18edd1891ae1303aaaa918c99200"><div class="ttname"><a href="../../d2/d3d/classgdjs_1_1_js_platform.html#a693d18edd1891ae1303aaaa918c99200">gdjs::JsPlatform::GetExtensionCreateFunctionName</a></div><div class="ttdeci">virtual gd::String GetExtensionCreateFunctionName()</div><div class="ttdoc">The name of the function searched in an extension file to create the extension. </div><div class="ttdef"><b>Definition:</b> JsPlatform.h:40</div></div>
 <div class="ttc" id="classgdjs_1_1_js_platform_html"><div class="ttname"><a href="../../d2/d3d/classgdjs_1_1_js_platform.html">gdjs::JsPlatform</a></div><div class="ttdoc">GDevelop Javascript Platform. </div><div class="ttdef"><b>Definition:</b> JsPlatform.h:28</div></div>
-<div class="ttc" id="namespacegdjs_html"><div class="ttname"><a href="../../db/d4f/namespacegdjs.html">gdjs</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:12</div></div>
+<div class="ttc" id="namespacegdjs_html"><div class="ttname"><a href="../../db/d4f/namespacegdjs.html">gdjs</a></div><div class="ttdef"><b>Definition:</b> JsCodeEvent.cpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:22 for GDevelop JS Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:04 for GDevelop JS Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

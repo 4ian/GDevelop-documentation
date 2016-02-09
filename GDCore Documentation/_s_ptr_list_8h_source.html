@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com)</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">                                   and Victor Levasseur (victorlevasseur52@gmail.com).</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
@@ -166,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a8422c460a7f4290702f845f49355f781"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a8422c460a7f4290702f845f49355f781">gd::SPtrList::Insert</a></div><div class="ttdeci">T &amp; Insert(const T &amp;element, size_t position=(size_t)-1)</div><div class="ttdoc">Insert the specified element to the list. </div><div class="ttdef"><b>Definition:</b> SPtrList.inl:33</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a7e79a8b17d4cc13ecf3fda06761a100a"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a7e79a8b17d4cc13ecf3fda06761a100a">gd::SPtrList::Get</a></div><div class="ttdeci">T &amp; Get(size_t index)</div><div class="ttdoc">Return a reference to the element at position index in the elements list. </div><div class="ttdef"><b>Definition:</b> SPtrList.h:61</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a815ec79a187713d318f08951e6c505d9"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a815ec79a187713d318f08951e6c505d9">gd::SPtrList::empty</a></div><div class="ttdeci">bool empty() const </div><div class="ttdoc">Alias for IsEmpty() </div><div class="ttdef"><b>Definition:</b> SPtrList.h:114</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_ad788595d2f8d948a2341e03b00ccaf28"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#ad788595d2f8d948a2341e03b00ccaf28">gd::SPtrList::GetSmartPtr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; GetSmartPtr(size_t index)</div><div class="ttdoc">Return the smart pointer to the element at position index in the elements list. </div><div class="ttdef"><b>Definition:</b> SPtrList.h:56</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a17355e3ce79c0fe5c6ec4d4010a036f3"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a17355e3ce79c0fe5c6ec4d4010a036f3">gd::SPtrList::Init</a></div><div class="ttdeci">void Init(const SPtrList&lt; T &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> SPtrList.inl:99</div></div>
@@ -181,11 +182,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a30a151b35ecd84b2998eced43e626b70"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a30a151b35ecd84b2998eced43e626b70">gd::SPtrList::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const </div><div class="ttdoc">Return true if there isn&#39;t any element in the list. </div><div class="ttdef"><b>Definition:</b> SPtrList.h:81</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a0acffe11ba84547f6af50665b8b463da"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a0acffe11ba84547f6af50665b8b463da">gd::SPtrList::at</a></div><div class="ttdeci">T &amp; at(size_t index)</div><div class="ttdoc">Alias for Get() </div><div class="ttdef"><b>Definition:</b> SPtrList.h:132</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html_a9cf7adfed8ed6dc19b91ab6581107163"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html#a9cf7adfed8ed6dc19b91ab6581107163">gd::SPtrList::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdoc">Alias for GetCount() </div><div class="ttdef"><b>Definition:</b> SPtrList.h:108</div></div>
-<div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList</a></div><div class="ttdef"><b>Definition:</b> Instruction.h:18</div></div>
+<div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList</a></div><div class="ttdef"><b>Definition:</b> Instruction.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

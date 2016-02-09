@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="gd::PolygonEditionHelper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_polygon_edition_helper.html",tooltip="PolygonEditionHelper provides features to make the polygon edition easier. Can be easily integrated i..."];
+  Node1 [label="gd::PlatformManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_platform_manager.html",tooltip="Singleton class managing all the platforms available. "];
 }

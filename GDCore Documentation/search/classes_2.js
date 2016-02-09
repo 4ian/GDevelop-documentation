@@ -7,8 +7,8 @@ var searchData=
   ['callbacksforsearchingvariable',['CallbacksForSearchingVariable',['../classgd_1_1_callbacks_for_searching_variable.html',1,'gd']]],
   ['camera',['Camera',['../classgd_1_1_camera.html',1,'gd']]],
   ['changesnotifier',['ChangesNotifier',['../classgd_1_1_changes_notifier.html',1,'gd']]],
-  ['chooseautomatismdialog',['ChooseAutomatismDialog',['../classgd_1_1_choose_automatism_dialog.html',1,'gd']]],
-  ['chooseautomatismtypedialog',['ChooseAutomatismTypeDialog',['../classgd_1_1_choose_automatism_type_dialog.html',1,'gd']]],
+  ['choosebehaviordialog',['ChooseBehaviorDialog',['../classgd_1_1_choose_behavior_dialog.html',1,'gd']]],
+  ['choosebehaviortypedialog',['ChooseBehaviorTypeDialog',['../classgd_1_1_choose_behavior_type_dialog.html',1,'gd']]],
   ['chooselayerdialog',['ChooseLayerDialog',['../classgd_1_1_choose_layer_dialog.html',1,'gd']]],
   ['chooseobjectdialog',['ChooseObjectDialog',['../classgd_1_1_choose_object_dialog.html',1,'gd']]],
   ['chooseobjecttypedialog',['ChooseObjectTypeDialog',['../classgd_1_1_choose_object_type_dialog.html',1,'gd']]],
@@ -16,6 +16,6 @@ var searchData=
   ['classwithobjects',['ClassWithObjects',['../classgd_1_1_class_with_objects.html',1,'gd']]],
   ['clipboard',['Clipboard',['../classgd_1_1_clipboard.html',1,'gd']]],
   ['commentevent',['CommentEvent',['../classgd_1_1_comment_event.html',1,'gd']]],
-  ['commonbitmapmanager',['CommonBitmapManager',['../classgd_1_1_common_bitmap_manager.html',1,'gd']]],
+  ['commonbitmapprovider',['CommonBitmapProvider',['../classgd_1_1_common_bitmap_provider.html',1,'gd']]],
   ['compilationinfo',['CompilationInfo',['../classgd_1_1_compilation_info.html',1,'gd']]]
 ];

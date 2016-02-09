@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li><li class="navelem"><a class="el" href="dir_bcf6ec501aeeb9d3358543e670fbff9c.html">Dialogs</a></li><li class="navelem"><a class="el" href="dir_f13ce027524a91c7690b82475405b3be.html">EventsEditor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
@@ -134,9 +135,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetConditionsColumnWidth()<span class="keyword"> const </span>{<span class="keywordflow">return</span> conditionsColumnWidth;};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> SetConditionsColumnWidth(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> conditionsColumnWidth_) { conditionsColumnWidth = conditionsColumnWidth_; };</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    wxPoint DrawTextInArea(std::string text, wxDC &amp; dc, wxRect rect, wxPoint point);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    wxPoint DrawTextInArea(<a class="code" href="classgd_1_1_string.html">gd::String</a> text, wxDC &amp; dc, wxRect rect, wxPoint point);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetTextHeightInArea(<span class="keyword">const</span> std::string &amp; text, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> widthAvailable);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetTextHeightInArea(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; text, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> widthAvailable);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> DrawInstruction(<a class="code" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp; instruction,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; instructionMetadata,</div>
@@ -178,7 +179,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">const</span> wxBrush &amp; GetActionsRectangleFillBrush()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> actionsRectangleFill; }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    wxBrush &amp; GetActionsRectangleFillBrush() { <span class="keywordflow">return</span> actionsRectangleFill; }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::string GetHTMLText(std::string text);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> GetHTMLText(<a class="code" href="classgd_1_1_string.html">gd::String</a> text);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    wxColor eventGradient1;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    wxColor eventGradient2;</div>
@@ -219,32 +220,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    wxFont font; </div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">float</span> fontCharacterWidth;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    wxFont niceFont;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    wxHtmlDCRenderer htmlRenderer;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a> *singleton;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    wxBitmap fakeBmp;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;};</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif // EventsRenderingHelper_H</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">float</span> fontCharacterHeight;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    wxFont niceFont;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    wxHtmlDCRenderer htmlRenderer;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">static</span> <a class="code" href="classgd_1_1_events_rendering_helper.html">EventsRenderingHelper</a> *singleton;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    wxBitmap fakeBmp;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif // EventsRenderingHelper_H</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classgd_1_1_events_editor_items_areas_html"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a></div><div class="ttdoc">Allow events to indicate where is displayed an instruction or parameter. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:128</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_events_editor_selection_html"><div class="ttname"><a href="classgd_1_1_events_editor_selection.html">gd::EventsEditorSelection</a></div><div class="ttdoc">Represents the selection in an event editor. </div><div class="ttdef"><b>Definition:</b> EventsEditorSelection.h:27</div></div>
 <div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
-<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:90</div></div>
+<div class="ttc" id="classgd_1_1_instruction_metadata_html"><div class="ttname"><a href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a></div><div class="ttdoc">Contains user-friendly infos about actions/conditions, and members needed to setup an instruction...</div><div class="ttdef"><b>Definition:</b> InstructionMetadata.h:91</div></div>
 <div class="ttc" id="classgd_1_1_platform_html"><div class="ttname"><a href="classgd_1_1_platform.html">gd::Platform</a></div><div class="ttdoc">Base class for implementing a platform. </div><div class="ttdef"><b>Definition:</b> Platform.h:40</div></div>
 <div class="ttc" id="classgd_1_1_events_rendering_helper_html"><div class="ttname"><a href="classgd_1_1_events_rendering_helper.html">gd::EventsRenderingHelper</a></div><div class="ttdoc">Provides tools to draw events using wxWidgets toolkit. </div><div class="ttdef"><b>Definition:</b> EventsRenderingHelper.h:34</div></div>
-<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:32</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:33</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList&lt; Instruction &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

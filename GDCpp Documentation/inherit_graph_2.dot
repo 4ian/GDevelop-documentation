@@ -3,5 +3,9 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="AnimationProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d96/class_animation_proxy.html",tooltip="Wrapper around a pointer to Animation, used to reduce compile time. "];
+  Node1 [label="ProjectExporter",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AndroidExporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dfa/class_android_exporter.html",tooltip="Allow to export a game for Android. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Exporter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d5a/class_exporter.html",tooltip="The class exposing to the IDE the functions to export a game. "];
 }

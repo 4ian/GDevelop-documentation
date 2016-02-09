@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li><li class="navelem"><a class="el" href="dir_2f72656d9627061cdf1cfb799485c9f1.html">Project</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -100,10 +101,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef IMAGESUSEDINVENTORIZER_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define IMAGESUSEDINVENTORIZER_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCore/IDE/ArbitraryResourceWorker.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCore/IDE/Project/ArbitraryResourceWorker.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
@@ -114,27 +115,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classgd_1_1_images_used_inventorizer.html">ImagesUsedInventorizer</a>() : <a class="code" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a>() {};</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_images_used_inventorizer.html">ImagesUsedInventorizer</a>() {};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::set&lt;std::string&gt; &amp; GetAllUsedImages() { <span class="keywordflow">return</span> allUsedImages; };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::set&lt;gd::String&gt; &amp; GetAllUsedImages() { <span class="keywordflow">return</span> allUsedImages; };</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeFile(std::string &amp; resource) {};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeImage(std::string &amp; imageName) {allUsedImages.insert(imageName);};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExposeShader(std::string &amp; shaderName) {};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::set&lt;std::string&gt; allUsedImages;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // IMAGESUSEDINVENTORIZER_H</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classgd_1_1_arbitrary_resource_worker_html"><div class="ttname"><a href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a></div><div class="ttdoc">ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...</div><div class="ttdef"><b>Definition:</b> ArbitraryResourceWorker.h:33</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classgd_1_1_images_used_inventorizer.html#a98bc8c3dd7c5fab85087ea20866f1fc5">   41</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_images_used_inventorizer.html#a98bc8c3dd7c5fab85087ea20866f1fc5">ExposeFile</a>(<a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; resource) { <span class="comment">/*Don&#39;t care, we just list images*/</span> };</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classgd_1_1_images_used_inventorizer.html#a0a53a196aafb586d89c8813eb50b2a85">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgd_1_1_images_used_inventorizer.html#a0a53a196aafb586d89c8813eb50b2a85">ExposeImage</a>(<a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; imageName) {allUsedImages.insert(imageName);};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::set&lt;gd::String&gt; allUsedImages;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // IMAGESUSEDINVENTORIZER_H</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classgd_1_1_arbitrary_resource_worker_html"><div class="ttname"><a href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a></div><div class="ttdoc">ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...</div><div class="ttdef"><b>Definition:</b> ArbitraryResourceWorker.h:34</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_images_used_inventorizer_html_a98bc8c3dd7c5fab85087ea20866f1fc5"><div class="ttname"><a href="classgd_1_1_images_used_inventorizer.html#a98bc8c3dd7c5fab85087ea20866f1fc5">gd::ImagesUsedInventorizer::ExposeFile</a></div><div class="ttdeci">virtual void ExposeFile(gd::String &amp;resource)</div><div class="ttdoc">Expose a raw filename. </div><div class="ttdef"><b>Definition:</b> ImagesUsedInventorizer.h:41</div></div>
 <div class="ttc" id="classgd_1_1_images_used_inventorizer_html"><div class="ttname"><a href="classgd_1_1_images_used_inventorizer.html">gd::ImagesUsedInventorizer</a></div><div class="ttdoc">Class used to track all images used in a game. </div><div class="ttdef"><b>Definition:</b> ImagesUsedInventorizer.h:32</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_images_used_inventorizer_html_a0a53a196aafb586d89c8813eb50b2a85"><div class="ttname"><a href="classgd_1_1_images_used_inventorizer.html#a0a53a196aafb586d89c8813eb50b2a85">gd::ImagesUsedInventorizer::ExposeImage</a></div><div class="ttdeci">virtual void ExposeImage(gd::String &amp;imageName)</div><div class="ttdoc">Expose an image, which is always a reference to a "image" resource. </div><div class="ttdef"><b>Definition:</b> ImagesUsedInventorizer.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

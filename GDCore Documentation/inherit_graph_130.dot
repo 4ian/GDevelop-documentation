@@ -1,0 +1,17 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="utf8::exception",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutf8_1_1exception.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="utf8::invalid_code\l_point",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutf8_1_1invalid__code__point.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="utf8::invalid_utf16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutf8_1_1invalid__utf16.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="utf8::invalid_utf8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutf8_1_1invalid__utf8.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="utf8::not_enough_room",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutf8_1_1not__enough__room.html"];
+}

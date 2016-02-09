@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
@@ -101,10 +101,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define SCENEEDITORCANVAS_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/LayoutEditorPreviewer.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/Project.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCpp/RuntimeScene.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCpp/RuntimeGame.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/Project/LayoutEditorPreviewer.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/Project/Project.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/RuntimeScene.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/RuntimeGame.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>InitialInstancesContainer; }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Layout; }</div>
@@ -112,18 +112,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>LayoutEditorCanvasOptions; }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>MainFrameWrapper; }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>wxAuiManager;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>DebuggerGUI;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>ProfileDlg;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>RenderDialog;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/dba/class_debugger_g_u_i.html">DebuggerGUI</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df2/class_profile_dlg.html">ProfileDlg</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d31/class_render_dialog.html">RenderDialog</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>InstancesRenderer;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>GD_API CppLayoutPreviewer : <span class="keyword">public</span> gd::LayoutEditorPreviewer</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dc/dfb/class_cpp_layout_previewer.html">   30</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../dc/dfb/class_cpp_layout_previewer.html">CppLayoutPreviewer</a> : <span class="keyword">public</span> gd::LayoutEditorPreviewer</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    CppLayoutPreviewer(gd::LayoutEditorCanvas &amp; editor);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~CppLayoutPreviewer();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../dc/dfb/class_cpp_layout_previewer.html">CppLayoutPreviewer</a>(gd::LayoutEditorCanvas &amp; editor);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/dfb/class_cpp_layout_previewer.html">CppLayoutPreviewer</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; GetRuntimeScene() { <span class="keywordflow">return</span> previewScene; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dc/dfb/class_cpp_layout_previewer.html#a84dbc12527661c8ed343336a6c41f3b7">   39</a></span>&#160;    <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; <a class="code" href="../../dc/dfb/class_cpp_layout_previewer.html#a84dbc12527661c8ed343336a6c41f3b7">GetRuntimeScene</a>() { <span class="keywordflow">return</span> previewScene; }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    gd::Layout &amp; GetLayout();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> ExternalWindowClosed();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::shared_ptr&lt;ProfileDlg&gt; GetProfileDialog()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> profiler; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../dc/dfb/class_cpp_layout_previewer.html#ad5d15049f3420e7667aa70ab8804a52d">   60</a></span>&#160;    std::shared_ptr&lt;ProfileDlg&gt; <a class="code" href="../../dc/dfb/class_cpp_layout_previewer.html#ad5d15049f3420e7667aa70ab8804a52d">GetProfileDialog</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> profiler; }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetParentAuiManager(wxAuiManager * parentAuiManager_);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -191,17 +191,24 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//State management</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> isReloading; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> playing;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // SCENEEDITORCANVAS_H</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AutomatismsRuntimeSharedData.h:10</div></div>
-<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:50</div></div>
-<div class="ttc" id="class_runtime_game_html"><div class="ttname"><a href="../../d8/ddb/class_runtime_game.html">RuntimeGame</a></div><div class="ttdoc">Represents a game being played. </div><div class="ttdef"><b>Definition:</b> RuntimeGame.h:25</div></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">bool</span> running;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // SCENEEDITORCANVAS_H</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CppCodeEvent.h:13</div></div>
+<div class="ttc" id="class_cpp_layout_previewer_html"><div class="ttname"><a href="../../dc/dfb/class_cpp_layout_previewer.html">CppLayoutPreviewer</a></div><div class="ttdoc">The new scene editor canvas. </div><div class="ttdef"><b>Definition:</b> CppLayoutPreviewer.h:30</div></div>
+<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:45</div></div>
+<div class="ttc" id="class_render_dialog_html"><div class="ttname"><a href="../../d1/d31/class_render_dialog.html">RenderDialog</a></div><div class="ttdoc">Window used to mimic a sf::RenderWindow inside an IDE. </div><div class="ttdef"><b>Definition:</b> RenderDialog.h:22</div></div>
+<div class="ttc" id="class_cpp_layout_previewer_html_ad5d15049f3420e7667aa70ab8804a52d"><div class="ttname"><a href="../../dc/dfb/class_cpp_layout_previewer.html#ad5d15049f3420e7667aa70ab8804a52d">CppLayoutPreviewer::GetProfileDialog</a></div><div class="ttdeci">std::shared_ptr&lt; ProfileDlg &gt; GetProfileDialog() const </div><div class="ttdef"><b>Definition:</b> CppLayoutPreviewer.h:60</div></div>
+<div class="ttc" id="class_cpp_layout_previewer_html_a84dbc12527661c8ed343336a6c41f3b7"><div class="ttname"><a href="../../dc/dfb/class_cpp_layout_previewer.html#a84dbc12527661c8ed343336a6c41f3b7">CppLayoutPreviewer::GetRuntimeScene</a></div><div class="ttdeci">RuntimeScene &amp; GetRuntimeScene()</div><div class="ttdoc">Return a reference to the scene used for preview inside the editor. </div><div class="ttdef"><b>Definition:</b> CppLayoutPreviewer.h:39</div></div>
+<div class="ttc" id="class_profile_dlg_html"><div class="ttname"><a href="../../df/df2/class_profile_dlg.html">ProfileDlg</a></div><div class="ttdef"><b>Definition:</b> ProfileDlg.h:24</div></div>
+<div class="ttc" id="class_runtime_game_html"><div class="ttname"><a href="../../d8/ddb/class_runtime_game.html">RuntimeGame</a></div><div class="ttdoc">Represents a game being played. </div><div class="ttdef"><b>Definition:</b> RuntimeGame.h:26</div></div>
+<div class="ttc" id="class_debugger_g_u_i_html"><div class="ttname"><a href="../../d0/dba/class_debugger_g_u_i.html">DebuggerGUI</a></div><div class="ttdef"><b>Definition:</b> DebuggerGUI.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:23 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

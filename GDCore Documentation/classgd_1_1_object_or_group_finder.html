@@ -126,10 +126,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a641bf038964d93e54141ae0f2d40fb4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_or_group_finder.html#a641bf038964d93e54141ae0f2d40fb4c">ObjectOrGroupFinder</a> (const <a class="el" href="classgd_1_1_project.html">Project</a> &amp;project, const <a class="el" href="classgd_1_1_layout.html">Layout</a> *layout=nullptr)</td></tr>
 <tr class="separator:a641bf038964d93e54141ae0f2d40fb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d74478b8a434b136a73bc0e4506ff8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_or_group_finder.html#a51d74478b8a434b136a73bc0e4506ff8">HasObjectOrGroupNamed</a> (const std::string &amp;name, bool allLayouts=false)</td></tr>
-<tr class="separator:a51d74478b8a434b136a73bc0e4506ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358271f7d8c54634f5db66559e9da442"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_or_group_finder.html#a358271f7d8c54634f5db66559e9da442">GetLayoutsWithSameObjectName</a> () const </td></tr>
-<tr class="separator:a358271f7d8c54634f5db66559e9da442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ba08b77a742c7855d03cc11da5cba5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_or_group_finder.html#ac9ba08b77a742c7855d03cc11da5cba5">HasObjectOrGroupNamed</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, bool allLayouts=false)</td></tr>
+<tr class="separator:ac9ba08b77a742c7855d03cc11da5cba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb576e8cdcad5f1ecfce555e39049501"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_or_group_finder.html#abb576e8cdcad5f1ecfce555e39049501">GetLayoutsWithSameObjectName</a> () const </td></tr>
+<tr class="separator:abb576e8cdcad5f1ecfce555e39049501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to check if other objects or groups have a specific name. </p>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum (flag) used by <a class="el" href="classgd_1_1_object_or_group_finder.html#a51d74478b8a434b136a73bc0e4506ff8">HasObjectOrGroupNamed()</a> to describe where an object with the same name has been found. </p>
+<p>An enum (flag) used by <a class="el" href="classgd_1_1_object_or_group_finder.html#ac9ba08b77a742c7855d03cc11da5cba5">HasObjectOrGroupNamed()</a> to describe where an object with the same name has been found. </p>
 
 </div>
 </div>
@@ -182,30 +182,30 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a358271f7d8c54634f5db66559e9da442"></a>
+<a class="anchor" id="abb576e8cdcad5f1ecfce555e39049501"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; std::string &gt; &amp; gd::ObjectOrGroupFinder::GetLayoutsWithSameObjectName </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp; gd::ObjectOrGroupFinder::GetLayoutsWithSameObjectName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a string containing the list of the layouts containing an object/group with the searched name (from the previous call to <a class="el" href="classgd_1_1_object_or_group_finder.html#a51d74478b8a434b136a73bc0e4506ff8">HasObjectOrGroupNamed()</a>) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> containing the list of the layouts containing an object/group with the searched name (from the previous call to <a class="el" href="classgd_1_1_object_or_group_finder.html#ac9ba08b77a742c7855d03cc11da5cba5">HasObjectOrGroupNamed()</a>) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a51d74478b8a434b136a73bc0e4506ff8"></a>
+<a class="anchor" id="ac9ba08b77a742c7855d03cc11da5cba5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">unsigned int gd::ObjectOrGroupFinder::HasObjectOrGroupNamed </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a flag (<a class="el" href="classgd_1_1_object_or_group_finder.html#ad10e4c1585562f557ad909b065f86296">ObjectOrGroupFinder::HasSameName</a>) to tell if an object/group has the search name Note : with allLayouts set to true, it also test the local objects and groups of other layouts. </p>
+<p>Return a flag (<a class="el" href="classgd_1_1_object_or_group_finder.html#ad10e4c1585562f557ad909b065f86296">ObjectOrGroupFinder::HasSameName</a>) to tell if an object/group has the search name Note: with allLayouts set to true, it also test the local objects and groups of other layouts. </p>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

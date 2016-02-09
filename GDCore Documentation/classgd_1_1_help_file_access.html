@@ -107,8 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28bab860a02f5b35d17f1d108c3a483b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_help_file_access.html#a28bab860a02f5b35d17f1d108c3a483b">SetHelpProvider</a> (<a class="el" href="classgd_1_1_help_provider.html">HelpProvider</a> *newHelpProvider)</td></tr>
 <tr class="memdesc:a28bab860a02f5b35d17f1d108c3a483b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the help controller with the specified help provider.  <a href="#a28bab860a02f5b35d17f1d108c3a483b">More...</a><br /></td></tr>
 <tr class="separator:a28bab860a02f5b35d17f1d108c3a483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa12e67a96ac5d3590523ddbe52208d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_help_file_access.html#aa12e67a96ac5d3590523ddbe52208d35">OpenURL</a> (wxString url)</td></tr>
-<tr class="separator:aa12e67a96ac5d3590523ddbe52208d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec94c64d087dcc0e42b2f68595adf32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_help_file_access.html#a2ec94c64d087dcc0e42b2f68595adf32">OpenURL</a> (wxString url) GD_DEPRECATED</td></tr>
+<tr class="separator:a2ec94c64d087dcc0e42b2f68595adf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74fd07af0e4308bd43a4085481daa373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_help_file_access.html#a74fd07af0e4308bd43a4085481daa373">OpenPage</a> (wxString page)</td></tr>
+<tr class="separator:a74fd07af0e4308bd43a4085481daa373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -121,9 +123,40 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroySinglet
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tool class to provide a link between the platforms implementations and the IDE, which is responsible for displaying the help. </p>
-<p>Usage example: </p><div class="fragment"><div class="line">gd::HelpFileAccess::Get()-&gt;DisplayURL(_(<span class="stringliteral">&quot;www.mywebsite.com/wiki/help_about_my_topic&quot;</span>);</div>
+<p>Usage example: </p><div class="fragment"><div class="line">gd::HelpFileAccess::Get()-&gt;<a class="code" href="classgd_1_1_help_file_access.html#a2ec94c64d087dcc0e42b2f68595adf32">OpenURL</a>(_(<span class="stringliteral">&quot;www.mywebsite.com/wiki/help_about_my_topic&quot;</span>);</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa12e67a96ac5d3590523ddbe52208d35"></a>
+<a class="anchor" id="a74fd07af0e4308bd43a4085481daa373"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::HelpFileAccess::OpenPage </td>
+          <td>(</td>
+          <td class="paramtype">wxString&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ask the IDE to display the specified page as help. This assumes that the page is hosted on the GDevelop's wiki : <a href="http://wiki.compilgames.net/doku.php/language/the_page_name">http://wiki.compilgames.net/doku.php/language/the_page_name</a> The "language" from the URL is deduced from the user language. For the languages that are not available on the wiki, the user is redirected to the english page.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>the address to the page relative to the wiki (<a href="http://wiki.compilgames.net/doku.php/language/">http://wiki.compilgames.net/doku.php/language/</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ec94c64d087dcc0e42b2f68595adf32"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -183,7 +216,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroySinglet
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

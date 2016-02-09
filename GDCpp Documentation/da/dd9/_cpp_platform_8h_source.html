@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_8c00a3db46f67d827986a77955cf3ce2.html">Extensions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,18 +93,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef PLATFORM_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define PLATFORM_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/Platform.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/PlatformExtension.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/Platform.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GDCore/Extensions/PlatformExtension.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/Tools/Localization.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCpp/CommonTools.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/CommonTools.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCpp/IDE/ChangesNotifier.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Automatism; }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Behavior; }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> { <span class="keyword">class </span>Object; }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a>;</div>
@@ -116,23 +116,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> std::string GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GDevelop C++ platform&quot;</span>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> gd::String GetName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GDevelop C++ platform&quot;</span>; }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    #if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> std::string GetFullName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">ToString</a>(_(<span class="stringliteral">&quot;Native (Windows or Linux games)&quot;</span>)); }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> std::string GetSubtitle()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">ToString</a>(_(<span class="stringliteral">&quot;C++ and OpenGL based games for Windows or Linux.&quot;</span>)); }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> std::string GetDescription() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> gd::String GetFullName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _(<span class="stringliteral">&quot;Native (Windows or Linux games)&quot;</span>); }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> gd::String GetSubtitle()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _(<span class="stringliteral">&quot;C++ and OpenGL based games for Windows or Linux.&quot;</span>); }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> gd::String GetDescription() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::shared_ptr&lt;RuntimeObject&gt; CreateRuntimeObject(<a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene, gd::Object &amp; <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> AddExtension(std::shared_ptr&lt;gd::PlatformExtension&gt; platformExtension);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d3/d7d/class_cpp_platform.html#a3f2422792552afcddfa910e2947cc7d0">   55</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="../../d3/d7d/class_cpp_platform.html#a3f2422792552afcddfa910e2947cc7d0">GetExtensionCreateFunctionName</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;CreateGDExtension&quot;</span>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d3/d7d/class_cpp_platform.html#ac2980b9e4c0e96ab05f83c4057ea5542">   55</a></span>&#160;    <span class="keyword">virtual</span> gd::String <a class="code" href="../../d3/d7d/class_cpp_platform.html#ac2980b9e4c0e96ab05f83c4057ea5542">GetExtensionCreateFunctionName</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;CreateGDExtension&quot;</span>; }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> std::string GetIcon()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;CppPlatform/icon32.png&quot;</span>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> gd::String GetIcon()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;CppPlatform/icon32.png&quot;</span>; }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> ChangesNotifier &amp; GetChangesNotifier()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> changesNotifier; };</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d3/d7d/class_cpp_platform.html#a83169d16b33fae33ee4d5caf75ea143c">   63</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d2/d03/class_changes_notifier.html">ChangesNotifier</a> &amp; <a class="code" href="../../d3/d7d/class_cpp_platform.html#a83169d16b33fae33ee4d5caf75ea143c">GetChangesNotifier</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> changesNotifier; };</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
@@ -152,9 +152,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d3/d7d/class_cpp_platform.html">CppPlatform</a>() {};</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::map &lt; std::string, CreateRuntimeObjectFunPtr &gt; runtimeObjCreationFunctionTable; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::map &lt; gd::String, CreateRuntimeObjectFunPtr &gt; runtimeObjCreationFunctionTable; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY)</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">static</span> ChangesNotifier changesNotifier;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d2/d03/class_changes_notifier.html">ChangesNotifier</a> changesNotifier;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if !defined(GD_NO_WX_GUI)</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    wxBitmap icon32;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -164,16 +164,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif // PLATFORM_H</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AutomatismsRuntimeSharedData.h:10</div></div>
-<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:50</div></div>
-<div class="ttc" id="class_runtime_object_html"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a></div><div class="ttdoc">A RuntimeObject is something displayed on the scene. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.h:38</div></div>
-<div class="ttc" id="class_cpp_platform_html_a3f2422792552afcddfa910e2947cc7d0"><div class="ttname"><a href="../../d3/d7d/class_cpp_platform.html#a3f2422792552afcddfa910e2947cc7d0">CppPlatform::GetExtensionCreateFunctionName</a></div><div class="ttdeci">virtual std::string GetExtensionCreateFunctionName()</div><div class="ttdoc">The name of the function searched in an extension file to create the extension. </div><div class="ttdef"><b>Definition:</b> CppPlatform.h:55</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CppCodeEvent.h:13</div></div>
+<div class="ttc" id="class_cpp_platform_html_ac2980b9e4c0e96ab05f83c4057ea5542"><div class="ttname"><a href="../../d3/d7d/class_cpp_platform.html#ac2980b9e4c0e96ab05f83c4057ea5542">CppPlatform::GetExtensionCreateFunctionName</a></div><div class="ttdeci">virtual gd::String GetExtensionCreateFunctionName()</div><div class="ttdoc">The name of the function searched in an extension file to create the extension. </div><div class="ttdef"><b>Definition:</b> CppPlatform.h:55</div></div>
+<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:45</div></div>
+<div class="ttc" id="class_runtime_object_html"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a></div><div class="ttdoc">A RuntimeObject is something displayed on the scene. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.h:41</div></div>
 <div class="ttc" id="class_cpp_platform_html"><div class="ttname"><a href="../../d3/d7d/class_cpp_platform.html">CppPlatform</a></div><div class="ttdoc">GDevelop C++ Platform. </div><div class="ttdef"><b>Definition:</b> CppPlatform.h:28</div></div>
-<div class="ttc" id="group___common_programming_tools_html_gac537ae6812f51865a3f83d34cac04fe0"><div class="ttname"><a href="../../dc/d32/group___common_programming_tools.html#gac537ae6812f51865a3f83d34cac04fe0">ToString</a></div><div class="ttdeci">std::string ToString(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> CommonTools.h:65</div></div>
+<div class="ttc" id="class_cpp_platform_html_a83169d16b33fae33ee4d5caf75ea143c"><div class="ttname"><a href="../../d3/d7d/class_cpp_platform.html#a83169d16b33fae33ee4d5caf75ea143c">CppPlatform::GetChangesNotifier</a></div><div class="ttdeci">virtual ChangesNotifier &amp; GetChangesNotifier() const </div><div class="ttdoc">We provide a specific ChangesNotifier to ensure that compilation jobs are done properly. </div><div class="ttdef"><b>Definition:</b> CppPlatform.h:63</div></div>
+<div class="ttc" id="class_changes_notifier_html"><div class="ttname"><a href="../../d2/d03/class_changes_notifier.html">ChangesNotifier</a></div><div class="ttdoc">Internal class used to trigger some custom works after changes have been made. </div><div class="ttdef"><b>Definition:</b> ChangesNotifier.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:23 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

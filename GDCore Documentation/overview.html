@@ -102,27 +102,41 @@ Platforms loading</h2>
 <h1><a class="anchor" id="extensionsstructure"></a>
 Structure of an extension</h1>
 <p><b>Extensions</b> are seen by GDevelop Core as classes inheriting from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>.<br />
- They are stored inside the platform they belong to, and they are also loaded from a dynamic library file thanks to <a class="el" href="classgd_1_1_extensions_loader.html" title="Internal class loading static extensions. ">gd::ExtensionsLoader</a>. The main job of an extension is to <b>declare</b> everything it provides: objects, actions and conditions, automatisms, expressions.<br />
+ They are stored inside the platform they belong to, and they are also loaded from a dynamic library file thanks to <a class="el" href="classgd_1_1_extensions_loader.html" title="Internal class loading static extensions. ">gd::ExtensionsLoader</a>. The main job of an extension is to <b>declare</b> everything it provides: objects, actions and conditions, behaviors, expressions.<br />
  This is done directly using the standard method provided by <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>, notably:</p><ul>
-<li><a class="el" href="classgd_1_1_platform_extension.html#aeb64794cc22a8df0541e734358b6fdd2" title="Declare a new condition as being part of the extension. ">gd::PlatformExtension::AddCondition</a> and <a class="el" href="classgd_1_1_platform_extension.html#a5b2cccd02b509af21a9293bbfcdf94f9" title="Declare a new action as being part of the extension. ">gd::PlatformExtension::AddAction</a>,</li>
-<li><a class="el" href="classgd_1_1_platform_extension.html#a313d3b881a24fd4c15430f24652f6103" title="Declare a new expression as being part of the extension. ">gd::PlatformExtension::AddExpression</a> (and <a class="el" href="classgd_1_1_platform_extension.html#ab897dfe5deb3be277e6d8a4db7c83cd6" title="Declare a new string expression as being part of the extension. ">gd::PlatformExtension::AddStrExpression</a>),</li>
-<li><a class="el" href="classgd_1_1_platform_extension.html#a9fe7c159ea77e19406e0a8374e27c84d" title="Declare a new object as being part of the extension. ">gd::PlatformExtension::AddObject</a> and <a class="el" href="classgd_1_1_platform_extension.html#a7d1aa8ca4aabffd709f521d953359099" title="Declare a new automatism as being part of the extension. ">gd::PlatformExtension::AddAutomatism</a></li>
+<li><a class="el" href="classgd_1_1_platform_extension.html#a1bab450e01b4c511750754e0a34e5b62" title="Declare a new condition as being part of the extension. ">gd::PlatformExtension::AddCondition</a> and <a class="el" href="classgd_1_1_platform_extension.html#a34e95be54f2dfa80b804e8e4830e7d9c" title="Declare a new action as being part of the extension. ">gd::PlatformExtension::AddAction</a>,</li>
+<li><a class="el" href="classgd_1_1_platform_extension.html#abf1071129669aa1c8047919a8fed397c" title="Declare a new expression as being part of the extension. ">gd::PlatformExtension::AddExpression</a> (and <a class="el" href="classgd_1_1_platform_extension.html#a719045343da6048ac25252e88d72640e" title="Declare a new String expression as being part of the extension. ">gd::PlatformExtension::AddStrExpression</a>),</li>
+<li><a class="el" href="classgd_1_1_platform_extension.html#ab21dd06ec7c386cf558b9881232773d8" title="Declare a new object as being part of the extension. ">gd::PlatformExtension::AddObject</a> and <a class="el" href="classgd_1_1_platform_extension.html#a75992fed9afce730db56af9d4d8177ca" title="Declare a new behavior as being part of the extension. ">gd::PlatformExtension::AddBehavior</a></li>
 </ul>
-<p>Some platforms (like the C++ Platform) offers another base class which must be used instead of <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a> when declaring a platorm: As this base class inherits from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>, standard methods still works, but you may be able to declares some others features (the C++ Platform offers the possibility of declaring debugger related functions).</p>
+<p>Some platforms (like the C++ Platform) offer another base class which must be used instead of <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a> when declaring a platorm: as this base class inherits from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>, standard methods still work, but you may be able to declare some others features (the C++ Platform offers the possibility of declaring debugger related functions).</p>
 <h2><a class="anchor" id="extensionloading"></a>
 Extensions loading</h2>
 <p>A single dynamic library file can contains an extension for more than one platform:<br />
- You just have to declare a class deriving from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a> for each platform supported, and a creation function for each platform (The C++ platform expects a function called <em>CreateGDExtension</em> while JS Platform search for a function called <em>CreateGDJSExtension</em>).</p>
+ You just have to declare a class deriving from <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a> for each platform supported, and a creation function for each platform (the C++ platform expects a function called <em>CreateGDExtension</em> while JS Platform search for a function called <em>CreateGDJSExtension</em>).</p>
 <h2><a class="anchor" id="extensionexample"></a>
 Edit or write a new extension</h2>
 <p>Refer to these pages for more information about extensions:</p><ul>
 <li><a class="el" href="_about_extension_cpp.html">About Extension.cpp</a></li>
-<li><a class="el" href="write_a_new_extension.html">Write a new extension</a> </li>
+<li><a class="el" href="write_a_new_extension.html">Write a new extension</a></li>
 </ul>
+<h1><a class="anchor" id="utf8section"></a>
+UTF8 strings</h1>
+<p>Most parts of the codebase support UTF8 strings thanks to <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> class. <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> is a wrapper around std::string, exposing a similar interface as well as a few tool member functions and operators that are all UTF8 aware.</p>
+<p>Its usage is easy, especially if you're familiar with std::string. Some extra functions can be really useful, in particular the ones to convert the string from/to a number.</p>
+<div class="fragment"><div class="line"><a class="code" href="classgd_1_1_string.html">gd::String</a> str = <span class="stringliteral">&quot;Hello&quot;</span>;</div>
+<div class="line">str += <span class="stringliteral">&quot; world&quot;</span>;</div>
+<div class="line">str += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="classgd_1_1_string.html#a231c9dde51cb369cf6350460d5a68401">gd::String::From</a>(2);</div>
+<div class="line"><span class="comment">//str now contains &quot;Hello world 2&quot;;</span></div>
+<div class="line"></div>
+<div class="line"><a class="code" href="classgd_1_1_string.html">gd::String</a> twopointfiveStr = <span class="stringliteral">&quot;2.5&quot;</span>;</div>
+<div class="line"><span class="keywordtype">double</span> twopointfive = twopointfive.<a class="code" href="classgd_1_1_string.html#a7e82c50e2c70129cac93f1b8e1ad2fa8">To</a>&lt;<span class="keywordtype">double</span>&gt;();</div>
+<div class="line"><span class="comment">//twopointfive == 2.5</span></div>
+</div><!-- fragment --><p><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> can also be implicitly constructed from a wxString or a sf::String, so that it is easy to use when you're dealing with wxWidgets GUI dialogs/editors or SFML objects.</p>
+<p>For more information, see the complete reference of the class. Tests cases have also been made for most functions. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

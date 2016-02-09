@@ -101,73 +101,77 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wx/toolbar.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCpp/RuntimeScene.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Project.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/RuntimeScene.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/Project/Project.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;GDCpp/IDE/BaseDebugger.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>GD_API DebuggerGUI : <span class="keyword">public</span> <a class="code" href="../../d8/d2b/class_debugger_g_u_i_base.html">DebuggerGUIBase</a>, <span class="keyword">public</span> BaseDebugger</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d0/dba/class_debugger_g_u_i.html">   18</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d0/dba/class_debugger_g_u_i.html">DebuggerGUI</a> : <span class="keyword">public</span> <a class="code" href="../../d8/d2b/class_debugger_g_u_i_base.html">DebuggerGUIBase</a>, <span class="keyword">public</span> <a class="code" href="../../d2/dce/class_base_debugger.html">BaseDebugger</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    DebuggerGUI(wxWindow* parent, <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene_);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~DebuggerGUI();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d0/dba/class_debugger_g_u_i.html">DebuggerGUI</a>(wxWindow* parent, <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene_, std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">bool</span>)&gt; playCallback);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/dba/class_debugger_g_u_i.html">DebuggerGUI</a>() {};</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> Pause();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> Play(); </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> ID_EXTLIST;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> OntoolbarPanelResize(wxSizeEvent&amp; event);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> OnobjectsTreeSelectionChanged(wxTreeEvent&amp; event);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> OnobjectsTreeItemActivated(wxTreeEvent&amp; event);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> OnobjectListItemActivated(wxListEvent&amp; event);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> OnBitmapButton1Click(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> OndeleteBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> OngeneralListItemActivated(wxListEvent&amp; event);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> OnResize(wxSizeEvent&amp; event);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> OnPlayBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> OnPauseBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> OnStepBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> OnAddObjBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> OnAddVarGlobalBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> OnAddVarSceneBtClick(wxCommandEvent&amp; event);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> UpdateGUI();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> OnExtensionListItemActivated(wxListEvent&amp; event);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> UpdateListCtrlColumnsWidth();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> RecreateListForObject(<span class="keyword">const</span> RuntimeObjSPtr &amp; <span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> Pause();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> Play();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">long</span> ID_EXTLIST;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> OntoolbarPanelResize(wxSizeEvent&amp; event);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> OnobjectsTreeSelectionChanged(wxTreeEvent&amp; event);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> OnobjectsTreeItemActivated(wxTreeEvent&amp; event);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> OnobjectListItemActivated(wxListEvent&amp; event);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> OnBitmapButton1Click(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> OndeleteBtClick(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> OngeneralListItemActivated(wxListEvent&amp; event);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> OnResize(wxSizeEvent&amp; event);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> OnPlayBtClick(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> OnPauseBtClick(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> OnStepBtClick(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> OnAddObjBtClick(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> OnAddVarGlobalBtClick(wxCommandEvent&amp; event);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> OnAddVarSceneBtClick(wxCommandEvent&amp; event);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::map &lt; std::weak_ptr&lt;RuntimeObject&gt;, std::pair&lt;std::string, wxTreeItemId&gt;, std::owner_less&lt;std::weak_ptr&lt;RuntimeObject&gt;&gt;&gt; objectsInTree; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//(Use std::owner_less to allow comparison between weak_ptr)</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::map &lt; std::string, wxTreeItemId &gt; initialObjects;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> mustRecreateTree;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> UpdateGUI();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> OnExtensionListItemActivated(wxListEvent&amp; event);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> UpdateListCtrlColumnsWidth();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> RecreateListForObject(<span class="keyword">const</span> RuntimeObjSPtr &amp; <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::vector&lt;wxListCtrl*&gt; extensionsListCtrls; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> baseItemCount;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> generalBaseItemCount;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> generalBaseAndVariablesItemCount;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> doMAJ;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> objectChanged;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp; scene;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::function&lt;void(bool)&gt; playCallback; <span class="comment">//Function called to play/pause the scene.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::map &lt; std::weak_ptr&lt;RuntimeObject&gt;, std::pair&lt;gd::String, wxTreeItemId&gt;, std::owner_less&lt;std::weak_ptr&lt;RuntimeObject&gt;&gt;&gt; objectsInTree;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//(Use std::owner_less to allow comparison between weak_ptr)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::map &lt; gd::String, wxTreeItemId &gt; initialObjects;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> mustRecreateTree;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    wxFont font;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // DEBUGGERGUI_H</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:50</div></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::vector&lt;wxListCtrl*&gt; extensionsListCtrls; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::size_t baseItemCount;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::size_t generalBaseItemCount;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::size_t generalBaseAndVariablesItemCount;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> doUpdate;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> objectChanged;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    wxFont font;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // DEBUGGERGUI_H</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_base_debugger_html"><div class="ttname"><a href="../../d2/dce/class_base_debugger.html">BaseDebugger</a></div><div class="ttdoc">Internal base class to implement a debugger. Derive from this class and implement UpdateGUI function ...</div><div class="ttdef"><b>Definition:</b> BaseDebugger.h:18</div></div>
+<div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:45</div></div>
 <div class="ttc" id="class_debugger_g_u_i_base_html"><div class="ttname"><a href="../../d8/d2b/class_debugger_g_u_i_base.html">DebuggerGUIBase</a></div><div class="ttdef"><b>Definition:</b> GDCppDialogs.h:30</div></div>
+<div class="ttc" id="class_debugger_g_u_i_html"><div class="ttname"><a href="../../d0/dba/class_debugger_g_u_i.html">DebuggerGUI</a></div><div class="ttdef"><b>Definition:</b> DebuggerGUI.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

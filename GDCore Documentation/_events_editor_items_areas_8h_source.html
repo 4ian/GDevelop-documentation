@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li><li class="navelem"><a class="el" href="dir_bcf6ec501aeeb9d3358543e670fbff9c.html">Dialogs</a></li><li class="navelem"><a class="el" href="dir_f13ce027524a91c7690b82475405b3be.html">EventsEditor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -117,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classgd_1_1_event_item.html">   31</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_event_item.html">EventItem</a></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classgd_1_1_event_item.html">EventItem</a>(std::shared_ptr&lt;gd::BaseEvent&gt; event_, <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> * eventsList_, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positionInList_ );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classgd_1_1_event_item.html">EventItem</a>(std::shared_ptr&lt;gd::BaseEvent&gt; event_, <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> * eventsList_, std::size_t positionInList_ );</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classgd_1_1_event_item.html">EventItem</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ~<a class="code" href="classgd_1_1_event_item.html">EventItem</a>() {};</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
@@ -125,13 +126,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::shared_ptr&lt;gd::BaseEvent&gt; event;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> * eventsList;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positionInList;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::size_t positionInList;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classgd_1_1_instruction_item.html">   49</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_instruction_item.html">InstructionItem</a></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classgd_1_1_instruction_item.html">InstructionItem</a>(<a class="code" href="classgd_1_1_instruction.html">gd::Instruction</a> * instruction_, <span class="keywordtype">bool</span> isCondition, <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a>* instructionList_, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positionInList_, <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classgd_1_1_instruction_item.html">InstructionItem</a>(<a class="code" href="classgd_1_1_instruction.html">gd::Instruction</a> * instruction_, <span class="keywordtype">bool</span> isCondition, <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a>* instructionList_, std::size_t positionInList_, <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event );</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classgd_1_1_instruction_item.html">InstructionItem</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ~<a class="code" href="classgd_1_1_instruction_item.html">InstructionItem</a>() {};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -140,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classgd_1_1_instruction.html">gd::Instruction</a> * instruction;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> isCondition;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a>* instructionList;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> positionInList;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::size_t positionInList;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classgd_1_1_base_event.html">gd::BaseEvent</a> * event;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -252,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::BaseEvent*&gt;()(item.event.get())) ^</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                   (std::hash&lt;gd::EventsList*&gt;()(item.eventsList) &lt;&lt; 1) ^</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                   (std::hash&lt;unsigned int&gt;()(item.positionInList) &lt;&lt; 2);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                   (std::hash&lt;std::size_t&gt;()(item.positionInList) &lt;&lt; 2);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    };</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
@@ -261,10 +262,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    {</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        std::size_t operator()(<a class="code" href="classgd_1_1_instruction_item.html">gd::InstructionItem</a> <span class="keyword">const</span>&amp; item)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::Instruction*&gt;()(item.instruction)) ^ </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                   (std::hash&lt;gd::InstructionsList*&gt;()(item.instructionList) &lt;&lt; 1) ^ </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                   (std::hash&lt;unsigned int&gt;()(item.positionInList) &lt;&lt; 2) ^</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                   (std::hash&lt;gd::BaseEvent*&gt;()(item.event) &lt;&lt; 3) ^ </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::Instruction*&gt;()(item.instruction)) ^</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                   (std::hash&lt;gd::InstructionsList*&gt;()(item.instructionList) &lt;&lt; 1) ^</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                   (std::hash&lt;std::size_t&gt;()(item.positionInList) &lt;&lt; 2) ^</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                   (std::hash&lt;gd::BaseEvent*&gt;()(item.event) &lt;&lt; 3) ^</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                   (std::hash&lt;bool&gt;()(item.isCondition) &lt;&lt; 4);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        }</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    };</div>
@@ -274,8 +275,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        std::size_t operator()(<a class="code" href="classgd_1_1_instruction_list_item.html">gd::InstructionListItem</a> <span class="keyword">const</span>&amp; item)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::InstructionsList*&gt;()(item.instructionList)) ^ </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                   (std::hash&lt;gd::BaseEvent*&gt;()(item.event) &lt;&lt; 1) ^ </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::InstructionsList*&gt;()(item.instructionList)) ^</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                   (std::hash&lt;gd::BaseEvent*&gt;()(item.event) &lt;&lt; 1) ^</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                   (std::hash&lt;bool&gt;()(item.isConditionList) &lt;&lt; 2);</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    };</div>
@@ -285,7 +286,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    {</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        std::size_t operator()(<a class="code" href="classgd_1_1_parameter_item.html">gd::ParameterItem</a> <span class="keyword">const</span>&amp; item)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::Expression*&gt;()(item.parameter)) ^ </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <span class="keywordflow">return</span> (std::hash&lt;gd::Expression*&gt;()(item.parameter)) ^</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                   (std::hash&lt;gd::BaseEvent*&gt;()(item.event) &lt;&lt; 1);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        }</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    };</div>
@@ -305,22 +306,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classgd_1_1_events_editor_items_areas_html"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html">gd::EventsEditorItemsAreas</a></div><div class="ttdoc">Allow events to indicate where is displayed an instruction or parameter. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:128</div></div>
 <div class="ttc" id="classgd_1_1_folding_item_html"><div class="ttname"><a href="classgd_1_1_folding_item.html">gd::FoldingItem</a></div><div class="ttdoc">Used to indicate to EventsEditorItemsAreas that a fold/unfold button is displayed somewhere...</div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:110</div></div>
 <div class="ttc" id="classgd_1_1_instruction_list_item_html"><div class="ttname"><a href="classgd_1_1_instruction_list_item.html">gd::InstructionListItem</a></div><div class="ttdoc">Used to indicate to EventsEditorItemsAreas that an instruction list is displayed somewhere. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:72</div></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_base_event_html"><div class="ttname"><a href="classgd_1_1_base_event.html">gd::BaseEvent</a></div><div class="ttdoc">Base class defining an event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:254</div></div>
-<div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:27</div></div>
+<div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:28</div></div>
 <div class="ttc" id="classgd_1_1_events_editor_items_areas_html_aa52c9e1de2cfee4d04a6f81dba1012d5"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html#aa52c9e1de2cfee4d04a6f81dba1012d5">gd::EventsEditorItemsAreas::EventsEditorItemsAreas</a></div><div class="ttdeci">EventsEditorItemsAreas()</div><div class="ttdoc">Default constructor doing nothing. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:235</div></div>
 <div class="ttc" id="classgd_1_1_event_item_html"><div class="ttname"><a href="classgd_1_1_event_item.html">gd::EventItem</a></div><div class="ttdoc">Tool class to store information about an event. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:31</div></div>
 <div class="ttc" id="classgd_1_1_events_editor_items_areas_html_ab93fd619bf4f0ffd05d8abc514fe18ed"><div class="ttname"><a href="classgd_1_1_events_editor_items_areas.html#ab93fd619bf4f0ffd05d8abc514fe18ed">gd::EventsEditorItemsAreas::~EventsEditorItemsAreas</a></div><div class="ttdeci">virtual ~EventsEditorItemsAreas()</div><div class="ttdoc">Default destructor doing nothing. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:240</div></div>
 <div class="ttc" id="classgd_1_1_expression_html"><div class="ttname"><a href="classgd_1_1_expression.html">gd::Expression</a></div><div class="ttdoc">Class representing an expression used as a parameter of a gd::Instruction. This class is nothing more...</div><div class="ttdef"><b>Definition:</b> Expression.h:22</div></div>
 <div class="ttc" id="classgd_1_1_parameter_item_html"><div class="ttname"><a href="classgd_1_1_parameter_item.html">gd::ParameterItem</a></div><div class="ttdoc">Used to indicate to EventsEditorItemsAreas that a parameter is displayed somewhere. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:93</div></div>
-<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:32</div></div>
+<div class="ttc" id="classgd_1_1_instruction_html"><div class="ttname"><a href="classgd_1_1_instruction.html">gd::Instruction</a></div><div class="ttdoc">An instruction is a member of an event: It can be a condition or an action. </div><div class="ttdef"><b>Definition:</b> Instruction.h:33</div></div>
 <div class="ttc" id="classgd_1_1_instruction_item_html"><div class="ttname"><a href="classgd_1_1_instruction_item.html">gd::InstructionItem</a></div><div class="ttdoc">Used to indicate to EventsEditorItemsAreas that an instruction is displayed somewhere. </div><div class="ttdef"><b>Definition:</b> EventsEditorItemsAreas.h:49</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList&lt; Instruction &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

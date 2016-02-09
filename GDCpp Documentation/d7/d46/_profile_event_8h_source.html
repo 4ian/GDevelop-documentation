@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_d2357026098860ba2e16e48ff3d9516a.html">GDCpp</a></li><li class="navelem"><a class="el" href="../../dir_ec7a34ec7e9f2cc7a23d100f3443b3f5.html">Events</a></li><li class="navelem"><a class="el" href="../../dir_bf15e429c6d51833d23a95e8be77d82c.html">Builtin</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop C++ Platform</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -102,27 +102,27 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PROFILEEVENT_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define PROFILEEVENT_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/Event.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCpp/profile.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCpp/Runtime/profile.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>GD_API ProfileEvent : <span class="keyword">public</span> gd::BaseEvent</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d9/d16/class_profile_event.html">   17</a></span>&#160;<span class="keyword">class </span>GD_API <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a> : <span class="keyword">public</span> gd::BaseEvent</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ProfileEvent();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ProfileEvent(<span class="keyword">const</span> ProfileEvent &amp; event);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~ProfileEvent();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a> &amp; event);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ProfileEvent&amp; operator=(<span class="keyword">const</span> ProfileEvent &amp; event);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> ProfileEvent * Clone()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> ProfileEvent(*<span class="keyword">this</span>);}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a> &amp; event);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a> * Clone()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a>(*<span class="keyword">this</span>);}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> SetPreviousProfileEvent( std::shared_ptr&lt;ProfileEvent&gt; previousProfileEvent_ ) { previousProfileEvent = previousProfileEvent_; }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsExecutable()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="keyword">true</span>;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> std::string GenerateEventCode(gd::EventsCodeGenerator &amp; codeGenerator, gd::EventsCodeGenerationContext &amp; context);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> gd::String GenerateEventCode(gd::EventsCodeGenerator &amp; codeGenerator, gd::EventsCodeGenerationContext &amp; context);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::size_t index;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keyword">const</span> ProfileEvent &amp; event);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> Init(<span class="keyword">const</span> <a class="code" href="../../d9/d16/class_profile_event.html">ProfileEvent</a> &amp; event);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::shared_ptr&lt;ProfileEvent&gt; previousProfileEvent;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
@@ -130,11 +130,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // PROFILEEVENT_H</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="ttc" id="class_profile_event_html"><div class="ttname"><a href="../../d9/d16/class_profile_event.html">ProfileEvent</a></div><div class="ttdoc">Event used internally by GD C++ Platform to profile events. </div><div class="ttdef"><b>Definition:</b> ProfileEvent.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

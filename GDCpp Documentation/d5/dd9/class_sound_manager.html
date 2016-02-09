@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d9/dc5/class_sound_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,6 +102,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a10df6ca4cc7ca527a2c7d5940afdb7c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10df6ca4cc7ca527a2c7d5940afdb7c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#a10df6ca4cc7ca527a2c7d5940afdb7c5">SetResourcesManager</a> (gd::ResourcesManager *resourcesManager_)</td></tr>
+<tr class="memdesc:a10df6ca4cc7ca527a2c7d5940afdb7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the gd::ResourcesManager used by the <a class="el" href="../../d5/dd9/class_sound_manager.html" title="Manage sounds and musics played by games. ">SoundManager</a>. <br /></td></tr>
+<tr class="separator:a10df6ca4cc7ca527a2c7d5940afdb7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d4a8fa9ea9ed6f64c06463abf788dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#a52d4a8fa9ea9ed6f64c06463abf788dd">PlaySound</a> (const gd::String &amp;name, bool repeat, float volume, float pitch)</td></tr>
+<tr class="memdesc:a52d4a8fa9ea9ed6f64c06463abf788dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a sound (wav files).  <a href="#a52d4a8fa9ea9ed6f64c06463abf788dd">More...</a><br /></td></tr>
+<tr class="separator:a52d4a8fa9ea9ed6f64c06463abf788dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa5a422ac004d66fcb32163d4d1b850"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#a5fa5a422ac004d66fcb32163d4d1b850">PlayMusic</a> (const gd::String &amp;name, bool repeat, float volume, float pitch)</td></tr>
+<tr class="memdesc:a5fa5a422ac004d66fcb32163d4d1b850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a music (ogg files).  <a href="#a5fa5a422ac004d66fcb32163d4d1b850">More...</a><br /></td></tr>
+<tr class="separator:a5fa5a422ac004d66fcb32163d4d1b850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab809bce548289629e95fdeb1c9bbad7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#ab809bce548289629e95fdeb1c9bbad7c">PlaySoundOnChannel</a> (const gd::String &amp;name, unsigned int channel, bool repeat, float volume, float pitch)</td></tr>
+<tr class="memdesc:ab809bce548289629e95fdeb1c9bbad7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a sound (wav files) on a channel.  <a href="#ab809bce548289629e95fdeb1c9bbad7c">More...</a><br /></td></tr>
+<tr class="separator:ab809bce548289629e95fdeb1c9bbad7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a85e27e56823a225e525eeb784f5187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#a8a85e27e56823a225e525eeb784f5187">PlayMusicOnChannel</a> (const gd::String &amp;name, unsigned int channel, bool repeat, float volume, float pitch)</td></tr>
+<tr class="memdesc:a8a85e27e56823a225e525eeb784f5187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a music (wav files) on a channel.  <a href="#a8a85e27e56823a225e525eeb784f5187">More...</a><br /></td></tr>
+<tr class="separator:a8a85e27e56823a225e525eeb784f5187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae32596f5adab1de540b2220b94758cd7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../db/d96/class_music.html">Music</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#ae32596f5adab1de540b2220b94758cd7">GetMusicOnChannel</a> (int channel)</td></tr>
 <tr class="separator:ae32596f5adab1de540b2220b94758cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af15a5857e2de8e64cfebf8015e866ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#af15a5857e2de8e64cfebf8015e866ef5">SetMusicOnChannel</a> (int channel, std::shared_ptr&lt; <a class="el" href="../../db/d96/class_music.html">Music</a> &gt; music)</td></tr>
@@ -119,15 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2e09a7dd49485af042eb6f3e43d2e641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1e814d3a132f76cdddaf6a29960e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/class_sound_manager.html#a9e1e814d3a132f76cdddaf6a29960e10">ManageGarbage</a> ()</td></tr>
 <tr class="separator:a9e1e814d3a132f76cdddaf6a29960e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a328c89b6014b65a2a081533844e8b732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a328c89b6014b65a2a081533844e8b732"></a>
-static <a class="el" href="../../d5/dd9/class_sound_manager.html">SoundManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> ()</td></tr>
-<tr class="separator:a328c89b6014b65a2a081533844e8b732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11184267e117d1637aea68871f224552"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11184267e117d1637aea68871f224552"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroySingleton</b> ()</td></tr>
-<tr class="separator:a11184267e117d1637aea68871f224552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -188,7 +194,7 @@ vector&lt; std::shared_ptr&lt; <a class="el" href="../../d0/d9e/class_sound.html
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get global game sound volume. Example : </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> currentVolume = SoundManager::Get()-&gt;<a class="code" href="../../d5/dd9/class_sound_manager.html#a4e241edbbe7e34738cd6de059d0e5e6c">GetGlobalVolume</a>();</div>
+<p>Get global game sound volume. Example : </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> currentVolume = game.GetSoundManager().GetGlobalVolume();</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -242,6 +248,234 @@ vector&lt; std::shared_ptr&lt; <a class="el" href="../../d0/d9e/class_sound.html
 
 </div>
 </div>
+<a class="anchor" id="a5fa5a422ac004d66fcb32163d4d1b850"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::PlayMusic </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play a music (ogg files). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The resource name, or filename to load. </td></tr>
+    <tr><td class="paramname">repeat</td><td>true to loop the music </td></tr>
+    <tr><td class="paramname">volume</td><td>The volume, between 0 and 100. </td></tr>
+    <tr><td class="paramname">pitch</td><td>The pithc, 1 by default </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8a85e27e56823a225e525eeb784f5187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::PlayMusicOnChannel </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play a music (wav files) on a channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The resource name, or filename to load. </td></tr>
+    <tr><td class="paramname">channel</td><td>The channel to use. The previous music, if any, will be stopped. </td></tr>
+    <tr><td class="paramname">repeat</td><td>true to loop the music </td></tr>
+    <tr><td class="paramname">volume</td><td>The volume, between 0 and 100. </td></tr>
+    <tr><td class="paramname">pitch</td><td>The pithc, 1 by default </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dd9/class_sound_manager_a8a85e27e56823a225e525eeb784f5187_cgraph.png" border="0" usemap="#d5/dd9/class_sound_manager_a8a85e27e56823a225e525eeb784f5187_cgraph" alt=""/></div>
+<map name="d5/dd9/class_sound_manager_a8a85e27e56823a225e525eeb784f5187_cgraph" id="d5/dd9/class_sound_manager_a8a85e27e56823a225e525eeb784f5187_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a52d4a8fa9ea9ed6f64c06463abf788dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::PlaySound </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play a sound (wav files). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The resource name, or filename to load. </td></tr>
+    <tr><td class="paramname">repeat</td><td>true to loop the sound </td></tr>
+    <tr><td class="paramname">volume</td><td>The volume, between 0 and 100. </td></tr>
+    <tr><td class="paramname">pitch</td><td>The pithc, 1 by default </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab809bce548289629e95fdeb1c9bbad7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager::PlaySoundOnChannel </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pitch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play a sound (wav files) on a channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The resource name, or filename to load. </td></tr>
+    <tr><td class="paramname">channel</td><td>The channel to use. The previous sound, if any, will be stopped. </td></tr>
+    <tr><td class="paramname">repeat</td><td>true to loop the sound </td></tr>
+    <tr><td class="paramname">volume</td><td>The volume, between 0 and 100. </td></tr>
+    <tr><td class="paramname">pitch</td><td>The pithc, 1 by default </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dd9/class_sound_manager_ab809bce548289629e95fdeb1c9bbad7c_cgraph.png" border="0" usemap="#d5/dd9/class_sound_manager_ab809bce548289629e95fdeb1c9bbad7c_cgraph" alt=""/></div>
+<map name="d5/dd9/class_sound_manager_ab809bce548289629e95fdeb1c9bbad7c_cgraph" id="d5/dd9/class_sound_manager_ab809bce548289629e95fdeb1c9bbad7c_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a1e896c35085b73e2c7f048bc9fee0bd8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -255,8 +489,8 @@ vector&lt; std::shared_ptr&lt; <a class="el" href="../../d0/d9e/class_sound.html
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change global game sound volume. Example : </p><div class="fragment"><div class="line">SoundManager::Get()-&gt;<a class="code" href="../../d5/dd9/class_sound_manager.html#a1e896c35085b73e2c7f048bc9fee0bd8">SetGlobalVolume</a>(50);</div>
-</div><!-- fragment --> 
+<p>Change global game sound volume. </p>
+
 </div>
 </div>
 <a class="anchor" id="af15a5857e2de8e64cfebf8015e866ef5"></a>
@@ -320,7 +554,7 @@ vector&lt; std::shared_ptr&lt; <a class="el" href="../../d0/d9e/class_sound.html
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:25 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:06 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

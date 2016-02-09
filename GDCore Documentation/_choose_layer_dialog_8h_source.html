@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(GD_IDE_ONLY) &amp;&amp; !defined(GD_NO_WX_GUI)</span></div>
@@ -106,8 +107,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;wx/button.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;wx/dialog.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//*)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;GDCore/PlatformDefinition/Layout.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;GDCore/Project/Layout.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a></div>
@@ -120,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classgd_1_1_choose_layer_dialog.html">ChooseLayerDialog</a>(wxWindow* parent, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout, <span class="keywordtype">bool</span> addQuotes_ = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_choose_layer_dialog.html">ChooseLayerDialog</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classgd_1_1_choose_layer_dialog.html#ad213d31b2fda8820a9ee8c9590a7021e">   42</a></span>&#160;    <span class="keyword">const</span> std::string &amp; <a class="code" href="classgd_1_1_choose_layer_dialog.html#ad213d31b2fda8820a9ee8c9590a7021e">GetChosenLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> chosenLayer; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classgd_1_1_choose_layer_dialog.html#a4a1b0f3b9ba27cf59bb5922143b0397a">   42</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; <a class="code" href="classgd_1_1_choose_layer_dialog.html#a4a1b0f3b9ba27cf59bb5922143b0397a">GetChosenLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> chosenLayer; }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//(*Declarations(ChooseLayerDialog)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    wxButton* cancelBt;</div>
@@ -148,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//*)</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> addQuotes;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::string chosenLayer;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> chosenLayer;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    DECLARE_EVENT_TABLE()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
@@ -157,14 +158,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="classgd_1_1_choose_layer_dialog_html_a4a1b0f3b9ba27cf59bb5922143b0397a"><div class="ttname"><a href="classgd_1_1_choose_layer_dialog.html#a4a1b0f3b9ba27cf59bb5922143b0397a">gd::ChooseLayerDialog::GetChosenLayer</a></div><div class="ttdeci">const gd::String &amp; GetChosenLayer() const </div><div class="ttdoc">Return the selected layer. </div><div class="ttdef"><b>Definition:</b> ChooseLayerDialog.h:42</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
 <div class="ttc" id="classgd_1_1_choose_layer_dialog_html"><div class="ttname"><a href="classgd_1_1_choose_layer_dialog.html">gd::ChooseLayerDialog</a></div><div class="ttdoc">Dialog used to choose a layer from a layout. </div><div class="ttdef"><b>Definition:</b> ChooseLayerDialog.h:29</div></div>
-<div class="ttc" id="classgd_1_1_choose_layer_dialog_html_ad213d31b2fda8820a9ee8c9590a7021e"><div class="ttname"><a href="classgd_1_1_choose_layer_dialog.html#ad213d31b2fda8820a9ee8c9590a7021e">gd::ChooseLayerDialog::GetChosenLayer</a></div><div class="ttdeci">const std::string &amp; GetChosenLayer() const </div><div class="ttdoc">Return the selected layer. </div><div class="ttdef"><b>Definition:</b> ChooseLayerDialog.h:42</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

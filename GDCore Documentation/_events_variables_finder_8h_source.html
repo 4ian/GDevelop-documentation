@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_5d9e789590af4f95678b31d48a716d1e.html">IDE</a></li><li class="navelem"><a class="el" href="dir_2bf0c584d95f3090f9fe10530cf902d3.html">Events</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,12 +93,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef EVENTSVARIABLESFINDER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define EVENTSVARIABLESFINDER_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GDCore/Events/Event.h&quot;</span></div>
@@ -113,25 +114,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classgd_1_1_events_variables_finder.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgd_1_1_events_variables_finder.html">EventsVariablesFinder</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> std::set &lt; std::string &gt; <a class="code" href="classgd_1_1_events_variables_finder.html#a1ad89d99ba8d98537d438f4a8af4c9e2">FindAllGlobalVariables</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> std::set &lt; gd::String &gt; <a class="code" href="classgd_1_1_events_variables_finder.html#aff37bce48567c03e3a6cc80f08793f87">FindAllGlobalVariables</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> std::set &lt; std::string &gt; <a class="code" href="classgd_1_1_events_variables_finder.html#a8fb14556fef3e096a2387f47ce309e87">FindAllLayoutVariables</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> std::set &lt; gd::String &gt; <a class="code" href="classgd_1_1_events_variables_finder.html#ac73d44e3f29b4d0b570fef0c59351d58">FindAllLayoutVariables</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> std::set &lt; std::string &gt; <a class="code" href="classgd_1_1_events_variables_finder.html#a51a863f0132e15bc1f3cddae07936307">FindAllObjectVariables</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> std::set &lt; gd::String &gt; <a class="code" href="classgd_1_1_events_variables_finder.html#a1e8046d3cf31f20860e93661f4dd86de">FindAllObjectVariables</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout, <span class="keyword">const</span> <a class="code" href="classgd_1_1_object.html">gd::Object</a> &amp; <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> std::set &lt; std::string &gt; FindArgumentsInInstructions(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> std::set &lt; gd::String &gt; FindArgumentsInInstructions(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> &amp; instructions, <span class="keywordtype">bool</span> instructionsAreConditions,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">const</span> std::string &amp; parameterType, <span class="keyword">const</span> std::string &amp; objectName = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; parameterType, <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; objectName = <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> std::set &lt; std::string &gt; FindArgumentsInEvents(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> std::set &lt; gd::String &gt; FindArgumentsInEvents(<span class="keyword">const</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> &amp; platform,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_project.html">gd::Project</a> &amp; project, <span class="keyword">const</span> <a class="code" href="classgd_1_1_layout.html">gd::Layout</a> &amp; layout, <span class="keyword">const</span> <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp; events,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> std::string &amp; parameterType, <span class="keyword">const</span> std::string &amp; objectName = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; parameterType, <span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; objectName = <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classgd_1_1_events_variables_finder.html">EventsVariablesFinder</a>() {};</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_events_variables_finder.html">EventsVariablesFinder</a>() {};</div>
@@ -140,21 +141,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // EVENTSVARIABLESFINDER_H</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
-<div class="ttc" id="classgd_1_1_events_variables_finder_html_a1ad89d99ba8d98537d438f4a8af4c9e2"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html#a1ad89d99ba8d98537d438f4a8af4c9e2">gd::EventsVariablesFinder::FindAllGlobalVariables</a></div><div class="ttdeci">static std::set&lt; std::string &gt; FindAllGlobalVariables(const gd::Platform &amp;platform, const gd::Project &amp;project)</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.cpp:87</div></div>
-<div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:27</div></div>
-<div class="ttc" id="classgd_1_1_events_variables_finder_html_a8fb14556fef3e096a2387f47ce309e87"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html#a8fb14556fef3e096a2387f47ce309e87">gd::EventsVariablesFinder::FindAllLayoutVariables</a></div><div class="ttdeci">static std::set&lt; std::string &gt; FindAllLayoutVariables(const gd::Platform &amp;platform, const gd::Project &amp;project, const gd::Layout &amp;layout)</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.cpp:100</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_events_list_html"><div class="ttname"><a href="classgd_1_1_events_list.html">gd::EventsList</a></div><div class="ttdoc">A list of events. </div><div class="ttdef"><b>Definition:</b> EventsList.h:28</div></div>
+<div class="ttc" id="classgd_1_1_events_variables_finder_html_aff37bce48567c03e3a6cc80f08793f87"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html#aff37bce48567c03e3a6cc80f08793f87">gd::EventsVariablesFinder::FindAllGlobalVariables</a></div><div class="ttdeci">static std::set&lt; gd::String &gt; FindAllGlobalVariables(const gd::Platform &amp;platform, const gd::Project &amp;project)</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.cpp:87</div></div>
 <div class="ttc" id="classgd_1_1_platform_html"><div class="ttname"><a href="classgd_1_1_platform.html">gd::Platform</a></div><div class="ttdoc">Base class for implementing a platform. </div><div class="ttdef"><b>Definition:</b> Platform.h:40</div></div>
-<div class="ttc" id="classgd_1_1_events_variables_finder_html_a51a863f0132e15bc1f3cddae07936307"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html#a51a863f0132e15bc1f3cddae07936307">gd::EventsVariablesFinder::FindAllObjectVariables</a></div><div class="ttdeci">static std::set&lt; std::string &gt; FindAllObjectVariables(const gd::Platform &amp;platform, const gd::Project &amp;project, const gd::Layout &amp;layout, const gd::Object &amp;object)</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.cpp:110</div></div>
+<div class="ttc" id="classgd_1_1_events_variables_finder_html_a1e8046d3cf31f20860e93661f4dd86de"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html#a1e8046d3cf31f20860e93661f4dd86de">gd::EventsVariablesFinder::FindAllObjectVariables</a></div><div class="ttdeci">static std::set&lt; gd::String &gt; FindAllObjectVariables(const gd::Platform &amp;platform, const gd::Project &amp;project, const gd::Layout &amp;layout, const gd::Object &amp;object)</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.cpp:110</div></div>
 <div class="ttc" id="classgd_1_1_object_html"><div class="ttname"><a href="classgd_1_1_object.html">gd::Object</a></div><div class="ttdoc">Base class used to represent an object of a platform. </div><div class="ttdef"><b>Definition:</b> Object.h:34</div></div>
 <div class="ttc" id="classgd_1_1_events_variables_finder_html"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html">gd::EventsVariablesFinder</a></div><div class="ttdoc">Perform a search over a project or a layout, searching for layout, global or object variables...</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.h:28</div></div>
-<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:43</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_project_html"><div class="ttname"><a href="classgd_1_1_project.html">gd::Project</a></div><div class="ttdoc">Base class used to represent a project of a platform. </div><div class="ttdef"><b>Definition:</b> Project.h:44</div></div>
+<div class="ttc" id="classgd_1_1_events_variables_finder_html_ac73d44e3f29b4d0b570fef0c59351d58"><div class="ttname"><a href="classgd_1_1_events_variables_finder.html#ac73d44e3f29b4d0b570fef0c59351d58">gd::EventsVariablesFinder::FindAllLayoutVariables</a></div><div class="ttdeci">static std::set&lt; gd::String &gt; FindAllLayoutVariables(const gd::Platform &amp;platform, const gd::Project &amp;project, const gd::Layout &amp;layout)</div><div class="ttdef"><b>Definition:</b> EventsVariablesFinder.cpp:100</div></div>
 <div class="ttc" id="classgd_1_1_layout_html"><div class="ttname"><a href="classgd_1_1_layout.html">gd::Layout</a></div><div class="ttdoc">Represent a layout ( also called a scene ) of a project. </div><div class="ttdef"><b>Definition:</b> Layout.h:39</div></div>
 <div class="ttc" id="classgd_1_1_s_ptr_list_html"><div class="ttname"><a href="classgd_1_1_s_ptr_list.html">gd::SPtrList&lt; Instruction &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:01 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

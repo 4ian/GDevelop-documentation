@@ -102,20 +102,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>wxSFMLCanvas : <span class="keyword">public</span> wxControl, <span class="keyword">public</span> sf::RenderWindow</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d38/classwx_s_f_m_l_canvas.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d38/classwx_s_f_m_l_canvas.html">wxSFMLCanvas</a> : <span class="keyword">public</span> wxControl, <span class="keyword">public</span> sf::RenderWindow</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span> :</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    wxSFMLCanvas(wxWindow* Parent = NULL, wxWindowID Id = -1, <span class="keyword">const</span> wxPoint&amp; Position = wxDefaultPosition, <span class="keyword">const</span> wxSize&amp; Size = wxDefaultSize, <span class="keywordtype">long</span> Style = 0);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d4/d38/classwx_s_f_m_l_canvas.html#a03dcb50693acfc0f8333dc8664366c90">wxSFMLCanvas</a>(wxWindow* Parent = NULL, wxWindowID Id = -1, <span class="keyword">const</span> wxPoint&amp; Position = wxDefaultPosition, <span class="keyword">const</span> wxSize&amp; Size = wxDefaultSize, <span class="keywordtype">long</span> Style = 0);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~wxSFMLCanvas();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d4/d38/classwx_s_f_m_l_canvas.html#ad741f620c820f40379df655047b517aa">~wxSFMLCanvas</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span> :</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    DECLARE_EVENT_TABLE()</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    virtual <span class="keywordtype">void</span> OnUpdate();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnUpdate();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> OnIdle(wxIdleEvent&amp;);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -123,28 +123,31 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> OnEraseBackground(wxEraseEvent&amp;);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    virtual <span class="keywordtype">void</span> OnLeftDown(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    virtual <span class="keywordtype">void</span> OnLeftUp(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    virtual <span class="keywordtype">void</span> OnLeftDClick(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    virtual <span class="keywordtype">void</span> OnRightDown(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    virtual <span class="keywordtype">void</span> OnRightUp(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    virtual <span class="keywordtype">void</span> OnRightDClick(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    virtual <span class="keywordtype">void</span> OnMiddleDown(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    virtual <span class="keywordtype">void</span> OnMiddleUp(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    virtual <span class="keywordtype">void</span> OnAnyMouseEvent(wxMouseEvent &amp; event);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    virtual <span class="keywordtype">void</span> OnMotion(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    virtual <span class="keywordtype">void</span> OnKey(wxKeyEvent&amp; evt);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    virtual <span class="keywordtype">void</span> OnKeyUp(wxKeyEvent&amp; evt);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    virtual <span class="keywordtype">void</span> OnMouseWheel(wxMouseEvent&amp; event);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLeftDown(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLeftUp(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLeftDClick(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRightDown(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRightUp(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRightDClick(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnMiddleDown(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnMiddleUp(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnAnyMouseEvent(wxMouseEvent &amp; event);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnMotion(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnKey(wxKeyEvent&amp; evt);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnKeyUp(wxKeyEvent&amp; evt);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnMouseWheel(wxMouseEvent&amp; event);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // WXSFMLCANVAS_HPP</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classwx_s_f_m_l_canvas_html"><div class="ttname"><a href="../../d4/d38/classwx_s_f_m_l_canvas.html">wxSFMLCanvas</a></div><div class="ttdoc">wxSFMLCanvas allows to run SFML in a wxWidgets control </div><div class="ttdef"><b>Definition:</b> wxSFMLCanvas.hpp:17</div></div>
+<div class="ttc" id="classwx_s_f_m_l_canvas_html_ad741f620c820f40379df655047b517aa"><div class="ttname"><a href="../../d4/d38/classwx_s_f_m_l_canvas.html#ad741f620c820f40379df655047b517aa">wxSFMLCanvas::~wxSFMLCanvas</a></div><div class="ttdeci">virtual ~wxSFMLCanvas()</div><div class="ttdef"><b>Definition:</b> wxSFMLCanvas.cpp:76</div></div>
+<div class="ttc" id="classwx_s_f_m_l_canvas_html_a03dcb50693acfc0f8333dc8664366c90"><div class="ttname"><a href="../../d4/d38/classwx_s_f_m_l_canvas.html#a03dcb50693acfc0f8333dc8664366c90">wxSFMLCanvas::wxSFMLCanvas</a></div><div class="ttdeci">wxSFMLCanvas(wxWindow *Parent=NULL, wxWindowID Id=-1, const wxPoint &amp;Position=wxDefaultPosition, const wxSize &amp;Size=wxDefaultSize, long Style=0)</div><div class="ttdoc">Construct the wxSFMLCanvas. </div><div class="ttdef"><b>Definition:</b> wxSFMLCanvas.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:24 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:05 for GDevelop C++ Platform by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

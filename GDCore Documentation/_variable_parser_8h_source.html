@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_f475b029dedc4c82b538a3827ce3c9d6.html">Events</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_abd3e9346511fbf501c65c6da6d93dcd.html">GDCore</a></li><li class="navelem"><a class="el" href="dir_f475b029dedc4c82b538a3827ce3c9d6.html">Events</a></li><li class="navelem"><a class="el" href="dir_b0d899a19d64d3196b5d90656fd5a8d2.html">Parsers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,13 +93,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GDevelop Core</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2015 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2008-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This project is released under the MIT License.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef GDCORE_VARIABLEPARSER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define GDCORE_VARIABLEPARSER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GDCore/String.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Layout; }</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegd.html">gd</a> { <span class="keyword">class </span>Project; }</div>
@@ -112,12 +113,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classgd_1_1_variable_parser.html#a73931efe35378a3bc494ac2457c48f39">   53</a></span>&#160;    <a class="code" href="classgd_1_1_variable_parser.html#a73931efe35378a3bc494ac2457c48f39">VariableParser</a>(<span class="keyword">const</span> std::string &amp; expressionPlainString_) : currentPosition(0), expression(expressionPlainString_) {};</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classgd_1_1_variable_parser.html#a83f564c61e9d0a9217ff2192a361f412">   53</a></span>&#160;    <a class="code" href="classgd_1_1_variable_parser.html#a83f564c61e9d0a9217ff2192a361f412">VariableParser</a>(<span class="keyword">const</span> <a class="code" href="classgd_1_1_string.html">gd::String</a> &amp; expressionPlainString_) : currentPositionIt(), expression(expressionPlainString_) {};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classgd_1_1_variable_parser.html">VariableParser</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> Parse(<a class="code" href="classgd_1_1_variable_parser_callbacks.html">VariableParserCallbacks</a> &amp; callbacks);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::string firstErrorStr;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> firstErrorStr;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">size_t</span> firstErrorPos;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
@@ -125,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> S();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> X();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::string SkipStringExpression();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> SkipStringExpression();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> ReadToken();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -138,9 +139,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    TokenType currentTokenType;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string currentToken;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">size_t</span> currentPosition;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::string expression;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> currentToken;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classgd_1_1_string_1_1_string_iterator.html">gd::String::const_iterator</a> currentPositionIt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classgd_1_1_string.html">gd::String</a> expression;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    VariableParserCallbacks * callbacks;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> rootVariableParsed;</div>
@@ -149,24 +150,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classgd_1_1_variable_parser_callbacks.html">  100</a></span>&#160;<span class="keyword">class </span>GD_CORE_API <a class="code" href="classgd_1_1_variable_parser_callbacks.html">VariableParserCallbacks</a></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRootVariable(std::string variableName) = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnRootVariable(<a class="code" href="classgd_1_1_string.html">gd::String</a> variableName) = 0;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnChildVariable(std::string variableName) = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnChildVariable(<a class="code" href="classgd_1_1_string.html">gd::String</a> variableName) = 0;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnChildSubscript(std::string stringExpression) = 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnChildSubscript(<a class="code" href="classgd_1_1_string.html">gd::String</a> stringExpression) = 0;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // GDEXPRESSIONPARSER_H</span></div>
-<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> AdvancedExtension.cpp:10</div></div>
+<div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:26</div></div>
+<div class="ttc" id="classgd_1_1_variable_parser_html_a83f564c61e9d0a9217ff2192a361f412"><div class="ttname"><a href="classgd_1_1_variable_parser.html#a83f564c61e9d0a9217ff2192a361f412">gd::VariableParser::VariableParser</a></div><div class="ttdeci">VariableParser(const gd::String &amp;expressionPlainString_)</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> VariableParser.h:53</div></div>
 <div class="ttc" id="classgd_1_1_variable_parser_callbacks_html"><div class="ttname"><a href="classgd_1_1_variable_parser_callbacks.html">gd::VariableParserCallbacks</a></div><div class="ttdoc">Callbacks called by VariableParser when parsing a variable expression. </div><div class="ttdef"><b>Definition:</b> VariableParser.h:100</div></div>
 <div class="ttc" id="classgd_1_1_variable_parser_html"><div class="ttname"><a href="classgd_1_1_variable_parser.html">gd::VariableParser</a></div><div class="ttdoc">Parse a variable expression. </div><div class="ttdef"><b>Definition:</b> VariableParser.h:45</div></div>
-<div class="ttc" id="classgd_1_1_variable_parser_html_a73931efe35378a3bc494ac2457c48f39"><div class="ttname"><a href="classgd_1_1_variable_parser.html#a73931efe35378a3bc494ac2457c48f39">gd::VariableParser::VariableParser</a></div><div class="ttdeci">VariableParser(const std::string &amp;expressionPlainString_)</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> VariableParser.h:53</div></div>
+<div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:37</div></div>
+<div class="ttc" id="classgd_1_1_string_1_1_string_iterator_html"><div class="ttname"><a href="classgd_1_1_string_1_1_string_iterator.html">gd::String::StringIterator</a></div><div class="ttdef"><b>Definition:</b> String.h:54</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:20 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

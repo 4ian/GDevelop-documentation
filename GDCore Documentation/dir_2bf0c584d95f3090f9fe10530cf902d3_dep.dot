@@ -1,0 +1,9 @@
+digraph "Events" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_5d9e789590af4f95678b31d48a716d1e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="IDE" fontname="Helvetica", fontsize="10", URL="dir_5d9e789590af4f95678b31d48a716d1e.html"]
+  dir_2bf0c584d95f3090f9fe10530cf902d3 [shape=box, label="Events", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2bf0c584d95f3090f9fe10530cf902d3.html"];
+  }
+}

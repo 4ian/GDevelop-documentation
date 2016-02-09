@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="std::hash\< gd::Instruction\lListItem \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstd_1_1hash_3_01gd_1_1_instruction_list_item_01_4.html"];
+  Node1 [label="OpenGLTextureWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_texture_wrapper.html",tooltip="Class wrapping an OpenGL texture. "];
 }

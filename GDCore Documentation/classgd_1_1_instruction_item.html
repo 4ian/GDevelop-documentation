@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e75a9505306a658086999b674560739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_item.html#a7e75a9505306a658086999b674560739">InstructionItem</a> (<a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> *instruction_, bool isCondition, <a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> *instructionList_, unsigned int positionInList_, <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> *event)</td></tr>
-<tr class="separator:a7e75a9505306a658086999b674560739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ba777fb70ec56824add23468feb0a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_item.html#a50ba777fb70ec56824add23468feb0a9">InstructionItem</a> (<a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> *instruction_, bool isCondition, <a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> *instructionList_, std::size_t positionInList_, <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> *event)</td></tr>
+<tr class="separator:a50ba777fb70ec56824add23468feb0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67675ddccd24a6357bcc4ad27e08260"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac67675ddccd24a6357bcc4ad27e08260"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classgd_1_1_instruction_item.html">gd::InstructionItem</a> &amp;other) const </td></tr>
 <tr class="separator:ac67675ddccd24a6357bcc4ad27e08260"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,9 +121,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCondition</b></td><
 <tr class="memitem:ab6341b27915388f26d14f8dc9afef307"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6341b27915388f26d14f8dc9afef307"></a>
 <a class="el" href="classgd_1_1_s_ptr_list.html">gd::InstructionsList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instructionList</b></td></tr>
 <tr class="separator:ab6341b27915388f26d14f8dc9afef307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19bd23c061e08f8526a64ebd789207fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19bd23c061e08f8526a64ebd789207fa"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>positionInList</b></td></tr>
-<tr class="separator:a19bd23c061e08f8526a64ebd789207fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ff47b31ae432cd681aae436fa1455f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1ff47b31ae432cd681aae436fa1455f"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>positionInList</b></td></tr>
+<tr class="separator:ac1ff47b31ae432cd681aae436fa1455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096762c14be008864a99841df26e2d81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a096762c14be008864a99841df26e2d81"></a>
 <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>event</b></td></tr>
 <tr class="separator:a096762c14be008864a99841df26e2d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,7 +131,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>positionInLis
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used to indicate to <a class="el" href="classgd_1_1_events_editor_items_areas.html" title="Allow events to indicate where is displayed an instruction or parameter. ">EventsEditorItemsAreas</a> that an instruction is displayed somewhere. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7e75a9505306a658086999b674560739"></a>
+<a class="anchor" id="a50ba777fb70ec56824add23468feb0a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -156,7 +156,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>positionInLis
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>positionInList_</em>, </td>
         </tr>
         <tr>
@@ -183,7 +183,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>positionInLis
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 22 2015 08:41:21 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 9 2016 20:21:02 for GDevelop Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

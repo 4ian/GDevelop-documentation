@@ -1,0 +1,32 @@
+digraph "RuntimeSpriteObject::ChangeProperty"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RuntimeSpriteObject\l::ChangeProperty",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RuntimeSpriteObject\l::SetCurrentAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#ab7654a3609e08c63a77e2ad5400c5051",tooltip="Change the animation to play. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RuntimeSpriteObject\l::GetAnimationsCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#ae3248509b28ea2241eb45b3b58094c82",tooltip="Get the number of animations inside this object. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RuntimeSpriteObject\l::SetAngle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a78b4590441392f90ef9160358ea4414e",tooltip="Get the angle of the object, in degrees. "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GDRound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d32/group___common_programming_tools.html#gad0c5bff9b8cef8a00b6bf6127ec57245"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RuntimeSpriteObject\l::SetSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a5ecd247890664c41cc0a8918a03de0ac",tooltip="Change the frame of the animation being displayed. "];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RuntimeSpriteObject\l::SetOpacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a0c3a9764317ba69f08ddc3bd4ad684f1",tooltip="Set the opacity of the object. "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="RuntimeSpriteObject\l::SetBlendMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a0d206a23f01b011a3b7c08b416498b61",tooltip="Change the blend mode used to display the sprite. "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RuntimeSpriteObject\l::SetScaleX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a1323d41f16779b2fe33c015e4cfc040f",tooltip="Change the scale factor of the object on X axis. "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="RuntimeSpriteObject\l::GetScaleX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a8ae2847a3beaeb88494b6b4addd19a22",tooltip="Get the scale factor of the object on X axis. "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="RuntimeSpriteObject\l::SetScaleY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a6bb0a9b76d6b7c7be44ae57f6cb63e0c",tooltip="Change the scale factor of the object on Y axis. "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="RuntimeSpriteObject\l::GetScaleY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d1a/class_runtime_sprite_object.html#a295dd9a49d2eb3724bc949514ab713f3",tooltip="Get the scale factor of the object on Y axis. "];
+}

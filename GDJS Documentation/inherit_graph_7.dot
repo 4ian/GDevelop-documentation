@@ -3,7 +3,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="LayoutEditorPreviewer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="EventsCodeGenerator",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="gdjs::Previewer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d22/classgdjs_1_1_previewer.html",tooltip="Allow the platform to launch preview in a browser. "];
+  Node2 [label="gdjs::EventsCodeGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d4f/classgdjs_1_1_events_code_generator.html",tooltip="The class being responsible for generating Javascript code from events. "];
 }

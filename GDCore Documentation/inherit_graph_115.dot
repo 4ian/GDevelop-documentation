@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Polygon2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_polygon2d.html",tooltip="Represents a polygon. Usually used for collisions masks. "];
+  Node1 [label="gd::Variable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgd_1_1_variable.html",tooltip="Defines a variable which can be used by an object, a layout or a project. "];
 }
