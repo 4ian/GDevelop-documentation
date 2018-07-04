@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GDevelop JS Runtime Documentation</title>
+    
+    <meta name="description" content="Documentation for the GDevelop JavaScript game engine" />
+    
+        <meta name="keywords" content="docs, documentation, gdevelop, game, engine, html5, javascript" />
+        <meta name="keyword" content="docs, documentation, gdevelop, game, engine, html5, javascript" />
+    
+    
+    
+    <meta property="og:title" content="GDevelop JS Runtime Documentation"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-2018 Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
+    </script>
+    
+
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', config.googleAnalytics]);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">GDevelop JS Runtime</a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="gdjs">
+            <span class="title">
+                <a href="gdjs.html">gdjs</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.getBehaviorConstructor"><a href="gdjs.html#.getBehaviorConstructor">getBehaviorConstructor</a></li>
+            
+                <li data-name="gdjs.getObjectConstructor"><a href="gdjs.html#.getObjectConstructor">getObjectConstructor</a></li>
+            
+                <li data-name="gdjs.random"><a href="gdjs.html#.random">random</a></li>
+            
+                <li data-name="gdjs.registerBehaviors"><a href="gdjs.html#.registerBehaviors">registerBehaviors</a></li>
+            
+                <li data-name="gdjs.registerGlobalCallbacks"><a href="gdjs.html#.registerGlobalCallbacks">registerGlobalCallbacks</a></li>
+            
+                <li data-name="gdjs.registerObjects"><a href="gdjs.html#.registerObjects">registerObjects</a></li>
+            
+                <li data-name="gdjs.rgbToHex"><a href="gdjs.html#.rgbToHex">rgbToHex</a></li>
+            
+                <li data-name="gdjs.rgbToHexNumber"><a href="gdjs.html#.rgbToHexNumber">rgbToHexNumber</a></li>
+            
+                <li data-name="gdjs.staticArray"><a href="gdjs.html#.staticArray">staticArray</a></li>
+            
+                <li data-name="gdjs.staticArray2"><a href="gdjs.html#.staticArray2">staticArray2</a></li>
+            
+                <li data-name="gdjs.staticObject"><a href="gdjs.html#.staticObject">staticObject</a></li>
+            
+                <li data-name="gdjs.toDegrees"><a href="gdjs.html#.toDegrees">toDegrees</a></li>
+            
+                <li data-name="gdjs.toRad"><a href="gdjs.html#.toRad">toRad</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.evtTools">
+            <span class="title">
+                <a href="gdjs.evtTools.html">gdjs.evtTools</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.evtTools.object">
+            <span class="title">
+                <a href="gdjs.evtTools.object.html">gdjs.evtTools.object</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.evtTools.object.pickObjectsIf"><a href="gdjs.evtTools.object.html#.pickObjectsIf">pickObjectsIf</a></li>
+            
+                <li data-name="gdjs.evtTools.object.pickOnly"><a href="gdjs.evtTools.object.html#.pickOnly">pickOnly</a></li>
+            
+                <li data-name="gdjs.evtTools.object.twoListsTest"><a href="gdjs.evtTools.object.html#.twoListsTest">twoListsTest</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.HSHG">
+            <span class="title">
+                <a href="gdjs.HSHG.html">gdjs.HSHG</a>
+                
+                <span class="static">static</span>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.CocosDirectorManager">
+            <span class="title">
+                <a href="gdjs.CocosDirectorManager.html">gdjs.CocosDirectorManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.CocosImageManager">
+            <span class="title">
+                <a href="gdjs.CocosImageManager.html">gdjs.CocosImageManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.CocosImageManager#getInvalidTexture"><a href="gdjs.CocosImageManager.html#getInvalidTexture">getInvalidTexture</a></li>
+            
+                <li data-name="gdjs.CocosImageManager#getTexture"><a href="gdjs.CocosImageManager.html#getTexture">getTexture</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.CocosSoundManager">
+            <span class="title">
+                <a href="gdjs.CocosSoundManager.html">gdjs.CocosSoundManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.CocosTools">
+            <span class="title">
+                <a href="gdjs.CocosTools.html">gdjs.CocosTools</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.CocosTools.getDefaultVertexShader"><a href="gdjs.CocosTools.html#.getDefaultVertexShader">getDefaultVertexShader</a></li>
+            
+                <li data-name="gdjs.CocosTools.getEffect"><a href="gdjs.CocosTools.html#.getEffect">getEffect</a></li>
+            
+                <li data-name="gdjs.CocosTools.hexToCCColor"><a href="gdjs.CocosTools.html#.hexToCCColor">hexToCCColor</a></li>
+            
+                <li data-name="gdjs.CocosTools.isHTML5"><a href="gdjs.CocosTools.html#.isHTML5">isHTML5</a></li>
+            
+                <li data-name="gdjs.CocosTools.makeLightNightShader"><a href="gdjs.CocosTools.html#.makeLightNightShader">makeLightNightShader</a></li>
+            
+                <li data-name="gdjs.CocosTools.makeNightShader"><a href="gdjs.CocosTools.html#.makeNightShader">makeNightShader</a></li>
+            
+                <li data-name="gdjs.CocosTools.makeSepiaShader"><a href="gdjs.CocosTools.html#.makeSepiaShader">makeSepiaShader</a></li>
+            
+                <li data-name="gdjs.CocosTools.makeTilingShader"><a href="gdjs.CocosTools.html#.makeTilingShader">makeTilingShader</a></li>
+            
+                <li data-name="gdjs.CocosTools.setUniformLocationWith1f"><a href="gdjs.CocosTools.html#.setUniformLocationWith1f">setUniformLocationWith1f</a></li>
+            
+                <li data-name="gdjs.CocosTools.setUniformLocationWith2f"><a href="gdjs.CocosTools.html#.setUniformLocationWith2f">setUniformLocationWith2f</a></li>
+            
+                <li data-name="gdjs.CocosTools.setUniformLocationWith4f"><a href="gdjs.CocosTools.html#.setUniformLocationWith4f">setUniformLocationWith4f</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.EventsContext">
+            <span class="title">
+                <a href="gdjs.EventsContext.html">gdjs.EventsContext</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.EventsContext#addObjectsToEventsMap"><a href="gdjs.EventsContext.html#addObjectsToEventsMap">addObjectsToEventsMap</a></li>
+            
+                <li data-name="gdjs.EventsContext#clearEventsObjectsMap"><a href="gdjs.EventsContext.html#clearEventsObjectsMap">clearEventsObjectsMap</a></li>
+            
+                <li data-name="gdjs.EventsContext#getEventsObjectsMap"><a href="gdjs.EventsContext.html#getEventsObjectsMap">getEventsObjectsMap</a></li>
+            
+                <li data-name="gdjs.EventsContext#startNewFrame"><a href="gdjs.EventsContext.html#startNewFrame">startNewFrame</a></li>
+            
+                <li data-name="gdjs.EventsContext#triggerOnce"><a href="gdjs.EventsContext.html#triggerOnce">triggerOnce</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.Force">
+            <span class="title">
+                <a href="gdjs.Force.html">gdjs.Force</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.Force#getAngle"><a href="gdjs.Force.html#getAngle">getAngle</a></li>
+            
+                <li data-name="gdjs.Force#getClearing"><a href="gdjs.Force.html#getClearing">getClearing</a></li>
+            
+                <li data-name="gdjs.Force#getLength"><a href="gdjs.Force.html#getLength">getLength</a></li>
+            
+                <li data-name="gdjs.Force#getX"><a href="gdjs.Force.html#getX">getX</a></li>
+            
+                <li data-name="gdjs.Force#getY"><a href="gdjs.Force.html#getY">getY</a></li>
+            
+                <li data-name="gdjs.Force#setAngle"><a href="gdjs.Force.html#setAngle">setAngle</a></li>
+            
+                <li data-name="gdjs.Force#setClearing"><a href="gdjs.Force.html#setClearing">setClearing</a></li>
+            
+                <li data-name="gdjs.Force#setLength"><a href="gdjs.Force.html#setLength">setLength</a></li>
+            
+                <li data-name="gdjs.Force#setX"><a href="gdjs.Force.html#setX">setX</a></li>
+            
+                <li data-name="gdjs.Force#setY"><a href="gdjs.Force.html#setY">setY</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.HowlerSound">
+            <span class="title">
+                <a href="gdjs.HowlerSound.html">gdjs.HowlerSound</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.HowlerSoundManager">
+            <span class="title">
+                <a href="gdjs.HowlerSoundManager.html">gdjs.HowlerSoundManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.HSHG.Grid">
+            <span class="title">
+                <a href="gdjs.HSHG.Grid.html">gdjs.HSHG.Grid</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.HSHG.HSHG">
+            <span class="title">
+                <a href="gdjs.HSHG.HSHG.html">gdjs.HSHG.HSHG</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.HSHG.HSHG#addObject"><a href="gdjs.HSHG.HSHG.html#addObject">addObject</a></li>
+            
+                <li data-name="gdjs.HSHG.HSHG#queryForCollisionWith"><a href="gdjs.HSHG.HSHG.html#queryForCollisionWith">queryForCollisionWith</a></li>
+            
+                <li data-name="gdjs.HSHG.HSHG#removeObject"><a href="gdjs.HSHG.HSHG.html#removeObject">removeObject</a></li>
+            
+                <li data-name="gdjs.HSHG.HSHG#update"><a href="gdjs.HSHG.HSHG.html#update">update</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.InputManager">
+            <span class="title">
+                <a href="gdjs.InputManager.html">gdjs.InputManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.InputManager#anyKeyPressed"><a href="gdjs.InputManager.html#anyKeyPressed">anyKeyPressed</a></li>
+            
+                <li data-name="gdjs.InputManager#getAllTouchIdentifiers"><a href="gdjs.InputManager.html#getAllTouchIdentifiers">getAllTouchIdentifiers</a></li>
+            
+                <li data-name="gdjs.InputManager#getLastPressedKey"><a href="gdjs.InputManager.html#getLastPressedKey">getLastPressedKey</a></li>
+            
+                <li data-name="gdjs.InputManager#getMouseWheelDelta"><a href="gdjs.InputManager.html#getMouseWheelDelta">getMouseWheelDelta</a></li>
+            
+                <li data-name="gdjs.InputManager#getMouseX"><a href="gdjs.InputManager.html#getMouseX">getMouseX</a></li>
+            
+                <li data-name="gdjs.InputManager#getMouseY"><a href="gdjs.InputManager.html#getMouseY">getMouseY</a></li>
+            
+                <li data-name="gdjs.InputManager#getTouchX"><a href="gdjs.InputManager.html#getTouchX">getTouchX</a></li>
+            
+                <li data-name="gdjs.InputManager#getTouchY"><a href="gdjs.InputManager.html#getTouchY">getTouchY</a></li>
+            
+                <li data-name="gdjs.InputManager#isKeyPressed"><a href="gdjs.InputManager.html#isKeyPressed">isKeyPressed</a></li>
+            
+                <li data-name="gdjs.InputManager#isMouseButtonPressed"><a href="gdjs.InputManager.html#isMouseButtonPressed">isMouseButtonPressed</a></li>
+            
+                <li data-name="gdjs.InputManager#isMouseButtonReleased"><a href="gdjs.InputManager.html#isMouseButtonReleased">isMouseButtonReleased</a></li>
+            
+                <li data-name="gdjs.InputManager#onFrameEnded"><a href="gdjs.InputManager.html#onFrameEnded">onFrameEnded</a></li>
+            
+                <li data-name="gdjs.InputManager#onKeyPressed"><a href="gdjs.InputManager.html#onKeyPressed">onKeyPressed</a></li>
+            
+                <li data-name="gdjs.InputManager#onKeyReleased"><a href="gdjs.InputManager.html#onKeyReleased">onKeyReleased</a></li>
+            
+                <li data-name="gdjs.InputManager#onMouseButtonPressed"><a href="gdjs.InputManager.html#onMouseButtonPressed">onMouseButtonPressed</a></li>
+            
+                <li data-name="gdjs.InputManager#onMouseButtonReleased"><a href="gdjs.InputManager.html#onMouseButtonReleased">onMouseButtonReleased</a></li>
+            
+                <li data-name="gdjs.InputManager#onMouseMove"><a href="gdjs.InputManager.html#onMouseMove">onMouseMove</a></li>
+            
+                <li data-name="gdjs.InputManager#onMouseWheel"><a href="gdjs.InputManager.html#onMouseWheel">onMouseWheel</a></li>
+            
+                <li data-name="gdjs.InputManager#touchSimulateMouse"><a href="gdjs.InputManager.html#touchSimulateMouse">touchSimulateMouse</a></li>
+            
+                <li data-name="gdjs.InputManager#wasKeyReleased"><a href="gdjs.InputManager.html#wasKeyReleased">wasKeyReleased</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.Layer">
+            <span class="title">
+                <a href="gdjs.Layer.html">gdjs.Layer</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.Layer#convertCoords"><a href="gdjs.Layer.html#convertCoords">convertCoords</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraX"><a href="gdjs.Layer.html#getCameraX">getCameraX</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraY"><a href="gdjs.Layer.html#getCameraY">getCameraY</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraZoom"><a href="gdjs.Layer.html#getCameraZoom">getCameraZoom</a></li>
+            
+                <li data-name="gdjs.Layer#getElapsedTime"><a href="gdjs.Layer.html#getElapsedTime">getElapsedTime</a></li>
+            
+                <li data-name="gdjs.Layer#getName"><a href="gdjs.Layer.html#getName">getName</a></li>
+            
+                <li data-name="gdjs.Layer#getTimeScale"><a href="gdjs.Layer.html#getTimeScale">getTimeScale</a></li>
+            
+                <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.Layer#setCameraRotation"><a href="gdjs.Layer.html#setCameraRotation">setCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#setCameraX"><a href="gdjs.Layer.html#setCameraX">setCameraX</a></li>
+            
+                <li data-name="gdjs.Layer#setCameraY"><a href="gdjs.Layer.html#setCameraY">setCameraY</a></li>
+            
+                <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
+            
+                <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.PixiImageManager">
+            <span class="title">
+                <a href="gdjs.PixiImageManager.html">gdjs.PixiImageManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.PixiImageManager#getInvalidPIXITexture"><a href="gdjs.PixiImageManager.html#getInvalidPIXITexture">getInvalidPIXITexture</a></li>
+            
+                <li data-name="gdjs.PixiImageManager#getPIXITexture"><a href="gdjs.PixiImageManager.html#getPIXITexture">getPIXITexture</a></li>
+            
+                <li data-name="gdjs.PixiImageManager#loadTextures"><a href="gdjs.PixiImageManager.html#loadTextures">loadTextures</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.Polygon">
+            <span class="title">
+                <a href="gdjs.Polygon.html">gdjs.Polygon</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.Polygon#center"><a href="gdjs.Polygon.html#center">center</a></li>
+            
+                <li data-name="gdjs.Polygon#edges"><a href="gdjs.Polygon.html#edges">edges</a></li>
+            
+                <li data-name="gdjs.Polygon#vertices"><a href="gdjs.Polygon.html#vertices">vertices</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.Polygon.collisionTest"><a href="gdjs.Polygon.html#.collisionTest">collisionTest</a></li>
+            
+                <li data-name="gdjs.Polygon.isPointInside"><a href="gdjs.Polygon.html#.isPointInside">isPointInside</a></li>
+            
+                <li data-name="gdjs.Polygon.raycastTest"><a href="gdjs.Polygon.html#.raycastTest">raycastTest</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.Profiler">
+            <span class="title">
+                <a href="gdjs.Profiler.html">gdjs.Profiler</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.Profiler.getProfilerSectionTexts"><a href="gdjs.Profiler.html#.getProfilerSectionTexts">getProfilerSectionTexts</a></li>
+            
+                <li data-name="gdjs.Profiler#getFramesAverageMeasures"><a href="gdjs.Profiler.html#getFramesAverageMeasures">getFramesAverageMeasures</a></li>
+            
+                <li data-name="gdjs.Profiler#getStats"><a href="gdjs.Profiler.html#getStats">getStats</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeBehavior">
+            <span class="title">
+                <a href="gdjs.RuntimeBehavior.html">gdjs.RuntimeBehavior</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeBehavior#activate"><a href="gdjs.RuntimeBehavior.html#activate">activate</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#activated"><a href="gdjs.RuntimeBehavior.html#activated">activated</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#doStepPostEvents"><a href="gdjs.RuntimeBehavior.html#doStepPostEvents">doStepPostEvents</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#doStepPreEvents"><a href="gdjs.RuntimeBehavior.html#doStepPreEvents">doStepPreEvents</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#getName"><a href="gdjs.RuntimeBehavior.html#getName">getName</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#getNameId"><a href="gdjs.RuntimeBehavior.html#getNameId">getNameId</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#onActivate"><a href="gdjs.RuntimeBehavior.html#onActivate">onActivate</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#onDeActivate"><a href="gdjs.RuntimeBehavior.html#onDeActivate">onDeActivate</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#ownerRemovedFromScene"><a href="gdjs.RuntimeBehavior.html#ownerRemovedFromScene">ownerRemovedFromScene</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#stepPostEvents"><a href="gdjs.RuntimeBehavior.html#stepPostEvents">stepPostEvents</a></li>
+            
+                <li data-name="gdjs.RuntimeBehavior#stepPreEvents"><a href="gdjs.RuntimeBehavior.html#stepPreEvents">stepPreEvents</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeGame">
+            <span class="title">
+                <a href="gdjs.RuntimeGame.html">gdjs.RuntimeGame</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeGame#adaptRendererSizeToFillScreen"><a href="gdjs.RuntimeGame.html#adaptRendererSizeToFillScreen">adaptRendererSizeToFillScreen</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getDefaultHeight"><a href="gdjs.RuntimeGame.html#getDefaultHeight">getDefaultHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getDefaultWidth"><a href="gdjs.RuntimeGame.html#getDefaultWidth">getDefaultWidth</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameData"><a href="gdjs.RuntimeGame.html#getGameData">getGameData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getImageManager"><a href="gdjs.RuntimeGame.html#getImageManager">getImageManager</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getInitialObjectsData"><a href="gdjs.RuntimeGame.html#getInitialObjectsData">getInitialObjectsData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getInputManager"><a href="gdjs.RuntimeGame.html#getInputManager">getInputManager</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getMinimalFramerate"><a href="gdjs.RuntimeGame.html#getMinimalFramerate">getMinimalFramerate</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getOriginalHeight"><a href="gdjs.RuntimeGame.html#getOriginalHeight">getOriginalHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getOriginalWidth"><a href="gdjs.RuntimeGame.html#getOriginalWidth">getOriginalWidth</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getSceneData"><a href="gdjs.RuntimeGame.html#getSceneData">getSceneData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getSoundManager"><a href="gdjs.RuntimeGame.html#getSoundManager">getSoundManager</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getVariables"><a href="gdjs.RuntimeGame.html#getVariables">getVariables</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#hasScene"><a href="gdjs.RuntimeGame.html#hasScene">hasScene</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#loadAllAssets"><a href="gdjs.RuntimeGame.html#loadAllAssets">loadAllAssets</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#pause"><a href="gdjs.RuntimeGame.html#pause">pause</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setDefaultHeight"><a href="gdjs.RuntimeGame.html#setDefaultHeight">setDefaultHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setDefaultWidth"><a href="gdjs.RuntimeGame.html#setDefaultWidth">setDefaultWidth</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#startCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#startGameLoop"><a href="gdjs.RuntimeGame.html#startGameLoop">startGameLoop</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#stopCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#stopCurrentSceneProfiler">stopCurrentSceneProfiler</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeGameCocosRenderer">
+            <span class="title">
+                <a href="gdjs.RuntimeGameCocosRenderer.html">gdjs.RuntimeGameCocosRenderer</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeGameCocosRenderer#keepAspectRatio"><a href="gdjs.RuntimeGameCocosRenderer.html#keepAspectRatio">keepAspectRatio</a></li>
+            
+                <li data-name="gdjs.RuntimeGameCocosRenderer#onSceneUpdated"><a href="gdjs.RuntimeGameCocosRenderer.html#onSceneUpdated">onSceneUpdated</a></li>
+            
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setFullScreen"><a href="gdjs.RuntimeGameCocosRenderer.html#setFullScreen">setFullScreen</a></li>
+            
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setMargins"><a href="gdjs.RuntimeGameCocosRenderer.html#setMargins">setMargins</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeGamePixiRenderer">
+            <span class="title">
+                <a href="gdjs.RuntimeGamePixiRenderer.html">gdjs.RuntimeGamePixiRenderer</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#bindStandardEvents"><a href="gdjs.RuntimeGamePixiRenderer.html#bindStandardEvents">bindStandardEvents</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#createStandardCanvas"><a href="gdjs.RuntimeGamePixiRenderer.html#createStandardCanvas">createStandardCanvas</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentHeight"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentHeight">getCurrentHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentWidth"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentWidth">getCurrentWidth</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#keepAspectRatio"><a href="gdjs.RuntimeGamePixiRenderer.html#keepAspectRatio">keepAspectRatio</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setFullScreen"><a href="gdjs.RuntimeGamePixiRenderer.html#setFullScreen">setFullScreen</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setMargins"><a href="gdjs.RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setSize">setSize</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeObject">
+            <span class="title">
+                <a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeObject.collisionTest"><a href="gdjs.RuntimeObject.html#.collisionTest">collisionTest</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.distanceTest"><a href="gdjs.RuntimeObject.html#.distanceTest">distanceTest</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.getNameIdentifier"><a href="gdjs.RuntimeObject.html#.getNameIdentifier">getNameIdentifier</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.getVariableChildCount"><a href="gdjs.RuntimeObject.html#.getVariableChildCount">getVariableChildCount</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.getVariableNumber"><a href="gdjs.RuntimeObject.html#.getVariableNumber">getVariableNumber</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.getVariableString"><a href="gdjs.RuntimeObject.html#.getVariableString">getVariableString</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.returnVariable"><a href="gdjs.RuntimeObject.html#.returnVariable">returnVariable</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.setVariableNumber"><a href="gdjs.RuntimeObject.html#.setVariableNumber">setVariableNumber</a></li>
+            
+                <li data-name="gdjs.RuntimeObject.setVariableString"><a href="gdjs.RuntimeObject.html#.setVariableString">setVariableString</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#activateBehavior"><a href="gdjs.RuntimeObject.html#activateBehavior">activateBehavior</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#addForce"><a href="gdjs.RuntimeObject.html#addForce">addForce</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#addForceTowardObject"><a href="gdjs.RuntimeObject.html#addForceTowardObject">addForceTowardObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#addForceTowardPosition"><a href="gdjs.RuntimeObject.html#addForceTowardPosition">addForceTowardPosition</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#addPolarForce"><a href="gdjs.RuntimeObject.html#addPolarForce">addPolarForce</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#averageForceAngleIs"><a href="gdjs.RuntimeObject.html#averageForceAngleIs">averageForceAngleIs</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#behaviorActivated"><a href="gdjs.RuntimeObject.html#behaviorActivated">behaviorActivated</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#clearForces"><a href="gdjs.RuntimeObject.html#clearForces">clearForces</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#cursorOnObject"><a href="gdjs.RuntimeObject.html#cursorOnObject">cursorOnObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#deleteFromScene"><a href="gdjs.RuntimeObject.html#deleteFromScene">deleteFromScene</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#extraInitializationFromInitialInstance"><a href="gdjs.RuntimeObject.html#extraInitializationFromInitialInstance">extraInitializationFromInitialInstance</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getAngle"><a href="gdjs.RuntimeObject.html#getAngle">getAngle</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getAverageForce"><a href="gdjs.RuntimeObject.html#getAverageForce">getAverageForce</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getBehavior"><a href="gdjs.RuntimeObject.html#getBehavior">getBehavior</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getCenterX"><a href="gdjs.RuntimeObject.html#getCenterX">getCenterX</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getCenterY"><a href="gdjs.RuntimeObject.html#getCenterY">getCenterY</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getDistanceToObject"><a href="gdjs.RuntimeObject.html#getDistanceToObject">getDistanceToObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getDrawableX"><a href="gdjs.RuntimeObject.html#getDrawableX">getDrawableX</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getDrawableY"><a href="gdjs.RuntimeObject.html#getDrawableY">getDrawableY</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getElapsedTime"><a href="gdjs.RuntimeObject.html#getElapsedTime">getElapsedTime</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getHeight"><a href="gdjs.RuntimeObject.html#getHeight">getHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getHitBoxes"><a href="gdjs.RuntimeObject.html#getHitBoxes">getHitBoxes</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getLayer"><a href="gdjs.RuntimeObject.html#getLayer">getLayer</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getName"><a href="gdjs.RuntimeObject.html#getName">getName</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getNameId"><a href="gdjs.RuntimeObject.html#getNameId">getNameId</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getRendererObject"><a href="gdjs.RuntimeObject.html#getRendererObject">getRendererObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getSqDistanceTo"><a href="gdjs.RuntimeObject.html#getSqDistanceTo">getSqDistanceTo</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getSqDistanceToObject"><a href="gdjs.RuntimeObject.html#getSqDistanceToObject">getSqDistanceToObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getUniqueId"><a href="gdjs.RuntimeObject.html#getUniqueId">getUniqueId</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getVariables"><a href="gdjs.RuntimeObject.html#getVariables">getVariables</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getWidth"><a href="gdjs.RuntimeObject.html#getWidth">getWidth</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getX"><a href="gdjs.RuntimeObject.html#getX">getX</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getY"><a href="gdjs.RuntimeObject.html#getY">getY</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#getZOrder"><a href="gdjs.RuntimeObject.html#getZOrder">getZOrder</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#hasBehavior"><a href="gdjs.RuntimeObject.html#hasBehavior">hasBehavior</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#hasNoForces"><a href="gdjs.RuntimeObject.html#hasNoForces">hasNoForces</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#hasVariable"><a href="gdjs.RuntimeObject.html#hasVariable">hasVariable</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#hide"><a href="gdjs.RuntimeObject.html#hide">hide</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#insideObject"><a href="gdjs.RuntimeObject.html#insideObject">insideObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#isCollidingWithPoint"><a href="gdjs.RuntimeObject.html#isCollidingWithPoint">isCollidingWithPoint</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#isHidden"><a href="gdjs.RuntimeObject.html#isHidden">isHidden</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#isOnLayer"><a href="gdjs.RuntimeObject.html#isOnLayer">isOnLayer</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#isVisible"><a href="gdjs.RuntimeObject.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#onDeletedFromScene"><a href="gdjs.RuntimeObject.html#onDeletedFromScene">onDeletedFromScene</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#putAround"><a href="gdjs.RuntimeObject.html#putAround">putAround</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#putAroundObject"><a href="gdjs.RuntimeObject.html#putAroundObject">putAroundObject</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#raycastTest"><a href="gdjs.RuntimeObject.html#raycastTest">raycastTest</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#separateFromObjects"><a href="gdjs.RuntimeObject.html#separateFromObjects">separateFromObjects</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#separateFromObjectsList"><a href="gdjs.RuntimeObject.html#separateFromObjectsList">separateFromObjectsList</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#separateObjectsWithForces"><a href="gdjs.RuntimeObject.html#separateObjectsWithForces">separateObjectsWithForces</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#separateObjectsWithoutForces"><a href="gdjs.RuntimeObject.html#separateObjectsWithoutForces">separateObjectsWithoutForces</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setAngle"><a href="gdjs.RuntimeObject.html#setAngle">setAngle</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setLayer"><a href="gdjs.RuntimeObject.html#setLayer">setLayer</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setPosition"><a href="gdjs.RuntimeObject.html#setPosition">setPosition</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setX"><a href="gdjs.RuntimeObject.html#setX">setX</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setY"><a href="gdjs.RuntimeObject.html#setY">setY</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setZOrder"><a href="gdjs.RuntimeObject.html#setZOrder">setZOrder</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#stepBehaviorsPostEvents"><a href="gdjs.RuntimeObject.html#stepBehaviorsPostEvents">stepBehaviorsPostEvents</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#stepBehaviorsPreEvents"><a href="gdjs.RuntimeObject.html#stepBehaviorsPreEvents">stepBehaviorsPreEvents</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#update"><a href="gdjs.RuntimeObject.html#update">update</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#updateForces"><a href="gdjs.RuntimeObject.html#updateForces">updateForces</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#updateHitBoxes"><a href="gdjs.RuntimeObject.html#updateHitBoxes">updateHitBoxes</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeScene">
+            <span class="title">
+                <a href="gdjs.RuntimeScene.html">gdjs.RuntimeScene</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeScene#addObject"><a href="gdjs.RuntimeScene.html#addObject">addObject</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#createNewUniqueId"><a href="gdjs.RuntimeScene.html#createNewUniqueId">createNewUniqueId</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#createObject"><a href="gdjs.RuntimeScene.html#createObject">createObject</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#createObjectsFrom"><a href="gdjs.RuntimeScene.html#createObjectsFrom">createObjectsFrom</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getGame"><a href="gdjs.RuntimeScene.html#getGame">getGame</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getInitialSharedDataForBehavior"><a href="gdjs.RuntimeScene.html#getInitialSharedDataForBehavior">getInitialSharedDataForBehavior</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getName"><a href="gdjs.RuntimeScene.html#getName">getName</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getObjects"><a href="gdjs.RuntimeScene.html#getObjects">getObjects</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getProfiler"><a href="gdjs.RuntimeScene.html#getProfiler">getProfiler</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getRenderer"><a href="gdjs.RuntimeScene.html#getRenderer">getRenderer</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getRequestedChange"><a href="gdjs.RuntimeScene.html#getRequestedChange">getRequestedChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getRequestedScene"><a href="gdjs.RuntimeScene.html#getRequestedScene">getRequestedScene</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getSoundManager"><a href="gdjs.RuntimeScene.html#getSoundManager">getSoundManager</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getTimeManager"><a href="gdjs.RuntimeScene.html#getTimeManager">getTimeManager</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#getVariables"><a href="gdjs.RuntimeScene.html#getVariables">getVariables</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#loadFromScene"><a href="gdjs.RuntimeScene.html#loadFromScene">loadFromScene</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#markObjectForDeletion"><a href="gdjs.RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#onCanvasResized"><a href="gdjs.RuntimeScene.html#onCanvasResized">onCanvasResized</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#render"><a href="gdjs.RuntimeScene.html#render">render</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#renderAndStep"><a href="gdjs.RuntimeScene.html#renderAndStep">renderAndStep</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#requestChange"><a href="gdjs.RuntimeScene.html#requestChange">requestChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#setBackgroundColor"><a href="gdjs.RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#setEventsFunction"><a href="gdjs.RuntimeScene.html#setEventsFunction">setEventsFunction</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#startProfiler"><a href="gdjs.RuntimeScene.html#startProfiler">startProfiler</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#stopProfiler"><a href="gdjs.RuntimeScene.html#stopProfiler">stopProfiler</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#updateObjectsForces"><a href="gdjs.RuntimeScene.html#updateObjectsForces">updateObjectsForces</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.RuntimeSceneCocosRenderer">
+            <span class="title">
+                <a href="gdjs.RuntimeSceneCocosRenderer.html">gdjs.RuntimeSceneCocosRenderer</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.RuntimeSceneCocosRenderer#render"><a href="gdjs.RuntimeSceneCocosRenderer.html#render">render</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.SceneStack">
+            <span class="title">
+                <a href="gdjs.SceneStack.html">gdjs.SceneStack</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.SpriteAnimation">
+            <span class="title">
+                <a href="gdjs.SpriteAnimation.html">gdjs.SpriteAnimation</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.SpriteAnimationDirection">
+            <span class="title">
+                <a href="gdjs.SpriteAnimationDirection.html">gdjs.SpriteAnimationDirection</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.SpriteAnimationFrame">
+            <span class="title">
+                <a href="gdjs.SpriteAnimationFrame.html">gdjs.SpriteAnimationFrame</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#getPoint"><a href="gdjs.SpriteAnimationFrame.html#getPoint">getPoint</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.SpriteRuntimeObject">
+            <span class="title">
+                <a href="gdjs.SpriteRuntimeObject.html">gdjs.SpriteRuntimeObject</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#activateBehavior"><a href="gdjs.SpriteRuntimeObject.html#activateBehavior">activateBehavior</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#addForce"><a href="gdjs.SpriteRuntimeObject.html#addForce">addForce</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#addForceTowardObject"><a href="gdjs.SpriteRuntimeObject.html#addForceTowardObject">addForceTowardObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#addForceTowardPosition"><a href="gdjs.SpriteRuntimeObject.html#addForceTowardPosition">addForceTowardPosition</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#addPolarForce"><a href="gdjs.SpriteRuntimeObject.html#addPolarForce">addPolarForce</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#averageForceAngleIs"><a href="gdjs.SpriteRuntimeObject.html#averageForceAngleIs">averageForceAngleIs</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#behaviorActivated"><a href="gdjs.SpriteRuntimeObject.html#behaviorActivated">behaviorActivated</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#clearForces"><a href="gdjs.SpriteRuntimeObject.html#clearForces">clearForces</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#cursorOnObject"><a href="gdjs.SpriteRuntimeObject.html#cursorOnObject">cursorOnObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#deleteFromScene"><a href="gdjs.SpriteRuntimeObject.html#deleteFromScene">deleteFromScene</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#extraInitializationFromInitialInstance"><a href="gdjs.SpriteRuntimeObject.html#extraInitializationFromInitialInstance">extraInitializationFromInitialInstance</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getAngle"><a href="gdjs.SpriteRuntimeObject.html#getAngle">getAngle</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#getAnimationFrame">getAnimationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getAverageForce"><a href="gdjs.SpriteRuntimeObject.html#getAverageForce">getAverageForce</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getBehavior"><a href="gdjs.SpriteRuntimeObject.html#getBehavior">getBehavior</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getCenterX"><a href="gdjs.SpriteRuntimeObject.html#getCenterX">getCenterX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getCenterY"><a href="gdjs.SpriteRuntimeObject.html#getCenterY">getCenterY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getDistanceToObject"><a href="gdjs.SpriteRuntimeObject.html#getDistanceToObject">getDistanceToObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getDrawableX"><a href="gdjs.SpriteRuntimeObject.html#getDrawableX">getDrawableX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getDrawableY"><a href="gdjs.SpriteRuntimeObject.html#getDrawableY">getDrawableY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getElapsedTime"><a href="gdjs.SpriteRuntimeObject.html#getElapsedTime">getElapsedTime</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getHeight"><a href="gdjs.SpriteRuntimeObject.html#getHeight">getHeight</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getHitBoxes"><a href="gdjs.SpriteRuntimeObject.html#getHitBoxes">getHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getLayer"><a href="gdjs.SpriteRuntimeObject.html#getLayer">getLayer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getName"><a href="gdjs.SpriteRuntimeObject.html#getName">getName</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getNameId"><a href="gdjs.SpriteRuntimeObject.html#getNameId">getNameId</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getRendererObject"><a href="gdjs.SpriteRuntimeObject.html#getRendererObject">getRendererObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getSqDistanceTo"><a href="gdjs.SpriteRuntimeObject.html#getSqDistanceTo">getSqDistanceTo</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getSqDistanceToObject"><a href="gdjs.SpriteRuntimeObject.html#getSqDistanceToObject">getSqDistanceToObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getUniqueId"><a href="gdjs.SpriteRuntimeObject.html#getUniqueId">getUniqueId</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getVariables"><a href="gdjs.SpriteRuntimeObject.html#getVariables">getVariables</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getWidth"><a href="gdjs.SpriteRuntimeObject.html#getWidth">getWidth</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getX"><a href="gdjs.SpriteRuntimeObject.html#getX">getX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getY"><a href="gdjs.SpriteRuntimeObject.html#getY">getY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#getZOrder"><a href="gdjs.SpriteRuntimeObject.html#getZOrder">getZOrder</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#hasAnimationEnded"><a href="gdjs.SpriteRuntimeObject.html#hasAnimationEnded">hasAnimationEnded</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#hasBehavior"><a href="gdjs.SpriteRuntimeObject.html#hasBehavior">hasBehavior</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#hasNoForces"><a href="gdjs.SpriteRuntimeObject.html#hasNoForces">hasNoForces</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#hasVariable"><a href="gdjs.SpriteRuntimeObject.html#hasVariable">hasVariable</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#hide"><a href="gdjs.SpriteRuntimeObject.html#hide">hide</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#insideObject"><a href="gdjs.SpriteRuntimeObject.html#insideObject">insideObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#isCollidingWithPoint"><a href="gdjs.SpriteRuntimeObject.html#isCollidingWithPoint">isCollidingWithPoint</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#isHidden"><a href="gdjs.SpriteRuntimeObject.html#isHidden">isHidden</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#isOnLayer"><a href="gdjs.SpriteRuntimeObject.html#isOnLayer">isOnLayer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#isVisible"><a href="gdjs.SpriteRuntimeObject.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#onDeletedFromScene"><a href="gdjs.SpriteRuntimeObject.html#onDeletedFromScene">onDeletedFromScene</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#putAround"><a href="gdjs.SpriteRuntimeObject.html#putAround">putAround</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#putAroundObject"><a href="gdjs.SpriteRuntimeObject.html#putAroundObject">putAroundObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#raycastTest"><a href="gdjs.SpriteRuntimeObject.html#raycastTest">raycastTest</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#separateFromObjects"><a href="gdjs.SpriteRuntimeObject.html#separateFromObjects">separateFromObjects</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#separateFromObjectsList"><a href="gdjs.SpriteRuntimeObject.html#separateFromObjectsList">separateFromObjectsList</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#separateObjectsWithForces"><a href="gdjs.SpriteRuntimeObject.html#separateObjectsWithForces">separateObjectsWithForces</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#separateObjectsWithoutForces"><a href="gdjs.SpriteRuntimeObject.html#separateObjectsWithoutForces">separateObjectsWithoutForces</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setAngle"><a href="gdjs.SpriteRuntimeObject.html#setAngle">setAngle</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#setAnimationFrame">setAnimationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setColor"><a href="gdjs.SpriteRuntimeObject.html#setColor">setColor</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setLayer"><a href="gdjs.SpriteRuntimeObject.html#setLayer">setLayer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setPosition"><a href="gdjs.SpriteRuntimeObject.html#setPosition">setPosition</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setX"><a href="gdjs.SpriteRuntimeObject.html#setX">setX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setY"><a href="gdjs.SpriteRuntimeObject.html#setY">setY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#setZOrder"><a href="gdjs.SpriteRuntimeObject.html#setZOrder">setZOrder</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#stepBehaviorsPostEvents"><a href="gdjs.SpriteRuntimeObject.html#stepBehaviorsPostEvents">stepBehaviorsPostEvents</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#stepBehaviorsPreEvents"><a href="gdjs.SpriteRuntimeObject.html#stepBehaviorsPreEvents">stepBehaviorsPreEvents</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#turnTowardObject"><a href="gdjs.SpriteRuntimeObject.html#turnTowardObject">turnTowardObject</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#update"><a href="gdjs.SpriteRuntimeObject.html#update">update</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#updateForces"><a href="gdjs.SpriteRuntimeObject.html#updateForces">updateForces</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#updateHitBoxes"><a href="gdjs.SpriteRuntimeObject.html#updateHitBoxes">updateHitBoxes</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.TimeManager">
+            <span class="title">
+                <a href="gdjs.TimeManager.html">gdjs.TimeManager</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.TimeManager#getElapsedTime"><a href="gdjs.TimeManager.html#getElapsedTime">getElapsedTime</a></li>
+            
+                <li data-name="gdjs.TimeManager#getTimeFromStart"><a href="gdjs.TimeManager.html#getTimeFromStart">getTimeFromStart</a></li>
+            
+                <li data-name="gdjs.TimeManager#getTimeScale"><a href="gdjs.TimeManager.html#getTimeScale">getTimeScale</a></li>
+            
+                <li data-name="gdjs.TimeManager#isFirstFrame"><a href="gdjs.TimeManager.html#isFirstFrame">isFirstFrame</a></li>
+            
+                <li data-name="gdjs.TimeManager#setTimeScale"><a href="gdjs.TimeManager.html#setTimeScale">setTimeScale</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.Timer">
+            <span class="title">
+                <a href="gdjs.Timer.html">gdjs.Timer</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.Timer#getName"><a href="gdjs.Timer.html#getName">getName</a></li>
+            
+                <li data-name="gdjs.Timer#getTime"><a href="gdjs.Timer.html#getTime">getTime</a></li>
+            
+                <li data-name="gdjs.Timer#isPaused"><a href="gdjs.Timer.html#isPaused">isPaused</a></li>
+            
+                <li data-name="gdjs.Timer#reset"><a href="gdjs.Timer.html#reset">reset</a></li>
+            
+                <li data-name="gdjs.Timer#setPaused"><a href="gdjs.Timer.html#setPaused">setPaused</a></li>
+            
+                <li data-name="gdjs.Timer#setTime"><a href="gdjs.Timer.html#setTime">setTime</a></li>
+            
+                <li data-name="gdjs.Timer#updateTime"><a href="gdjs.Timer.html#updateTime">updateTime</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.Variable">
+            <span class="title">
+                <a href="gdjs.Variable.html">gdjs.Variable</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.Variable#clearChildren"><a href="gdjs.Variable.html#clearChildren">clearChildren</a></li>
+            
+                <li data-name="gdjs.Variable#getAllChildren"><a href="gdjs.Variable.html#getAllChildren">getAllChildren</a></li>
+            
+                <li data-name="gdjs.Variable#getAsNumber"><a href="gdjs.Variable.html#getAsNumber">getAsNumber</a></li>
+            
+                <li data-name="gdjs.Variable#getAsString"><a href="gdjs.Variable.html#getAsString">getAsString</a></li>
+            
+                <li data-name="gdjs.Variable#getChild"><a href="gdjs.Variable.html#getChild">getChild</a></li>
+            
+                <li data-name="gdjs.Variable#hasChild"><a href="gdjs.Variable.html#hasChild">hasChild</a></li>
+            
+                <li data-name="gdjs.Variable#isNumber"><a href="gdjs.Variable.html#isNumber">isNumber</a></li>
+            
+                <li data-name="gdjs.Variable#isStructure"><a href="gdjs.Variable.html#isStructure">isStructure</a></li>
+            
+                <li data-name="gdjs.Variable#removeChild"><a href="gdjs.Variable.html#removeChild">removeChild</a></li>
+            
+                <li data-name="gdjs.Variable#setNumber"><a href="gdjs.Variable.html#setNumber">setNumber</a></li>
+            
+                <li data-name="gdjs.Variable#setString"><a href="gdjs.Variable.html#setString">setString</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.VariablesContainer">
+            <span class="title">
+                <a href="gdjs.VariablesContainer.html">gdjs.VariablesContainer</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.VariablesContainer.badVariable"><a href="gdjs.VariablesContainer.html#.badVariable">badVariable</a></li>
+            
+                <li data-name="gdjs.VariablesContainer.badVariablesContainer"><a href="gdjs.VariablesContainer.html#.badVariablesContainer">badVariablesContainer</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.VariablesContainer#add"><a href="gdjs.VariablesContainer.html#add">add</a></li>
+            
+                <li data-name="gdjs.VariablesContainer#get"><a href="gdjs.VariablesContainer.html#get">get</a></li>
+            
+                <li data-name="gdjs.VariablesContainer#getFromIndex"><a href="gdjs.VariablesContainer.html#getFromIndex">getFromIndex</a></li>
+            
+                <li data-name="gdjs.VariablesContainer#has"><a href="gdjs.VariablesContainer.html#has">has</a></li>
+            
+                <li data-name="gdjs.VariablesContainer#initFrom"><a href="gdjs.VariablesContainer.html#initFrom">initFrom</a></li>
+            
+                <li data-name="gdjs.VariablesContainer#remove"><a href="gdjs.VariablesContainer.html#remove">remove</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="gdjs.WebsocketDebuggerClient">
+            <span class="title">
+                <a href="gdjs.WebsocketDebuggerClient.html">gdjs.WebsocketDebuggerClient</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="spriteruntimeobject.js.html">Source: spriteruntimeobject.js</h1>
+        
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * GDevelop JS Platform
+ * Copyright 2013-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the MIT License.
+ */
+
+/**
+ * A frame used by a SpriteAnimation in a {@link SpriteRuntimeObject}.
+ *
+ * It contains the texture displayed as well as information like the points position
+ * or the collision mask.
+ *
+ * @memberof gdjs
+ * @class SpriteAnimationFrame
+ */
+gdjs.SpriteAnimationFrame = function(imageManager, frameData)
+{
+    this.image = frameData ? frameData.image : ""; //TODO: Rename in imageName, and do not store it in the object?
+    this.texture = gdjs.SpriteRuntimeObjectRenderer.getAnimationFrame(imageManager, this.image);
+
+    if ( this.center === undefined ) this.center = { x:0, y:0 };
+    if ( this.origin === undefined ) this.origin = { x:0, y:0 };
+    this.hasCustomHitBoxes = false;
+    if ( this.customHitBoxes === undefined ) this.customHitBoxes = [];
+    if ( this.points === undefined ) this.points = new Hashtable();
+    else this.points.clear();
+
+    //Initialize points:
+	for(var i = 0, len = frameData.points.length;i&lt;len;++i) {
+		var ptData = frameData.points[i];
+
+        var point = {x:parseFloat(ptData.x), y:parseFloat(ptData.y)};
+        this.points.put(ptData.name, point);
+    }
+    var origin = frameData.originPoint;
+    this.origin.x = parseFloat(origin.x);
+    this.origin.y = parseFloat(origin.y);
+
+    var center = frameData.centerPoint;
+    if ( center.automatic !== true ) {
+        this.center.x = parseFloat(center.x);
+        this.center.y = parseFloat(center.y);
+    }
+    else {
+        this.center.x = gdjs.SpriteRuntimeObjectRenderer.getAnimationFrameWidth(this.texture)/2;
+        this.center.y = gdjs.SpriteRuntimeObjectRenderer.getAnimationFrameHeight(this.texture)/2;
+    }
+
+    //Load the custom collision mask, if any:
+    if ( frameData.hasCustomCollisionMask ) {
+        this.hasCustomHitBoxes = true;
+    	for(var i = 0, len = frameData.customCollisionMask.length;i&lt;len;++i) {
+    		var polygonData = frameData.customCollisionMask[i];
+
+            //Add a polygon, if necessary (Avoid recreating a polygon if it already exists).
+            if ( i >= this.customHitBoxes.length ) this.customHitBoxes.push(new gdjs.Polygon());
+
+        	for(var j = 0, len2 = polygonData.length;j&lt;len2;++j) {
+        		var pointData = polygonData[j];
+
+                //Add a point, if necessary (Avoid recreating a point if it already exists).
+                if ( j >= this.customHitBoxes[i].vertices.length )
+                    this.customHitBoxes[i].vertices.push([0,0]);
+
+                this.customHitBoxes[i].vertices[j][0] = parseFloat(pointData.x, 10);
+                this.customHitBoxes[i].vertices[j][1] = parseFloat(pointData.y, 10);
+            }
+
+            this.customHitBoxes[i].vertices.length = j;
+        }
+
+        this.customHitBoxes.length = i;
+    }
+    else {
+        this.customHitBoxes.length = 0;
+    }
+};
+
+/**
+ * Get a point of the frame.&lt;br>
+ * If the point does not exist, the origin is returned.
+ *
+ * @return The requested point.
+ */
+gdjs.SpriteAnimationFrame.prototype.getPoint = function(name) {
+	if ( name == "Centre" ) return this.center;
+	else if ( name == "Origin" ) return this.origin;
+
+	return this.points.containsKey(name) ? this.points.get(name) : this.origin;
+};
+
+/**
+ * Represents a direction of an animation of a {@link SpriteRuntimeObject}.
+ *
+ * @class SpriteAnimationDirection
+ * @memberof gdjs
+ */
+gdjs.SpriteAnimationDirection = function(imageManager, directionData)
+{
+    this.timeBetweenFrames = directionData ? parseFloat(directionData.timeBetweenFrames) :
+        1.0;
+    this.loop = !!directionData.looping;
+
+    if ( this.frames === undefined ) this.frames = [];
+    for(var i = 0, len = directionData.sprites.length;i&lt;len;++i) {
+        var frameData = directionData.sprites[i];
+
+        if ( i &lt; this.frames.length )
+            gdjs.SpriteAnimationFrame.call(this.frames[i], imageManager, frameData);
+        else
+            this.frames.push(new gdjs.SpriteAnimationFrame(imageManager, frameData));
+    }
+    this.frames.length = i;
+};
+
+/**
+ * Represents an animation of a {@link SpriteRuntimeObject}.
+ *
+ * @class SpriteAnimation
+ * @memberof gdjs
+ */
+gdjs.SpriteAnimation = function(imageManager, animData)
+{
+    this.hasMultipleDirections = !!animData.useMultipleDirections;
+    this.name = animData.name || '';
+
+    if ( this.directions === undefined ) this.directions = [];
+    for(var i = 0, len = animData.directions.length;i&lt;len;++i) {
+        var directionData = animData.directions[i];
+
+        if ( i &lt; this.directions.length )
+            gdjs.SpriteAnimationDirection.call(this.directions[i], imageManager, directionData);
+        else
+            this.directions.push(new gdjs.SpriteAnimationDirection(imageManager, directionData));
+    }
+    this.directions.length = i; //Make sure to delete already existing directions which are not used anymore.
+};
+
+/**
+ * The SpriteRuntimeObject represents an object that can display images.
+ *
+ * @class SpriteRuntimeObject
+ * @memberof gdjs
+ * @extends gdjs.RuntimeObject
+ */
+gdjs.SpriteRuntimeObject = function(runtimeScene, objectData)
+{
+	gdjs.RuntimeObject.call( this, runtimeScene, objectData );
+
+    this._currentAnimation = 0;
+    this._currentDirection = 0;
+    this._currentFrame = 0;
+    this._frameElapsedTime = 0;
+    this._animationSpeedScale = 1;
+	this._animationPaused = false;
+    this._scaleX = 1;
+    this._scaleY = 1;
+    this._blendMode = 0;
+    this._flippedX = false;
+    this._flippedY = false;
+    this.opacity = 255;
+    this._updateIfNotVisible = !!objectData.updateIfNotVisible;
+
+    //Animations:
+    if ( this._animations === undefined ) this._animations = [];
+    for(var i = 0, len = objectData.animations.length;i&lt;len;++i) {
+        var animData = objectData.animations[i];
+
+        if ( i &lt; this._animations.length )
+            gdjs.SpriteAnimation.call(this._animations[i], runtimeScene.getGame().getImageManager(), animData);
+        else
+            this._animations.push(new gdjs.SpriteAnimation(runtimeScene.getGame().getImageManager(), animData));
+    }
+    this._animations.length = i; //Make sure to delete already existing animations which are not used anymore.
+
+    //Reference to the current SpriteAnimationFrame that is displayd. Can be null, so ensure that this case is handled properly.
+    this._animationFrame = null;
+
+    if (this._renderer)
+        gdjs.SpriteRuntimeObjectRenderer.call(this._renderer, this, runtimeScene);
+    else
+        this._renderer = new gdjs.SpriteRuntimeObjectRenderer(this, runtimeScene);
+
+    this._updateFrame();
+};
+
+gdjs.SpriteRuntimeObject.prototype = Object.create( gdjs.RuntimeObject.prototype );
+gdjs.SpriteRuntimeObject.thisIsARuntimeObjectConstructor = "Sprite"; //Notify gdjs of the object existence.
+
+//Others initialization and internal state management :
+
+/**
+ * Initialize the extra parameters that could be set for an instance.
+ */
+gdjs.SpriteRuntimeObject.prototype.extraInitializationFromInitialInstance = function(initialInstanceData) {
+    if ( initialInstanceData.numberProperties ) {
+        for(var i = 0, len = initialInstanceData.numberProperties.length;i&lt;len;++i) {
+            var extraData = initialInstanceData.numberProperties[i];
+
+            if ( extraData.name === "animation" )
+                this.setAnimation(extraData.value);
+        }
+    }
+    if ( initialInstanceData.customSize ) {
+        this.setWidth(initialInstanceData.width);
+        this.setHeight(initialInstanceData.height);
+    }
+};
+
+/**
+ * Update the current frame of the object according to the elapsed time on the scene.
+ */
+gdjs.SpriteRuntimeObject.prototype.update = function(runtimeScene) {
+    //Playing the animation of all objects including the ones outside the screen can be
+    //costly when the scene is big with a lot of animated objects. By default, we skip
+    //updating the object if it is not visible.
+    if (!this._updateIfNotVisible &amp;&amp; !this._renderer.getRendererObject().visible)
+        return;
+
+    if ( this._currentAnimation >= this._animations.length ||
+         this._currentDirection >= this._animations[this._currentAnimation].directions.length) {
+        return;
+    }
+    var direction = this._animations[this._currentAnimation].directions[this._currentDirection];
+    var oldFrame = this._currentFrame;
+
+    if (!direction.loop &amp;&amp; this._currentFrame >= direction.frames.length) {
+        //*Optimization*: Animation is finished, don't change the current frame
+        //and compute nothing more.
+    } else {
+        var elapsedTime = this.getElapsedTime(runtimeScene) / 1000;
+        this._frameElapsedTime += this._animationPaused ? 0 : elapsedTime * this._animationSpeedScale;
+
+        if ( this._frameElapsedTime > direction.timeBetweenFrames ) {
+            var count = Math.floor(this._frameElapsedTime / direction.timeBetweenFrames);
+            this._currentFrame += count;
+            this._frameElapsedTime = this._frameElapsedTime-count*direction.timeBetweenFrames;
+            if ( this._frameElapsedTime &lt; 0 ) this._frameElapsedTime = 0;
+        }
+
+        if ( this._currentFrame >= direction.frames.length ) {
+            this._currentFrame = direction.loop ? this._currentFrame % direction.frames.length : direction.frames.length-1;
+        }
+        if ( this._currentFrame &lt; 0 ) this._currentFrame = 0; //May happen if there is no frame.
+    }
+
+    if ( oldFrame !== this._currentFrame || this._frameDirty ) this._updateFrame();
+    if ( oldFrame !== this._currentFrame ) this.hitBoxesDirty = true;
+
+    this._renderer.ensureUpToDate();
+};
+
+gdjs.SpriteRuntimeObject.prototype._updateFrame = function() {
+   this._frameDirty = false;
+
+   if ( this._currentAnimation &lt; this._animations.length &amp;&amp;
+        this._currentDirection &lt; this._animations[this._currentAnimation].directions.length) {
+       var direction = this._animations[this._currentAnimation].directions[this._currentDirection];
+
+       if ( this._currentFrame &lt; direction.frames.length ) {
+           this._animationFrame = direction.frames[this._currentFrame];
+           if ( this._animationFrame !== null ) {
+               this._renderer.updateFrame(this._animationFrame);
+           }
+
+           return;
+       }
+   }
+
+   //Invalid animation/direction/frame:
+   this._animationFrame = null;
+};
+
+gdjs.SpriteRuntimeObject.prototype.getRendererObject = function() {
+    return this._renderer.getRendererObject();
+};
+
+/**
+ * Update the hit boxes for the object: &lt;br>
+ * Fallback to the default implementation (rotated bounding box) if there is no custom
+ * hitboxes defined for the current animation frame.
+ *
+ */
+gdjs.SpriteRuntimeObject.prototype.updateHitBoxes = function() {
+    if ( this._frameDirty ) this._updateFrame(); //Beware, _animationFrame could be invalid if this._frameDirty === true.
+    if ( this._animationFrame === null ) return;
+
+    if ( !this._animationFrame.hasCustomHitBoxes )
+        return gdjs.RuntimeObject.prototype.updateHitBoxes.call(this);
+
+    //console.log("Update for "+this.name); //Uncomment to track updates
+    //(and in particular be sure that unnecessary update are avoided).
+
+    //Update the current hitboxes with the frame custom hit boxes
+    //and apply transformations.
+    for (var i = 0;i&lt;this._animationFrame.customHitBoxes.length;++i) {
+        if ( i >= this.hitBoxes.length )
+            this.hitBoxes.push(new gdjs.Polygon());
+
+        for (var j = 0;j&lt;this._animationFrame.customHitBoxes[i].vertices.length;++j) {
+            if ( j >= this.hitBoxes[i].vertices.length )
+                this.hitBoxes[i].vertices.push([0,0]);
+
+            this._transformToGlobal(this._animationFrame.customHitBoxes[i].vertices[j][0],
+                this._animationFrame.customHitBoxes[i].vertices[j][1],
+                this.hitBoxes[i].vertices[j]);
+        }
+        this.hitBoxes[i].vertices.length = this._animationFrame.customHitBoxes[i].vertices.length;
+    }
+    this.hitBoxes.length = this._animationFrame.customHitBoxes.length;
+
+    //Rotate and scale and flipping have already been applied to the point by _transformToGlobal.
+};
+
+//Animations :
+
+gdjs.SpriteRuntimeObject.prototype.setAnimation = function(newAnimation) {
+    newAnimation = newAnimation | 0;
+    if ( newAnimation &lt; this._animations.length &amp;&amp;
+        this._currentAnimation !== newAnimation &amp;&amp;
+        newAnimation >= 0) {
+        this._currentAnimation = newAnimation;
+        this._currentFrame = 0;
+        this._frameElapsedTime = 0;
+        this._renderer.update(); //TODO: This may be unnecessary.
+        this._frameDirty = true;
+        this.hitBoxesDirty = true;
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.setAnimationName = function(newAnimationName) {
+    if (!newAnimationName) return;
+
+    for(var i = 0;i &lt; this._animations.length;++i) {
+        if (this._animations[i].name === newAnimationName) {
+            return this.setAnimation(i);
+        }
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.getAnimation = function() {
+    return this._currentAnimation;
+};
+
+gdjs.SpriteRuntimeObject.prototype.getAnimationName = function() {
+    if ( this._currentAnimation >= this._animations.length ) {
+        return '';
+    }
+
+    return this._animations[this._currentAnimation].name;
+};
+
+gdjs.SpriteRuntimeObject.prototype.isCurrentAnimationName = function(name) {
+    return this.getAnimationName() === name;
+};
+
+gdjs.SpriteRuntimeObject.prototype.setDirectionOrAngle = function(newValue) {
+    if ( this._currentAnimation >= this._animations.length ) {
+        return;
+    }
+
+    var anim = this._animations[this._currentAnimation];
+    if ( !anim.hasMultipleDirections ) {
+        if ( this.angle === newValue ) return;
+
+        this.angle = newValue;
+        this.hitBoxesDirty = true;
+        this._renderer.updateAngle();
+    }
+    else {
+        newValue = newValue | 0;
+
+        if (newValue === this._currentDirection
+            || newValue >= anim.directions.length
+            || anim.directions[newValue].frames.length === 0)
+            return;
+
+        this._currentDirection = newValue;
+        this._currentFrame = 0;
+        this._frameElapsedTime = 0;
+        this.angle = 0;
+
+        this._renderer.update(); //TODO: This may be unnecessary.
+        this._frameDirty = true;
+        this.hitBoxesDirty = true;
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.getDirectionOrAngle = function() {
+    if ( this._currentAnimation >= this._animations.length ) {
+        return 0;
+    }
+
+    if ( !this._animations[this._currentAnimation].hasMultipleDirections ) {
+        return this.angle;
+    }
+    else {
+        return this._currentDirection;
+    }
+};
+
+/**
+ * Change the current frame displayed by the animation
+ */
+gdjs.SpriteRuntimeObject.prototype.setAnimationFrame = function(newFrame) {
+    if ( this._currentAnimation >= this._animations.length ||
+         this._currentDirection >= this._animations[this._currentAnimation].directions.length) {
+        return;
+    }
+    var direction = this._animations[this._currentAnimation].directions[this._currentDirection];
+
+    if ( newFrame >= 0 &amp;&amp; newFrame &lt; direction.frames.length &amp;&amp; newFrame !== this._currentFrame ) {
+        this._currentFrame = newFrame;
+        this._frameDirty = true;
+        this.hitBoxesDirty = true;
+    }
+};
+
+/**
+ * Get the index of the current frame displayed by the animation
+ */
+gdjs.SpriteRuntimeObject.prototype.getAnimationFrame = function() {
+    return this._currentFrame;
+};
+
+/**
+ * Return true if animation has ended.
+ */
+gdjs.SpriteRuntimeObject.prototype.hasAnimationEnded = function() {
+    if ( this._currentAnimation >= this._animations.length ||
+         this._currentDirection >= this._animations[this._currentAnimation].directions.length) {
+        return true;
+    }
+    if ( this._animations[this._currentAnimation].loop ) return false;
+    var direction = this._animations[this._currentAnimation].directions[this._currentDirection];
+
+    return this._currentFrame == direction.frames.length-1;
+};
+
+gdjs.SpriteRuntimeObject.prototype.animationPaused = function() {
+    return this._animationPaused;
+};
+
+gdjs.SpriteRuntimeObject.prototype.pauseAnimation = function() {
+    this._animationPaused = true;
+};
+
+gdjs.SpriteRuntimeObject.prototype.playAnimation = function() {
+    this._animationPaused = false;
+};
+
+gdjs.SpriteRuntimeObject.prototype.getAnimationSpeedScale = function() {
+    return this._animationSpeedScale;
+};
+
+gdjs.SpriteRuntimeObject.prototype.setAnimationSpeedScale = function(ratio) {
+    this._animationSpeedScale = ratio
+};
+
+//Position :
+
+gdjs.SpriteRuntimeObject.prototype.getPointX = function(name) {
+    if ( name.length === 0 || this._animationFrame === null ) return this.getX();
+
+    var pt = this._animationFrame.getPoint(name);
+    var pos = gdjs.staticArray(gdjs.SpriteRuntimeObject.prototype.getPointX);
+    this._transformToGlobal(pt.x, pt.y, pos);
+
+    return pos[0];
+};
+
+gdjs.SpriteRuntimeObject.prototype.getPointY = function(name) {
+    if ( name.length === 0 || this._animationFrame === null ) return this.getY();
+
+    var pt = this._animationFrame.getPoint(name);
+    var pos = gdjs.staticArray(gdjs.SpriteRuntimeObject.prototype.getPointY);
+    this._transformToGlobal(pt.x, pt.y, pos);
+
+    return pos[1];
+};
+
+/**
+ * Return an array containing the coordinates of the point passed as parameter
+ * in world coordinates (as opposed to the object local coordinates).
+ *
+ * Beware: this._animationFrame and this._sprite must *not* be null!
+ *
+ * All transformations (flipping, scale, rotation) are supported.
+ *
+ * @param pointX The X position of the point, in object coordinates.
+ * @param pointY The Y position of the point, in object coordinates.
+ * @param result Optional array that will be updated with the result (x and y position of the point
+ * in global coordinates)
+ * @return An array containing the x and y position of the point in global coordinates. If result parameter is
+ * defined, nothing is returned by the method.
+ * @private
+ */
+gdjs.SpriteRuntimeObject.prototype._transformToGlobal = function(x, y, result) {
+    var cx = this._animationFrame.center.x;
+    var cy = this._animationFrame.center.y;
+
+    //Flipping
+    if ( this._flippedX ) {
+        x = this._renderer.getUnscaledWidth() - x;
+        cx = this._renderer.getUnscaledWidth() - cx;
+    }
+    if ( this._flippedY ) {
+        y = this._renderer.getUnscaledHeight() - y;
+        cy = this._renderer.getUnscaledHeight() - cy;
+    }
+
+    //Scale
+    x *= Math.abs(this._scaleX);
+    y *= Math.abs(this._scaleY);
+    cx *= Math.abs(this._scaleX);
+    cy *= Math.abs(this._scaleY);
+
+    //Rotation
+    var oldX = x;
+    x = cx + Math.cos(this.angle/180*3.14159)*(x-cx) - Math.sin(this.angle/180*3.14159)*(y-cy);
+    y = cy + Math.sin(this.angle/180*3.14159)*(oldX-cx) + Math.cos(this.angle/180*3.14159)*(y-cy);
+
+    result.length = 2;
+    result[0] = x + this.getDrawableX();
+    result[1] = y + this.getDrawableY();
+};
+
+gdjs.SpriteRuntimeObject.prototype.getDrawableX = function() {
+    if ( this._animationFrame === null ) return this.x;
+
+    return this.x - this._animationFrame.origin.x*Math.abs(this._scaleX);
+};
+
+gdjs.SpriteRuntimeObject.prototype.getDrawableY = function() {
+    if ( this._animationFrame === null ) return this.y;
+
+    return this.y - this._animationFrame.origin.y*Math.abs(this._scaleY);
+};
+
+gdjs.SpriteRuntimeObject.prototype.getCenterX = function() {
+    if ( this._animationFrame === null ) return 0;
+
+    //Just need to multiply by the scale as it is the center
+    return this._animationFrame.center.x*Math.abs(this._scaleX);
+};
+
+gdjs.SpriteRuntimeObject.prototype.getCenterY = function() {
+    if ( this._animationFrame === null ) return 0;
+
+    //Just need to multiply by the scale as it is the center
+    return this._animationFrame.center.y*Math.abs(this._scaleY);
+};
+
+gdjs.SpriteRuntimeObject.prototype.setX = function(x) {
+    if ( x === this.x ) return;
+
+    this.x = x;
+    if (this._animationFrame !== null) {
+        this.hitBoxesDirty = true;
+        this._renderer.updateX();
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.setY = function(y) {
+    if ( y === this.y ) return;
+
+    this.y = y;
+    if ( this._animationFrame !== null) {
+        this.hitBoxesDirty = true;
+        this._renderer.updateY();
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.setAngle = function(angle) {
+    if ( this._currentAnimation >= this._animations.length ) {
+        return;
+    }
+
+    if ( !this._animations[this._currentAnimation].hasMultipleDirections ) {
+        if (this.angle === angle) return;
+
+        this.angle = angle;
+        this._renderer.updateAngle();
+        this.hitBoxesDirty = true;
+    } else {
+        angle = angle % 360;
+        if ( angle &lt; 0 ) angle += 360;
+        this.setDirectionOrAngle(Math.round(angle/45) % 8);
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.getAngle = function(angle) {
+    if ( this._currentAnimation >= this._animations.length ) {
+        return 0;
+    }
+
+    if ( !this._animations[this._currentAnimation].hasMultipleDirections )
+        return this.angle;
+    else
+        return this._currentDirection * 45;
+};
+
+//Visibility and display :
+
+gdjs.SpriteRuntimeObject.prototype.setBlendMode = function(newMode) {
+    if (this._blendMode === newMode) return;
+
+    this._blendMode = newMode;
+    this._renderer.update();
+};
+
+gdjs.SpriteRuntimeObject.prototype.getBlendMode = function() {
+    return this._blendMode;
+};
+
+gdjs.SpriteRuntimeObject.prototype.setOpacity = function(opacity) {
+    if ( opacity &lt; 0 ) opacity = 0;
+    if ( opacity > 255 ) opacity = 255;
+
+    this.opacity = opacity;
+    this._renderer.updateOpacity();
+};
+
+gdjs.SpriteRuntimeObject.prototype.getOpacity = function() {
+    return this.opacity;
+};
+
+gdjs.SpriteRuntimeObject.prototype.hide = function(enable) {
+    if ( enable === undefined ) enable = true;
+    this.hidden = enable;
+
+    this._renderer.updateVisibility();
+};
+
+/**
+ * Change the tint of the sprite object.
+ *
+ * \param {String} The color, in RGB format ("128;200;255").
+ */
+gdjs.SpriteRuntimeObject.prototype.setColor = function(rgbColor) {
+    this._renderer.setColor(rgbColor);
+};
+
+gdjs.SpriteRuntimeObject.prototype.flipX = function(enable) {
+    if ( enable !== this._flippedX ) {
+        this._scaleX *= -1;
+        this._flippedX = enable;
+        this._renderer.update();
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.flipY = function(enable) {
+    if ( enable !== this._flippedY ) {
+        this._scaleY *= -1;
+        this._flippedY = enable;
+        this._renderer.update();
+    }
+};
+
+gdjs.SpriteRuntimeObject.prototype.isFlippedX = function() {
+    return this._flippedX;
+};
+
+gdjs.SpriteRuntimeObject.prototype.isFlippedY = function() {
+    return this._flippedY;
+};
+
+//Scale and size :
+
+gdjs.SpriteRuntimeObject.prototype.getWidth = function() {
+    return this._renderer.getWidth();
+};
+
+gdjs.SpriteRuntimeObject.prototype.getHeight = function() {
+    return this._renderer.getHeight();
+};
+
+gdjs.SpriteRuntimeObject.prototype.setWidth = function(newWidth) {
+    if ( this._frameDirty ) this._updateFrame();
+
+    var unscaledWidth = this._renderer.getUnscaledWidth();
+    if (unscaledWidth !== 0) this.setScaleX(newWidth / unscaledWidth);
+};
+
+gdjs.SpriteRuntimeObject.prototype.setHeight = function(newHeight) {
+    if ( this._frameDirty ) this._updateFrame();
+
+    var unscaledHeight = this._renderer.getUnscaledHeight();
+    if (unscaledHeight !== 0) this.setScaleY(newHeight / unscaledHeight);
+};
+
+gdjs.SpriteRuntimeObject.prototype.setScale = function(newScale) {
+    if ( newScale &lt; 0 ) newScale = 0;
+    if ( newScale === Math.abs(this._scaleX) &amp;&amp; newScale === Math.abs(this._scaleY) ) return;
+
+    this._scaleX = newScale * (this._flippedX ? -1 : 1);
+    this._scaleY = newScale * (this._flippedY ? -1 : 1);
+    this._renderer.update();
+    this.hitBoxesDirty = true;
+};
+
+gdjs.SpriteRuntimeObject.prototype.setScaleX = function(newScale) {
+    if ( newScale &lt; 0 ) newScale = 0;
+    if ( newScale === Math.abs(this._scaleX) ) return;
+
+    this._scaleX = newScale * (this._flippedX ? -1 : 1);
+    this._renderer.update();
+    this.hitBoxesDirty = true;
+};
+
+gdjs.SpriteRuntimeObject.prototype.setScaleY = function(newScale) {
+    if ( newScale &lt; 0 ) newScale = 0;
+    if ( newScale === Math.abs(this._scaleY) ) return;
+
+    this._scaleY = newScale * (this._flippedY ? -1 : 1);
+    this._renderer.update();
+    this.hitBoxesDirty = true;
+};
+
+gdjs.SpriteRuntimeObject.prototype.getScale = function() {
+    return (Math.abs(this._scaleX)+Math.abs(this._scaleY))/2.0;
+};
+
+gdjs.SpriteRuntimeObject.prototype.getScaleY = function() {
+    return Math.abs(this._scaleY);
+};
+
+gdjs.SpriteRuntimeObject.prototype.getScaleX = function() {
+    return Math.abs(this._scaleX);
+};
+
+//Other :
+
+/**
+ * @param obj The target object
+ * @param scene The scene containing the object
+ * @deprecated
+ */
+gdjs.SpriteRuntimeObject.prototype.turnTowardObject = function(obj, scene) {
+    if ( obj === null ) return;
+
+    this.rotateTowardPosition(obj.getDrawableX()+obj.getCenterX(),
+        obj.getDrawableY()+obj.getCenterY(), 0, scene);
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jul 04 2018 23:17:39 GMT+0100 (BST)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

@@ -10,9 +10,10 @@ var searchData=
   ['playsound',['PlaySound',['../d5/dd9/class_sound_manager.html#a52d4a8fa9ea9ed6f64c06463abf788dd',1,'SoundManager']]],
   ['playsoundonchannel',['PlaySoundOnChannel',['../d5/dd9/class_sound_manager.html#ab809bce548289629e95fdeb1c9bbad7c',1,'SoundManager']]],
   ['polygoncollisiontest',['PolygonCollisionTest',['../da/df4/group___game_engine.html#ga7a5b7643e8e5e8cf401b5c4fceb4d9b3',1,'PolygonCollisionTest(Polygon2d &amp;p1, Polygon2d &amp;p2):&#160;PolygonCollision.cpp'],['../da/df4/group___game_engine.html#ga7a5b7643e8e5e8cf401b5c4fceb4d9b3',1,'PolygonCollisionTest(Polygon2d &amp;p1, Polygon2d &amp;p2):&#160;PolygonCollision.cpp']]],
-  ['pop',['Pop',['../d8/d15/class_scene_stack.html#af4d62b97042d923102dda95a11978c3d',1,'SceneStack']]],
+  ['polygonraycasttest',['PolygonRaycastTest',['../da/df4/group___game_engine.html#gafffd8a31795ba8c21200405d0860d323',1,'PolygonRaycastTest(Polygon2d &amp;poly, float startX, float startY, float endX, float endY):&#160;PolygonCollision.cpp'],['../da/df4/group___game_engine.html#gafffd8a31795ba8c21200405d0860d323',1,'PolygonRaycastTest(Polygon2d &amp;poly, float startX, float startY, float endX, float endY):&#160;PolygonCollision.cpp']]],
+  ['pop',['Pop',['../d8/d15/class_scene_stack.html#a8c4cea2a230aa7706d794a7a4df67d2f',1,'SceneStack']]],
   ['preprocesseventlist',['PreprocessEventList',['../d7/d05/class_events_code_generator.html#a52ccd7d8530b830a48f1b733e233f33f',1,'EventsCodeGenerator']]],
   ['processendedwork',['ProcessEndedWork',['../d2/d33/class_code_compiler.html#a96e61e7e852f59832307fd66d30a0000',1,'CodeCompiler']]],
   ['profileevent',['ProfileEvent',['../d9/d16/class_profile_event.html#a4658d6fb1f09f0057f65829928bb2964',1,'ProfileEvent']]],
-  ['push',['Push',['../d8/d15/class_scene_stack.html#a2106405187c3d649f92bd5580b9f6e93',1,'SceneStack']]]
+  ['push',['Push',['../d8/d15/class_scene_stack.html#aeff2b31069bff0bc2edc1d63e2ff7b9f',1,'SceneStack']]]
 ];

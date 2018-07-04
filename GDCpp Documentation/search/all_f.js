@@ -10,7 +10,8 @@ var searchData=
   ['playsound',['PlaySound',['../d5/dd9/class_sound_manager.html#a52d4a8fa9ea9ed6f64c06463abf788dd',1,'SoundManager']]],
   ['playsoundonchannel',['PlaySoundOnChannel',['../d5/dd9/class_sound_manager.html#ab809bce548289629e95fdeb1c9bbad7c',1,'SoundManager']]],
   ['polygoncollisiontest',['PolygonCollisionTest',['../da/df4/group___game_engine.html#ga7a5b7643e8e5e8cf401b5c4fceb4d9b3',1,'PolygonCollisionTest(Polygon2d &amp;p1, Polygon2d &amp;p2):&#160;PolygonCollision.cpp'],['../da/df4/group___game_engine.html#ga7a5b7643e8e5e8cf401b5c4fceb4d9b3',1,'PolygonCollisionTest(Polygon2d &amp;p1, Polygon2d &amp;p2):&#160;PolygonCollision.cpp']]],
-  ['pop',['Pop',['../d8/d15/class_scene_stack.html#af4d62b97042d923102dda95a11978c3d',1,'SceneStack']]],
+  ['polygonraycasttest',['PolygonRaycastTest',['../da/df4/group___game_engine.html#gafffd8a31795ba8c21200405d0860d323',1,'PolygonRaycastTest(Polygon2d &amp;poly, float startX, float startY, float endX, float endY):&#160;PolygonCollision.cpp'],['../da/df4/group___game_engine.html#gafffd8a31795ba8c21200405d0860d323',1,'PolygonRaycastTest(Polygon2d &amp;poly, float startX, float startY, float endX, float endY):&#160;PolygonCollision.cpp']]],
+  ['pop',['Pop',['../d8/d15/class_scene_stack.html#a8c4cea2a230aa7706d794a7a4df67d2f',1,'SceneStack']]],
   ['postwork',['postWork',['../dc/d9a/class_code_compiler_task.html#afa54b6d432f16e07a58e30b1a8387b0d',1,'CodeCompilerTask']]],
   ['preprocesseventlist',['PreprocessEventList',['../d7/d05/class_events_code_generator.html#a52ccd7d8530b830a48f1b733e233f33f',1,'EventsCodeGenerator']]],
   ['prework',['preWork',['../dc/d9a/class_code_compiler_task.html#ac7e605427aedb8f8900d063a953f1d12',1,'CodeCompilerTask']]],
@@ -22,5 +23,5 @@ var searchData=
   ['profilelink',['ProfileLink',['../dc/d12/class_profile_link.html',1,'']]],
   ['profilingactivated',['profilingActivated',['../d6/da7/class_base_profiler.html#a6769fef7a8f01eca691c0e603770d0ad',1,'BaseProfiler']]],
   ['projectexportdialog',['ProjectExportDialog',['../d8/d9d/class_project_export_dialog.html',1,'']]],
-  ['push',['Push',['../d8/d15/class_scene_stack.html#a2106405187c3d649f92bd5580b9f6e93',1,'SceneStack']]]
+  ['push',['Push',['../d8/d15/class_scene_stack.html#aeff2b31069bff0bc2edc1d63e2ff7b9f',1,'SceneStack']]]
 ];

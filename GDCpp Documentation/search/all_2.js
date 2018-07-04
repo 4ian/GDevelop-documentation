@@ -11,7 +11,7 @@ var searchData=
   ['clearforce',['ClearForce',['../d0/d3b/class_runtime_object.html#a82b848d06da1b17dd476df8e1ec1723c',1,'RuntimeObject']]],
   ['clearoutputdirectory',['ClearOutputDirectory',['../d2/d33/class_code_compiler.html#a2601f406c0c502757f25dc4ce027047d',1,'CodeCompiler']]],
   ['clock',['clock',['../d7/d7f/class_runtime_scene.html#a7607237db53df194a73e0523d3cd253c',1,'RuntimeScene']]],
-  ['clone',['Clone',['../d0/d3b/class_runtime_object.html#a578c0415494eda9d63755cc84f144655',1,'RuntimeObject::Clone()'],['../dd/d1a/class_runtime_sprite_object.html#a5137093e8beeacdfb94481ff293360f8',1,'RuntimeSpriteObject::Clone()']]],
+  ['clone',['Clone',['../d0/d3b/class_runtime_object.html#afbf5f025ab3f6070dd52efb3019dde37',1,'RuntimeObject::Clone()'],['../dd/d1a/class_runtime_sprite_object.html#a5d677b687eec8fa414aa83f9bc5a8cec',1,'RuntimeSpriteObject::Clone()']]],
   ['codecompilationhelpers',['CodeCompilationHelpers',['../d0/de0/class_code_compilation_helpers.html',1,'']]],
   ['codecompiler',['CodeCompiler',['../d2/d33/class_code_compiler.html',1,'']]],
   ['codecompilercall',['CodeCompilerCall',['../d7/d85/class_code_compiler_call.html',1,'CodeCompilerCall'],['../d7/d85/class_code_compiler_call.html#a093e0548a7e4b9ab55e51367c6875162',1,'CodeCompilerCall::CodeCompilerCall()']]],
@@ -25,7 +25,7 @@ var searchData=
   ['common_20programming_20tools',['Common programming tools',['../dc/d32/group___common_programming_tools.html',1,'']]],
   ['compilationerrordialog',['CompilationErrorDialog',['../d4/daa/class_compilation_error_dialog.html',1,'']]],
   ['compilationforruntime',['compilationForRuntime',['../d7/d85/class_code_compiler_call.html#acab0b9bdea850009f015fda495f77010',1,'CodeCompilerCall']]],
-  ['compilationinprocess',['CompilationInProcess',['../d2/d33/class_code_compiler.html#ad045a47632d1b8002c45f018cf85590c',1,'CodeCompiler']]],
+  ['compilationinprocess',['CompilationInProcess',['../d2/d33/class_code_compiler.html#a54e425d26395745482f13122722f244d',1,'CodeCompiler']]],
   ['compilationsucceeded',['compilationSucceeded',['../de/d26/class_code_compiler_extra_work.html#ab24ca8a6f7fba790167f9ae5794a6946',1,'CodeCompilerExtraWork']]],
   ['compilercall',['compilerCall',['../dc/d9a/class_code_compiler_task.html#aa3ce999a7867ccb4fe3a9a0946fab4bd',1,'CodeCompilerTask']]],
   ['compilermessage',['CompilerMessage',['../da/d97/class_g_dpriv_1_1_compiler_message.html',1,'GDpriv']]],
@@ -42,7 +42,7 @@ var searchData=
   ['createexternaleventscompilationtask',['CreateExternalEventsCompilationTask',['../d0/de0/class_code_compilation_helpers.html#a1ef45416c2e4d38de4b659009d419042',1,'CodeCompilationHelpers']]],
   ['createexternalsourcefilecompilationtask',['CreateExternalSourceFileCompilationTask',['../d0/de0/class_code_compilation_helpers.html#abeb8e303f3a618e0d91603a7f77f042d',1,'CodeCompilationHelpers']]],
   ['createobjectsfrom',['CreateObjectsFrom',['../d7/d7f/class_runtime_scene.html#abef682468e4b7ea65f029c112fd89dc1',1,'RuntimeScene']]],
-  ['createruntimeobject',['CreateRuntimeObject',['../d3/d7d/class_cpp_platform.html#a313eb17a3ac20ed7a117463bb88fef6b',1,'CppPlatform']]],
+  ['createruntimeobject',['CreateRuntimeObject',['../d3/d7d/class_cpp_platform.html#a4ca6ba5c7b5904d7fcb28054a575667c',1,'CppPlatform']]],
   ['createsceneeventscompilationtask',['CreateSceneEventsCompilationTask',['../d0/de0/class_code_compilation_helpers.html#aeb763d7c3b708f6d2829e9e4ea22202c',1,'CodeCompilationHelpers']]],
   ['cursoronobject',['CursorOnObject',['../d0/d3b/class_runtime_object.html#aa55430a8b445c116a8bb69714e5fa082',1,'RuntimeObject::CursorOnObject()'],['../dd/d1a/class_runtime_sprite_object.html#a65f51c605cd0ecb760fdc3c8a8ce52f5',1,'RuntimeSpriteObject::CursorOnObject()']]]
 ];

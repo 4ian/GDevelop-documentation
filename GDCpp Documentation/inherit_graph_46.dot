@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="ProfileLink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d12/class_profile_link.html",tooltip="Internal class used as a link between compiled events code and events. "];
-}

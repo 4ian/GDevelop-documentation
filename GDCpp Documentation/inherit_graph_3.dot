@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="AnimationProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d96/class_animation_proxy.html",tooltip="Wrapper around a pointer to Animation, used to reduce compile time. "];
-}

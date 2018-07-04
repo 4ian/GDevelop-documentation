@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="gd::Splitter::SplitElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structgd_1_1_splitter_1_1_split_element.html",tooltip="Represents an element as returned by gd::Splitter:Split. "];
-}

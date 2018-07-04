@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['destroysingleton',['DestroySingleton',['../d2/d3d/classgdjs_1_1_js_platform.html#aa6f85bcd7fa0725957e1e2e393e92031',1,'gdjs::JsPlatform']]]
+  ['addlibsinclude',['AddLibsInclude',['../d0/d75/classgdjs_1_1_exporter_helper.html#ab9c461030dec4f01d4fbcca3e374b7a0',1,'gdjs::ExporterHelper']]]
 ];

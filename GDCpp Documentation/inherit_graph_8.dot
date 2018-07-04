@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="btAlignedAllocator\l\< T, Alignment \>::rebind\< O \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d97/structbt_aligned_allocator_1_1rebind.html"];
-}

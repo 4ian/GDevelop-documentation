@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['render',['Render',['../dc/d13/classgdjs_1_1_js_code_event.html#ae017a78f1c89b2ed86bcf358878899a4',1,'gdjs::JsCodeEvent']]],
-  ['requestminify',['RequestMinify',['../d2/d4d/classgdjs_1_1_project_export_dialog.html#aae3eaefea835b5a5f7fc79375991638f',1,'gdjs::ProjectExportDialog']]],
-  ['run',['Run',['../d5/d19/classgdjs_1_1_http_server.html#aa1125039df29a86c54b61775c0363919',1,'gdjs::HttpServer']]]
+  ['onchildsubscript',['OnChildSubscript',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#afa2693750e5ba0b32d97564303476010',1,'gdjs::VariableCodeGenerationCallbacks']]],
+  ['onchildvariable',['OnChildVariable',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#af7d70e6d413e2251a089c1f9a6faccf5',1,'gdjs::VariableCodeGenerationCallbacks']]],
+  ['onideinitialized',['OnIDEInitialized',['../d2/d3d/classgdjs_1_1_js_platform.html#a73eb8b0aed57bfd2ab0cfeb49e1a8955',1,'gdjs::JsPlatform']]],
+  ['onrootvariable',['OnRootVariable',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#af8379e53ff079787e9eca96ab6a48a12',1,'gdjs::VariableCodeGenerationCallbacks']]],
+  ['overview_20of_20the_20js_20platform',['Overview of the JS Platform',['../d4/d8c/_overview_of_g_d_j_s.html',1,'index']]]
 ];

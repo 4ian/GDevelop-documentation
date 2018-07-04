@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['hash_3c_20gd_3a_3aeventitem_20_3e',['hash&lt; gd::EventItem &gt;',['../structstd_1_1hash_3_01gd_1_1_event_item_01_4.html',1,'std']]],
-  ['hash_3c_20gd_3a_3afoldingitem_20_3e',['hash&lt; gd::FoldingItem &gt;',['../structstd_1_1hash_3_01gd_1_1_folding_item_01_4.html',1,'std']]],
-  ['hash_3c_20gd_3a_3ainstructionitem_20_3e',['hash&lt; gd::InstructionItem &gt;',['../structstd_1_1hash_3_01gd_1_1_instruction_item_01_4.html',1,'std']]],
-  ['hash_3c_20gd_3a_3ainstructionlistitem_20_3e',['hash&lt; gd::InstructionListItem &gt;',['../structstd_1_1hash_3_01gd_1_1_instruction_list_item_01_4.html',1,'std']]],
-  ['hash_3c_20gd_3a_3aparameteritem_20_3e',['hash&lt; gd::ParameterItem &gt;',['../structstd_1_1hash_3_01gd_1_1_parameter_item_01_4.html',1,'std']]],
-  ['hash_3c_20gd_3a_3astring_20_3e',['hash&lt; gd::String &gt;',['../structstd_1_1hash_3_01gd_1_1_string_01_4.html',1,'std']]],
-  ['helpfileaccess',['HelpFileAccess',['../classgd_1_1_help_file_access.html',1,'gd']]],
-  ['helpprovider',['HelpProvider',['../classgd_1_1_help_provider.html',1,'gd']]],
-  ['highestzorderfinder',['HighestZOrderFinder',['../classgd_1_1_highest_z_order_finder.html',1,'gd']]]
+  ['gdauicommandcapture',['GDAuiCommandCapture',['../classgd_1_1_g_d_aui_command_capture.html',1,'gd']]],
+  ['gdribbonauiartprovider',['gdRibbonAUIArtProvider',['../classgd_1_1gd_ribbon_a_u_i_art_provider.html',1,'gd']]],
+  ['gdribbonmswartprovider',['gdRibbonMSWArtProvider',['../classgd_1_1gd_ribbon_m_s_w_art_provider.html',1,'gd']]],
+  ['gridsetupdialog',['GridSetupDialog',['../classgd_1_1_grid_setup_dialog.html',1,'gd']]],
+  ['groupevent',['GroupEvent',['../classgd_1_1_group_event.html',1,'gd']]],
+  ['groupeventdialog',['GroupEventDialog',['../class_group_event_dialog.html',1,'']]],
+  ['guicontentscalefactor',['GUIContentScaleFactor',['../classgd_1_1_g_u_i_content_scale_factor.html',1,'gd']]]
 ];
