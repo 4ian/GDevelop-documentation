@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['httpserver',['HttpServer',['../d5/d19/classgdjs_1_1_http_server.html#a1a59a84ca868ff2f0f28f97a59d03b72',1,'gdjs::HttpServer']]]
+  ['reloadbuiltinextensions',['ReloadBuiltinExtensions',['../d2/d3d/classgdjs_1_1_js_platform.html#a2b74c7ba3c580dff3f4db626c9441c5f',1,'gdjs::JsPlatform']]],
+  ['removeincludes',['RemoveIncludes',['../d0/d75/classgdjs_1_1_exporter_helper.html#a285158d1e9549706dc9f422705fbd887',1,'gdjs::ExporterHelper']]]
 ];

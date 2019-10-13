@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['onchildsubscript',['OnChildSubscript',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#afa2693750e5ba0b32d97564303476010',1,'gdjs::VariableCodeGenerationCallbacks']]],
-  ['onchildvariable',['OnChildVariable',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#af7d70e6d413e2251a089c1f9a6faccf5',1,'gdjs::VariableCodeGenerationCallbacks']]],
-  ['onideinitialized',['OnIDEInitialized',['../d2/d3d/classgdjs_1_1_js_platform.html#a73eb8b0aed57bfd2ab0cfeb49e1a8955',1,'gdjs::JsPlatform']]],
-  ['onrootvariable',['OnRootVariable',['../de/d2a/classgdjs_1_1_variable_code_generation_callbacks.html#af8379e53ff079787e9eca96ab6a48a12',1,'gdjs::VariableCodeGenerationCallbacks']]],
-  ['overview_20of_20the_20js_20platform',['Overview of the JS Platform',['../d4/d8c/_overview_of_g_d_j_s.html',1,'index']]]
+  ['sceneextension',['SceneExtension',['../de/dd7/classgdjs_1_1_scene_extension.html',1,'gdjs']]],
+  ['setcodenamespace',['SetCodeNamespace',['../d7/d4f/classgdjs_1_1_events_code_generator.html#acce6507d78b9e6552c646202c6d747dc',1,'gdjs::EventsCodeGenerator']]],
+  ['setcodeoutputdirectory',['SetCodeOutputDirectory',['../dc/dda/classgdjs_1_1_exporter.html#a9c51541a1481d6bf610f15f1621e1ddd',1,'gdjs::Exporter::SetCodeOutputDirectory()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#afeecd7cc427087d226bf9591954ef243',1,'gdjs::ExporterHelper::SetCodeOutputDirectory()']]],
+  ['spriteextension',['SpriteExtension',['../d1/db3/classgdjs_1_1_sprite_extension.html',1,'gdjs']]],
+  ['stringinstructionsextension',['StringInstructionsExtension',['../db/d0f/classgdjs_1_1_string_instructions_extension.html',1,'gdjs']]]
 ];

@@ -8,6 +8,5 @@ var searchData=
   ['updateforce',['UpdateForce',['../d0/d3b/class_runtime_object.html#a562bfe9baae7cc473ca0c9b1f90d2457',1,'RuntimeObject']]],
   ['updategui',['UpdateGUI',['../d6/da7/class_base_profiler.html#a48eef8d345226d6c53b0298643f98d59',1,'BaseProfiler']]],
   ['updatetime',['UpdateTime',['../d4/d5f/class_manual_timer.html#a83de25b9174f1e93052168643eab2adb',1,'ManualTimer']]],
-  ['updatevolume',['UpdateVolume',['../db/d96/class_music.html#a6431a8f28aa13b949944f83573426473',1,'Music::UpdateVolume()'],['../d0/d9e/class_sound.html#af2c65deb5c9c7ab2cbf71c2052193e3f',1,'Sound::UpdateVolume()']]],
-  ['userfriendlyname',['userFriendlyName',['../dc/d9a/class_code_compiler_task.html#ac552c9989cc6e63f64d9accb7f8c7f5a',1,'CodeCompilerTask']]]
+  ['updatevolume',['UpdateVolume',['../db/d96/class_music.html#a6431a8f28aa13b949944f83573426473',1,'Music::UpdateVolume()'],['../d0/d9e/class_sound.html#af2c65deb5c9c7ab2cbf71c2052193e3f',1,'Sound::UpdateVolume()']]]
 ];

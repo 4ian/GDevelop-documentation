@@ -7,9 +7,6 @@ var searchData=
   ['com1',['com1',['../classgd_1_1_comment_event.html#a4dcb0a7c4541dd2cbeec6c5a7d0aa785',1,'gd::CommentEvent']]],
   ['com2',['com2',['../classgd_1_1_comment_event.html#a5c9ff2699c120dae7e060d3766fede0e',1,'gd::CommentEvent']]],
   ['compilationforruntime',['compilationForRuntime',['../classgd_1_1_events_code_generator.html#a440f6ac796579a721eb4b2c100d11547',1,'gd::EventsCodeGenerator']]],
-  ['currentlayer',['currentLayer',['../classgd_1_1_layout_editor_canvas.html#a184f6bec31b6808018b7f05876484118',1,'gd::LayoutEditorCanvas']]],
-  ['currentpreviewer',['currentPreviewer',['../classgd_1_1_layout_editor_canvas.html#a737d70cf5fe2860b2e7da1e555b08c4e',1,'gd::LayoutEditorCanvas']]],
-  ['customcodeinmain',['customCodeInMain',['../classgd_1_1_events_code_generator.html#a3d202390a8f2af35cf09f4b1eaf0049f',1,'gd::EventsCodeGenerator']]],
   ['customcodeoutsidemain',['customCodeOutsideMain',['../classgd_1_1_events_code_generator.html#a8e496700c1dd61b0dcaee38520da0948',1,'gd::EventsCodeGenerator']]],
-  ['customglobaldeclaration',['customGlobalDeclaration',['../classgd_1_1_events_code_generator.html#a7692a50c9727933770e900f7d86b29df',1,'gd::EventsCodeGenerator']]]
+  ['customglobaldeclarations',['customGlobalDeclarations',['../classgd_1_1_events_code_generator.html#a9955e8e3165da16d6ead37ed8d1c90cf',1,'gd::EventsCodeGenerator']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['utf8proc_5fproperty_5fstruct',['utf8proc_property_struct',['../structutf8proc__property__struct.html',1,'']]]
+  ['textformatting',['TextFormatting',['../classgd_1_1_text_formatting.html',1,'gd']]],
+  ['textnode',['TextNode',['../structgd_1_1_text_node.html',1,'gd']]]
 ];

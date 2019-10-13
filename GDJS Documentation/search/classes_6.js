@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['httpserver',['HttpServer',['../d5/d19/classgdjs_1_1_http_server.html',1,'gdjs']]]
+  ['keyboardextension',['KeyboardExtension',['../d3/de3/classgdjs_1_1_keyboard_extension.html',1,'gdjs']]]
 ];

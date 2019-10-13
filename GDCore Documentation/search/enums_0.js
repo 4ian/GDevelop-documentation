@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['editeventreturntype',['EditEventReturnType',['../classgd_1_1_base_event.html#aa814ac6924a518bb6975bbfabf50e0cf',1,'gd::BaseEvent']]]
+  ['normform',['NormForm',['../classgd_1_1_string.html#ac9fbe9e33c5ebfa40ef54ff848702617',1,'gd::String']]]
 ];
