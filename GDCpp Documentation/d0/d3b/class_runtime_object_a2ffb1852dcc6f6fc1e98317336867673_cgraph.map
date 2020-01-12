@@ -1,8 +1,0 @@
-<map id="RuntimeObject::SeparateObjectsWithoutForces" name="RuntimeObject::SeparateObjectsWithoutForces">
-<area shape="rect" id="node3" href="$d0/d3b/class_runtime_object.html#a17b73543542ffcde5074097288df6b33" title="Get the real X position where is renderer the object. " alt="" coords="268,5,465,32"/>
-<area shape="rect" id="node5" href="$d0/d3b/class_runtime_object.html#ab7f45e473387e34cfe121e2b772d0649" title="Get the width of the object. " alt="" coords="281,56,452,83"/>
-<area shape="rect" id="node7" href="$d0/d3b/class_runtime_object.html#af4b35cb33489286ddb225ad2885f7c99" title="Get the real Y position where is renderer the object. " alt="" coords="267,107,466,133"/>
-<area shape="rect" id="node9" href="$d0/d3b/class_runtime_object.html#a9fdc8ed08039f5c2cd692e9c22e26e9b" title="Get the height of the object. " alt="" coords="279,157,454,184"/>
-<area shape="rect" id="node11" href="$d0/d3b/class_runtime_object.html#a4cfe5ef8c1702606c3229c2a910db809" title="Change X position of the object. " alt="" coords="295,208,438,235"/>
-<area shape="rect" id="node13" href="$d0/d3b/class_runtime_object.html#a4982f00578b0ea6a4c6f91de1fbcbc42" title="Change Y position of the object. " alt="" coords="294,259,439,285"/>
-</map>

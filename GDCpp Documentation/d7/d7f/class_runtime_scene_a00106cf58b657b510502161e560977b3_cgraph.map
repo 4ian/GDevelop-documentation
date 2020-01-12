@@ -1,5 +1,0 @@
-<map id="RuntimeScene::ManageObjectsAfterEvents" name="RuntimeScene::ManageObjectsAfterEvents">
-<area shape="rect" id="node3" href="$d3/de4/class_obj_instances_holder.html#a696fa5524e22453622c545f04b2fe804" title="ObjInstancesHolder\l::GetAllObjects" alt="" coords="299,5,434,46"/>
-<area shape="rect" id="node5" href="$d3/de4/class_obj_instances_holder.html#a95fa033dae7c4f09fd1272dd7b5e1ee3" title="ObjInstancesHolder\l::RemoveObject" alt="" coords="299,70,434,111"/>
-<area shape="rect" id="node7" href="$d7/d7f/class_runtime_scene.html#af0b051655082eda1a1fc4c07fa6b5497" title="RuntimeScene::GetElapsedTime" alt="" coords="261,136,472,163"/>
-</map>

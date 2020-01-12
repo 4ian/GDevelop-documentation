@@ -1,6 +1,0 @@
-<map id="RuntimeObject::AddForceTowardPosition" name="RuntimeObject::AddForceTowardPosition">
-<area shape="rect" id="node3" href="$d0/d3b/class_runtime_object.html#af4b35cb33489286ddb225ad2885f7c99" title="Get the real Y position where is renderer the object. " alt="" coords="267,5,466,32"/>
-<area shape="rect" id="node5" href="$d0/d3b/class_runtime_object.html#aacc50de5e06f1a74040e696775e0c1ae" title="Get the Y position of the center, relative to the position returned by GetDrawableY(). " alt="" coords="275,56,459,83"/>
-<area shape="rect" id="node7" href="$d0/d3b/class_runtime_object.html#a17b73543542ffcde5074097288df6b33" title="Get the real X position where is renderer the object. " alt="" coords="268,107,465,133"/>
-<area shape="rect" id="node9" href="$d0/d3b/class_runtime_object.html#add684c08e01b0705448d04f000980489" title="Get the X position of the center, relative to the position returned by GetDrawableX(). " alt="" coords="275,157,458,184"/>
-</map>
