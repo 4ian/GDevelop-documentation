@@ -41,11 +41,15 @@ jobs:
           command: |
             npm install -g --silent gh-pages@2.0.1
             git config --global user.email "ci-build@gdevelop-app.com"
-            git config --global user.name "ci-build"
+            git config --global user.name "GDevelop documentation CI"
+
+      - run:
+          name: Copy index.html
+          command: cp template/index.html GDevelop/docs
 
       - run:
           name: Deploy docs to gh-pages branch
-          command: cd GDevelop && gh-pages --dist docs --repo 'https://github.com/4ian/GDevelop-documentation.git'
+          command: cd GDevelop && gh-pages --dist docs --repo 'https://github.com/4ian/GDevelop-documentation.git' --message "Update documentation"
 
 workflows:
   version: 2
