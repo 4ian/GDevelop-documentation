@@ -29,7 +29,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-2018 Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-present Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
     </script>
     
 
@@ -562,7 +562,11 @@
             
                 <li data-name="gdjs.Layer#enableEffect"><a href="gdjs.Layer.html#enableEffect">enableEffect</a></li>
             
+                <li data-name="gdjs.Layer#getCameraHeight"><a href="gdjs.Layer.html#getCameraHeight">getCameraHeight</a></li>
+            
                 <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraWidth"><a href="gdjs.Layer.html#getCameraWidth">getCameraWidth</a></li>
             
                 <li data-name="gdjs.Layer#getCameraX"><a href="gdjs.Layer.html#getCameraX">getCameraX</a></li>
             
@@ -574,11 +578,15 @@
             
                 <li data-name="gdjs.Layer#getName"><a href="gdjs.Layer.html#getName">getName</a></li>
             
+                <li data-name="gdjs.Layer#getRuntimeScene"><a href="gdjs.Layer.html#getRuntimeScene">getRuntimeScene</a></li>
+            
                 <li data-name="gdjs.Layer#getTimeScale"><a href="gdjs.Layer.html#getTimeScale">getTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#isEffectEnabled"><a href="gdjs.Layer.html#isEffectEnabled">isEffectEnabled</a></li>
             
                 <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.Layer#onGameResolutionResized"><a href="gdjs.Layer.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.Layer#setCameraRotation"><a href="gdjs.Layer.html#setCameraRotation">setCameraRotation</a></li>
             
@@ -588,9 +596,17 @@
             
                 <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
             
+                <li data-name="gdjs.Layer#setEffectBooleanParameter"><a href="gdjs.Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectDoubleParameter"><a href="gdjs.Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectStringParameter"><a href="gdjs.Layer.html#setEffectStringParameter">setEffectStringParameter</a></li>
+            
                 <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#show"><a href="gdjs.Layer.html#show">show</a></li>
+            
+                <li data-name="gdjs.Layer#update"><a href="gdjs.Layer.html#update">update</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -621,7 +637,17 @@
             
                 <li data-name="gdjs.LayerPixiRenderer#changeRendererObjectZOrder"><a href="gdjs.LayerPixiRenderer.html#changeRendererObjectZOrder">changeRendererObjectZOrder</a></li>
             
+                <li data-name="gdjs.LayerPixiRenderer#enableEffect"><a href="gdjs.LayerPixiRenderer.html#enableEffect">enableEffect</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#isEffectEnabled"><a href="gdjs.LayerPixiRenderer.html#isEffectEnabled">isEffectEnabled</a></li>
+            
                 <li data-name="gdjs.LayerPixiRenderer#removeRendererObject"><a href="gdjs.LayerPixiRenderer.html#removeRendererObject">removeRendererObject</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectBooleanParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectDoubleParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectStringParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectStringParameter">setEffectStringParameter</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -809,17 +835,21 @@
             
             <span class="subtitle">Methods</span>
             
-                <li data-name="gdjs.RuntimeGame#adaptRendererSizeToFillScreen"><a href="gdjs.RuntimeGame.html#adaptRendererSizeToFillScreen">adaptRendererSizeToFillScreen</a></li>
+                <li data-name="gdjs.RuntimeGame#_forceGameResolutionUpdate"><a href="gdjs.RuntimeGame.html#_forceGameResolutionUpdate">_forceGameResolutionUpdate</a></li>
             
-                <li data-name="gdjs.RuntimeGame#getDefaultHeight"><a href="gdjs.RuntimeGame.html#getDefaultHeight">getDefaultHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGame#getDefaultWidth"><a href="gdjs.RuntimeGame.html#getDefaultWidth">getDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#getAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getFontManager"><a href="gdjs.RuntimeGame.html#getFontManager">getFontManager</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getGameData"><a href="gdjs.RuntimeGame.html#getGameData">getGameData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionHeight"><a href="gdjs.RuntimeGame.html#getGameResolutionHeight">getGameResolutionHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#getGameResolutionResizeMode">getGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionWidth"><a href="gdjs.RuntimeGame.html#getGameResolutionWidth">getGameResolutionWidth</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getImageManager"><a href="gdjs.RuntimeGame.html#getImageManager">getImageManager</a></li>
             
@@ -847,11 +877,15 @@
             
                 <li data-name="gdjs.RuntimeGame#loadAllAssets"><a href="gdjs.RuntimeGame.html#loadAllAssets">loadAllAssets</a></li>
             
+                <li data-name="gdjs.RuntimeGame#onWindowInnerSizeChanged"><a href="gdjs.RuntimeGame.html#onWindowInnerSizeChanged">onWindowInnerSizeChanged</a></li>
+            
                 <li data-name="gdjs.RuntimeGame#pause"><a href="gdjs.RuntimeGame.html#pause">pause</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultHeight"><a href="gdjs.RuntimeGame.html#setDefaultHeight">setDefaultHeight</a></li>
+                <li data-name="gdjs.RuntimeGame#setAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#setAdaptGameResolutionAtRuntime">setAdaptGameResolutionAtRuntime</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultWidth"><a href="gdjs.RuntimeGame.html#setDefaultWidth">setDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#setGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#setGameResolutionResizeMode">setGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setGameResolutionSize"><a href="gdjs.RuntimeGame.html#setGameResolutionSize">setGameResolutionSize</a></li>
             
                 <li data-name="gdjs.RuntimeGame#startCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li>
             
@@ -896,6 +930,8 @@
             
                 <li data-name="gdjs.RuntimeGameCocosRenderer#setMargins"><a href="gdjs.RuntimeGameCocosRenderer.html#setMargins">setMargins</a></li>
             
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setWindowSize"><a href="gdjs.RuntimeGameCocosRenderer.html#setWindowSize">setWindowSize</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -927,10 +963,6 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getCanvas"><a href="gdjs.RuntimeGamePixiRenderer.html#getCanvas">getCanvas</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentHeight"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentHeight">getCurrentHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentWidth"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentWidth">getCurrentWidth</a></li>
-            
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getElectron"><a href="gdjs.RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#isWebGLSupported"><a href="gdjs.RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li>
@@ -943,9 +975,11 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#setMargins"><a href="gdjs.RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#setSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setSize">setSize</a></li>
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setWindowSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setWindowSize">setWindowSize</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#stopGame"><a href="gdjs.RuntimeGamePixiRenderer.html#stopGame">stopGame</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#updateRendererSize"><a href="gdjs.RuntimeGamePixiRenderer.html#updateRendererSize">updateRendererSize</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -1207,7 +1241,7 @@
             
                 <li data-name="gdjs.RuntimeScene#markObjectForDeletion"><a href="gdjs.RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li>
             
-                <li data-name="gdjs.RuntimeScene#onCanvasResized"><a href="gdjs.RuntimeScene.html#onCanvasResized">onCanvasResized</a></li>
+                <li data-name="gdjs.RuntimeScene#onGameResolutionResized"><a href="gdjs.RuntimeScene.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.RuntimeScene#onPause"><a href="gdjs.RuntimeScene.html#onPause">onPause</a></li>
             
@@ -1218,6 +1252,8 @@
                 <li data-name="gdjs.RuntimeScene#renderAndStep"><a href="gdjs.RuntimeScene.html#renderAndStep">renderAndStep</a></li>
             
                 <li data-name="gdjs.RuntimeScene#requestChange"><a href="gdjs.RuntimeScene.html#requestChange">requestChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#sceneJustResumed"><a href="gdjs.RuntimeScene.html#sceneJustResumed">sceneJustResumed</a></li>
             
                 <li data-name="gdjs.RuntimeScene#setBackgroundColor"><a href="gdjs.RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li>
             
@@ -1281,6 +1317,8 @@
             
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
+                <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1293,6 +1331,14 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimation#hasMultipleDirections"><a href="gdjs.SpriteAnimation.html#hasMultipleDirections">hasMultipleDirections</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation#name"><a href="gdjs.SpriteAnimation.html#name">name</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation~directionData"><a href="gdjs.SpriteAnimation.html#~directionData">directionData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1313,6 +1359,16 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#frames"><a href="gdjs.SpriteAnimationDirection.html#frames">frames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#loop"><a href="gdjs.SpriteAnimationDirection.html#loop">loop</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#timeBetweenFrames"><a href="gdjs.SpriteAnimationDirection.html#timeBetweenFrames">timeBetweenFrames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection~frameData"><a href="gdjs.SpriteAnimationDirection.html#~frameData">frameData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1331,6 +1387,34 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#center"><a href="gdjs.SpriteAnimationFrame.html#center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#customHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#customHitBoxes">customHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#hasCustomHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#hasCustomHitBoxes">hasCustomHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#image"><a href="gdjs.SpriteAnimationFrame.html#image">image</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#origin"><a href="gdjs.SpriteAnimationFrame.html#origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#points"><a href="gdjs.SpriteAnimationFrame.html#points">points</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#texture"><a href="gdjs.SpriteAnimationFrame.html#texture">texture</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~center"><a href="gdjs.SpriteAnimationFrame.html#~center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~origin"><a href="gdjs.SpriteAnimationFrame.html#~origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~point"><a href="gdjs.SpriteAnimationFrame.html#~point">point</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~pointData"><a href="gdjs.SpriteAnimationFrame.html#~pointData">pointData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~polygonData"><a href="gdjs.SpriteAnimationFrame.html#~polygonData">polygonData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~ptData"><a href="gdjs.SpriteAnimationFrame.html#~ptData">ptData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1355,6 +1439,42 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationFrame"><a href="gdjs.SpriteRuntimeObject.html#_animationFrame">_animationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationPaused"><a href="gdjs.SpriteRuntimeObject.html#_animationPaused">_animationPaused</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animations"><a href="gdjs.SpriteRuntimeObject.html#_animations">_animations</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationSpeedScale"><a href="gdjs.SpriteRuntimeObject.html#_animationSpeedScale">_animationSpeedScale</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_blendMode"><a href="gdjs.SpriteRuntimeObject.html#_blendMode">_blendMode</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentAnimation"><a href="gdjs.SpriteRuntimeObject.html#_currentAnimation">_currentAnimation</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentDirection"><a href="gdjs.SpriteRuntimeObject.html#_currentDirection">_currentDirection</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentFrame"><a href="gdjs.SpriteRuntimeObject.html#_currentFrame">_currentFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedX"><a href="gdjs.SpriteRuntimeObject.html#_flippedX">_flippedX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedY"><a href="gdjs.SpriteRuntimeObject.html#_flippedY">_flippedY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_frameElapsedTime"><a href="gdjs.SpriteRuntimeObject.html#_frameElapsedTime">_frameElapsedTime</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_renderer"><a href="gdjs.SpriteRuntimeObject.html#_renderer">_renderer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleX"><a href="gdjs.SpriteRuntimeObject.html#_scaleX">_scaleX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleY"><a href="gdjs.SpriteRuntimeObject.html#_scaleY">_scaleY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateIfNotVisible"><a href="gdjs.SpriteRuntimeObject.html#_updateIfNotVisible">_updateIfNotVisible</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject~animData"><a href="gdjs.SpriteRuntimeObject.html#~animData">animData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1362,6 +1482,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#_updateAnimationFrame">_updateAnimationFrame</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#activateBehavior"><a href="gdjs.SpriteRuntimeObject.html#activateBehavior">activateBehavior</a></li>
             
@@ -1669,6 +1791,26 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.Variable#_children"><a href="gdjs.Variable.html#_children">_children</a></li>
+            
+                <li data-name="gdjs.Variable#_children[undefined]"><a href="gdjs.Variable.html#_children%255Bundefined%255D">_children[undefined]</a></li>
+            
+                <li data-name="gdjs.Variable#_isStructure"><a href="gdjs.Variable.html#_isStructure">_isStructure</a></li>
+            
+                <li data-name="gdjs.Variable#_numberDirty"><a href="gdjs.Variable.html#_numberDirty">_numberDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_str"><a href="gdjs.Variable.html#_str">_str</a></li>
+            
+                <li data-name="gdjs.Variable#_stringDirty"><a href="gdjs.Variable.html#_stringDirty">_stringDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_undefinedInContainer"><a href="gdjs.Variable.html#_undefinedInContainer">_undefinedInContainer</a></li>
+            
+                <li data-name="gdjs.Variable#_value"><a href="gdjs.Variable.html#_value">_value</a></li>
+            
+                <li data-name="gdjs.Variable~childData"><a href="gdjs.Variable.html#~childData">childData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1790,25 +1932,6 @@
             </ul>
         </li>
     
-        <li class="item" data-name="RuntimeObjectLists">
-            <span class="title">
-                <a href="RuntimeObjectLists.html">RuntimeObjectLists</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
     </ul>
 </div>
     <div class="main">
@@ -1821,67 +1944,101 @@
         <article>
             <pre class="prettyprint source linenums"><code>/*
  * GDevelop JS Platform
- * Copyright 2013-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * Copyright 2013-present Florian Rival (Florian.Rival@gmail.com). All rights reserved.
  * This project is released under the MIT License.
  */
 
 /**
- * A thin wrapper around a Howl object.
- * `gdjs.HowlerSound` just adds `paused`, `stopped`, `rate` and `canBeDestroyed` methods.
+ * A thin wrapper around a Howl object with:
+ * * Extra methods `paused`, `stopped`, `getRate`/`setRate` and `canBeDestroyed` methods.
+ * * Automatic clamping when calling `setRate` to ensure a valid value is passed to Howler.js.
  *
- * See https://github.com/goldfire/howler.js/tree/2.0 for the full documentation.
+ * See https://github.com/goldfire/howler.js#methods for the full documentation.
  *
  * @memberof gdjs
  * @class HowlerSound
  */
 gdjs.HowlerSound = function(o) {
-    Howl.call(this, o);
-    this._paused = false;
-    this._stopped = true;
-    this._canBeDestroyed = false;
-    this._rate = o.rate || 1;
+  Howl.call(this, o);
+  this._paused = false;
+  this._stopped = true;
+  this._canBeDestroyed = false;
+  this._rate = o.rate || 1;
 
-    //Add custom events listener to keep
-    //track of the sound status.
-    var that = this;
-    this.on('end', function() {
-		if (!that.loop()) {
-			that._canBeDestroyed = true;
-			that._paused = false;
-			that._stopped = true;
-		}
-    });
-    this.on('play', function() {
-		that._paused = false;
-		that._stopped = false;
-    });
-    this.on('pause', function() {
-		that._paused = true;
-		that._stopped = false;
-    });
+  //Add custom events listener to keep
+  //track of the sound status.
+  var that = this;
+  this.on('end', function() {
+    if (!that.loop()) {
+      that._canBeDestroyed = true;
+      that._paused = false;
+      that._stopped = true;
+    }
+  });
+  this.on('playerror', function(id, error) {
+    console.error(
+      "Can't play a sound, considering it as stopped. Error is:",
+      error
+    );
+    that._paused = false;
+    that._stopped = true;
+  });
+
+  // Track play/pause event to be sure the status is
+  // sync'ed with the sound - though this should be redundant
+  // with `play`/`pause` methods already doing that. Keeping
+  // that to be sure that the status is always correct.
+  this.on('play', function() {
+    that._paused = false;
+    that._stopped = false;
+  });
+  this.on('pause', function() {
+    that._paused = true;
+    that._stopped = false;
+  });
 };
 gdjs.HowlerSound.prototype = Object.create(Howl.prototype);
 
+// Redefine `stop`/`play`/`pause` to ensure the status of the sound
+// is immediately updated (so that calling `stopped` just after
+// `play` will return false).
+
+gdjs.HowlerSound.prototype.stop = function() {
+  this._paused = false;
+  this._stopped = true;
+  return Howl.prototype.stop.call(this);
+};
+gdjs.HowlerSound.prototype.play = function() {
+  this._paused = false;
+  this._stopped = false;
+  return Howl.prototype.play.call(this);
+};
+gdjs.HowlerSound.prototype.pause = function() {
+  this._paused = true;
+  this._stopped = false;
+  return Howl.prototype.pause.call(this);
+};
+
+// Add methods to query the status of the sound:
+
 gdjs.HowlerSound.prototype.paused = function() {
-	return this._paused;
+  return this._paused;
 };
 gdjs.HowlerSound.prototype.stopped = function() {
-	return this._stopped;
-};
-gdjs.HowlerSound.prototype.stop = function() {
-	this._paused = false;
-	this._stopped = true;
-	return Howl.prototype.stop.call(this);
+  return this._stopped;
 };
 gdjs.HowlerSound.prototype.canBeDestroyed = function() {
-	return this._canBeDestroyed;
+  return this._canBeDestroyed;
 };
+
+// Methods to safely update the rate of the sound:
+
 gdjs.HowlerSound.prototype.getRate = function() {
-    return this._rate;
+  return this._rate;
 };
 gdjs.HowlerSound.prototype.setRate = function(rate) {
-    this._rate = gdjs.HowlerSoundManager.clampRate(rate);
-    this.rate(this._rate);
+  this._rate = gdjs.HowlerSoundManager.clampRate(rate);
+  this.rate(this._rate);
 };
 
 /**
@@ -1893,63 +2050,70 @@ gdjs.HowlerSound.prototype.setRate = function(rate) {
  * @memberof gdjs
  * @class HowlerSoundManager
  */
-gdjs.HowlerSoundManager = function(resources)
-{
-    this._resources = resources;
-    this._availableResources = {}; //Map storing "audio" resources for faster access.
+gdjs.HowlerSoundManager = function(resources) {
+  this._resources = resources;
+  this._availableResources = {}; //Map storing "audio" resources for faster access.
 
-    this._globalVolume = 100;
+  this._globalVolume = 100;
 
-    this._sounds = {};
-    this._musics = {};
-    this._freeSounds = []; //Sounds without an assigned channel.
-    this._freeMusics = []; //Musics without an assigned channel.
+  this._sounds = {};
+  this._musics = {};
+  this._freeSounds = []; //Sounds without an assigned channel.
+  this._freeMusics = []; //Musics without an assigned channel.
 
-    this._pausedSounds = [];
-    this._paused = false;
+  this._pausedSounds = [];
+  this._paused = false;
 
-    var that = this;
-    this._checkForPause = function() {
-      if (that._paused) {
-        this.pause();
-        that._pausedSounds.push(this);
-      }
-    };
+  var that = this;
+  this._checkForPause = function() {
+    if (that._paused) {
+      this.pause();
+      that._pausedSounds.push(this);
+    }
+  };
 
-    document.addEventListener("deviceready", function() {
-        // pause/resume sounds in Cordova when the app is being paused/resumed
-        document.addEventListener("pause", function() {
-          var soundList = that._freeSounds.concat(that._freeMusics);
-          for (var key in that._sounds) {
-            if (that._sounds.hasOwnProperty(key)) {
-              soundList.push(that._sounds[key]);
-            }
+  document.addEventListener('deviceready', function() {
+    // pause/resume sounds in Cordova when the app is being paused/resumed
+    document.addEventListener(
+      'pause',
+      function() {
+        var soundList = that._freeSounds.concat(that._freeMusics);
+        for (var key in that._sounds) {
+          if (that._sounds.hasOwnProperty(key)) {
+            soundList.push(that._sounds[key]);
           }
-          for (var key in that._musics) {
-            if (that._musics.hasOwnProperty(key)) {
-              soundList.push(that._musics[key]);
-            }
+        }
+        for (var key in that._musics) {
+          if (that._musics.hasOwnProperty(key)) {
+            soundList.push(that._musics[key]);
           }
-          for (var i=0; i &lt; soundList.length; i++) {
-            var sound = soundList[i];
-            if (!sound.paused() &amp;&amp; !sound.stopped()) {
-              sound.pause();
-              that._pausedSounds.push(sound);
-            }
+        }
+        for (var i = 0; i &lt; soundList.length; i++) {
+          var sound = soundList[i];
+          if (!sound.paused() &amp;&amp; !sound.stopped()) {
+            sound.pause();
+            that._pausedSounds.push(sound);
           }
-          that._paused = true;
-        }, false);
-        document.addEventListener("resume", function() {
-          for (var i=0; i &lt; that._pausedSounds.length; i++) {
-            var sound = that._pausedSounds[i];
-            if (!sound.stopped()) {
-              sound.play();
-            }
+        }
+        that._paused = true;
+      },
+      false
+    );
+    document.addEventListener(
+      'resume',
+      function() {
+        for (var i = 0; i &lt; that._pausedSounds.length; i++) {
+          var sound = that._pausedSounds[i];
+          if (!sound.stopped()) {
+            sound.play();
           }
-          that._pausedSounds.length = 0;
-          that._paused = false;
-        }, false);
-    });
+        }
+        that._pausedSounds.length = 0;
+        that._paused = false;
+      },
+      false
+    );
+  });
 };
 
 gdjs.SoundManager = gdjs.HowlerSoundManager; //Register the class to let the engine use it.
@@ -1960,10 +2124,10 @@ gdjs.SoundManager = gdjs.HowlerSoundManager; //Register the class to let the eng
  * @private
  */
 gdjs.HowlerSoundManager.clampRate = function(rate) {
-	if (rate > 4.0) return 4.0;
-	if (rate &lt; 0.5) return 0.5;
+  if (rate > 4.0) return 4.0;
+  if (rate &lt; 0.5) return 0.5;
 
-	return rate;
+  return rate;
 };
 
 /**
@@ -1977,13 +2141,15 @@ gdjs.HowlerSoundManager.clampRate = function(rate) {
  * @return The associated filename
  */
 gdjs.HowlerSoundManager.prototype._getFileFromSoundName = function(soundName) {
-	if (this._availableResources.hasOwnProperty(soundName) &amp;&amp;
-		this._availableResources[soundName].file) {
-		return this._availableResources[soundName].file;
-	}
+  if (
+    this._availableResources.hasOwnProperty(soundName) &amp;&amp;
+    this._availableResources[soundName].file
+  ) {
+    return this._availableResources[soundName].file;
+  }
 
-	return soundName;
-}
+  return soundName;
+};
 
 /**
  * Store the sound in the specified array, put it at the first index that
@@ -1996,179 +2162,205 @@ gdjs.HowlerSoundManager.prototype._getFileFromSoundName = function(soundName) {
  * @private
  */
 gdjs.HowlerSoundManager.prototype._storeSoundInArray = function(arr, sound) {
-	//Try to recycle an old sound.
-	var index = null;
-	for(var i = 0, len = arr.length;i&lt;len;++i) {
-		if (arr[i] !== null &amp;&amp; arr[i].canBeDestroyed() ) {
-			arr[index] = sound;
-			return sound;
-		}
-	}
+  //Try to recycle an old sound.
+  var index = null;
+  for (var i = 0, len = arr.length; i &lt; len; ++i) {
+    if (arr[i] !== null &amp;&amp; arr[i].canBeDestroyed()) {
+      arr[index] = sound;
+      return sound;
+    }
+  }
 
-	arr.push(sound);
-	return sound;
+  arr.push(sound);
+  return sound;
 };
 
-gdjs.HowlerSoundManager.prototype.playSound = function(soundName, loop, volume, pitch) {
-	var soundFile = this._getFileFromSoundName(soundName);
+gdjs.HowlerSoundManager.prototype.playSound = function(
+  soundName,
+  loop,
+  volume,
+  pitch
+) {
+  var soundFile = this._getFileFromSoundName(soundName);
 
-	var sound = new gdjs.HowlerSound({
-	  src: [soundFile], //TODO: ogg, mp3...
-	  loop: loop,
-	  volume: volume/100,
-	  rate: gdjs.HowlerSoundManager.clampRate(pitch)
-	});
+  var sound = new gdjs.HowlerSound({
+    src: [soundFile], //TODO: ogg, mp3...
+    loop: loop,
+    volume: volume / 100,
+    rate: gdjs.HowlerSoundManager.clampRate(pitch),
+  });
 
-	this._storeSoundInArray(this._freeSounds, sound).play();
+  this._storeSoundInArray(this._freeSounds, sound).play();
 
-	sound.on('play', this._checkForPause);
+  sound.on('play', this._checkForPause);
 };
 
-gdjs.HowlerSoundManager.prototype.playSoundOnChannel = function(soundName, channel, loop, volume, pitch) {
-	var	oldSound = this._sounds[channel];
-	if (oldSound) {
-		oldSound.unload();
-	}
+gdjs.HowlerSoundManager.prototype.playSoundOnChannel = function(
+  soundName,
+  channel,
+  loop,
+  volume,
+  pitch
+) {
+  var oldSound = this._sounds[channel];
+  if (oldSound) {
+    oldSound.unload();
+  }
 
-	var soundFile = this._getFileFromSoundName(soundName);
+  var soundFile = this._getFileFromSoundName(soundName);
 
-	var sound = new gdjs.HowlerSound({
-		src: [soundFile], //TODO: ogg, mp3...
-		loop: loop,
-		volume: volume/100,
-		rate: gdjs.HowlerSoundManager.clampRate(pitch)
-	});
+  var sound = new gdjs.HowlerSound({
+    src: [soundFile], //TODO: ogg, mp3...
+    loop: loop,
+    volume: volume / 100,
+    rate: gdjs.HowlerSoundManager.clampRate(pitch),
+  });
 
-	sound.play();
-	this._sounds[channel] = sound;
+  sound.play();
+  this._sounds[channel] = sound;
 
-	sound.on('play', this._checkForPause);
+  sound.on('play', this._checkForPause);
 };
 
 gdjs.HowlerSoundManager.prototype.getSoundOnChannel = function(channel) {
-	return this._sounds[channel];
+  return this._sounds[channel];
 };
 
-gdjs.HowlerSoundManager.prototype.playMusic = function(soundName, loop, volume, pitch) {
-	var soundFile = this._getFileFromSoundName(soundName);
+gdjs.HowlerSoundManager.prototype.playMusic = function(
+  soundName,
+  loop,
+  volume,
+  pitch
+) {
+  var soundFile = this._getFileFromSoundName(soundName);
 
-	var sound = new gdjs.HowlerSound({
-	  src: [soundFile], //TODO: ogg, mp3...
-	  loop: loop,
-	  html5: true, //Force HTML5 audio so we don't wait for the full file to be loaded on Android.
-	  volume: volume/100,
-	  rate: gdjs.HowlerSoundManager.clampRate(pitch)
-	});
+  var sound = new gdjs.HowlerSound({
+    src: [soundFile], //TODO: ogg, mp3...
+    loop: loop,
+    html5: true, //Force HTML5 audio so we don't wait for the full file to be loaded on Android.
+    volume: volume / 100,
+    rate: gdjs.HowlerSoundManager.clampRate(pitch),
+  });
 
-	this._storeSoundInArray(this._freeMusics, sound).play();
+  this._storeSoundInArray(this._freeMusics, sound).play();
 
-	sound.on('play', this._checkForPause);
+  sound.on('play', this._checkForPause);
 };
 
-gdjs.HowlerSoundManager.prototype.playMusicOnChannel = function(soundName, channel, loop, volume, pitch) {
-	var	oldMusic = this._musics[channel];
-	if (oldMusic) {
-		oldMusic.unload();
-	}
+gdjs.HowlerSoundManager.prototype.playMusicOnChannel = function(
+  soundName,
+  channel,
+  loop,
+  volume,
+  pitch
+) {
+  var oldMusic = this._musics[channel];
+  if (oldMusic) {
+    oldMusic.unload();
+  }
 
-	var soundFile = this._getFileFromSoundName(soundName);
+  var soundFile = this._getFileFromSoundName(soundName);
 
-	var music = new gdjs.HowlerSound({
-		src: [soundFile], //TODO: ogg, mp3...
-		loop: loop,
-		html5: true, //Force HTML5 audio so we don't wait for the full file to be loaded on Android.
-		volume: volume/100,
-		rate: gdjs.HowlerSoundManager.clampRate(pitch)
-	});
+  var music = new gdjs.HowlerSound({
+    src: [soundFile], //TODO: ogg, mp3...
+    loop: loop,
+    html5: true, //Force HTML5 audio so we don't wait for the full file to be loaded on Android.
+    volume: volume / 100,
+    rate: gdjs.HowlerSoundManager.clampRate(pitch),
+  });
 
-	music.play();
-	this._musics[channel] = music;
+  music.play();
+  this._musics[channel] = music;
 
-	music.on('play', this._checkForPause);
+  music.on('play', this._checkForPause);
 };
 
 gdjs.HowlerSoundManager.prototype.getMusicOnChannel = function(channel) {
-	return this._musics[channel];
+  return this._musics[channel];
 };
 
 gdjs.HowlerSoundManager.prototype.setGlobalVolume = function(volume) {
-	this._globalVolume = volume;
-	if (this._globalVolume > 100) this._globalVolume = 100;
-	if (this._globalVolume &lt; 0) this._globalVolume = 0;
-	Howler.volume(this._globalVolume/100);
+  this._globalVolume = volume;
+  if (this._globalVolume > 100) this._globalVolume = 100;
+  if (this._globalVolume &lt; 0) this._globalVolume = 0;
+  Howler.volume(this._globalVolume / 100);
 };
 
 gdjs.HowlerSoundManager.prototype.getGlobalVolume = function() {
-	return this._globalVolume;
+  return this._globalVolume;
 };
 
 gdjs.HowlerSoundManager.prototype.clearAll = function() {
-	for (var i = 0;i&lt;this._freeSounds.length;++i)  {
-		if (this._freeSounds[i]) this._freeSounds[i].unload();
-	}
-	for (var i = 0;i&lt;this._freeMusics.length;++i)  {
-		if (this._freeMusics[i]) this._freeMusics[i].unload();
-	}
-	this._freeSounds.length = 0;
-	this._freeMusics.length = 0;
+  for (var i = 0; i &lt; this._freeSounds.length; ++i) {
+    if (this._freeSounds[i]) this._freeSounds[i].unload();
+  }
+  for (var i = 0; i &lt; this._freeMusics.length; ++i) {
+    if (this._freeMusics[i]) this._freeMusics[i].unload();
+  }
+  this._freeSounds.length = 0;
+  this._freeMusics.length = 0;
 
-	for (var p in this._sounds) {
-		if (this._sounds.hasOwnProperty(p) &amp;&amp; this._sounds[p]) {
-			this._sounds[p].unload();
-			delete this._sounds[p];
-		}
-	}
-	for (var p in this._musics) {
-		if (this._musics.hasOwnProperty(p) &amp;&amp; this._musics[p]) {
-			this._musics[p].unload();
-			delete this._musics[p];
-		}
-	}
-	this._pausedSounds.length = 0;
-}
+  for (var p in this._sounds) {
+    if (this._sounds.hasOwnProperty(p) &amp;&amp; this._sounds[p]) {
+      this._sounds[p].unload();
+      delete this._sounds[p];
+    }
+  }
+  for (var p in this._musics) {
+    if (this._musics.hasOwnProperty(p) &amp;&amp; this._musics[p]) {
+      this._musics[p].unload();
+      delete this._musics[p];
+    }
+  }
+  this._pausedSounds.length = 0;
+};
 
-gdjs.HowlerSoundManager.prototype.preloadAudio = function(onProgress, onComplete, resources) {
-	resources = resources || this._resources;
-	
-	//Construct the list of files to be loaded.
-	//For one loaded file, it can have one or more resources
-	//that use it.
-    var files = [];
-	for(var i = 0, len = resources.length;i&lt;len;++i) {
-		var res = resources[i];
-        if ( res.file &amp;&amp; res.kind === "audio" ) {
-        	this._availableResources[res.name] = res;
+gdjs.HowlerSoundManager.prototype.preloadAudio = function(
+  onProgress,
+  onComplete,
+  resources
+) {
+  resources = resources || this._resources;
 
-            if (files.indexOf(res.file) === -1) {
-	            files.push(res.file);
-	        }
-        }
+  //Construct the list of files to be loaded.
+  //For one loaded file, it can have one or more resources
+  //that use it.
+  var files = [];
+  for (var i = 0, len = resources.length; i &lt; len; ++i) {
+    var res = resources[i];
+    if (res.file &amp;&amp; res.kind === 'audio') {
+      this._availableResources[res.name] = res;
+
+      if (files.indexOf(res.file) === -1) {
+        files.push(res.file);
+      }
+    }
+  }
+
+  if (files.length === 0) return onComplete(files.length);
+
+  var loaded = 0;
+  function onLoad(audioFile) {
+    loaded++;
+    if (loaded === files.length) {
+      return onComplete(files.length);
     }
 
-    if (files.length === 0) return onComplete(files.length);
+    onProgress(loaded, files.length);
+  }
 
-    var loaded = 0;
-    function onLoad(audioFile) {
-        loaded++;
-        if (loaded === files.length) {
-            return onComplete(files.length);
-        }
-
-        onProgress(loaded, files.length);
-    }
-
-	var that = this;
-    for(var i = 0;i&lt;files.length;++i) {
-        (function(audioFile) {
-            var sound = new XMLHttpRequest();
-            sound.addEventListener('load', onLoad.bind(that, audioFile));
-            sound.addEventListener('error', onLoad.bind(that, audioFile));
-            sound.addEventListener('abort', onLoad.bind(that, audioFile));
-            sound.open('GET', audioFile);
-            sound.send();
-        })(files[i]);
-    }
-}
+  var that = this;
+  for (var i = 0; i &lt; files.length; ++i) {
+    (function(audioFile) {
+      var sound = new XMLHttpRequest();
+      sound.addEventListener('load', onLoad.bind(that, audioFile));
+      sound.addEventListener('error', onLoad.bind(that, audioFile));
+      sound.addEventListener('abort', onLoad.bind(that, audioFile));
+      sound.open('GET', audioFile);
+      sound.send();
+    })(files[i]);
+  }
+};
 </code></pre>
         </article>
     </section>
@@ -2181,7 +2373,7 @@ gdjs.HowlerSoundManager.prototype.preloadAudio = function(onProgress, onComplete
         
 
         <footer>
-            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Oct 13 2019 23:33:47 GMT+0100 (BST)
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jan 12 2020 23:36:32 GMT+0000 (UTC)
         </footer>
     </div>
 </div>

@@ -29,7 +29,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-2018 Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-present Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
     </script>
     
 
@@ -562,7 +562,11 @@
             
                 <li data-name="gdjs.Layer#enableEffect"><a href="gdjs.Layer.html#enableEffect">enableEffect</a></li>
             
+                <li data-name="gdjs.Layer#getCameraHeight"><a href="gdjs.Layer.html#getCameraHeight">getCameraHeight</a></li>
+            
                 <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraWidth"><a href="gdjs.Layer.html#getCameraWidth">getCameraWidth</a></li>
             
                 <li data-name="gdjs.Layer#getCameraX"><a href="gdjs.Layer.html#getCameraX">getCameraX</a></li>
             
@@ -574,11 +578,15 @@
             
                 <li data-name="gdjs.Layer#getName"><a href="gdjs.Layer.html#getName">getName</a></li>
             
+                <li data-name="gdjs.Layer#getRuntimeScene"><a href="gdjs.Layer.html#getRuntimeScene">getRuntimeScene</a></li>
+            
                 <li data-name="gdjs.Layer#getTimeScale"><a href="gdjs.Layer.html#getTimeScale">getTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#isEffectEnabled"><a href="gdjs.Layer.html#isEffectEnabled">isEffectEnabled</a></li>
             
                 <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.Layer#onGameResolutionResized"><a href="gdjs.Layer.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.Layer#setCameraRotation"><a href="gdjs.Layer.html#setCameraRotation">setCameraRotation</a></li>
             
@@ -588,9 +596,17 @@
             
                 <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
             
+                <li data-name="gdjs.Layer#setEffectBooleanParameter"><a href="gdjs.Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectDoubleParameter"><a href="gdjs.Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectStringParameter"><a href="gdjs.Layer.html#setEffectStringParameter">setEffectStringParameter</a></li>
+            
                 <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#show"><a href="gdjs.Layer.html#show">show</a></li>
+            
+                <li data-name="gdjs.Layer#update"><a href="gdjs.Layer.html#update">update</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -621,7 +637,17 @@
             
                 <li data-name="gdjs.LayerPixiRenderer#changeRendererObjectZOrder"><a href="gdjs.LayerPixiRenderer.html#changeRendererObjectZOrder">changeRendererObjectZOrder</a></li>
             
+                <li data-name="gdjs.LayerPixiRenderer#enableEffect"><a href="gdjs.LayerPixiRenderer.html#enableEffect">enableEffect</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#isEffectEnabled"><a href="gdjs.LayerPixiRenderer.html#isEffectEnabled">isEffectEnabled</a></li>
+            
                 <li data-name="gdjs.LayerPixiRenderer#removeRendererObject"><a href="gdjs.LayerPixiRenderer.html#removeRendererObject">removeRendererObject</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectBooleanParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectDoubleParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectStringParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectStringParameter">setEffectStringParameter</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -809,17 +835,21 @@
             
             <span class="subtitle">Methods</span>
             
-                <li data-name="gdjs.RuntimeGame#adaptRendererSizeToFillScreen"><a href="gdjs.RuntimeGame.html#adaptRendererSizeToFillScreen">adaptRendererSizeToFillScreen</a></li>
+                <li data-name="gdjs.RuntimeGame#_forceGameResolutionUpdate"><a href="gdjs.RuntimeGame.html#_forceGameResolutionUpdate">_forceGameResolutionUpdate</a></li>
             
-                <li data-name="gdjs.RuntimeGame#getDefaultHeight"><a href="gdjs.RuntimeGame.html#getDefaultHeight">getDefaultHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGame#getDefaultWidth"><a href="gdjs.RuntimeGame.html#getDefaultWidth">getDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#getAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getFontManager"><a href="gdjs.RuntimeGame.html#getFontManager">getFontManager</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getGameData"><a href="gdjs.RuntimeGame.html#getGameData">getGameData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionHeight"><a href="gdjs.RuntimeGame.html#getGameResolutionHeight">getGameResolutionHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#getGameResolutionResizeMode">getGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionWidth"><a href="gdjs.RuntimeGame.html#getGameResolutionWidth">getGameResolutionWidth</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getImageManager"><a href="gdjs.RuntimeGame.html#getImageManager">getImageManager</a></li>
             
@@ -847,11 +877,15 @@
             
                 <li data-name="gdjs.RuntimeGame#loadAllAssets"><a href="gdjs.RuntimeGame.html#loadAllAssets">loadAllAssets</a></li>
             
+                <li data-name="gdjs.RuntimeGame#onWindowInnerSizeChanged"><a href="gdjs.RuntimeGame.html#onWindowInnerSizeChanged">onWindowInnerSizeChanged</a></li>
+            
                 <li data-name="gdjs.RuntimeGame#pause"><a href="gdjs.RuntimeGame.html#pause">pause</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultHeight"><a href="gdjs.RuntimeGame.html#setDefaultHeight">setDefaultHeight</a></li>
+                <li data-name="gdjs.RuntimeGame#setAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#setAdaptGameResolutionAtRuntime">setAdaptGameResolutionAtRuntime</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultWidth"><a href="gdjs.RuntimeGame.html#setDefaultWidth">setDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#setGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#setGameResolutionResizeMode">setGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setGameResolutionSize"><a href="gdjs.RuntimeGame.html#setGameResolutionSize">setGameResolutionSize</a></li>
             
                 <li data-name="gdjs.RuntimeGame#startCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li>
             
@@ -896,6 +930,8 @@
             
                 <li data-name="gdjs.RuntimeGameCocosRenderer#setMargins"><a href="gdjs.RuntimeGameCocosRenderer.html#setMargins">setMargins</a></li>
             
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setWindowSize"><a href="gdjs.RuntimeGameCocosRenderer.html#setWindowSize">setWindowSize</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -927,10 +963,6 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getCanvas"><a href="gdjs.RuntimeGamePixiRenderer.html#getCanvas">getCanvas</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentHeight"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentHeight">getCurrentHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentWidth"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentWidth">getCurrentWidth</a></li>
-            
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getElectron"><a href="gdjs.RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#isWebGLSupported"><a href="gdjs.RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li>
@@ -943,9 +975,11 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#setMargins"><a href="gdjs.RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#setSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setSize">setSize</a></li>
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setWindowSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setWindowSize">setWindowSize</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#stopGame"><a href="gdjs.RuntimeGamePixiRenderer.html#stopGame">stopGame</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#updateRendererSize"><a href="gdjs.RuntimeGamePixiRenderer.html#updateRendererSize">updateRendererSize</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -1207,7 +1241,7 @@
             
                 <li data-name="gdjs.RuntimeScene#markObjectForDeletion"><a href="gdjs.RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li>
             
-                <li data-name="gdjs.RuntimeScene#onCanvasResized"><a href="gdjs.RuntimeScene.html#onCanvasResized">onCanvasResized</a></li>
+                <li data-name="gdjs.RuntimeScene#onGameResolutionResized"><a href="gdjs.RuntimeScene.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.RuntimeScene#onPause"><a href="gdjs.RuntimeScene.html#onPause">onPause</a></li>
             
@@ -1218,6 +1252,8 @@
                 <li data-name="gdjs.RuntimeScene#renderAndStep"><a href="gdjs.RuntimeScene.html#renderAndStep">renderAndStep</a></li>
             
                 <li data-name="gdjs.RuntimeScene#requestChange"><a href="gdjs.RuntimeScene.html#requestChange">requestChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#sceneJustResumed"><a href="gdjs.RuntimeScene.html#sceneJustResumed">sceneJustResumed</a></li>
             
                 <li data-name="gdjs.RuntimeScene#setBackgroundColor"><a href="gdjs.RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li>
             
@@ -1281,6 +1317,8 @@
             
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
+                <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1293,6 +1331,14 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimation#hasMultipleDirections"><a href="gdjs.SpriteAnimation.html#hasMultipleDirections">hasMultipleDirections</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation#name"><a href="gdjs.SpriteAnimation.html#name">name</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation~directionData"><a href="gdjs.SpriteAnimation.html#~directionData">directionData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1313,6 +1359,16 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#frames"><a href="gdjs.SpriteAnimationDirection.html#frames">frames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#loop"><a href="gdjs.SpriteAnimationDirection.html#loop">loop</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#timeBetweenFrames"><a href="gdjs.SpriteAnimationDirection.html#timeBetweenFrames">timeBetweenFrames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection~frameData"><a href="gdjs.SpriteAnimationDirection.html#~frameData">frameData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1331,6 +1387,34 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#center"><a href="gdjs.SpriteAnimationFrame.html#center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#customHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#customHitBoxes">customHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#hasCustomHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#hasCustomHitBoxes">hasCustomHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#image"><a href="gdjs.SpriteAnimationFrame.html#image">image</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#origin"><a href="gdjs.SpriteAnimationFrame.html#origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#points"><a href="gdjs.SpriteAnimationFrame.html#points">points</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#texture"><a href="gdjs.SpriteAnimationFrame.html#texture">texture</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~center"><a href="gdjs.SpriteAnimationFrame.html#~center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~origin"><a href="gdjs.SpriteAnimationFrame.html#~origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~point"><a href="gdjs.SpriteAnimationFrame.html#~point">point</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~pointData"><a href="gdjs.SpriteAnimationFrame.html#~pointData">pointData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~polygonData"><a href="gdjs.SpriteAnimationFrame.html#~polygonData">polygonData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~ptData"><a href="gdjs.SpriteAnimationFrame.html#~ptData">ptData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1355,6 +1439,42 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationFrame"><a href="gdjs.SpriteRuntimeObject.html#_animationFrame">_animationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationPaused"><a href="gdjs.SpriteRuntimeObject.html#_animationPaused">_animationPaused</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animations"><a href="gdjs.SpriteRuntimeObject.html#_animations">_animations</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationSpeedScale"><a href="gdjs.SpriteRuntimeObject.html#_animationSpeedScale">_animationSpeedScale</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_blendMode"><a href="gdjs.SpriteRuntimeObject.html#_blendMode">_blendMode</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentAnimation"><a href="gdjs.SpriteRuntimeObject.html#_currentAnimation">_currentAnimation</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentDirection"><a href="gdjs.SpriteRuntimeObject.html#_currentDirection">_currentDirection</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentFrame"><a href="gdjs.SpriteRuntimeObject.html#_currentFrame">_currentFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedX"><a href="gdjs.SpriteRuntimeObject.html#_flippedX">_flippedX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedY"><a href="gdjs.SpriteRuntimeObject.html#_flippedY">_flippedY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_frameElapsedTime"><a href="gdjs.SpriteRuntimeObject.html#_frameElapsedTime">_frameElapsedTime</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_renderer"><a href="gdjs.SpriteRuntimeObject.html#_renderer">_renderer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleX"><a href="gdjs.SpriteRuntimeObject.html#_scaleX">_scaleX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleY"><a href="gdjs.SpriteRuntimeObject.html#_scaleY">_scaleY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateIfNotVisible"><a href="gdjs.SpriteRuntimeObject.html#_updateIfNotVisible">_updateIfNotVisible</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject~animData"><a href="gdjs.SpriteRuntimeObject.html#~animData">animData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1362,6 +1482,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#_updateAnimationFrame">_updateAnimationFrame</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#activateBehavior"><a href="gdjs.SpriteRuntimeObject.html#activateBehavior">activateBehavior</a></li>
             
@@ -1669,6 +1791,26 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.Variable#_children"><a href="gdjs.Variable.html#_children">_children</a></li>
+            
+                <li data-name="gdjs.Variable#_children[undefined]"><a href="gdjs.Variable.html#_children%255Bundefined%255D">_children[undefined]</a></li>
+            
+                <li data-name="gdjs.Variable#_isStructure"><a href="gdjs.Variable.html#_isStructure">_isStructure</a></li>
+            
+                <li data-name="gdjs.Variable#_numberDirty"><a href="gdjs.Variable.html#_numberDirty">_numberDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_str"><a href="gdjs.Variable.html#_str">_str</a></li>
+            
+                <li data-name="gdjs.Variable#_stringDirty"><a href="gdjs.Variable.html#_stringDirty">_stringDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_undefinedInContainer"><a href="gdjs.Variable.html#_undefinedInContainer">_undefinedInContainer</a></li>
+            
+                <li data-name="gdjs.Variable#_value"><a href="gdjs.Variable.html#_value">_value</a></li>
+            
+                <li data-name="gdjs.Variable~childData"><a href="gdjs.Variable.html#~childData">childData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1790,25 +1932,6 @@
             </ul>
         </li>
     
-        <li class="item" data-name="RuntimeObjectLists">
-            <span class="title">
-                <a href="RuntimeObjectLists.html">RuntimeObjectLists</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
     </ul>
 </div>
     <div class="main">
@@ -1819,10 +1942,20 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/*
+            <pre class="prettyprint source linenums"><code>// @ts-check
+
+/*
  * GDevelop JS Platform
  * Copyright 2013-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
  * This project is released under the MIT License.
+ */
+
+/**
+ * @typedef {Object} ObjectData Object containing initial properties for all objects extending gdjs.RuntimeObject
+ * @property {string} name The name of the object. During the game, objects can be queried by their name (see {@link gdjs.RuntimeScene.prototype.getObjects} for example).
+ * @property {string} type The object type.
+ * @property {Array&lt;VariableData>} variables The list of default variables.
+ * @property {Array&lt;BehaviorData>} behaviors The list of default behaviors.
  */
 
 /**
@@ -1835,13 +1968,14 @@
  * However, you should not be calling the constructor on an already existing object
  * which is not a RuntimeObject.
  *
- * A `gdjs.RuntimeObject` should not be instanciated directly, always a child class
+ * A `gdjs.RuntimeObject` should not be instantiated directly, always a child class
  * (because gdjs.RuntimeObject don't call onCreated at the end of its constructor).
  *
- * @memberof gdjs
- * @class RuntimeObject
- * @param {gdjs.RuntimeScene} runtimeScene The RuntimeScene owning the object.
- * @param objectData The data defining the object
+ * @memberOf gdjs
+ * @name RuntimeObject
+ * @class
+ * @param {gdjs.RuntimeScene} runtimeScene The {@link gdjs.RuntimeScene} the object belongs to.
+ * @param {ObjectData} objectData The initial properties of the object.
  */
 gdjs.RuntimeObject = function(runtimeScene, objectData)
 {
@@ -1885,7 +2019,7 @@ gdjs.RuntimeObject = function(runtimeScene, objectData)
         this.clearForces();
 
     //A force returned by getAverageForce method:
-    if (this._averageForce === undefined) this._averageForce = new gdjs.Force(0,0,false);
+    if (this._averageForce === undefined) this._averageForce = new gdjs.Force(0,0,0);
 
     //Behaviors:
     if (this._behaviors === undefined)
@@ -1920,7 +2054,26 @@ gdjs.RuntimeObject = function(runtimeScene, objectData)
         this._timers.clear();
 };
 
-gdjs.RuntimeObject.forcesGarbage = []; //Global container for unused forces, avoiding recreating forces each tick.
+/**
+ * Table containing the id corresponding to an object name. Do not use directly or modify.
+ * @static
+ * @private
+ */
+gdjs.RuntimeObject._identifiers = gdjs.RuntimeObject._identifiers || new Hashtable();
+
+/**
+ * The next available unique identifier for an object. Do not use directly or modify. 
+ * @static
+ * @private
+ */
+gdjs.RuntimeObject._newId = (gdjs.RuntimeObject._newId || 0);
+
+/**
+ * Global container for unused forces, avoiding recreating forces each tick.
+ * @static
+ * @private
+ */
+gdjs.RuntimeObject.forcesGarbage = []; 
 
 //Common members functions related to the object and its runtimeScene :
 
@@ -1950,7 +2103,7 @@ gdjs.RuntimeObject.prototype.onCreated = function() {
 gdjs.RuntimeObject.prototype.getElapsedTime = function(runtimeScene) {
     //TODO: Memoize?
     var theLayer = runtimeScene.getLayer(this.layer);
-    return theLayer.getElapsedTime(runtimeScene);
+    return theLayer.getElapsedTime();
 }
 
 /**
@@ -2095,10 +2248,11 @@ gdjs.RuntimeObject.prototype.getY = function() {
 };
 
 /**
- * Get the X position of the rendered object.&lt;br>
+ * Get the X position of the rendered object.
+ *
  * For most objects, this will returns the same value as getX(). But if the object
- * has an origin this.is not the same as the point (0,0) of the object displayed,
- * getDrawableX will differs.
+ * has an origin that is not the same as the point (0,0) of the object displayed,
+ * getDrawableX will differ.
  *
  * @return {number} The X position of the rendered object.
  */
@@ -2107,10 +2261,11 @@ gdjs.RuntimeObject.prototype.getDrawableX = function() {
 };
 
 /**
- * Get the Y position of the rendered object.&lt;br>
+ * Get the Y position of the rendered object.
+ *
  * For most objects, this will returns the same value as getY(). But if the object
- * has an origin this.is not the same as the point (0,0) of the object displayed,
- * getDrawableY will differs.
+ * has an origin that is not the same as the point (0,0) of the object displayed,
+ * getDrawableY will differ.
  *
  * @return {number} The Y position of the rendered object.
  */
@@ -2135,11 +2290,12 @@ gdjs.RuntimeObject.prototype.rotateTowardAngle = function(angle, speed, runtimeS
 
     var newAngle = this.getAngle() + (diffWasPositive ? -1.0 : 1.0)
         * speed * this.getElapsedTime(runtimeScene) / 1000;
+    // @ts-ignore
     if (gdjs.evtTools.common.angleDifference(newAngle, angle) > 0 ^ diffWasPositive)
         newAngle = angle;
     this.setAngle(newAngle);
 
-    if (this.getAngle() != newAngle) //Objects like sprite in 8 directions does not handle small increments...
+    if (this.getAngle() !== newAngle) //Objects like sprite in 8 directions does not handle small increments...
         this.setAngle(angle); //...so force them to be in the path angle anyway.
 };
 
@@ -2351,7 +2507,7 @@ gdjs.RuntimeObject.prototype.hasVariable = function(name) {
 };
 
 /**
- * Hide or show the object
+ * Hide (or show) the object.
  * @param {boolean} enable Set it to true to hide the object, false to show it.
  */
 gdjs.RuntimeObject.prototype.hide = function(enable) {
@@ -2361,6 +2517,11 @@ gdjs.RuntimeObject.prototype.hide = function(enable) {
 
 /**
  * Return true if the object is not hidden.
+ *
+ * Note: This is unrelated to the actual visibility of the objec on the screen.
+ * For this, see `getVisibilityAABB` to get the bounding boxes of the object as displayed
+ * on the scene.
+ *
  * @return {boolean} true if the object is not hidden.
  */
 gdjs.RuntimeObject.prototype.isVisible = function() {
@@ -2376,7 +2537,7 @@ gdjs.RuntimeObject.prototype.isHidden = function() {
 };
 
 /**
- * Return the width of the object
+ * Return the width of the object.
  * @return {number} The width of the object
  */
 gdjs.RuntimeObject.prototype.getWidth = function() {
@@ -2384,7 +2545,7 @@ gdjs.RuntimeObject.prototype.getWidth = function() {
 };
 
 /**
- * Return the width of the object
+ * Return the width of the object.
  * @return {number} The height of the object
  */
 gdjs.RuntimeObject.prototype.getHeight = function() {
@@ -2392,16 +2553,16 @@ gdjs.RuntimeObject.prototype.getHeight = function() {
 };
 
 /**
- * Return the X position of the object center, relative to the object position.
- * @return {number} the X position of the object center
+ * Return the X position of the object center, **relative to the object X position** (`getDrawableX`).
+ * @return {number} the X position of the object center, relative to `getDrawableX()`.
  */
 gdjs.RuntimeObject.prototype.getCenterX = function() {
     return this.getWidth() / 2;
 };
 
 /**
- * Return the Y position of the object center, relative to the object position.
- * @return {number} the Y position of the object center
+ * Return the Y position of the object center, **relative to the object position** (`getDrawableY`).
+ * @return {number} the Y position of the object center, relative to `getDrawableY()`.
  */
 gdjs.RuntimeObject.prototype.getCenterY = function() {
     return this.getHeight() / 2;
@@ -2478,11 +2639,11 @@ gdjs.RuntimeObject.prototype.addForceTowardPosition = function(x,y, len, multipl
  * @param {number} len The force length, in pixels.
  * @param {number} multiplier Set the force multiplier
  */
-gdjs.RuntimeObject.prototype.addForceTowardObject = function(obj, len, multiplier) {
-    if ( obj == null ) return;
+gdjs.RuntimeObject.prototype.addForceTowardObject = function(object, len, multiplier) {
+    if ( object == null ) return;
 
-    this.addForceTowardPosition(obj.getDrawableX() + obj.getCenterX(),
-                                obj.getDrawableY() + obj.getCenterY(),
+    this.addForceTowardPosition(object.getDrawableX() + object.getCenterX(),
+                                object.getDrawableY() + object.getCenterY(),
                                 len, multiplier);
 };
 
@@ -2514,7 +2675,7 @@ gdjs.RuntimeObject.prototype.updateForces = function(elapsedTime) {
             ++i;
         } else if (multiplier === 0 || force.getLength() &lt;= 0.001) { // Instant or force disappearing
             gdjs.RuntimeObject.forcesGarbage.push(force);
-            this._forces.remove(i);
+            this._forces.splice(i, 1);
         } else { // Deprecated way of updating forces progressively.
             force.setLength(force.getLength() - force.getLength() * ( 1 - multiplier ) * elapsedTime);
             ++i;
@@ -2598,32 +2759,28 @@ gdjs.RuntimeObject.prototype.updateHitBoxes = function() {
     var centerX = this.getCenterX();
     var centerY = this.getCenterY();
 
-    if (this.getCenterX() === width / 2 &amp;&amp; this.getCenterY() === height / 2) {
-        this.hitBoxes[0].vertices[0][0] =-width/2.0;
-        this.hitBoxes[0].vertices[0][1] =-height/2.0;
-        this.hitBoxes[0].vertices[1][0] =+width/2.0;
-        this.hitBoxes[0].vertices[1][1] =-height/2.0;
-        this.hitBoxes[0].vertices[2][0] =+width/2.0;
-        this.hitBoxes[0].vertices[2][1] =+height/2.0;
-        this.hitBoxes[0].vertices[3][0] =-width/2.0;
-        this.hitBoxes[0].vertices[3][1] =+height/2.0;
-
-        this.hitBoxes[0].rotate(this.getAngle()/180*Math.PI);
-        this.hitBoxes[0].move(this.getDrawableX()+this.getCenterX(), this.getDrawableY()+this.getCenterY());
+    if (centerX === width / 2 &amp;&amp; centerY === height / 2) {
+        this.hitBoxes[0].vertices[0][0] = - centerX;
+        this.hitBoxes[0].vertices[0][1] = - centerY;
+        this.hitBoxes[0].vertices[1][0] = + centerX;
+        this.hitBoxes[0].vertices[1][1] = - centerY;
+        this.hitBoxes[0].vertices[2][0] = + centerX;
+        this.hitBoxes[0].vertices[2][1] = + centerY;
+        this.hitBoxes[0].vertices[3][0] = - centerX;
+        this.hitBoxes[0].vertices[3][1] = + centerY;
     } else {
-        this.hitBoxes[0].vertices[0][0] = 0;
-        this.hitBoxes[0].vertices[0][1] = 0;
-        this.hitBoxes[0].vertices[1][0] = width;
-        this.hitBoxes[0].vertices[1][1] = 0;
-        this.hitBoxes[0].vertices[2][0] = width;
-        this.hitBoxes[0].vertices[2][1] = height;
-        this.hitBoxes[0].vertices[3][0] = 0;
-        this.hitBoxes[0].vertices[3][1] = height;
-
-        this.hitBoxes[0].move(-centerX, -centerY);
-        this.hitBoxes[0].rotate(this.getAngle()/180*Math.PI);
-        this.hitBoxes[0].move(this.getDrawableX()+centerX, this.getDrawableY()+centerY);
+        this.hitBoxes[0].vertices[0][0] = 0 - centerX;
+        this.hitBoxes[0].vertices[0][1] = 0 - centerY;
+        this.hitBoxes[0].vertices[1][0] = width - centerX;
+        this.hitBoxes[0].vertices[1][1] = 0 - centerY;
+        this.hitBoxes[0].vertices[2][0] = width - centerX;
+        this.hitBoxes[0].vertices[2][1] = height - centerY;
+        this.hitBoxes[0].vertices[3][0] = 0 - centerX;
+        this.hitBoxes[0].vertices[3][1] = height - centerY;
     }
+
+    this.hitBoxes[0].rotate(this.getAngle()/180*Math.PI);
+    this.hitBoxes[0].move(this.getDrawableX()+centerX, this.getDrawableY()+centerY);
 };
 
 /**
@@ -3078,23 +3235,23 @@ gdjs.RuntimeObject.prototype.separateObjectsWithForces = function(objectsLists, 
             if ( this.getDrawableX()+this.getCenterX() &lt; objects[i].getDrawableX()+objects[i].getCenterX() )
             {
                 var av = this.hasNoForces() ? 0 : this.getAverageForce().getX();
-                this.addForce( -av - 10, 0, false );
+                this.addForce( -av - 10, 0, 0 );
             }
             else
             {
                 var av = this.hasNoForces() ? 0 : this.getAverageForce().getX();
-                this.addForce( -av + 10, 0, false );
+                this.addForce( -av + 10, 0, 0 );
             }
 
             if ( this.getDrawableY()+this.getCenterY() &lt; objects[i].getDrawableY()+objects[i].getCenterY() )
             {
                 var av = this.hasNoForces() ? 0 : this.getAverageForce().getY();
-                this.addForce( 0, -av - 10, false );
+                this.addForce( 0, -av - 10, 0 );
             }
             else
             {
                 var av = this.hasNoForces() ? 0 : this.getAverageForce().getY();
-                this.addForce( 0, -av + 10, false );
+                this.addForce( 0, -av + 10, 0 );
             }
         }
     }
@@ -3109,6 +3266,8 @@ gdjs.RuntimeObject.prototype.separateObjectsWithForces = function(objectsLists, 
  * @return {boolean} true if obj1 and obj2 are in collision
  */
 gdjs.RuntimeObject.collisionTest = function(obj1, obj2, ignoreTouchingEdges) {
+    // TODO: This would better be done using the object AABB (getAABB), as (`getCenterX`;`getCenterY`) point
+    // is not necessarily in the middle of the object (for sprites for example).
     //First check if bounding circle are too far.
     var o1w = obj1.getWidth();
     var o1h = obj1.getHeight();
@@ -3146,6 +3305,8 @@ gdjs.RuntimeObject.collisionTest = function(obj1, obj2, ignoreTouchingEdges) {
  * @return A raycast result with the contact points and distances
  */
 gdjs.RuntimeObject.prototype.raycastTest = function(x, y, endX, endY, closest) {
+    // TODO: This would better be done using the object AABB (getAABB), as (`getCenterX`;`getCenterY`) point
+    // is not necessarily in the middle of the object (for sprites for example).
     var objW = this.getWidth();
     var objH = this.getHeight();
     var diffX = this.getDrawableX()+this.getCenterX() - x;
@@ -3245,28 +3406,29 @@ gdjs.RuntimeObject.prototype.isCollidingWithPoint = function(pointX, pointY) {
     }
 
     return false;
-}
+};
 
 
 /**
- * Get the identifier associated to an object name :&lt;br>
+ * Get the identifier associated to an object name.
  * Some features may want to compare objects name a large number of time. In this case,
- * it may be more efficient to compare objects name identifier.
+ * it may be more efficient to compare objects name identifiers.
+ *
  * @static
  */
 gdjs.RuntimeObject.getNameIdentifier = function(name) {
-    gdjs.RuntimeObject.getNameIdentifier.identifiers =
-        gdjs.RuntimeObject.getNameIdentifier.identifiers
+    gdjs.RuntimeObject._identifiers =
+        gdjs.RuntimeObject._identifiers
         || new Hashtable();
 
-    if ( gdjs.RuntimeObject.getNameIdentifier.identifiers.containsKey(name) )
-        return gdjs.RuntimeObject.getNameIdentifier.identifiers.get(name);
+    if ( gdjs.RuntimeObject._identifiers.containsKey(name) )
+        return gdjs.RuntimeObject._identifiers.get(name);
 
-    gdjs.RuntimeObject.getNameIdentifier.newId =
-        (gdjs.RuntimeObject.getNameIdentifier.newId || 0) + 1;
-    var newIdentifier = gdjs.RuntimeObject.getNameIdentifier.newId;
+    gdjs.RuntimeObject._newId =
+        (gdjs.RuntimeObject._newId || 0) + 1;
+    var newIdentifier = gdjs.RuntimeObject._newId;
 
-    gdjs.RuntimeObject.getNameIdentifier.identifiers.put(name, newIdentifier);
+    gdjs.RuntimeObject._identifiers.put(name, newIdentifier);
     return newIdentifier;
 };
 
@@ -3284,7 +3446,7 @@ gdjs.RuntimeObject.thisIsARuntimeObjectConstructor = "";
         
 
         <footer>
-            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Oct 13 2019 23:33:47 GMT+0100 (BST)
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jan 12 2020 23:36:32 GMT+0000 (UTC)
         </footer>
     </div>
 </div>

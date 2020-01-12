@@ -29,7 +29,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-2018 Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-present Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
     </script>
     
 
@@ -562,7 +562,11 @@
             
                 <li data-name="gdjs.Layer#enableEffect"><a href="gdjs.Layer.html#enableEffect">enableEffect</a></li>
             
+                <li data-name="gdjs.Layer#getCameraHeight"><a href="gdjs.Layer.html#getCameraHeight">getCameraHeight</a></li>
+            
                 <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraWidth"><a href="gdjs.Layer.html#getCameraWidth">getCameraWidth</a></li>
             
                 <li data-name="gdjs.Layer#getCameraX"><a href="gdjs.Layer.html#getCameraX">getCameraX</a></li>
             
@@ -574,11 +578,15 @@
             
                 <li data-name="gdjs.Layer#getName"><a href="gdjs.Layer.html#getName">getName</a></li>
             
+                <li data-name="gdjs.Layer#getRuntimeScene"><a href="gdjs.Layer.html#getRuntimeScene">getRuntimeScene</a></li>
+            
                 <li data-name="gdjs.Layer#getTimeScale"><a href="gdjs.Layer.html#getTimeScale">getTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#isEffectEnabled"><a href="gdjs.Layer.html#isEffectEnabled">isEffectEnabled</a></li>
             
                 <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.Layer#onGameResolutionResized"><a href="gdjs.Layer.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.Layer#setCameraRotation"><a href="gdjs.Layer.html#setCameraRotation">setCameraRotation</a></li>
             
@@ -588,9 +596,17 @@
             
                 <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
             
+                <li data-name="gdjs.Layer#setEffectBooleanParameter"><a href="gdjs.Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectDoubleParameter"><a href="gdjs.Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectStringParameter"><a href="gdjs.Layer.html#setEffectStringParameter">setEffectStringParameter</a></li>
+            
                 <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#show"><a href="gdjs.Layer.html#show">show</a></li>
+            
+                <li data-name="gdjs.Layer#update"><a href="gdjs.Layer.html#update">update</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -621,7 +637,17 @@
             
                 <li data-name="gdjs.LayerPixiRenderer#changeRendererObjectZOrder"><a href="gdjs.LayerPixiRenderer.html#changeRendererObjectZOrder">changeRendererObjectZOrder</a></li>
             
+                <li data-name="gdjs.LayerPixiRenderer#enableEffect"><a href="gdjs.LayerPixiRenderer.html#enableEffect">enableEffect</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#isEffectEnabled"><a href="gdjs.LayerPixiRenderer.html#isEffectEnabled">isEffectEnabled</a></li>
+            
                 <li data-name="gdjs.LayerPixiRenderer#removeRendererObject"><a href="gdjs.LayerPixiRenderer.html#removeRendererObject">removeRendererObject</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectBooleanParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectDoubleParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectStringParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectStringParameter">setEffectStringParameter</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -809,17 +835,21 @@
             
             <span class="subtitle">Methods</span>
             
-                <li data-name="gdjs.RuntimeGame#adaptRendererSizeToFillScreen"><a href="gdjs.RuntimeGame.html#adaptRendererSizeToFillScreen">adaptRendererSizeToFillScreen</a></li>
+                <li data-name="gdjs.RuntimeGame#_forceGameResolutionUpdate"><a href="gdjs.RuntimeGame.html#_forceGameResolutionUpdate">_forceGameResolutionUpdate</a></li>
             
-                <li data-name="gdjs.RuntimeGame#getDefaultHeight"><a href="gdjs.RuntimeGame.html#getDefaultHeight">getDefaultHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGame#getDefaultWidth"><a href="gdjs.RuntimeGame.html#getDefaultWidth">getDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#getAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getFontManager"><a href="gdjs.RuntimeGame.html#getFontManager">getFontManager</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getGameData"><a href="gdjs.RuntimeGame.html#getGameData">getGameData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionHeight"><a href="gdjs.RuntimeGame.html#getGameResolutionHeight">getGameResolutionHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#getGameResolutionResizeMode">getGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionWidth"><a href="gdjs.RuntimeGame.html#getGameResolutionWidth">getGameResolutionWidth</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getImageManager"><a href="gdjs.RuntimeGame.html#getImageManager">getImageManager</a></li>
             
@@ -847,11 +877,15 @@
             
                 <li data-name="gdjs.RuntimeGame#loadAllAssets"><a href="gdjs.RuntimeGame.html#loadAllAssets">loadAllAssets</a></li>
             
+                <li data-name="gdjs.RuntimeGame#onWindowInnerSizeChanged"><a href="gdjs.RuntimeGame.html#onWindowInnerSizeChanged">onWindowInnerSizeChanged</a></li>
+            
                 <li data-name="gdjs.RuntimeGame#pause"><a href="gdjs.RuntimeGame.html#pause">pause</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultHeight"><a href="gdjs.RuntimeGame.html#setDefaultHeight">setDefaultHeight</a></li>
+                <li data-name="gdjs.RuntimeGame#setAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#setAdaptGameResolutionAtRuntime">setAdaptGameResolutionAtRuntime</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultWidth"><a href="gdjs.RuntimeGame.html#setDefaultWidth">setDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#setGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#setGameResolutionResizeMode">setGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setGameResolutionSize"><a href="gdjs.RuntimeGame.html#setGameResolutionSize">setGameResolutionSize</a></li>
             
                 <li data-name="gdjs.RuntimeGame#startCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li>
             
@@ -896,6 +930,8 @@
             
                 <li data-name="gdjs.RuntimeGameCocosRenderer#setMargins"><a href="gdjs.RuntimeGameCocosRenderer.html#setMargins">setMargins</a></li>
             
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setWindowSize"><a href="gdjs.RuntimeGameCocosRenderer.html#setWindowSize">setWindowSize</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -927,10 +963,6 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getCanvas"><a href="gdjs.RuntimeGamePixiRenderer.html#getCanvas">getCanvas</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentHeight"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentHeight">getCurrentHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentWidth"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentWidth">getCurrentWidth</a></li>
-            
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getElectron"><a href="gdjs.RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#isWebGLSupported"><a href="gdjs.RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li>
@@ -943,9 +975,11 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#setMargins"><a href="gdjs.RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#setSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setSize">setSize</a></li>
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setWindowSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setWindowSize">setWindowSize</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#stopGame"><a href="gdjs.RuntimeGamePixiRenderer.html#stopGame">stopGame</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#updateRendererSize"><a href="gdjs.RuntimeGamePixiRenderer.html#updateRendererSize">updateRendererSize</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -1207,7 +1241,7 @@
             
                 <li data-name="gdjs.RuntimeScene#markObjectForDeletion"><a href="gdjs.RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li>
             
-                <li data-name="gdjs.RuntimeScene#onCanvasResized"><a href="gdjs.RuntimeScene.html#onCanvasResized">onCanvasResized</a></li>
+                <li data-name="gdjs.RuntimeScene#onGameResolutionResized"><a href="gdjs.RuntimeScene.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.RuntimeScene#onPause"><a href="gdjs.RuntimeScene.html#onPause">onPause</a></li>
             
@@ -1218,6 +1252,8 @@
                 <li data-name="gdjs.RuntimeScene#renderAndStep"><a href="gdjs.RuntimeScene.html#renderAndStep">renderAndStep</a></li>
             
                 <li data-name="gdjs.RuntimeScene#requestChange"><a href="gdjs.RuntimeScene.html#requestChange">requestChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#sceneJustResumed"><a href="gdjs.RuntimeScene.html#sceneJustResumed">sceneJustResumed</a></li>
             
                 <li data-name="gdjs.RuntimeScene#setBackgroundColor"><a href="gdjs.RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li>
             
@@ -1281,6 +1317,8 @@
             
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
+                <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1293,6 +1331,14 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimation#hasMultipleDirections"><a href="gdjs.SpriteAnimation.html#hasMultipleDirections">hasMultipleDirections</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation#name"><a href="gdjs.SpriteAnimation.html#name">name</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation~directionData"><a href="gdjs.SpriteAnimation.html#~directionData">directionData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1313,6 +1359,16 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#frames"><a href="gdjs.SpriteAnimationDirection.html#frames">frames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#loop"><a href="gdjs.SpriteAnimationDirection.html#loop">loop</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#timeBetweenFrames"><a href="gdjs.SpriteAnimationDirection.html#timeBetweenFrames">timeBetweenFrames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection~frameData"><a href="gdjs.SpriteAnimationDirection.html#~frameData">frameData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1331,6 +1387,34 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#center"><a href="gdjs.SpriteAnimationFrame.html#center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#customHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#customHitBoxes">customHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#hasCustomHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#hasCustomHitBoxes">hasCustomHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#image"><a href="gdjs.SpriteAnimationFrame.html#image">image</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#origin"><a href="gdjs.SpriteAnimationFrame.html#origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#points"><a href="gdjs.SpriteAnimationFrame.html#points">points</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#texture"><a href="gdjs.SpriteAnimationFrame.html#texture">texture</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~center"><a href="gdjs.SpriteAnimationFrame.html#~center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~origin"><a href="gdjs.SpriteAnimationFrame.html#~origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~point"><a href="gdjs.SpriteAnimationFrame.html#~point">point</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~pointData"><a href="gdjs.SpriteAnimationFrame.html#~pointData">pointData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~polygonData"><a href="gdjs.SpriteAnimationFrame.html#~polygonData">polygonData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~ptData"><a href="gdjs.SpriteAnimationFrame.html#~ptData">ptData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1355,6 +1439,42 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationFrame"><a href="gdjs.SpriteRuntimeObject.html#_animationFrame">_animationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationPaused"><a href="gdjs.SpriteRuntimeObject.html#_animationPaused">_animationPaused</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animations"><a href="gdjs.SpriteRuntimeObject.html#_animations">_animations</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationSpeedScale"><a href="gdjs.SpriteRuntimeObject.html#_animationSpeedScale">_animationSpeedScale</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_blendMode"><a href="gdjs.SpriteRuntimeObject.html#_blendMode">_blendMode</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentAnimation"><a href="gdjs.SpriteRuntimeObject.html#_currentAnimation">_currentAnimation</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentDirection"><a href="gdjs.SpriteRuntimeObject.html#_currentDirection">_currentDirection</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentFrame"><a href="gdjs.SpriteRuntimeObject.html#_currentFrame">_currentFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedX"><a href="gdjs.SpriteRuntimeObject.html#_flippedX">_flippedX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedY"><a href="gdjs.SpriteRuntimeObject.html#_flippedY">_flippedY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_frameElapsedTime"><a href="gdjs.SpriteRuntimeObject.html#_frameElapsedTime">_frameElapsedTime</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_renderer"><a href="gdjs.SpriteRuntimeObject.html#_renderer">_renderer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleX"><a href="gdjs.SpriteRuntimeObject.html#_scaleX">_scaleX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleY"><a href="gdjs.SpriteRuntimeObject.html#_scaleY">_scaleY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateIfNotVisible"><a href="gdjs.SpriteRuntimeObject.html#_updateIfNotVisible">_updateIfNotVisible</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject~animData"><a href="gdjs.SpriteRuntimeObject.html#~animData">animData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1362,6 +1482,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#_updateAnimationFrame">_updateAnimationFrame</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#activateBehavior"><a href="gdjs.SpriteRuntimeObject.html#activateBehavior">activateBehavior</a></li>
             
@@ -1669,6 +1791,26 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.Variable#_children"><a href="gdjs.Variable.html#_children">_children</a></li>
+            
+                <li data-name="gdjs.Variable#_children[undefined]"><a href="gdjs.Variable.html#_children%255Bundefined%255D">_children[undefined]</a></li>
+            
+                <li data-name="gdjs.Variable#_isStructure"><a href="gdjs.Variable.html#_isStructure">_isStructure</a></li>
+            
+                <li data-name="gdjs.Variable#_numberDirty"><a href="gdjs.Variable.html#_numberDirty">_numberDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_str"><a href="gdjs.Variable.html#_str">_str</a></li>
+            
+                <li data-name="gdjs.Variable#_stringDirty"><a href="gdjs.Variable.html#_stringDirty">_stringDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_undefinedInContainer"><a href="gdjs.Variable.html#_undefinedInContainer">_undefinedInContainer</a></li>
+            
+                <li data-name="gdjs.Variable#_value"><a href="gdjs.Variable.html#_value">_value</a></li>
+            
+                <li data-name="gdjs.Variable~childData"><a href="gdjs.Variable.html#~childData">childData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1790,25 +1932,6 @@
             </ul>
         </li>
     
-        <li class="item" data-name="RuntimeObjectLists">
-            <span class="title">
-                <a href="RuntimeObjectLists.html">RuntimeObjectLists</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
     </ul>
 </div>
     <div class="main">
@@ -1836,7 +1959,7 @@
     <div class="nameContainer">
         <h4 class="name" id="RuntimeGame">
             
-            new gdjs.RuntimeGame<span class="signature">(data, spec)</span>
+            new gdjs.RuntimeGame<span class="signature">(data, <span class="optional">spec</span>)</span>
         </h4>
     
         
@@ -1899,6 +2022,11 @@
             
             <td class="description last">
                 
+                    
+                    
+                        
+                    
+                
                 <p>The object (usually stored in data.json) containing the full project data</p></td>
         </tr>
 	
@@ -1921,6 +2049,13 @@
             
             
             <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 <p>Optional object for specifiying additional options: {forceFullscreen: ...}</p></td>
         </tr>
@@ -2036,14 +2171,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="adaptRendererSizeToFillScreen">
+        <h4 class="name" id="_forceGameResolutionUpdate">
             
-            adaptRendererSizeToFillScreen<span class="signature">(mode)</span>
+            _forceGameResolutionUpdate<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line414">line 414</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line492">line 492</a>
         </div>
         
     </div>
@@ -2054,7 +2189,7 @@
     
     
     <div class="description">
-        <p>Enlarge/reduce the width (or the height) of the game to fill the screen.</p>
+        <p>Enlarge/reduce the width (or the height) of the game to fill the inner window.</p>
     </div>
     
 
@@ -2062,58 +2197,6 @@
     
     
     
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>mode</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                    
-                    
-                        <span class="nullable">nullable</span>
-                    
-                        
-                    
-                
-                <p><code>adaptWidth</code> to change the width, <code>adaptHeight</code> to change the height. If not defined, will use the game &quot;sizeOnStartupMode&quot; .</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -2159,14 +2242,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="getDefaultHeight">
+        <h4 class="name" id="getAdaptGameResolutionAtRuntime">
             
-            getDefaultHeight<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+            getAdaptGameResolutionAtRuntime<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line230">line 230</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line318">line 318</a>
         </div>
         
     </div>
@@ -2177,8 +2260,10 @@
     
     
     <div class="description">
-        <p>Get the default height of the game: canvas is created with this height,
-and cameras of layers are created using this height when a scene is started.</p>
+        <p>Returns if the game resolution should be automatically adapted
+when the game window or screen size change. This will only
+be the case if the game resolution resize mode is
+configured to adapt the width or the height of the game.</p>
     </div>
     
 
@@ -2241,112 +2326,11 @@ and cameras of layers are created using this height when a scene is started.</p>
             
             <td class="type">
             
-                        number
+                        boolean
                         
                     
             </td>
-            <td class="description last">The default height for cameras of layers</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="getDefaultWidth">
-            
-            getDefaultWidth<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line221">line 221</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Get the default width of the game: canvas is created with this width,
-and cameras of layers are created using this width when a scene is started.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last">The default width for cameras of layers</td>
+            <td class="description last">true if the game resolution is automatically changed according to the window/screen size.</td>
         </tr>
     
     </tbody>
@@ -2368,7 +2352,7 @@ and cameras of layers are created using this width when a scene is started.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line176">line 176</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line177">line 177</a>
         </div>
         
     </div>
@@ -2513,7 +2497,7 @@ and cameras of layers are created using this width when a scene is started.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line97">line 97</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line98">line 98</a>
         </div>
         
     </div>
@@ -2613,7 +2597,7 @@ and cameras of layers are created using this width when a scene is started.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line123">line 123</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line124">line 124</a>
         </div>
         
     </div>
@@ -2706,6 +2690,308 @@ and cameras of layers are created using this width when a scene is started.</p>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="getGameResolutionHeight">
+            
+            getGameResolutionHeight<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line229">line 229</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Get the game resolution (the size at which the game is played and rendered) height.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        number
+                        
+                    
+            </td>
+            <td class="description last">The game resolution height, in pixels.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getGameResolutionResizeMode">
+            
+            getGameResolutionResizeMode<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line295">line 295</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Returns if the width or the height of the game resolution
+should be changed to fit the game window - or if the game
+resolution should not be updated automatically (empty string).</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        string
+                        
+                    
+            </td>
+            <td class="description last">Either &quot;&quot; (don't change game resolution), &quot;adaptWidth&quot; or &quot;adaptHeight&quot;.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getGameResolutionWidth">
+            
+            getGameResolutionWidth<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line221">line 221</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Get the game resolution (the size at which the game is played and rendered) width.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        number
+                        
+                    
+            </td>
+            <td class="description last">The game resolution width, in pixels.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="getImageManager">
             
             getImageManager<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{gdjs.ImageManager}</span>
@@ -2713,7 +2999,7 @@ and cameras of layers are created using this width when a scene is started.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line89">line 89</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line90">line 90</a>
         </div>
         
     </div>
@@ -2813,7 +3099,7 @@ and cameras of layers are created using this width when a scene is started.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line194">line 194</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line195">line 195</a>
         </div>
         
     </div>
@@ -2913,7 +3199,7 @@ and cameras of layers are created using this width when a scene is started.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line106">line 106</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line107">line 107</a>
         </div>
         
     </div>
@@ -3014,7 +3300,7 @@ and touches states.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line115">line 115</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line116">line 116</a>
         </div>
         
     </div>
@@ -3115,7 +3401,7 @@ resources.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line256">line 256</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line326">line 326</a>
         </div>
         
     </div>
@@ -3187,7 +3473,7 @@ resources.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line212">line 212</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line213">line 213</a>
         </div>
         
     </div>
@@ -3259,7 +3545,7 @@ resources.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line203">line 203</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line204">line 204</a>
         </div>
         
     </div>
@@ -3331,7 +3617,7 @@ resources.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line263">line 263</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line333">line 333</a>
         </div>
         
     </div>
@@ -3402,7 +3688,7 @@ resources.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line133">line 133</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line134">line 134</a>
         </div>
         
     </div>
@@ -3527,7 +3813,7 @@ The data associated to the scene.
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line81">line 81</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line82">line 82</a>
         </div>
         
     </div>
@@ -3627,7 +3913,7 @@ The data associated to the scene.
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line73">line 73</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line74">line 74</a>
         </div>
         
     </div>
@@ -3727,7 +4013,7 @@ The data associated to the scene.
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line156">line 156</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line157">line 157</a>
         </div>
         
     </div>
@@ -3872,7 +4158,7 @@ The data associated to the scene.
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line279">line 279</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line349">line 349</a>
         </div>
         
     </div>
@@ -3936,6 +4222,79 @@ The data associated to the scene.
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="onWindowInnerSizeChanged">
+            
+            onWindowInnerSizeChanged<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line485">line 485</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Called by the game renderer when the window containing the game
+has changed size (this can result from a resize of the window,
+but also other factors like a device orientation change on mobile).</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="pause">
             
             pause<span class="signature">(enable)</span>
@@ -3943,7 +4302,7 @@ The data associated to the scene.
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line272">line 272</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line342">line 342</a>
         </div>
         
     </div>
@@ -4053,14 +4412,14 @@ When paused, the game won't step and will be freezed. Useful for debugging.</p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="setDefaultHeight">
+        <h4 class="name" id="setAdaptGameResolutionAtRuntime">
             
-            setDefaultHeight<span class="signature">(height)</span>
+            setAdaptGameResolutionAtRuntime<span class="signature">(enable)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line248">line 248</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line306">line 306</a>
         </div>
         
     </div>
@@ -4071,8 +4430,10 @@ When paused, the game won't step and will be freezed. Useful for debugging.</p>
     
     
     <div class="description">
-        <p>Change the default height of the game: It won't affect the canvas size, but
-new scene cameras will be created with this size.</p>
+        <p>Set if the game resolution should be automatically adapted
+when the game window or screen size change. This will only
+be the case if the game resolution resize mode is
+configured to adapt the width or the height of the game.</p>
     </div>
     
 
@@ -4103,13 +4464,13 @@ new scene cameras will be created with this size.</p>
 	
         <tr>
             
-                <td class="name"><code>height</code></td>
+                <td class="name"><code>enable</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">boolean</span>
 
 
             
@@ -4119,7 +4480,7 @@ new scene cameras will be created with this size.</p>
             
             <td class="description last">
                 
-                <p>The new default height</p></td>
+                <p>true to change the game resolution according to the window/screen size.</p></td>
         </tr>
 	
 	
@@ -4170,9 +4531,127 @@ new scene cameras will be created with this size.</p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="setDefaultWidth">
+        <h4 class="name" id="setGameResolutionResizeMode">
             
-            setDefaultWidth<span class="signature">(width)</span>
+            setGameResolutionResizeMode<span class="signature">(resizeMode)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line283">line 283</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Set if the width or the height of the game resolution
+should be changed to fit the game window - or if the game
+resolution should not be updated automatically.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>resizeMode</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>Either &quot;&quot; (don't change game resolution), &quot;adaptWidth&quot; or &quot;adaptHeight&quot;.</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="setGameResolutionSize">
+            
+            setGameResolutionSize<span class="signature">(width, height)</span>
         </h4>
     
         
@@ -4188,8 +4667,7 @@ new scene cameras will be created with this size.</p>
     
     
     <div class="description">
-        <p>Change the default width of the game: It won't affect the canvas size, but
-new scene cameras will be created with this size.</p>
+        <p>Change the game resolution.</p>
     </div>
     
 
@@ -4236,7 +4714,30 @@ new scene cameras will be created with this size.</p>
             
             <td class="description last">
                 
-                <p>The new default width</p></td>
+                <p>The new width</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The new height</p></td>
         </tr>
 	
 	
@@ -4294,7 +4795,7 @@ new scene cameras will be created with this size.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line449">line 449</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line503">line 503</a>
         </div>
         
     </div>
@@ -4410,7 +4911,7 @@ new scene cameras will be created with this size.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line346">line 346</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line416">line 416</a>
         </div>
         
     </div>
@@ -4481,7 +4982,7 @@ new scene cameras will be created with this size.</p>
     
         
         <div class="tag-source">
-            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line462">line 462</a>
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line516">line 516</a>
         </div>
         
     </div>
@@ -4558,7 +5059,7 @@ new scene cameras will be created with this size.</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Oct 13 2019 23:33:48 GMT+0100 (BST)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jan 12 2020 23:36:32 GMT+0000 (UTC)
         </footer>
     </div>
 </div>

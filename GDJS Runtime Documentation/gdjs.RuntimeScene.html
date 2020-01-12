@@ -29,7 +29,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-2018 Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-present Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
     </script>
     
 
@@ -562,7 +562,11 @@
             
                 <li data-name="gdjs.Layer#enableEffect"><a href="gdjs.Layer.html#enableEffect">enableEffect</a></li>
             
+                <li data-name="gdjs.Layer#getCameraHeight"><a href="gdjs.Layer.html#getCameraHeight">getCameraHeight</a></li>
+            
                 <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraWidth"><a href="gdjs.Layer.html#getCameraWidth">getCameraWidth</a></li>
             
                 <li data-name="gdjs.Layer#getCameraX"><a href="gdjs.Layer.html#getCameraX">getCameraX</a></li>
             
@@ -574,11 +578,15 @@
             
                 <li data-name="gdjs.Layer#getName"><a href="gdjs.Layer.html#getName">getName</a></li>
             
+                <li data-name="gdjs.Layer#getRuntimeScene"><a href="gdjs.Layer.html#getRuntimeScene">getRuntimeScene</a></li>
+            
                 <li data-name="gdjs.Layer#getTimeScale"><a href="gdjs.Layer.html#getTimeScale">getTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#isEffectEnabled"><a href="gdjs.Layer.html#isEffectEnabled">isEffectEnabled</a></li>
             
                 <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.Layer#onGameResolutionResized"><a href="gdjs.Layer.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.Layer#setCameraRotation"><a href="gdjs.Layer.html#setCameraRotation">setCameraRotation</a></li>
             
@@ -588,9 +596,17 @@
             
                 <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
             
+                <li data-name="gdjs.Layer#setEffectBooleanParameter"><a href="gdjs.Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectDoubleParameter"><a href="gdjs.Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectStringParameter"><a href="gdjs.Layer.html#setEffectStringParameter">setEffectStringParameter</a></li>
+            
                 <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#show"><a href="gdjs.Layer.html#show">show</a></li>
+            
+                <li data-name="gdjs.Layer#update"><a href="gdjs.Layer.html#update">update</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -621,7 +637,17 @@
             
                 <li data-name="gdjs.LayerPixiRenderer#changeRendererObjectZOrder"><a href="gdjs.LayerPixiRenderer.html#changeRendererObjectZOrder">changeRendererObjectZOrder</a></li>
             
+                <li data-name="gdjs.LayerPixiRenderer#enableEffect"><a href="gdjs.LayerPixiRenderer.html#enableEffect">enableEffect</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#isEffectEnabled"><a href="gdjs.LayerPixiRenderer.html#isEffectEnabled">isEffectEnabled</a></li>
+            
                 <li data-name="gdjs.LayerPixiRenderer#removeRendererObject"><a href="gdjs.LayerPixiRenderer.html#removeRendererObject">removeRendererObject</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectBooleanParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectDoubleParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectStringParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectStringParameter">setEffectStringParameter</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -809,17 +835,21 @@
             
             <span class="subtitle">Methods</span>
             
-                <li data-name="gdjs.RuntimeGame#adaptRendererSizeToFillScreen"><a href="gdjs.RuntimeGame.html#adaptRendererSizeToFillScreen">adaptRendererSizeToFillScreen</a></li>
+                <li data-name="gdjs.RuntimeGame#_forceGameResolutionUpdate"><a href="gdjs.RuntimeGame.html#_forceGameResolutionUpdate">_forceGameResolutionUpdate</a></li>
             
-                <li data-name="gdjs.RuntimeGame#getDefaultHeight"><a href="gdjs.RuntimeGame.html#getDefaultHeight">getDefaultHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGame#getDefaultWidth"><a href="gdjs.RuntimeGame.html#getDefaultWidth">getDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#getAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getFontManager"><a href="gdjs.RuntimeGame.html#getFontManager">getFontManager</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getGameData"><a href="gdjs.RuntimeGame.html#getGameData">getGameData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionHeight"><a href="gdjs.RuntimeGame.html#getGameResolutionHeight">getGameResolutionHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#getGameResolutionResizeMode">getGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionWidth"><a href="gdjs.RuntimeGame.html#getGameResolutionWidth">getGameResolutionWidth</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getImageManager"><a href="gdjs.RuntimeGame.html#getImageManager">getImageManager</a></li>
             
@@ -847,11 +877,15 @@
             
                 <li data-name="gdjs.RuntimeGame#loadAllAssets"><a href="gdjs.RuntimeGame.html#loadAllAssets">loadAllAssets</a></li>
             
+                <li data-name="gdjs.RuntimeGame#onWindowInnerSizeChanged"><a href="gdjs.RuntimeGame.html#onWindowInnerSizeChanged">onWindowInnerSizeChanged</a></li>
+            
                 <li data-name="gdjs.RuntimeGame#pause"><a href="gdjs.RuntimeGame.html#pause">pause</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultHeight"><a href="gdjs.RuntimeGame.html#setDefaultHeight">setDefaultHeight</a></li>
+                <li data-name="gdjs.RuntimeGame#setAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#setAdaptGameResolutionAtRuntime">setAdaptGameResolutionAtRuntime</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultWidth"><a href="gdjs.RuntimeGame.html#setDefaultWidth">setDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#setGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#setGameResolutionResizeMode">setGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setGameResolutionSize"><a href="gdjs.RuntimeGame.html#setGameResolutionSize">setGameResolutionSize</a></li>
             
                 <li data-name="gdjs.RuntimeGame#startCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li>
             
@@ -896,6 +930,8 @@
             
                 <li data-name="gdjs.RuntimeGameCocosRenderer#setMargins"><a href="gdjs.RuntimeGameCocosRenderer.html#setMargins">setMargins</a></li>
             
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setWindowSize"><a href="gdjs.RuntimeGameCocosRenderer.html#setWindowSize">setWindowSize</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -927,10 +963,6 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getCanvas"><a href="gdjs.RuntimeGamePixiRenderer.html#getCanvas">getCanvas</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentHeight"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentHeight">getCurrentHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentWidth"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentWidth">getCurrentWidth</a></li>
-            
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getElectron"><a href="gdjs.RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#isWebGLSupported"><a href="gdjs.RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li>
@@ -943,9 +975,11 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#setMargins"><a href="gdjs.RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#setSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setSize">setSize</a></li>
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setWindowSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setWindowSize">setWindowSize</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#stopGame"><a href="gdjs.RuntimeGamePixiRenderer.html#stopGame">stopGame</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#updateRendererSize"><a href="gdjs.RuntimeGamePixiRenderer.html#updateRendererSize">updateRendererSize</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -1207,7 +1241,7 @@
             
                 <li data-name="gdjs.RuntimeScene#markObjectForDeletion"><a href="gdjs.RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li>
             
-                <li data-name="gdjs.RuntimeScene#onCanvasResized"><a href="gdjs.RuntimeScene.html#onCanvasResized">onCanvasResized</a></li>
+                <li data-name="gdjs.RuntimeScene#onGameResolutionResized"><a href="gdjs.RuntimeScene.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.RuntimeScene#onPause"><a href="gdjs.RuntimeScene.html#onPause">onPause</a></li>
             
@@ -1218,6 +1252,8 @@
                 <li data-name="gdjs.RuntimeScene#renderAndStep"><a href="gdjs.RuntimeScene.html#renderAndStep">renderAndStep</a></li>
             
                 <li data-name="gdjs.RuntimeScene#requestChange"><a href="gdjs.RuntimeScene.html#requestChange">requestChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#sceneJustResumed"><a href="gdjs.RuntimeScene.html#sceneJustResumed">sceneJustResumed</a></li>
             
                 <li data-name="gdjs.RuntimeScene#setBackgroundColor"><a href="gdjs.RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li>
             
@@ -1281,6 +1317,8 @@
             
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
+                <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1293,6 +1331,14 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimation#hasMultipleDirections"><a href="gdjs.SpriteAnimation.html#hasMultipleDirections">hasMultipleDirections</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation#name"><a href="gdjs.SpriteAnimation.html#name">name</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation~directionData"><a href="gdjs.SpriteAnimation.html#~directionData">directionData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1313,6 +1359,16 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#frames"><a href="gdjs.SpriteAnimationDirection.html#frames">frames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#loop"><a href="gdjs.SpriteAnimationDirection.html#loop">loop</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#timeBetweenFrames"><a href="gdjs.SpriteAnimationDirection.html#timeBetweenFrames">timeBetweenFrames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection~frameData"><a href="gdjs.SpriteAnimationDirection.html#~frameData">frameData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1331,6 +1387,34 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#center"><a href="gdjs.SpriteAnimationFrame.html#center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#customHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#customHitBoxes">customHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#hasCustomHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#hasCustomHitBoxes">hasCustomHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#image"><a href="gdjs.SpriteAnimationFrame.html#image">image</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#origin"><a href="gdjs.SpriteAnimationFrame.html#origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#points"><a href="gdjs.SpriteAnimationFrame.html#points">points</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#texture"><a href="gdjs.SpriteAnimationFrame.html#texture">texture</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~center"><a href="gdjs.SpriteAnimationFrame.html#~center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~origin"><a href="gdjs.SpriteAnimationFrame.html#~origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~point"><a href="gdjs.SpriteAnimationFrame.html#~point">point</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~pointData"><a href="gdjs.SpriteAnimationFrame.html#~pointData">pointData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~polygonData"><a href="gdjs.SpriteAnimationFrame.html#~polygonData">polygonData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~ptData"><a href="gdjs.SpriteAnimationFrame.html#~ptData">ptData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1355,6 +1439,42 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationFrame"><a href="gdjs.SpriteRuntimeObject.html#_animationFrame">_animationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationPaused"><a href="gdjs.SpriteRuntimeObject.html#_animationPaused">_animationPaused</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animations"><a href="gdjs.SpriteRuntimeObject.html#_animations">_animations</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationSpeedScale"><a href="gdjs.SpriteRuntimeObject.html#_animationSpeedScale">_animationSpeedScale</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_blendMode"><a href="gdjs.SpriteRuntimeObject.html#_blendMode">_blendMode</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentAnimation"><a href="gdjs.SpriteRuntimeObject.html#_currentAnimation">_currentAnimation</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentDirection"><a href="gdjs.SpriteRuntimeObject.html#_currentDirection">_currentDirection</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentFrame"><a href="gdjs.SpriteRuntimeObject.html#_currentFrame">_currentFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedX"><a href="gdjs.SpriteRuntimeObject.html#_flippedX">_flippedX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedY"><a href="gdjs.SpriteRuntimeObject.html#_flippedY">_flippedY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_frameElapsedTime"><a href="gdjs.SpriteRuntimeObject.html#_frameElapsedTime">_frameElapsedTime</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_renderer"><a href="gdjs.SpriteRuntimeObject.html#_renderer">_renderer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleX"><a href="gdjs.SpriteRuntimeObject.html#_scaleX">_scaleX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleY"><a href="gdjs.SpriteRuntimeObject.html#_scaleY">_scaleY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateIfNotVisible"><a href="gdjs.SpriteRuntimeObject.html#_updateIfNotVisible">_updateIfNotVisible</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject~animData"><a href="gdjs.SpriteRuntimeObject.html#~animData">animData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1362,6 +1482,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#_updateAnimationFrame">_updateAnimationFrame</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#activateBehavior"><a href="gdjs.SpriteRuntimeObject.html#activateBehavior">activateBehavior</a></li>
             
@@ -1669,6 +1791,26 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.Variable#_children"><a href="gdjs.Variable.html#_children">_children</a></li>
+            
+                <li data-name="gdjs.Variable#_children[undefined]"><a href="gdjs.Variable.html#_children%255Bundefined%255D">_children[undefined]</a></li>
+            
+                <li data-name="gdjs.Variable#_isStructure"><a href="gdjs.Variable.html#_isStructure">_isStructure</a></li>
+            
+                <li data-name="gdjs.Variable#_numberDirty"><a href="gdjs.Variable.html#_numberDirty">_numberDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_str"><a href="gdjs.Variable.html#_str">_str</a></li>
+            
+                <li data-name="gdjs.Variable#_stringDirty"><a href="gdjs.Variable.html#_stringDirty">_stringDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_undefinedInContainer"><a href="gdjs.Variable.html#_undefinedInContainer">_undefinedInContainer</a></li>
+            
+                <li data-name="gdjs.Variable#_value"><a href="gdjs.Variable.html#_value">_value</a></li>
+            
+                <li data-name="gdjs.Variable~childData"><a href="gdjs.Variable.html#~childData">childData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1783,25 +1925,6 @@
             <span class="subtitle">Methods</span>
             
                 <li data-name="Hashtable.newFrom"><a href="Hashtable.html#.newFrom">newFrom</a></li>
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="RuntimeObjectLists">
-            <span class="title">
-                <a href="RuntimeObjectLists.html">RuntimeObjectLists</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
             
             </ul>
             <ul class="events itemMembers">
@@ -2102,7 +2225,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line502">line 502</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line532">line 532</a>
         </div>
         
     </div>
@@ -2213,7 +2336,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line590">line 590</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line620">line 620</a>
         </div>
         
     </div>
@@ -2284,7 +2407,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line531">line 531</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line561">line 561</a>
         </div>
         
     </div>
@@ -2430,7 +2553,7 @@ living on the scene ( No need to call RuntimeScene.addObject )</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line219">line 219</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line232">line 232</a>
         </div>
         
     </div>
@@ -2593,7 +2716,7 @@ of the scene or from an external layout ).</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line755">line 755</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line785">line 785</a>
         </div>
         
     </div>
@@ -2696,7 +2819,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line605">line 605</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line635">line 635</a>
         </div>
         
     </div>
@@ -2767,7 +2890,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line621">line 621</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line651">line 651</a>
         </div>
         
     </div>
@@ -2883,7 +3006,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line635">line 635</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line665">line 665</a>
         </div>
         
     </div>
@@ -3028,7 +3151,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line471">line 471</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line501">line 501</a>
         </div>
         
     </div>
@@ -3099,7 +3222,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line516">line 516</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line546">line 546</a>
         </div>
         
     </div>
@@ -3244,7 +3367,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line743">line 743</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line773">line 773</a>
         </div>
         
     </div>
@@ -3315,7 +3438,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line708">line 708</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line738">line 738</a>
         </div>
         
     </div>
@@ -3386,7 +3509,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line598">line 598</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line628">line 628</a>
         </div>
         
     </div>
@@ -3457,7 +3580,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line681">line 681</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line711">line 711</a>
         </div>
         
     </div>
@@ -3528,7 +3651,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line690">line 690</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line720">line 720</a>
         </div>
         
     </div>
@@ -3600,7 +3723,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line666">line 666</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line696">line 696</a>
         </div>
         
     </div>
@@ -3700,7 +3823,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line658">line 658</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line688">line 688</a>
         </div>
         
     </div>
@@ -3800,7 +3923,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line613">line 613</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line643">line 643</a>
         </div>
         
     </div>
@@ -3880,7 +4003,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line646">line 646</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line676">line 676</a>
         </div>
         
     </div>
@@ -3996,7 +4119,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line61">line 61</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line71">line 71</a>
         </div>
         
     </div>
@@ -4119,7 +4242,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line559">line 559</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line589">line 589</a>
         </div>
         
     </div>
@@ -4228,14 +4351,14 @@ The container holding the variables of the scene.
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="onCanvasResized">
+        <h4 class="name" id="onGameResolutionResized">
             
-            onCanvasResized<span class="signature">()</span>
+            onGameResolutionResized<span class="signature">()</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line52">line 52</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line53">line 53</a>
         </div>
         
     </div>
@@ -4307,7 +4430,7 @@ See gdjs.RuntimeGame.startGameLoop in particular.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line148">line 148</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line158">line 158</a>
         </div>
         
     </div>
@@ -4379,7 +4502,7 @@ for some time, until it's resumed or unloaded.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line158">line 158</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line168">line 168</a>
         </div>
         
     </div>
@@ -4451,7 +4574,7 @@ on screen after having being paused.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line295">line 295</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line314">line 314</a>
         </div>
         
     </div>
@@ -4522,7 +4645,7 @@ on screen after having being paused.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line254">line 254</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line267">line 267</a>
         </div>
         
     </div>
@@ -4623,7 +4746,7 @@ or a game stop was requested.</td>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line700">line 700</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line730">line 730</a>
         </div>
         
     </div>
@@ -4756,6 +4879,107 @@ thanks to getRequestedChange and getRequestedScene methods.</p>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="sceneJustResumed">
+            
+            sceneJustResumed<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line796">line 796</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Check if the scene was just resumed.
+This is true during the first frame after the scene has been unpaused.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">true if the scene was just resumed</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="setBackgroundColor">
             
             setBackgroundColor<span class="signature">()</span>
@@ -4763,7 +4987,7 @@ thanks to getRequestedChange and getRequestedScene methods.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line460">line 460</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line490">line 490</a>
         </div>
         
     </div>
@@ -4834,7 +5058,7 @@ thanks to getRequestedChange and getRequestedScene methods.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line245">line 245</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line258">line 258</a>
         </div>
         
     </div>
@@ -4953,7 +5177,7 @@ not need to use this method.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line717">line 717</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line747">line 747</a>
         </div>
         
     </div>
@@ -5070,7 +5294,7 @@ in the scene.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line727">line 727</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line757">line 757</a>
         </div>
         
     </div>
@@ -5141,7 +5365,7 @@ in the scene.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line168">line 168</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line181">line 181</a>
         </div>
         
     </div>
@@ -5213,7 +5437,7 @@ rendered on the screen.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line478">line 478</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line508">line 508</a>
         </div>
         
     </div>
@@ -5290,7 +5514,7 @@ rendered on the screen.</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Oct 13 2019 23:33:48 GMT+0100 (BST)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jan 12 2020 23:36:32 GMT+0000 (UTC)
         </footer>
     </div>
 </div>

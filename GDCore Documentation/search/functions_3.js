@@ -10,7 +10,7 @@ var searchData=
   ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a2d9e47f43daf3b7a82e53cbacfb5ef6b',1,'gd::AbstractFileSystem']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
   ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource']]],
-  ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object']]],
+  ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a7a41837ada2553926ab7aade944c0e10',1,'gd::Object']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
   ['dynamiclibrarylasterror',['DynamicLibraryLastError',['../namespacegd.html#ab9cdac8f7bd009ba308b15d4f2424308',1,'gd']]]
 ];

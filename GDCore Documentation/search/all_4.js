@@ -2,7 +2,6 @@ var searchData=
 [
   ['date',['Date',['../classgd_1_1_version_wrapper.html#a09264564c9a318ad14195a548fa2e5a9',1,'gd::VersionWrapper']]],
   ['decomp_5ftype',['decomp_type',['../structutf8proc__property__struct.html#accca36acf0134cb64a257b2eba13fea0',1,'utf8proc_property_struct']]],
-  ['defaultvalue',['defaultValue',['../classgd_1_1_parameter_metadata.html#a3bce9dfe83b844dcad17c80cc49ab7ca',1,'gd::ParameterMetadata']]],
   ['deletecamera',['DeleteCamera',['../classgd_1_1_layer.html#a70c0e05a05be3d9e80fb13e0fe7c46a5',1,'gd::Layer']]],
   ['deleteuselessevents',['DeleteUselessEvents',['../classgd_1_1_events_code_generator.html#a17244eedd3a2fce1067d5f06b963b1e3',1,'gd::EventsCodeGenerator']]],
   ['delpoint',['DelPoint',['../classgd_1_1_sprite.html#aa5fcee0de5fa85901d7716a5572bb2cc',1,'gd::Sprite']]],
@@ -15,7 +14,7 @@ var searchData=
   ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a2d9e47f43daf3b7a82e53cbacfb5ef6b',1,'gd::AbstractFileSystem']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
   ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource']]],
-  ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object']]],
+  ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a7a41837ada2553926ab7aade944c0e10',1,'gd::Object']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
   ['dynamiclibrarylasterror',['DynamicLibraryLastError',['../namespacegd.html#ab9cdac8f7bd009ba308b15d4f2424308',1,'gd']]]
 ];

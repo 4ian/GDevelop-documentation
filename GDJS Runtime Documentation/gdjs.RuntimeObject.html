@@ -29,7 +29,7 @@
     
     
     <script>
-    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-2018 Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"GDevelop JS Runtime","footer":"Made with ♥ by Florian Rival and contributors (gdevelop-app.com)","copyright":"GDevelop Copyright © 2008-present Florian Rival","googleAnalytics":"TODO","openGraph":{"title":"GDevelop JS Runtime Documentation","type":"website","image":"","site_name":"","url":""},"meta":{"title":"GDevelop JS Runtime Documentation","description":"Documentation for the GDevelop JavaScript game engine","keyword":"docs, documentation, gdevelop, game, engine, html5, javascript"},"linenums":true};
     </script>
     
 
@@ -562,7 +562,11 @@
             
                 <li data-name="gdjs.Layer#enableEffect"><a href="gdjs.Layer.html#enableEffect">enableEffect</a></li>
             
+                <li data-name="gdjs.Layer#getCameraHeight"><a href="gdjs.Layer.html#getCameraHeight">getCameraHeight</a></li>
+            
                 <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
+            
+                <li data-name="gdjs.Layer#getCameraWidth"><a href="gdjs.Layer.html#getCameraWidth">getCameraWidth</a></li>
             
                 <li data-name="gdjs.Layer#getCameraX"><a href="gdjs.Layer.html#getCameraX">getCameraX</a></li>
             
@@ -574,11 +578,15 @@
             
                 <li data-name="gdjs.Layer#getName"><a href="gdjs.Layer.html#getName">getName</a></li>
             
+                <li data-name="gdjs.Layer#getRuntimeScene"><a href="gdjs.Layer.html#getRuntimeScene">getRuntimeScene</a></li>
+            
                 <li data-name="gdjs.Layer#getTimeScale"><a href="gdjs.Layer.html#getTimeScale">getTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#isEffectEnabled"><a href="gdjs.Layer.html#isEffectEnabled">isEffectEnabled</a></li>
             
                 <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
+            
+                <li data-name="gdjs.Layer#onGameResolutionResized"><a href="gdjs.Layer.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.Layer#setCameraRotation"><a href="gdjs.Layer.html#setCameraRotation">setCameraRotation</a></li>
             
@@ -588,9 +596,17 @@
             
                 <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
             
+                <li data-name="gdjs.Layer#setEffectBooleanParameter"><a href="gdjs.Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectDoubleParameter"><a href="gdjs.Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setEffectStringParameter"><a href="gdjs.Layer.html#setEffectStringParameter">setEffectStringParameter</a></li>
+            
                 <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
             
                 <li data-name="gdjs.Layer#show"><a href="gdjs.Layer.html#show">show</a></li>
+            
+                <li data-name="gdjs.Layer#update"><a href="gdjs.Layer.html#update">update</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -621,7 +637,17 @@
             
                 <li data-name="gdjs.LayerPixiRenderer#changeRendererObjectZOrder"><a href="gdjs.LayerPixiRenderer.html#changeRendererObjectZOrder">changeRendererObjectZOrder</a></li>
             
+                <li data-name="gdjs.LayerPixiRenderer#enableEffect"><a href="gdjs.LayerPixiRenderer.html#enableEffect">enableEffect</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#isEffectEnabled"><a href="gdjs.LayerPixiRenderer.html#isEffectEnabled">isEffectEnabled</a></li>
+            
                 <li data-name="gdjs.LayerPixiRenderer#removeRendererObject"><a href="gdjs.LayerPixiRenderer.html#removeRendererObject">removeRendererObject</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectBooleanParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectDoubleParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
+            
+                <li data-name="gdjs.LayerPixiRenderer#setEffectStringParameter"><a href="gdjs.LayerPixiRenderer.html#setEffectStringParameter">setEffectStringParameter</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -809,17 +835,21 @@
             
             <span class="subtitle">Methods</span>
             
-                <li data-name="gdjs.RuntimeGame#adaptRendererSizeToFillScreen"><a href="gdjs.RuntimeGame.html#adaptRendererSizeToFillScreen">adaptRendererSizeToFillScreen</a></li>
+                <li data-name="gdjs.RuntimeGame#_forceGameResolutionUpdate"><a href="gdjs.RuntimeGame.html#_forceGameResolutionUpdate">_forceGameResolutionUpdate</a></li>
             
-                <li data-name="gdjs.RuntimeGame#getDefaultHeight"><a href="gdjs.RuntimeGame.html#getDefaultHeight">getDefaultHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGame#getDefaultWidth"><a href="gdjs.RuntimeGame.html#getDefaultWidth">getDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#getAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getFontManager"><a href="gdjs.RuntimeGame.html#getFontManager">getFontManager</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getGameData"><a href="gdjs.RuntimeGame.html#getGameData">getGameData</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionHeight"><a href="gdjs.RuntimeGame.html#getGameResolutionHeight">getGameResolutionHeight</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#getGameResolutionResizeMode">getGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getGameResolutionWidth"><a href="gdjs.RuntimeGame.html#getGameResolutionWidth">getGameResolutionWidth</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getImageManager"><a href="gdjs.RuntimeGame.html#getImageManager">getImageManager</a></li>
             
@@ -847,11 +877,15 @@
             
                 <li data-name="gdjs.RuntimeGame#loadAllAssets"><a href="gdjs.RuntimeGame.html#loadAllAssets">loadAllAssets</a></li>
             
+                <li data-name="gdjs.RuntimeGame#onWindowInnerSizeChanged"><a href="gdjs.RuntimeGame.html#onWindowInnerSizeChanged">onWindowInnerSizeChanged</a></li>
+            
                 <li data-name="gdjs.RuntimeGame#pause"><a href="gdjs.RuntimeGame.html#pause">pause</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultHeight"><a href="gdjs.RuntimeGame.html#setDefaultHeight">setDefaultHeight</a></li>
+                <li data-name="gdjs.RuntimeGame#setAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#setAdaptGameResolutionAtRuntime">setAdaptGameResolutionAtRuntime</a></li>
             
-                <li data-name="gdjs.RuntimeGame#setDefaultWidth"><a href="gdjs.RuntimeGame.html#setDefaultWidth">setDefaultWidth</a></li>
+                <li data-name="gdjs.RuntimeGame#setGameResolutionResizeMode"><a href="gdjs.RuntimeGame.html#setGameResolutionResizeMode">setGameResolutionResizeMode</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#setGameResolutionSize"><a href="gdjs.RuntimeGame.html#setGameResolutionSize">setGameResolutionSize</a></li>
             
                 <li data-name="gdjs.RuntimeGame#startCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li>
             
@@ -896,6 +930,8 @@
             
                 <li data-name="gdjs.RuntimeGameCocosRenderer#setMargins"><a href="gdjs.RuntimeGameCocosRenderer.html#setMargins">setMargins</a></li>
             
+                <li data-name="gdjs.RuntimeGameCocosRenderer#setWindowSize"><a href="gdjs.RuntimeGameCocosRenderer.html#setWindowSize">setWindowSize</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -927,10 +963,6 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getCanvas"><a href="gdjs.RuntimeGamePixiRenderer.html#getCanvas">getCanvas</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentHeight"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentHeight">getCurrentHeight</a></li>
-            
-                <li data-name="gdjs.RuntimeGamePixiRenderer#getCurrentWidth"><a href="gdjs.RuntimeGamePixiRenderer.html#getCurrentWidth">getCurrentWidth</a></li>
-            
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getElectron"><a href="gdjs.RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#isWebGLSupported"><a href="gdjs.RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li>
@@ -943,9 +975,11 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#setMargins"><a href="gdjs.RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li>
             
-                <li data-name="gdjs.RuntimeGamePixiRenderer#setSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setSize">setSize</a></li>
+                <li data-name="gdjs.RuntimeGamePixiRenderer#setWindowSize"><a href="gdjs.RuntimeGamePixiRenderer.html#setWindowSize">setWindowSize</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#stopGame"><a href="gdjs.RuntimeGamePixiRenderer.html#stopGame">stopGame</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#updateRendererSize"><a href="gdjs.RuntimeGamePixiRenderer.html#updateRendererSize">updateRendererSize</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -1207,7 +1241,7 @@
             
                 <li data-name="gdjs.RuntimeScene#markObjectForDeletion"><a href="gdjs.RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li>
             
-                <li data-name="gdjs.RuntimeScene#onCanvasResized"><a href="gdjs.RuntimeScene.html#onCanvasResized">onCanvasResized</a></li>
+                <li data-name="gdjs.RuntimeScene#onGameResolutionResized"><a href="gdjs.RuntimeScene.html#onGameResolutionResized">onGameResolutionResized</a></li>
             
                 <li data-name="gdjs.RuntimeScene#onPause"><a href="gdjs.RuntimeScene.html#onPause">onPause</a></li>
             
@@ -1218,6 +1252,8 @@
                 <li data-name="gdjs.RuntimeScene#renderAndStep"><a href="gdjs.RuntimeScene.html#renderAndStep">renderAndStep</a></li>
             
                 <li data-name="gdjs.RuntimeScene#requestChange"><a href="gdjs.RuntimeScene.html#requestChange">requestChange</a></li>
+            
+                <li data-name="gdjs.RuntimeScene#sceneJustResumed"><a href="gdjs.RuntimeScene.html#sceneJustResumed">sceneJustResumed</a></li>
             
                 <li data-name="gdjs.RuntimeScene#setBackgroundColor"><a href="gdjs.RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li>
             
@@ -1281,6 +1317,8 @@
             
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
+                <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1293,6 +1331,14 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimation#hasMultipleDirections"><a href="gdjs.SpriteAnimation.html#hasMultipleDirections">hasMultipleDirections</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation#name"><a href="gdjs.SpriteAnimation.html#name">name</a></li>
+            
+                <li data-name="gdjs.SpriteAnimation~directionData"><a href="gdjs.SpriteAnimation.html#~directionData">directionData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1313,6 +1359,16 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#frames"><a href="gdjs.SpriteAnimationDirection.html#frames">frames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#loop"><a href="gdjs.SpriteAnimationDirection.html#loop">loop</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection#timeBetweenFrames"><a href="gdjs.SpriteAnimationDirection.html#timeBetweenFrames">timeBetweenFrames</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationDirection~frameData"><a href="gdjs.SpriteAnimationDirection.html#~frameData">frameData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1331,6 +1387,34 @@
                 
             </span>
             <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#center"><a href="gdjs.SpriteAnimationFrame.html#center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#customHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#customHitBoxes">customHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#hasCustomHitBoxes"><a href="gdjs.SpriteAnimationFrame.html#hasCustomHitBoxes">hasCustomHitBoxes</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#image"><a href="gdjs.SpriteAnimationFrame.html#image">image</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#origin"><a href="gdjs.SpriteAnimationFrame.html#origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#points"><a href="gdjs.SpriteAnimationFrame.html#points">points</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame#texture"><a href="gdjs.SpriteAnimationFrame.html#texture">texture</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~center"><a href="gdjs.SpriteAnimationFrame.html#~center">center</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~origin"><a href="gdjs.SpriteAnimationFrame.html#~origin">origin</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~point"><a href="gdjs.SpriteAnimationFrame.html#~point">point</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~pointData"><a href="gdjs.SpriteAnimationFrame.html#~pointData">pointData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~polygonData"><a href="gdjs.SpriteAnimationFrame.html#~polygonData">polygonData</a></li>
+            
+                <li data-name="gdjs.SpriteAnimationFrame~ptData"><a href="gdjs.SpriteAnimationFrame.html#~ptData">ptData</a></li>
             
             </ul>
             <ul class="typedefs itemMembers">
@@ -1355,6 +1439,42 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationFrame"><a href="gdjs.SpriteRuntimeObject.html#_animationFrame">_animationFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationPaused"><a href="gdjs.SpriteRuntimeObject.html#_animationPaused">_animationPaused</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animations"><a href="gdjs.SpriteRuntimeObject.html#_animations">_animations</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_animationSpeedScale"><a href="gdjs.SpriteRuntimeObject.html#_animationSpeedScale">_animationSpeedScale</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_blendMode"><a href="gdjs.SpriteRuntimeObject.html#_blendMode">_blendMode</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentAnimation"><a href="gdjs.SpriteRuntimeObject.html#_currentAnimation">_currentAnimation</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentDirection"><a href="gdjs.SpriteRuntimeObject.html#_currentDirection">_currentDirection</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_currentFrame"><a href="gdjs.SpriteRuntimeObject.html#_currentFrame">_currentFrame</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedX"><a href="gdjs.SpriteRuntimeObject.html#_flippedX">_flippedX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_flippedY"><a href="gdjs.SpriteRuntimeObject.html#_flippedY">_flippedY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_frameElapsedTime"><a href="gdjs.SpriteRuntimeObject.html#_frameElapsedTime">_frameElapsedTime</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_renderer"><a href="gdjs.SpriteRuntimeObject.html#_renderer">_renderer</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleX"><a href="gdjs.SpriteRuntimeObject.html#_scaleX">_scaleX</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_scaleY"><a href="gdjs.SpriteRuntimeObject.html#_scaleY">_scaleY</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateIfNotVisible"><a href="gdjs.SpriteRuntimeObject.html#_updateIfNotVisible">_updateIfNotVisible</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject~animData"><a href="gdjs.SpriteRuntimeObject.html#~animData">animData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1362,6 +1482,8 @@
             <ul class="methods itemMembers">
             
             <span class="subtitle">Methods</span>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#_updateAnimationFrame"><a href="gdjs.SpriteRuntimeObject.html#_updateAnimationFrame">_updateAnimationFrame</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#activateBehavior"><a href="gdjs.SpriteRuntimeObject.html#activateBehavior">activateBehavior</a></li>
             
@@ -1669,6 +1791,26 @@
             </span>
             <ul class="members itemMembers">
             
+            <span class="subtitle">Members</span>
+            
+                <li data-name="gdjs.Variable#_children"><a href="gdjs.Variable.html#_children">_children</a></li>
+            
+                <li data-name="gdjs.Variable#_children[undefined]"><a href="gdjs.Variable.html#_children%255Bundefined%255D">_children[undefined]</a></li>
+            
+                <li data-name="gdjs.Variable#_isStructure"><a href="gdjs.Variable.html#_isStructure">_isStructure</a></li>
+            
+                <li data-name="gdjs.Variable#_numberDirty"><a href="gdjs.Variable.html#_numberDirty">_numberDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_str"><a href="gdjs.Variable.html#_str">_str</a></li>
+            
+                <li data-name="gdjs.Variable#_stringDirty"><a href="gdjs.Variable.html#_stringDirty">_stringDirty</a></li>
+            
+                <li data-name="gdjs.Variable#_undefinedInContainer"><a href="gdjs.Variable.html#_undefinedInContainer">_undefinedInContainer</a></li>
+            
+                <li data-name="gdjs.Variable#_value"><a href="gdjs.Variable.html#_value">_value</a></li>
+            
+                <li data-name="gdjs.Variable~childData"><a href="gdjs.Variable.html#~childData">childData</a></li>
+            
             </ul>
             <ul class="typedefs itemMembers">
             
@@ -1790,25 +1932,6 @@
             </ul>
         </li>
     
-        <li class="item" data-name="RuntimeObjectLists">
-            <span class="title">
-                <a href="RuntimeObjectLists.html">RuntimeObjectLists</a>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
     </ul>
 </div>
     <div class="main">
@@ -1841,7 +1964,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line7">line 7</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line17">line 17</a>
         </div>
         
     </div>
@@ -1858,7 +1981,7 @@ In this case, the constructor will try to reuse as much already existing members
 as possible (recycling).</p>
 <p>However, you should not be calling the constructor on an already existing object
 which is not a RuntimeObject.</p>
-<p>A <code>gdjs.RuntimeObject</code> should not be instanciated directly, always a child class
+<p>A <code>gdjs.RuntimeObject</code> should not be instantiated directly, always a child class
 (because gdjs.RuntimeObject don't call onCreated at the end of its constructor).</p>
     </div>
     
@@ -1906,7 +2029,7 @@ which is not a RuntimeObject.</p>
             
             <td class="description last">
                 
-                <p>The RuntimeScene owning the object.</p></td>
+                <p>The <a href="gdjs.RuntimeScene.html">gdjs.RuntimeScene</a> the object belongs to.</p></td>
         </tr>
 	
 	
@@ -1918,13 +2041,18 @@ which is not a RuntimeObject.</p>
             
             <td class="type">
             
+                
+<span class="param-type"><a href="global.html#ObjectData">ObjectData</a></span>
+
+
+            
             </td>
             
             
             
             <td class="description last">
                 
-                <p>The data defining the object</p></td>
+                <p>The initial properties of the object.</p></td>
         </tr>
 	
 	
@@ -2000,7 +2128,7 @@ which is not a RuntimeObject.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1290">line 1290</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1324">line 1324</a>
         </div>
         
     </div>
@@ -2194,7 +2322,7 @@ which is not a RuntimeObject.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1382">line 1382</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1420">line 1420</a>
         </div>
         
     </div>
@@ -2265,7 +2393,7 @@ which is not a RuntimeObject.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1436">line 1436</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1475">line 1475</a>
         </div>
         
     </div>
@@ -2276,9 +2404,9 @@ which is not a RuntimeObject.</p>
     
     
     <div class="description">
-        <p>Get the identifier associated to an object name :<br>
+        <p>Get the identifier associated to an object name.
 Some features may want to compare objects name a large number of time. In this case,
-it may be more efficient to compare objects name identifier.</p>
+it may be more efficient to compare objects name identifiers.</p>
     </div>
     
 
@@ -2338,7 +2466,7 @@ it may be more efficient to compare objects name identifier.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line466">line 466</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line499">line 499</a>
         </div>
         
     </div>
@@ -2458,7 +2586,7 @@ The number of children
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line431">line 431</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line464">line 464</a>
         </div>
         
     </div>
@@ -2603,7 +2731,7 @@ The number of children
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line455">line 455</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line488">line 488</a>
         </div>
         
     </div>
@@ -2723,7 +2851,7 @@ The string of the specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line444">line 444</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line477">line 477</a>
         </div>
         
     </div>
@@ -2849,7 +2977,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line476">line 476</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line509">line 509</a>
         </div>
         
     </div>
@@ -2983,7 +3111,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line486">line 486</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line519">line 519</a>
         </div>
         
     </div>
@@ -3117,7 +3245,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line941">line 941</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line975">line 975</a>
         </div>
         
     </div>
@@ -3256,7 +3384,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line618">line 618</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line656">line 656</a>
         </div>
         
     </div>
@@ -3418,7 +3546,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line660">line 660</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line698">line 698</a>
         </div>
         
     </div>
@@ -3581,7 +3709,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line643">line 643</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line681">line 681</a>
         </div>
         
     </div>
@@ -3766,7 +3894,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line628">line 628</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line666">line 666</a>
         </div>
         
     </div>
@@ -3928,7 +4056,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line731">line 731</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line769">line 769</a>
         </div>
         
     </div>
@@ -4098,7 +4226,7 @@ and the angle parameter is inferior to toleranceInDegrees parameter.</td>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line953">line 953</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line987">line 987</a>
         </div>
         
     </div>
@@ -4223,7 +4351,7 @@ true if the behavior is activated.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line671">line 671</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line709">line 709</a>
         </div>
         
     </div>
@@ -4294,7 +4422,7 @@ true if the behavior is activated.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1391">line 1391</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1429">line 1429</a>
         </div>
         
     </div>
@@ -4374,7 +4502,7 @@ true if the cursor, or any touch, is on the object.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line159">line 159</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line189">line 189</a>
         </div>
         
     </div>
@@ -4491,7 +4619,7 @@ true if the cursor, or any touch, is on the object.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line149">line 149</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line179">line 179</a>
         </div>
         
     </div>
@@ -4603,7 +4731,7 @@ Note that common properties (position, angle, z order...) have already been setu
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line825">line 825</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line859">line 859</a>
         </div>
         
     </div>
@@ -4707,7 +4835,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line352">line 352</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line385">line 385</a>
         </div>
         
     </div>
@@ -4807,7 +4935,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line709">line 709</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line747">line 747</a>
         </div>
         
     </div>
@@ -4907,7 +5035,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line922">line 922</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line956">line 956</a>
         </div>
         
     </div>
@@ -5053,7 +5181,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line577">line 577</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line615">line 615</a>
         </div>
         
     </div>
@@ -5064,7 +5192,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
     
     <div class="description">
-        <p>Return the X position of the object center, relative to the object position.</p>
+        <p>Return the X position of the object center, <strong>relative to the object X position</strong> (<code>getDrawableX</code>).</p>
     </div>
     
 
@@ -5131,7 +5259,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
                         
                     
             </td>
-            <td class="description last">the X position of the object center</td>
+            <td class="description last">the X position of the object center, relative to <code>getDrawableX()</code>.</td>
         </tr>
     
     </tbody>
@@ -5153,7 +5281,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line585">line 585</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line623">line 623</a>
         </div>
         
     </div>
@@ -5164,7 +5292,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
     
     <div class="description">
-        <p>Return the Y position of the object center, relative to the object position.</p>
+        <p>Return the Y position of the object center, <strong>relative to the object position</strong> (<code>getDrawableY</code>).</p>
     </div>
     
 
@@ -5231,7 +5359,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
                         
                     
             </td>
-            <td class="description last">the Y position of the object center</td>
+            <td class="description last">the Y position of the object center, relative to <code>getDrawableY()</code>.</td>
         </tr>
     
     </tbody>
@@ -5253,7 +5381,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1142">line 1142</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1176">line 1176</a>
         </div>
         
     </div>
@@ -5369,7 +5497,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line284">line 284</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line315">line 315</a>
         </div>
         
     </div>
@@ -5380,10 +5508,10 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
     
     <div class="description">
-        <p>Get the X position of the rendered object.<br>
-For most objects, this will returns the same value as getX(). But if the object
-has an origin this.is not the same as the point (0,0) of the object displayed,
-getDrawableX will differs.</p>
+        <p>Get the X position of the rendered object.</p>
+<p>For most objects, this will returns the same value as getX(). But if the object
+has an origin that is not the same as the point (0,0) of the object displayed,
+getDrawableX will differ.</p>
     </div>
     
 
@@ -5472,7 +5600,7 @@ getDrawableX will differs.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line296">line 296</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line328">line 328</a>
         </div>
         
     </div>
@@ -5483,10 +5611,10 @@ getDrawableX will differs.</p>
     
     
     <div class="description">
-        <p>Get the Y position of the rendered object.<br>
-For most objects, this will returns the same value as getY(). But if the object
-has an origin this.is not the same as the point (0,0) of the object displayed,
-getDrawableY will differs.</p>
+        <p>Get the Y position of the rendered object.</p>
+<p>For most objects, this will returns the same value as getY(). But if the object
+has an origin that is not the same as the point (0,0) of the object displayed,
+getDrawableY will differ.</p>
     </div>
     
 
@@ -5575,7 +5703,7 @@ getDrawableY will differs.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line129">line 129</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line159">line 159</a>
         </div>
         
     </div>
@@ -5693,7 +5821,7 @@ in milliseconds, for the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line569">line 569</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line607">line 607</a>
         </div>
         
     </div>
@@ -5704,7 +5832,7 @@ in milliseconds, for the object.</p>
     
     
     <div class="description">
-        <p>Return the width of the object</p>
+        <p>Return the width of the object.</p>
     </div>
     
 
@@ -5793,7 +5921,7 @@ in milliseconds, for the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line750">line 750</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line788">line 788</a>
         </div>
         
     </div>
@@ -5896,7 +6024,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line378">line 378</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line411">line 411</a>
         </div>
         
     </div>
@@ -5996,7 +6124,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line199">line 199</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line229">line 229</a>
         </div>
         
     </div>
@@ -6096,7 +6224,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line207">line 207</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line237">line 237</a>
         </div>
         
     </div>
@@ -6196,7 +6324,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line190">line 190</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line220">line 220</a>
         </div>
         
     </div>
@@ -6297,7 +6425,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1164">line 1164</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1198">line 1198</a>
         </div>
         
     </div>
@@ -6436,7 +6564,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1150">line 1150</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1184">line 1184</a>
         </div>
         
     </div>
@@ -6552,7 +6680,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1054">line 1054</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1088">line 1088</a>
         </div>
         
     </div>
@@ -6697,7 +6825,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line219">line 219</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line249">line 249</a>
         </div>
         
     </div>
@@ -6800,7 +6928,7 @@ calling this method.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line421">line 421</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line454">line 454</a>
         </div>
         
     </div>
@@ -6900,7 +7028,7 @@ calling this method.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line846">line 846</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line880">line 880</a>
         </div>
         
     </div>
@@ -7004,7 +7132,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line561">line 561</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line599">line 599</a>
         </div>
         
     </div>
@@ -7015,7 +7143,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
     
     <div class="description">
-        <p>Return the width of the object</p>
+        <p>Return the width of the object.</p>
     </div>
     
 
@@ -7104,7 +7232,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line251">line 251</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line281">line 281</a>
         </div>
         
     </div>
@@ -7204,7 +7332,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line272">line 272</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line302">line 302</a>
         </div>
         
     </div>
@@ -7304,7 +7432,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line413">line 413</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line446">line 446</a>
         </div>
         
     </div>
@@ -7404,7 +7532,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line931">line 931</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line965">line 965</a>
         </div>
         
     </div>
@@ -7520,7 +7648,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line680">line 680</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line718">line 718</a>
         </div>
         
     </div>
@@ -7620,7 +7748,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line528">line 528</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line561">line 561</a>
         </div>
         
     </div>
@@ -7765,7 +7893,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line536">line 536</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line569">line 569</a>
         </div>
         
     </div>
@@ -7776,7 +7904,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
     
     <div class="description">
-        <p>Hide or show the object</p>
+        <p>Hide (or show) the object.</p>
     </div>
     
 
@@ -7881,7 +8009,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1368">line 1368</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1406">line 1406</a>
         </div>
         
     </div>
@@ -7954,7 +8082,7 @@ if you need to pass the mouse or a touch position that you get from gdjs.InputMa
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1419">line 1419</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1457">line 1457</a>
         </div>
         
     </div>
@@ -8092,7 +8220,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line553">line 553</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line591">line 591</a>
         </div>
         
     </div>
@@ -8192,7 +8320,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line388">line 388</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line421">line 421</a>
         </div>
         
     </div>
@@ -8337,7 +8465,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line545">line 545</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line583">line 583</a>
         </div>
         
     </div>
@@ -8349,6 +8477,9 @@ true if the point is inside the object collision hitboxes.
     
     <div class="description">
         <p>Return true if the object is not hidden.</p>
+<p>Note: This is unrelated to the actual visibility of the objec on the screen.
+For this, see <code>getVisibilityAABB</code> to get the bounding boxes of the object as displayed
+on the scene.</p>
     </div>
     
 
@@ -8437,7 +8568,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line115">line 115</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line145">line 145</a>
         </div>
         
     </div>
@@ -8513,7 +8644,7 @@ could be not initialized yet).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line173">line 173</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line203">line 203</a>
         </div>
         
     </div>
@@ -8631,7 +8762,7 @@ is being unloaded). If you redefine this function, <strong>make sure to call the
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1019">line 1019</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1053">line 1053</a>
         </div>
         
     </div>
@@ -8747,7 +8878,7 @@ is being unloaded). If you redefine this function, <strong>make sure to call the
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1180">line 1180</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1214">line 1214</a>
         </div>
         
     </div>
@@ -8933,7 +9064,7 @@ The distance and angle are computed between the position and <em>the center of t
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1197">line 1197</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1231">line 1231</a>
         </div>
         
     </div>
@@ -9091,7 +9222,7 @@ The distance and angle are computed between <em>the centers of the objects</em>.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1327">line 1327</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1363">line 1363</a>
         </div>
         
     </div>
@@ -9304,7 +9435,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1043">line 1043</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1077">line 1077</a>
         </div>
         
     </div>
@@ -9420,7 +9551,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1007">line 1007</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1041">line 1041</a>
         </div>
         
     </div>
@@ -9536,7 +9667,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line331">line 331</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line364">line 364</a>
         </div>
         
     </div>
@@ -9675,7 +9806,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1070">line 1070</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1104">line 1104</a>
         </div>
         
     </div>
@@ -9821,7 +9952,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1104">line 1104</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1138">line 1138</a>
         </div>
         
     </div>
@@ -9967,7 +10098,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1241">line 1241</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1275">line 1275</a>
         </div>
         
     </div>
@@ -10076,7 +10207,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1206">line 1206</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1240">line 1240</a>
         </div>
         
     </div>
@@ -10185,7 +10316,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line340">line 340</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line373">line 373</a>
         </div>
         
     </div>
@@ -10301,7 +10432,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line361">line 361</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line394">line 394</a>
         </div>
         
     </div>
@@ -10417,7 +10548,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line229">line 229</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line259">line 259</a>
         </div>
         
     </div>
@@ -10556,7 +10687,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line239">line 239</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line269">line 269</a>
         </div>
         
     </div>
@@ -10672,7 +10803,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line260">line 260</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line290">line 290</a>
         </div>
         
     </div>
@@ -10788,7 +10919,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line398">line 398</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line431">line 431</a>
         </div>
         
     </div>
@@ -10904,7 +11035,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line908">line 908</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line942">line 942</a>
         </div>
         
     </div>
@@ -10975,7 +11106,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line899">line 899</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line933">line 933</a>
         </div>
         
     </div>
@@ -11046,7 +11177,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line981">line 981</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1015">line 1015</a>
         </div>
         
     </div>
@@ -11214,7 +11345,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line995">line 995</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1029">line 1029</a>
         </div>
         
     </div>
@@ -11359,7 +11490,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1031">line 1031</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1065">line 1065</a>
         </div>
         
     </div>
@@ -11475,7 +11606,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line139">line 139</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line169">line 169</a>
         </div>
         
     </div>
@@ -11591,7 +11722,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line859">line 859</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line893">line 893</a>
         </div>
         
     </div>
@@ -11666,7 +11797,7 @@ However, you can redefine it if your object can have a faster implementation.</p
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line688">line 688</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line726">line 726</a>
         </div>
         
     </div>
@@ -11738,7 +11869,7 @@ remove null ones.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line773">line 773</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line811">line 811</a>
         </div>
         
     </div>
@@ -11814,7 +11945,7 @@ However, you can redefine it if your object need custom hit boxes.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line967">line 967</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1001">line 1001</a>
         </div>
         
     </div>
@@ -11936,7 +12067,7 @@ However, you can redefine it if your object need custom hit boxes.</p>
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Oct 13 2019 23:33:48 GMT+0100 (BST)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Jan 12 2020 23:36:32 GMT+0000 (UTC)
         </footer>
     </div>
 </div>
