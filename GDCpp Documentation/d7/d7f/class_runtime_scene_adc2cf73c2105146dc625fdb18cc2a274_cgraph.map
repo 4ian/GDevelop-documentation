@@ -1,9 +1,0 @@
-<map id="RuntimeScene::LoadFromScene" name="RuntimeScene::LoadFromScene">
-<area shape="rect" id="node3" href="$d7/d7f/class_runtime_scene.html#ab89ec7525a8252224ef493d305f7c076" title="RuntimeScene::LoadFromScene\lAndCustomInstances" alt="" coords="264,154,475,195"/>
-<area shape="rect" id="node5" href="$d3/de4/class_obj_instances_holder.html#a4651ecd7b0d9a732333f64b1ec1de131" title="ObjInstancesHolder\l::Clear" alt="" coords="570,5,705,46"/>
-<area shape="rect" id="node7" href="$d7/d7f/class_runtime_scene.html#afdfb2bc0f2acb6d2caf965755be9f2c2" title="RuntimeScene::GetCodeExecution\lEngine" alt="" coords="525,70,749,111"/>
-<area shape="rect" id="node9" href="$d7/d7f/class_runtime_scene.html#ae08e820d46ca953e38ebee8ee5cd4eea" title="RuntimeScene::CreateObjectsFrom" alt="" coords="523,136,751,163"/>
-<area shape="rect" id="node11" href="$d3/d7d/class_cpp_platform.html#a5f9c3cd525df8f09539854d9b8a95a63" title="Get access to the CppPlatform instance. ( CppPlatform is a singleton ). " alt="" coords="576,187,699,213"/>
-<area shape="rect" id="node13" href="$d5/de6/class_extension_base.html#a5f32f6e17f6d126ef85b668e988e2128" title="Called when a scene is loaded: Useful to initialize some extensions specific objects related to scene..." alt="" coords="539,237,736,264"/>
-<area shape="rect" id="node15" href="$d5/dd9/class_sound_manager.html#a2e09a7dd49485af042eb6f3e43d2e641" title="SoundManager::ClearAllSounds\lAndMusics" alt="" coords="534,289,741,330"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="RuntimeSpriteObject" name="RuntimeSpriteObject">
-<area shape="rect" id="node2" href="$d0/d3b/class_runtime_object.html" title="A RuntimeObject is something displayed on the scene. " alt="" coords="49,96,156,123"/>
-<area shape="rect" id="node4" href="$d4/d88/class_force.html" title="Represents a force to be applied on an object. " alt="" coords="5,5,59,32"/>
-<area shape="rect" id="node6" href="$d3/de0/class_runtime_variables_container.html" title="Container for gd::Variable used at by games at runtime. " alt="" coords="84,5,263,32"/>
-</map>

@@ -1,0 +1,57 @@
+version: 2
+jobs:
+  docs-build-and-deploy:
+    docker:
+      - image: node:8.10.0
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - add_ssh_keys:
+          fingerprints:
+            - "83:45:4c:d2:b2:ed:27:bd:84:a3:eb:0c:00:91:f8:60"
+
+      # Install dependencies
+      - run:
+          name: Prepare apt
+          command: apt update -y
+
+      - run:
+          name: Install Doxygen
+          command: apt install -y doxygen
+
+      - run:
+          name: Install JSDoc
+          command: npm install -g jsdoc
+
+      # Generate the docs
+      - run:
+          name: Get GDevelop sources (master branch)
+          command: git clone https://github.com/4ian/GDevelop.git --depth 1
+
+      - run:
+          name: Launch docs generation
+          command: cd GDevelop/scripts && ./GenerateAllDocs.sh
+
+      # Publish
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "ci-build@gdevelop-app.com"
+            git config user.name "ci-build"
+
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: cd GDevelop && gh-pages --dist docs --repo 'https://github.com/4ian/GDevelop-documentation.git'
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - docs-build-and-deploy:
+          filters:
+            branches:
+              only: master

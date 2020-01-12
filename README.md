@@ -1,11 +1,9 @@
-Game Develop Documentations
-===========================
+# GDevelop documentations
 
-This is the documentation generated for Game Develop (http://github.com/4ian/gd).
+This is the repository used to automatically publish [GDevelop](https://gdevelop-app.com) Documentation.
 
-Read the documentation
-----------------------
+## Read the documentation
 
-  * [Read the documentation of the Core library](http://4ian.github.io/GD-Documentation/GDCore%20Documentation).
-  * [Read the documentation of the C++ Platform](http://4ian.github.io/GD-Documentation/GDCpp%20Documentation).
-  * [Read the documentation of the JS Platform](http://4ian.github.io/GD-Documentation/GDJS%20Documentation) and [the documentation of the game engine](http://4ian.github.io/GD-Documentation/GDJS%20Runtime%20Documentation).
+  * [Read the documentation of the Core library](https://docs.gdevelop-app.com/GDCore%20Documentation).
+  * [Read the documentation of the C++ Platform](https://docs.gdevelop-app.com/GDCpp%20Documentation).
+  * [Read the documentation of the JS Platform](https://docs.gdevelop-app.com/GDJS%20Documentation) and [the documentation of the game engine](https://docs.gdevelop-app.com/GDJS%20Runtime%20Documentation).
