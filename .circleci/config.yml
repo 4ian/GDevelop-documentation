@@ -53,9 +53,19 @@ jobs:
 
 workflows:
   version: 2
-  build:
+  master-build:
     jobs:
       - docs-build-and-deploy:
           filters:
             branches:
               only: master
+  nightly:
+    jobs:
+      - docs-build-and-deploy
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - master
