@@ -44,8 +44,10 @@ jobs:
             git config --global user.name "GDevelop documentation CI"
 
       - run:
-          name: Copy index.html
-          command: cp template/index.html GDevelop/docs
+          name: Copy GitHub pages specific files
+          command: |
+            cp template/index.html GDevelop/docs
+            cp template/CNAME GDevelop/docs
 
       - run:
           name: Deploy docs to gh-pages branch
