@@ -51,7 +51,7 @@ jobs:
 
       - run:
           name: Deploy docs to gh-pages branch
-          command: cd GDevelop && gh-pages --dist docs --repo 'https://github.com/4ian/GDevelop-documentation.git' --message "Update documentation"
+          command: cd GDevelop && gh-pages --dist docs --repo 'https://github.com/4ian/GDevelop-documentation.git' --message "Update documentation [ci skip]"
 
 workflows:
   version: 2
