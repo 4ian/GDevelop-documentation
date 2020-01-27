@@ -15,7 +15,6 @@ var searchData=
   ['closelibrary',['CloseLibrary',['../namespacegd.html#a4ca0493cccd6c7b8b870bfcc019c0477',1,'gd']]],
   ['compare',['compare',['../classgd_1_1_string.html#a8e44f0d26374e38ed1d318195099a17f',1,'gd::String']]],
   ['compiledforedittime',['CompiledForEdittime',['../classgd_1_1_version_wrapper.html#a4f739815ba0d9e9b7ae51ed298f4751d',1,'gd::VersionWrapper']]],
-  ['completeparameters',['CompleteParameters',['../namespacegd.html#a5a9385820c909fc8e0c70d8a373150eb',1,'gd']]],
   ['computecenter',['ComputeCenter',['../class_polygon2d.html#a7e301a6d9daed550f7601107d95b202e',1,'Polygon2d']]],
   ['computeedges',['ComputeEdges',['../class_polygon2d.html#abd09cfe5a49d9ac73bcffd99ba203dd3',1,'Polygon2d']]],
   ['considerasarray',['ConsiderAsArray',['../classgd_1_1_serializer_element.html#adb3850953ecd7988072fa8256116155c',1,'gd::SerializerElement']]],

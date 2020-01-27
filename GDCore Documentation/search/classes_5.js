@@ -37,7 +37,6 @@ var searchData=
   ['expressionobjectsanalyzer',['ExpressionObjectsAnalyzer',['../classgd_1_1_expression_objects_analyzer.html',1,'gd']]],
   ['expressionparametermover',['ExpressionParameterMover',['../classgd_1_1_expression_parameter_mover.html',1,'gd']]],
   ['expressionparametersearcher',['ExpressionParameterSearcher',['../classgd_1_1_expression_parameter_searcher.html',1,'gd']]],
-  ['expressionparser',['ExpressionParser',['../classgd_1_1_expression_parser.html',1,'gd']]],
   ['expressionparser2',['ExpressionParser2',['../classgd_1_1_expression_parser2.html',1,'gd']]],
   ['expressionparser2nodeprinter',['ExpressionParser2NodePrinter',['../classgd_1_1_expression_parser2_node_printer.html',1,'gd']]],
   ['expressionparser2nodeworker',['ExpressionParser2NodeWorker',['../classgd_1_1_expression_parser2_node_worker.html',1,'gd']]],

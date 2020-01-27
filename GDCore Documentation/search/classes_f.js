@@ -2,7 +2,6 @@ var searchData=
 [
   ['parametermetadata',['ParameterMetadata',['../classgd_1_1_parameter_metadata.html',1,'gd']]],
   ['parametermetadatatools',['ParameterMetadataTools',['../classgd_1_1_parameter_metadata_tools.html',1,'gd']]],
-  ['parsercallbacks',['ParserCallbacks',['../classgd_1_1_parser_callbacks.html',1,'gd']]],
   ['platform',['Platform',['../classgd_1_1_platform.html',1,'gd']]],
   ['platformextension',['PlatformExtension',['../classgd_1_1_platform_extension.html',1,'gd']]],
   ['platformloader',['PlatformLoader',['../classgd_1_1_platform_loader.html',1,'gd']]],

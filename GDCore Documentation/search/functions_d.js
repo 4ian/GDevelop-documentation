@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['parse',['Parse',['../classgd_1_1_variable_parser.html#a78719ebeb2d2661c2356c36a95268086',1,'gd::VariableParser']]],
   ['parseexpression',['ParseExpression',['../classgd_1_1_expression_parser2.html#ae10c937cf5fdc876c3ca66b2cc52d547',1,'gd::ExpressionParser2']]],
-  ['parsemathexpression',['ParseMathExpression',['../classgd_1_1_expression_parser.html#a628425a5946955a068443f17a279ae12',1,'gd::ExpressionParser']]],
-  ['parsestringexpression',['ParseStringExpression',['../classgd_1_1_expression_parser.html#af21e45cf10062f226f2d21eadc1f2515',1,'gd::ExpressionParser']]],
   ['pop_5fback',['pop_back',['../classgd_1_1_string.html#abac67f405ee746e682e9530783efd006',1,'gd::String']]],
   ['preprocess',['Preprocess',['../classgd_1_1_base_event.html#af05fa8d742ee600ef6e54173315cdb50',1,'gd::BaseEvent']]],
   ['preprocesseventlist',['PreprocessEventList',['../classgd_1_1_events_code_generator.html#ac60c41bf25f04fb048f576711e97fdc7',1,'gd::EventsCodeGenerator']]],
