@@ -162,6 +162,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div></td></tr>
 <tr class="memitem:a6e71b8b96f8386152f398fd98360073e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_list.html#a6e71b8b96f8386152f398fd98360073e">Contains</a> (const <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;eventToSearch, bool recursive=true) const </td></tr>
 <tr class="separator:a6e71b8b96f8386152f398fd98360073e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf14026a6c850e3fb831c649d867a49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_list.html#addf14026a6c850e3fb831c649d867a49">MoveEventToAnotherEventsList</a> (const <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;eventToMove, <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;newEventsList, std::size_t newPosition)</td></tr>
+<tr class="separator:addf14026a6c850e3fb831c649d867a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">std::vector API compatibility</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>These functions ensure that the class can be used just like a std::vector. </p>
 </div></td></tr>
@@ -334,6 +336,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="addf14026a6c850e3fb831c649d867a49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::EventsList::MoveEventToAnotherEventsList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>eventToMove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;&#160;</td>
+          <td class="paramname"><em>newEventsList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>newPosition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Move the specified event, that must be in the events list, to another events list <em>without</em> invalidating the event (i.e: without destroying/cloning it) in memory.</p>
+<dl class="section warning"><dt>Warning</dt><dd>newEventsList is supposed not to be contained inside the event (you should not try to move an event inside one of its children/grand children events).</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventToMove</td><td>The event to be moved </td></tr>
+    <tr><td class="paramname">newEventsList</td><td>The new events list </td></tr>
+    <tr><td class="paramname">newPosition</td><td>The position in the new events list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the move was made, false otherwise (for example, if eventToMove is not found in the list) </dd></dl>
 
 </div>
 </div>
