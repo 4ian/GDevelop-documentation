@@ -151,27 +151,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classgd_1_1_group_event.html#ad48278fa9e811243605775bd3680e7f8">  106</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a>&amp; <a class="code" href="classgd_1_1_group_event.html#ad48278fa9e811243605775bd3680e7f8">GetSubEvents</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> events; };</div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classgd_1_1_group_event.html#a200e38bf3c636a7542f063fd2f3e4d5a">  107</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classgd_1_1_events_list.html">gd::EventsList</a>&amp; <a class="code" href="classgd_1_1_group_event.html#a200e38bf3c636a7542f063fd2f3e4d5a">GetSubEvents</a>() { <span class="keywordflow">return</span> events; };</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SerializeTo(<a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> UnserializeFrom(<a class="code" href="classgd_1_1_project.html">gd::Project</a>&amp; project,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="classgd_1_1_events_list.html">EventsList</a> events;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="classgd_1_1_string.html">gd::String</a> name;    </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="classgd_1_1_string.html">gd::String</a> source;  </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> creationTime;  </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  std::vector&lt;gd::String&gt;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      parameters;  </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorR;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorG;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorB;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}  <span class="comment">// namespace gd</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">virtual</span> std::vector&lt;gd::String&gt; GetAllSearchableStrings() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SerializeTo(<a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> UnserializeFrom(<a class="code" href="classgd_1_1_project.html">gd::Project</a>&amp; project,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="classgd_1_1_events_list.html">EventsList</a> events;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classgd_1_1_string.html">gd::String</a> name;    </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classgd_1_1_string.html">gd::String</a> source;  </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> creationTime;  </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  std::vector&lt;gd::String&gt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      parameters;  </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorR;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorG;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorB;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif  // GDCORE_GROUPEVENT_H</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}  <span class="comment">// namespace gd</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif  // GDCORE_GROUPEVENT_H</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classgd_1_1_group_event_html_a0ed23d483cc48453c735d79498517767"><div class="ttname"><a href="classgd_1_1_group_event.html#a0ed23d483cc48453c735d79498517767">gd::GroupEvent::GetName</a></div><div class="ttdeci">const gd::String &amp; GetName() const </div><div class="ttdoc">Get the name of the group. </div><div class="ttdef"><b>Definition:</b> GroupEvent.h:36</div></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:24</div></div>
 <div class="ttc" id="classgd_1_1_group_event_html_a369ecdd10736ceaa3305b1957de77600"><div class="ttname"><a href="classgd_1_1_group_event.html#a369ecdd10736ceaa3305b1957de77600">gd::GroupEvent::SetCreationTimestamp</a></div><div class="ttdeci">void SetCreationTimestamp(unsigned int creationTime_)</div><div class="ttdoc">Set timestamp of the creation of the group. </div><div class="ttdef"><b>Definition:</b> GroupEvent.h:79</div></div>

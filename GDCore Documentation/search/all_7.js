@@ -73,6 +73,7 @@ var searchData=
   ['getallplatforms',['GetAllPlatforms',['../classgd_1_1_platform_manager.html#a07624f8c9081ba6af78260b61854c2a9',1,'gd::PlatformManager']]],
   ['getallresourcenames',['GetAllResourceNames',['../classgd_1_1_resources_manager.html#aefe31f613966027d65074b440b396d27',1,'gd::ResourcesManager::GetAllResourceNames()'],['../classgd_1_1_resource_folder.html#a66323f4d754f727138695ae08f4d55e8',1,'gd::ResourceFolder::GetAllResourceNames()']]],
   ['getallresourcesoldandnewfilename',['GetAllResourcesOldAndNewFilename',['../classgd_1_1_resources_merging_helper.html#a841b8b414d0706c5e6107f47e7604323',1,'gd::ResourcesMergingHelper']]],
+  ['getallsearchablestrings',['GetAllSearchableStrings',['../classgd_1_1_comment_event.html#a3412b9e01bb4b888f5de18704a6b61a4',1,'gd::CommentEvent::GetAllSearchableStrings()'],['../classgd_1_1_group_event.html#a5ddb4f93dcc6a6a9db03f8c08c67b61e',1,'gd::GroupEvent::GetAllSearchableStrings()'],['../classgd_1_1_base_event.html#a128d2d3a149ae1190d3d85a3c00dc787',1,'gd::BaseEvent::GetAllSearchableStrings()']]],
   ['getallsourcefiles',['GetAllSourceFiles',['../classgd_1_1_project.html#a3c760548d7078040a66efd4f4198b7ca',1,'gd::Project']]],
   ['getallstrexpressions',['GetAllStrExpressions',['../classgd_1_1_platform_extension.html#ad62b4b93527ae34c2bc03faccee594e6',1,'gd::PlatformExtension']]],
   ['getallstrexpressionsforbehavior',['GetAllStrExpressionsForBehavior',['../classgd_1_1_platform_extension.html#ab35f996b50f883e1c145e3104042f9b9',1,'gd::PlatformExtension']]],

@@ -123,6 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abfac7dcfd722cd1dae332d9c34e15688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5813de7c210d66862b82fd6969013a1f"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak" />
 &lt; <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_base_event.html#a5813de7c210d66862b82fd6969013a1f">GetAllConditionsVectors</a> ()</td></tr>
+<tr class="memdesc:a5813de7c210d66862b82fd6969013a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all conditions of the event.  <a href="#a5813de7c210d66862b82fd6969013a1f">More...</a><br /></td></tr>
 <tr class="separator:a5813de7c210d66862b82fd6969013a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7215bc2f34913a01ccccf634c1b49d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7215bc2f34913a01ccccf634c1b49d6"></a>
 virtual std::vector&lt; const <br class="typebreak" />
@@ -130,13 +131,18 @@ virtual std::vector&lt; const <br class="typebreak" />
 <tr class="separator:ac7215bc2f34913a01ccccf634c1b49d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a157d8377133f1f8c8420247ceba90cbe"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak" />
 &lt; <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_base_event.html#a157d8377133f1f8c8420247ceba90cbe">GetAllActionsVectors</a> ()</td></tr>
+<tr class="memdesc:a157d8377133f1f8c8420247ceba90cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all actions of the event.  <a href="#a157d8377133f1f8c8420247ceba90cbe">More...</a><br /></td></tr>
 <tr class="separator:a157d8377133f1f8c8420247ceba90cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d43c35a0474f82fabe68a8d78ccd416"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d43c35a0474f82fabe68a8d78ccd416"></a>
 virtual std::vector&lt; const <br class="typebreak" />
 <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllActionsVectors</b> () const </td></tr>
 <tr class="separator:a3d43c35a0474f82fabe68a8d78ccd416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128d2d3a149ae1190d3d85a3c00dc787"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_base_event.html#a128d2d3a149ae1190d3d85a3c00dc787">GetAllSearchableStrings</a> () const </td></tr>
+<tr class="memdesc:a128d2d3a149ae1190d3d85a3c00dc787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all strings of the event.  <a href="#a128d2d3a149ae1190d3d85a3c00dc787">More...</a><br /></td></tr>
+<tr class="separator:a128d2d3a149ae1190d3d85a3c00dc787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4ec20f57bc9ef27db684e9da60901b"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak" />
 &lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_base_event.html#aed4ec20f57bc9ef27db684e9da60901b">GetAllExpressions</a> ()</td></tr>
+<tr class="memdesc:aed4ec20f57bc9ef27db684e9da60901b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all expressions of the event.  <a href="#aed4ec20f57bc9ef27db684e9da60901b">More...</a><br /></td></tr>
 <tr class="separator:aed4ec20f57bc9ef27db684e9da60901b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d4dcdfeb1000b8674d7abad57f6133d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d4dcdfeb1000b8674d7abad57f6133d"></a>
 virtual std::vector&lt; const <br class="typebreak" />
@@ -321,7 +327,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Event must be able to return all actions std::vector they have. Used to preprocess the actions. </p>
+
+<p>Return a list of all actions of the event. </p>
+<dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the actions. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classgd_1_1_for_each_event.html#a9fac54e448a421aab5022038ad51df1f">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a04ab9f03cc22fba3b4a729cd022f9e90">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html#a82ccbbfaacc285d6394ae284276b4457">gd::RepeatEvent</a>, and <a class="el" href="classgd_1_1_standard_event.html#a035713c18f3d3d0cb8d5838e9ba286ec">gd::StandardEvent</a>.</p>
 
@@ -347,7 +355,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Event must be able to return all conditions std::vector they have. Used to preprocess the conditions. </p>
+
+<p>Return a list of all conditions of the event. </p>
+<dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the conditions. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classgd_1_1_for_each_event.html#ad5d730eeac1de0b3d4a381c983699bb4">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a679e1011d837a58241207039476d432b">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html#a5f120abd9d8176cf0bc5e614a3b6ca64">gd::RepeatEvent</a>, and <a class="el" href="classgd_1_1_standard_event.html#a2ab13444a597a24e1899ac074bbcd8a0">gd::StandardEvent</a>.</p>
 
@@ -373,9 +383,39 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Event must be able to return all expressions they have. Used to preprocess the expressions. </p>
+
+<p>Return a list of all expressions of the event. </p>
+<dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the expressions. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classgd_1_1_for_each_event.html#ae4a2c2d66889039b8414505b5558baa0">gd::ForEachEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#a81368055a00acf45705e042d894ff0e1">gd::RepeatEvent</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a128d2d3a149ae1190d3d85a3c00dc787"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>&gt; gd::BaseEvent::GetAllSearchableStrings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of all strings of the event. </p>
+<dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the event strings. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#a5ddb4f93dcc6a6a9db03f8c08c67b61e">gd::GroupEvent</a>, and <a class="el" href="classgd_1_1_comment_event.html#a3412b9e01bb4b888f5de18704a6b61a4">gd::CommentEvent</a>.</p>
 
 </div>
 </div>
