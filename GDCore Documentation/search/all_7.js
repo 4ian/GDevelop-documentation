@@ -240,6 +240,8 @@ var searchData=
   ['getnameat',['GetNameAt',['../classgd_1_1_variables_container.html#ac552ceaa6f288858a0fd62aec0604606',1,'gd::VariablesContainer']]],
   ['getnamespace',['GetNameSpace',['../classgd_1_1_platform_extension.html#a4c40e3c3d6a15ec67776cf17272be979',1,'gd::PlatformExtension']]],
   ['getnamespaceseparator',['GetNamespaceSeparator',['../classgd_1_1_platform_extension.html#ac25dacd1d047fbc4e3bfc6dc90fe8df3',1,'gd::PlatformExtension']]],
+  ['getnode',['GetNode',['../classgd_1_1_expression_node_location_finder.html#a2b21df0bde1ec382b6ff059a7fa57877',1,'gd::ExpressionNodeLocationFinder']]],
+  ['getnodeatposition',['GetNodeAtPosition',['../classgd_1_1_expression_node_location_finder.html#aadd83ced57b48b4fea9348232c065167',1,'gd::ExpressionNodeLocationFinder']]],
   ['getnottoplevelexternaleventsdependencies',['GetNotTopLevelExternalEventsDependencies',['../class_dependencies_analyzer.html#a45c7357ba7cb577baaabe386fc221e6c',1,'DependenciesAnalyzer']]],
   ['getnottoplevelscenesdependencies',['GetNotTopLevelScenesDependencies',['../class_dependencies_analyzer.html#a824d3c304a9f4c2bfe952531231b01eb',1,'DependenciesAnalyzer']]],
   ['getobject',['GetObject',['../classgd_1_1_objects_container.html#a6cd96a4ee8732fbf1c2249332b240ce7',1,'gd::ObjectsContainer::GetObject(const gd::String &amp;name)'],['../classgd_1_1_objects_container.html#a558f9b1c0397c74cce5730621e973dbe',1,'gd::ObjectsContainer::GetObject(const gd::String &amp;name) const '],['../classgd_1_1_objects_container.html#a3d56009e74b3e5b7b3d2321b0ebea47a',1,'gd::ObjectsContainer::GetObject(std::size_t index)'],['../classgd_1_1_objects_container.html#a1d23aa3a2ef5c411e8b76ce254989035',1,'gd::ObjectsContainer::GetObject(std::size_t index) const ']]],
