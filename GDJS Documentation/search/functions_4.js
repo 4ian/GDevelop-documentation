@@ -6,6 +6,7 @@ var searchData=
   ['generateconditionslistcode',['GenerateConditionsListCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a7a2d835b6f91e7cc355d12c33712e274',1,'gdjs::EventsCodeGenerator']]],
   ['generateeventsfunctioncode',['GenerateEventsFunctionCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#ae567a74cf8e5d02e105f5267a93f0ea8',1,'gdjs::EventsCodeGenerator']]],
   ['generateeventslistcode',['GenerateEventsListCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#ac4961a39867d9c6c4a6ae7bec122a281',1,'gdjs::EventsCodeGenerator']]],
+  ['generatefreeeventsfunctioncompletecode',['GenerateFreeEventsFunctionCompleteCode',['../d7/da9/classgdjs_1_1_events_functions_extension_code_generator.html#ac1c8ace58b66896356dd17a2aaeb6f5b',1,'gdjs::EventsFunctionsExtensionCodeGenerator']]],
   ['generateruntimebehaviorcompletecode',['GenerateRuntimeBehaviorCompleteCode',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3',1,'gdjs::BehaviorCodeGenerator']]],
   ['generatesceneeventscompletecode',['GenerateSceneEventsCompleteCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#aac98a807db568908291d5deab771dc90',1,'gdjs::EventsCodeGenerator']]],
   ['get',['Get',['../d2/d3d/classgdjs_1_1_js_platform.html#aace4a7661473b55c7f73d590349330bc',1,'gdjs::JsPlatform']]],

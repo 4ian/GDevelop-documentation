@@ -1,6 +1,7 @@
 var searchData=
 [
   ['eventscodegenerator',['EventsCodeGenerator',['../d7/d4f/classgdjs_1_1_events_code_generator.html',1,'gdjs']]],
+  ['eventsfunctionsextensioncodegenerator',['EventsFunctionsExtensionCodeGenerator',['../d7/da9/classgdjs_1_1_events_functions_extension_code_generator.html',1,'gdjs']]],
   ['exportcocos2dfiles',['ExportCocos2dFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#ae7a4641119e88d44be148e69c549ee8b',1,'gdjs::ExporterHelper']]],
   ['exportcordovafiles',['ExportCordovaFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#afcc35b48031bff5a6898124d169681e0',1,'gdjs::ExporterHelper']]],
   ['exporteffectincludes',['ExportEffectIncludes',['../d0/d75/classgdjs_1_1_exporter_helper.html#a246aa66b740e5daaa640e5c07ab86cd2',1,'gdjs::ExporterHelper']]],

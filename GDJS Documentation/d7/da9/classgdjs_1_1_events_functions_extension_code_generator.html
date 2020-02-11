@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>GDevelop JS Platform: gdjs::BehaviorCodeGenerator Class Reference</title>
+<title>GDevelop JS Platform: gdjs::EventsFunctionsExtensionCodeGenerator Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -82,51 +82,39 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>gdjs</b></li><li class="navelem"><a class="el" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">BehaviorCodeGenerator</a></li>  </ul>
+<li class="navelem"><b>gdjs</b></li><li class="navelem"><a class="el" href="../../d7/da9/classgdjs_1_1_events_functions_extension_code_generator.html">EventsFunctionsExtensionCodeGenerator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="../../db/d0b/classgdjs_1_1_behavior_code_generator-members.html">List of all members</a>  </div>
+<a href="../../dd/de3/classgdjs_1_1_events_functions_extension_code_generator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">gdjs::BehaviorCodeGenerator Class Reference</div>  </div>
+<div class="title">gdjs::EventsFunctionsExtensionCodeGenerator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The class being responsible for generating JavaScript code for EventsBasedBhavior.  
- <a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#details">More...</a></p>
+<p>The class being responsible for generating JavaScript code for EventsFunctionsExtension.  
+ <a href="../../d7/da9/classgdjs_1_1_events_functions_extension_code_generator.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../df/df4/_behavior_code_generator_8h_source.html">BehaviorCodeGenerator.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d6/d72/_events_functions_extension_code_generator_8h_source.html">EventsFunctionsExtensionCodeGenerator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d286825d80de50b207b6f63e9094a7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d286825d80de50b207b6f63e9094a7c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorCodeGenerator</b> (gd::Project &amp;project_)</td></tr>
-<tr class="separator:a7d286825d80de50b207b6f63e9094a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2cf41a51e0ffecb35159c3ba3494a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a2cf41a51e0ffecb35159c3ba3494a3"></a>
-gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3">GenerateRuntimeBehaviorCompleteCode</a> (const gd::String &amp;extensionName, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::String &amp;codeNamespace, const std::map&lt; gd::String, gd::String &gt; &amp;behaviorMethodMangledNames, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
-<tr class="memdesc:a8a2cf41a51e0ffecb35159c3ba3494a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the complete JS class (<code>gdjs.RuntimeBehavior</code>) for the behavior. <br /></td></tr>
-<tr class="separator:a8a2cf41a51e0ffecb35159c3ba3494a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab3b6d249665be922a7a667b9d588caee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3b6d249665be922a7a667b9d588caee"></a>
-static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">GetBehaviorPropertyGetterName</a> (const gd::String &amp;propertyName)</td></tr>
-<tr class="memdesc:ab3b6d249665be922a7a667b9d588caee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the name of the method to get the value of the property of a behavior. <br /></td></tr>
-<tr class="separator:ab3b6d249665be922a7a667b9d588caee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d2af2d107e11d1fc9950f4744625d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23d2af2d107e11d1fc9950f4744625d1"></a>
-static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">GetBehaviorPropertySetterName</a> (const gd::String &amp;propertyName)</td></tr>
-<tr class="memdesc:a23d2af2d107e11d1fc9950f4744625d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the name of the method to set the value of the property of a behavior. <br /></td></tr>
-<tr class="separator:a23d2af2d107e11d1fc9950f4744625d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574dba6a9cabc0b369018724f5ab3473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a574dba6a9cabc0b369018724f5ab3473"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventsFunctionsExtensionCodeGenerator</b> (gd::Project &amp;project_)</td></tr>
+<tr class="separator:a574dba6a9cabc0b369018724f5ab3473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c8ace58b66896356dd17a2aaeb6f5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c8ace58b66896356dd17a2aaeb6f5b"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da9/classgdjs_1_1_events_functions_extension_code_generator.html#ac1c8ace58b66896356dd17a2aaeb6f5b">GenerateFreeEventsFunctionCompleteCode</a> (const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime)</td></tr>
+<tr class="memdesc:ac1c8ace58b66896356dd17a2aaeb6f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the complete code for the specified events function. <br /></td></tr>
+<tr class="separator:ac1c8ace58b66896356dd17a2aaeb6f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The class being responsible for generating JavaScript code for EventsBasedBhavior. </p>
-<p>See also gd::EventsCodeGenerator. </p>
+<div class="textblock"><p>The class being responsible for generating JavaScript code for EventsFunctionsExtension. </p>
+<p>See also gd::BehaviorCodeGenerator. See also gd::EventsCodeGenerator. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="../../df/df4/_behavior_code_generator_8h_source.html">BehaviorCodeGenerator.h</a></li>
-<li>BehaviorCodeGenerator.cpp</li>
+<li><a class="el" href="../../d6/d72/_events_functions_extension_code_generator_8h_source.html">EventsFunctionsExtensionCodeGenerator.h</a></li>
+<li>EventsFunctionsExtensionCodeGenerator.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
