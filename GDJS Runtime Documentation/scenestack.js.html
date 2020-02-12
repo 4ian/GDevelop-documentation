@@ -879,6 +879,8 @@
             
                 <li data-name="gdjs.RuntimeGame#stopCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#stopCurrentSceneProfiler">stopCurrentSceneProfiler</a></li>
             
+                <li data-name="gdjs.RuntimeGame#wasFirstSceneLoaded"><a href="gdjs.RuntimeGame.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1318,6 +1320,8 @@
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
                 <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
+                <li data-name="gdjs.SceneStack#wasFirstSceneLoaded"><a href="gdjs.SceneStack.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -1946,8 +1950,11 @@ gdjs.SceneStack = function(runtimeGame) {
 
     this._runtimeGame = runtimeGame;
 
-    /** @type gdjs.RuntimeScene[] */
-	this._stack = [];
+    /** @type {gdjs.RuntimeScene[]} */
+    this._stack = [];
+
+    /** @type {boolean} */
+    this._wasFirstSceneLoaded = false;
 };
 
 /**
@@ -2023,6 +2030,7 @@ gdjs.SceneStack.prototype.push = function(newSceneName, externalLayoutName) {
     // Load the new one
     var newScene = new gdjs.RuntimeScene(this._runtimeGame);
     newScene.loadFromScene(this._runtimeGame.getSceneData(newSceneName));
+    this._wasFirstSceneLoaded = true;
 
     //Optionally create the objects from an external layout.
     if (externalLayoutName) {
@@ -2061,6 +2069,13 @@ gdjs.SceneStack.prototype.getCurrentScene = function() {
 
 	return this._stack[this._stack.length - 1];
 };
+
+/**
+ * Return true if a scene was loaded, false otherwise (i.e: game not yet started).
+ */
+gdjs.SceneStack.prototype.wasFirstSceneLoaded = function() {
+    return this._wasFirstSceneLoaded;
+}
 </code></pre>
         </article>
     </section>

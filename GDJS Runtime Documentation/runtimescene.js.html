@@ -879,6 +879,8 @@
             
                 <li data-name="gdjs.RuntimeGame#stopCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#stopCurrentSceneProfiler">stopCurrentSceneProfiler</a></li>
             
+                <li data-name="gdjs.RuntimeGame#wasFirstSceneLoaded"><a href="gdjs.RuntimeGame.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1318,6 +1320,8 @@
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
                 <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
+                <li data-name="gdjs.SceneStack#wasFirstSceneLoaded"><a href="gdjs.SceneStack.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -2071,7 +2075,12 @@ gdjs.RuntimeScene.prototype.loadFromScene = function(sceneData) {
 
     this._onceTriggers = new gdjs.OnceTriggers();
 
-    //Call global callback
+    // Notify the global callbacks
+    if (this._runtimeGame &amp;&amp; !this._runtimeGame.wasFirstSceneLoaded()) {
+        for(var i = 0;i&lt;gdjs.callbacksFirstRuntimeSceneLoaded.length;++i) {
+            gdjs.callbacksFirstRuntimeSceneLoaded[i](this);
+        }
+    }
     for(var i = 0;i&lt;gdjs.callbacksRuntimeSceneLoaded.length;++i) {
         gdjs.callbacksRuntimeSceneLoaded[i](this);
     }
@@ -2098,7 +2107,6 @@ gdjs.RuntimeScene.prototype.onPause = function() {
  * on screen after having being paused.
  */
 gdjs.RuntimeScene.prototype.onResume = function() {
-
     this._isJustResumed = true;
 
     for(var i = 0;i &lt; gdjs.callbacksRuntimeSceneResumed.length;++i) {
@@ -2126,7 +2134,9 @@ gdjs.RuntimeScene.prototype.unloadScene = function() {
     if (this._renderer &amp;&amp; this._renderer.onSceneUnloaded)
         this._renderer.onSceneUnloaded();
 
-    // Notify the global callbacks
+    // Notify the global callbacks (after notifying objects and renderer, because
+    // callbacks from extensions might want to free resources - which can't be done
+    // safely before destroying objects and the renderer).
     for(var i = 0;i &lt; gdjs.callbacksRuntimeSceneUnloaded.length;++i) {
         gdjs.callbacksRuntimeSceneUnloaded[i](this);
     }
@@ -2206,6 +2216,12 @@ gdjs.RuntimeScene.prototype.renderAndStep = function(elapsedTime) {
     this._updateObjectsPreEvents();
     if (this._profiler) this._profiler.end("objects (pre-events)");
 
+    if (this._profiler) this._profiler.begin("callbacks and extensions (pre-events)");
+    for(var i = 0;i &lt; gdjs.callbacksRuntimeScenePreEvents.length;++i) {
+        gdjs.callbacksRuntimeScenePreEvents[i](this);
+    }
+    if (this._profiler) this._profiler.end("callbacks and extensions (pre-events)");
+
     if (this._profiler) this._profiler.begin("events");
     this._eventsFunction(this);
     if (this._profiler) this._profiler.end("events");
@@ -2213,6 +2229,12 @@ gdjs.RuntimeScene.prototype.renderAndStep = function(elapsedTime) {
     if (this._profiler) this._profiler.begin("objects (post-events)");
     this._updateObjectsPostEvents();
     if (this._profiler) this._profiler.end("objects (post-events)");
+
+    if (this._profiler) this._profiler.begin("callbacks and extensions (post-events)");
+    for(var i = 0;i &lt; gdjs.callbacksRuntimeScenePostEvents.length;++i) {
+        gdjs.callbacksRuntimeScenePostEvents[i](this);
+    }
+    if (this._profiler) this._profiler.end("callbacks and extensions (post-events)");
 
     if (this._profiler) this._profiler.begin("objects (visibility)");
     this._updateObjectsVisibility();
@@ -2538,7 +2560,7 @@ gdjs.RuntimeScene.prototype.markObjectForDeletion = function(obj) {
     //Notify the object it was removed from the scene
     obj.onDestroyFromScene(this);
 
-    //Call global callback
+    // Notify the global callbacks
     for(var j = 0;j&lt;gdjs.callbacksObjectDeletedFromScene.length;++j) {
         gdjs.callbacksObjectDeletedFromScene[j](this, obj);
     }

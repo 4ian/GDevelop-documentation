@@ -879,6 +879,8 @@
             
                 <li data-name="gdjs.RuntimeGame#stopCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#stopCurrentSceneProfiler">stopCurrentSceneProfiler</a></li>
             
+                <li data-name="gdjs.RuntimeGame#wasFirstSceneLoaded"><a href="gdjs.RuntimeGame.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1318,6 +1320,8 @@
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
                 <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
+                <li data-name="gdjs.SceneStack#wasFirstSceneLoaded"><a href="gdjs.SceneStack.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -2086,7 +2090,7 @@
     
         
         <div class="tag-source">
-            <a href="scenestack.js.html">scenestack.js</a>, <a href="scenestack.js.html#line127">line 127</a>
+            <a href="scenestack.js.html">scenestack.js</a>, <a href="scenestack.js.html#line131">line 131</a>
         </div>
         
     </div>
@@ -2157,7 +2161,7 @@
     
         
         <div class="tag-source">
-            <a href="scenestack.js.html">scenestack.js</a>, <a href="scenestack.js.html#line26">line 26</a>
+            <a href="scenestack.js.html">scenestack.js</a>, <a href="scenestack.js.html#line29">line 29</a>
         </div>
         
     </div>
@@ -2171,6 +2175,77 @@
         <p>Called by the RuntimeGame when the game resolution is changed.
 Useful to notify scene and layers that resolution is changed, as they
 might be caching it.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="wasFirstSceneLoaded">
+            
+            wasFirstSceneLoaded<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="scenestack.js.html">scenestack.js</a>, <a href="scenestack.js.html#line140">line 140</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Return true if a scene was loaded, false otherwise (i.e: game not yet started).</p>
     </div>
     
 

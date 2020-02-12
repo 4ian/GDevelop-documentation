@@ -879,6 +879,8 @@
             
                 <li data-name="gdjs.RuntimeGame#stopCurrentSceneProfiler"><a href="gdjs.RuntimeGame.html#stopCurrentSceneProfiler">stopCurrentSceneProfiler</a></li>
             
+                <li data-name="gdjs.RuntimeGame#wasFirstSceneLoaded"><a href="gdjs.RuntimeGame.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1318,6 +1320,8 @@
                 <li data-name="gdjs.SceneStack#getCurrentScene"><a href="gdjs.SceneStack.html#getCurrentScene">getCurrentScene</a></li>
             
                 <li data-name="gdjs.SceneStack#onGameResolutionResized"><a href="gdjs.SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li>
+            
+                <li data-name="gdjs.SceneStack#wasFirstSceneLoaded"><a href="gdjs.SceneStack.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li>
             
             </ul>
             <ul class="events itemMembers">
@@ -3555,7 +3559,7 @@ resources.</p>
     <div class="nameContainer">
         <h4 class="name" id="getSceneData">
             
-            getSceneData<span class="signature">(sceneName)</span>
+            getSceneData<span class="signature">(sceneName)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Object}</span>
         </h4>
     
         
@@ -3665,9 +3669,29 @@ resources.</p>
     
 
 
-
-The data associated to the scene.
-
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            <td class="description last">The data associated to the scene.</td>
+        </tr>
+    
+    </tbody>
+</table>
 
     
     
@@ -3880,7 +3904,7 @@ The data associated to the scene.
     <div class="nameContainer">
         <h4 class="name" id="hasScene">
             
-            hasScene<span class="signature">(sceneName)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+            hasScene<span class="signature">(<span class="optional">sceneName</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
         </h4>
     
         
@@ -3942,6 +3966,13 @@ The data associated to the scene.
             
             
             <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
                 
                 <p>The name of the scene to search.</p></td>
         </tr>
@@ -4866,6 +4897,77 @@ resolution should not be updated automatically.</p>
     
     <div class="description">
         <p>Stop the profiler for the currently running scene.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="wasFirstSceneLoaded">
+            
+            wasFirstSceneLoaded<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="runtimegame.js.html">runtimegame.js</a>, <a href="runtimegame.js.html#line526">line 526</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Return true if a scene was loaded, false otherwise (i.e: game not yet started).</p>
     </div>
     
 
