@@ -110,17 +110,23 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ToXML</b> (<a 
 <tr class="memitem:a85214e8f762ccdea2d41934e0ec3a47e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85214e8f762ccdea2d41934e0ec3a47e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>FromXML</b> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element, const TiXmlElement *xmlElement)</td></tr>
 <tr class="separator:a85214e8f762ccdea2d41934e0ec3a47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0560287d898cf2e308b3ea675e6ab829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0560287d898cf2e308b3ea675e6ab829"></a>
+static <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_serializer.html#a0560287d898cf2e308b3ea675e6ab829">ToEscapedXMLString</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;str)</td></tr>
+<tr class="memdesc:a0560287d898cf2e308b3ea675e6ab829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escape a string for inclusion in a XML tag. <br /></td></tr>
+<tr class="separator:a0560287d898cf2e308b3ea675e6ab829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">JSON serialization.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Serialize a <a class="el" href="classgd_1_1_serializer_element.html" title="A generic container that can represent a value ( containing a string, double, bool or int)...">SerializerElement</a> from/to JSON. </p>
 </div></td></tr>
 <tr class="memitem:a42096ae46304049ee773a5260d5e1ef0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42096ae46304049ee773a5260d5e1ef0"></a>
-static <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToJSON</b> (const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element)</td></tr>
+static <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_serializer.html#a42096ae46304049ee773a5260d5e1ef0">ToJSON</a> (const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element)</td></tr>
+<tr class="memdesc:a42096ae46304049ee773a5260d5e1ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="classgd_1_1_serializer_element.html" title="A generic container that can represent a value ( containing a string, double, bool or int)...">gd::SerializerElement</a> to a JSON string. <br /></td></tr>
 <tr class="separator:a42096ae46304049ee773a5260d5e1ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb0061c5111921648e6d2a48191ef3af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb0061c5111921648e6d2a48191ef3af"></a>
 static <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FromJSON</b> (const std::string &amp;json)</td></tr>
 <tr class="separator:afb0061c5111921648e6d2a48191ef3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89689319b02fa88e129597ffb1649dfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89689319b02fa88e129597ffb1649dfc"></a>
-static <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FromJSON</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;json)</td></tr>
+static <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_serializer.html#a89689319b02fa88e129597ffb1649dfc">FromJSON</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;json)</td></tr>
+<tr class="memdesc:a89689319b02fa88e129597ffb1649dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a JSON string and returns a <a class="el" href="classgd_1_1_serializer_element.html" title="A generic container that can represent a value ( containing a string, double, bool or int)...">gd::SerializerElement</a> for it. <br /></td></tr>
 <tr class="separator:a89689319b02fa88e129597ffb1649dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_expression_parser2_node_8h_source.html">ExpressionParser2Node.h</a>&gt;</code></p>
 
-<p>Inherited by <a class="el" href="structgd_1_1_identifier_or_function_or_empty_node.html">gd::IdentifierOrFunctionOrEmptyNode</a>, <a class="el" href="structgd_1_1_number_node.html">gd::NumberNode</a>, <a class="el" href="structgd_1_1_operator_node.html">gd::OperatorNode</a>, <a class="el" href="structgd_1_1_sub_expression_node.html">gd::SubExpressionNode</a>, <a class="el" href="structgd_1_1_text_node.html">gd::TextNode</a>, <a class="el" href="structgd_1_1_unary_operator_node.html">gd::UnaryOperatorNode</a>, <a class="el" href="structgd_1_1_variable_accessor_or_variable_bracket_accessor_node.html">gd::VariableAccessorOrVariableBracketAccessorNode</a>, and <a class="el" href="structgd_1_1_variable_node.html">gd::VariableNode</a>.</p>
+<p>Inherited by <a class="el" href="structgd_1_1_identifier_or_function_call_or_object_function_name_or_empty_node.html">gd::IdentifierOrFunctionCallOrObjectFunctionNameOrEmptyNode</a>, <a class="el" href="structgd_1_1_number_node.html">gd::NumberNode</a>, <a class="el" href="structgd_1_1_operator_node.html">gd::OperatorNode</a>, <a class="el" href="structgd_1_1_sub_expression_node.html">gd::SubExpressionNode</a>, <a class="el" href="structgd_1_1_text_node.html">gd::TextNode</a>, <a class="el" href="structgd_1_1_unary_operator_node.html">gd::UnaryOperatorNode</a>, <a class="el" href="structgd_1_1_variable_accessor_or_variable_bracket_accessor_node.html">gd::VariableAccessorOrVariableBracketAccessorNode</a>, and <a class="el" href="structgd_1_1_variable_node.html">gd::VariableNode</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -115,13 +115,26 @@ Public Attributes</h2></td></tr>
 std::unique_ptr<br class="typebreak" />
 &lt; <a class="el" href="structgd_1_1_expression_parser_diagnostic.html">ExpressionParserDiagnostic</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>diagnostic</b></td></tr>
 <tr class="separator:af8c34e1ece24d882621ead01c0480961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a9c8cd3476078a3bc0c767ed46317fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a9c8cd3476078a3bc0c767ed46317fd"></a>
-<a class="el" href="structgd_1_1_expression_parser_location.html">ExpressionParserLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>location</b></td></tr>
+<tr class="memitem:a8a9c8cd3476078a3bc0c767ed46317fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgd_1_1_expression_parser_location.html">ExpressionParserLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_node.html#a8a9c8cd3476078a3bc0c767ed46317fd">location</a></td></tr>
 <tr class="separator:a8a9c8cd3476078a3bc0c767ed46317fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base node, from which all nodes in the tree of an expression inherits from. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8a9c8cd3476078a3bc0c767ed46317fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgd_1_1_expression_parser_location.html">ExpressionParserLocation</a> gd::ExpressionNode::location</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The location of the entire node. Some nodes might have other locations stored inside them. For example, a function can store the position of the object name, the dot, the function name, etc... </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_expression_parser2_node_8h_source.html">ExpressionParser2Node.h</a></li>
 </ul>
 </div><!-- contents -->

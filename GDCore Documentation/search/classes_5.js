@@ -29,6 +29,8 @@ var searchData=
   ['expression',['Expression',['../classgd_1_1_expression.html',1,'gd']]],
   ['expressioncodegenerationinformation',['ExpressionCodeGenerationInformation',['../classgd_1_1_expression_code_generation_information.html',1,'gd']]],
   ['expressioncodegenerator',['ExpressionCodeGenerator',['../classgd_1_1_expression_code_generator.html',1,'gd']]],
+  ['expressioncompletiondescription',['ExpressionCompletionDescription',['../structgd_1_1_expression_completion_description.html',1,'gd']]],
+  ['expressioncompletionfinder',['ExpressionCompletionFinder',['../classgd_1_1_expression_completion_finder.html',1,'gd']]],
   ['expressionfunctionrenamer',['ExpressionFunctionRenamer',['../classgd_1_1_expression_function_renamer.html',1,'gd']]],
   ['expressionmetadata',['ExpressionMetadata',['../classgd_1_1_expression_metadata.html',1,'gd']]],
   ['expressionnode',['ExpressionNode',['../structgd_1_1_expression_node.html',1,'gd']]],

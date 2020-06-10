@@ -140,10 +140,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRepeatExpression</
 &lt; <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_repeat_event.html#a82ccbbfaacc285d6394ae284276b4457">GetAllActionsVectors</a> ()</td></tr>
 <tr class="memdesc:a82ccbbfaacc285d6394ae284276b4457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all actions of the event.  <a href="#a82ccbbfaacc285d6394ae284276b4457">More...</a><br /></td></tr>
 <tr class="separator:a82ccbbfaacc285d6394ae284276b4457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81368055a00acf45705e042d894ff0e1"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak" />
-&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_repeat_event.html#a81368055a00acf45705e042d894ff0e1">GetAllExpressions</a> ()</td></tr>
-<tr class="memdesc:a81368055a00acf45705e042d894ff0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all expressions of the event.  <a href="#a81368055a00acf45705e042d894ff0e1">More...</a><br /></td></tr>
-<tr class="separator:a81368055a00acf45705e042d894ff0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7ddae8d952791c7f6c8f04079e5a7a"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::pair<br class="typebreak" />
+&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> <br class="typebreak" />
+*, <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_repeat_event.html#a1f7ddae8d952791c7f6c8f04079e5a7a">GetAllExpressionsWithMetadata</a> ()</td></tr>
+<tr class="memdesc:a1f7ddae8d952791c7f6c8f04079e5a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all expressions of the event, each with their associated metadata.  <a href="#a1f7ddae8d952791c7f6c8f04079e5a7a">More...</a><br /></td></tr>
+<tr class="separator:a1f7ddae8d952791c7f6c8f04079e5a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a8c1cccc2a9f80c2febc1a16022d94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19a8c1cccc2a9f80c2febc1a16022d94"></a>
 virtual std::vector&lt; const <br class="typebreak" />
 <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllConditionsVectors</b> () const </td></tr>
@@ -152,10 +153,11 @@ virtual std::vector&lt; const <br class="typebreak" />
 virtual std::vector&lt; const <br class="typebreak" />
 <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllActionsVectors</b> () const </td></tr>
 <tr class="separator:ac211dfafc4c65b6587d2b06b669a405a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ade549df83c761b1f96a89b8247338"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92ade549df83c761b1f96a89b8247338"></a>
-virtual std::vector&lt; const <br class="typebreak" />
-<a class="el" href="classgd_1_1_expression.html">gd::Expression</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllExpressions</b> () const </td></tr>
-<tr class="separator:a92ade549df83c761b1f96a89b8247338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83901a59c1c4372c53065b49a252620"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab83901a59c1c4372c53065b49a252620"></a>
+virtual std::vector&lt; std::pair<br class="typebreak" />
+&lt; const <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> <br class="typebreak" />
+*, const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllExpressionsWithMetadata</b> () const </td></tr>
+<tr class="separator:ab83901a59c1c4372c53065b49a252620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651969c23b29d1a74a17a1464df5e0f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a651969c23b29d1a74a17a1464df5e0f9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_repeat_event.html#a651969c23b29d1a74a17a1464df5e0f9">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const </td></tr>
 <tr class="memdesc:a651969c23b29d1a74a17a1464df5e0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize event. <br /></td></tr>
@@ -333,7 +335,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a81368055a00acf45705e042d894ff0e1"></a>
+<a class="anchor" id="a1f7ddae8d952791c7f6c8f04079e5a7a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -341,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> * &gt; gd::RepeatEvent::GetAllExpressions </td>
+          <td class="memname">vector&lt; pair&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> *, <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &gt; gd::RepeatEvent::GetAllExpressionsWithMetadata </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -354,10 +356,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return a list of all expressions of the event. </p>
-<dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the expressions. </dd></dl>
+<p>Return a list of all expressions of the event, each with their associated metadata. </p>
+<dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the expressions of the event. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classgd_1_1_base_event.html#aed4ec20f57bc9ef27db684e9da60901b">gd::BaseEvent</a>.</p>
+<p>Reimplemented from <a class="el" href="classgd_1_1_base_event.html#a2b6f72f12cbf7137f1bbbb1fe009f71c">gd::BaseEvent</a>.</p>
 
 </div>
 </div>

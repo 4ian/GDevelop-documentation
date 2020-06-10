@@ -14,7 +14,7 @@ var indexSectionsWithContent =
   4: "abcdefghilmnoprstuvwy~",
   5: "abcdefghilmnoprstuvwz",
   6: "u",
-  7: "nu",
+  7: "cnu",
   8: "nu",
   9: "u",
   10: "ceips",

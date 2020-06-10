@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_expression_parser2_node_worker_8h_source.html">ExpressionParser2NodeWorker.h</a>&gt;</code></p>
 
-<p>Inherited by <a class="el" href="classgd_1_1_expression_code_generator.html">gd::ExpressionCodeGenerator</a>, <a class="el" href="classgd_1_1_expression_function_renamer.html">gd::ExpressionFunctionRenamer</a>, <a class="el" href="classgd_1_1_expression_node_location_finder.html">gd::ExpressionNodeLocationFinder</a>, <a class="el" href="classgd_1_1_expression_object_finder.html">gd::ExpressionObjectFinder</a>, <a class="el" href="classgd_1_1_expression_object_renamer.html">gd::ExpressionObjectRenamer</a>, <a class="el" href="classgd_1_1_expression_objects_analyzer.html">gd::ExpressionObjectsAnalyzer</a>, <a class="el" href="classgd_1_1_expression_parameter_mover.html">gd::ExpressionParameterMover</a>, <a class="el" href="classgd_1_1_expression_parameter_searcher.html">gd::ExpressionParameterSearcher</a>, <a class="el" href="classgd_1_1_expression_parser2_node_printer.html">gd::ExpressionParser2NodePrinter</a>, and <a class="el" href="classgd_1_1_expression_validator.html">gd::ExpressionValidator</a>.</p>
+<p>Inherited by <a class="el" href="classgd_1_1_expression_code_generator.html">gd::ExpressionCodeGenerator</a>, <a class="el" href="classgd_1_1_expression_completion_finder.html">gd::ExpressionCompletionFinder</a>, <a class="el" href="classgd_1_1_expression_function_renamer.html">gd::ExpressionFunctionRenamer</a>, <a class="el" href="classgd_1_1_expression_node_location_finder.html">gd::ExpressionNodeLocationFinder</a>, <a class="el" href="classgd_1_1_expression_object_finder.html">gd::ExpressionObjectFinder</a>, <a class="el" href="classgd_1_1_expression_object_renamer.html">gd::ExpressionObjectRenamer</a>, <a class="el" href="classgd_1_1_expression_objects_analyzer.html">gd::ExpressionObjectsAnalyzer</a>, <a class="el" href="classgd_1_1_expression_parameter_mover.html">gd::ExpressionParameterMover</a>, <a class="el" href="classgd_1_1_expression_parameter_searcher.html">gd::ExpressionParameterSearcher</a>, <a class="el" href="classgd_1_1_expression_parser2_node_printer.html">gd::ExpressionParser2NodePrinter</a>, and <a class="el" href="classgd_1_1_expression_validator.html">gd::ExpressionValidator</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -132,9 +132,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitVariab
 <tr class="memitem:aca89e26f1dd698ffd9357ca4d0fc3f46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca89e26f1dd698ffd9357ca4d0fc3f46"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitIdentifierNode</b> (<a class="el" href="structgd_1_1_identifier_node.html">IdentifierNode</a> &amp;node)=0</td></tr>
 <tr class="separator:aca89e26f1dd698ffd9357ca4d0fc3f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81699617e15b350ff97f861e22c66d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa81699617e15b350ff97f861e22c66d8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitFunctionNode</b> (<a class="el" href="structgd_1_1_function_node.html">FunctionNode</a> &amp;node)=0</td></tr>
-<tr class="separator:aa81699617e15b350ff97f861e22c66d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad201d7110bc86a187570f9684edffece"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad201d7110bc86a187570f9684edffece"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitObjectFunctionNameNode</b> (<a class="el" href="structgd_1_1_object_function_name_node.html">ObjectFunctionNameNode</a> &amp;node)=0</td></tr>
+<tr class="separator:ad201d7110bc86a187570f9684edffece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1feb23232e56539b4cb316e898d00dca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1feb23232e56539b4cb316e898d00dca"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitFunctionCallNode</b> (<a class="el" href="structgd_1_1_function_call_node.html">FunctionCallNode</a> &amp;node)=0</td></tr>
+<tr class="separator:a1feb23232e56539b4cb316e898d00dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966eefe196ac77b13f5c5e96cd3a3d88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a966eefe196ac77b13f5c5e96cd3a3d88"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitEmptyNode</b> (<a class="el" href="structgd_1_1_empty_node.html">EmptyNode</a> &amp;node)=0</td></tr>
 <tr class="separator:a966eefe196ac77b13f5c5e96cd3a3d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,18 +171,21 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>VariableAccessorNode
 <tr class="memitem:a9dbe3c8fc326031007584b10f41c7eb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dbe3c8fc326031007584b10f41c7eb9"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>VariableBracketAccessorNode</b></td></tr>
 <tr class="separator:a9dbe3c8fc326031007584b10f41c7eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2633290fb84b6e7ae86e054056caba9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2633290fb84b6e7ae86e054056caba9f"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>IdentifierOrFunctionOrEmptyNode</b></td></tr>
-<tr class="separator:a2633290fb84b6e7ae86e054056caba9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3409b6a28758a995eb149da295942846"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3409b6a28758a995eb149da295942846"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>IdentifierOrFunctionCallOrObjectFunctionNameOrEmptyNode</b></td></tr>
+<tr class="separator:a3409b6a28758a995eb149da295942846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88896e712c1764477265d06cef7f63c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88896e712c1764477265d06cef7f63c7"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>IdentifierNode</b></td></tr>
 <tr class="separator:a88896e712c1764477265d06cef7f63c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec7ce752195ed3cf7ed291e8db9726bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec7ce752195ed3cf7ed291e8db9726bc"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionOrEmptyNode</b></td></tr>
-<tr class="separator:aec7ce752195ed3cf7ed291e8db9726bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1b4177a36db9913483cb60d61579cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b1b4177a36db9913483cb60d61579cb"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionNode</b></td></tr>
-<tr class="separator:a3b1b4177a36db9913483cb60d61579cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930fe1f3a8ee5d3cc5f3b9ab196431c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a930fe1f3a8ee5d3cc5f3b9ab196431c8"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionCallOrObjectFunctionNameOrEmptyNode</b></td></tr>
+<tr class="separator:a930fe1f3a8ee5d3cc5f3b9ab196431c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf9ae005bcd2383d5095afceb9eb310"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cf9ae005bcd2383d5095afceb9eb310"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectFunctionNameNode</b></td></tr>
+<tr class="separator:a5cf9ae005bcd2383d5095afceb9eb310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840ba16c66ef48017a1e559b408385d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a840ba16c66ef48017a1e559b408385d5"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionCallNode</b></td></tr>
+<tr class="separator:a840ba16c66ef48017a1e559b408385d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98c1a967e47f08eca970fe459cc6979d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98c1a967e47f08eca970fe459cc6979d"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>EmptyNode</b></td></tr>
 <tr class="separator:a98c1a967e47f08eca970fe459cc6979d"><td class="memSeparator" colspan="2">&#160;</td></tr>

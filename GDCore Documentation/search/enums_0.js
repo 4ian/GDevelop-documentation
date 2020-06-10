@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normform',['NormForm',['../classgd_1_1_string.html#ac9fbe9e33c5ebfa40ef54ff848702617',1,'gd::String']]]
+  ['completionkind',['CompletionKind',['../structgd_1_1_expression_completion_description.html#a81155b53aa7df251338d10f2163628bc',1,'gd::ExpressionCompletionDescription']]]
 ];

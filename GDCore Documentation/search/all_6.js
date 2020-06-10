@@ -15,9 +15,14 @@ var searchData=
   ['findcaseinsensitive',['FindCaseInsensitive',['../classgd_1_1_string.html#a5c7a3c2d05329a7e19e0a0d6ed6cabcd',1,'gd::String']]],
   ['floatinfos',['floatInfos',['../classgd_1_1_initial_instance.html#a35dcf2d0265c2f0506d2e38feb8f0b91',1,'gd::InitialInstance']]],
   ['fontresource',['FontResource',['../classgd_1_1_font_resource.html',1,'gd']]],
+  ['forbehavior',['ForBehavior',['../structgd_1_1_expression_completion_description.html#a2036daa5ca71c8865874db8b4fde4000',1,'gd::ExpressionCompletionDescription']]],
   ['forbidreuse',['ForbidReuse',['../classgd_1_1_events_code_generation_context.html#afcebf1b501c7d1e15d6250a5b1574d42',1,'gd::EventsCodeGenerationContext']]],
   ['foreachevent',['ForEachEvent',['../classgd_1_1_for_each_event.html',1,'gd']]],
+  ['forexpression',['ForExpression',['../structgd_1_1_expression_completion_description.html#a98095586a840b3726f342bfbba6b0b40',1,'gd::ExpressionCompletionDescription']]],
+  ['forobject',['ForObject',['../structgd_1_1_expression_completion_description.html#ad7a536dc087aa69f5f511a0e87c60eb7',1,'gd::ExpressionCompletionDescription']]],
+  ['forvariable',['ForVariable',['../structgd_1_1_expression_completion_description.html#a27e752e3a5fa548fcc8193b5999938d8',1,'gd::ExpressionCompletionDescription']]],
   ['from',['From',['../classgd_1_1_string.html#a231c9dde51cb369cf6350460d5a68401',1,'gd::String']]],
+  ['fromjson',['FromJSON',['../classgd_1_1_serializer.html#a89689319b02fa88e129597ffb1649dfc',1,'gd::Serializer']]],
   ['fromlocale',['FromLocale',['../classgd_1_1_string.html#ad194af4b2c569870b7f4b40289c957a1',1,'gd::String']]],
   ['fromsfstring',['FromSfString',['../classgd_1_1_string.html#a0cbcef838f1158ae7127546bbbdb8646',1,'gd::String']]],
   ['fromutf32',['FromUTF32',['../classgd_1_1_string.html#a9a77becf3de120eba1b3c1a68341fb20',1,'gd::String']]],
@@ -25,6 +30,7 @@ var searchData=
   ['fromwide',['FromWide',['../classgd_1_1_string.html#a18d19e438d8273e2881752155993b850',1,'gd::String']]],
   ['fs',['fs',['../classgd_1_1_resources_merging_helper.html#a8f982463fd7237d3f1c397274211ce2c',1,'gd::ResourcesMergingHelper']]],
   ['fullstring',['FullString',['../classgd_1_1_version_wrapper.html#a419736aeb2619785ced6580a26931585',1,'gd::VersionWrapper']]],
-  ['functionnode',['FunctionNode',['../structgd_1_1_function_node.html',1,'gd']]],
-  ['functionoremptynode',['FunctionOrEmptyNode',['../structgd_1_1_function_or_empty_node.html',1,'gd']]]
+  ['functioncallnode',['FunctionCallNode',['../structgd_1_1_function_call_node.html',1,'gd']]],
+  ['functioncallorobjectfunctionnameoremptynode',['FunctionCallOrObjectFunctionNameOrEmptyNode',['../structgd_1_1_function_call_or_object_function_name_or_empty_node.html',1,'gd']]],
+  ['functionnamelocation',['functionNameLocation',['../structgd_1_1_function_call_node.html#a8e99f787c3a8f5cd16f7efbe9650937b',1,'gd::FunctionCallNode']]]
 ];

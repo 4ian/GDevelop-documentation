@@ -134,7 +134,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">float</span> tolerance,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">bool</span> conditionInverted);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  // OBJECTTOOLS_H</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">bool</span> GD_API <a class="code" href="../../d0/d3b/class_runtime_object.html#aa55430a8b445c116a8bb69714e5fa082">CursorOnObject</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::map&lt;gd::String, std::vector&lt;RuntimeObject *&gt; *&gt; objectsLists,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a> &amp;scene,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> precise,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> conditionInverted);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  // OBJECTTOOLS_H</span></div>
+<div class="ttc" id="class_runtime_object_html_aa55430a8b445c116a8bb69714e5fa082"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html#aa55430a8b445c116a8bb69714e5fa082">RuntimeObject::CursorOnObject</a></div><div class="ttdeci">virtual bool CursorOnObject(RuntimeScene &amp;scene, bool accurate)</div><div class="ttdoc">Return true if the cursor is on the object. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.cpp:643</div></div>
 <div class="ttc" id="class_runtime_scene_html"><div class="ttname"><a href="../../d7/d7f/class_runtime_scene.html">RuntimeScene</a></div><div class="ttdoc">Represents a scene being played. </div><div class="ttdef"><b>Definition:</b> RuntimeScene.h:49</div></div>
 <div class="ttc" id="class_runtime_object_html"><div class="ttname"><a href="../../d0/d3b/class_runtime_object.html">RuntimeObject</a></div><div class="ttdoc">A RuntimeObject is something displayed on the scene. </div><div class="ttdef"><b>Definition:</b> RuntimeObject.h:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
