@@ -158,13 +158,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr><td colspan="2"><div class="groupHeader">Resources properties</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Reading and updating resources properties </p>
 </div></td></tr>
-<tr class="memitem:ab21c48e3d8dea09b3e92c4f4d120158c"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br class="typebreak" />
-<a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#ab21c48e3d8dea09b3e92c4f4d120158c">GetProperties</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project) const </td></tr>
-<tr class="memdesc:ab21c48e3d8dea09b3e92c4f4d120158c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the resource.  <a href="#ab21c48e3d8dea09b3e92c4f4d120158c">More...</a><br /></td></tr>
-<tr class="separator:ab21c48e3d8dea09b3e92c4f4d120158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0850154576783e0ec65ce95add75ccaf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#a0850154576783e0ec65ce95add75ccaf">UpdateProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value, <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project)</td></tr>
-<tr class="memdesc:a0850154576783e0ec65ce95add75ccaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the resource.  <a href="#a0850154576783e0ec65ce95add75ccaf">More...</a><br /></td></tr>
-<tr class="separator:a0850154576783e0ec65ce95add75ccaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a80df1fffd6c5e38b463f77156b05a6"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br class="typebreak" />
+<a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#a9a80df1fffd6c5e38b463f77156b05a6">GetProperties</a> () const </td></tr>
+<tr class="memdesc:a9a80df1fffd6c5e38b463f77156b05a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the resource.  <a href="#a9a80df1fffd6c5e38b463f77156b05a6">More...</a><br /></td></tr>
+<tr class="separator:a9a80df1fffd6c5e38b463f77156b05a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d640907680f57ff7605976cc1b6b81f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#a9d640907680f57ff7605976cc1b6b81f">UpdateProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value)</td></tr>
+<tr class="memdesc:a9d640907680f57ff7605976cc1b6b81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the resource.  <a href="#a9d640907680f57ff7605976cc1b6b81f">More...</a><br /></td></tr>
+<tr class="separator:a9d640907680f57ff7605976cc1b6b81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class to describe a resource used by a game. </p>
@@ -199,7 +199,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="ab21c48e3d8dea09b3e92c4f4d120158c"></a>
+<a class="anchor" id="a9a80df1fffd6c5e38b463f77156b05a6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -209,8 +209,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; gd::Resource::GetProperties </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
-          <td class="paramname"><em>project</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -229,7 +228,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_property_descriptor.html" title="Used to describe a property shown in a property grid. ">gd::PropertyDescriptor</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_json_resource.html#a72cc3d0c71e2e630460ca35dc494822a">gd::JsonResource</a>, and <a class="el" href="classgd_1_1_image_resource.html#a1af8dbd2d73c6e470d3f271f9d8689e4">gd::ImageResource</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_json_resource.html#a82e9c2f653f42e623c7fc02be0c69e84">gd::JsonResource</a>, and <a class="el" href="classgd_1_1_image_resource.html#a552006dfb655d073cf9fa64ad8b09ed8">gd::ImageResource</a>.</p>
 
 </div>
 </div>
@@ -291,7 +290,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="a0850154576783e0ec65ce95add75ccaf"></a>
+<a class="anchor" id="a9d640907680f57ff7605976cc1b6b81f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -308,13 +307,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
-          <td class="paramname"><em>project</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -332,7 +325,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Called when the IDE wants to update a custom property of the resource. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_json_resource.html#a50f48ddbb63239ed3fac50006ea4be49">gd::JsonResource</a>, and <a class="el" href="classgd_1_1_image_resource.html#ad1ad830276fd07cc9de51425770fd830">gd::ImageResource</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_json_resource.html#a787d4d852be7633d6290180a8c5ba98c">gd::JsonResource</a>, and <a class="el" href="classgd_1_1_image_resource.html#ace882b40cb3dbaf851d9e57764450585">gd::ImageResource</a>.</p>
 
 </div>
 </div>
