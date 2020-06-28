@@ -1172,9 +1172,13 @@
             
                 <li data-name="gdjs.RuntimeObject#setAngle"><a href="gdjs.RuntimeObject.html#setAngle">setAngle</a></li>
             
+                <li data-name="gdjs.RuntimeObject#setHeight"><a href="gdjs.RuntimeObject.html#setHeight">setHeight</a></li>
+            
                 <li data-name="gdjs.RuntimeObject#setLayer"><a href="gdjs.RuntimeObject.html#setLayer">setLayer</a></li>
             
                 <li data-name="gdjs.RuntimeObject#setPosition"><a href="gdjs.RuntimeObject.html#setPosition">setPosition</a></li>
+            
+                <li data-name="gdjs.RuntimeObject#setWidth"><a href="gdjs.RuntimeObject.html#setWidth">setWidth</a></li>
             
                 <li data-name="gdjs.RuntimeObject#setX"><a href="gdjs.RuntimeObject.html#setX">setX</a></li>
             
@@ -2658,6 +2662,18 @@ gdjs.RuntimeObject.prototype.isVisible = function() {
 gdjs.RuntimeObject.prototype.isHidden = function() {
     return this.hidden;
 };
+
+/**
+ * Set the width of the object, if applicable.
+ * @param {number} width The new width in pixels.
+ */
+gdjs.RuntimeObject.prototype.setWidth = function(width) {};
+
+/**
+ * Set the height of the object, if applicable.
+ * @param {number} height The new height in pixels.
+ */
+gdjs.RuntimeObject.prototype.setHeight = function(height) {};
 
 /**
  * Return the width of the object.
