@@ -99,35 +99,35 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GDCore/Project/EventsBasedBehavior.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>NamedPropertyDescriptor;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d4f/namespacegdjs.html">gdjs</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">BehaviorCodeGenerator</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">BehaviorCodeGenerator</a>(gd::Project&amp; project_) : project(project_){};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  gd::String <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3">GenerateRuntimeBehaviorCompleteCode</a>(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> gd::String&amp; extensionName,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> std::map&lt;gd::String, gd::String&gt;&amp; behaviorMethodMangledNames,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      std::set&lt;gd::String&gt;&amp; includeFiles,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordtype">bool</span> compilationForRuntime = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">   45</a></span>&#160;  <span class="keyword">static</span> gd::String <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">GetBehaviorPropertyGetterName</a>(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> gd::String&amp; propertyName) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;_get&quot;</span> + propertyName;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">   54</a></span>&#160;  <span class="keyword">static</span> gd::String <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">GetBehaviorPropertySetterName</a>(</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keyword">const</span> gd::String&amp; propertyName) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;_set&quot;</span> + propertyName;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GDCore/Project/EventsBasedBehavior.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d5d/namespacegd.html">gd</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>NamedPropertyDescriptor;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d4f/namespacegdjs.html">gdjs</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">BehaviorCodeGenerator</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">BehaviorCodeGenerator</a>(gd::Project&amp; project_) : project(project_){};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  gd::String <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3">GenerateRuntimeBehaviorCompleteCode</a>(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> gd::String&amp; extensionName,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> std::map&lt;gd::String, gd::String&gt;&amp; behaviorMethodMangledNames,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      std::set&lt;gd::String&gt;&amp; includeFiles,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordtype">bool</span> compilationForRuntime = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">   46</a></span>&#160;  <span class="keyword">static</span> gd::String <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">GetBehaviorPropertyGetterName</a>(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> gd::String&amp; propertyName) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;_get&quot;</span> + propertyName;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">   55</a></span>&#160;  <span class="keyword">static</span> gd::String <a class="code" href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">GetBehaviorPropertySetterName</a>(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> gd::String&amp; propertyName) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;_set&quot;</span> + propertyName;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  gd::String GenerateRuntimeBehaviorTemplateCode(</div>
@@ -149,17 +149,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  gd::String GenerateBehaviorOnDestroyToDeprecatedOnOwnerRemovedFromScene(</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  gd::Project&amp; project;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace gdjs</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  // GDJS_BEHAVIORCODEGENERATOR_H</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  gd::String GenerateDefaultDoStepPreEventsFunctionCode(</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  gd::String GenerateDoStepPreEventsPreludeCode();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  gd::Project&amp; project;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">static</span> gd::String doStepPreEventsFunctionName;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace gdjs</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // GDJS_BEHAVIORCODEGENERATOR_H</span></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> JsCodeEvent.h:10</div></div>
-<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_a8a2cf41a51e0ffecb35159c3ba3494a3"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3">gdjs::BehaviorCodeGenerator::GenerateRuntimeBehaviorCompleteCode</a></div><div class="ttdeci">gd::String GenerateRuntimeBehaviorCompleteCode(const gd::String &amp;extensionName, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::String &amp;codeNamespace, const std::map&lt; gd::String, gd::String &gt; &amp;behaviorMethodMangledNames, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</div><div class="ttdoc">Generate the complete JS class (gdjs.RuntimeBehavior) for the behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.cpp:10</div></div>
-<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_a23d2af2d107e11d1fc9950f4744625d1"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">gdjs::BehaviorCodeGenerator::GetBehaviorPropertySetterName</a></div><div class="ttdeci">static gd::String GetBehaviorPropertySetterName(const gd::String &amp;propertyName)</div><div class="ttdoc">Generate the name of the method to set the value of the property of a behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:54</div></div>
-<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">gdjs::BehaviorCodeGenerator</a></div><div class="ttdoc">The class being responsible for generating JavaScript code for EventsBasedBhavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:25</div></div>
-<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_ab3b6d249665be922a7a667b9d588caee"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">gdjs::BehaviorCodeGenerator::GetBehaviorPropertyGetterName</a></div><div class="ttdeci">static gd::String GetBehaviorPropertyGetterName(const gd::String &amp;propertyName)</div><div class="ttdoc">Generate the name of the method to get the value of the property of a behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:45</div></div>
+<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_a8a2cf41a51e0ffecb35159c3ba3494a3"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3">gdjs::BehaviorCodeGenerator::GenerateRuntimeBehaviorCompleteCode</a></div><div class="ttdeci">gd::String GenerateRuntimeBehaviorCompleteCode(const gd::String &amp;extensionName, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::String &amp;codeNamespace, const std::map&lt; gd::String, gd::String &gt; &amp;behaviorMethodMangledNames, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</div><div class="ttdoc">Generate the complete JS class (gdjs.RuntimeBehavior) for the behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.cpp:15</div></div>
+<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_a23d2af2d107e11d1fc9950f4744625d1"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">gdjs::BehaviorCodeGenerator::GetBehaviorPropertySetterName</a></div><div class="ttdeci">static gd::String GetBehaviorPropertySetterName(const gd::String &amp;propertyName)</div><div class="ttdoc">Generate the name of the method to set the value of the property of a behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:55</div></div>
+<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html">gdjs::BehaviorCodeGenerator</a></div><div class="ttdoc">The class being responsible for generating JavaScript code for EventsBasedBhavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:26</div></div>
+<div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_ab3b6d249665be922a7a667b9d588caee"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee">gdjs::BehaviorCodeGenerator::GetBehaviorPropertyGetterName</a></div><div class="ttdeci">static gd::String GetBehaviorPropertyGetterName(const gd::String &amp;propertyName)</div><div class="ttdoc">Generate the name of the method to get the value of the property of a behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:46</div></div>
 <div class="ttc" id="namespacegdjs_html"><div class="ttname"><a href="../../db/d4f/namespacegdjs.html">gdjs</a></div><div class="ttdef"><b>Definition:</b> JsCodeEvent.cpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

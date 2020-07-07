@@ -138,8 +138,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a115028bcc01f8045ea0a2e66c5a41b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#ae567a74cf8e5d02e105f5267a93f0ea8">GenerateEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
 <tr class="separator:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c74238e40d77c0c7a57ffb1448a915"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a82c74238e40d77c0c7a57ffb1448a915">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
-<tr class="separator:a82c74238e40d77c0c7a57ffb1448a915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3b48045127d8cb34008719f6d85370"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a1f3b48045127d8cb34008719f6d85370">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
+<tr class="separator:a1f3b48045127d8cb34008719f6d85370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -211,7 +211,7 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 <div class="textblock"><p>The class being responsible for generating JavaScript code from events. </p>
 <p>See also gd::EventsCodeGenerator. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a82c74238e40d77c0c7a57ffb1448a915"></a>
+<a class="anchor" id="a1f3b48045127d8cb34008719f6d85370"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -245,6 +245,18 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>onceTriggersVariable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>preludeCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::set&lt; gd::String &gt; &amp;&#160;</td>
           <td class="paramname"><em>includeFiles</em>, </td>
         </tr>
@@ -273,6 +285,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
     <tr><td class="paramname">eventsFunction</td><td>The events function to be compiled. </td></tr>
     <tr><td class="paramname">codeNamespace</td><td>Where to store the context used by the function. </td></tr>
     <tr><td class="paramname">includeFiles</td><td>Will be filled with the necessary include files. </td></tr>
+    <tr><td class="paramname">onceTriggersVariable</td><td>The code to access the variable holding OnceTriggers. </td></tr>
+    <tr><td class="paramname">preludeCode</td><td>The code to run just before the events generated code. </td></tr>
     <tr><td class="paramname">compilationForRuntime</td><td>Set this to true if the code is generated for runtime.</td></tr>
   </table>
   </dd>
