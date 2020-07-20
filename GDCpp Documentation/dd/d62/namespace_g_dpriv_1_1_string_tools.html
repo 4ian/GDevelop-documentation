@@ -115,12 +115,12 @@ Functions</h2></td></tr>
 <tr class="separator:abb8519e87eac903b9c92c10e1e1d4d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5206f58d0f73da5716dae5cc6649bc1f"><td class="memItemLeft" align="right" valign="top">int GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a5206f58d0f73da5716dae5cc6649bc1f">StrFind</a> (const gd::String &amp;str, const gd::String &amp;findwhat)</td></tr>
 <tr class="separator:a5206f58d0f73da5716dae5cc6649bc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf162cbde9ade0d7cde1709bf17284a"><td class="memItemLeft" align="right" valign="top">int GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/namespace_g_dpriv_1_1_string_tools.html#aaaf162cbde9ade0d7cde1709bf17284a">StrRFind</a> (const gd::String &amp;str, const gd::String &amp;findwhat)</td></tr>
-<tr class="separator:aaaf162cbde9ade0d7cde1709bf17284a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f63c0e8334dcab1dc0a8c0ffc237c3"><td class="memItemLeft" align="right" valign="top">int GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a04f63c0e8334dcab1dc0a8c0ffc237c3">StrFindLast</a> (const gd::String &amp;str, const gd::String &amp;findwhat)</td></tr>
+<tr class="separator:a04f63c0e8334dcab1dc0a8c0ffc237c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a31299f0e83b279c487cd28e112835a"><td class="memItemLeft" align="right" valign="top">int GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a7a31299f0e83b279c487cd28e112835a">StrFindFrom</a> (const gd::String &amp;str, const gd::String &amp;findwhat, std::size_t start)</td></tr>
 <tr class="separator:a7a31299f0e83b279c487cd28e112835a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf7263ed982d0d422e9581d388ea452"><td class="memItemLeft" align="right" valign="top">int GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/namespace_g_dpriv_1_1_string_tools.html#aacf7263ed982d0d422e9581d388ea452">StrRFindFrom</a> (const gd::String &amp;str, const gd::String &amp;findwhat, std::size_t start)</td></tr>
-<tr class="separator:aacf7263ed982d0d422e9581d388ea452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0454d2a4c1f9fbe1d6d73be319c52e0a"><td class="memItemLeft" align="right" valign="top">int GD_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a0454d2a4c1f9fbe1d6d73be319c52e0a">StrFindLastFrom</a> (const gd::String &amp;str, const gd::String &amp;findwhat, std::size_t start)</td></tr>
+<tr class="separator:a0454d2a4c1f9fbe1d6d73be319c52e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a038cc8b653843890e76e2c60fe5132bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a038cc8b653843890e76e2c60fe5132bf"></a>
 gd::String GD_API&#160;</td><td class="memItemRight" valign="bottom"><b>NewLine</b> ()</td></tr>
 <tr class="separator:a038cc8b653843890e76e2c60fe5132bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +232,66 @@ gd::String GD_API&#160;</td><td class="memItemRight" valign="bottom"><b>NewLine<
 
 </div>
 </div>
+<a class="anchor" id="a04f63c0e8334dcab1dc0a8c0ffc237c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GD_API GDpriv::StringTools::StrFindLast </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>findwhat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Expression function for finding a string in another </p>
+
+</div>
+</div>
+<a class="anchor" id="a0454d2a4c1f9fbe1d6d73be319c52e0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GD_API GDpriv::StringTools::StrFindLastFrom </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>findwhat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>start</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Expression function for finding a string in another </p>
+
+</div>
+</div>
 <a class="anchor" id="abb8519e87eac903b9c92c10e1e1d4d56"></a>
 <div class="memitem">
 <div class="memproto">
@@ -273,66 +333,6 @@ gd::String GD_API&#160;</td><td class="memItemRight" valign="bottom"><b>NewLine<
       </table>
 </div><div class="memdoc">
 <p>Expression function for getting a repeated version of a string </p>
-
-</div>
-</div>
-<a class="anchor" id="aaaf162cbde9ade0d7cde1709bf17284a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GD_API GDpriv::StringTools::StrRFind </td>
-          <td>(</td>
-          <td class="paramtype">const gd::String &amp;&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const gd::String &amp;&#160;</td>
-          <td class="paramname"><em>findwhat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Expression function for finding a string in another </p>
-
-</div>
-</div>
-<a class="anchor" id="aacf7263ed982d0d422e9581d388ea452"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GD_API GDpriv::StringTools::StrRFindFrom </td>
-          <td>(</td>
-          <td class="paramtype">const gd::String &amp;&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const gd::String &amp;&#160;</td>
-          <td class="paramname"><em>findwhat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>start</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Expression function for finding a string in another </p>
 
 </div>
 </div>

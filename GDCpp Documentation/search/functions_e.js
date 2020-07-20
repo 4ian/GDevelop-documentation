@@ -55,9 +55,9 @@ var searchData=
   ['strat',['StrAt',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#ab54d8771fb50d68611cfc62883ad1ef6',1,'GDpriv::StringTools']]],
   ['strfind',['StrFind',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a5206f58d0f73da5716dae5cc6649bc1f',1,'GDpriv::StringTools']]],
   ['strfindfrom',['StrFindFrom',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a7a31299f0e83b279c487cd28e112835a',1,'GDpriv::StringTools']]],
+  ['strfindlast',['StrFindLast',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a04f63c0e8334dcab1dc0a8c0ffc237c3',1,'GDpriv::StringTools']]],
+  ['strfindlastfrom',['StrFindLastFrom',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#a0454d2a4c1f9fbe1d6d73be319c52e0a',1,'GDpriv::StringTools']]],
   ['strlen',['StrLen',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#abb8519e87eac903b9c92c10e1e1d4d56',1,'GDpriv::StringTools']]],
   ['strrepeat',['StrRepeat',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#ad391dab3dc4d00b321e11fa8e24a9fdf',1,'GDpriv::StringTools']]],
-  ['strrfind',['StrRFind',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#aaaf162cbde9ade0d7cde1709bf17284a',1,'GDpriv::StringTools']]],
-  ['strrfindfrom',['StrRFindFrom',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#aacf7263ed982d0d422e9581d388ea452',1,'GDpriv::StringTools']]],
   ['substr',['SubStr',['../dd/d62/namespace_g_dpriv_1_1_string_tools.html#abb1f5fb3e35492d051befcd3415626b3',1,'GDpriv::StringTools']]]
 ];
