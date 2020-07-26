@@ -15,7 +15,7 @@ var searchData=
   ['uppercase',['UpperCase',['../classgd_1_1_string.html#a377859815d6bbfa88532b65cdab60257',1,'gd::String']]],
   ['useexternalsourcefiles',['UseExternalSourceFiles',['../classgd_1_1_project.html#a2cc41ffb2f7bb3b8d0ece93928833a10',1,'gd::Project']]],
   ['usefile',['UseFile',['../classgd_1_1_resource.html#a923e08798eb149bf8a6922d55b186dc4',1,'gd::Resource::UseFile()'],['../classgd_1_1_image_resource.html#a575f9422463ee89968fbe9f42c11429f',1,'gd::ImageResource::UseFile()'],['../classgd_1_1_audio_resource.html#a23e48b32eab5f8d1d0d92e174b6013dd',1,'gd::AudioResource::UseFile()'],['../classgd_1_1_font_resource.html#a4d6dc7739be5b6b64aee35a01db9d936',1,'gd::FontResource::UseFile()'],['../classgd_1_1_video_resource.html#a47ec2a70b215433794ffdaf7740c5395',1,'gd::VideoResource::UseFile()'],['../classgd_1_1_json_resource.html#a289fa4ff9bdb9c47b3a03a7a21e71ed0',1,'gd::JsonResource::UseFile()']]],
-  ['usemultipledirections',['useMultipleDirections',['../classgd_1_1_animation.html#a7f323aa04638176ff778fd37651049b2',1,'gd::Animation::useMultipleDirections()'],['../classgd_1_1_animation.html#afaafcb889a5be3922404e6916c37a2fa',1,'gd::Animation::UseMultipleDirections() const ']]],
+  ['usemultipledirections',['UseMultipleDirections',['../classgd_1_1_animation.html#afaafcb889a5be3922404e6916c37a2fa',1,'gd::Animation::UseMultipleDirections() const '],['../classgd_1_1_animation.html#a7f323aa04638176ff778fd37651049b2',1,'gd::Animation::useMultipleDirections()']]],
   ['usestandardoperatorparameters',['UseStandardOperatorParameters',['../classgd_1_1_instruction_metadata.html#a87b219784887327b91d1d24552076039',1,'gd::InstructionMetadata']]],
   ['usestandardrelationaloperatorparameters',['UseStandardRelationalOperatorParameters',['../classgd_1_1_instruction_metadata.html#afb9c4c67a716cf180014ffe6a38191ce',1,'gd::InstructionMetadata']]],
   ['utf8proc_2eh',['utf8proc.h',['../utf8proc_8h.html',1,'']]],
@@ -150,5 +150,6 @@ var searchData=
   ['utf8proc_5fversion',['utf8proc_version',['../utf8proc_8h.html#a5e6ad267c32287ea81bf0f07fd20b1c5',1,'utf8proc.c']]],
   ['utf8proc_5fversion_5fmajor',['UTF8PROC_VERSION_MAJOR',['../utf8proc_8h.html#a7a3995078813bc54ea79dd739bfc418f',1,'utf8proc.h']]],
   ['utf8proc_5fversion_5fminor',['UTF8PROC_VERSION_MINOR',['../utf8proc_8h.html#ae15393cd3bf616d2742e6ecc1e7ff1ea',1,'utf8proc.h']]],
-  ['utf8proc_5fversion_5fpatch',['UTF8PROC_VERSION_PATCH',['../utf8proc_8h.html#ad5f9d82e76e0265cbe6ce09a2227fe60',1,'utf8proc.h']]]
+  ['utf8proc_5fversion_5fpatch',['UTF8PROC_VERSION_PATCH',['../utf8proc_8h.html#ad5f9d82e76e0265cbe6ce09a2227fe60',1,'utf8proc.h']]],
+  ['uuid',['uuid',['../structsole_1_1uuid.html',1,'sole']]]
 ];

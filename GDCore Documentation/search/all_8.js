@@ -21,6 +21,7 @@ var searchData=
   ['hasexternallayoutnamed',['HasExternalLayoutNamed',['../classgd_1_1_project.html#a8f6d086e268c9bfaafb827eef6012e87',1,'gd::Project']]],
   ['hasfolder',['HasFolder',['../classgd_1_1_resources_manager.html#af2c175c08d5044729a359660590b7a7e',1,'gd::ResourcesManager']]],
   ['hash_3c_20gd_3a_3astring_20_3e',['hash&lt; gd::String &gt;',['../structstd_1_1hash_3_01gd_1_1_string_01_4.html',1,'std']]],
+  ['hash_3c_20sole_3a_3auuid_20_3e',['hash&lt; sole::uuid &gt;',['../structstd_1_1hash_3_01sole_1_1uuid_01_4.html',1,'std']]],
   ['hasinstancesofobject',['HasInstancesOfObject',['../classgd_1_1_initial_instances_container.html#a1f3b51c0ec603be227a9a8155650e624',1,'gd::InitialInstancesContainer']]],
   ['haslayernamed',['HasLayerNamed',['../classgd_1_1_layout.html#a1779c8729edfc4ae37d006e2418cea4f',1,'gd::Layout']]],
   ['haslayoutnamed',['HasLayoutNamed',['../classgd_1_1_project.html#a413825e1a0fe5f46e9a7364760a84257',1,'gd::Project']]],

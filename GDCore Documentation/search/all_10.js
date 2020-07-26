@@ -50,6 +50,7 @@ var searchData=
   ['replacelinkbylinkedevents',['ReplaceLinkByLinkedEvents',['../classgd_1_1_link_event.html#a337be42d7f56b27cdc66c4553275cc99',1,'gd::LinkEvent']]],
   ['replacestringinevents',['ReplaceStringInEvents',['../classgd_1_1_events_refactorer.html#a6c9f1baffb2aa2bf7c2a59531cd91263',1,'gd::EventsRefactorer']]],
   ['reporterror',['ReportError',['../classgd_1_1_events_code_generator.html#a89503c85888e276e4ba99baa8330974d',1,'gd::EventsCodeGenerator']]],
+  ['resetpersistentuuid',['ResetPersistentUuid',['../classgd_1_1_initial_instance.html#afbb9e27d05fa0ed1b991d42aaa1666e4',1,'gd::InitialInstance']]],
   ['resource',['Resource',['../classgd_1_1_resource.html',1,'gd']]],
   ['resourcefolder',['ResourceFolder',['../classgd_1_1_resource_folder.html',1,'gd']]],
   ['resourcesabsolutepathchecker',['ResourcesAbsolutePathChecker',['../classgd_1_1_resources_absolute_path_checker.html',1,'gd']]],

@@ -104,12 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef27b15aa0e77d0e28e21ac231f6a62f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef27b15aa0e77d0e28e21ac231f6a62f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Exporter</b> (gd::AbstractFileSystem &amp;fileSystem, gd::String gdjsRoot_=&quot;./JsPlatform&quot;)</td></tr>
 <tr class="separator:aef27b15aa0e77d0e28e21ac231f6a62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae44a5e286810577f48df2cc9324d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a1ae44a5e286810577f48df2cc9324d8e">ExportLayoutForPixiPreview</a> (gd::Project &amp;project, gd::Layout &amp;layout, gd::String exportDir)</td></tr>
-<tr class="memdesc:a1ae44a5e286810577f48df2cc9324d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview for the specified layout.  <a href="#a1ae44a5e286810577f48df2cc9324d8e">More...</a><br /></td></tr>
-<tr class="separator:a1ae44a5e286810577f48df2cc9324d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5cd13268aa63fa71cba5d0d6c719df6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#ab5cd13268aa63fa71cba5d0d6c719df6">ExportExternalLayoutForPixiPreview</a> (gd::Project &amp;project, gd::Layout &amp;layout, gd::ExternalLayout &amp;externalLayout, gd::String exportDir)</td></tr>
-<tr class="memdesc:ab5cd13268aa63fa71cba5d0d6c719df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview for the specified external layout and layout.  <a href="#ab5cd13268aa63fa71cba5d0d6c719df6">More...</a><br /></td></tr>
-<tr class="separator:ab5cd13268aa63fa71cba5d0d6c719df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c8aea4046fd6fae37a4e163cd2b968"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#ae6c8aea4046fd6fae37a4e163cd2b968">ExportProjectForPixiPreview</a> (const <a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a> &amp;options)</td></tr>
+<tr class="memdesc:ae6c8aea4046fd6fae37a4e163cd2b968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview for the specified options.  <a href="#ae6c8aea4046fd6fae37a4e163cd2b968">More...</a><br /></td></tr>
+<tr class="separator:ae6c8aea4046fd6fae37a4e163cd2b968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3923a6194065b0ccb1988309544c439d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classgdjs_1_1_exporter.html#a3923a6194065b0ccb1988309544c439d">ExportWholePixiProject</a> (gd::Project &amp;project, gd::String exportDir, std::map&lt; gd::String, bool &gt; &amp;exportOptions)</td></tr>
 <tr class="memdesc:a3923a6194065b0ccb1988309544c439d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the specified project, using Pixi.js.  <a href="#a3923a6194065b0ccb1988309544c439d">More...</a><br /></td></tr>
 <tr class="separator:a3923a6194065b0ccb1988309544c439d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,96 +124,28 @@ const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Export a project or a layout to a playable HTML5/Javascript based game. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab5cd13268aa63fa71cba5d0d6c719df6"></a>
+<a class="anchor" id="ae6c8aea4046fd6fae37a4e163cd2b968"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool gdjs::Exporter::ExportExternalLayoutForPixiPreview </td>
+          <td class="memname">bool gdjs::Exporter::ExportProjectForPixiPreview </td>
           <td>(</td>
-          <td class="paramtype">gd::Project &amp;&#160;</td>
-          <td class="paramname"><em>project</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">gd::Layout &amp;&#160;</td>
-          <td class="paramname"><em>layout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gd::ExternalLayout &amp;&#160;</td>
-          <td class="paramname"><em>externalLayout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gd::String&#160;</td>
-          <td class="paramname"><em>exportDir</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a preview for the specified external layout and layout. </p>
+<p>Create a preview for the specified options. </p>
 <dl class="section note"><dt>Note</dt><dd>The preview is not launched, it is the caller responsibility to open a browser pointing to the preview.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">layout</td><td>The layout to be previewed. </td></tr>
-    <tr><td class="paramname">externalLayout</td><td>The external layout with objects to be created at scene startup. </td></tr>
-    <tr><td class="paramname">exportDir</td><td>The directory where the preview must be created. </td></tr>
+    <tr><td class="paramname">options</td><td>The options to generate the preview. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if export was successful. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1ae44a5e286810577f48df2cc9324d8e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool gdjs::Exporter::ExportLayoutForPixiPreview </td>
-          <td>(</td>
-          <td class="paramtype">gd::Project &amp;&#160;</td>
-          <td class="paramname"><em>project</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gd::Layout &amp;&#160;</td>
-          <td class="paramname"><em>layout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gd::String&#160;</td>
-          <td class="paramname"><em>exportDir</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a preview for the specified layout. </p>
-<dl class="section note"><dt>Note</dt><dd>The preview is not launched, it is the caller responsibility to open a browser pointing to the preview.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">layout</td><td>The layout to be previewed. </td></tr>
-    <tr><td class="paramname">exportDir</td><td>The directory where the preview must be created. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if export was successful. </dd></dl>
 
 </div>
 </div>

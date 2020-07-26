@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -244,6 +244,10 @@ virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><t
 <tr class="memitem:a1617135af241a13950a9d1997af02b6c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a1617135af241a13950a9d1997af02b6c">GetCodeNamespace</a> ()</td></tr>
 <tr class="memdesc:a1617135af241a13950a9d1997af02b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the namespace to be used to store code generated objects/values/functions.  <a href="#a1617135af241a13950a9d1997af02b6c">More...</a><br /></td></tr>
 <tr class="separator:a1617135af241a13950a9d1997af02b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86684d2f3252b1fb8250ce38c29415c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#af86684d2f3252b1fb8250ce38c29415c">GenerateSingleUsageUniqueIdFor</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> *instruction)</td></tr>
+<tr class="separator:af86684d2f3252b1fb8250ce38c29415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe58390ff1fd53c7841c1e67bea7f6c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#abfe58390ff1fd53c7841c1e67bea7f6c">GenerateSingleUsageUniqueIdForEventsList</a> ()</td></tr>
+<tr class="separator:abfe58390ff1fd53c7841c1e67bea7f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -385,6 +389,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a8ef134acbe21b8ea7d606e776ea5f187">maxConditionsListsSize</a></td></tr>
 <tr class="memdesc:a8ef134acbe21b8ea7d606e776ea5f187"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum size of a list of conditions. <br /></td></tr>
 <tr class="separator:a8ef134acbe21b8ea7d606e776ea5f187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69367e2395476a9987fe65817abf012"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae69367e2395476a9987fe65817abf012"></a>
+std::set&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#ae69367e2395476a9987fe65817abf012">instructionUniqueIds</a></td></tr>
+<tr class="memdesc:ae69367e2395476a9987fe65817abf012"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique ids generated for instructions. <br /></td></tr>
+<tr class="separator:ae69367e2395476a9987fe65817abf012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d7b4e5e142ab73165f9fe7c9e74d05"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generator.html#a93d7b4e5e142ab73165f9fe7c9e74d05">eventsListNextUniqueId</a></td></tr>
+<tr class="separator:a93d7b4e5e142ab73165f9fe7c9e74d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -1647,6 +1657,42 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ExpressionCodeGenera
 
 </div>
 </div>
+<a class="anchor" id="af86684d2f3252b1fb8250ce38c29415c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t gd::EventsCodeGenerator::GenerateSingleUsageUniqueIdFor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> *&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate a single unique number for the specified instruction.</p>
+<p>This is useful for instructions that need to identify themselves in the generated code like the "Trigger Once" conditions. The id is stable across code generations if the instructions are the same objects in memory.</p>
+<p>Note that if this function is called multiple times with the same instruction, the unique number returned will be <em>different</em>. This is because a single instruction might appear at multiple places in events due to the usage of links. </p>
+
+</div>
+</div>
+<a class="anchor" id="abfe58390ff1fd53c7841c1e67bea7f6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t gd::EventsCodeGenerator::GenerateSingleUsageUniqueIdForEventsList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate a single unique number for an events list.</p>
+<p>This is useful to create unique function names for events list, that are stable across code generation given the exact same list of events. They are <em>not</em> stable if events are moved/reorganized. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1617135af241a13950a9d1997af02b6c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1869,6 +1915,27 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ExpressionCodeGenera
 </table>
 </div><div class="memdoc">
 <p>Custom global C++ declarations inserted after includes </p>
+
+</div>
+</div>
+<a class="anchor" id="a93d7b4e5e142ab73165f9fe7c9e74d05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t gd::EventsCodeGenerator::eventsListNextUniqueId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The next identifier to use for an events list function name. </p>
 
 </div>
 </div>

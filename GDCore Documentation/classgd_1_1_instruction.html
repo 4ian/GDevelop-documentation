@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classgd_1_1_instruction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::Instruction Class Reference<div class="ingroups"><a class="el" href="group___events.html">Events (Classes defining the event system and some tools associated with events)</a></div></div>  </div>
@@ -150,6 +151,14 @@ const <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsLi
 <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#a61140666b6fc7c84500e24c9b5d50a78">GetSubInstructions</a> ()</td></tr>
 <tr class="memdesc:a61140666b6fc7c84500e24c9b5d50a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the vector containing sub instructions. <br /></td></tr>
 <tr class="separator:a61140666b6fc7c84500e24c9b5d50a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05f5ac6460add86b3c13d5a6c1bff31"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classgd_1_1_instruction.html">Instruction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#aa05f5ac6460add86b3c13d5a6c1bff31">GetOriginalInstruction</a> ()</td></tr>
+<tr class="memdesc:aa05f5ac6460add86b3c13d5a6c1bff31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the original instruction this instruction was copied from.  <a href="#aa05f5ac6460add86b3c13d5a6c1bff31">More...</a><br /></td></tr>
+<tr class="separator:aa05f5ac6460add86b3c13d5a6c1bff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a146fbcd30c5753b8c01df45cfe7aecd7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_instruction.html">Instruction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#a146fbcd30c5753b8c01df45cfe7aecd7">CloneRememberingOriginalElement</a> (std::shared_ptr&lt; <a class="el" href="classgd_1_1_instruction.html">Instruction</a> &gt; instruction)</td></tr>
+<tr class="separator:a146fbcd30c5753b8c01df45cfe7aecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An instruction is a member of an event: It can be a condition or an action. </p>
@@ -223,6 +232,32 @@ const <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsLi
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa05f5ac6460add86b3c13d5a6c1bff31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt;<a class="el" href="classgd_1_1_instruction.html">Instruction</a>&gt; gd::Instruction::GetOriginalInstruction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the original instruction this instruction was copied from. </p>
+<p>Useful to get reference to the original instruction in memory during code generation, to ensure stable unique identifiers. </p>
+
+</div>
+</div>
 <a class="anchor" id="a290ac62d3a57d0d7fb2a1e5fc9a9f73c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -484,6 +519,32 @@ const <a class="el" href="classgd_1_1_instructions_list.html">gd::InstructionsLi
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a146fbcd30c5753b8c01df45cfe7aecd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classgd_1_1_instruction.html">Instruction</a>&gt; CloneRememberingOriginalElement </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgd_1_1_instruction.html">Instruction</a> &gt;&#160;</td>
+          <td class="paramname"><em>instruction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clone the given instruction, returning an instruction for which <code><a class="el" href="classgd_1_1_instruction.html#aa05f5ac6460add86b3c13d5a6c1bff31" title="Return the original instruction this instruction was copied from. ">GetOriginalInstruction()</a></code> returns the originally copied instruction. </p>
 
 </div>
 </div>
