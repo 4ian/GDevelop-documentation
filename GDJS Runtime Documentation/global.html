@@ -123,6 +123,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="gdjs.evtTools.object.filterPickedObjectsList"><a href="gdjs.evtTools.object.html#.filterPickedObjectsList">filterPickedObjectsList</a></li>
+            
                 <li data-name="gdjs.evtTools.object.pickObjectsIf"><a href="gdjs.evtTools.object.html#.pickObjectsIf">pickObjectsIf</a></li>
             
                 <li data-name="gdjs.evtTools.object.pickOnly"><a href="gdjs.evtTools.object.html#.pickOnly">pickOnly</a></li>
@@ -138,27 +140,6 @@
         <li class="item" data-name="gdjs.HSHG">
             <span class="title">
                 <a href="gdjs.HSHG.html">gdjs.HSHG</a>
-                
-                <span class="static">static</span>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="window.gdjs">
-            <span class="title">
-                <a href="window.gdjs.html">window.gdjs</a>
                 
                 <span class="static">static</span>
                 
@@ -1071,6 +1052,8 @@
             
                 <li data-name="gdjs.RuntimeObject#persistentUuid"><a href="gdjs.RuntimeObject.html#persistentUuid">persistentUuid</a></li>
             
+                <li data-name="gdjs.RuntimeObject#pick"><a href="gdjs.RuntimeObject.html#pick">pick</a></li>
+            
                 <li data-name="gdjs.RuntimeObject#type"><a href="gdjs.RuntimeObject.html#type">type</a></li>
             
                 <li data-name="gdjs.RuntimeObject#x"><a href="gdjs.RuntimeObject.html#x">x</a></li>
@@ -1401,6 +1384,8 @@
             
                 <li data-name="gdjs.RuntimeSceneCocosRenderer#render"><a href="gdjs.RuntimeSceneCocosRenderer.html#render">render</a></li>
             
+                <li data-name="gdjs.RuntimeSceneCocosRenderer#setLayerIndex"><a href="gdjs.RuntimeSceneCocosRenderer.html#setLayerIndex">setLayerIndex</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1592,6 +1577,8 @@
                 <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#persistentUuid"><a href="gdjs.SpriteRuntimeObject.html#persistentUuid">persistentUuid</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#pick"><a href="gdjs.SpriteRuntimeObject.html#pick">pick</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#type"><a href="gdjs.SpriteRuntimeObject.html#type">type</a></li>
             
@@ -2147,311 +2134,6 @@
     
     
     
-        <h3 class="subsection-title">Methods</h3>
-        
-        <dl>
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="RuntimeBehaviorConstructor">
-            
-            RuntimeBehaviorConstructor<span class="signature">(runtimeScene, behaviorData, owner)</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="gd.js.html">gd.js</a>, <a href="gd.js.html#line148">line 148</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>A Constructor for a <a href="gdjs.RuntimeBehavior.html">gdjs.RuntimeBehavior</a>.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>runtimeScene</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The scene owning the object of the behavior</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>behaviorData</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#BehaviorData">BehaviorData</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The properties used to setup the behavior</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>owner</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The object owning the behavior</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="RuntimeObjectConstructor">
-            
-            RuntimeObjectConstructor<span class="signature">(runtimeScene, objectData)</span>
-        </h4>
-    
-        
-        <div class="tag-source">
-            <a href="gd.js.html">gd.js</a>, <a href="gd.js.html#line126">line 126</a>
-        </div>
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>A Constructor for a <a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a>.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>runtimeScene</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="gdjs.RuntimeScene.html">gdjs.RuntimeScene</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The <a href="gdjs.RuntimeScene.html">gdjs.RuntimeScene</a> the object belongs to.</p></td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>objectData</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#ObjectData">ObjectData</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The initial properties of the object.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        </dl>
-    
     
     
         <h3 class="subsection-title">Type Definitions</h3>
@@ -2742,7 +2424,7 @@
     
         
         <div class="tag-source">
-            <a href="websocket-debugger-client_websocket-debugger-client.js.html">websocket-debugger-client/websocket-debugger-client.js</a>, <a href="websocket-debugger-client_websocket-debugger-client.js.html#line350">line 350</a>
+            <a href="websocket-debugger-client_websocket-debugger-client.js.html">websocket-debugger-client/websocket-debugger-client.js</a>, <a href="websocket-debugger-client_websocket-debugger-client.js.html#line349">line 349</a>
         </div>
         
     </div>

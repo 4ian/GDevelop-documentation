@@ -123,6 +123,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="gdjs.evtTools.object.filterPickedObjectsList"><a href="gdjs.evtTools.object.html#.filterPickedObjectsList">filterPickedObjectsList</a></li>
+            
                 <li data-name="gdjs.evtTools.object.pickObjectsIf"><a href="gdjs.evtTools.object.html#.pickObjectsIf">pickObjectsIf</a></li>
             
                 <li data-name="gdjs.evtTools.object.pickOnly"><a href="gdjs.evtTools.object.html#.pickOnly">pickOnly</a></li>
@@ -138,27 +140,6 @@
         <li class="item" data-name="gdjs.HSHG">
             <span class="title">
                 <a href="gdjs.HSHG.html">gdjs.HSHG</a>
-                
-                <span class="static">static</span>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="window.gdjs">
-            <span class="title">
-                <a href="window.gdjs.html">window.gdjs</a>
                 
                 <span class="static">static</span>
                 
@@ -1071,6 +1052,8 @@
             
                 <li data-name="gdjs.RuntimeObject#persistentUuid"><a href="gdjs.RuntimeObject.html#persistentUuid">persistentUuid</a></li>
             
+                <li data-name="gdjs.RuntimeObject#pick"><a href="gdjs.RuntimeObject.html#pick">pick</a></li>
+            
                 <li data-name="gdjs.RuntimeObject#type"><a href="gdjs.RuntimeObject.html#type">type</a></li>
             
                 <li data-name="gdjs.RuntimeObject#x"><a href="gdjs.RuntimeObject.html#x">x</a></li>
@@ -1401,6 +1384,8 @@
             
                 <li data-name="gdjs.RuntimeSceneCocosRenderer#render"><a href="gdjs.RuntimeSceneCocosRenderer.html#render">render</a></li>
             
+                <li data-name="gdjs.RuntimeSceneCocosRenderer#setLayerIndex"><a href="gdjs.RuntimeSceneCocosRenderer.html#setLayerIndex">setLayerIndex</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1592,6 +1577,8 @@
                 <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#persistentUuid"><a href="gdjs.SpriteRuntimeObject.html#persistentUuid">persistentUuid</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#pick"><a href="gdjs.SpriteRuntimeObject.html#pick">pick</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#type"><a href="gdjs.SpriteRuntimeObject.html#type">type</a></li>
             
@@ -2265,42 +2252,46 @@ gdjs.evtTools.object.pickObjectsIf = function(predicate, objectsLists, negatePre
     var lists = gdjs.staticArray(gdjs.evtTools.object.pickObjectsIf);
     objectsLists.values(lists);
 
-    //Create a boolean for each object
-    for(var i = 0, leni = lists.length;i&lt;leni;++i) {
-        var arr = lists[i];
-        for(var k = 0, lenk = arr.length;k&lt;lenk;++k) {
-            arr[k].pick = false;
-        }
-    }
-
-    //Pick only objects that are fulfilling the predicate
+    // Pick only objects that are fulfilling the predicate.
     for(var i = 0, leni = lists.length;i&lt;leni;++i) {
         var arr = lists[i];
 
         for(var k = 0, lenk = arr.length;k&lt;lenk;++k) {
-            if (negatePredicate ^ predicate(arr[k], extraArg)) {
+            var object = arr[k];
+            if (negatePredicate ^ predicate(object, extraArg)) {
                 isTrue = true;
-                arr[k].pick = true; //Pick the objects
+                object.pick = true;
+            } else {
+                object.pick = false;
             }
         }
     }
 
-    //Trim not picked objects from lists.
+    // Trim not picked objects from lists.
     for(var i = 0, leni = lists.length;i&lt;leni;++i) {
-        var arr = lists[i];
-        var finalSize = 0;
-
-        for(var k = 0, lenk = arr.length;k&lt;lenk;++k) {
-            var obj = arr[k];
-            if ( arr[k].pick ) {
-                arr[finalSize] = obj;
-                finalSize++;
-            }
-        }
-        arr.length = finalSize;
+        gdjs.evtTools.object.filterPickedObjectsList(lists[i]);
     }
 
     return isTrue;
+};
+
+/**
+ * Filter in-place the specified array to remove objects for which
+ * `pick` property is set to false.
+ * @param {gdjs.RuntimeObject[]} arr
+ */
+gdjs.evtTools.object.filterPickedObjectsList = function (arr) {
+    var finalSize = 0;
+
+    for (var k = 0, lenk = arr.length; k &lt; lenk; ++k) {
+        var obj = arr[k];
+        if (obj.pick) {
+            arr[finalSize] = obj;
+            finalSize++;
+        }
+    }
+
+    arr.length = finalSize;
 };
 
 gdjs.evtTools.object.hitBoxesCollisionTest = function(objectsLists1, objectsLists2, inverted, runtimeScene, ignoreTouchingEdges) {

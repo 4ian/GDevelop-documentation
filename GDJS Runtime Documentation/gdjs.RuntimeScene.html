@@ -123,6 +123,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="gdjs.evtTools.object.filterPickedObjectsList"><a href="gdjs.evtTools.object.html#.filterPickedObjectsList">filterPickedObjectsList</a></li>
+            
                 <li data-name="gdjs.evtTools.object.pickObjectsIf"><a href="gdjs.evtTools.object.html#.pickObjectsIf">pickObjectsIf</a></li>
             
                 <li data-name="gdjs.evtTools.object.pickOnly"><a href="gdjs.evtTools.object.html#.pickOnly">pickOnly</a></li>
@@ -138,27 +140,6 @@
         <li class="item" data-name="gdjs.HSHG">
             <span class="title">
                 <a href="gdjs.HSHG.html">gdjs.HSHG</a>
-                
-                <span class="static">static</span>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="window.gdjs">
-            <span class="title">
-                <a href="window.gdjs.html">window.gdjs</a>
                 
                 <span class="static">static</span>
                 
@@ -1071,6 +1052,8 @@
             
                 <li data-name="gdjs.RuntimeObject#persistentUuid"><a href="gdjs.RuntimeObject.html#persistentUuid">persistentUuid</a></li>
             
+                <li data-name="gdjs.RuntimeObject#pick"><a href="gdjs.RuntimeObject.html#pick">pick</a></li>
+            
                 <li data-name="gdjs.RuntimeObject#type"><a href="gdjs.RuntimeObject.html#type">type</a></li>
             
                 <li data-name="gdjs.RuntimeObject#x"><a href="gdjs.RuntimeObject.html#x">x</a></li>
@@ -1401,6 +1384,8 @@
             
                 <li data-name="gdjs.RuntimeSceneCocosRenderer#render"><a href="gdjs.RuntimeSceneCocosRenderer.html#render">render</a></li>
             
+                <li data-name="gdjs.RuntimeSceneCocosRenderer#setLayerIndex"><a href="gdjs.RuntimeSceneCocosRenderer.html#setLayerIndex">setLayerIndex</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1592,6 +1577,8 @@
                 <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#persistentUuid"><a href="gdjs.SpriteRuntimeObject.html#persistentUuid">persistentUuid</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#pick"><a href="gdjs.SpriteRuntimeObject.html#pick">pick</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#type"><a href="gdjs.SpriteRuntimeObject.html#type">type</a></li>
             
@@ -2112,7 +2099,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line7">line 7</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line8">line 8</a>
         </div>
         
     </div>
@@ -2241,7 +2228,7 @@
     <div class="nameContainer">
         <h4 class="name" id="addLayer">
             
-            addLayer<span class="signature">(name, layerData)</span>
+            addLayer<span class="signature">(layerData)</span>
         </h4>
     
         
@@ -2284,29 +2271,6 @@
 	</thead>
 	
 	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                <p>The name of the layer</p></td>
-        </tr>
-	
 	
 	
         <tr>
@@ -2385,7 +2349,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line634">line 634</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line635">line 635</a>
         </div>
         
     </div>
@@ -2496,7 +2460,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line722">line 722</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line723">line 723</a>
         </div>
         
     </div>
@@ -2567,7 +2531,7 @@
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line663">line 663</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line664">line 664</a>
         </div>
         
     </div>
@@ -2713,7 +2677,7 @@ living on the scene ( No need to call RuntimeScene.addObject )</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line288">line 288</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line295">line 295</a>
         </div>
         
     </div>
@@ -3119,7 +3083,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line596">line 596</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line597">line 597</a>
         </div>
         
     </div>
@@ -3219,7 +3183,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line737">line 737</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line738">line 738</a>
         </div>
         
     </div>
@@ -3290,7 +3254,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line754">line 754</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line755">line 755</a>
         </div>
         
     </div>
@@ -3435,7 +3399,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line778">line 778</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line779">line 779</a>
         </div>
         
     </div>
@@ -3580,7 +3544,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line603">line 603</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line604">line 604</a>
         </div>
         
     </div>
@@ -3651,7 +3615,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line648">line 648</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line649">line 649</a>
         </div>
         
     </div>
@@ -3938,7 +3902,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line730">line 730</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line731">line 731</a>
         </div>
         
     </div>
@@ -4352,7 +4316,7 @@ and it won't be performant.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line745">line 745</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line746">line 746</a>
         </div>
         
     </div>
@@ -4432,7 +4396,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line789">line 789</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line790">line 790</a>
         </div>
         
     </div>
@@ -4548,7 +4512,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line141">line 141</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line148">line 148</a>
         </div>
         
     </div>
@@ -4626,7 +4590,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line71">line 71</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line81">line 81</a>
         </div>
         
     </div>
@@ -4674,7 +4638,7 @@ The container holding the variables of the scene.
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">LayoutData</span>
 
 
             
@@ -4683,6 +4647,13 @@ The container holding the variables of the scene.
             
             
             <td class="description last">
+                
+                    
+                    
+                        <span class="nullable">nullable</span>
+                    
+                        
+                    
                 
                 <p>An object containing the scene data.</p></td>
         </tr>
@@ -4744,12 +4715,12 @@ The container holding the variables of the scene.
     <div class="nameContainer">
         <h4 class="name" id="markObjectForDeletion">
             
-            markObjectForDeletion<span class="signature">(object)</span>
+            markObjectForDeletion<span class="signature">(obj)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line691">line 691</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line692">line 692</a>
         </div>
         
     </div>
@@ -4791,7 +4762,7 @@ The container holding the variables of the scene.
 	
         <tr>
             
-                <td class="name"><code>object</code></td>
+                <td class="name"><code>obj</code></td>
             
             
             <td class="type">
@@ -4865,7 +4836,7 @@ The container holding the variables of the scene.
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line53">line 53</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line63">line 63</a>
         </div>
         
     </div>
@@ -4937,7 +4908,7 @@ See gdjs.RuntimeGame.startGameLoop in particular.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line205">line 205</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line212">line 212</a>
         </div>
         
     </div>
@@ -5009,7 +4980,7 @@ for some time, until it's resumed or unloaded.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line215">line 215</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line222">line 222</a>
         </div>
         
     </div>
@@ -5081,7 +5052,7 @@ on screen after having being paused.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line154">line 154</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line161">line 161</a>
         </div>
         
     </div>
@@ -5314,7 +5285,7 @@ be moved back to the base layer.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line406">line 406</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line413">line 413</a>
         </div>
         
     </div>
@@ -5385,7 +5356,7 @@ be moved back to the base layer.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line347">line 347</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line354">line 354</a>
         </div>
         
     </div>
@@ -5727,7 +5698,7 @@ This is true during the first frame after the scene has been unpaused.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line587">line 587</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line588">line 588</a>
         </div>
         
     </div>
@@ -5890,7 +5861,7 @@ Internally, the color is stored as an hexadecimal number.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line338">line 338</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line345">line 345</a>
         </div>
         
     </div>
@@ -6009,7 +5980,7 @@ not need to use this method.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line319">line 319</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line326">line 326</a>
         </div>
         
     </div>
@@ -6122,12 +6093,12 @@ mangled name.</p>
     <div class="nameContainer">
         <h4 class="name" id="setInitialSharedDataForBehavior">
             
-            setInitialSharedDataForBehavior<span class="signature">(name, behaviorSharedData)</span>
+            setInitialSharedDataForBehavior<span class="signature">(name, sharedData)</span>
         </h4>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line769">line 769</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line770">line 770</a>
         </div>
         
     </div>
@@ -6197,7 +6168,7 @@ mangled name.</p>
 	
         <tr>
             
-                <td class="name"><code>behaviorSharedData</code></td>
+                <td class="name"><code>sharedData</code></td>
             
             
             <td class="type">
@@ -6605,7 +6576,7 @@ in the scene.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line227">line 227</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line234">line 234</a>
         </div>
         
     </div>
@@ -6677,7 +6648,7 @@ rendered on the screen.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line182">line 182</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line189">line 189</a>
         </div>
         
     </div>
@@ -6793,7 +6764,7 @@ rendered on the screen.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line165">line 165</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line172">line 172</a>
         </div>
         
     </div>
@@ -6909,7 +6880,7 @@ rendered on the screen.</p>
     
         
         <div class="tag-source">
-            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line610">line 610</a>
+            <a href="runtimescene.js.html">runtimescene.js</a>, <a href="runtimescene.js.html#line611">line 611</a>
         </div>
         
     </div>

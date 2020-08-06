@@ -123,6 +123,8 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="gdjs.evtTools.object.filterPickedObjectsList"><a href="gdjs.evtTools.object.html#.filterPickedObjectsList">filterPickedObjectsList</a></li>
+            
                 <li data-name="gdjs.evtTools.object.pickObjectsIf"><a href="gdjs.evtTools.object.html#.pickObjectsIf">pickObjectsIf</a></li>
             
                 <li data-name="gdjs.evtTools.object.pickOnly"><a href="gdjs.evtTools.object.html#.pickOnly">pickOnly</a></li>
@@ -138,27 +140,6 @@
         <li class="item" data-name="gdjs.HSHG">
             <span class="title">
                 <a href="gdjs.HSHG.html">gdjs.HSHG</a>
-                
-                <span class="static">static</span>
-                
-            </span>
-            <ul class="members itemMembers">
-            
-            </ul>
-            <ul class="typedefs itemMembers">
-            
-            </ul>
-            <ul class="methods itemMembers">
-            
-            </ul>
-            <ul class="events itemMembers">
-            
-            </ul>
-        </li>
-    
-        <li class="item" data-name="window.gdjs">
-            <span class="title">
-                <a href="window.gdjs.html">window.gdjs</a>
                 
                 <span class="static">static</span>
                 
@@ -1071,6 +1052,8 @@
             
                 <li data-name="gdjs.RuntimeObject#persistentUuid"><a href="gdjs.RuntimeObject.html#persistentUuid">persistentUuid</a></li>
             
+                <li data-name="gdjs.RuntimeObject#pick"><a href="gdjs.RuntimeObject.html#pick">pick</a></li>
+            
                 <li data-name="gdjs.RuntimeObject#type"><a href="gdjs.RuntimeObject.html#type">type</a></li>
             
                 <li data-name="gdjs.RuntimeObject#x"><a href="gdjs.RuntimeObject.html#x">x</a></li>
@@ -1401,6 +1384,8 @@
             
                 <li data-name="gdjs.RuntimeSceneCocosRenderer#render"><a href="gdjs.RuntimeSceneCocosRenderer.html#render">render</a></li>
             
+                <li data-name="gdjs.RuntimeSceneCocosRenderer#setLayerIndex"><a href="gdjs.RuntimeSceneCocosRenderer.html#setLayerIndex">setLayerIndex</a></li>
+            
             </ul>
             <ul class="events itemMembers">
             
@@ -1592,6 +1577,8 @@
                 <li data-name="gdjs.SpriteRuntimeObject#opacity"><a href="gdjs.SpriteRuntimeObject.html#opacity">opacity</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#persistentUuid"><a href="gdjs.SpriteRuntimeObject.html#persistentUuid">persistentUuid</a></li>
+            
+                <li data-name="gdjs.SpriteRuntimeObject#pick"><a href="gdjs.SpriteRuntimeObject.html#pick">pick</a></li>
             
                 <li data-name="gdjs.SpriteRuntimeObject#type"><a href="gdjs.SpriteRuntimeObject.html#type">type</a></li>
             
@@ -2472,7 +2459,7 @@ which is not a RuntimeObject.</p>
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="id"><span class="type-signature ">protected</span>id<span class="type-signature type number">number</span> </h4>
+        <h4 class="name" id="id"><span class="type-signature ">readonly</span>id<span class="type-signature type number">number</span> </h4>
     </div>
     
     
@@ -2605,6 +2592,53 @@ which is not a RuntimeObject.</p>
     <div class="description">
         <p>An optional UUID associated to the object to be used
 for hot reload. Don't modify or use otherwise.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="pick">pick</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>A property to be used by external algorithms to indicate if the
+object is picked or not in an object selection. By construction, this is
+not &quot;thread safe&quot; or &quot;re-entrant algorithm&quot; safe.</p>
     </div>
     
     
@@ -2818,7 +2852,7 @@ for hot reload. Don't modify or use otherwise.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1482">line 1482</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1489">line 1489</a>
         </div>
         
     </div>
@@ -3012,7 +3046,7 @@ for hot reload. Don't modify or use otherwise.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1578">line 1578</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1585">line 1585</a>
         </div>
         
     </div>
@@ -3083,7 +3117,7 @@ for hot reload. Don't modify or use otherwise.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1632">line 1632</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1639">line 1639</a>
         </div>
         
     </div>
@@ -3156,7 +3190,7 @@ it may be more efficient to compare objects name identifiers.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line609">line 609</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line616">line 616</a>
         </div>
         
     </div>
@@ -3276,7 +3310,7 @@ The number of children
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line574">line 574</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line581">line 581</a>
         </div>
         
     </div>
@@ -3421,7 +3455,7 @@ The number of children
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line598">line 598</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line605">line 605</a>
         </div>
         
     </div>
@@ -3541,7 +3575,7 @@ The string of the specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line587">line 587</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line594">line 594</a>
         </div>
         
     </div>
@@ -3667,7 +3701,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line619">line 619</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line626">line 626</a>
         </div>
         
     </div>
@@ -3801,7 +3835,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line629">line 629</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line636">line 636</a>
         </div>
         
     </div>
@@ -3935,7 +3969,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1103">line 1103</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1110">line 1110</a>
         </div>
         
     </div>
@@ -4074,7 +4108,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line778">line 778</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line785">line 785</a>
         </div>
         
     </div>
@@ -4236,7 +4270,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line820">line 820</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line827">line 827</a>
         </div>
         
     </div>
@@ -4399,7 +4433,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line803">line 803</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line810">line 810</a>
         </div>
         
     </div>
@@ -4584,7 +4618,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1146">line 1146</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1153">line 1153</a>
         </div>
         
     </div>
@@ -4729,7 +4763,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line788">line 788</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line795">line 795</a>
         </div>
         
     </div>
@@ -4891,7 +4925,7 @@ The specified variable
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line891">line 891</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line898">line 898</a>
         </div>
         
     </div>
@@ -5061,7 +5095,7 @@ and the angle parameter is inferior to toleranceInDegrees parameter.</td>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1115">line 1115</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1122">line 1122</a>
         </div>
         
     </div>
@@ -5186,7 +5220,7 @@ true if the behavior is activated.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line831">line 831</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line838">line 838</a>
         </div>
         
     </div>
@@ -5257,7 +5291,7 @@ true if the behavior is activated.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1587">line 1587</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1594">line 1594</a>
         </div>
         
     </div>
@@ -5337,7 +5371,7 @@ true if the cursor, or any touch, is on the object.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line298">line 298</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line305">line 305</a>
         </div>
         
     </div>
@@ -5454,7 +5488,7 @@ true if the cursor, or any touch, is on the object.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line275">line 275</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line282">line 282</a>
         </div>
         
     </div>
@@ -5566,7 +5600,7 @@ Note that common properties (position, angle, z order...) have already been setu
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line975">line 975</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line982">line 982</a>
         </div>
         
     </div>
@@ -5670,7 +5704,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line495">line 495</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line502">line 502</a>
         </div>
         
     </div>
@@ -5770,7 +5804,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line869">line 869</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line876">line 876</a>
         </div>
         
     </div>
@@ -5870,7 +5904,7 @@ Result is cached until invalidated (by a position change, angle change...).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1084">line 1084</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1091">line 1091</a>
         </div>
         
     </div>
@@ -6018,7 +6052,7 @@ always call getBehavior on the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line737">line 737</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line744">line 744</a>
         </div>
         
     </div>
@@ -6118,7 +6152,7 @@ always call getBehavior on the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line745">line 745</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line752">line 752</a>
         </div>
         
     </div>
@@ -6218,7 +6252,7 @@ always call getBehavior on the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1337">line 1337</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1344">line 1344</a>
         </div>
         
     </div>
@@ -6334,7 +6368,7 @@ always call getBehavior on the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line425">line 425</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line432">line 432</a>
         </div>
         
     </div>
@@ -6437,7 +6471,7 @@ getDrawableX will differ.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line438">line 438</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line445">line 445</a>
         </div>
         
     </div>
@@ -6540,7 +6574,7 @@ getDrawableY will differ.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line255">line 255</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line262">line 262</a>
         </div>
         
     </div>
@@ -6658,7 +6692,7 @@ in milliseconds, for the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line729">line 729</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line736">line 736</a>
         </div>
         
     </div>
@@ -6758,7 +6792,7 @@ in milliseconds, for the object.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line910">line 910</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line917">line 917</a>
         </div>
         
     </div>
@@ -6861,7 +6895,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line521">line 521</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line528">line 528</a>
         </div>
         
     </div>
@@ -6961,7 +6995,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line339">line 339</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line346">line 346</a>
         </div>
         
     </div>
@@ -7061,7 +7095,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line347">line 347</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line354">line 354</a>
         </div>
         
     </div>
@@ -7161,7 +7195,7 @@ getHeight) and the center point of the object (getCenterX and getCenterY).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line329">line 329</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line336">line 336</a>
         </div>
         
     </div>
@@ -7262,7 +7296,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1359">line 1359</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1366">line 1366</a>
         </div>
         
     </div>
@@ -7401,7 +7435,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1345">line 1345</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1352">line 1352</a>
         </div>
         
     </div>
@@ -7517,7 +7551,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1249">line 1249</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1256">line 1256</a>
         </div>
         
     </div>
@@ -7662,7 +7696,7 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line359">line 359</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line366">line 366</a>
         </div>
         
     </div>
@@ -7765,7 +7799,7 @@ calling this method.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line564">line 564</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line571">line 571</a>
         </div>
         
     </div>
@@ -7865,7 +7899,7 @@ calling this method.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line996">line 996</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1003">line 1003</a>
         </div>
         
     </div>
@@ -7969,7 +8003,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line721">line 721</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line728">line 728</a>
         </div>
         
     </div>
@@ -8069,7 +8103,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line391">line 391</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line398">line 398</a>
         </div>
         
     </div>
@@ -8169,7 +8203,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line412">line 412</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line419">line 419</a>
         </div>
         
     </div>
@@ -8269,7 +8303,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line556">line 556</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line563">line 563</a>
         </div>
         
     </div>
@@ -8369,7 +8403,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1093">line 1093</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1100">line 1100</a>
         </div>
         
     </div>
@@ -8485,7 +8519,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line840">line 840</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line847">line 847</a>
         </div>
         
     </div>
@@ -8585,7 +8619,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line671">line 671</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line678">line 678</a>
         </div>
         
     </div>
@@ -8730,7 +8764,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line679">line 679</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line686">line 686</a>
         </div>
         
     </div>
@@ -8846,7 +8880,7 @@ the object is not visible on screen (&quot;culling&quot;).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1564">line 1564</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1571">line 1571</a>
         </div>
         
     </div>
@@ -8919,7 +8953,7 @@ if you need to pass the mouse or a touch position that you get from gdjs.InputMa
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1615">line 1615</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1622">line 1622</a>
         </div>
         
     </div>
@@ -9057,7 +9091,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line701">line 701</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line708">line 708</a>
         </div>
         
     </div>
@@ -9157,7 +9191,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line531">line 531</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line538">line 538</a>
         </div>
         
     </div>
@@ -9302,7 +9336,7 @@ true if the point is inside the object collision hitboxes.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line693">line 693</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line700">line 700</a>
         </div>
         
     </div>
@@ -9405,7 +9439,7 @@ on the scene.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1068">line 1068</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1075">line 1075</a>
         </div>
         
     </div>
@@ -9477,7 +9511,7 @@ that the object was modified. Useful for behaviors that</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line241">line 241</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line248">line 248</a>
         </div>
         
     </div>
@@ -9553,7 +9587,7 @@ could be not initialized yet).</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line312">line 312</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line319">line 319</a>
         </div>
         
     </div>
@@ -9671,7 +9705,7 @@ is being unloaded). If you redefine this function, <strong>make sure to call the
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1214">line 1214</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1221">line 1221</a>
         </div>
         
     </div>
@@ -9787,7 +9821,7 @@ is being unloaded). If you redefine this function, <strong>make sure to call the
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1375">line 1375</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1382">line 1382</a>
         </div>
         
     </div>
@@ -9973,7 +10007,7 @@ The distance and angle are computed between the position and <em>the center of t
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1392">line 1392</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1399">line 1399</a>
         </div>
         
     </div>
@@ -10131,7 +10165,7 @@ The distance and angle are computed between <em>the centers of the objects</em>.
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1521">line 1521</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1528">line 1528</a>
         </div>
         
     </div>
@@ -10344,7 +10378,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1129">line 1129</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1136">line 1136</a>
         </div>
         
     </div>
@@ -10489,7 +10523,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1238">line 1238</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1245">line 1245</a>
         </div>
         
     </div>
@@ -10605,7 +10639,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1202">line 1202</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1209">line 1209</a>
         </div>
         
     </div>
@@ -10721,7 +10755,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line474">line 474</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line481">line 481</a>
         </div>
         
     </div>
@@ -10860,7 +10894,7 @@ A raycast result with the contact points and distances
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1265">line 1265</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1272">line 1272</a>
         </div>
         
     </div>
@@ -11006,7 +11040,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1299">line 1299</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1306">line 1306</a>
         </div>
         
     </div>
@@ -11152,7 +11186,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1436">line 1436</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1443">line 1443</a>
         </div>
         
     </div>
@@ -11261,7 +11295,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1401">line 1401</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1408">line 1408</a>
         </div>
         
     </div>
@@ -11370,7 +11404,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line483">line 483</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line490">line 490</a>
         </div>
         
     </div>
@@ -11486,7 +11520,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line715">line 715</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line722">line 722</a>
         </div>
         
     </div>
@@ -11602,7 +11636,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line504">line 504</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line511">line 511</a>
         </div>
         
     </div>
@@ -11718,7 +11752,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line369">line 369</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line376">line 376</a>
         </div>
         
     </div>
@@ -11857,7 +11891,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line709">line 709</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line716">line 716</a>
         </div>
         
     </div>
@@ -11973,7 +12007,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line379">line 379</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line386">line 386</a>
         </div>
         
     </div>
@@ -12089,7 +12123,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line400">line 400</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line407">line 407</a>
         </div>
         
     </div>
@@ -12205,7 +12239,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line541">line 541</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line548">line 548</a>
         </div>
         
     </div>
@@ -12321,7 +12355,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1058">line 1058</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1065">line 1065</a>
         </div>
         
     </div>
@@ -12392,7 +12426,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1049">line 1049</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1056">line 1056</a>
         </div>
         
     </div>
@@ -12463,7 +12497,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1176">line 1176</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1183">line 1183</a>
         </div>
         
     </div>
@@ -12631,7 +12665,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1190">line 1190</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1197">line 1197</a>
         </div>
         
     </div>
@@ -12776,7 +12810,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1226">line 1226</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1233">line 1233</a>
         </div>
         
     </div>
@@ -12892,7 +12926,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line265">line 265</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line272">line 272</a>
         </div>
         
     </div>
@@ -13008,7 +13042,7 @@ true if the object was moved
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1009">line 1009</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1016">line 1016</a>
         </div>
         
     </div>
@@ -13083,7 +13117,7 @@ However, you can redefine it if your object can have a faster implementation.</p
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line848">line 848</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line855">line 855</a>
         </div>
         
     </div>
@@ -13155,7 +13189,7 @@ remove null ones.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line287">line 287</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line294">line 294</a>
         </div>
         
     </div>
@@ -13324,7 +13358,7 @@ case during hot-reload, and is only called if the object was modified.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line933">line 933</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line940">line 940</a>
         </div>
         
     </div>
@@ -13400,7 +13434,7 @@ However, you can redefine it if your object need custom hit boxes.</p>
     
         
         <div class="tag-source">
-            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1162">line 1162</a>
+            <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1169">line 1169</a>
         </div>
         
     </div>
