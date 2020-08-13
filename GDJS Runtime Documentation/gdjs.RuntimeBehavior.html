@@ -3114,7 +3114,7 @@ you can use <code>this.owner</code> without risk).</p>
     
         
         <div class="tag-source">
-            <a href="runtimebehavior.js.html">runtimebehavior.js</a>, <a href="runtimebehavior.js.html#line161">line 161</a>
+            <a href="runtimebehavior.js.html">runtimebehavior.js</a>, <a href="runtimebehavior.js.html#line164">line 164</a>
         </div>
         
     </div>
@@ -3126,7 +3126,10 @@ you can use <code>this.owner</code> without risk).</p>
     
     <div class="description">
         <p>This method is called when the owner of the behavior
-is being removed from the scene and is about to be destroyed/reused later,</p>
+is being removed from the scene and is about to be destroyed/reused later
+or when the behavior is removed from an object (can happen in case of
+hot-reloading only. Otherwise, behaviors are just de-activated,
+not removed. See <code>onDeActivate</code>).</p>
     </div>
     
 
@@ -3186,7 +3189,7 @@ is being removed from the scene and is about to be destroyed/reused later,</p>
     
         
         <div class="tag-source">
-            <a href="runtimebehavior.js.html">runtimebehavior.js</a>, <a href="runtimebehavior.js.html#line170">line 170</a>
+            <a href="runtimebehavior.js.html">runtimebehavior.js</a>, <a href="runtimebehavior.js.html#line173">line 173</a>
         </div>
         
     </div>
