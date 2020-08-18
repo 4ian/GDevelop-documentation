@@ -582,6 +582,8 @@
             
                 <li data-name="gdjs.Layer#enableEffect"><a href="gdjs.Layer.html#enableEffect">enableEffect</a></li>
             
+                <li data-name="gdjs.Layer#followBaseLayer"><a href="gdjs.Layer.html#followBaseLayer">followBaseLayer</a></li>
+            
                 <li data-name="gdjs.Layer#getCameraHeight"><a href="gdjs.Layer.html#getCameraHeight">getCameraHeight</a></li>
             
                 <li data-name="gdjs.Layer#getCameraRotation"><a href="gdjs.Layer.html#getCameraRotation">getCameraRotation</a></li>
@@ -593,6 +595,8 @@
                 <li data-name="gdjs.Layer#getCameraY"><a href="gdjs.Layer.html#getCameraY">getCameraY</a></li>
             
                 <li data-name="gdjs.Layer#getCameraZoom"><a href="gdjs.Layer.html#getCameraZoom">getCameraZoom</a></li>
+            
+                <li data-name="gdjs.Layer#getClearColor"><a href="gdjs.Layer.html#getClearColor">getClearColor</a></li>
             
                 <li data-name="gdjs.Layer#getElapsedTime"><a href="gdjs.Layer.html#getElapsedTime">getElapsedTime</a></li>
             
@@ -608,6 +612,8 @@
             
                 <li data-name="gdjs.Layer#isEffectEnabled"><a href="gdjs.Layer.html#isEffectEnabled">isEffectEnabled</a></li>
             
+                <li data-name="gdjs.Layer#isLightingLayer"><a href="gdjs.Layer.html#isLightingLayer">isLightingLayer</a></li>
+            
                 <li data-name="gdjs.Layer#isVisible"><a href="gdjs.Layer.html#isVisible">isVisible</a></li>
             
                 <li data-name="gdjs.Layer#onGameResolutionResized"><a href="gdjs.Layer.html#onGameResolutionResized">onGameResolutionResized</a></li>
@@ -622,11 +628,15 @@
             
                 <li data-name="gdjs.Layer#setCameraZoom"><a href="gdjs.Layer.html#setCameraZoom">setCameraZoom</a></li>
             
+                <li data-name="gdjs.Layer#setClearColor"><a href="gdjs.Layer.html#setClearColor">setClearColor</a></li>
+            
                 <li data-name="gdjs.Layer#setEffectBooleanParameter"><a href="gdjs.Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li>
             
                 <li data-name="gdjs.Layer#setEffectDoubleParameter"><a href="gdjs.Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li>
             
                 <li data-name="gdjs.Layer#setEffectStringParameter"><a href="gdjs.Layer.html#setEffectStringParameter">setEffectStringParameter</a></li>
+            
+                <li data-name="gdjs.Layer#setFollowBaseLayerCamera"><a href="gdjs.Layer.html#setFollowBaseLayerCamera">setFollowBaseLayerCamera</a></li>
             
                 <li data-name="gdjs.Layer#setTimeScale"><a href="gdjs.Layer.html#setTimeScale">setTimeScale</a></li>
             
@@ -2256,7 +2266,7 @@
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line75">line 75</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line101">line 101</a>
         </div>
         
     </div>
@@ -2372,7 +2382,7 @@
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line124">line 124</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line155">line 155</a>
         </div>
         
     </div>
@@ -2502,7 +2512,7 @@ All objects which are on this layer must be children of this container.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line144">line 144</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line175">line 175</a>
         </div>
         
     </div>
@@ -2631,7 +2641,7 @@ All objects which are on this layer must be children of this container.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line227">line 227</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line258">line 258</a>
         </div>
         
     </div>
@@ -2770,7 +2780,7 @@ All objects which are on this layer must be children of this container.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line218">line 218</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line249">line 249</a>
         </div>
         
     </div>
@@ -2915,7 +2925,7 @@ All objects which are on this layer must be children of this container.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line239">line 239</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line270">line 270</a>
         </div>
         
     </div>
@@ -3060,7 +3070,7 @@ All objects which are on this layer must be children of this container.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line108">line 108</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line136">line 136</a>
         </div>
         
     </div>
@@ -3176,7 +3186,7 @@ All objects which are on this layer must be children of this container.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line158">line 158</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line189">line 189</a>
         </div>
         
     </div>
@@ -3288,7 +3298,7 @@ Should be called when an object is deleted or removed from the layer.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line202">line 202</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line233">line 233</a>
         </div>
         
     </div>
@@ -3450,7 +3460,7 @@ Should be called when an object is deleted or removed from the layer.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line168">line 168</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line199">line 199</a>
         </div>
         
     </div>
@@ -3612,7 +3622,7 @@ Should be called when an object is deleted or removed from the layer.</p>
     
         
         <div class="tag-source">
-            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line185">line 185</a>
+            <a href="pixi-renderers_layer-pixi-renderer.js.html">pixi-renderers/layer-pixi-renderer.js</a>, <a href="pixi-renderers_layer-pixi-renderer.js.html#line216">line 216</a>
         </div>
         
     </div>
