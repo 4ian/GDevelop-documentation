@@ -42,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -127,6 +128,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a719045343da6048ac25252e88d72640e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a719045343da6048ac25252e88d72640e">AddStrExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
 <tr class="memdesc:a719045343da6048ac25252e88d72640e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> expression as being part of the extension.  <a href="#a719045343da6048ac25252e88d72640e">More...</a><br /></td></tr>
 <tr class="separator:a719045343da6048ac25252e88d72640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597d5dc5e36babe72e0f797745ef3c50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a597d5dc5e36babe72e0f797745ef3c50"></a>
+<a class="el" href="classgd_1_1_dependency_metadata.html">gd::DependencyMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AddDependency</b> ()</td></tr>
+<tr class="separator:a597d5dc5e36babe72e0f797745ef3c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21dd06ec7c386cf558b9881232773d8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab21dd06ec7c386cf558b9881232773d8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#ab21dd06ec7c386cf558b9881232773d8">AddObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon24x24_)</td></tr>
 <tr class="memdesc:ab21dd06ec7c386cf558b9881232773d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new object as being part of the extension.  <a href="#ab21dd06ec7c386cf558b9881232773d8">More...</a><br /></td></tr>
@@ -143,6 +147,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a66e56206406f8741490c6acea87b63fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_event_metadata.html">gd::EventMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a66e56206406f8741490c6acea87b63fa">AddEvent</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_, std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt; instance)</td></tr>
 <tr class="memdesc:a66e56206406f8741490c6acea87b63fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new event as being part of the extension.  <a href="#a66e56206406f8741490c6acea87b63fa">More...</a><br /></td></tr>
 <tr class="separator:a66e56206406f8741490c6acea87b63fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc3124fb7377a725be327684aeeab0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cc3124fb7377a725be327684aeeab0f"></a>
+<a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a0cc3124fb7377a725be327684aeeab0f">RegisterProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
+<tr class="memdesc:a0cc3124fb7377a725be327684aeeab0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a property to the extension. <br /></td></tr>
+<tr class="separator:a0cc3124fb7377a725be327684aeeab0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a98f34a39171752f281bae60a1bca7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14a98f34a39171752f281bae60a1bca7"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a14a98f34a39171752f281bae60a1bca7">GetFullName</a> () const </td></tr>
 <tr class="memdesc:a14a98f34a39171752f281bae60a1bca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name extension user friendly name. <br /></td></tr>
@@ -234,6 +242,11 @@ std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br cl
 <tr class="memitem:ad62b4b93527ae34c2bc03faccee594e6"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br class="typebreak" />
 <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#ad62b4b93527ae34c2bc03faccee594e6">GetAllStrExpressions</a> ()</td></tr>
 <tr class="separator:ad62b4b93527ae34c2bc03faccee594e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe06b818f0fa1efaac6154dbe3b85ca5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe06b818f0fa1efaac6154dbe3b85ca5"></a>
+std::vector<br class="typebreak" />
+&lt; <a class="el" href="classgd_1_1_dependency_metadata.html">gd::DependencyMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#afe06b818f0fa1efaac6154dbe3b85ca5">GetAllDependencies</a> ()</td></tr>
+<tr class="memdesc:afe06b818f0fa1efaac6154dbe3b85ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to a vector containing the metadata of all the dependencies of the extension. <br /></td></tr>
+<tr class="separator:afe06b818f0fa1efaac6154dbe3b85ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb174c27ea2db6909f4877d6a7fea311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb174c27ea2db6909f4877d6a7fea311"></a>
 std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br class="typebreak" />
 <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#abb174c27ea2db6909f4877d6a7fea311">GetAllActionsForObject</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> objectType)</td></tr>
@@ -268,6 +281,11 @@ std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br cl
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a364dc815cae46f3db497105eba00e930">StripUnimplementedInstructionsAndExpressions</a> ()</td></tr>
 <tr class="memdesc:a364dc815cae46f3db497105eba00e930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all instructions having no functions name or custom code generator. <br /></td></tr>
 <tr class="separator:a364dc815cae46f3db497105eba00e930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17c0fd0ba2c1d246a9339b88a266b7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa17c0fd0ba2c1d246a9339b88a266b7d"></a>
+std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <br class="typebreak" />
+<a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#aa17c0fd0ba2c1d246a9339b88a266b7d">GetAllProperties</a> ()</td></tr>
+<tr class="memdesc:aa17c0fd0ba2c1d246a9339b88a266b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the properties of the extension. <br /></td></tr>
+<tr class="separator:aa17c0fd0ba2c1d246a9339b88a266b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>

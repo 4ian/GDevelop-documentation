@@ -42,6 +42,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -127,24 +128,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> SerializeTo(<a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> UnserializeFrom(<span class="keyword">const</span> <a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">   67</a></span>&#160;  <a class="code" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a> <a class="code" href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">ToPropertyDescriptor</a>() { <span class="keywordflow">return</span> <a class="code" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a>(*<span class="keyword">this</span>); }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classgd_1_1_string.html">gd::String</a> name;  </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SerializeValuesTo(<a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> UnserializeValuesFrom(<span class="keyword">const</span> <a class="code" href="classgd_1_1_serializer_element.html">SerializerElement</a>&amp; element);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace gd</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">   77</a></span>&#160;  <a class="code" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a> <a class="code" href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">ToPropertyDescriptor</a>() { <span class="keywordflow">return</span> <a class="code" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a>(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classgd_1_1_string.html">gd::String</a> name;  </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace gd</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> CommonTools.h:24</div></div>
 <div class="ttc" id="classgd_1_1_named_property_descriptor_html_a6521501eb7de49152e05b0182a43e278"><div class="ttname"><a href="classgd_1_1_named_property_descriptor.html#a6521501eb7de49152e05b0182a43e278">gd::NamedPropertyDescriptor::SetName</a></div><div class="ttdeci">NamedPropertyDescriptor &amp; SetName(gd::String newName)</div><div class="ttdoc">Change the name of the property. </div><div class="ttdef"><b>Definition:</b> NamedPropertyDescriptor.h:39</div></div>
 <div class="ttc" id="classgd_1_1_named_property_descriptor_html_abb8c06dc8d57baae931d92382283a35d"><div class="ttname"><a href="classgd_1_1_named_property_descriptor.html#abb8c06dc8d57baae931d92382283a35d">gd::NamedPropertyDescriptor::GetName</a></div><div class="ttdeci">const gd::String &amp; GetName() const </div><div class="ttdoc">Get the name of the property. </div><div class="ttdef"><b>Definition:</b> NamedPropertyDescriptor.h:47</div></div>
-<div class="ttc" id="classgd_1_1_property_descriptor_html"><div class="ttname"><a href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a></div><div class="ttdoc">Used to describe a property shown in a property grid. </div><div class="ttdef"><b>Definition:</b> PropertyDescriptor.h:21</div></div>
+<div class="ttc" id="classgd_1_1_property_descriptor_html"><div class="ttname"><a href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a></div><div class="ttdoc">Used to describe a property shown in a property grid. </div><div class="ttdef"><b>Definition:</b> PropertyDescriptor.h:22</div></div>
 <div class="ttc" id="classgd_1_1_named_property_descriptor_html_a658289e1d7ed8773affb48e846b9ba1f"><div class="ttname"><a href="classgd_1_1_named_property_descriptor.html#a658289e1d7ed8773affb48e846b9ba1f">gd::NamedPropertyDescriptor::NamedPropertyDescriptor</a></div><div class="ttdeci">NamedPropertyDescriptor()</div><div class="ttdoc">Empty constructor creating an empty property to be displayed. </div><div class="ttdef"><b>Definition:</b> NamedPropertyDescriptor.h:26</div></div>
 <div class="ttc" id="classgd_1_1_serializer_element_html"><div class="ttname"><a href="classgd_1_1_serializer_element.html">gd::SerializerElement</a></div><div class="ttdoc">A generic container that can represent a value ( containing a string, double, bool or int)...</div><div class="ttdef"><b>Definition:</b> SerializerElement.h:36</div></div>
 <div class="ttc" id="classgd_1_1_named_property_descriptor_html"><div class="ttname"><a href="classgd_1_1_named_property_descriptor.html">gd::NamedPropertyDescriptor</a></div><div class="ttdoc">Used to describe a property shown in a property grid. </div><div class="ttdef"><b>Definition:</b> NamedPropertyDescriptor.h:21</div></div>
-<div class="ttc" id="classgd_1_1_named_property_descriptor_html_aaf08b7a181d0e7d9d9972d2ca797e7a6"><div class="ttname"><a href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">gd::NamedPropertyDescriptor::ToPropertyDescriptor</a></div><div class="ttdeci">PropertyDescriptor ToPropertyDescriptor()</div><div class="ttdef"><b>Definition:</b> NamedPropertyDescriptor.h:67</div></div>
+<div class="ttc" id="classgd_1_1_named_property_descriptor_html_aaf08b7a181d0e7d9d9972d2ca797e7a6"><div class="ttname"><a href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">gd::NamedPropertyDescriptor::ToPropertyDescriptor</a></div><div class="ttdeci">PropertyDescriptor ToPropertyDescriptor()</div><div class="ttdef"><b>Definition:</b> NamedPropertyDescriptor.h:77</div></div>
 <div class="ttc" id="classgd_1_1_string_html"><div class="ttname"><a href="classgd_1_1_string.html">gd::String</a></div><div class="ttdoc">String represents an UTF8 encoded string. </div><div class="ttdef"><b>Definition:</b> String.h:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

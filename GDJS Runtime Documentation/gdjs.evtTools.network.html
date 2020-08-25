@@ -98,6 +98,10 @@
             
                 <li data-name="gdjs.evtTools.network.jsonToVariableStructure"><a href="gdjs.evtTools.network.html#.jsonToVariableStructure">jsonToVariableStructure</a></li>
             
+                <li data-name="gdjs.evtTools.network.sendAsyncRequest"><a href="gdjs.evtTools.network.html#.sendAsyncRequest">sendAsyncRequest</a></li>
+            
+                <li data-name="gdjs.evtTools.network.sendDeprecatedSynchronousRequest"><a href="gdjs.evtTools.network.html#.sendDeprecatedSynchronousRequest">sendDeprecatedSynchronousRequest</a></li>
+            
                 <li data-name="gdjs.evtTools.network.variableStructureToJSON"><a href="gdjs.evtTools.network.html#.variableStructureToJSON">variableStructureToJSON</a></li>
             
             </ul>
@@ -878,6 +882,8 @@
                 <li data-name="gdjs.RuntimeGame#getAdaptGameResolutionAtRuntime"><a href="gdjs.RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getAdditionalOptions"><a href="gdjs.RuntimeGame.html#getAdditionalOptions">getAdditionalOptions</a></li>
+            
+                <li data-name="gdjs.RuntimeGame#getExtensionProperty"><a href="gdjs.RuntimeGame.html#getExtensionProperty">getExtensionProperty</a></li>
             
                 <li data-name="gdjs.RuntimeGame#getExternalLayoutData"><a href="gdjs.RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li>
             
@@ -2159,7 +2165,7 @@
     
         
         <div class="tag-source">
-            <a href="events-tools_networktools.js.html">events-tools/networktools.js</a>, <a href="events-tools_networktools.js.html#line111">line 111</a>
+            <a href="events-tools_networktools.js.html">events-tools/networktools.js</a>, <a href="events-tools_networktools.js.html#line172">line 172</a>
         </div>
         
     </div>
@@ -2321,6 +2327,309 @@ TODO: Move to gdjs.Variable static</p>
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id=".sendAsyncRequest">
+            
+            <span class="type-signature static">static</span>gdjs.evtTools.network.sendAsyncRequest<span class="signature">(url, body, method, contentType, responseVar, errorVar)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="events-tools_networktools.js.html">events-tools/networktools.js</a>, <a href="events-tools_networktools.js.html#line26">line 26</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Send an asynchronous request to the specified URL, with the specified (text)
+body, method and contentType (defaults to <code>application/x-www-form-urlencoded</code>).
+The result is stored in the specified response variable. Any error is stored in
+the specified error variable.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The URL to send the request to.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>body</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The content to be sent.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>method</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The method to use (&quot;GET&quot;, &quot;POST&quot;, &quot;PUT&quot;, &quot;HEAD&quot;, &quot;DELETE&quot;, &quot;PATCH&quot;, &quot;OPTIONS&quot;)</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>contentType</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The content type. Defaults to <code>application/x-www-form-urlencoded</code> if empty.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>responseVar</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="gdjs.Variable.html">gdjs.Variable</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The variable where to store the response text.</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>errorVar</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="gdjs.Variable.html">gdjs.Variable</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The variable where to store the error message or status code (if status &gt;= 400).</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".sendDeprecatedSynchronousRequest">
+            
+            <span class="type-signature static">static</span>gdjs.evtTools.network.sendDeprecatedSynchronousRequest<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="events-tools_networktools.js.html">events-tools/networktools.js</a>, <a href="events-tools_networktools.js.html#line65">line 65</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id=".variableStructureToJSON">
             
             <span class="type-signature static">static</span>gdjs.evtTools.network.variableStructureToJSON<span class="signature">(variable)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
@@ -2328,7 +2637,7 @@ TODO: Move to gdjs.Variable static</p>
     
         
         <div class="tag-source">
-            <a href="events-tools_networktools.js.html">events-tools/networktools.js</a>, <a href="events-tools_networktools.js.html#line51">line 51</a>
+            <a href="events-tools_networktools.js.html">events-tools/networktools.js</a>, <a href="events-tools_networktools.js.html#line111">line 111</a>
         </div>
         
     </div>

@@ -50,6 +50,7 @@ var searchData=
   ['expressionsrenamer',['ExpressionsRenamer',['../classgd_1_1_expressions_renamer.html',1,'gd']]],
   ['expressionvalidator',['ExpressionValidator',['../classgd_1_1_expression_validator.html',1,'gd']]],
   ['extensionandmetadata',['ExtensionAndMetadata',['../classgd_1_1_extension_and_metadata.html',1,'gd']]],
+  ['extensionproperties',['ExtensionProperties',['../classgd_1_1_extension_properties.html',1,'gd']]],
   ['extensionsloader',['ExtensionsLoader',['../classgd_1_1_extensions_loader.html',1,'gd']]],
   ['externalevents',['ExternalEvents',['../classgd_1_1_external_events.html',1,'gd']]],
   ['externaleventshasname',['ExternalEventsHasName',['../structgd_1_1_external_events_has_name.html',1,'gd']]],
