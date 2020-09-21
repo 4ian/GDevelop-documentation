@@ -1019,6 +1019,10 @@
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#getElectron"><a href="gdjs.RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li>
             
+                <li data-name="gdjs.RuntimeGamePixiRenderer#isFullScreen"><a href="gdjs.RuntimeGamePixiRenderer.html#isFullScreen">isFullScreen</a></li>
+            
+                <li data-name="gdjs.RuntimeGamePixiRenderer#isFullScreen"><a href="gdjs.RuntimeGamePixiRenderer.html#isFullScreen">isFullScreen</a></li>
+            
                 <li data-name="gdjs.RuntimeGamePixiRenderer#isWebGLSupported"><a href="gdjs.RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li>
             
                 <li data-name="gdjs.RuntimeGamePixiRenderer#keepAspectRatio"><a href="gdjs.RuntimeGamePixiRenderer.html#keepAspectRatio">keepAspectRatio</a></li>
@@ -2143,6 +2147,17 @@ gdjs.RuntimeGameCocosRenderer.prototype.setFullScreen = function(enable) {
     // TODO - not implemented yet
     console.warn("Fullscreen is not implemented yet.");
 };
+
+/**
+ * Checks if the game is in full screen.
+ */
+gdjs.RuntimeGamePixiRenderer.prototype.isFullScreen = function() {
+    var electron = this.getElectron();
+    if (electron) {
+      return electron.remote.getCurrentWindow().isFullScreen();
+    }
+    return false; // Unsupported
+  }
 
 /**
  * Update the window size, if possible.
