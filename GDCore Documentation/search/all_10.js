@@ -59,6 +59,8 @@ var searchData=
   ['resourcesloader',['ResourcesLoader',['../classgd_1_1_resources_loader.html',1,'gd']]],
   ['resourcesmanager',['ResourcesManager',['../classgd_1_1_resources_manager.html',1,'gd']]],
   ['resourcesmerginghelper',['ResourcesMergingHelper',['../classgd_1_1_resources_merging_helper.html',1,'gd']]],
+  ['resourcesrenamer',['ResourcesRenamer',['../classgd_1_1_resources_renamer.html#aceaa10ec1028239c709ac68e41422f82',1,'gd::ResourcesRenamer']]],
+  ['resourcesrenamer',['ResourcesRenamer',['../classgd_1_1_resources_renamer.html',1,'gd']]],
   ['restrictsearchtolayer',['RestrictSearchToLayer',['../classgd_1_1_highest_z_order_finder.html#a097c97f7b36f481ee7fbc49ecb422bf5',1,'gd::HighestZOrderFinder']]],
   ['reuse',['Reuse',['../classgd_1_1_events_code_generation_context.html#a1eb817f9eb7a36c2e32003640cd29f92',1,'gd::EventsCodeGenerationContext']]],
   ['revision',['Revision',['../classgd_1_1_version_wrapper.html#af4dffce6497776e3a1d7fbc9e8e7f349',1,'gd::VersionWrapper']]],
