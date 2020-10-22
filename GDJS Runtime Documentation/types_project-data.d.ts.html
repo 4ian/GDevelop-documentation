@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> CocosSoundManager</title>
+  <title> types/project-data.d.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -97,312 +99,201 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p>Class</p>
-                    <h1>CocosSoundManager</h1>
+                    <p>Source</p>
+                    <h1>types/project-data.d.ts</h1>
                 </header>
                 
 
 
 
-
-<section>
-
-<header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>
-            <span class="ancestors"><a href="gdjs.html">gdjs</a>.</span>CocosSoundManager<span class="signature">()</span><span class="type-signature"></span></h2>
-        
-            <div class="class-description"><p>CocosSoundManager</p></div>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-            <div class='vertical-section'>
-                <div class="members">
-                    <div class="member">
-                        <div class=name>
-                            <span class="tag">Constructor</span>
-                        </div>
-                        
-
-
-    
-    <h4 class="name" id="CocosSoundManager">
-        <a class="href-link" href="#CocosSoundManager">#</a>
-        
-        <span class="code-name">
-            
-                new CocosSoundManager<span class="signature">()</span><span class="type-signature"></span>
-            
-        </span>
-    </h4>
-    
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="cocos-sound-manager_cocos-sound-manager.js.html" class="button">View Source</a>
-            <span>
-                <a href="cocos-sound-manager_cocos-sound-manager.js.html">cocos-sound-manager/cocos-sound-manager.js</a>, <a href="cocos-sound-manager_cocos-sound-manager.js.html#line59">line 59</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        
-    
-    </div>
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <div class='vertical-section'>
-            <h1>Methods</h1>
-            <div class="members">
-            
-                <div class="member">
-
-
-    
-    <h4 class="name" id="setResources">
-        <a class="href-link" href="#setResources">#</a>
-        
-        <span class="code-name">
-            
-                setResources<span class="signature">(resources)</span><span class="type-signature"></span>
-            
-        </span>
-    </h4>
-    
-
-    
-    
-    <div class="description">
-        <p>Update the resources data of the game. Useful for hot-reloading, should not be used otherwise.</p>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>resources</code></td>
-  
-
-  <td class="type">
-  
-      
-<span class="param-type">Array.&lt;ResourceData></span>
-
-
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last"><p>The resources data of the game.</p></td>
-</tr>
-
-
-        
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="cocos-sound-manager_cocos-sound-manager.js.html" class="button">View Source</a>
-            <span>
-                <a href="cocos-sound-manager_cocos-sound-manager.js.html">cocos-sound-manager/cocos-sound-manager.js</a>, <a href="cocos-sound-manager_cocos-sound-manager.js.html#line74">line 74</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-            
-            </div>
-        </div>
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * GDevelop JS Platform
+ * Copyright 2013-present Florian Rival (Florian.Rival@gmail.com). All rights reserved.
+ * This project is released under the MIT License.
+ */
+
+// ⚠️ While this file is a TypeScript type definitions file, it's used only
+// for describing a serialized exported project. The game engine itself is still typed
+// using JSDoc style annotations (see https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html#supported-jsdoc).
+
+// ℹ️ See this doc about supported JavaScript features and type checking in the
+// game engine: https://github.com/4ian/GDevelop/blob/master/newIDE/docs/Supported-JavaScript-features-and-coding-style.md
+
+/**
+ * Contains the data of a serialized exported project.
+ */
+export interface ProjectData {
+  firstLayout: string;
+  gdVersion: GdVersionData;
+  properties: ProjectPropertiesData;
+  resources: ResourcesData;
+  objects: ObjectData[];
+  variables: any[];
+  layouts: LayoutData[];
+  externalLayouts: ExternalLayoutData[];
+}
+
+export interface GdVersionData {
+  build: number;
+  major: number;
+  minor: number;
+  revision: number;
+}
+
+export interface LayoutData {
+  r: number;
+  v: number;
+  b: number;
+  mangledName: string;
+  name: string;
+  stopSoundsOnStartup: boolean;
+  title: string;
+  variables: VariableData[];
+  instances: InstanceData[];
+  objects: ObjectData[];
+  layers: LayerData[];
+  behaviorsSharedData: BehaviorSharedData[];
+}
+
+export interface BehaviorSharedData {
+  name: string;
+  type: string;
+}
+
+export interface ExternalLayoutData {
+  name: string;
+  instances: InstanceData[];
+}
+
+export interface InstanceData {
+  persistentUuid: string;
+  angle: number;
+  customSize: boolean;
+  height: number;
+  layer: string;
+  locked: boolean;
+  name: string;
+  width: number;
+  x: number;
+  y: number;
+  zOrder: number;
+  numberProperties: InstanceNumberProperty[];
+  stringProperties: InstanceStringProperty[];
+  initialVariables: VariableData[];
+}
+
+export interface InstanceNumberProperty {
+  name: string;
+  value: number;
+}
+export interface InstanceStringProperty {
+  name: string;
+  value: number;
+}
+
+export interface LayerData {
+  name: string;
+  visibility: boolean;
+  cameras: CameraData[];
+  effects: EffectData[];
+  ambientLightColorR: number;
+  ambientLightColorG: number;
+  ambientLightColorB: number;
+  isLightingLayer: boolean;
+  followBaseLayerCamera: boolean;
+}
+
+export interface CameraData {
+  defaultSize: boolean;
+  defaultViewport: boolean;
+  height: number;
+  viewportBottom: number;
+  viewportLeft: number;
+  viewportRight: number;
+  viewportTop: number;
+  width: number;
+}
+
+export interface EffectData {
+  effectType: string;
+  name: string;
+  doubleParameters: {
+    [name: string]: number;
+  };
+  stringParameters: {
+    [name: string]: string;
+  };
+  booleanParameters: {
+    [name: string]: boolean;
+  };
+}
+
+export interface ProjectPropertiesData {
+  adMobAppId: string;
+  adaptGameResolutionAtRuntime: boolean;
+  folderProject: boolean;
+  linuxExecutableFilename: string;
+  macExecutableFilename: string;
+  orientation: string;
+  packageName: string;
+  projectFile: string;
+  scaleMode: string;
+  sizeOnStartupMode: string;
+  useExternalSourceFiles: boolean;
+  version: string;
+  winExecutableFilename: string;
+  winExecutableIconFile: string;
+  name: string;
+  author: string;
+  windowWidth: number;
+  windowHeight: number;
+  latestCompilationDirectory: string;
+  maxFPS: number;
+  minFPS: number;
+  verticalSync: boolean;
+  loadingScreen: LoadingScreenData;
+  currentPlatform: string;
+  extensionProperties: Array&lt;ExtensionProperty>;
+}
+
+export interface ExtensionProperty {
+  extension: string;
+  property: string;
+  value: string;
+}
+
+export interface LoadingScreenData {
+  showGDevelopSplash: boolean;
+}
+
+export interface ResourcesData {
+  resources: ResourceData[];
+}
+
+export interface ResourceData {
+  alwaysLoaded?: boolean;
+  file: string;
+  kind: ResourceKind;
+  metadata: string;
+  name: string;
+  smoothed?: boolean;
+  userAdded: boolean;
+  disablePreload?: boolean;
+}
+
+export enum ResourceKind {
+  Audio = 'audio',
+  Image = 'image',
+  Font = 'font',
+  Video = 'video',
+  Json = 'json',
+}
+</code></pre>
+        </article>
+    </section>
 
 
 
