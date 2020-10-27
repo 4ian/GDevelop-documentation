@@ -498,6 +498,82 @@
             
                 <div class="member">
 
+<h4 class="name" id="getSqDistanceTo">
+    <a class="href-link" href="#getSqDistanceTo">#</a>
+    
+    <span class="code-name">
+        getSqDistanceTo
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Get the squared distance, in pixels, from the <em>object center</em> to a position.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="gdjs.RuntimeObject.html#getSqDistanceTo">gdjs.RuntimeObject#getSqDistanceTo</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>Use `getSqDistanceToPosition` instead.</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="runtimeobject.js.html" class="button">View Source</a>
+            <span>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1399">line 1399</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
     <span class="method-parameter is-pulled-right">
         <label>Type:</label>
         
@@ -3383,7 +3459,7 @@ and the angle parameter is inferior to toleranceInDegrees parameter.</p></div>
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1605">line 1605</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1647">line 1647</a>
             </span>
         </p>
     
@@ -3987,6 +4063,337 @@ Result is cached until invalidated (by a position change, angle change...).</p>
                 
         </div>
     </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getAngleToObject">
+        <a class="href-link" href="#getAngleToObject">#</a>
+        
+        <span class="code-name">
+            
+                getAngleToObject<span class="signature">(otherObject)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Get the angle, in degrees, from the <em>object center</em> to another object.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>otherObject</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type"><a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The other object</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="gdjs.RuntimeObject.html#getAngleToObject">gdjs.RuntimeObject#getAngleToObject</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="runtimeobject.js.html" class="button">View Source</a>
+            <span>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1405">line 1405</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getAngleToPosition">
+        <a class="href-link" href="#getAngleToPosition">#</a>
+        
+        <span class="code-name">
+            
+                getAngleToPosition<span class="signature">(targetX, targetY)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Get the angle, in degrees, from the <em>object center</em> to a position.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>targetX</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Target X position</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>targetY</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Target Y position</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="gdjs.RuntimeObject.html#getAngleToPosition">gdjs.RuntimeObject#getAngleToPosition</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="runtimeobject.js.html" class="button">View Source</a>
+            <span>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1419">line 1419</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5169,6 +5576,184 @@ always call getBehavior on the object.</p>
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
                 <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1355">line 1355</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getDistanceToPosition">
+        <a class="href-link" href="#getDistanceToPosition">#</a>
+        
+        <span class="code-name">
+            
+                getDistanceToPosition<span class="signature">(targetX, targetY)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Get the distance, in pixels, between <em>the center</em> of this object and a position.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>targetX</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Target X position</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>targetY</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Target Y position</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="gdjs.RuntimeObject.html#getDistanceToPosition">gdjs.RuntimeObject#getDistanceToPosition</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="runtimeobject.js.html" class="button">View Source</a>
+            <span>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1377">line 1377</a>
             </span>
         </p>
     
@@ -7209,184 +7794,6 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
 
 
     
-    <h4 class="name" id="getSqDistanceTo">
-        <a class="href-link" href="#getSqDistanceTo">#</a>
-        
-        <span class="code-name">
-            
-                getSqDistanceTo<span class="signature">(pointX, pointY)</span><span class="type-signature"></span>
-            
-        </span>
-    </h4>
-    
-
-    
-    
-    <div class="description">
-        <p>Get the squared distance, in pixels, from the <em>object center</em> to a position.</p>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>pointX</code></td>
-  
-
-  <td class="type">
-  
-      
-<span class="param-type">number</span>
-
-
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last"><p>X position</p></td>
-</tr>
-
-
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>pointY</code></td>
-  
-
-  <td class="type">
-  
-      
-<span class="param-type">number</span>
-
-
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last"><p>Y position</p></td>
-</tr>
-
-
-        
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-    <dt class="inherited-from">Inherited From:</dt>
-    <dd class="inherited-from"><ul class="dummy"><li>
-        <a href="gdjs.RuntimeObject.html#getSqDistanceTo">gdjs.RuntimeObject#getSqDistanceTo</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="runtimeobject.js.html" class="button">View Source</a>
-            <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1377">line 1377</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
     <h4 class="name" id="getSqDistanceToObject">
         <a class="href-link" href="#getSqDistanceToObject">#</a>
         
@@ -7509,6 +7916,184 @@ object used for rendering by the object (PIXI.DisplayObject...)</p>
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
                 <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1363">line 1363</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="getSqDistanceToPosition">
+        <a class="href-link" href="#getSqDistanceToPosition">#</a>
+        
+        <span class="code-name">
+            
+                getSqDistanceToPosition<span class="signature">(targetX, targetY)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Get the squared distance, in pixels, between <em>the center</em> of this object and a position.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>targetX</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Target X position</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>targetY</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Target Y position</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="gdjs.RuntimeObject.html#getSqDistanceToPosition">gdjs.RuntimeObject#getSqDistanceToPosition</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="runtimeobject.js.html" class="button">View Source</a>
+            <span>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1386">line 1386</a>
             </span>
         </p>
     
@@ -9394,7 +9979,7 @@ if you need to pass the mouse or a touch position that you get from gdjs.InputMa
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1582">line 1582</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1624">line 1624</a>
             </span>
         </p>
     
@@ -9562,7 +10147,7 @@ if you need to pass the mouse or a touch position that you get from gdjs.InputMa
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1633">line 1633</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1675">line 1675</a>
             </span>
         </p>
     
@@ -10761,7 +11346,7 @@ The distance and angle are computed between the position and <em>the center of t
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1393">line 1393</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1435">line 1435</a>
             </span>
         </p>
     
@@ -10960,7 +11545,7 @@ The distance and angle are computed between <em>the centers of the objects</em>.
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1410">line 1410</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1452">line 1452</a>
             </span>
         </p>
     
@@ -11209,7 +11794,7 @@ The distance and angle are computed between <em>the centers of the objects</em>.
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1539">line 1539</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1581">line 1581</a>
             </span>
         </p>
     
@@ -12423,7 +13008,7 @@ holding behaviors).</p>
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1454">line 1454</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1496">line 1496</a>
             </span>
         </p>
     
@@ -12569,7 +13154,7 @@ holding behaviors).</p>
         <p class="tag-source">
             <a href="runtimeobject.js.html" class="button">View Source</a>
             <span>
-                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1419">line 1419</a>
+                <a href="runtimeobject.js.html">runtimeobject.js</a>, <a href="runtimeobject.js.html#line1461">line 1461</a>
             </span>
         </p>
     
