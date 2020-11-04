@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> cocos-renderers/runtimegame-cocos-renderer.js</title>
+  <title> events-tools/windowtools.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -100,7 +100,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>cocos-renderers/runtimegame-cocos-renderer.js</h1>
+                    <h1>events-tools/windowtools.js</h1>
                 </header>
                 
 
@@ -109,184 +109,180 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/*
+            <pre class="prettyprint source linenums"><code>// @ts-check
+/*
  * GDevelop JS Platform
  * Copyright 2013-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
  * This project is released under the MIT License.
  */
 
 /**
- * The renderer for a gdjs.RuntimeGame using Cocos2D-JS.
- *
- * @class RuntimeGameCocosRenderer
- * @memberof gdjs
- * @param {gdjs.RuntimeGame} game
- * @param {boolean} forceFullscreen
+ * Tools related to window, for events generated code.
+ * @memberof gdjs.evtTools
+ * @class window
+ * @static
+ * @private
  */
-gdjs.RuntimeGameCocosRenderer = function(game, forceFullscreen)
-{
-    this._directorManager = new gdjs.CocosDirectorManager();
-    this._game = game;
-}
+gdjs.evtTools.window = gdjs.evtTools.window || {};
 
-gdjs.RuntimeGameRenderer = gdjs.RuntimeGameCocosRenderer; //Register the class to let the engine use it.
-
-gdjs.RuntimeGameCocosRenderer.prototype.updateRendererSize = function() {
-    cc.view.setDesignResolutionSize(this._game.getGameResolutionWidth(),
-        this._game.getGameResolutionHeight(), cc.view.getResolutionPolicy());
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {number} top
+ * @param {number} right
+ * @param {number} bottom
+ * @param {number} left
+ */
+gdjs.evtTools.window.setMargins = function (
+  runtimeScene,
+  top,
+  right,
+  bottom,
+  left
+) {
+  runtimeScene.getGame().getRenderer().setMargins(top, right, bottom, left);
 };
 
 /**
- * Set if the aspect ratio must be kept when the game rendering area is resized.
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {boolean} enable
+ * @param {boolean} keepAspectRatio
  */
-gdjs.RuntimeGameCocosRenderer.prototype.keepAspectRatio = function(enable) {
-    // Not supported.
-    console.warn("Aspect ratio is not supported.");
+gdjs.evtTools.window.setFullScreen = function (
+  runtimeScene,
+  enable,
+  keepAspectRatio
+) {
+  runtimeScene.getGame().getRenderer().keepAspectRatio(keepAspectRatio);
+  runtimeScene.getGame().getRenderer().setFullScreen(enable);
 };
 
 /**
- * Change the margin that must be preserved around the game.
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @returns {boolean}
  */
-gdjs.RuntimeGameCocosRenderer.prototype.setMargins = function(top, right, bottom, left) {
-    // Not supported.
-    console.warn("Margins are not supported.");
+gdjs.evtTools.window.isFullScreen = function (runtimeScene) {
+  return runtimeScene.getGame().getRenderer().isFullScreen();
 };
 
 /**
- * De/activate fullscreen for the game.
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {number} width
+ * @param {number} height
+ * @param {boolean} updateGameResolution
  */
-gdjs.RuntimeGameCocosRenderer.prototype.setFullScreen = function(enable) {
-    // TODO - not implemented yet
-    console.warn("Fullscreen is not implemented yet.");
-};
-
-/**
- * Checks if the game is in full screen.
- */
-gdjs.RuntimeGameCocosRenderer.prototype.isFullScreen = function() {
-    var electron = this.getElectron();
-    if (electron) {
-      return electron.remote.getCurrentWindow().isFullScreen();
-    }
-    return false; // Unsupported
+gdjs.evtTools.window.setWindowSize = function (
+  runtimeScene,
+  width,
+  height,
+  updateGameResolution
+) {
+  runtimeScene.getGame().getRenderer().setWindowSize(width, height);
+  if (updateGameResolution) {
+    runtimeScene.getGame().setGameResolutionSize(width, height);
   }
-
-/**
- * Update the window size, if possible.
- * @param {number} width The new width, in pixels.
- * @param {number} height The new height, in pixels.
- */
-gdjs.RuntimeGameCocosRenderer.prototype.setWindowSize = function(width, height) {
-    var electron = this.getElectron();
-    if (electron) { // Use Electron BrowserWindow API
-        var browserWindow = electron.remote.getCurrentWindow();
-        if (browserWindow) {
-            browserWindow.setContentSize(width, height);
-        }
-    } else {
-        console.warn("Window size can't be changed on this platform.");
-    }
 };
 
 /**
- * Center the window on screen.
+ * @param {gdjs.RuntimeScene} runtimeScene
  */
-gdjs.RuntimeGameCocosRenderer.prototype.centerWindow = function() {
-    var electron = this.getElectron();
-    if (electron) { // Use Electron BrowserWindow API
-        var browserWindow = electron.remote.getCurrentWindow();
-        if (browserWindow) {
-            browserWindow.center();
-        }
-    } else {
-        // Not supported
-    }
-}
-
-gdjs.RuntimeGameCocosRenderer.prototype.setWindowTitle = function(title) {
-    if (typeof document !== 'undefined') document.title = title;
-}
-
-gdjs.RuntimeGameCocosRenderer.prototype.getWindowTitle = function() {
-    return (typeof document !== 'undefined') ? document.title : '';
-}
-
-gdjs.RuntimeGameCocosRenderer.prototype.startGameLoop = function(fn) {
-    this._gameLoopFn = fn;
-    this._gameLoopFn(0);
-}
-
-gdjs.RuntimeGameCocosRenderer.prototype.getDirectorManager = function() {
-    return this._directorManager;
-}
-
-/**
- * As Cocos2d is managing the game loop, the Cocos scenes need to call this
- * function to step the game engine. See gdjs.RuntimeSceneCocosRenderer.
- */
-gdjs.RuntimeGameCocosRenderer.prototype.onSceneUpdated = function(dt) {
-    if (!this._gameLoopFn(dt)) {
-        this._directorManager.end();
-    }
-}
-
-gdjs.RuntimeGameCocosRenderer.prototype.convertYPosition = function(y) {
-    //Cocos2D Y axis is inverted, with origin at the bottom of the window.
-    return this._currentHeight - y;
-}
-
-gdjs.RuntimeGameCocosRenderer.getWindowInnerWidth = function() {
-    return cc.view.getFrameSize().width;
-}
-
-gdjs.RuntimeGameCocosRenderer.getWindowInnerHeight = function() {
-    return cc.view.getFrameSize().height;
-}
-
-/**
- * Open the given URL in the system browser
- */
-gdjs.RuntimeGameCocosRenderer.prototype.openURL = function(url) {
-    // Try to detect the environment to use the most adapted
-    // way of opening an URL.
-    if (typeof cc !== "undefined" &amp;&amp; cc.sys &amp;&amp; cc.sys.openURL) {
-        cc.sys.openURL(url);
-    } else if (typeof window !== "undefined") {
-        var target = window.cordova ? "_system" : "_blank";
-        window.open(url, target);
-    }
-}
-
-gdjs.RuntimeGameCocosRenderer.prototype.stopGame = function() {
-    // TODO - Not implemented as not useful for most games on mobile and browsers
-    console.warn("Stopping the game is not supported.");
-}
-
-/**
- * Get the canvas DOM element.
- */
-gdjs.RuntimeGameCocosRenderer.prototype.getCanvas = function() {
-    return cc.game.canvas;
-}
-
-/**
- * Check if the device supports WebGL.
- * @returns {boolean} true if WebGL is supported
- */
-gdjs.RuntimeGameCocosRenderer.prototype.isWebGLSupported = function() {
-	return cc._renderType === cc.game.RENDER_TYPE_WEBGL;
+gdjs.evtTools.window.centerWindow = function (runtimeScene) {
+  runtimeScene.getGame().getRenderer().centerWindow();
 };
 
 /**
- * Get the electron module, if running as a electron renderer process.
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {number} width
+ * @param {number} height
  */
-gdjs.RuntimeGameCocosRenderer.prototype.getElectron = function() {
-    if (typeof require !== "undefined") {
-        return require('electron');
-    }
+gdjs.evtTools.window.setGameResolutionSize = function (
+  runtimeScene,
+  width,
+  height
+) {
+  runtimeScene.getGame().setGameResolutionSize(width, height);
+};
 
-    return null;
-}
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {string} resizeMode
+ */
+gdjs.evtTools.window.setGameResolutionResizeMode = function (
+  runtimeScene,
+  resizeMode
+) {
+  runtimeScene.getGame().setGameResolutionResizeMode(resizeMode);
+};
+
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {boolean} enable
+ */
+gdjs.evtTools.window.setAdaptGameResolutionAtRuntime = function (
+  runtimeScene,
+  enable
+) {
+  runtimeScene.getGame().setAdaptGameResolutionAtRuntime(enable);
+};
+
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @param {string} title
+ */
+gdjs.evtTools.window.setWindowTitle = function (runtimeScene, title) {
+  runtimeScene.getGame().getRenderer().setWindowTitle(title);
+};
+
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @returns {string}
+ */
+gdjs.evtTools.window.getWindowTitle = function (runtimeScene) {
+  return runtimeScene.getGame().getRenderer().getWindowTitle();
+};
+
+/**
+ * @returns {number}
+ */
+gdjs.evtTools.window.getWindowInnerWidth = function () {
+  if (gdjs.RuntimeGameRenderer &amp;&amp; gdjs.RuntimeGameRenderer.getWindowInnerWidth)
+    return gdjs.RuntimeGameRenderer.getWindowInnerWidth();
+
+  return typeof window !== 'undefined' ? window.innerWidth : 800;
+};
+
+/**
+ * @returns {number}
+ */
+gdjs.evtTools.window.getWindowInnerHeight = function () {
+  if (gdjs.RuntimeGameRenderer &amp;&amp; gdjs.RuntimeGameRenderer.getWindowInnerHeight)
+    return gdjs.RuntimeGameRenderer.getWindowInnerHeight();
+
+  return typeof window !== 'undefined' ? window.innerHeight : 800;
+};
+
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @returns {number}
+ */
+gdjs.evtTools.window.getGameResolutionWidth = function (runtimeScene) {
+  return runtimeScene.getGame().getGameResolutionWidth();
+};
+
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ * @returns {number}
+ */
+gdjs.evtTools.window.getGameResolutionHeight = function (runtimeScene) {
+  return runtimeScene.getGame().getGameResolutionHeight();
+};
+
+/**
+ * @param {string} url
+ * @param {gdjs.RuntimeScene} runtimeScene
+ */
+gdjs.evtTools.window.openURL = function (url, runtimeScene) {
+  return runtimeScene.getGame().getRenderer().openURL(url);
+};
 </code></pre>
         </article>
     </section>

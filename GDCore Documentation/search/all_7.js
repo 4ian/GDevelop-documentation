@@ -207,6 +207,7 @@ var searchData=
   ['gethiddenlayers',['GetHiddenLayers',['../namespacegd.html#aef544af8724007cf8c1fa2427f645524',1,'gd']]],
   ['gethighestzorder',['GetHighestZOrder',['../classgd_1_1_highest_z_order_finder.html#aa95317ce1d1f287f2fb73e6efe1e4607',1,'gd::HighestZOrderFinder']]],
   ['geticon',['GetIcon',['../classgd_1_1_platform.html#a2b47ca75b6eca3a5c5299129215ef529',1,'gd::Platform']]],
+  ['geticonurl',['GetIconUrl',['../classgd_1_1_platform_extension.html#a376ae7d732d54319b33c179c0a85cc38',1,'gd::PlatformExtension']]],
   ['getimagemanager',['GetImageManager',['../classgd_1_1_project.html#ac12bd323ad5edb855913643495e02a1b',1,'gd::Project::GetImageManager() const '],['../classgd_1_1_project.html#a79e5f08bc5422057918d7c7a0688f48d',1,'gd::Project::GetImageManager()']]],
   ['getimagename',['GetImageName',['../classgd_1_1_sprite.html#a1cee9ecab8bb4f825eb66868f1792553',1,'gd::Sprite::GetImageName() const '],['../classgd_1_1_sprite.html#a933cae0d115ea59e1595c17c9b5ee0fd',1,'gd::Sprite::GetImageName()']]],
   ['getincludeconfig',['GetIncludeConfig',['../classgd_1_1_link_event.html#a103692578ea9415125e88a5eb64b67a8',1,'gd::LinkEvent']]],
