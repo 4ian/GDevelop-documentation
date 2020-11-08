@@ -551,6 +551,187 @@
 
 
     
+    <h4 class="name" id="CreateObjectFunction">
+        <a class="href-link" href="#CreateObjectFunction">#</a>
+        
+        <span class="code-name">
+            
+                CreateObjectFunction<span class="signature">(objectName)</span><span class="type-signature"> &rarr; {<a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Function creating a new object from its name. The object is added to the instances
+living on the scene.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>objectName</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The name of the object to be created</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#EventsFunctionContext">EventsFunctionContext</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line48">line 48</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The created object</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type"><a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a></span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
     <h4 class="name" id="DebuggerClientCycleReplacer">
         <a class="href-link" href="#DebuggerClientCycleReplacer">#</a>
         
@@ -742,6 +923,282 @@
                 
         </div>
     </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
+        
+<span class="param-type">Object</span>
+
+
+    </span>
+
+<h4 class="name" id="EventsFunctionContext">
+    <a class="href-link" href="#EventsFunctionContext">#</a>
+    
+    <span class="code-name">
+        EventsFunctionContext
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Represents the context of the events function (or the behavior method),
+if any. If the JavaScript code is running in a scene, this will be undefined (so you can't use this in a scene).</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>getObjects</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#GetObjectsFunction">GetObjectsFunction</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Get the list of instances of the specified object.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>getLayer</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#GetLayerFunction">GetLayerFunction</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Use <code>runtimeScene.getLayer</code> instead.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>getObjectsLists</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#GetObjectsListsFunction">GetObjectsListsFunction</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Get the Hashtable containing the lists of instances of the specified object.</p>
+<p>You can alter the list and this will alter the objects picked for the next conditions/actions/events.
+If you don't need this, prefer using <code>getObjects</code>.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>getBehaviorName</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#GetBehaviorNameFunction">GetBehaviorNameFunction</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Get the &quot;real&quot; behavior name, that can be used with <code>getBehavior</code>. For example: <code>object.getBehavior(eventsFunctionContext.getBehaviorName(&quot;MyBehavior&quot;))</code></p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>createObject</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#CreateObjectFunction">CreateObjectFunction</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Create a new object from its name. The object is added to the instances living on the scene.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>getArgument</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#GetArgumentFunction">GetArgumentFunction</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Get the value (string or number) of an argument that was passed to the events function. To get objects, use <code>getObjects</code>.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>returnValue</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The return value that should be returned by the expression or the condition.</p></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line87">line 87</a>
+            </span>
+        </p>
+    
+</dl>
+
 
 
 
@@ -2453,6 +2910,913 @@
         <label>Type: </label>
         
 <span class="param-type">boolean</span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="GetArgumentFunction">
+        <a class="href-link" href="#GetArgumentFunction">#</a>
+        
+        <span class="code-name">
+            
+                GetArgumentFunction<span class="signature">(argumentName)</span><span class="type-signature"> &rarr; {string|number}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Function returning the value (string or number) of an argument that was passed to the events function.
+To get objects, use <code>getObjects</code>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>argumentName</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The name of the argument, as specified in the parameters of the function.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#EventsFunctionContext">EventsFunctionContext</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line68">line 68</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The string or number passed for this argument</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type">string</span>
+|
+
+<span class="param-type">number</span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="GetBehaviorNameFunction">
+        <a class="href-link" href="#GetBehaviorNameFunction">#</a>
+        
+        <span class="code-name">
+            
+                GetBehaviorNameFunction<span class="signature">(behaviorName)</span><span class="type-signature"> &rarr; {string}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Function to get the &quot;real&quot; behavior name, that can be used with <code>getBehavior</code>. For example:
+<code>object.getBehavior(eventsFunctionContext.getBehaviorName(&quot;MyBehavior&quot;))</code></p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>behaviorName</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The name of the behavior, as specified in the parameters of the function.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#EventsFunctionContext">EventsFunctionContext</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line58">line 58</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The name that can be passed to <code>getBehavior</code>.</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type">string</span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="GetLayerFunction">
+        <a class="href-link" href="#GetLayerFunction">#</a>
+        
+        <span class="code-name">
+            
+                GetLayerFunction<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="gdjs.Layer.html">gdjs.Layer</a>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Function returning the layer with the given name</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>name</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The name of the layer.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#EventsFunctionContext">EventsFunctionContext</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line78">line 78</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The layer with the given name, or the base layer if not found.</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type"><a href="gdjs.Layer.html">gdjs.Layer</a></span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="GetObjectsFunction">
+        <a class="href-link" href="#GetObjectsFunction">#</a>
+        
+        <span class="code-name">
+            
+                GetObjectsFunction<span class="signature">(objectName)</span><span class="type-signature"> &rarr; {Array.&lt;<a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a>>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Function returning the list of instances of the specified object.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>objectName</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The name of the object for which instances must be returned.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#EventsFunctionContext">EventsFunctionContext</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line27">line 27</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>Instances of the specified object.</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type">Array.&lt;<a href="gdjs.RuntimeObject.html">gdjs.RuntimeObject</a>></span>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="GetObjectsListsFunction">
+        <a class="href-link" href="#GetObjectsListsFunction">#</a>
+        
+        <span class="code-name">
+            
+                GetObjectsListsFunction<span class="signature">(objectName)</span><span class="type-signature"> &rarr; (nullable) {<a href="Hashtable.html">Hashtable</a>}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Function returning the Hashtable containing the lists of instances of the specified object.</p>
+<p>You can alter the list and this will alter the objects picked for the next conditions/actions/events.
+If you don't need this, prefer using <code>getObjects</code>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>objectName</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The name of the object for which instances must be returned.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#EventsFunctionContext">EventsFunctionContext</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="types_global-types.js.html" class="button">View Source</a>
+            <span>
+                <a href="types_global-types.js.html">types/global-types.js</a>, <a href="types_global-types.js.html#line36">line 36</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>Hashtable containing the lists of instances (keys are object names in the current context), or <code>null</code> if not found</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<span class="param-type"><a href="Hashtable.html">Hashtable</a></span>
 
 
     </div>
