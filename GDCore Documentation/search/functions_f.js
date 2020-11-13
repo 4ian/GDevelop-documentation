@@ -106,6 +106,7 @@ var searchData=
   ['setopenglznear',['SetOpenGLZNear',['../classgd_1_1_layout.html#a56c05800e64e15c2aa1e3b5b178ba0a1',1,'gd::Layout']]],
   ['setoptional',['SetOptional',['../classgd_1_1_parameter_metadata.html#ac09fe4cb772b5911e4dc700cb41d3343',1,'gd::ParameterMetadata']]],
   ['setorientation',['SetOrientation',['../classgd_1_1_project.html#a7eafcb2a559636e4694a55c817bc906d',1,'gd::Project']]],
+  ['setorigin',['SetOrigin',['../classgd_1_1_resource.html#a207d8146b1168b966bbb4a03cf640fed',1,'gd::Resource']]],
   ['setpackagename',['SetPackageName',['../classgd_1_1_project.html#ac7d556b9e3ed34867b8664e5844ae5b7',1,'gd::Project']]],
   ['setparameter',['SetParameter',['../classgd_1_1_instruction.html#a9caf7b28bdb2d087ada412515d776cec',1,'gd::Instruction']]],
   ['setparameterlongdescription',['SetParameterLongDescription',['../classgd_1_1_expression_metadata.html#a893146430f070693aef2aac75cb3a0a2',1,'gd::ExpressionMetadata::SetParameterLongDescription()'],['../classgd_1_1_instruction_metadata.html#aa49958a5faeb20fcadd1990443565a46',1,'gd::InstructionMetadata::SetParameterLongDescription()']]],
