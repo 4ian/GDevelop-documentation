@@ -36,7 +36,7 @@ var searchData=
   ['hasobjectnamed',['HasObjectNamed',['../classgd_1_1_objects_container.html#a195a4eabc84fea13bc73f578d8f64b0c',1,'gd::ObjectsContainer']]],
   ['hasobjectstrexpression',['HasObjectStrExpression',['../classgd_1_1_metadata_provider.html#a41037d962c402a7e4e4fef3846837c00',1,'gd::MetadataProvider']]],
   ['haspoint',['HasPoint',['../classgd_1_1_sprite.html#a915b15883cea0918963b800da310dcf5',1,'gd::Sprite']]],
-  ['hasprojectandlayout',['hasProjectAndLayout',['../classgd_1_1_events_code_generator.html#a7ae1be8a97d1786f5af048e1d93a0f77',1,'gd::EventsCodeGenerator::hasProjectAndLayout()'],['../classgd_1_1_events_code_generator.html#ab9709f841abddc509b9edcb28fd1fdee',1,'gd::EventsCodeGenerator::HasProjectAndLayout() const ']]],
+  ['hasprojectandlayout',['HasProjectAndLayout',['../classgd_1_1_events_code_generator.html#ab9709f841abddc509b9edcb28fd1fdee',1,'gd::EventsCodeGenerator::HasProjectAndLayout() const '],['../classgd_1_1_events_code_generator.html#a7ae1be8a97d1786f5af048e1d93a0f77',1,'gd::EventsCodeGenerator::hasProjectAndLayout()']]],
   ['hasresource',['HasResource',['../classgd_1_1_resources_manager.html#ac71ba51e2c35503e2ca5e50b8c6f7a43',1,'gd::ResourcesManager::HasResource()'],['../classgd_1_1_resource_folder.html#a089d471fdb9a52ada1c1ab57c7d156f7',1,'gd::ResourceFolder::HasResource()']]],
   ['hasresourcewithabsolutefilenames',['HasResourceWithAbsoluteFilenames',['../classgd_1_1_resources_absolute_path_checker.html#ae7fe300f9d3e3db4e2ace386c32860de',1,'gd::ResourcesAbsolutePathChecker']]],
   ['hassourcefile',['HasSourceFile',['../classgd_1_1_project.html#a820a9178a1568b9b83450906f03c8dea',1,'gd::Project']]],

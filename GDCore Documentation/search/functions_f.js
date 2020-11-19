@@ -116,6 +116,7 @@ var searchData=
   ['setprivate',['SetPrivate',['../classgd_1_1_expression_metadata.html#a2831c837e9a8697ca8b348684566c2b4',1,'gd::ExpressionMetadata::SetPrivate()'],['../classgd_1_1_instruction_metadata.html#a3abf812e3d2b0beba881deda6713f7a5',1,'gd::InstructionMetadata::SetPrivate()']]],
   ['setprofiler',['SetProfiler',['../classgd_1_1_layout.html#a8f3ddb72330ac91a75a22ab14d930fa9',1,'gd::Layout']]],
   ['setprojectfile',['SetProjectFile',['../classgd_1_1_project.html#a4f88dda26fda8c00fa8c722f4a73a014',1,'gd::Project']]],
+  ['setprojectuuid',['SetProjectUuid',['../classgd_1_1_project.html#a17825ef87508fd46997e0d939b3b0343',1,'gd::Project']]],
   ['setrawfloatproperty',['SetRawFloatProperty',['../classgd_1_1_initial_instance.html#af5065697dec8dda8e08af583d364106c',1,'gd::InitialInstance']]],
   ['setrawstringproperty',['SetRawStringProperty',['../classgd_1_1_initial_instance.html#a7ae5f55fb44d8b5efce558f21382b300',1,'gd::InitialInstance']]],
   ['setresourcesmanager',['SetResourcesManager',['../classgd_1_1_image_manager.html#a91b42663d8468591ca50837e66c99477',1,'gd::ImageManager']]],
