@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_event_8h_source.html">Event.h</a>&gt;</code></p>
 
-<p>Inherited by <a class="el" href="classgd_1_1_comment_event.html">gd::CommentEvent</a>, <a class="el" href="classgd_1_1_empty_event.html">gd::EmptyEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_group_event.html">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_link_event.html">gd::LinkEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html">gd::RepeatEvent</a>, <a class="el" href="classgd_1_1_standard_event.html">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_while_event.html">gd::WhileEvent</a>.</p>
+<p>Inherited by <a class="el" href="classgd_1_1_comment_event.html">gd::CommentEvent</a>, <a class="el" href="classgd_1_1_empty_event.html">gd::EmptyEvent</a>, <a class="el" href="classgd_1_1_for_each_child_variable_event.html">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_group_event.html">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_link_event.html">gd::LinkEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html">gd::RepeatEvent</a>, <a class="el" href="classgd_1_1_standard_event.html">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_while_event.html">gd::WhileEvent</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -241,7 +241,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Derived class have to redefine this function, so as to return true, if they have sub events. </p>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#afd1ce4bf9cc769f0e0f0bea89e189fc6">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a9ca52093532300b81247f1ed5accaf94">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#ae74c83a385555bdaf501e1944144d84b">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a46a4a1c7d4eccbb101f4c59846587af3">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#aaa9574a8e1dfdc4e3dbee13dc67b27d8">gd::RepeatEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#afd1ce4bf9cc769f0e0f0bea89e189fc6">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a9ca52093532300b81247f1ed5accaf94">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#ae74c83a385555bdaf501e1944144d84b">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_for_each_child_variable_event.html#a0c1cb955ba489bc75661e29d41298496">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a46a4a1c7d4eccbb101f4c59846587af3">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#aaa9574a8e1dfdc4e3dbee13dc67b27d8">gd::RepeatEvent</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Public Attributes</h2></td></tr>
 <p>Must return a pointer to a copy of the event. A such method is needed as the IDE may want to store copies of some events and so need a way to do polymorphic copies.</p>
 <p>Typical implementation example: </p><div class="fragment"><div class="line"><span class="keywordflow">return</span> <span class="keyword">new</span> MyEventClass(*<span class="keyword">this</span>);</div>
 </div><!-- fragment --> 
-<p>Reimplemented in <a class="el" href="classgd_1_1_link_event.html#a89cfc72427bbc45608218bc5d714435c">gd::LinkEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a79d795d89aa2704b0016c5daaf514a89">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#af70d97430e51b372c48b4b249d2f04f4">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_group_event.html#a78c5519cce0ca58ff450f866ee68e14f">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a266e5fc6dd153b8fbb3ba2d9e10d2bdf">gd::StandardEvent</a>, <a class="el" href="classgd_1_1_comment_event.html#ac7541b660c0a49a65a4de3b8f43364aa">gd::CommentEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#aa70479f49c43642b6a0ed238efc582cf">gd::RepeatEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_link_event.html#a89cfc72427bbc45608218bc5d714435c">gd::LinkEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a79d795d89aa2704b0016c5daaf514a89">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#af70d97430e51b372c48b4b249d2f04f4">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_group_event.html#a78c5519cce0ca58ff450f866ee68e14f">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a266e5fc6dd153b8fbb3ba2d9e10d2bdf">gd::StandardEvent</a>, <a class="el" href="classgd_1_1_comment_event.html#ac7541b660c0a49a65a4de3b8f43364aa">gd::CommentEvent</a>, <a class="el" href="classgd_1_1_for_each_child_variable_event.html#a0fd8638983846e5c1a479df636c0c3f7">gd::ForEachChildVariableEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#aa70479f49c43642b6a0ed238efc582cf">gd::RepeatEvent</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Public Attributes</h2></td></tr>
 <p>Return a list of all actions of the event. </p>
 <dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the actions. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_for_each_event.html#a9fac54e448a421aab5022038ad51df1f">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a04ab9f03cc22fba3b4a729cd022f9e90">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html#a82ccbbfaacc285d6394ae284276b4457">gd::RepeatEvent</a>, and <a class="el" href="classgd_1_1_standard_event.html#a035713c18f3d3d0cb8d5838e9ba286ec">gd::StandardEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_for_each_child_variable_event.html#a2a8ba7a1d6b83939137b9589096136cb">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a9fac54e448a421aab5022038ad51df1f">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a04ab9f03cc22fba3b4a729cd022f9e90">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html#a82ccbbfaacc285d6394ae284276b4457">gd::RepeatEvent</a>, and <a class="el" href="classgd_1_1_standard_event.html#a035713c18f3d3d0cb8d5838e9ba286ec">gd::StandardEvent</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ Public Attributes</h2></td></tr>
 <p>Return a list of all conditions of the event. </p>
 <dl class="section note"><dt>Note</dt><dd>Used to preprocess or search in the conditions. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_for_each_event.html#ad5d730eeac1de0b3d4a381c983699bb4">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a679e1011d837a58241207039476d432b">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html#a5f120abd9d8176cf0bc5e614a3b6ca64">gd::RepeatEvent</a>, and <a class="el" href="classgd_1_1_standard_event.html#a2ab13444a597a24e1899ac074bbcd8a0">gd::StandardEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_for_each_child_variable_event.html#a1451ad691829d7bd660ecb3c3d118cbd">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#ad5d730eeac1de0b3d4a381c983699bb4">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a679e1011d837a58241207039476d432b">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_repeat_event.html#a5f120abd9d8176cf0bc5e614a3b6ca64">gd::RepeatEvent</a>, and <a class="el" href="classgd_1_1_standard_event.html#a2ab13444a597a24e1899ac074bbcd8a0">gd::StandardEvent</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the sub events, if applicable. </p>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#ad48278fa9e811243605775bd3680e7f8">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a97c39222f2ac1fd9483faecdd5dfc121">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a9ba3be22769c643c478e7e21d4894bdc">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a8b009ff8c79fa8de8aebe0500d4c9120">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#a2f11c29c117e9ebe777ad132208097a1">gd::RepeatEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#ad48278fa9e811243605775bd3680e7f8">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a97c39222f2ac1fd9483faecdd5dfc121">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a9ba3be22769c643c478e7e21d4894bdc">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_for_each_child_variable_event.html#acd52184f121592f5b600df4c41c5e530">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a8b009ff8c79fa8de8aebe0500d4c9120">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#a2f11c29c117e9ebe777ad132208097a1">gd::RepeatEvent</a>.</p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the sub events, if applicable. </p>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#a200e38bf3c636a7542f063fd2f3e4d5a">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a5b9b2d85b3ce41818896f3a93d51cfd9">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a0361b570495b269265fa15c46dfefbc6">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#aa49109a5dd779d98c971b49a62afcb51">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">gd::RepeatEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_group_event.html#a200e38bf3c636a7542f063fd2f3e4d5a">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a5b9b2d85b3ce41818896f3a93d51cfd9">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a0361b570495b269265fa15c46dfefbc6">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_for_each_child_variable_event.html#aa8f64a50396baf928ac9bfd818ad2c7a">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#aa49109a5dd779d98c971b49a62afcb51">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">gd::RepeatEvent</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Derived class have to redefine this function, so as to return true, if they are executable. </p>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_link_event.html#a54c16c6fb278e43d91bf995e6ed02e94">gd::LinkEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a1bb915274190fb4912f01e42ee970758">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a2d7c0ead2a82f05c2a86d69a6fffef44">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_group_event.html#a559514af7c93c5f368c70db0a59b46fe">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a65737dddca23f5283a911745c032445d">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#aa81fbded88598212c81669019461eae7">gd::RepeatEvent</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_link_event.html#a54c16c6fb278e43d91bf995e6ed02e94">gd::LinkEvent</a>, <a class="el" href="classgd_1_1_while_event.html#a1bb915274190fb4912f01e42ee970758">gd::WhileEvent</a>, <a class="el" href="classgd_1_1_for_each_event.html#a2d7c0ead2a82f05c2a86d69a6fffef44">gd::ForEachEvent</a>, <a class="el" href="classgd_1_1_group_event.html#a559514af7c93c5f368c70db0a59b46fe">gd::GroupEvent</a>, <a class="el" href="classgd_1_1_for_each_child_variable_event.html#a7f8b4167e3deb13d64bd30684dffbeec">gd::ForEachChildVariableEvent</a>, <a class="el" href="classgd_1_1_standard_event.html#a65737dddca23f5283a911745c032445d">gd::StandardEvent</a>, and <a class="el" href="classgd_1_1_repeat_event.html#aa81fbded88598212c81669019461eae7">gd::RepeatEvent</a>.</p>
 
 </div>
 </div>
