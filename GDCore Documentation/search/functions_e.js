@@ -56,6 +56,7 @@ var searchData=
   ['reuse',['Reuse',['../classgd_1_1_events_code_generation_context.html#a1eb817f9eb7a36c2e32003640cd29f92',1,'gd::EventsCodeGenerationContext']]],
   ['revision',['Revision',['../classgd_1_1_version_wrapper.html#af4dffce6497776e3a1d7fbc9e8e7f349',1,'gd::VersionWrapper']]],
   ['rfind',['rfind',['../classgd_1_1_string.html#a0800a0dbcd0ed39cc1145d323d355627',1,'gd::String::rfind(const String &amp;search, size_type pos=npos) const '],['../classgd_1_1_string.html#a9c4a1df0510045792c08de83b96bec53',1,'gd::String::rfind(const char *search, size_type pos=npos) const '],['../classgd_1_1_string.html#acbfa1733769352342639221395d60ccd',1,'gd::String::rfind(const value_type &amp;search, size_type pos=npos) const ']]],
+  ['righttrim',['RightTrim',['../classgd_1_1_string.html#aa9e04dd66c4a989e9e9b8219bf7b9f4e',1,'gd::String']]],
   ['rotate',['Rotate',['../class_polygon2d.html#a28c95623d956641e09127e5e080300f2',1,'Polygon2d']]],
   ['round',['Round',['../group___common_programming_tools.html#ga96a3aed6b2d1926a3b080bd50a691a2e',1,'gd']]]
 ];

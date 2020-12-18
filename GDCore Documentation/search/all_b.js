@@ -9,6 +9,7 @@ var searchData=
   ['layouteditorcanvasoptions',['LayoutEditorCanvasOptions',['../classgd_1_1_layout_editor_canvas_options.html',1,'gd']]],
   ['layouthasname',['LayoutHasName',['../structgd_1_1_layout_has_name.html',1,'gd']]],
   ['leavecustomcondition',['LeaveCustomCondition',['../classgd_1_1_events_code_generation_context.html#a8a293f9f0aed82dab2c9d79c35f9cd31',1,'gd::EventsCodeGenerationContext']]],
+  ['lefttrim',['LeftTrim',['../classgd_1_1_string.html#aa5e8ea793ade5cc7bfb056a52fe3e058',1,'gd::String']]],
   ['length',['length',['../classgd_1_1_string.html#a5d2b67431f7286db307c0adc30b0f1d2',1,'gd::String']]],
   ['linkevent',['LinkEvent',['../classgd_1_1_link_event.html',1,'gd']]],
   ['loadallextensions',['LoadAllExtensions',['../classgd_1_1_extensions_loader.html#a8610e17646f890bbea93197f795f0259',1,'gd::ExtensionsLoader']]],

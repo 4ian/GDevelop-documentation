@@ -9,5 +9,6 @@ var searchData=
   ['toutf32',['ToUTF32',['../classgd_1_1_string.html#a3052a07c562e87426cc413dafce7e604',1,'gd::String']]],
   ['toutf8',['ToUTF8',['../classgd_1_1_string.html#af740b712d9ac5a6c71858c51c445d50b',1,'gd::String']]],
   ['towide',['ToWide',['../classgd_1_1_string.html#ab857ed5dd673bf67cd21d3420483a5e2',1,'gd::String']]],
-  ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4',1,'gd::InstructionSentenceFormatter']]]
+  ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4',1,'gd::InstructionSentenceFormatter']]],
+  ['trim',['Trim',['../classgd_1_1_string.html#aadb036ecf85f0cf420e603c5d168c950',1,'gd::String']]]
 ];

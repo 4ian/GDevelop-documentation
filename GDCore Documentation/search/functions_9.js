@@ -4,6 +4,7 @@ var searchData=
   ['launch',['Launch',['../classgd_1_1_arbitrary_events_worker.html#a5bce134f7c8f1fe69c0b6cefa0e84ece',1,'gd::ArbitraryEventsWorker::Launch()'],['../classgd_1_1_arbitrary_events_worker_with_context.html#a4515635f1868166bafae3546def9a5c9',1,'gd::ArbitraryEventsWorkerWithContext::Launch()']]],
   ['launchresourceworkeronevents',['LaunchResourceWorkerOnEvents',['../group___i_d_e.html#ga83157999fa647494e7a1b5872d705ec6',1,'gd']]],
   ['leavecustomcondition',['LeaveCustomCondition',['../classgd_1_1_events_code_generation_context.html#a8a293f9f0aed82dab2c9d79c35f9cd31',1,'gd::EventsCodeGenerationContext']]],
+  ['lefttrim',['LeftTrim',['../classgd_1_1_string.html#aa5e8ea793ade5cc7bfb056a52fe3e058',1,'gd::String']]],
   ['length',['length',['../classgd_1_1_string.html#a5d2b67431f7286db307c0adc30b0f1d2',1,'gd::String']]],
   ['loadallextensions',['LoadAllExtensions',['../classgd_1_1_extensions_loader.html#a8610e17646f890bbea93197f795f0259',1,'gd::ExtensionsLoader']]],
   ['loadallplatformsinmanager',['LoadAllPlatformsInManager',['../classgd_1_1_platform_loader.html#a10d17edfafe3fb6e845e609d81f41928',1,'gd::PlatformLoader']]],

@@ -18,5 +18,6 @@ var searchData=
   ['toutf8',['ToUTF8',['../classgd_1_1_string.html#af740b712d9ac5a6c71858c51c445d50b',1,'gd::String']]],
   ['towide',['ToWide',['../classgd_1_1_string.html#ab857ed5dd673bf67cd21d3420483a5e2',1,'gd::String']]],
   ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4',1,'gd::InstructionSentenceFormatter']]],
+  ['trim',['Trim',['../classgd_1_1_string.html#aadb036ecf85f0cf420e603c5d168c950',1,'gd::String']]],
   ['type',['type',['../classgd_1_1_parameter_metadata.html#a4e75083449de13430ce81dacdc8ea11e',1,'gd::ParameterMetadata::type()'],['../classgd_1_1_behavior_content.html#aaddb956e7168b0230c521ed73f1c40d0',1,'gd::BehaviorContent::type()'],['../classgd_1_1_object.html#aee93060a84f701627a6e1c2d851c3a63',1,'gd::Object::type()']]]
 ];
