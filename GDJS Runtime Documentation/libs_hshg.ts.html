@@ -1,0 +1,775 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      libs/hshg.ts - Documentation
+  </title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+
+  
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      GDevelop JavaScript reference
+    </h3>
+
+    
+      <h3>
+        Resources
+      </h3>
+      
+        <a href="https://github.com/4ian/GDevelop">Github -</a>
+      
+        <a href="http://wiki.compilgames.net/doku.php/gdevelop5/start">GDevelop Documentation</a>
+      
+    
+
+    <h3>Classes</h3><ul><li id="Cell-nav"><a href="Cell.html">Cell</a></li><li id="FontFaceObserverFontManager-nav"><a href="FontFaceObserverFontManager.html">FontFaceObserverFontManager</a><ul class='methods'><li data-type="method" id="FontFaceObserverFontManager-getFontFamily-nav"><a href="FontFaceObserverFontManager.html#getFontFamily">getFontFamily</a></li><li data-type="method" id="FontFaceObserverFontManager-getFontFile-nav"><a href="FontFaceObserverFontManager.html#getFontFile">getFontFile</a></li><li data-type="method" id="FontFaceObserverFontManager-loadFonts-nav"><a href="FontFaceObserverFontManager.html#loadFonts">loadFonts</a></li><li data-type="method" id="FontFaceObserverFontManager-setResources-nav"><a href="FontFaceObserverFontManager.html#setResources">setResources</a></li></ul></li><li id="Force-nav"><a href="Force.html">Force</a><ul class='methods'><li data-type="method" id="Force-getAngle-nav"><a href="Force.html#getAngle">getAngle</a></li><li data-type="method" id="Force-getLength-nav"><a href="Force.html#getLength">getLength</a></li><li data-type="method" id="Force-getMultiplier-nav"><a href="Force.html#getMultiplier">getMultiplier</a></li><li data-type="method" id="Force-getX-nav"><a href="Force.html#getX">getX</a></li><li data-type="method" id="Force-getY-nav"><a href="Force.html#getY">getY</a></li><li data-type="method" id="Force-setAngle-nav"><a href="Force.html#setAngle">setAngle</a></li><li data-type="method" id="Force-setLength-nav"><a href="Force.html#setLength">setLength</a></li><li data-type="method" id="Force-setMultiplier-nav"><a href="Force.html#setMultiplier">setMultiplier</a></li><li data-type="method" id="Force-setX-nav"><a href="Force.html#setX">setX</a></li><li data-type="method" id="Force-setY-nav"><a href="Force.html#setY">setY</a></li></ul></li><li id="Grid-nav"><a href="Grid.html">Grid</a></li><li id="Hashtable-nav"><a href="Hashtable.html">Hashtable</a><ul class='methods'><li data-type="method" id="Hashtable-newFrom-nav"><a href="Hashtable.html#.newFrom">newFrom</a></li><li data-type="method" id="Hashtable-clear-nav"><a href="Hashtable.html#clear">clear</a></li><li data-type="method" id="Hashtable-containsKey-nav"><a href="Hashtable.html#containsKey">containsKey</a></li><li data-type="method" id="Hashtable-firstKey-nav"><a href="Hashtable.html#firstKey">firstKey</a></li><li data-type="method" id="Hashtable-get-nav"><a href="Hashtable.html#get">get</a></li><li data-type="method" id="Hashtable-keys-nav"><a href="Hashtable.html#keys">keys</a></li><li data-type="method" id="Hashtable-put-nav"><a href="Hashtable.html#put">put</a></li><li data-type="method" id="Hashtable-remove-nav"><a href="Hashtable.html#remove">remove</a></li><li data-type="method" id="Hashtable-values-nav"><a href="Hashtable.html#values">values</a></li></ul></li><li id="HotReloader-nav"><a href="HotReloader.html">HotReloader</a><ul class='methods'><li data-type="method" id="HotReloader-deepEqual-nav"><a href="HotReloader.html#.deepEqual">deepEqual</a></li></ul></li><li id="HowlerSound-nav"><a href="HowlerSound.html">HowlerSound</a></li><li id="HowlerSoundManager-nav"><a href="HowlerSoundManager.html">HowlerSoundManager</a><ul class='methods'><li data-type="method" id="HowlerSoundManager-clampRate-nav"><a href="HowlerSoundManager.html#.clampRate">clampRate</a></li><li data-type="method" id="HowlerSoundManager-setResources-nav"><a href="HowlerSoundManager.html#setResources">setResources</a></li></ul></li><li id="HSHG-nav"><a href="HSHG.html">HSHG</a><ul class='methods'><li data-type="method" id="HSHG-addObject-nav"><a href="HSHG.html#addObject">addObject</a></li><li data-type="method" id="HSHG-queryForCollisionWith-nav"><a href="HSHG.html#queryForCollisionWith">queryForCollisionWith</a></li><li data-type="method" id="HSHG-removeObject-nav"><a href="HSHG.html#removeObject">removeObject</a></li><li data-type="method" id="HSHG-update-nav"><a href="HSHG.html#update">update</a></li></ul></li><li id="InputManager-nav"><a href="InputManager.html">InputManager</a><ul class='methods'><li data-type="method" id="InputManager-anyKeyPressed-nav"><a href="InputManager.html#anyKeyPressed">anyKeyPressed</a></li><li data-type="method" id="InputManager-getAllTouchIdentifiers-nav"><a href="InputManager.html#getAllTouchIdentifiers">getAllTouchIdentifiers</a></li><li data-type="method" id="InputManager-getLastPressedKey-nav"><a href="InputManager.html#getLastPressedKey">getLastPressedKey</a></li><li data-type="method" id="InputManager-getMouseWheelDelta-nav"><a href="InputManager.html#getMouseWheelDelta">getMouseWheelDelta</a></li><li data-type="method" id="InputManager-getMouseX-nav"><a href="InputManager.html#getMouseX">getMouseX</a></li><li data-type="method" id="InputManager-getMouseY-nav"><a href="InputManager.html#getMouseY">getMouseY</a></li><li data-type="method" id="InputManager-getTouchX-nav"><a href="InputManager.html#getTouchX">getTouchX</a></li><li data-type="method" id="InputManager-getTouchY-nav"><a href="InputManager.html#getTouchY">getTouchY</a></li><li data-type="method" id="InputManager-isKeyPressed-nav"><a href="InputManager.html#isKeyPressed">isKeyPressed</a></li><li data-type="method" id="InputManager-isMouseButtonPressed-nav"><a href="InputManager.html#isMouseButtonPressed">isMouseButtonPressed</a></li><li data-type="method" id="InputManager-isMouseButtonReleased-nav"><a href="InputManager.html#isMouseButtonReleased">isMouseButtonReleased</a></li><li data-type="method" id="InputManager-isScrollingDown-nav"><a href="InputManager.html#isScrollingDown">isScrollingDown</a></li><li data-type="method" id="InputManager-isScrollingUp-nav"><a href="InputManager.html#isScrollingUp">isScrollingUp</a></li><li data-type="method" id="InputManager-onFrameEnded-nav"><a href="InputManager.html#onFrameEnded">onFrameEnded</a></li><li data-type="method" id="InputManager-onKeyPressed-nav"><a href="InputManager.html#onKeyPressed">onKeyPressed</a></li><li data-type="method" id="InputManager-onKeyReleased-nav"><a href="InputManager.html#onKeyReleased">onKeyReleased</a></li><li data-type="method" id="InputManager-onMouseButtonPressed-nav"><a href="InputManager.html#onMouseButtonPressed">onMouseButtonPressed</a></li><li data-type="method" id="InputManager-onMouseButtonReleased-nav"><a href="InputManager.html#onMouseButtonReleased">onMouseButtonReleased</a></li><li data-type="method" id="InputManager-onMouseMove-nav"><a href="InputManager.html#onMouseMove">onMouseMove</a></li><li data-type="method" id="InputManager-onMouseWheel-nav"><a href="InputManager.html#onMouseWheel">onMouseWheel</a></li><li data-type="method" id="InputManager-touchSimulateMouse-nav"><a href="InputManager.html#touchSimulateMouse">touchSimulateMouse</a></li><li data-type="method" id="InputManager-wasKeyReleased-nav"><a href="InputManager.html#wasKeyReleased">wasKeyReleased</a></li></ul></li><li id="JsonManager-nav"><a href="JsonManager.html">JsonManager</a><ul class='methods'><li data-type="method" id="JsonManager-getLoadedJson-nav"><a href="JsonManager.html#getLoadedJson">getLoadedJson</a></li><li data-type="method" id="JsonManager-isJsonLoaded-nav"><a href="JsonManager.html#isJsonLoaded">isJsonLoaded</a></li><li data-type="method" id="JsonManager-loadJson-nav"><a href="JsonManager.html#loadJson">loadJson</a></li><li data-type="method" id="JsonManager-preloadJsons-nav"><a href="JsonManager.html#preloadJsons">preloadJsons</a></li><li data-type="method" id="JsonManager-setResources-nav"><a href="JsonManager.html#setResources">setResources</a></li></ul></li><li id="Layer-nav"><a href="Layer.html">Layer</a><ul class='methods'><li data-type="method" id="Layer-addEffect-nav"><a href="Layer.html#addEffect">addEffect</a></li><li data-type="method" id="Layer-convertCoords-nav"><a href="Layer.html#convertCoords">convertCoords</a></li><li data-type="method" id="Layer-enableEffect-nav"><a href="Layer.html#enableEffect">enableEffect</a></li><li data-type="method" id="Layer-followBaseLayer-nav"><a href="Layer.html#followBaseLayer">followBaseLayer</a></li><li data-type="method" id="Layer-getCameraHeight-nav"><a href="Layer.html#getCameraHeight">getCameraHeight</a></li><li data-type="method" id="Layer-getCameraRotation-nav"><a href="Layer.html#getCameraRotation">getCameraRotation</a></li><li data-type="method" id="Layer-getCameraWidth-nav"><a href="Layer.html#getCameraWidth">getCameraWidth</a></li><li data-type="method" id="Layer-getCameraX-nav"><a href="Layer.html#getCameraX">getCameraX</a></li><li data-type="method" id="Layer-getCameraY-nav"><a href="Layer.html#getCameraY">getCameraY</a></li><li data-type="method" id="Layer-getCameraZoom-nav"><a href="Layer.html#getCameraZoom">getCameraZoom</a></li><li data-type="method" id="Layer-getClearColor-nav"><a href="Layer.html#getClearColor">getClearColor</a></li><li data-type="method" id="Layer-getDefaultZOrder-nav"><a href="Layer.html#getDefaultZOrder">getDefaultZOrder</a></li><li data-type="method" id="Layer-getElapsedTime-nav"><a href="Layer.html#getElapsedTime">getElapsedTime</a></li><li data-type="method" id="Layer-getInitialEffectsData-nav"><a href="Layer.html#getInitialEffectsData">getInitialEffectsData</a></li><li data-type="method" id="Layer-getName-nav"><a href="Layer.html#getName">getName</a></li><li data-type="method" id="Layer-getRuntimeScene-nav"><a href="Layer.html#getRuntimeScene">getRuntimeScene</a></li><li data-type="method" id="Layer-getTimeScale-nav"><a href="Layer.html#getTimeScale">getTimeScale</a></li><li data-type="method" id="Layer-hasEffect-nav"><a href="Layer.html#hasEffect">hasEffect</a></li><li data-type="method" id="Layer-isEffectEnabled-nav"><a href="Layer.html#isEffectEnabled">isEffectEnabled</a></li><li data-type="method" id="Layer-isLightingLayer-nav"><a href="Layer.html#isLightingLayer">isLightingLayer</a></li><li data-type="method" id="Layer-isVisible-nav"><a href="Layer.html#isVisible">isVisible</a></li><li data-type="method" id="Layer-onGameResolutionResized-nav"><a href="Layer.html#onGameResolutionResized">onGameResolutionResized</a></li><li data-type="method" id="Layer-removeEffect-nav"><a href="Layer.html#removeEffect">removeEffect</a></li><li data-type="method" id="Layer-setCameraRotation-nav"><a href="Layer.html#setCameraRotation">setCameraRotation</a></li><li data-type="method" id="Layer-setCameraX-nav"><a href="Layer.html#setCameraX">setCameraX</a></li><li data-type="method" id="Layer-setCameraY-nav"><a href="Layer.html#setCameraY">setCameraY</a></li><li data-type="method" id="Layer-setCameraZoom-nav"><a href="Layer.html#setCameraZoom">setCameraZoom</a></li><li data-type="method" id="Layer-setClearColor-nav"><a href="Layer.html#setClearColor">setClearColor</a></li><li data-type="method" id="Layer-setDefaultZOrder-nav"><a href="Layer.html#setDefaultZOrder">setDefaultZOrder</a></li><li data-type="method" id="Layer-setEffectBooleanParameter-nav"><a href="Layer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li><li data-type="method" id="Layer-setEffectDoubleParameter-nav"><a href="Layer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li><li data-type="method" id="Layer-setEffectStringParameter-nav"><a href="Layer.html#setEffectStringParameter">setEffectStringParameter</a></li><li data-type="method" id="Layer-setFollowBaseLayerCamera-nav"><a href="Layer.html#setFollowBaseLayerCamera">setFollowBaseLayerCamera</a></li><li data-type="method" id="Layer-setTimeScale-nav"><a href="Layer.html#setTimeScale">setTimeScale</a></li><li data-type="method" id="Layer-show-nav"><a href="Layer.html#show">show</a></li><li data-type="method" id="Layer-update-nav"><a href="Layer.html#update">update</a></li></ul></li><li id="LayerPixiRenderer-nav"><a href="LayerPixiRenderer.html">LayerPixiRenderer</a><ul class='methods'><li data-type="method" id="LayerPixiRenderer-addEffect-nav"><a href="LayerPixiRenderer.html#addEffect">addEffect</a></li><li data-type="method" id="LayerPixiRenderer-addRendererObject-nav"><a href="LayerPixiRenderer.html#addRendererObject">addRendererObject</a></li><li data-type="method" id="LayerPixiRenderer-changeRendererObjectZOrder-nav"><a href="LayerPixiRenderer.html#changeRendererObjectZOrder">changeRendererObjectZOrder</a></li><li data-type="method" id="LayerPixiRenderer-enableEffect-nav"><a href="LayerPixiRenderer.html#enableEffect">enableEffect</a></li><li data-type="method" id="LayerPixiRenderer-hasEffect-nav"><a href="LayerPixiRenderer.html#hasEffect">hasEffect</a></li><li data-type="method" id="LayerPixiRenderer-isEffectEnabled-nav"><a href="LayerPixiRenderer.html#isEffectEnabled">isEffectEnabled</a></li><li data-type="method" id="LayerPixiRenderer-removeEffect-nav"><a href="LayerPixiRenderer.html#removeEffect">removeEffect</a></li><li data-type="method" id="LayerPixiRenderer-removeRendererObject-nav"><a href="LayerPixiRenderer.html#removeRendererObject">removeRendererObject</a></li><li data-type="method" id="LayerPixiRenderer-setEffectBooleanParameter-nav"><a href="LayerPixiRenderer.html#setEffectBooleanParameter">setEffectBooleanParameter</a></li><li data-type="method" id="LayerPixiRenderer-setEffectDoubleParameter-nav"><a href="LayerPixiRenderer.html#setEffectDoubleParameter">setEffectDoubleParameter</a></li><li data-type="method" id="LayerPixiRenderer-setEffectStringParameter-nav"><a href="LayerPixiRenderer.html#setEffectStringParameter">setEffectStringParameter</a></li><li data-type="method" id="LayerPixiRenderer-updatePosition-nav"><a href="LayerPixiRenderer.html#updatePosition">updatePosition</a></li></ul></li><li id="OnceTriggers-nav"><a href="OnceTriggers.html">OnceTriggers</a><ul class='methods'><li data-type="method" id="OnceTriggers-startNewFrame-nav"><a href="OnceTriggers.html#startNewFrame">startNewFrame</a></li><li data-type="method" id="OnceTriggers-triggerOnce-nav"><a href="OnceTriggers.html#triggerOnce">triggerOnce</a></li></ul></li><li id="PixiImageManager-nav"><a href="PixiImageManager.html">PixiImageManager</a><ul class='methods'><li data-type="method" id="PixiImageManager-getInvalidPIXITexture-nav"><a href="PixiImageManager.html#getInvalidPIXITexture">getInvalidPIXITexture</a></li><li data-type="method" id="PixiImageManager-getPIXITexture-nav"><a href="PixiImageManager.html#getPIXITexture">getPIXITexture</a></li><li data-type="method" id="PixiImageManager-getPIXIVideoTexture-nav"><a href="PixiImageManager.html#getPIXIVideoTexture">getPIXIVideoTexture</a></li><li data-type="method" id="PixiImageManager-loadTextures-nav"><a href="PixiImageManager.html#loadTextures">loadTextures</a></li><li data-type="method" id="PixiImageManager-setResources-nav"><a href="PixiImageManager.html#setResources">setResources</a></li></ul></li><li id="Polygon-nav"><a href="Polygon.html">Polygon</a><ul class='methods'><li data-type="method" id="Polygon-collisionTest-nav"><a href="Polygon.html#.collisionTest">collisionTest</a></li><li data-type="method" id="Polygon-isPointInside-nav"><a href="Polygon.html#.isPointInside">isPointInside</a></li><li data-type="method" id="Polygon-raycastTest-nav"><a href="Polygon.html#.raycastTest">raycastTest</a></li></ul></li><li id="Profiler-nav"><a href="Profiler.html">Profiler</a><ul class='methods'><li data-type="method" id="Profiler-getProfilerSectionTexts-nav"><a href="Profiler.html#.getProfilerSectionTexts">getProfilerSectionTexts</a></li><li data-type="method" id="Profiler-getFramesAverageMeasures-nav"><a href="Profiler.html#getFramesAverageMeasures">getFramesAverageMeasures</a></li><li data-type="method" id="Profiler-getStats-nav"><a href="Profiler.html#getStats">getStats</a></li></ul></li><li id="RuntimeBehavior-nav"><a href="RuntimeBehavior.html">RuntimeBehavior</a><ul class='methods'><li data-type="method" id="RuntimeBehavior-activate-nav"><a href="RuntimeBehavior.html#activate">activate</a></li><li data-type="method" id="RuntimeBehavior-activated-nav"><a href="RuntimeBehavior.html#activated">activated</a></li><li data-type="method" id="RuntimeBehavior-doStepPostEvents-nav"><a href="RuntimeBehavior.html#doStepPostEvents">doStepPostEvents</a></li><li data-type="method" id="RuntimeBehavior-doStepPreEvents-nav"><a href="RuntimeBehavior.html#doStepPreEvents">doStepPreEvents</a></li><li data-type="method" id="RuntimeBehavior-getName-nav"><a href="RuntimeBehavior.html#getName">getName</a></li><li data-type="method" id="RuntimeBehavior-getNameId-nav"><a href="RuntimeBehavior.html#getNameId">getNameId</a></li><li data-type="method" id="RuntimeBehavior-onActivate-nav"><a href="RuntimeBehavior.html#onActivate">onActivate</a></li><li data-type="method" id="RuntimeBehavior-onCreated-nav"><a href="RuntimeBehavior.html#onCreated">onCreated</a></li><li data-type="method" id="RuntimeBehavior-onDeActivate-nav"><a href="RuntimeBehavior.html#onDeActivate">onDeActivate</a></li><li data-type="method" id="RuntimeBehavior-onDestroy-nav"><a href="RuntimeBehavior.html#onDestroy">onDestroy</a></li><li data-type="method" id="RuntimeBehavior-onObjectHotReloaded-nav"><a href="RuntimeBehavior.html#onObjectHotReloaded">onObjectHotReloaded</a></li><li data-type="method" id="RuntimeBehavior-stepPostEvents-nav"><a href="RuntimeBehavior.html#stepPostEvents">stepPostEvents</a></li><li data-type="method" id="RuntimeBehavior-stepPreEvents-nav"><a href="RuntimeBehavior.html#stepPreEvents">stepPreEvents</a></li><li data-type="method" id="RuntimeBehavior-updateFromBehaviorData-nav"><a href="RuntimeBehavior.html#updateFromBehaviorData">updateFromBehaviorData</a></li></ul></li><li id="RuntimeGame-nav"><a href="RuntimeGame.html">RuntimeGame</a><ul class='methods'><li data-type="method" id="RuntimeGame-enableMetrics-nav"><a href="RuntimeGame.html#enableMetrics">enableMetrics</a></li><li data-type="method" id="RuntimeGame-getAdaptGameResolutionAtRuntime-nav"><a href="RuntimeGame.html#getAdaptGameResolutionAtRuntime">getAdaptGameResolutionAtRuntime</a></li><li data-type="method" id="RuntimeGame-getAdditionalOptions-nav"><a href="RuntimeGame.html#getAdditionalOptions">getAdditionalOptions</a></li><li data-type="method" id="RuntimeGame-getExtensionProperty-nav"><a href="RuntimeGame.html#getExtensionProperty">getExtensionProperty</a></li><li data-type="method" id="RuntimeGame-getExternalLayoutData-nav"><a href="RuntimeGame.html#getExternalLayoutData">getExternalLayoutData</a></li><li data-type="method" id="RuntimeGame-getFontManager-nav"><a href="RuntimeGame.html#getFontManager">getFontManager</a></li><li data-type="method" id="RuntimeGame-getGameData-nav"><a href="RuntimeGame.html#getGameData">getGameData</a></li><li data-type="method" id="RuntimeGame-getGameResolutionHeight-nav"><a href="RuntimeGame.html#getGameResolutionHeight">getGameResolutionHeight</a></li><li data-type="method" id="RuntimeGame-getGameResolutionResizeMode-nav"><a href="RuntimeGame.html#getGameResolutionResizeMode">getGameResolutionResizeMode</a></li><li data-type="method" id="RuntimeGame-getGameResolutionWidth-nav"><a href="RuntimeGame.html#getGameResolutionWidth">getGameResolutionWidth</a></li><li data-type="method" id="RuntimeGame-getImageManager-nav"><a href="RuntimeGame.html#getImageManager">getImageManager</a></li><li data-type="method" id="RuntimeGame-getInitialObjectsData-nav"><a href="RuntimeGame.html#getInitialObjectsData">getInitialObjectsData</a></li><li data-type="method" id="RuntimeGame-getInputManager-nav"><a href="RuntimeGame.html#getInputManager">getInputManager</a></li><li data-type="method" id="RuntimeGame-getJsonManager-nav"><a href="RuntimeGame.html#getJsonManager">getJsonManager</a></li><li data-type="method" id="RuntimeGame-getMinimalFramerate-nav"><a href="RuntimeGame.html#getMinimalFramerate">getMinimalFramerate</a></li><li data-type="method" id="RuntimeGame-getOriginalHeight-nav"><a href="RuntimeGame.html#getOriginalHeight">getOriginalHeight</a></li><li data-type="method" id="RuntimeGame-getOriginalWidth-nav"><a href="RuntimeGame.html#getOriginalWidth">getOriginalWidth</a></li><li data-type="method" id="RuntimeGame-getScaleMode-nav"><a href="RuntimeGame.html#getScaleMode">getScaleMode</a></li><li data-type="method" id="RuntimeGame-getSceneData-nav"><a href="RuntimeGame.html#getSceneData">getSceneData</a></li><li data-type="method" id="RuntimeGame-getSceneStack-nav"><a href="RuntimeGame.html#getSceneStack">getSceneStack</a></li><li data-type="method" id="RuntimeGame-getSoundManager-nav"><a href="RuntimeGame.html#getSoundManager">getSoundManager</a></li><li data-type="method" id="RuntimeGame-getVariables-nav"><a href="RuntimeGame.html#getVariables">getVariables</a></li><li data-type="method" id="RuntimeGame-hasScene-nav"><a href="RuntimeGame.html#hasScene">hasScene</a></li><li data-type="method" id="RuntimeGame-isPreview-nav"><a href="RuntimeGame.html#isPreview">isPreview</a></li><li data-type="method" id="RuntimeGame-loadAllAssets-nav"><a href="RuntimeGame.html#loadAllAssets">loadAllAssets</a></li><li data-type="method" id="RuntimeGame-onWindowInnerSizeChanged-nav"><a href="RuntimeGame.html#onWindowInnerSizeChanged">onWindowInnerSizeChanged</a></li><li data-type="method" id="RuntimeGame-pause-nav"><a href="RuntimeGame.html#pause">pause</a></li><li data-type="method" id="RuntimeGame-setAdaptGameResolutionAtRuntime-nav"><a href="RuntimeGame.html#setAdaptGameResolutionAtRuntime">setAdaptGameResolutionAtRuntime</a></li><li data-type="method" id="RuntimeGame-setGameResolutionResizeMode-nav"><a href="RuntimeGame.html#setGameResolutionResizeMode">setGameResolutionResizeMode</a></li><li data-type="method" id="RuntimeGame-setGameResolutionSize-nav"><a href="RuntimeGame.html#setGameResolutionSize">setGameResolutionSize</a></li><li data-type="method" id="RuntimeGame-setProjectData-nav"><a href="RuntimeGame.html#setProjectData">setProjectData</a></li><li data-type="method" id="RuntimeGame-startCurrentSceneProfiler-nav"><a href="RuntimeGame.html#startCurrentSceneProfiler">startCurrentSceneProfiler</a></li><li data-type="method" id="RuntimeGame-startGameLoop-nav"><a href="RuntimeGame.html#startGameLoop">startGameLoop</a></li><li data-type="method" id="RuntimeGame-stopCurrentSceneProfiler-nav"><a href="RuntimeGame.html#stopCurrentSceneProfiler">stopCurrentSceneProfiler</a></li><li data-type="method" id="RuntimeGame-wasFirstSceneLoaded-nav"><a href="RuntimeGame.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li></ul></li><li id="RuntimeGamePixiRenderer-nav"><a href="RuntimeGamePixiRenderer.html">RuntimeGamePixiRenderer</a><ul class='methods'><li data-type="method" id="RuntimeGamePixiRenderer-bindStandardEvents-nav"><a href="RuntimeGamePixiRenderer.html#bindStandardEvents">bindStandardEvents</a></li><li data-type="method" id="RuntimeGamePixiRenderer-centerWindow-nav"><a href="RuntimeGamePixiRenderer.html#centerWindow">centerWindow</a></li><li data-type="method" id="RuntimeGamePixiRenderer-createStandardCanvas-nav"><a href="RuntimeGamePixiRenderer.html#createStandardCanvas">createStandardCanvas</a></li><li data-type="method" id="RuntimeGamePixiRenderer-getCanvas-nav"><a href="RuntimeGamePixiRenderer.html#getCanvas">getCanvas</a></li><li data-type="method" id="RuntimeGamePixiRenderer-getElectron-nav"><a href="RuntimeGamePixiRenderer.html#getElectron">getElectron</a></li><li data-type="method" id="RuntimeGamePixiRenderer-isFullScreen-nav"><a href="RuntimeGamePixiRenderer.html#isFullScreen">isFullScreen</a></li><li data-type="method" id="RuntimeGamePixiRenderer-isWebGLSupported-nav"><a href="RuntimeGamePixiRenderer.html#isWebGLSupported">isWebGLSupported</a></li><li data-type="method" id="RuntimeGamePixiRenderer-keepAspectRatio-nav"><a href="RuntimeGamePixiRenderer.html#keepAspectRatio">keepAspectRatio</a></li><li data-type="method" id="RuntimeGamePixiRenderer-openURL-nav"><a href="RuntimeGamePixiRenderer.html#openURL">openURL</a></li><li data-type="method" id="RuntimeGamePixiRenderer-setFullScreen-nav"><a href="RuntimeGamePixiRenderer.html#setFullScreen">setFullScreen</a></li><li data-type="method" id="RuntimeGamePixiRenderer-setMargins-nav"><a href="RuntimeGamePixiRenderer.html#setMargins">setMargins</a></li><li data-type="method" id="RuntimeGamePixiRenderer-setWindowSize-nav"><a href="RuntimeGamePixiRenderer.html#setWindowSize">setWindowSize</a></li><li data-type="method" id="RuntimeGamePixiRenderer-stopGame-nav"><a href="RuntimeGamePixiRenderer.html#stopGame">stopGame</a></li><li data-type="method" id="RuntimeGamePixiRenderer-updateRendererSize-nav"><a href="RuntimeGamePixiRenderer.html#updateRendererSize">updateRendererSize</a></li></ul></li><li id="RuntimeObject-nav"><a href="RuntimeObject.html">RuntimeObject</a><ul class='methods'><li data-type="method" id="RuntimeObject-collisionTest-nav"><a href="RuntimeObject.html#.collisionTest">collisionTest</a></li><li data-type="method" id="RuntimeObject-distanceTest-nav"><a href="RuntimeObject.html#.distanceTest">distanceTest</a></li><li data-type="method" id="RuntimeObject-getNameIdentifier-nav"><a href="RuntimeObject.html#.getNameIdentifier">getNameIdentifier</a></li><li data-type="method" id="RuntimeObject-getVariableChildCount-nav"><a href="RuntimeObject.html#.getVariableChildCount">getVariableChildCount</a></li><li data-type="method" id="RuntimeObject-getVariableNumber-nav"><a href="RuntimeObject.html#.getVariableNumber">getVariableNumber</a></li><li data-type="method" id="RuntimeObject-getVariableString-nav"><a href="RuntimeObject.html#.getVariableString">getVariableString</a></li><li data-type="method" id="RuntimeObject-returnVariable-nav"><a href="RuntimeObject.html#.returnVariable">returnVariable</a></li><li data-type="method" id="RuntimeObject-setVariableNumber-nav"><a href="RuntimeObject.html#.setVariableNumber">setVariableNumber</a></li><li data-type="method" id="RuntimeObject-setVariableString-nav"><a href="RuntimeObject.html#.setVariableString">setVariableString</a></li><li data-type="method" id="RuntimeObject-variableChildExists-nav"><a href="RuntimeObject.html#.variableChildExists">variableChildExists</a></li><li data-type="method" id="RuntimeObject-variableClearChildren-nav"><a href="RuntimeObject.html#.variableClearChildren">variableClearChildren</a></li><li data-type="method" id="RuntimeObject-variableRemoveChild-nav"><a href="RuntimeObject.html#.variableRemoveChild">variableRemoveChild</a></li><li data-type="method" id="RuntimeObject-activateBehavior-nav"><a href="RuntimeObject.html#activateBehavior">activateBehavior</a></li><li data-type="method" id="RuntimeObject-addForce-nav"><a href="RuntimeObject.html#addForce">addForce</a></li><li data-type="method" id="RuntimeObject-addForceTowardObject-nav"><a href="RuntimeObject.html#addForceTowardObject">addForceTowardObject</a></li><li data-type="method" id="RuntimeObject-addForceTowardPosition-nav"><a href="RuntimeObject.html#addForceTowardPosition">addForceTowardPosition</a></li><li data-type="method" id="RuntimeObject-addNewBehavior-nav"><a href="RuntimeObject.html#addNewBehavior">addNewBehavior</a></li><li data-type="method" id="RuntimeObject-addPolarForce-nav"><a href="RuntimeObject.html#addPolarForce">addPolarForce</a></li><li data-type="method" id="RuntimeObject-averageForceAngleIs-nav"><a href="RuntimeObject.html#averageForceAngleIs">averageForceAngleIs</a></li><li data-type="method" id="RuntimeObject-behaviorActivated-nav"><a href="RuntimeObject.html#behaviorActivated">behaviorActivated</a></li><li data-type="method" id="RuntimeObject-clearForces-nav"><a href="RuntimeObject.html#clearForces">clearForces</a></li><li data-type="method" id="RuntimeObject-cursorOnObject-nav"><a href="RuntimeObject.html#cursorOnObject">cursorOnObject</a></li><li data-type="method" id="RuntimeObject-deleteFromScene-nav"><a href="RuntimeObject.html#deleteFromScene">deleteFromScene</a></li><li data-type="method" id="RuntimeObject-extraInitializationFromInitialInstance-nav"><a href="RuntimeObject.html#extraInitializationFromInitialInstance">extraInitializationFromInitialInstance</a></li><li data-type="method" id="RuntimeObject-getAABB-nav"><a href="RuntimeObject.html#getAABB">getAABB</a></li><li data-type="method" id="RuntimeObject-getAngle-nav"><a href="RuntimeObject.html#getAngle">getAngle</a></li><li data-type="method" id="RuntimeObject-getAngleToObject-nav"><a href="RuntimeObject.html#getAngleToObject">getAngleToObject</a></li><li data-type="method" id="RuntimeObject-getAngleToPosition-nav"><a href="RuntimeObject.html#getAngleToPosition">getAngleToPosition</a></li><li data-type="method" id="RuntimeObject-getAverageForce-nav"><a href="RuntimeObject.html#getAverageForce">getAverageForce</a></li><li data-type="method" id="RuntimeObject-getBehavior-nav"><a href="RuntimeObject.html#getBehavior">getBehavior</a></li><li data-type="method" id="RuntimeObject-getCenterX-nav"><a href="RuntimeObject.html#getCenterX">getCenterX</a></li><li data-type="method" id="RuntimeObject-getCenterY-nav"><a href="RuntimeObject.html#getCenterY">getCenterY</a></li><li data-type="method" id="RuntimeObject-getDistanceToObject-nav"><a href="RuntimeObject.html#getDistanceToObject">getDistanceToObject</a></li><li data-type="method" id="RuntimeObject-getDistanceToPosition-nav"><a href="RuntimeObject.html#getDistanceToPosition">getDistanceToPosition</a></li><li data-type="method" id="RuntimeObject-getDrawableX-nav"><a href="RuntimeObject.html#getDrawableX">getDrawableX</a></li><li data-type="method" id="RuntimeObject-getDrawableY-nav"><a href="RuntimeObject.html#getDrawableY">getDrawableY</a></li><li data-type="method" id="RuntimeObject-getElapsedTime-nav"><a href="RuntimeObject.html#getElapsedTime">getElapsedTime</a></li><li data-type="method" id="RuntimeObject-getHeight-nav"><a href="RuntimeObject.html#getHeight">getHeight</a></li><li data-type="method" id="RuntimeObject-getHitBoxes-nav"><a href="RuntimeObject.html#getHitBoxes">getHitBoxes</a></li><li data-type="method" id="RuntimeObject-getLayer-nav"><a href="RuntimeObject.html#getLayer">getLayer</a></li><li data-type="method" id="RuntimeObject-getName-nav"><a href="RuntimeObject.html#getName">getName</a></li><li data-type="method" id="RuntimeObject-getNameId-nav"><a href="RuntimeObject.html#getNameId">getNameId</a></li><li data-type="method" id="RuntimeObject-getRendererObject-nav"><a href="RuntimeObject.html#getRendererObject">getRendererObject</a></li><li data-type="method" id="RuntimeObject-getSqDistanceToObject-nav"><a href="RuntimeObject.html#getSqDistanceToObject">getSqDistanceToObject</a></li><li data-type="method" id="RuntimeObject-getSqDistanceToPosition-nav"><a href="RuntimeObject.html#getSqDistanceToPosition">getSqDistanceToPosition</a></li><li data-type="method" id="RuntimeObject-getTimerElapsedTimeInSeconds-nav"><a href="RuntimeObject.html#getTimerElapsedTimeInSeconds">getTimerElapsedTimeInSeconds</a></li><li data-type="method" id="RuntimeObject-getUniqueId-nav"><a href="RuntimeObject.html#getUniqueId">getUniqueId</a></li><li data-type="method" id="RuntimeObject-getVariables-nav"><a href="RuntimeObject.html#getVariables">getVariables</a></li><li data-type="method" id="RuntimeObject-getVisibilityAABB-nav"><a href="RuntimeObject.html#getVisibilityAABB">getVisibilityAABB</a></li><li data-type="method" id="RuntimeObject-getWidth-nav"><a href="RuntimeObject.html#getWidth">getWidth</a></li><li data-type="method" id="RuntimeObject-getX-nav"><a href="RuntimeObject.html#getX">getX</a></li><li data-type="method" id="RuntimeObject-getY-nav"><a href="RuntimeObject.html#getY">getY</a></li><li data-type="method" id="RuntimeObject-getZOrder-nav"><a href="RuntimeObject.html#getZOrder">getZOrder</a></li><li data-type="method" id="RuntimeObject-hasBehavior-nav"><a href="RuntimeObject.html#hasBehavior">hasBehavior</a></li><li data-type="method" id="RuntimeObject-hasNoForces-nav"><a href="RuntimeObject.html#hasNoForces">hasNoForces</a></li><li data-type="method" id="RuntimeObject-hasVariable-nav"><a href="RuntimeObject.html#hasVariable">hasVariable</a></li><li data-type="method" id="RuntimeObject-hide-nav"><a href="RuntimeObject.html#hide">hide</a></li><li data-type="method" id="RuntimeObject-insideObject-nav"><a href="RuntimeObject.html#insideObject">insideObject</a></li><li data-type="method" id="RuntimeObject-isCollidingWithPoint-nav"><a href="RuntimeObject.html#isCollidingWithPoint">isCollidingWithPoint</a></li><li data-type="method" id="RuntimeObject-isHidden-nav"><a href="RuntimeObject.html#isHidden">isHidden</a></li><li data-type="method" id="RuntimeObject-isOnLayer-nav"><a href="RuntimeObject.html#isOnLayer">isOnLayer</a></li><li data-type="method" id="RuntimeObject-isVisible-nav"><a href="RuntimeObject.html#isVisible">isVisible</a></li><li data-type="method" id="RuntimeObject-notifyBehaviorsObjectHotReloaded-nav"><a href="RuntimeObject.html#notifyBehaviorsObjectHotReloaded">notifyBehaviorsObjectHotReloaded</a></li><li data-type="method" id="RuntimeObject-onCreated-nav"><a href="RuntimeObject.html#onCreated">onCreated</a></li><li data-type="method" id="RuntimeObject-onDestroyFromScene-nav"><a href="RuntimeObject.html#onDestroyFromScene">onDestroyFromScene</a></li><li data-type="method" id="RuntimeObject-pauseTimer-nav"><a href="RuntimeObject.html#pauseTimer">pauseTimer</a></li><li data-type="method" id="RuntimeObject-putAround-nav"><a href="RuntimeObject.html#putAround">putAround</a></li><li data-type="method" id="RuntimeObject-putAroundObject-nav"><a href="RuntimeObject.html#putAroundObject">putAroundObject</a></li><li data-type="method" id="RuntimeObject-raycastTest-nav"><a href="RuntimeObject.html#raycastTest">raycastTest</a></li><li data-type="method" id="RuntimeObject-reinitialize-nav"><a href="RuntimeObject.html#reinitialize">reinitialize</a></li><li data-type="method" id="RuntimeObject-removeBehavior-nav"><a href="RuntimeObject.html#removeBehavior">removeBehavior</a></li><li data-type="method" id="RuntimeObject-removeTimer-nav"><a href="RuntimeObject.html#removeTimer">removeTimer</a></li><li data-type="method" id="RuntimeObject-resetTimer-nav"><a href="RuntimeObject.html#resetTimer">resetTimer</a></li><li data-type="method" id="RuntimeObject-rotate-nav"><a href="RuntimeObject.html#rotate">rotate</a></li><li data-type="method" id="RuntimeObject-separateFromObjects-nav"><a href="RuntimeObject.html#separateFromObjects">separateFromObjects</a></li><li data-type="method" id="RuntimeObject-separateFromObjectsList-nav"><a href="RuntimeObject.html#separateFromObjectsList">separateFromObjectsList</a></li><li data-type="method" id="RuntimeObject-separateObjectsWithForces-nav"><a href="RuntimeObject.html#separateObjectsWithForces">separateObjectsWithForces</a></li><li data-type="method" id="RuntimeObject-separateObjectsWithoutForces-nav"><a href="RuntimeObject.html#separateObjectsWithoutForces">separateObjectsWithoutForces</a></li><li data-type="method" id="RuntimeObject-setAngle-nav"><a href="RuntimeObject.html#setAngle">setAngle</a></li><li data-type="method" id="RuntimeObject-setHeight-nav"><a href="RuntimeObject.html#setHeight">setHeight</a></li><li data-type="method" id="RuntimeObject-setLayer-nav"><a href="RuntimeObject.html#setLayer">setLayer</a></li><li data-type="method" id="RuntimeObject-setPosition-nav"><a href="RuntimeObject.html#setPosition">setPosition</a></li><li data-type="method" id="RuntimeObject-setWidth-nav"><a href="RuntimeObject.html#setWidth">setWidth</a></li><li data-type="method" id="RuntimeObject-setX-nav"><a href="RuntimeObject.html#setX">setX</a></li><li data-type="method" id="RuntimeObject-setY-nav"><a href="RuntimeObject.html#setY">setY</a></li><li data-type="method" id="RuntimeObject-setZOrder-nav"><a href="RuntimeObject.html#setZOrder">setZOrder</a></li><li data-type="method" id="RuntimeObject-stepBehaviorsPostEvents-nav"><a href="RuntimeObject.html#stepBehaviorsPostEvents">stepBehaviorsPostEvents</a></li><li data-type="method" id="RuntimeObject-stepBehaviorsPreEvents-nav"><a href="RuntimeObject.html#stepBehaviorsPreEvents">stepBehaviorsPreEvents</a></li><li data-type="method" id="RuntimeObject-timerElapsedTime-nav"><a href="RuntimeObject.html#timerElapsedTime">timerElapsedTime</a></li><li data-type="method" id="RuntimeObject-timerPaused-nav"><a href="RuntimeObject.html#timerPaused">timerPaused</a></li><li data-type="method" id="RuntimeObject-unpauseTimer-nav"><a href="RuntimeObject.html#unpauseTimer">unpauseTimer</a></li><li data-type="method" id="RuntimeObject-update-nav"><a href="RuntimeObject.html#update">update</a></li><li data-type="method" id="RuntimeObject-updateAABB-nav"><a href="RuntimeObject.html#updateAABB">updateAABB</a></li><li data-type="method" id="RuntimeObject-updateForces-nav"><a href="RuntimeObject.html#updateForces">updateForces</a></li><li data-type="method" id="RuntimeObject-updateFromObjectData-nav"><a href="RuntimeObject.html#updateFromObjectData">updateFromObjectData</a></li><li data-type="method" id="RuntimeObject-updateHitBoxes-nav"><a href="RuntimeObject.html#updateHitBoxes">updateHitBoxes</a></li><li data-type="method" id="RuntimeObject-updateTimers-nav"><a href="RuntimeObject.html#updateTimers">updateTimers</a></li></ul></li><li id="RuntimeScene-nav"><a href="RuntimeScene.html">RuntimeScene</a><ul class='methods'><li data-type="method" id="RuntimeScene-addLayer-nav"><a href="RuntimeScene.html#addLayer">addLayer</a></li><li data-type="method" id="RuntimeScene-addObject-nav"><a href="RuntimeScene.html#addObject">addObject</a></li><li data-type="method" id="RuntimeScene-createNewUniqueId-nav"><a href="RuntimeScene.html#createNewUniqueId">createNewUniqueId</a></li><li data-type="method" id="RuntimeScene-createObject-nav"><a href="RuntimeScene.html#createObject">createObject</a></li><li data-type="method" id="RuntimeScene-createObjectsFrom-nav"><a href="RuntimeScene.html#createObjectsFrom">createObjectsFrom</a></li><li data-type="method" id="RuntimeScene-getAdhocListOfAllInstances-nav"><a href="RuntimeScene.html#getAdhocListOfAllInstances">getAdhocListOfAllInstances</a></li><li data-type="method" id="RuntimeScene-getAllLayerNames-nav"><a href="RuntimeScene.html#getAllLayerNames">getAllLayerNames</a></li><li data-type="method" id="RuntimeScene-getBackgroundColor-nav"><a href="RuntimeScene.html#getBackgroundColor">getBackgroundColor</a></li><li data-type="method" id="RuntimeScene-getGame-nav"><a href="RuntimeScene.html#getGame">getGame</a></li><li data-type="method" id="RuntimeScene-getInitialSharedDataForBehavior-nav"><a href="RuntimeScene.html#getInitialSharedDataForBehavior">getInitialSharedDataForBehavior</a></li><li data-type="method" id="RuntimeScene-getLayer-nav"><a href="RuntimeScene.html#getLayer">getLayer</a></li><li data-type="method" id="RuntimeScene-getName-nav"><a href="RuntimeScene.html#getName">getName</a></li><li data-type="method" id="RuntimeScene-getObjects-nav"><a href="RuntimeScene.html#getObjects">getObjects</a></li><li data-type="method" id="RuntimeScene-getOnceTriggers-nav"><a href="RuntimeScene.html#getOnceTriggers">getOnceTriggers</a></li><li data-type="method" id="RuntimeScene-getProfiler-nav"><a href="RuntimeScene.html#getProfiler">getProfiler</a></li><li data-type="method" id="RuntimeScene-getRenderer-nav"><a href="RuntimeScene.html#getRenderer">getRenderer</a></li><li data-type="method" id="RuntimeScene-getRequestedChange-nav"><a href="RuntimeScene.html#getRequestedChange">getRequestedChange</a></li><li data-type="method" id="RuntimeScene-getRequestedScene-nav"><a href="RuntimeScene.html#getRequestedScene">getRequestedScene</a></li><li data-type="method" id="RuntimeScene-getSoundManager-nav"><a href="RuntimeScene.html#getSoundManager">getSoundManager</a></li><li data-type="method" id="RuntimeScene-getTimeManager-nav"><a href="RuntimeScene.html#getTimeManager">getTimeManager</a></li><li data-type="method" id="RuntimeScene-getVariables-nav"><a href="RuntimeScene.html#getVariables">getVariables</a></li><li data-type="method" id="RuntimeScene-hasLayer-nav"><a href="RuntimeScene.html#hasLayer">hasLayer</a></li><li data-type="method" id="RuntimeScene-isObjectRegistered-nav"><a href="RuntimeScene.html#isObjectRegistered">isObjectRegistered</a></li><li data-type="method" id="RuntimeScene-loadFromScene-nav"><a href="RuntimeScene.html#loadFromScene">loadFromScene</a></li><li data-type="method" id="RuntimeScene-markObjectForDeletion-nav"><a href="RuntimeScene.html#markObjectForDeletion">markObjectForDeletion</a></li><li data-type="method" id="RuntimeScene-onPause-nav"><a href="RuntimeScene.html#onPause">onPause</a></li><li data-type="method" id="RuntimeScene-onResume-nav"><a href="RuntimeScene.html#onResume">onResume</a></li><li data-type="method" id="RuntimeScene-registerObject-nav"><a href="RuntimeScene.html#registerObject">registerObject</a></li><li data-type="method" id="RuntimeScene-removeLayer-nav"><a href="RuntimeScene.html#removeLayer">removeLayer</a></li><li data-type="method" id="RuntimeScene-render-nav"><a href="RuntimeScene.html#render">render</a></li><li data-type="method" id="RuntimeScene-renderAndStep-nav"><a href="RuntimeScene.html#renderAndStep">renderAndStep</a></li><li data-type="method" id="RuntimeScene-requestChange-nav"><a href="RuntimeScene.html#requestChange">requestChange</a></li><li data-type="method" id="RuntimeScene-sceneJustResumed-nav"><a href="RuntimeScene.html#sceneJustResumed">sceneJustResumed</a></li><li data-type="method" id="RuntimeScene-setBackgroundColor-nav"><a href="RuntimeScene.html#setBackgroundColor">setBackgroundColor</a></li><li data-type="method" id="RuntimeScene-setEventsFunction-nav"><a href="RuntimeScene.html#setEventsFunction">setEventsFunction</a></li><li data-type="method" id="RuntimeScene-setEventsGeneratedCodeFunction-nav"><a href="RuntimeScene.html#setEventsGeneratedCodeFunction">setEventsGeneratedCodeFunction</a></li><li data-type="method" id="RuntimeScene-setInitialSharedDataForBehavior-nav"><a href="RuntimeScene.html#setInitialSharedDataForBehavior">setInitialSharedDataForBehavior</a></li><li data-type="method" id="RuntimeScene-setLayerIndex-nav"><a href="RuntimeScene.html#setLayerIndex">setLayerIndex</a></li><li data-type="method" id="RuntimeScene-startProfiler-nav"><a href="RuntimeScene.html#startProfiler">startProfiler</a></li><li data-type="method" id="RuntimeScene-stopProfiler-nav"><a href="RuntimeScene.html#stopProfiler">stopProfiler</a></li><li data-type="method" id="RuntimeScene-unloadScene-nav"><a href="RuntimeScene.html#unloadScene">unloadScene</a></li><li data-type="method" id="RuntimeScene-unregisterObject-nav"><a href="RuntimeScene.html#unregisterObject">unregisterObject</a></li><li data-type="method" id="RuntimeScene-updateObject-nav"><a href="RuntimeScene.html#updateObject">updateObject</a></li><li data-type="method" id="RuntimeScene-updateObjectsForces-nav"><a href="RuntimeScene.html#updateObjectsForces">updateObjectsForces</a></li></ul></li><li id="RuntimeScenePixiRenderer-nav"><a href="RuntimeScenePixiRenderer.html">RuntimeScenePixiRenderer</a></li><li id="SceneStack-nav"><a href="SceneStack.html">SceneStack</a><ul class='methods'><li data-type="method" id="SceneStack-getCurrentScene-nav"><a href="SceneStack.html#getCurrentScene">getCurrentScene</a></li><li data-type="method" id="SceneStack-onGameResolutionResized-nav"><a href="SceneStack.html#onGameResolutionResized">onGameResolutionResized</a></li><li data-type="method" id="SceneStack-push-nav"><a href="SceneStack.html#push">push</a></li><li data-type="method" id="SceneStack-replace-nav"><a href="SceneStack.html#replace">replace</a></li><li data-type="method" id="SceneStack-wasFirstSceneLoaded-nav"><a href="SceneStack.html#wasFirstSceneLoaded">wasFirstSceneLoaded</a></li></ul></li><li id="SpriteAnimation-nav"><a href="SpriteAnimation.html">SpriteAnimation</a><ul class='methods'><li data-type="method" id="SpriteAnimation-reinitialize-nav"><a href="SpriteAnimation.html#reinitialize">reinitialize</a></li></ul></li><li id="SpriteAnimationDirection-nav"><a href="SpriteAnimationDirection.html">SpriteAnimationDirection</a><ul class='methods'><li data-type="method" id="SpriteAnimationDirection-reinitialize-nav"><a href="SpriteAnimationDirection.html#reinitialize">reinitialize</a></li></ul></li><li id="SpriteAnimationFrame-nav"><a href="SpriteAnimationFrame.html">SpriteAnimationFrame</a><ul class='methods'><li data-type="method" id="SpriteAnimationFrame-getPoint-nav"><a href="SpriteAnimationFrame.html#getPoint">getPoint</a></li><li data-type="method" id="SpriteAnimationFrame-reinitialize-nav"><a href="SpriteAnimationFrame.html#reinitialize">reinitialize</a></li></ul></li><li id="SpriteRuntimeObject-nav"><a href="SpriteRuntimeObject.html">SpriteRuntimeObject</a><ul class='methods'><li data-type="method" id="SpriteRuntimeObject-extraInitializationFromInitialInstance-nav"><a href="SpriteRuntimeObject.html#extraInitializationFromInitialInstance">extraInitializationFromInitialInstance</a></li><li data-type="method" id="SpriteRuntimeObject-getAngle-nav"><a href="SpriteRuntimeObject.html#getAngle">getAngle</a></li><li data-type="method" id="SpriteRuntimeObject-getAnimation-nav"><a href="SpriteRuntimeObject.html#getAnimation">getAnimation</a></li><li data-type="method" id="SpriteRuntimeObject-getAnimationFrame-nav"><a href="SpriteRuntimeObject.html#getAnimationFrame">getAnimationFrame</a></li><li data-type="method" id="SpriteRuntimeObject-getAnimationName-nav"><a href="SpriteRuntimeObject.html#getAnimationName">getAnimationName</a></li><li data-type="method" id="SpriteRuntimeObject-getCenterX-nav"><a href="SpriteRuntimeObject.html#getCenterX">getCenterX</a></li><li data-type="method" id="SpriteRuntimeObject-getCenterY-nav"><a href="SpriteRuntimeObject.html#getCenterY">getCenterY</a></li><li data-type="method" id="SpriteRuntimeObject-getColor-nav"><a href="SpriteRuntimeObject.html#getColor">getColor</a></li><li data-type="method" id="SpriteRuntimeObject-getDrawableX-nav"><a href="SpriteRuntimeObject.html#getDrawableX">getDrawableX</a></li><li data-type="method" id="SpriteRuntimeObject-getDrawableY-nav"><a href="SpriteRuntimeObject.html#getDrawableY">getDrawableY</a></li><li data-type="method" id="SpriteRuntimeObject-getHeight-nav"><a href="SpriteRuntimeObject.html#getHeight">getHeight</a></li><li data-type="method" id="SpriteRuntimeObject-getOpacity-nav"><a href="SpriteRuntimeObject.html#getOpacity">getOpacity</a></li><li data-type="method" id="SpriteRuntimeObject-getPointX-nav"><a href="SpriteRuntimeObject.html#getPointX">getPointX</a></li><li data-type="method" id="SpriteRuntimeObject-getPointY-nav"><a href="SpriteRuntimeObject.html#getPointY">getPointY</a></li><li data-type="method" id="SpriteRuntimeObject-getScale-nav"><a href="SpriteRuntimeObject.html#getScale">getScale</a></li><li data-type="method" id="SpriteRuntimeObject-getScaleX-nav"><a href="SpriteRuntimeObject.html#getScaleX">getScaleX</a></li><li data-type="method" id="SpriteRuntimeObject-getScaleY-nav"><a href="SpriteRuntimeObject.html#getScaleY">getScaleY</a></li><li data-type="method" id="SpriteRuntimeObject-getWidth-nav"><a href="SpriteRuntimeObject.html#getWidth">getWidth</a></li><li data-type="method" id="SpriteRuntimeObject-hasAnimationEnded-nav"><a href="SpriteRuntimeObject.html#hasAnimationEnded">hasAnimationEnded</a></li><li data-type="method" id="SpriteRuntimeObject-hide-nav"><a href="SpriteRuntimeObject.html#hide">hide</a></li><li data-type="method" id="SpriteRuntimeObject-setAngle-nav"><a href="SpriteRuntimeObject.html#setAngle">setAngle</a></li><li data-type="method" id="SpriteRuntimeObject-setAnimation-nav"><a href="SpriteRuntimeObject.html#setAnimation">setAnimation</a></li><li data-type="method" id="SpriteRuntimeObject-setAnimationFrame-nav"><a href="SpriteRuntimeObject.html#setAnimationFrame">setAnimationFrame</a></li><li data-type="method" id="SpriteRuntimeObject-setAnimationName-nav"><a href="SpriteRuntimeObject.html#setAnimationName">setAnimationName</a></li><li data-type="method" id="SpriteRuntimeObject-setColor-nav"><a href="SpriteRuntimeObject.html#setColor">setColor</a></li><li data-type="method" id="SpriteRuntimeObject-setDirectionOrAngle-nav"><a href="SpriteRuntimeObject.html#setDirectionOrAngle">setDirectionOrAngle</a></li><li data-type="method" id="SpriteRuntimeObject-setHeight-nav"><a href="SpriteRuntimeObject.html#setHeight">setHeight</a></li><li data-type="method" id="SpriteRuntimeObject-setOpacity-nav"><a href="SpriteRuntimeObject.html#setOpacity">setOpacity</a></li><li data-type="method" id="SpriteRuntimeObject-setScale-nav"><a href="SpriteRuntimeObject.html#setScale">setScale</a></li><li data-type="method" id="SpriteRuntimeObject-setScaleX-nav"><a href="SpriteRuntimeObject.html#setScaleX">setScaleX</a></li><li data-type="method" id="SpriteRuntimeObject-setScaleY-nav"><a href="SpriteRuntimeObject.html#setScaleY">setScaleY</a></li><li data-type="method" id="SpriteRuntimeObject-setWidth-nav"><a href="SpriteRuntimeObject.html#setWidth">setWidth</a></li><li data-type="method" id="SpriteRuntimeObject-setX-nav"><a href="SpriteRuntimeObject.html#setX">setX</a></li><li data-type="method" id="SpriteRuntimeObject-setY-nav"><a href="SpriteRuntimeObject.html#setY">setY</a></li><li data-type="method" id="SpriteRuntimeObject-turnTowardObject-nav"><a href="SpriteRuntimeObject.html#turnTowardObject">turnTowardObject</a></li><li data-type="method" id="SpriteRuntimeObject-update-nav"><a href="SpriteRuntimeObject.html#update">update</a></li><li data-type="method" id="SpriteRuntimeObject-updateHitBoxes-nav"><a href="SpriteRuntimeObject.html#updateHitBoxes">updateHitBoxes</a></li></ul></li><li id="SpriteRuntimeObjectPixiRenderer-nav"><a href="SpriteRuntimeObjectPixiRenderer.html">SpriteRuntimeObjectPixiRenderer</a><ul class='methods'><li data-type="method" id="SpriteRuntimeObjectPixiRenderer-ensureUpToDate-nav"><a href="SpriteRuntimeObjectPixiRenderer.html#ensureUpToDate">ensureUpToDate</a></li><li data-type="method" id="SpriteRuntimeObjectPixiRenderer-updateFrame-nav"><a href="SpriteRuntimeObjectPixiRenderer.html#updateFrame">updateFrame</a></li></ul></li><li id="TimeManager-nav"><a href="TimeManager.html">TimeManager</a><ul class='methods'><li data-type="method" id="TimeManager-getElapsedTime-nav"><a href="TimeManager.html#getElapsedTime">getElapsedTime</a></li><li data-type="method" id="TimeManager-getTimeFromStart-nav"><a href="TimeManager.html#getTimeFromStart">getTimeFromStart</a></li><li data-type="method" id="TimeManager-getTimeScale-nav"><a href="TimeManager.html#getTimeScale">getTimeScale</a></li><li data-type="method" id="TimeManager-isFirstFrame-nav"><a href="TimeManager.html#isFirstFrame">isFirstFrame</a></li><li data-type="method" id="TimeManager-setTimeScale-nav"><a href="TimeManager.html#setTimeScale">setTimeScale</a></li></ul></li><li id="Timer-nav"><a href="Timer.html">Timer</a><ul class='methods'><li data-type="method" id="Timer-getName-nav"><a href="Timer.html#getName">getName</a></li><li data-type="method" id="Timer-getTime-nav"><a href="Timer.html#getTime">getTime</a></li><li data-type="method" id="Timer-isPaused-nav"><a href="Timer.html#isPaused">isPaused</a></li><li data-type="method" id="Timer-reset-nav"><a href="Timer.html#reset">reset</a></li><li data-type="method" id="Timer-setPaused-nav"><a href="Timer.html#setPaused">setPaused</a></li><li data-type="method" id="Timer-setTime-nav"><a href="Timer.html#setTime">setTime</a></li><li data-type="method" id="Timer-updateTime-nav"><a href="Timer.html#updateTime">updateTime</a></li></ul></li><li id="Variable-nav"><a href="Variable.html">Variable</a><ul class='methods'><li data-type="method" id="Variable-add-nav"><a href="Variable.html#add">add</a></li><li data-type="method" id="Variable-addChild-nav"><a href="Variable.html#addChild">addChild</a></li><li data-type="method" id="Variable-clearChildren-nav"><a href="Variable.html#clearChildren">clearChildren</a></li><li data-type="method" id="Variable-concatenate-nav"><a href="Variable.html#concatenate">concatenate</a></li><li data-type="method" id="Variable-div-nav"><a href="Variable.html#div">div</a></li><li data-type="method" id="Variable-getAllChildren-nav"><a href="Variable.html#getAllChildren">getAllChildren</a></li><li data-type="method" id="Variable-getAsNumber-nav"><a href="Variable.html#getAsNumber">getAsNumber</a></li><li data-type="method" id="Variable-getAsString-nav"><a href="Variable.html#getAsString">getAsString</a></li><li data-type="method" id="Variable-getChild-nav"><a href="Variable.html#getChild">getChild</a></li><li data-type="method" id="Variable-hasChild-nav"><a href="Variable.html#hasChild">hasChild</a></li><li data-type="method" id="Variable-isNumber-nav"><a href="Variable.html#isNumber">isNumber</a></li><li data-type="method" id="Variable-isStructure-nav"><a href="Variable.html#isStructure">isStructure</a></li><li data-type="method" id="Variable-isUndefinedInContainer-nav"><a href="Variable.html#isUndefinedInContainer">isUndefinedInContainer</a></li><li data-type="method" id="Variable-mul-nav"><a href="Variable.html#mul">mul</a></li><li data-type="method" id="Variable-removeChild-nav"><a href="Variable.html#removeChild">removeChild</a></li><li data-type="method" id="Variable-replaceChildren-nav"><a href="Variable.html#replaceChildren">replaceChildren</a></li><li data-type="method" id="Variable-setNumber-nav"><a href="Variable.html#setNumber">setNumber</a></li><li data-type="method" id="Variable-setString-nav"><a href="Variable.html#setString">setString</a></li><li data-type="method" id="Variable-setUndefinedInContainer-nav"><a href="Variable.html#setUndefinedInContainer">setUndefinedInContainer</a></li><li data-type="method" id="Variable-sub-nav"><a href="Variable.html#sub">sub</a></li></ul></li><li id="VariablesContainer-nav"><a href="VariablesContainer.html">VariablesContainer</a><ul class='methods'><li data-type="method" id="VariablesContainer-add-nav"><a href="VariablesContainer.html#add">add</a></li><li data-type="method" id="VariablesContainer-get-nav"><a href="VariablesContainer.html#get">get</a></li><li data-type="method" id="VariablesContainer-getFromIndex-nav"><a href="VariablesContainer.html#getFromIndex">getFromIndex</a></li><li data-type="method" id="VariablesContainer-has-nav"><a href="VariablesContainer.html#has">has</a></li><li data-type="method" id="VariablesContainer-initFrom-nav"><a href="VariablesContainer.html#initFrom">initFrom</a></li><li data-type="method" id="VariablesContainer-remove-nav"><a href="VariablesContainer.html#remove">remove</a></li></ul></li><li id="WebsocketDebuggerClient-nav"><a href="WebsocketDebuggerClient.html">WebsocketDebuggerClient</a></li></ul><h3 id="global-nav"><a href="global.html">Global</a></h3>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        libs/hshg.ts
+      </h1>
+    
+
+    
+      
+
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>// @ts-nocheck
+// Hierarchical Spatial Hash Grid: HSHG
+//Note that this file has been customized so that HSHG is put into the gdjs object.
+//Thus, it must be included after gd.js
+
+namespace gdjs {
+  gdjs.HSHG = gdjs.HSHG || {};
+
+  (function (root, undefined) {
+    //---------------------------------------------------------------------
+    // GLOBAL FUNCTIONS
+    //---------------------------------------------------------------------
+
+    /**
+     * Updates every object's position in the grid, but only if
+     * the hash value for that object has changed.
+     * This method DOES NOT take into account object expansion or
+     * contraction, just position, and does not attempt to change
+     * the grid the object is currently in; it only (possibly) changes
+     * the cell.
+     *
+     * If the object has significantly changed in size, the best bet is to
+     * call removeObject() and addObject() sequentially, outside of the
+     * normal update cycle of HSHG.
+     *
+     * @return void
+     */
+    function update_RECOMPUTE(): any {
+      let i, obj, grid, meta, objAABB, newObjHash;
+
+      // for each object
+      for (i = 0; i &lt; this._globalObjects.length; i++) {
+        obj = this._globalObjects[i];
+        meta = obj.HSHG;
+        grid = meta.grid;
+
+        // recompute hash
+        objAABB = obj.getAABB();
+        newObjHash = grid.toHash(objAABB.min[0], objAABB.min[1]);
+        if (newObjHash !== meta.hash) {
+          // grid position has changed, update!
+          grid.removeObject(obj);
+          grid.addObject(obj, newObjHash);
+        }
+      }
+    }
+
+    function update_REMOVEALL() {}
+
+    // not implemented yet :)
+    function testAABBOverlap(objA, objB) {
+      const a = objA.getAABB(),
+        b = objB.getAABB();
+      if (
+        a.min[0] > b.max[0] ||
+        a.min[1] > b.max[1] ||
+        a.max[0] &lt; b.min[0] ||
+        a.max[1] &lt; b.min[1]
+      ) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    function getLongestAABBEdge(min, max) {
+      return Math.max(Math.abs(max[0] - min[0]), Math.abs(max[1] - min[1]));
+    }
+
+    //---------------------------------------------------------------------
+    // ENTITIES
+    //---------------------------------------------------------------------
+
+    /**
+     * A hierarchical spatial grid containing objects and allowing fast test collisions between them.
+     */
+    class HSHG {
+      MAX_OBJECT_CELL_DENSITY: any;
+
+      // objects / cells
+      INITIAL_GRID_LENGTH: number = 256;
+
+      // 16x16
+      HIERARCHY_FACTOR: number = 2;
+      HIERARCHY_FACTOR_SQRT: any;
+      UPDATE_METHOD: any;
+      _grids: any = [];
+      _globalObjects: any = [];
+
+      /**
+       * @param theObject The object to be tested against.
+       */
+      constructor() {
+        this.MAX_OBJECT_CELL_DENSITY = 1 / 8;
+        this.HIERARCHY_FACTOR_SQRT = Math.SQRT2;
+        this.UPDATE_METHOD = update_RECOMPUTE;
+
+        // or update_REMOVEALL
+      }
+
+      /**
+       * Add an object to the grid. The object can be anything as long as it provides a getAABB method.
+       * An 'HSHG' property is added to the object, and is then deleted when the object is removed from the HSHG.
+       */
+      addObject(obj) {
+        let x;
+        let i;
+        let cellSize;
+        const objAABB = obj.getAABB();
+        const objSize = getLongestAABBEdge(objAABB.min, objAABB.max);
+        let oneGrid;
+        let newGrid;
+
+        // for HSHG metadata
+        obj.HSHG = { globalObjectsIndex: this._globalObjects.length };
+
+        //TODO: recycle existing object if necessary.
+
+        // add to global object array
+        this._globalObjects.push(obj);
+        if (this._grids.length === 0) {
+          // no grids exist yet
+          cellSize = objSize * this.HIERARCHY_FACTOR_SQRT;
+          newGrid = new Grid(cellSize, this.INITIAL_GRID_LENGTH, this);
+          newGrid.initCells();
+          newGrid.addObject(obj);
+          this._grids.push(newGrid);
+        } else {
+          x = 0;
+
+          // grids are sorted by cellSize, smallest to largest
+          for (i = 0; i &lt; this._grids.length; i++) {
+            oneGrid = this._grids[i];
+            x = oneGrid.cellSize;
+            if (objSize &lt; x) {
+              x = x / this.HIERARCHY_FACTOR;
+              if (objSize &lt; x) {
+                // find appropriate size
+                while (objSize &lt; x) {
+                  x = x / this.HIERARCHY_FACTOR;
+                }
+                newGrid = new Grid(
+                  x * this.HIERARCHY_FACTOR,
+                  this.INITIAL_GRID_LENGTH,
+                  this
+                );
+                newGrid.initCells();
+
+                // assign obj to grid
+                newGrid.addObject(obj);
+
+                // insert grid into list of grids directly before oneGrid
+                this._grids.splice(i, 0, newGrid);
+              } else {
+                // insert obj into grid oneGrid
+                oneGrid.addObject(obj);
+              }
+              return;
+            }
+          }
+          while (objSize >= x) {
+            x = x * this.HIERARCHY_FACTOR;
+          }
+          newGrid = new Grid(x, this.INITIAL_GRID_LENGTH, this);
+          newGrid.initCells();
+
+          // insert obj into grid
+          newGrid.addObject(obj);
+
+          // add newGrid as last element in grid list
+          this._grids.push(newGrid);
+        }
+      }
+
+      /**
+       * Remove an object from the HSHG. The object must be in the HSHG before being removed.
+       */
+      removeObject(obj) {
+        const meta = obj.HSHG;
+        let globalObjectsIndex;
+        let replacementObj;
+        if (meta === undefined) {
+          throw Error(obj + ' was not in the HSHG.');
+          return;
+        }
+
+        // remove object from global object list
+        globalObjectsIndex = meta.globalObjectsIndex;
+        if (globalObjectsIndex === this._globalObjects.length - 1) {
+          this._globalObjects.pop();
+        } else {
+          replacementObj = this._globalObjects.pop();
+          replacementObj.HSHG.globalObjectsIndex = globalObjectsIndex;
+          this._globalObjects[globalObjectsIndex] = replacementObj;
+        }
+        meta.grid.removeObject(obj);
+
+        // remove meta data
+        delete obj.HSHG;
+      }
+
+      /**
+       * Must be called when objects have been moved ( typically at each "tick" of the game/simulation ).
+       */
+      update(): void {
+        this.UPDATE_METHOD.call(this);
+      }
+
+      /**
+       * Return a list of objects colliding with theObject.
+       */
+      queryForCollisionWith(theObject, result) {
+        let i,
+          j,
+          k,
+          l,
+          c,
+          grid,
+          cell,
+          objA,
+          objB,
+          offset,
+          adjacentCell,
+          biggerGrid,
+          objAAABB,
+          objAHashInBiggerGrid;
+        result.length = 0;
+        theObject.HSHG.excludeMe = true;
+        const theObjectAABB = theObject.getAABB();
+        const theObjectHashInItsGrid = theObject.HSHG.grid.toHash(
+          theObjectAABB.min[0],
+          theObjectAABB.min[1]
+        );
+        const theObjectCellInItsGrid =
+          theObject.HSHG.grid.allCells[theObjectHashInItsGrid];
+
+        // default broad test to internal aabb overlap test
+        const broadOverlapTest = testAABBOverlap;
+
+        // for all grids ordered by cell size ASC
+        for (i = 0; i &lt; this._grids.length; i++) {
+          grid = this._grids[i];
+
+          //All collisions with object have now been registered
+          if (grid.cellSize === theObject.HSHG.grid.cellSize) {
+            //We're in the grid of theObject:
+
+            // 1)Test against neighbors:
+
+            // For each cell of the grid that is occupied
+            for (j = 0; j &lt; grid.occupiedCells.length; j++) {
+              cell = grid.occupiedCells[j];
+
+              // Collide all objects within the occupied cell
+              for (l = 0; l &lt; cell.objectContainer.length; l++) {
+                objB = cell.objectContainer[l];
+
+                //Note that objB could be theObject.
+                if (
+                  !objB.HSHG.excludeMe &amp;&amp;
+                  broadOverlapTest(theObject, objB) === true
+                ) {
+                  result.push(objB);
+                }
+              }
+
+              // For the first half of all adjacent cells (offset 4 is the current cell)
+              for (c = 0; c &lt; 4; c++) {
+                offset = cell.neighborOffsetArray[c];
+                adjacentCell = grid.allCells[cell.allCellsIndex + offset];
+
+                // Collide all objects in cell with adjacent cell
+                for (l = 0; l &lt; adjacentCell.objectContainer.length; l++) {
+                  objB = adjacentCell.objectContainer[l];
+
+                  //Note that objB could be theObject.
+                  if (
+                    !objB.HSHG.excludeMe &amp;&amp;
+                    broadOverlapTest(theObject, objB) === true
+                  ) {
+                    result.push(objB);
+                  }
+                }
+              }
+            }
+
+            // 2)Test against objects of bigger grids:
+
+            // For all grids with cellsize larger than the grid of theObject:
+            for (k = i + 1; k &lt; this._grids.length; k++) {
+              biggerGrid = this._grids[k];
+              const objectHashInBiggerGrid = biggerGrid.toHash(
+                theObjectAABB.min[0],
+                theObjectAABB.min[1]
+              );
+              cell = biggerGrid.allCells[objectHashInBiggerGrid];
+
+              // Check theObject against every object in all cells in offset array of cell
+              // for all adjacent cells...
+              for (c = 0; c &lt; cell.neighborOffsetArray.length; c++) {
+                offset = cell.neighborOffsetArray[c];
+                adjacentCell = biggerGrid.allCells[cell.allCellsIndex + offset];
+
+                // for all objects in the adjacent cell...
+                for (l = 0; l &lt; adjacentCell.objectContainer.length; l++) {
+                  objB = adjacentCell.objectContainer[l];
+
+                  // Test against theObject: Note that objB is necessarily different from theObject.
+                  if (broadOverlapTest(theObject, objB) === true) {
+                    result.push(objB);
+                  }
+                }
+              }
+            }
+            break;
+          } else {
+            if (grid.cellSize &lt; theObject.HSHG.grid.cellSize) {
+              // For all objects that are stored in this smaller grid
+              for (j = 0; j &lt; grid.allObjects.length; j++) {
+                //Get the object of the smaller grid.
+                objA = grid.allObjects[j];
+                objAAABB = objA.getAABB();
+
+                //Get its position in the (bigger) grid containing theObject.
+                objAHashInBiggerGrid = theObject.HSHG.grid.toHash(
+                  objAAABB.min[0],
+                  objAAABB.min[1]
+                );
+
+                //Check if it is near theObject (i.e: Check if the cell of objA is a neighbor of the cell
+                //of theObject ).
+                let objAIsInAdjacentCellToObject = false;
+                for (
+                  c = 0;
+                  c &lt; theObjectCellInItsGrid.neighborOffsetArray.length;
+                  c++
+                ) {
+                  offset = theObjectCellInItsGrid.neighborOffsetArray[c];
+                  if (
+                    objAHashInBiggerGrid ===
+                    theObjectCellInItsGrid.allCellsIndex + offset
+                  ) {
+                    objAIsInAdjacentCellToObject = true;
+                    break;
+                  }
+                }
+
+                //If objA is near theObject, trigger a collision test.
+                if (objAIsInAdjacentCellToObject) {
+                  //Note that objA is necessarily different from theObject
+                  if (broadOverlapTest(theObject, objA) === true) {
+                    result.push(objA);
+                  }
+                }
+              }
+            }
+          }
+        }
+        delete theObject.HSHG.excludeMe;
+      }
+    }
+    HSHG.update_RECOMPUTE = update_RECOMPUTE;
+    HSHG.update_REMOVEALL = update_REMOVEALL;
+
+    /**
+     * Grid
+     *
+     * @param cellSize {int} the pixel size of each cell of the grid
+     * @param cellCount {int} the total number of cells for the grid (width x height)
+     * @param parentHierarchy {HSHG} the HSHG to which this grid belongs
+     * @return void
+     */
+    class Grid {
+      cellSize: any;
+      inverseCellSize: any;
+      rowColumnCount: any;
+      xyHashMask: any;
+      occupiedCells: any = [];
+      allCells: any;
+      allObjects: any = [];
+      sharedInnerOffsets: any = [];
+      _parentHierarchy: any;
+
+      constructor(cellSize, cellCount, parentHierarchy) {
+        this.cellSize = cellSize;
+        this.inverseCellSize = 1 / cellSize;
+        this.rowColumnCount = ~~Math.sqrt(cellCount);
+        this.xyHashMask = this.rowColumnCount - 1;
+        this.allCells = Array(this.rowColumnCount * this.rowColumnCount);
+        this._parentHierarchy = parentHierarchy || null;
+      }
+
+      initCells() {
+        // TODO: inner/unique offset rows 0 and 2 may need to be
+        // swapped due to +y being "down" vs "up"
+        let i;
+        const gridLength = this.allCells.length;
+        let x;
+        let y;
+        const wh = this.rowColumnCount;
+        let isOnRightEdge;
+        let isOnLeftEdge;
+        let isOnTopEdge;
+        let isOnBottomEdge;
+        const innerOffsets = [
+          // y+ down offsets
+          //-1 + -wh, -wh, -wh + 1,
+          //-1, 0, 1,
+          //wh - 1, wh, wh + 1
+          // y+ up offsets
+          wh - 1,
+          wh,
+          wh + 1,
+          -1,
+          0,
+          1,
+          -1 + -wh,
+          -wh,
+          -wh + 1,
+        ];
+        let leftOffset;
+        let rightOffset;
+        let topOffset;
+        let bottomOffset;
+        let uniqueOffsets = [];
+        let cell;
+        this.sharedInnerOffsets = innerOffsets;
+
+        // init all cells, creating offset arrays as needed
+        for (i = 0; i &lt; gridLength; i++) {
+          cell = new Cell();
+
+          // compute row (y) and column (x) for an index
+          y = ~~(i / this.rowColumnCount);
+          x = ~~(i - y * this.rowColumnCount);
+
+          // reset / init
+          isOnRightEdge = false;
+          isOnLeftEdge = false;
+          isOnTopEdge = false;
+          isOnBottomEdge = false;
+
+          // right or left edge cell
+          if ((x + 1) % this.rowColumnCount == 0) {
+            isOnRightEdge = true;
+          } else {
+            if (x % this.rowColumnCount == 0) {
+              isOnLeftEdge = true;
+            }
+          }
+
+          // top or bottom edge cell
+          if ((y + 1) % this.rowColumnCount == 0) {
+            isOnTopEdge = true;
+          } else {
+            if (y % this.rowColumnCount == 0) {
+              isOnBottomEdge = true;
+            }
+          }
+
+          // if cell is edge cell, use unique offsets, otherwise use inner offsets
+          if (isOnRightEdge || isOnLeftEdge || isOnTopEdge || isOnBottomEdge) {
+            // figure out cardinal offsets first
+            rightOffset = isOnRightEdge === true ? -wh + 1 : 1;
+            leftOffset = isOnLeftEdge === true ? wh - 1 : -1;
+            topOffset = isOnTopEdge === true ? -gridLength + wh : wh;
+            bottomOffset = isOnBottomEdge === true ? gridLength - wh : -wh;
+
+            // diagonals are composites of the cardinals
+            uniqueOffsets = [
+              // y+ down offset
+              //leftOffset + bottomOffset, bottomOffset, rightOffset + bottomOffset,
+              //leftOffset, 0, rightOffset,
+              //leftOffset + topOffset, topOffset, rightOffset + topOffset
+              // y+ up offset
+              leftOffset + topOffset,
+              topOffset,
+              rightOffset + topOffset,
+              leftOffset,
+              0,
+              rightOffset,
+              leftOffset + bottomOffset,
+              bottomOffset,
+              rightOffset + bottomOffset,
+            ];
+            cell.neighborOffsetArray = uniqueOffsets;
+          } else {
+            cell.neighborOffsetArray = this.sharedInnerOffsets;
+          }
+          cell.allCellsIndex = i;
+          this.allCells[i] = cell;
+        }
+      }
+
+      toHash(x, y, z) {
+        let i, xHash, yHash, zHash;
+        if (x &lt; 0) {
+          i = -x * this.inverseCellSize;
+          xHash = this.rowColumnCount - 1 - (~~i &amp; this.xyHashMask);
+        } else {
+          i = x * this.inverseCellSize;
+          xHash = ~~i &amp; this.xyHashMask;
+        }
+        if (y &lt; 0) {
+          i = -y * this.inverseCellSize;
+          yHash = this.rowColumnCount - 1 - (~~i &amp; this.xyHashMask);
+        } else {
+          i = y * this.inverseCellSize;
+          yHash = ~~i &amp; this.xyHashMask;
+        }
+        return xHash + yHash * this.rowColumnCount;
+      }
+
+      addObject(obj, hash) {
+        let objAABB, objHash, targetCell;
+
+        // technically, passing this in this should save some computational effort when updating objects
+        if (hash !== undefined) {
+          objHash = hash;
+        } else {
+          objAABB = obj.getAABB();
+          objHash = this.toHash(objAABB.min[0], objAABB.min[1]);
+        }
+        targetCell = this.allCells[objHash];
+        if (targetCell.objectContainer.length === 0) {
+          // insert this cell into occupied cells list
+          targetCell.occupiedCellsIndex = this.occupiedCells.length;
+          this.occupiedCells.push(targetCell);
+        }
+
+        // add meta data to obj, for fast update/removal
+        obj.HSHG.objectContainerIndex = targetCell.objectContainer.length;
+        obj.HSHG.hash = objHash;
+        obj.HSHG.grid = this;
+        obj.HSHG.allGridObjectsIndex = this.allObjects.length;
+
+        // add obj to cell
+        targetCell.objectContainer.push(obj);
+
+        // we can assume that the targetCell is already a member of the occupied list
+
+        // add to grid-global object list
+        this.allObjects.push(obj);
+
+        // do test for grid density
+        if (
+          this.allObjects.length / this.allCells.length >
+          this._parentHierarchy.MAX_OBJECT_CELL_DENSITY
+        ) {
+          // grid must be increased in size
+          this.expandGrid();
+        }
+      }
+
+      removeObject(obj) {
+        const meta = obj.HSHG;
+        let hash;
+        let containerIndex;
+        let allGridObjectsIndex;
+        let cell;
+        let replacementCell;
+        let replacementObj;
+        hash = meta.hash;
+        containerIndex = meta.objectContainerIndex;
+        allGridObjectsIndex = meta.allGridObjectsIndex;
+        cell = this.allCells[hash];
+
+        // remove object from cell object container
+        if (cell.objectContainer.length === 1) {
+          // this is the last object in the cell, so reset it
+          cell.objectContainer.length = 0;
+
+          // remove cell from occupied list
+          if (cell.occupiedCellsIndex === this.occupiedCells.length - 1) {
+            // special case if the cell is the newest in the list
+            this.occupiedCells.pop();
+          } else {
+            replacementCell = this.occupiedCells.pop();
+            replacementCell.occupiedCellsIndex = cell.occupiedCellsIndex;
+            this.occupiedCells[cell.occupiedCellsIndex] = replacementCell;
+          }
+          cell.occupiedCellsIndex = null;
+        } else {
+          // there is more than one object in the container
+          if (containerIndex === cell.objectContainer.length - 1) {
+            // special case if the obj is the newest in the container
+            cell.objectContainer.pop();
+          } else {
+            replacementObj = cell.objectContainer.pop();
+            replacementObj.HSHG.objectContainerIndex = containerIndex;
+            cell.objectContainer[containerIndex] = replacementObj;
+          }
+        }
+
+        // remove object from grid object list
+        if (allGridObjectsIndex === this.allObjects.length - 1) {
+          this.allObjects.pop();
+        } else {
+          replacementObj = this.allObjects.pop();
+          replacementObj.HSHG.allGridObjectsIndex = allGridObjectsIndex;
+          this.allObjects[allGridObjectsIndex] = replacementObj;
+        }
+      }
+
+      expandGrid() {
+        let i;
+        let j;
+        const currentCellCount = this.allCells.length;
+        const currentRowColumnCount = this.rowColumnCount;
+        const currentXYHashMask = this.xyHashMask;
+        const // double each dimension
+          newCellCount = currentCellCount * 4;
+        const newRowColumnCount = ~~Math.sqrt(newCellCount);
+        const newXYHashMask = newRowColumnCount - 1;
+        const // duplicate array, not objects contained
+          allObjects = this.allObjects.slice(0);
+        let aCell;
+        const push = Array.prototype.push;
+
+        // remove all objects
+        for (i = 0; i &lt; allObjects.length; i++) {
+          this.removeObject(allObjects[i]);
+        }
+
+        // reset grid values, set new grid to be 4x larger than last
+        this.rowColumnCount = newRowColumnCount;
+        this.allCells = Array(this.rowColumnCount * this.rowColumnCount);
+        this.xyHashMask = newXYHashMask;
+
+        // initialize new cells
+        this.initCells();
+
+        // re-add all objects to grid
+        for (i = 0; i &lt; allObjects.length; i++) {
+          this.addObject(allObjects[i]);
+        }
+      }
+    }
+
+    /**
+     * A cell of a grid
+     */
+    class Cell {
+      objectContainer: any = [];
+      neighborOffsetArray: any;
+      occupiedCellsIndex: any = null;
+      allCellsIndex: any = null;
+    }
+
+    //---------------------------------------------------------------------
+    // EXPORTS
+    //---------------------------------------------------------------------
+    root['HSHG'] = HSHG;
+    HSHG._private = {
+      Grid: Grid,
+      Cell: Cell,
+      testAABBOverlap: testAABBOverlap,
+      getLongestAABBEdge: getLongestAABBEdge,
+    };
+  })(gdjs.HSHG);
+}
+</code></pre>
+  </article>
+</section>
+
+    
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

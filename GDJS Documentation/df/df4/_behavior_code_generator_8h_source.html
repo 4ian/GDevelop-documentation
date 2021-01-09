@@ -140,32 +140,30 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      std::function&lt;gd::String()&gt; generateUpdateFromBehaviorDataCode);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  gd::String GenerateRuntimeBehaviorPropertyTemplateCode(</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  gd::String GenerateInitializePropertyFromDataCode(</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  gd::String GenerateInitializePropertyFromDefaultValueCode(</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  gd::String GeneratePropertyValueCode(<span class="keyword">const</span> gd::PropertyDescriptor&amp; property);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  gd::String GenerateUpdatePropertyFromBehaviorDataCode(</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  gd::String GenerateBehaviorOnDestroyToDeprecatedOnOwnerRemovedFromScene(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  gd::String GenerateDefaultDoStepPreEventsFunctionCode(</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  gd::String GenerateDoStepPreEventsPreludeCode();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  gd::String GenerateInitializePropertyFromDataCode(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  gd::String GenerateInitializePropertyFromDefaultValueCode(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  gd::String GeneratePropertyValueCode(<span class="keyword">const</span> gd::PropertyDescriptor&amp; property);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  gd::String GenerateUpdatePropertyFromBehaviorDataCode(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> gd::NamedPropertyDescriptor&amp; property);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  gd::String GenerateBehaviorOnDestroyToDeprecatedOnOwnerRemovedFromScene(</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  gd::String GenerateDefaultDoStepPreEventsFunctionCode(</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">const</span> gd::EventsBasedBehavior&amp; eventsBasedBehavior,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">const</span> gd::String&amp; codeNamespace);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  gd::String GenerateDoStepPreEventsPreludeCode();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  gd::Project&amp; project;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  gd::Project&amp; project;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">static</span> gd::String doStepPreEventsFunctionName;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace gdjs</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif  // GDJS_BEHAVIORCODEGENERATOR_H</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">static</span> gd::String doStepPreEventsFunctionName;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace gdjs</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif  // GDJS_BEHAVIORCODEGENERATOR_H</span></div>
 <div class="ttc" id="namespacegd_html"><div class="ttname"><a href="../../dd/d5d/namespacegd.html">gd</a></div><div class="ttdef"><b>Definition:</b> JsCodeEvent.h:10</div></div>
 <div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_a8a2cf41a51e0ffecb35159c3ba3494a3"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3">gdjs::BehaviorCodeGenerator::GenerateRuntimeBehaviorCompleteCode</a></div><div class="ttdeci">gd::String GenerateRuntimeBehaviorCompleteCode(const gd::String &amp;extensionName, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::String &amp;codeNamespace, const std::map&lt; gd::String, gd::String &gt; &amp;behaviorMethodMangledNames, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</div><div class="ttdoc">Generate the complete JS class (gdjs.RuntimeBehavior) for the behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.cpp:15</div></div>
 <div class="ttc" id="classgdjs_1_1_behavior_code_generator_html_a23d2af2d107e11d1fc9950f4744625d1"><div class="ttname"><a href="../../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1">gdjs::BehaviorCodeGenerator::GetBehaviorPropertySetterName</a></div><div class="ttdeci">static gd::String GetBehaviorPropertySetterName(const gd::String &amp;propertyName)</div><div class="ttdoc">Generate the name of the method to set the value of the property of a behavior. </div><div class="ttdef"><b>Definition:</b> BehaviorCodeGenerator.h:55</div></div>
