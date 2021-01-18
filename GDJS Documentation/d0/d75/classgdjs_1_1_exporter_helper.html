@@ -118,9 +118,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a285158d1e9549706dc9f422705fbd887">RemoveIncludes</a> (bool pixiRenderers, bool cocosRenderers, std::vector&lt; gd::String &gt; &amp;includesFiles)</td></tr>
 <tr class="memdesc:a285158d1e9549706dc9f422705fbd887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove include files that are Pixi or Cocos2d renderers. <br /></td></tr>
 <tr class="separator:a285158d1e9549706dc9f422705fbd887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f4b9b6de362f4976476e5a614e0c57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a58f4b9b6de362f4976476e5a614e0c57">ExportIncludesAndLibs</a> (const std::vector&lt; gd::String &gt; &amp;includesFiles, gd::String exportDir)</td></tr>
-<tr class="memdesc:a58f4b9b6de362f4976476e5a614e0c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all the specified files to the export directory. Relative files are copied from "&lt;GDJS root&gt;/Runtime" directory.  <a href="#a58f4b9b6de362f4976476e5a614e0c57">More...</a><br /></td></tr>
-<tr class="separator:a58f4b9b6de362f4976476e5a614e0c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7bf354abd3e2548eed82ddfd59f40a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a4b7bf354abd3e2548eed82ddfd59f40a">ExportIncludesAndLibs</a> (const std::vector&lt; gd::String &gt; &amp;includesFiles, gd::String exportDir, bool exportSourceMaps)</td></tr>
+<tr class="memdesc:a4b7bf354abd3e2548eed82ddfd59f40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all the specified files to the export directory. Relative files are copied from "&lt;GDJS root&gt;/Runtime" directory.  <a href="#a4b7bf354abd3e2548eed82ddfd59f40a">More...</a><br /></td></tr>
+<tr class="separator:a4b7bf354abd3e2548eed82ddfd59f40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be922c76d8cf8a67b0be797e8363971"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a1be922c76d8cf8a67b0be797e8363971">ExportEventsCode</a> (gd::Project &amp;project, gd::String outputDir, std::vector&lt; gd::String &gt; &amp;includesFiles, bool exportForPreview)</td></tr>
 <tr class="memdesc:a1be922c76d8cf8a67b0be797e8363971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the events JS code, and save them to the export directory.  <a href="#a1be922c76d8cf8a67b0be797e8363971">More...</a><br /></td></tr>
 <tr class="separator:a1be922c76d8cf8a67b0be797e8363971"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,7 +448,7 @@ gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 
 </div>
 </div>
-<a class="anchor" id="a58f4b9b6de362f4976476e5a614e0c57"></a>
+<a class="anchor" id="a4b7bf354abd3e2548eed82ddfd59f40a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -462,7 +462,13 @@ gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">gd::String&#160;</td>
-          <td class="paramname"><em>exportDir</em>&#160;</td>
+          <td class="paramname"><em>exportDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exportSourceMaps</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -476,7 +482,8 @@ gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">includesFiles</td><td>A vector with filenames to be copied. </td></tr>
-    <tr><td class="paramname">exportDir</td><td>The directory where the files mus tbe copied. </td></tr>
+    <tr><td class="paramname">exportDir</td><td>The directory where the files must be copied. </td></tr>
+    <tr><td class="paramname">exportSourceMaps</td><td>Should the source maps be copied? Should be true on previews only. </td></tr>
   </table>
   </dd>
 </dl>
