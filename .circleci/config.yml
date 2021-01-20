@@ -2,7 +2,7 @@ version: 2
 jobs:
   docs-build-and-deploy:
     docker:
-      - image: node:8.10.0
+      - image: circleci/node:lts
 
     working_directory: ~/repo
 
