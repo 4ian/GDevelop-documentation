@@ -57,10 +57,7 @@ workflows:
   version: 2
   master-build:
     jobs:
-      - docs-build-and-deploy:
-          filters:
-            branches:
-              only: master
+      - docs-build-and-deploy
   nightly:
     jobs:
       - docs-build-and-deploy
