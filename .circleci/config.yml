@@ -2,7 +2,7 @@ version: 2
 jobs:
   docs-build-and-deploy:
     docker:
-      - image: node:8.10.0
+      - image: circleci/node:lts
 
     working_directory: ~/repo
 
@@ -16,15 +16,11 @@ jobs:
       # Install dependencies
       - run:
           name: Prepare apt
-          command: apt update -y
+          command: sudo apt update -y
 
       - run:
           name: Install Doxygen
-          command: apt install -y doxygen
-
-      - run:
-          name: Install JSDoc
-          command: npm install -g jsdoc
+          command: sudo apt install -y doxygen
 
       # Generate the docs
       - run:
@@ -39,7 +35,7 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            npm install -g --silent gh-pages@2.0.1
+            npm install --prefix=$HOME/.local -g --silent gh-pages@2.0.1
             git config --global user.email "ci-build@gdevelop-app.com"
             git config --global user.name "GDevelop documentation CI"
 
