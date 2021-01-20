@@ -16,11 +16,11 @@ jobs:
       # Install dependencies
       - run:
           name: Prepare apt
-          command: apt update -y
+          command: sudo apt update -y
 
       - run:
           name: Install Doxygen
-          command: apt install -y doxygen
+          command: sudo apt install -y doxygen
 
       - run:
           name: Install JSDoc
