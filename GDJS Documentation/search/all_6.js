@@ -18,7 +18,7 @@ var searchData=
   ['getcodenamespaceaccessor',['GetCodeNamespaceAccessor',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a86c6da4f0e20002526a9f159620d96db',1,'gdjs::EventsCodeGenerator']]],
   ['getexportedincludefilename',['GetExportedIncludeFilename',['../d0/d75/classgdjs_1_1_exporter_helper.html#a253f38e4e6b6dd09b8afd9071ba8e2ea',1,'gdjs::ExporterHelper']]],
   ['getextensioncreatefunctionname',['GetExtensionCreateFunctionName',['../d2/d3d/classgdjs_1_1_js_platform.html#a693d18edd1891ae1303aaaa918c99200',1,'gdjs::JsPlatform']]],
-  ['getlasterror',['GetLastError',['../dc/dda/classgdjs_1_1_exporter.html#a66ee505f4658a252da53fb35f47bc36b',1,'gdjs::Exporter::GetLastError()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#a3f59f7ec9fa9a92bdcfb2ec05e8b3886',1,'gdjs::ExporterHelper::GetLastError()']]],
+  ['getlasterror',['GetLastError',['../dc/dda/classgdjs_1_1_exporter.html#a1c28c0a90a3bbefff8f3d2d981cf26da',1,'gdjs::Exporter::GetLastError()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#ada5884debab85a04032d19fcfcbf2eb1',1,'gdjs::ExporterHelper::GetLastError()']]],
   ['getobjectlistname',['GetObjectListName',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a7d1004c9dd588ffbd14dcf6b58ad8388',1,'gdjs::EventsCodeGenerator']]],
   ['gdevelop_20js_20platform',['GDevelop JS Platform',['../index.html',1,'']]]
 ];

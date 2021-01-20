@@ -8,7 +8,7 @@ var searchData=
   ['clearallsoundsandmusics',['ClearAllSoundsAndMusics',['../d5/dd9/class_sound_manager.html#a2e09a7dd49485af042eb6f3e43d2e641',1,'SoundManager']]],
   ['clearforce',['ClearForce',['../d0/d3b/class_runtime_object.html#a82b848d06da1b17dd476df8e1ec1723c',1,'RuntimeObject']]],
   ['clock',['clock',['../d7/d7f/class_runtime_scene.html#a7607237db53df194a73e0523d3cd253c',1,'RuntimeScene']]],
-  ['clone',['Clone',['../d0/d3b/class_runtime_object.html#ac6ddca8f66b465427a8297784bc472d2',1,'RuntimeObject::Clone()'],['../dd/d1a/class_runtime_sprite_object.html#ad28ca313e488c155095de4d9d5bb00c9',1,'RuntimeSpriteObject::Clone()']]],
+  ['clone',['Clone',['../d0/d3b/class_runtime_object.html#afbf5f025ab3f6070dd52efb3019dde37',1,'RuntimeObject::Clone()'],['../dd/d1a/class_runtime_sprite_object.html#a5d677b687eec8fa414aa83f9bc5a8cec',1,'RuntimeSpriteObject::Clone()']]],
   ['codeexecutionengine',['CodeExecutionEngine',['../db/dbc/class_code_execution_engine.html',1,'CodeExecutionEngine'],['../db/dbc/class_code_execution_engine.html#aeba3976e751c94b991ef95da65667223',1,'CodeExecutionEngine::CodeExecutionEngine()'],['../db/dbc/class_code_execution_engine.html#ad13d384d573c5da5de805252655a9fad',1,'CodeExecutionEngine::CodeExecutionEngine(const CodeExecutionEngine &amp;other)']]],
   ['collisionresult',['CollisionResult',['../d5/d2d/struct_collision_result.html',1,'']]],
   ['commonconversionsextension',['CommonConversionsExtension',['../df/d7e/class_common_conversions_extension.html',1,'']]],

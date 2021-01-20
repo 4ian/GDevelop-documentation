@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['raw',['Raw',['../classgd_1_1_string.html#a463a99d92556082045d8b1648ea4953a',1,'gd::String::Raw()'],['../classgd_1_1_string.html#af3044f7b1711f44cac811d601c34ed35',1,'gd::String::Raw() const ']]],
+  ['raw',['Raw',['../classgd_1_1_string.html#a463a99d92556082045d8b1648ea4953a',1,'gd::String::Raw()'],['../classgd_1_1_string.html#a211b2dc7575cd11170182297668b2fa9',1,'gd::String::Raw() const']]],
   ['readdir',['ReadDir',['../classgd_1_1_abstract_file_system.html#a357cdb44a69000cc56b595e9575536da',1,'gd::AbstractFileSystem']]],
   ['readfile',['ReadFile',['../classgd_1_1_abstract_file_system.html#ac0291a1e95a428112d97d7eb34c362c7',1,'gd::AbstractFileSystem']]],
   ['registerproperty',['RegisterProperty',['../classgd_1_1_platform_extension.html#a0cc3124fb7377a725be327684aeeab0f',1,'gd::PlatformExtension']]],
   ['reloadbuiltinextensions',['ReloadBuiltinExtensions',['../classgd_1_1_platform.html#a792f9d5d1fcbf89ce590ad56e07c5abf',1,'gd::Platform']]],
-  ['reloadimage',['ReloadImage',['../classgd_1_1_image_manager.html#a7b1aa018aafb71d1e2fd3d5f9a633f53',1,'gd::ImageManager']]],
+  ['reloadimage',['ReloadImage',['../classgd_1_1_image_manager.html#a269b666d3d3f93f488bb0c9454d8e52c',1,'gd::ImageManager']]],
   ['remove',['Remove',['../classgd_1_1_object_groups_container.html#a2ef6abfc620e30235edd72ea1356480f',1,'gd::ObjectGroupsContainer::Remove()'],['../classgd_1_1_platform_specific_assets.html#ac92a3423adc2f7bcfdd668bf850b0b6f',1,'gd::PlatformSpecificAssets::Remove()'],['../classgd_1_1_variables_container.html#affff2eec4743a75a0d3344d27a741058',1,'gd::VariablesContainer::Remove()'],['../classgd_1_1_serializable_with_name_list.html#a30eb7d389bbb128d0296803e8905a3cd',1,'gd::SerializableWithNameList::Remove(const gd::String &amp;name)'],['../classgd_1_1_serializable_with_name_list.html#af2181475d6f9120849b15a4162bc0fc5',1,'gd::SerializableWithNameList::Remove(size_t index)'],['../classgd_1_1_s_ptr_list.html#a5d6fae6a6e0dc451f4ecbc82c47adf49',1,'gd::SPtrList::Remove(const T &amp;element)'],['../classgd_1_1_s_ptr_list.html#a2dee04de80b9901972c04d57cfa7cedd',1,'gd::SPtrList::Remove(size_t index)']]],
   ['removeallanimations',['RemoveAllAnimations',['../classgd_1_1_sprite_object.html#a0799f7b38f5914f5f0b72b013a820674',1,'gd::SpriteObject']]],
   ['removeallinstancesonlayer',['RemoveAllInstancesOnLayer',['../classgd_1_1_initial_instances_container.html#a839140c722099ddf7b9a9adb30d967f5',1,'gd::InitialInstancesContainer']]],
@@ -55,8 +55,8 @@ var searchData=
   ['restrictsearchtolayer',['RestrictSearchToLayer',['../classgd_1_1_highest_z_order_finder.html#a097c97f7b36f481ee7fbc49ecb422bf5',1,'gd::HighestZOrderFinder']]],
   ['reuse',['Reuse',['../classgd_1_1_events_code_generation_context.html#a1eb817f9eb7a36c2e32003640cd29f92',1,'gd::EventsCodeGenerationContext']]],
   ['revision',['Revision',['../classgd_1_1_version_wrapper.html#af4dffce6497776e3a1d7fbc9e8e7f349',1,'gd::VersionWrapper']]],
-  ['rfind',['rfind',['../classgd_1_1_string.html#a0800a0dbcd0ed39cc1145d323d355627',1,'gd::String::rfind(const String &amp;search, size_type pos=npos) const '],['../classgd_1_1_string.html#a9c4a1df0510045792c08de83b96bec53',1,'gd::String::rfind(const char *search, size_type pos=npos) const '],['../classgd_1_1_string.html#acbfa1733769352342639221395d60ccd',1,'gd::String::rfind(const value_type &amp;search, size_type pos=npos) const ']]],
-  ['righttrim',['RightTrim',['../classgd_1_1_string.html#aa9e04dd66c4a989e9e9b8219bf7b9f4e',1,'gd::String']]],
+  ['rfind',['rfind',['../classgd_1_1_string.html#a95f8027c3ddf78b4af7a8070955beda8',1,'gd::String::rfind(const String &amp;search, size_type pos=npos) const'],['../classgd_1_1_string.html#a31fd38c6bfdd36deb8b525f1f5d430bf',1,'gd::String::rfind(const char *search, size_type pos=npos) const'],['../classgd_1_1_string.html#aeffde86e13c5e6563cc17abd896f645b',1,'gd::String::rfind(const value_type &amp;search, size_type pos=npos) const']]],
+  ['righttrim',['RightTrim',['../classgd_1_1_string.html#af1879ed23dfd007b2c04603b142de310',1,'gd::String']]],
   ['rotate',['Rotate',['../class_polygon2d.html#a28c95623d956641e09127e5e080300f2',1,'Polygon2d']]],
   ['round',['Round',['../group___common_programming_tools.html#ga96a3aed6b2d1926a3b080bd50a691a2e',1,'gd']]]
 ];
