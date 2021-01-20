@@ -11,7 +11,7 @@ jobs:
 
       - add_ssh_keys:
           fingerprints:
-            - "83:45:4c:d2:b2:ed:27:bd:84:a3:eb:0c:00:91:f8:60"
+            - '83:45:4c:d2:b2:ed:27:bd:84:a3:eb:0c:00:91:f8:60'
 
       # Install dependencies
       - run:
@@ -62,7 +62,7 @@ workflows:
       - docs-build-and-deploy
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: '0 0 * * *'
           filters:
             branches:
               only:
