@@ -22,10 +22,6 @@ jobs:
           name: Install Doxygen
           command: sudo apt install -y doxygen
 
-      - run:
-          name: Install JSDoc
-          command: npm install -g jsdoc
-
       # Generate the docs
       - run:
           name: Get GDevelop sources (master branch)
