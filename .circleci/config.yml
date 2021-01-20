@@ -54,8 +54,8 @@ workflows:
   master-build:
     jobs:
       - docs-build-and-deploy:
-          filters:	
-            branches:	
+          filters:
+            branches:
               only: master
   nightly:
     jobs:
