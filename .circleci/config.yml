@@ -35,7 +35,7 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            sudo npm install -g --silent gh-pages@2.0.1
+            npm install --prefix=$HOME/.local -g --silent gh-pages@2.0.1
             git config --global user.email "ci-build@gdevelop-app.com"
             git config --global user.name "GDevelop documentation CI"
 
