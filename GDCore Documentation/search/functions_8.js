@@ -63,6 +63,7 @@ var searchData=
   ['isobject',['IsObject',['../classgd_1_1_parameter_metadata.html#aaeb5e8e421167a4458e747f8cac0632f',1,'gd::ParameterMetadata']]],
   ['isolder',['IsOlder',['../classgd_1_1_version_wrapper.html#a289d296d5f707835f9451d3056864351',1,'gd::VersionWrapper']]],
   ['isolderorequal',['IsOlderOrEqual',['../classgd_1_1_version_wrapper.html#aa561d4bbb6cc60ae19bf043c26ddd698',1,'gd::VersionWrapper']]],
+  ['isonlyifsomeextrasettingsnonempty',['IsOnlyIfSomeExtraSettingsNonEmpty',['../classgd_1_1_dependency_metadata.html#a00cca9a828dc6e9de53408a6881bdb1e',1,'gd::DependencyMetadata']]],
   ['isoptional',['IsOptional',['../classgd_1_1_parameter_metadata.html#a7aa567fe7891901fb8ddda67496caf9c',1,'gd::ParameterMetadata']]],
   ['ispreloaddisabled',['IsPreloadDisabled',['../classgd_1_1_json_resource.html#ad27cc520e69765e7d29e58befcca2812',1,'gd::JsonResource']]],
   ['isprivate',['IsPrivate',['../classgd_1_1_expression_metadata.html#a768cb9175ea806d1ab91326e0d879e17',1,'gd::ExpressionMetadata::IsPrivate()'],['../classgd_1_1_instruction_metadata.html#a57f82adb301bb1c112d2a2cf4f07743b',1,'gd::InstructionMetadata::IsPrivate()']]],

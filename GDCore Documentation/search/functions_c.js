@@ -12,7 +12,7 @@ var searchData=
   ['objectslistwithoutpickingneeded',['ObjectsListWithoutPickingNeeded',['../classgd_1_1_events_code_generation_context.html#ae402607ce5c59d60810c08a1756da9b8',1,'gd::EventsCodeGenerationContext']]],
   ['onideclosed',['OnIDEClosed',['../classgd_1_1_platform.html#a169c395cb03c7404a962406012d3063a',1,'gd::Platform']]],
   ['onideinitialized',['OnIDEInitialized',['../classgd_1_1_platform.html#a36662f1100390098e1eb6237537d56b0',1,'gd::Platform']]],
-  ['onlyifextrasettingisnonempty',['OnlyIfExtraSettingIsNonEmpty',['../classgd_1_1_dependency_metadata.html#a50066b05adbdb0fd2933ca0e25181580',1,'gd::DependencyMetadata']]],
+  ['onlyifsomeextrasettingsnonempty',['OnlyIfSomeExtraSettingsNonEmpty',['../classgd_1_1_dependency_metadata.html#ac9ddf286fa47c902404d8bf493d01b84',1,'gd::DependencyMetadata']]],
   ['openlibrary',['OpenLibrary',['../namespacegd.html#ab8f0fd603e6c559ca309e7b8af89d19f',1,'gd']]],
   ['operator_21_3d',['operator!=',['../classgd_1_1_string.html#a0392cf56a0e295d239bd2571a23f662e',1,'gd::String::operator!=(const String &amp;lhs, const String &amp;rhs)'],['../classgd_1_1_string.html#af9161f2b71d3b2a5122700cf82dce3da',1,'gd::String::operator!=(const String &amp;lhs, const char *rhs)'],['../classgd_1_1_string.html#a60982e04e0d936a0acdfc4bf755f5d6a',1,'gd::String::operator!=(const char *lhs, const String &amp;rhs)']]],
   ['operator_2b',['operator+',['../classgd_1_1_string.html#a8955e74c59824d39ae330148adbb18ed',1,'gd::String::operator+(String lhs, const String &amp;rhs)'],['../classgd_1_1_string.html#a39811970fc4d5a0cfe0a8b500110bdc9',1,'gd::String::operator+(String lhs, const char *rhs)'],['../classgd_1_1_string.html#ad8e5c3685bf1445ba955356033e97df5',1,'gd::String::operator+(const char *lhs, const String &amp;rhs)']]],

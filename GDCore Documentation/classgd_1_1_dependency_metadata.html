@@ -80,6 +80,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a2bbe2fa55b4432d812b3882430924bd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#a2bbe2fa55b4432d812b3882430924bd5">DependencyMetadata</a> ()</td></tr>
+<tr class="separator:a2bbe2fa55b4432d812b3882430924bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9152723bfe281cbf67b15f68d39e4e1b"><td class="memItemLeft" align="right" valign="top"><a id="a9152723bfe281cbf67b15f68d39e4e1b"></a>
 <a class="el" href="classgd_1_1_dependency_metadata.html">DependencyMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#a9152723bfe281cbf67b15f68d39e4e1b">SetName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_)</td></tr>
 <tr class="memdesc:a9152723bfe281cbf67b15f68d39e4e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name shown to users. <br /></td></tr>
@@ -98,13 +100,14 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classgd_1_1_dependency_metadata.html">DependencyMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#a1bba2830395d81adff7f9c185e8c893b">SetExtraSetting</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;settingName, const <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &amp;settingValue)</td></tr>
 <tr class="memdesc:a1bba2830395d81adff7f9c185e8c893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a dependency type specific setting. <br /></td></tr>
 <tr class="separator:a1bba2830395d81adff7f9c185e8c893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50066b05adbdb0fd2933ca0e25181580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_dependency_metadata.html">DependencyMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#a50066b05adbdb0fd2933ca0e25181580">OnlyIfExtraSettingIsNonEmpty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;settingName)</td></tr>
-<tr class="memdesc:a50066b05adbdb0fd2933ca0e25181580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the dependency to be included in the export only if the specified setting is not empty.  <a href="#a50066b05adbdb0fd2933ca0e25181580">More...</a><br /></td></tr>
-<tr class="separator:a50066b05adbdb0fd2933ca0e25181580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc99abe05645732f9ead95b650af616"><td class="memItemLeft" align="right" valign="top"><a id="a3cc99abe05645732f9ead95b650af616"></a>
-const std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#a3cc99abe05645732f9ead95b650af616">GetRequiredExtraSettingsForExport</a> () const</td></tr>
-<tr class="memdesc:a3cc99abe05645732f9ead95b650af616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of extra settings that must be fulfilled for the dependency to be exported. <br /></td></tr>
-<tr class="separator:a3cc99abe05645732f9ead95b650af616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ddf286fa47c902404d8bf493d01b84"><td class="memItemLeft" align="right" valign="top"><a id="ac9ddf286fa47c902404d8bf493d01b84"></a>
+<a class="el" href="classgd_1_1_dependency_metadata.html">DependencyMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#ac9ddf286fa47c902404d8bf493d01b84">OnlyIfSomeExtraSettingsNonEmpty</a> ()</td></tr>
+<tr class="memdesc:ac9ddf286fa47c902404d8bf493d01b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the dependency to be included in the export only if at least one of the extra settings is set. <br /></td></tr>
+<tr class="separator:ac9ddf286fa47c902404d8bf493d01b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00cca9a828dc6e9de53408a6881bdb1e"><td class="memItemLeft" align="right" valign="top"><a id="a00cca9a828dc6e9de53408a6881bdb1e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_dependency_metadata.html#a00cca9a828dc6e9de53408a6881bdb1e">IsOnlyIfSomeExtraSettingsNonEmpty</a> () const</td></tr>
+<tr class="memdesc:a00cca9a828dc6e9de53408a6881bdb1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if at least one of the extra settings must be set for the dependency to be included in the export. <br /></td></tr>
+<tr class="separator:a00cca9a828dc6e9de53408a6881bdb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b0e52f13ee2b4a6d694705fbe3721e"><td class="memItemLeft" align="right" valign="top"><a id="a05b0e52f13ee2b4a6d694705fbe3721e"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:a05b0e52f13ee2b4a6d694705fbe3721e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,9 +127,9 @@ const std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains information about a dependency (library, npm/cordova package, or other according to the export) of an extension. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2home_2circleci_2repo_2_g_develop_2_core_2_g_d_core_2_extensions_2_metadata_2_dependency_metadata_8h-example.html#_a0">/home/circleci/repo/GDevelop/Core/GDCore/Extensions/Metadata/DependencyMetadata.h</a>.</dd>
-</dl></div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a50066b05adbdb0fd2933ca0e25181580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50066b05adbdb0fd2933ca0e25181580">&#9670;&nbsp;</a></span>OnlyIfExtraSettingIsNonEmpty()</h2>
+</dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2bbe2fa55b4432d812b3882430924bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbe2fa55b4432d812b3882430924bd5">&#9670;&nbsp;</a></span>DependencyMetadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,10 +138,9 @@ const std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_dependency_metadata.html">DependencyMetadata</a>&amp; gd::DependencyMetadata::OnlyIfExtraSettingIsNonEmpty </td>
+          <td class="memname">gd::DependencyMetadata::DependencyMetadata </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>settingName</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -148,12 +150,12 @@ const std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Mark the dependency to be included in the export only if the specified setting is not empty. </p>
-<p>If this is called for multiple settings, all settings must be fulfilled for the dependency to be exported. </p>
+<p>Construct a new dependency metadata, though you probably want to call <code>AddDependency</code> on <a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html" title="Base class for implementing platform&#39;s extensions. ">gd::PlatformExtension</a> </dd></dl>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad83135cdf365ac6a8605c0bc6a60ff72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad83135cdf365ac6a8605c0bc6a60ff72">&#9670;&nbsp;</a></span>SetDependencyType()</h2>
 
