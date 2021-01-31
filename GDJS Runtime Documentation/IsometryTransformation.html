@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      Extensions/Screenshot/screenshottools.ts - Documentation
+      IsometryTransformation - Documentation
   </title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
@@ -81,58 +79,198 @@
   <div id="main">
     
       <h1 class="page-title">
-        Extensions/Screenshot/screenshottools.ts
+        IsometryTransformation
       </h1>
     
 
     
-      
 
 <section>
+  <header>
+    
+      <h2>
+        
+        IsometryTransformation
+        
+      </h2>
+
+      
+    
+  </header>
+
   <article>
-    <pre class="prettyprint source linenums"><code>namespace gdjs {
-  export namespace screenshot {
-    /**
-     * Save a screenshot of the game.
-     * @param runtimeScene The scene
-     * @param savePath The path where to save the screenshot
-     */
-    export const takeScreenshot = function (
-      runtimeScene: gdjs.RuntimeScene,
-      savePath: string
-    ) {
-      const electron = runtimeScene.getGame().getRenderer().getElectron();
-      if (electron) {
-        const fileSystem = electron.remote.require('fs');
-        const canvas = runtimeScene.getGame().getRenderer().getCanvas();
-        if (canvas) {
-          const content = canvas
-            .toDataURL('image/png')
-            .replace('data:image/png;base64,', '');
-          if (savePath.toLowerCase().indexOf('.png') == -1) {
-            savePath += '.png';
-          }
-          fileSystem.writeFile(savePath, content, 'base64', (err) => {
-            if (err) {
-              console.error(
-                'Unable to save the screenshot at path: ' + savePath
-              );
-            }
-          });
-        } else {
-          console.error(
-            'Screenshot are not supported on rendering engines without canvas.'
-          );
-        }
-      }
-    };
-  }
-}
-</code></pre>
+    <div class="container-overview">
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#IsometryTransformation">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="IsometryTransformation">
+      <span class="type-signature"></span>new IsometryTransformation<span class="signature">(angle)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>angle</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>between the x axis and the projected isometric x axis.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Extensions_TopDownMovementBehavior_topdownmovementruntimebehavior.ts.html">Extensions/TopDownMovementBehavior/topdownmovementruntimebehavior.ts</a>, <a href="Extensions_TopDownMovementBehavior_topdownmovementruntimebehavior.ts.html#line331">line 331</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h5>Throws:</h5>
+  
+      
+
+  <div class="param-desc">
+    
+      <p>if the angle is not in ]0; pi/4[. Note that 0 is a front viewpoint and pi/4 a top-down viewpoint.</p>
+    
+  </div>
+
+
+    
+
+
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
   </article>
 </section>
 
-    
+
 
 
   </div>
