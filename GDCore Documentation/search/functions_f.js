@@ -115,7 +115,7 @@ var searchData=
   ['setparameters',['SetParameters',['../classgd_1_1_instruction.html#a431948aca4e115cbb7151a92c644eadd',1,'gd::Instruction']]],
   ['setparameterscount',['SetParametersCount',['../classgd_1_1_instruction.html#a398691cdb6394402b5448c1fcd64ecac',1,'gd::Instruction']]],
   ['setpreprocessing',['SetPreprocessing',['../classgd_1_1_event_metadata.html#a97833b0bc30ce98f163841231eef96cd',1,'gd::EventMetadata']]],
-  ['setprivate',['SetPrivate',['../classgd_1_1_expression_metadata.html#a2831c837e9a8697ca8b348684566c2b4',1,'gd::ExpressionMetadata::SetPrivate()'],['../classgd_1_1_instruction_metadata.html#a3abf812e3d2b0beba881deda6713f7a5',1,'gd::InstructionMetadata::SetPrivate()']]],
+  ['setprivate',['SetPrivate',['../classgd_1_1_expression_metadata.html#a2831c837e9a8697ca8b348684566c2b4',1,'gd::ExpressionMetadata::SetPrivate()'],['../classgd_1_1_instruction_metadata.html#a3abf812e3d2b0beba881deda6713f7a5',1,'gd::InstructionMetadata::SetPrivate()'],['../classgd_1_1_events_function.html#a528f966c067125163be60f9362169fb6',1,'gd::EventsFunction::SetPrivate()']]],
   ['setprofiler',['SetProfiler',['../classgd_1_1_layout.html#a8f3ddb72330ac91a75a22ab14d930fa9',1,'gd::Layout']]],
   ['setprojectfile',['SetProjectFile',['../classgd_1_1_project.html#a4f88dda26fda8c00fa8c722f4a73a014',1,'gd::Project']]],
   ['setprojectuuid',['SetProjectUuid',['../classgd_1_1_project.html#a17825ef87508fd46997e0d939b3b0343',1,'gd::Project']]],
