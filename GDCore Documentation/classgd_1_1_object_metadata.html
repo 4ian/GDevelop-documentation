@@ -83,7 +83,7 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ced7cfc65085e87e7039627e196af50"><td class="memItemLeft" align="right" valign="top"><a id="a8ced7cfc65085e87e7039627e196af50"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a8ced7cfc65085e87e7039627e196af50">ObjectMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon24x24_, std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt; blueprintObject_)</td></tr>
-<tr class="memdesc:a8ced7cfc65085e87e7039627e196af50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an object metadata, using a "blueprint" object that will be copied when a new object is asked. <br /></td></tr>
+<tr class="memdesc:a8ced7cfc65085e87e7039627e196af50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an object metadata, using a "blueprint" object that will be copied when a new object is requested. <br /></td></tr>
 <tr class="separator:a8ced7cfc65085e87e7039627e196af50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33b721c722d1c18a8ae62efe702e608"><td class="memItemLeft" align="right" valign="top"><a id="ae33b721c722d1c18a8ae62efe702e608"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#ae33b721c722d1c18a8ae62efe702e608">ObjectMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon24x24_, CreateFunPtr createFunPtrP)</td></tr>
@@ -95,21 +95,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d954dc68c00c3ceeace6de4bfefbe5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a6d954dc68c00c3ceeace6de4bfefbe5e">AddAction</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;sentence_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
 <tr class="memdesc:a6d954dc68c00c3ceeace6de4bfefbe5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new action as being part of the extension.  <a href="#a6d954dc68c00c3ceeace6de4bfefbe5e">More...</a><br /></td></tr>
 <tr class="separator:a6d954dc68c00c3ceeace6de4bfefbe5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2facc8f46569f77ff79a93affa8b5032"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a2facc8f46569f77ff79a93affa8b5032">AddExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
-<tr class="memdesc:a2facc8f46569f77ff79a93affa8b5032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new expression as being part of the extension.  <a href="#a2facc8f46569f77ff79a93affa8b5032">More...</a><br /></td></tr>
+<tr class="memitem:a339f21b9b7ca82ba3777591793cde363"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a339f21b9b7ca82ba3777591793cde363">AddScopedCondition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;sentence_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
+<tr class="separator:a339f21b9b7ca82ba3777591793cde363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbc8d2e63793d5affcd02ec897a5012"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a2fbc8d2e63793d5affcd02ec897a5012">AddScopedAction</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;sentence_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
+<tr class="separator:a2fbc8d2e63793d5affcd02ec897a5012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2facc8f46569f77ff79a93affa8b5032"><td class="memItemLeft" align="right" valign="top"><a id="a2facc8f46569f77ff79a93affa8b5032"></a>
+<a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a2facc8f46569f77ff79a93affa8b5032">AddExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
+<tr class="memdesc:a2facc8f46569f77ff79a93affa8b5032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new expression as being part of the extension. <br /></td></tr>
 <tr class="separator:a2facc8f46569f77ff79a93affa8b5032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c61ba71b9b8e750b1588a6f1aedb967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a2c61ba71b9b8e750b1588a6f1aedb967">AddStrExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
-<tr class="memdesc:a2c61ba71b9b8e750b1588a6f1aedb967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new string expression as being part of the extension.  <a href="#a2c61ba71b9b8e750b1588a6f1aedb967">More...</a><br /></td></tr>
+<tr class="memitem:a2c61ba71b9b8e750b1588a6f1aedb967"><td class="memItemLeft" align="right" valign="top"><a id="a2c61ba71b9b8e750b1588a6f1aedb967"></a>
+<a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a2c61ba71b9b8e750b1588a6f1aedb967">AddStrExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon_)</td></tr>
+<tr class="memdesc:a2c61ba71b9b8e750b1588a6f1aedb967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new string expression as being part of the extension. <br /></td></tr>
 <tr class="separator:a2c61ba71b9b8e750b1588a6f1aedb967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b350f972954b9161fc071eef0529ecb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a6b350f972954b9161fc071eef0529ecb">SetFullName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_)</td></tr>
-<tr class="memdesc:a6b350f972954b9161fc071eef0529ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name shown to the user.  <a href="#a6b350f972954b9161fc071eef0529ecb">More...</a><br /></td></tr>
+<tr class="memitem:a956e08cdd2c62347f21fec5070d278bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">gd::MultipleInstructionMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a956e08cdd2c62347f21fec5070d278bb">AddExpressionAndCondition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;sentenceName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon)</td></tr>
+<tr class="memdesc:a956e08cdd2c62347f21fec5070d278bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new expression and condition as being part of the object.  <a href="#a956e08cdd2c62347f21fec5070d278bb">More...</a><br /></td></tr>
+<tr class="separator:a956e08cdd2c62347f21fec5070d278bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c7623002763f45ece3e4ca5e4f03e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">gd::MultipleInstructionMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a19c7623002763f45ece3e4ca5e4f03e6">AddExpressionAndConditionAndAction</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;sentenceName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon)</td></tr>
+<tr class="memdesc:a19c7623002763f45ece3e4ca5e4f03e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new expression, condition and action as being part of the object.  <a href="#a19c7623002763f45ece3e4ca5e4f03e6">More...</a><br /></td></tr>
+<tr class="separator:a19c7623002763f45ece3e4ca5e4f03e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b350f972954b9161fc071eef0529ecb"><td class="memItemLeft" align="right" valign="top"><a id="a6b350f972954b9161fc071eef0529ecb"></a>
+<a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a6b350f972954b9161fc071eef0529ecb">SetFullName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_)</td></tr>
+<tr class="memdesc:a6b350f972954b9161fc071eef0529ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name shown to the user. <br /></td></tr>
 <tr class="separator:a6b350f972954b9161fc071eef0529ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbe7acdbab111c01b33945d4dc0e3ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#acbbe7acdbab111c01b33945d4dc0e3ce">SetDescription</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_)</td></tr>
-<tr class="memdesc:acbbe7acdbab111c01b33945d4dc0e3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the description shown to the user.  <a href="#acbbe7acdbab111c01b33945d4dc0e3ce">More...</a><br /></td></tr>
+<tr class="memitem:acbbe7acdbab111c01b33945d4dc0e3ce"><td class="memItemLeft" align="right" valign="top"><a id="acbbe7acdbab111c01b33945d4dc0e3ce"></a>
+<a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#acbbe7acdbab111c01b33945d4dc0e3ce">SetDescription</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_)</td></tr>
+<tr class="memdesc:acbbe7acdbab111c01b33945d4dc0e3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the description shown to the user. <br /></td></tr>
 <tr class="separator:acbbe7acdbab111c01b33945d4dc0e3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ead947bfa2a7b30564aad5f0b8af058"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a5ead947bfa2a7b30564aad5f0b8af058">GetHelpPath</a> () const</td></tr>
+<tr class="memitem:a5ead947bfa2a7b30564aad5f0b8af058"><td class="memItemLeft" align="right" valign="top"><a id="a5ead947bfa2a7b30564aad5f0b8af058"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a5ead947bfa2a7b30564aad5f0b8af058">GetHelpPath</a> () const</td></tr>
+<tr class="memdesc:a5ead947bfa2a7b30564aad5f0b8af058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the help path of the object, relative to the GDevelop documentation root. <br /></td></tr>
 <tr class="separator:a5ead947bfa2a7b30564aad5f0b8af058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71ecfa03a01e634b34b043f6f75792d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a71ecfa03a01e634b34b043f6f75792d5">SetHelpPath</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;path)</td></tr>
+<tr class="memdesc:a71ecfa03a01e634b34b043f6f75792d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the help path of the object, relative to the GDevelop documentation root.  <a href="#a71ecfa03a01e634b34b043f6f75792d5">More...</a><br /></td></tr>
 <tr class="separator:a71ecfa03a01e634b34b043f6f75792d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39ff0ff89510f9a268a577961a3eadd"><td class="memItemLeft" align="right" valign="top"><a id="ab39ff0ff89510f9a268a577961a3eadd"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
@@ -221,7 +238,7 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
 </div><div class="memdoc">
 
 <p>Declare a new action as being part of the extension. </p>
-<dl class="section note"><dt>Note</dt><dd>This method does nothing when used for GD C++ runtime. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Prefer using <code>AddScopedAction</code>, to properly namespace the action. </dd></dl>
 
 </div>
 </div>
@@ -282,18 +299,142 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
 </div><div class="memdoc">
 
 <p>Declare a new condition as being part of the extension. </p>
-<dl class="section note"><dt>Note</dt><dd>This method does nothing when used for GD C++ runtime. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Prefer using <code>AddScopedCondition</code>, to properly namespace the condition. </dd></dl>
 
 </div>
 </div>
-<a id="a2facc8f46569f77ff79a93affa8b5032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2facc8f46569f77ff79a93affa8b5032">&#9670;&nbsp;</a></span>AddExpression()</h2>
+<a id="a956e08cdd2c62347f21fec5070d278bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956e08cdd2c62347f21fec5070d278bb">&#9670;&nbsp;</a></span>AddExpressionAndCondition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; gd::ObjectMetadata::AddExpression </td>
+          <td class="memname"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">gd::MultipleInstructionMetadata</a> gd::ObjectMetadata::AddExpressionAndCondition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>fullname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sentenceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>icon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Declare a new expression and condition as being part of the object. </p>
+<dl class="section note"><dt>Note</dt><dd>It's recommended to use this function to avoid declaring twice a similar expression/condition. </dd></dl>
+
+</div>
+</div>
+<a id="a19c7623002763f45ece3e4ca5e4f03e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c7623002763f45ece3e4ca5e4f03e6">&#9670;&nbsp;</a></span>AddExpressionAndConditionAndAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">gd::MultipleInstructionMetadata</a> gd::ObjectMetadata::AddExpressionAndConditionAndAction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>fullname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sentenceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>icon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Declare a new expression, condition and action as being part of the object. </p>
+<dl class="section note"><dt>Note</dt><dd>The action name is prefixed by "Set" (and the namespace, as the condition). </dd>
+<dd>
+It's recommended to use this function to avoid declaring 3 times a similar expression/condition/action. </dd></dl>
+
+</div>
+</div>
+<a id="a2fbc8d2e63793d5affcd02ec897a5012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbc8d2e63793d5affcd02ec897a5012">&#9670;&nbsp;</a></span>AddScopedAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; gd::ObjectMetadata::AddScopedAction </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name_</em>, </td>
@@ -314,7 +455,19 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sentence_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>group_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>icon_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -329,20 +482,18 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Declare a new expression as being part of the extension. </p>
-<dl class="section note"><dt>Note</dt><dd>This method does nothing when used for GD C++ runtime. </dd></dl>
+<p>Declare a new action as being part of the object. </p>
 
 </div>
 </div>
-<a id="a2c61ba71b9b8e750b1588a6f1aedb967"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c61ba71b9b8e750b1588a6f1aedb967">&#9670;&nbsp;</a></span>AddStrExpression()</h2>
+<a id="a339f21b9b7ca82ba3777591793cde363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339f21b9b7ca82ba3777591793cde363">&#9670;&nbsp;</a></span>AddScopedCondition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp; gd::ObjectMetadata::AddStrExpression </td>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; gd::ObjectMetadata::AddScopedCondition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>name_</em>, </td>
@@ -363,7 +514,19 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>sentence_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>group_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>icon_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -378,77 +541,7 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Declare a new string expression as being part of the extension. </p>
-<dl class="section note"><dt>Note</dt><dd>This method does nothing when used for GD C++ runtime. </dd></dl>
-
-</div>
-</div>
-<a id="a5ead947bfa2a7b30564aad5f0b8af058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ead947bfa2a7b30564aad5f0b8af058">&#9670;&nbsp;</a></span>GetHelpPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classgd_1_1_string.html">gd::String</a>&amp; gd::ObjectMetadata::GetHelpPath </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the help path of the object, relative to the GDevelop documentation root. </p>
-
-</div>
-</div>
-<a id="acbbe7acdbab111c01b33945d4dc0e3ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbe7acdbab111c01b33945d4dc0e3ce">&#9670;&nbsp;</a></span>SetDescription()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp; gd::ObjectMetadata::SetDescription </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>description_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the description shown to the user. </p>
-<dl class="section note"><dt>Note</dt><dd>This method does nothing when used for GD C++ runtime. </dd></dl>
-
-</div>
-</div>
-<a id="a6b350f972954b9161fc071eef0529ecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b350f972954b9161fc071eef0529ecb">&#9670;&nbsp;</a></span>SetFullName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp; gd::ObjectMetadata::SetFullName </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>fullname_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the name shown to the user. </p>
-<dl class="section note"><dt>Note</dt><dd>This method does nothing when used for GD C++ runtime. </dd></dl>
+<p>Declare a new condition as being part of the object. </p>
 
 </div>
 </div>
@@ -475,7 +568,8 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the help path of the object, relative to the GDevelop documentation root.</p>
+
+<p>Set the help path of the object, relative to the GDevelop documentation root. </p>
 <p>The object instructions will have this help path set by default, unless you call SetHelpPath on them. </p>
 
 </div>
@@ -498,7 +592,7 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
 
 <p>Set the URL pointing to the help page about this object. </p>
 <dl class="section note"><dt>Note</dt><dd>The path to the page must be relative to the wiki url. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use SetHelpPath instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use SetHelpPath instead </dd></dl>
 
 </div>
 </div>

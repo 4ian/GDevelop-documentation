@@ -4,10 +4,10 @@ var searchData=
   ['makeabsolute',['MakeAbsolute',['../classgd_1_1_abstract_file_system.html#a2bad621100bc066b06e8e85748f4253c',1,'gd::AbstractFileSystem']]],
   ['makerelative',['MakeRelative',['../classgd_1_1_abstract_file_system.html#a67c0bb25312dd5b7968f27e0896082cc',1,'gd::AbstractFileSystem']]],
   ['makespriteownsitsimage',['MakeSpriteOwnsItsImage',['../classgd_1_1_sprite.html#ae64bcb28e3c8607362604c5ff4374913',1,'gd::Sprite']]],
-  ['markasadvanced',['MarkAsAdvanced',['../classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277',1,'gd::InstructionMetadata']]],
-  ['markascomplex',['MarkAsComplex',['../classgd_1_1_instruction_metadata.html#a073dc8ddaaff2eb4395a98b2637a8c8a',1,'gd::InstructionMetadata']]],
+  ['markasadvanced',['MarkAsAdvanced',['../classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277',1,'gd::InstructionMetadata::MarkAsAdvanced()'],['../classgd_1_1_multiple_instruction_metadata.html#aa9deb82e6249029a006a9ed15180838e',1,'gd::MultipleInstructionMetadata::MarkAsAdvanced()']]],
+  ['markascomplex',['MarkAsComplex',['../classgd_1_1_instruction_metadata.html#a073dc8ddaaff2eb4395a98b2637a8c8a',1,'gd::InstructionMetadata::MarkAsComplex()'],['../classgd_1_1_multiple_instruction_metadata.html#aea3bb96fea5ce60a02f654846250200f',1,'gd::MultipleInstructionMetadata::MarkAsComplex()']]],
   ['markasdeprecated',['MarkAsDeprecated',['../classgd_1_1_platform_extension.html#a737fe4f423cfee79efd899b2a236c104',1,'gd::PlatformExtension']]],
-  ['markassimple',['MarkAsSimple',['../classgd_1_1_instruction_metadata.html#a20f6cccc70c0bf261944585ab9d9ec9e',1,'gd::InstructionMetadata']]],
+  ['markassimple',['MarkAsSimple',['../classgd_1_1_instruction_metadata.html#a20f6cccc70c0bf261944585ab9d9ec9e',1,'gd::InstructionMetadata::MarkAsSimple()'],['../classgd_1_1_multiple_instruction_metadata.html#a5e0b7d7892f173a87c102f65dea11df3',1,'gd::MultipleInstructionMetadata::MarkAsSimple()']]],
   ['maxconditionslistssize',['maxConditionsListsSize',['../classgd_1_1_events_code_generator.html#a8ef134acbe21b8ea7d606e776ea5f187',1,'gd::EventsCodeGenerator']]],
   ['maxcustomconditionsdepth',['maxCustomConditionsDepth',['../classgd_1_1_events_code_generator.html#a35db61f766059e5ca8f87bd4b1367407',1,'gd::EventsCodeGenerator']]],
   ['metadataprovider',['MetadataProvider',['../classgd_1_1_metadata_provider.html',1,'gd']]],
@@ -29,5 +29,6 @@ var searchData=
   ['moveresourcedowninlist',['MoveResourceDownInList',['../classgd_1_1_resources_manager.html#a77fe31ef377760985ce9a5c248263ad2',1,'gd::ResourcesManager::MoveResourceDownInList()'],['../classgd_1_1_resource_folder.html#a066615afa8317e747b5d417b811da8a4',1,'gd::ResourceFolder::MoveResourceDownInList()']]],
   ['moveresourceupinlist',['MoveResourceUpInList',['../classgd_1_1_resources_manager.html#a140018810423d4816c163b7cb1eaf1da',1,'gd::ResourcesManager::MoveResourceUpInList()'],['../classgd_1_1_resource_folder.html#ace43d7925283a4fd15cd7d56ac3caf96',1,'gd::ResourceFolder::MoveResourceUpInList()']]],
   ['movesprite',['MoveSprite',['../classgd_1_1_direction.html#a5b6db9ebbc0dd6a77586c760f3422d9e',1,'gd::Direction']]],
+  ['multipleinstructionmetadata',['MultipleInstructionMetadata',['../classgd_1_1_multiple_instruction_metadata.html',1,'gd::MultipleInstructionMetadata'],['../classgd_1_1_multiple_instruction_metadata.html#ae58e6bb9409015fd8e6ec0f3cc40b8d1',1,'gd::MultipleInstructionMetadata::MultipleInstructionMetadata()']]],
   ['mustbepreprocessed',['MustBePreprocessed',['../classgd_1_1_link_event.html#a2b5086be682528fd93906f55616aea64',1,'gd::LinkEvent::MustBePreprocessed()'],['../classgd_1_1_base_event.html#a99b403e010aa6ed41b8be7e29cc3a13c',1,'gd::BaseEvent::MustBePreprocessed()']]]
 ];
