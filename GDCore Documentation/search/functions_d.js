@@ -2,6 +2,8 @@ var searchData=
 [
   ['parseexpression',['ParseExpression',['../classgd_1_1_expression_parser2.html#ae10c937cf5fdc876c3ca66b2cc52d547',1,'gd::ExpressionParser2']]],
   ['pop_5fback',['pop_back',['../classgd_1_1_string.html#abac67f405ee746e682e9530783efd006',1,'gd::String']]],
+  ['preloadasmusic',['PreloadAsMusic',['../classgd_1_1_audio_resource.html#a6680999b893abcaebe74073776748ba7',1,'gd::AudioResource']]],
+  ['preloadassound',['PreloadAsSound',['../classgd_1_1_audio_resource.html#a545dc3b8bcb1f5ef4bccf60e7984aa30',1,'gd::AudioResource']]],
   ['preprocess',['Preprocess',['../classgd_1_1_base_event.html#af05fa8d742ee600ef6e54173315cdb50',1,'gd::BaseEvent']]],
   ['preprocesseventlist',['PreprocessEventList',['../classgd_1_1_events_code_generator.html#ac60c41bf25f04fb048f576711e97fdc7',1,'gd::EventsCodeGenerator']]],
   ['preserveabsolutefilenames',['PreserveAbsoluteFilenames',['../classgd_1_1_resources_merging_helper.html#af037de5c7335e07b4effc5a3f3667397',1,'gd::ResourcesMergingHelper']]],

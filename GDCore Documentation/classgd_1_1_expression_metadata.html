@@ -81,8 +81,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6ee6501ded85bae30a834054a6cab89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_metadata.html#ac6ee6501ded85bae30a834054a6cab89">ExpressionMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon)</td></tr>
-<tr class="separator:ac6ee6501ded85bae30a834054a6cab89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e81ac5a5f5b62311e89853aeb172f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_metadata.html#a59e81ac5a5f5b62311e89853aeb172f1">ExpressionMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;returnType, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;smallicon)</td></tr>
+<tr class="separator:a59e81ac5a5f5b62311e89853aeb172f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1c61f1965fbe6b6bf0965d051a8a4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_metadata.html#a9e1c61f1965fbe6b6bf0965d051a8a4f">ExpressionMetadata</a> ()</td></tr>
 <tr class="separator:a9e1c61f1965fbe6b6bf0965d051a8a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3297d9209df5637bcc729c2f2366908d"><td class="memItemLeft" align="right" valign="top"><a id="a3297d9209df5637bcc729c2f2366908d"></a>
@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a80e09411107ae2e784463afad87a2b16"><td class="memItemLeft" align="right" valign="top"><a id="a80e09411107ae2e784463afad87a2b16"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShown</b> () const</td></tr>
 <tr class="separator:a80e09411107ae2e784463afad87a2b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563e783df4f1a54dfcb3a4f91e5a57e6"><td class="memItemLeft" align="right" valign="top"><a id="a563e783df4f1a54dfcb3a4f91e5a57e6"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReturnType</b> () const</td></tr>
+<tr class="separator:a563e783df4f1a54dfcb3a4f91e5a57e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba61973c21fd8f8f70f29211c145ab3"><td class="memItemLeft" align="right" valign="top"><a id="a3ba61973c21fd8f8f70f29211c145ab3"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullName</b> () const</td></tr>
 <tr class="separator:a3ba61973c21fd8f8f70f29211c145ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +160,8 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::Par
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describe user-friendly information about an expression, its parameters and the function name as well as other information for code generation. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac6ee6501ded85bae30a834054a6cab89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ee6501ded85bae30a834054a6cab89">&#9670;&nbsp;</a></span>ExpressionMetadata() <span class="overload">[1/2]</span></h2>
+<a id="a59e81ac5a5f5b62311e89853aeb172f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e81ac5a5f5b62311e89853aeb172f1">&#9670;&nbsp;</a></span>ExpressionMetadata() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +169,12 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::Par
         <tr>
           <td class="memname">gd::ExpressionMetadata::ExpressionMetadata </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>returnType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
           <td class="paramname"><em>extensionNamespace</em>, </td>
         </tr>
@@ -232,7 +241,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::Par
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Construct an empty <a class="el" href="classgd_1_1_expression_metadata.html" title="Describe user-friendly information about an expression, its parameters and the function name as well ...">ExpressionMetadata</a>. </p><dl class="section warning"><dt>Warning</dt><dd>Don't use this - only here to fullfil std::map requirements. </dd></dl>
+<p>Construct an empty <a class="el" href="classgd_1_1_expression_metadata.html" title="Describe user-friendly information about an expression, its parameters and the function name as well ...">ExpressionMetadata</a>. </p><dl class="section warning"><dt>Warning</dt><dd>Don't use this - only here to construct a "bad" ExpressionData and to fulfill std::map requirements. </dd></dl>
 
 </div>
 </div>

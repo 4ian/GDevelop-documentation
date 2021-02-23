@@ -94,6 +94,12 @@ virtual <a class="el" href="classgd_1_1_audio_resource.html">AudioResource</a> *
 <tr class="memitem:a23e48b32eab5f8d1d0d92e174b6013dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a23e48b32eab5f8d1d0d92e174b6013dd">UseFile</a> () override</td></tr>
 <tr class="memdesc:a23e48b32eab5f8d1d0d92e174b6013dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the resource use a file.  <a href="#a23e48b32eab5f8d1d0d92e174b6013dd">More...</a><br /></td></tr>
 <tr class="separator:a23e48b32eab5f8d1d0d92e174b6013dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fb9e22cd8ffcf7c3859d6e7b34e6f1"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a79fb9e22cd8ffcf7c3859d6e7b34e6f1">GetProperties</a> () const override</td></tr>
+<tr class="memdesc:a79fb9e22cd8ffcf7c3859d6e7b34e6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the resource.  <a href="#a79fb9e22cd8ffcf7c3859d6e7b34e6f1">More...</a><br /></td></tr>
+<tr class="separator:a79fb9e22cd8ffcf7c3859d6e7b34e6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4a2f71348e2fa3dd5b7a852701e588"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a9a4a2f71348e2fa3dd5b7a852701e588">UpdateProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value) override</td></tr>
+<tr class="memdesc:a9a4a2f71348e2fa3dd5b7a852701e588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the resource.  <a href="#a9a4a2f71348e2fa3dd5b7a852701e588">More...</a><br /></td></tr>
+<tr class="separator:a9a4a2f71348e2fa3dd5b7a852701e588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40b84390d316e822b4e48a353510cb3c"><td class="memItemLeft" align="right" valign="top"><a id="a40b84390d316e822b4e48a353510cb3c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a40b84390d316e822b4e48a353510cb3c">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const override</td></tr>
 <tr class="memdesc:a40b84390d316e822b4e48a353510cb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the object. <br /></td></tr>
@@ -102,6 +108,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a9291f8536e2aa5fec23100de176163b1">UnserializeFrom</a> (const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) override</td></tr>
 <tr class="memdesc:a9291f8536e2aa5fec23100de176163b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialize the objectt. <br /></td></tr>
 <tr class="separator:a9291f8536e2aa5fec23100de176163b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6680999b893abcaebe74073776748ba7"><td class="memItemLeft" align="right" valign="top"><a id="a6680999b893abcaebe74073776748ba7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a6680999b893abcaebe74073776748ba7">PreloadAsMusic</a> () const</td></tr>
+<tr class="memdesc:a6680999b893abcaebe74073776748ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the audio resource should be preloaded as music. <br /></td></tr>
+<tr class="separator:a6680999b893abcaebe74073776748ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452ba313b9e912b79598a097578ebd15"><td class="memItemLeft" align="right" valign="top"><a id="a452ba313b9e912b79598a097578ebd15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a452ba313b9e912b79598a097578ebd15">SetPreloadAsMusic</a> (bool enable=true)</td></tr>
+<tr class="memdesc:a452ba313b9e912b79598a097578ebd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the audio resource should be preloaded as music. <br /></td></tr>
+<tr class="separator:a452ba313b9e912b79598a097578ebd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545dc3b8bcb1f5ef4bccf60e7984aa30"><td class="memItemLeft" align="right" valign="top"><a id="a545dc3b8bcb1f5ef4bccf60e7984aa30"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a545dc3b8bcb1f5ef4bccf60e7984aa30">PreloadAsSound</a> () const</td></tr>
+<tr class="memdesc:a545dc3b8bcb1f5ef4bccf60e7984aa30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the audio resource should be preloaded as music. <br /></td></tr>
+<tr class="separator:a545dc3b8bcb1f5ef4bccf60e7984aa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dec87a48af750ee6677519ba42baf22"><td class="memItemLeft" align="right" valign="top"><a id="a9dec87a48af750ee6677519ba42baf22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a9dec87a48af750ee6677519ba42baf22">SetPreloadAsSound</a> (bool enable=true)</td></tr>
+<tr class="memdesc:a9dec87a48af750ee6677519ba42baf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the audio resource should be preloaded as music. <br /></td></tr>
+<tr class="separator:a9dec87a48af750ee6677519ba42baf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgd_1_1_resource"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgd_1_1_resource')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgd_1_1_resource.html">gd::Resource</a></td></tr>
 <tr class="memitem:abb9ad6e6af9cb911f9572e6bb4d03973 inherit pub_methods_classgd_1_1_resource"><td class="memItemLeft" align="right" valign="top"><a id="abb9ad6e6af9cb911f9572e6bb4d03973"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#abb9ad6e6af9cb911f9572e6bb4d03973">SetName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_)</td></tr>
@@ -142,12 +164,6 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#a1e31d5747f5452d565d912c18cfd89f4">GetMetadata</a> () const</td></tr>
 <tr class="memdesc:a1e31d5747f5452d565d912c18cfd89f4 inherit pub_methods_classgd_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the (optional) metadata associated to the resource. <br /></td></tr>
 <tr class="separator:a1e31d5747f5452d565d912c18cfd89f4 inherit pub_methods_classgd_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bddb9fb64f7587a9b5399719509639f inherit pub_methods_classgd_1_1_resource"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#a6bddb9fb64f7587a9b5399719509639f">GetProperties</a> () const</td></tr>
-<tr class="memdesc:a6bddb9fb64f7587a9b5399719509639f inherit pub_methods_classgd_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the resource.  <a href="classgd_1_1_resource.html#a6bddb9fb64f7587a9b5399719509639f">More...</a><br /></td></tr>
-<tr class="separator:a6bddb9fb64f7587a9b5399719509639f inherit pub_methods_classgd_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d640907680f57ff7605976cc1b6b81f inherit pub_methods_classgd_1_1_resource"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resource.html#a9d640907680f57ff7605976cc1b6b81f">UpdateProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value)</td></tr>
-<tr class="memdesc:a9d640907680f57ff7605976cc1b6b81f inherit pub_methods_classgd_1_1_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the resource.  <a href="classgd_1_1_resource.html#a9d640907680f57ff7605976cc1b6b81f">More...</a><br /></td></tr>
-<tr class="separator:a9d640907680f57ff7605976cc1b6b81f inherit pub_methods_classgd_1_1_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describe an audio file used by a project. </p>
@@ -185,6 +201,37 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 
 </div>
 </div>
+<a id="a79fb9e22cd8ffcf7c3859d6e7b34e6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fb9e22cd8ffcf7c3859d6e7b34e6f1">&#9670;&nbsp;</a></span>GetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; gd::AudioResource::GetProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the IDE wants to know about the custom properties of the resource. </p>
+<p>Usage example: </p><div class="fragment"><div class="line">std::map&lt;gd::String, gd::PropertyDescriptor&gt; properties;</div><div class="line">properties[ToString(_(<span class="stringliteral">&quot;Text&quot;</span>))].SetValue(<span class="stringliteral">&quot;Hello world!&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> properties;</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_property_descriptor.html" title="Used to describe a property shown in a property grid. ">gd::PropertyDescriptor</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classgd_1_1_resource.html#a6bddb9fb64f7587a9b5399719509639f">gd::Resource</a>.</p>
+
+</div>
+</div>
 <a id="a543312e18667497f21355510ef4fb823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a543312e18667497f21355510ef4fb823">&#9670;&nbsp;</a></span>SetFile()</h2>
 
@@ -215,6 +262,47 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 <a class="el" href="classgd_1_1_resource.html#ae789341a981c1e44098b858dc09f519d" title="Return, if applicable, the String containing the file used by the resource. The file is relative to t...">gd::Resource::GetFile</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classgd_1_1_resource.html#aa652c11e4cbf814c3d9179e04f139d72">gd::Resource</a>.</p>
+
+</div>
+</div>
+<a id="a9a4a2f71348e2fa3dd5b7a852701e588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4a2f71348e2fa3dd5b7a852701e588">&#9670;&nbsp;</a></span>UpdateProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::AudioResource::UpdateProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the IDE wants to update a custom property of the resource. </p>
+<dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classgd_1_1_resource.html#a9d640907680f57ff7605976cc1b6b81f">gd::Resource</a>.</p>
 
 </div>
 </div>
