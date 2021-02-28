@@ -7,6 +7,7 @@ var searchData=
   ['delpoint',['DelPoint',['../classgd_1_1_sprite.html#aa5fcee0de5fa85901d7716a5572bb2cc',1,'gd::Sprite']]],
   ['dependenciesanalyzer',['DependenciesAnalyzer',['../class_dependencies_analyzer.html',1,'DependenciesAnalyzer'],['../class_dependencies_analyzer.html#a9368e8d3f66b47c440efaf30a612f59a',1,'DependenciesAnalyzer::DependenciesAnalyzer(gd::Project &amp;project_, gd::Layout &amp;layout_)'],['../class_dependencies_analyzer.html#a3a57c4f194457cc36f1984c21559b6c6',1,'DependenciesAnalyzer::DependenciesAnalyzer(gd::Project &amp;project_, gd::ExternalEvents &amp;externalEvents)']]],
   ['dependencymetadata',['DependencyMetadata',['../classgd_1_1_dependency_metadata.html',1,'gd::DependencyMetadata'],['../classgd_1_1_dependency_metadata.html#a2bbe2fa55b4432d812b3882430924bd5',1,'gd::DependencyMetadata::DependencyMetadata()']]],
+  ['dependencymetadataandextension',['DependencyMetadataAndExtension',['../structgd_1_1_dependency_metadata_and_extension.html',1,'gd']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['description',['description',['../classgd_1_1_parameter_metadata.html#ac4db44766822e6ce1aa753aa9a71933a',1,'gd::ParameterMetadata']]],
   ['destroysingleton',['DestroySingleton',['../classgd_1_1_platform_manager.html#ada256738230e1f42861da70347f723d4',1,'gd::PlatformManager']]],

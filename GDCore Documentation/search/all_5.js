@@ -40,6 +40,7 @@ var searchData=
   ['eventsvariablesfinder',['EventsVariablesFinder',['../classgd_1_1_events_variables_finder.html',1,'gd']]],
   ['exception',['exception',['../classutf8_1_1exception.html',1,'utf8']]],
   ['expandobjectsname',['ExpandObjectsName',['../classgd_1_1_events_code_generator.html#a75704cc7a8ea3159b99eea8e7be398bd',1,'gd::EventsCodeGenerator']]],
+  ['exporteddependencyresolver',['ExportedDependencyResolver',['../classgd_1_1_exported_dependency_resolver.html',1,'gd']]],
   ['exposeactionsresources',['ExposeActionsResources',['../classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820',1,'gd::PlatformExtension']]],
   ['exposeaudio',['ExposeAudio',['../classgd_1_1_arbitrary_resource_worker.html#a7e4de092a2a346ba1565f78289bf8be5',1,'gd::ArbitraryResourceWorker::ExposeAudio()'],['../classgd_1_1_resources_in_use_helper.html#a7545e51c72101ab9cd11c23fae7eeb3e',1,'gd::ResourcesInUseHelper::ExposeAudio()'],['../classgd_1_1_resources_renamer.html#a3f180c09b4cb744e889e07e6daa97202',1,'gd::ResourcesRenamer::ExposeAudio()']]],
   ['exposeconditionsresources',['ExposeConditionsResources',['../classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815',1,'gd::PlatformExtension']]],
