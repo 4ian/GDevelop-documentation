@@ -14,6 +14,7 @@ var searchData=
   ['removeanimation',['RemoveAnimation',['../classgd_1_1_sprite_object.html#a0b580a1a5188fca32caf364cac20155a',1,'gd::SpriteObject']]],
   ['removebehavior',['RemoveBehavior',['../classgd_1_1_object.html#adde98316123e6b91b5d4cc4a88c33025',1,'gd::Object']]],
   ['removechild',['RemoveChild',['../classgd_1_1_variable.html#a254ce70af17fee033e78035aefa90aff',1,'gd::Variable::RemoveChild()'],['../classgd_1_1_serializer_element.html#a5bda8a4c490d51b815701291276f222a',1,'gd::SerializerElement::RemoveChild()']]],
+  ['removedependencyat',['RemoveDependencyAt',['../classgd_1_1_events_functions_extension.html#a83c14ded806db0c889ce5631a6df1c43',1,'gd::EventsFunctionsExtension']]],
   ['removeeffect',['RemoveEffect',['../classgd_1_1_layer.html#ada61b1d1210ad2a8c7bc9237defd34ab',1,'gd::Layer']]],
   ['removeevent',['RemoveEvent',['../classgd_1_1_events_list.html#af463fbde25d2a92608e53d414795f19b',1,'gd::EventsList::RemoveEvent(const gd::BaseEvent &amp;event)'],['../classgd_1_1_events_list.html#a289132cd7172f0594da07b9a1c1e154a',1,'gd::EventsList::RemoveEvent(size_t index)']]],
   ['removeeventsfunctionsextension',['RemoveEventsFunctionsExtension',['../classgd_1_1_project.html#a45686fc97d0d17571315b0bcce869467',1,'gd::Project']]],
