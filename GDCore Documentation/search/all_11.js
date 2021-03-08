@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['savetoxml',['SaveToXml',['../classgd_1_1_variable.html#a2dc0eb997bc6c5f8b402a6c77adde113',1,'gd::Variable']]],
   ['scene',['scene',['../classgd_1_1_events_code_generator.html#a4bb9a7aa61f965e4bcc6ffc17103c9e0',1,'gd::EventsCodeGenerator']]],
   ['scenenamemangler',['SceneNameMangler',['../classgd_1_1_scene_name_mangler.html',1,'gd']]],
   ['searchinevents',['SearchInEvents',['../classgd_1_1_events_refactorer.html#ac7c9a7e30220ee6ccdccf768b4fc651b',1,'gd::EventsRefactorer']]],
@@ -28,7 +27,7 @@ var searchData=
   ['setbackgroundcolor',['SetBackgroundColor',['../classgd_1_1_group_event.html#a1bbe26610cc9925d2089e138652e1380',1,'gd::GroupEvent::SetBackgroundColor()'],['../classgd_1_1_layout.html#a25a67ab8e7e001326a45080664c8123a',1,'gd::Layout::SetBackgroundColor()']]],
   ['setbasedirectory',['SetBaseDirectory',['../classgd_1_1_resources_merging_helper.html#a5124baff4673185f763d0921964f69c4',1,'gd::ResourcesMergingHelper']]],
   ['setbold',['SetBold',['../classgd_1_1_text_formatting.html#aa15f681915791fb9b203a55ab5d09898',1,'gd::TextFormatting']]],
-  ['setbool',['SetBool',['../classgd_1_1_serializer_value.html#a07d223ab6feb2776b8f53a3b5f91a804',1,'gd::SerializerValue']]],
+  ['setbool',['SetBool',['../classgd_1_1_variable.html#a9813601c95bac03c4aab127db765e00c',1,'gd::Variable::SetBool()'],['../classgd_1_1_serializer_value.html#a07d223ab6feb2776b8f53a3b5f91a804',1,'gd::SerializerValue::SetBool()']]],
   ['setboolattribute',['SetBoolAttribute',['../classgd_1_1_serializer_element.html#a8d68c0ab56381455fa4e12d94bc82fcf',1,'gd::SerializerElement']]],
   ['setboolvalue',['SetBoolValue',['../classgd_1_1_serializer_element.html#ac892fa1ed914720fc2271d1ed12cd452',1,'gd::SerializerElement']]],
   ['setcameracount',['SetCameraCount',['../classgd_1_1_layer.html#a55bf2a43d01b58dc98ac5690fd2f6a2a',1,'gd::Layer']]],

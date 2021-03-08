@@ -12,6 +12,7 @@ var searchData=
   ['removeallsprites',['RemoveAllSprites',['../classgd_1_1_direction.html#a1a9afaf92ed28613a03c24d35deaed3c',1,'gd::Direction']]],
   ['removealluseless',['RemoveAllUseless',['../classgd_1_1_project_resources_adder.html#ae21c84064d4d5b9752cec3511a1f9a68',1,'gd::ProjectResourcesAdder']]],
   ['removeanimation',['RemoveAnimation',['../classgd_1_1_sprite_object.html#a0b580a1a5188fca32caf364cac20155a',1,'gd::SpriteObject']]],
+  ['removeatindex',['RemoveAtIndex',['../classgd_1_1_variable.html#a9d3c919405d830d072b8759523ee8c12',1,'gd::Variable']]],
   ['removebehavior',['RemoveBehavior',['../classgd_1_1_object.html#adde98316123e6b91b5d4cc4a88c33025',1,'gd::Object']]],
   ['removechild',['RemoveChild',['../classgd_1_1_variable.html#a254ce70af17fee033e78035aefa90aff',1,'gd::Variable::RemoveChild()'],['../classgd_1_1_serializer_element.html#a5bda8a4c490d51b815701291276f222a',1,'gd::SerializerElement::RemoveChild()']]],
   ['removedependencyat',['RemoveDependencyAt',['../classgd_1_1_events_functions_extension.html#a83c14ded806db0c889ce5631a6df1c43',1,'gd::EventsFunctionsExtension']]],

@@ -17,7 +17,6 @@ var searchData=
   ['loadbinaryfile',['LoadBinaryFile',['../classgd_1_1_resources_loader.html#a7afe2ebf944614bda0e03e8788116936',1,'gd::ResourcesLoader']]],
   ['loadextension',['LoadExtension',['../classgd_1_1_extensions_loader.html#a5dc2ba982ab40cafd6424e7b24253a24',1,'gd::ExtensionsLoader']]],
   ['loadfont',['LoadFont',['../classgd_1_1_resources_loader.html#af27f0827e157c26ca8e85984e043df2b',1,'gd::ResourcesLoader']]],
-  ['loadfromxml',['LoadFromXml',['../classgd_1_1_variable.html#adf5d57544337b6b0226430ca85715720',1,'gd::Variable']]],
   ['loadimage',['LoadImage',['../classgd_1_1_sprite.html#ac7fbbb664e7f3ab20bf04da4f8abcf07',1,'gd::Sprite']]],
   ['loadingscreen',['LoadingScreen',['../classgd_1_1_loading_screen.html',1,'gd']]],
   ['loadpermanentimages',['LoadPermanentImages',['../classgd_1_1_image_manager.html#a9e9b394f0b69ac96b3d863165dbaf9e9',1,'gd::ImageManager']]],

@@ -66,7 +66,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classgd_1_1_variable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::Variable Class Reference<div class="ingroups"><a class="el" href="group___platform_definition.html">Platform Definition (Common classes used by all platforms)</a></div></div>  </div>
@@ -78,6 +81,19 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="_variable_8h_source.html">Variable.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a06d83e4a398f4b54603c8ce1c4b18ece"><td class="memItemLeft" align="right" valign="top"><a id="a06d83e4a398f4b54603c8ce1c4b18ece"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <br />
+&#160;&#160;<b>String</b>, 
+<b>Number</b>, 
+<b>Boolean</b>, 
+<b>Structure</b>, 
+<br />
+&#160;&#160;<b>Array</b>
+<br />
+ }</td></tr>
+<tr class="separator:a06d83e4a398f4b54603c8ce1c4b18ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e3a29c51108ef813d33be71a06bd133"><td class="memItemLeft" align="right" valign="top"><a id="a3e3a29c51108ef813d33be71a06bd133"></a>
@@ -90,8 +106,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4fff3b9f0bbbf87cd2306c48d364fc64"><td class="memItemLeft" align="right" valign="top"><a id="a4fff3b9f0bbbf87cd2306c48d364fc64"></a>
 <a class="el" href="classgd_1_1_variable.html">Variable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classgd_1_1_variable.html">Variable</a> &amp;rhs)</td></tr>
 <tr class="separator:a4fff3b9f0bbbf87cd2306c48d364fc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Number or string</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Methods and operators used when the variable is considered as a number or a string. </p>
+<tr class="memitem:a9739dac5f5b1a2898f7496429ea55823"><td class="memItemLeft" align="right" valign="top"><a id="a9739dac5f5b1a2898f7496429ea55823"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a9739dac5f5b1a2898f7496429ea55823">GetType</a> () const</td></tr>
+<tr class="memdesc:a9739dac5f5b1a2898f7496429ea55823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the variable. <br /></td></tr>
+<tr class="separator:a9739dac5f5b1a2898f7496429ea55823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0655e4e12eee422a0ef0c9b6717c2e19"><td class="memItemLeft" align="right" valign="top"><a id="a0655e4e12eee422a0ef0c9b6717c2e19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a0655e4e12eee422a0ef0c9b6717c2e19">CastTo</a> (const Type newType)</td></tr>
+<tr class="memdesc:a0655e4e12eee422a0ef0c9b6717c2e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the variable to a new type. <br /></td></tr>
+<tr class="separator:a0655e4e12eee422a0ef0c9b6717c2e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12233549a0016acd5b29911d97fc357"><td class="memItemLeft" align="right" valign="top"><a id="ab12233549a0016acd5b29911d97fc357"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#ab12233549a0016acd5b29911d97fc357">CastTo</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type)</td></tr>
+<tr class="memdesc:ab12233549a0016acd5b29911d97fc357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the variable to a new type. <br /></td></tr>
+<tr class="separator:ab12233549a0016acd5b29911d97fc357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Primitives</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Methods and operators used when the variable is considered as a primitive. </p>
 </div></td></tr>
 <tr class="memitem:a3403bd059a91f5e0b39165d46364cf99"><td class="memItemLeft" align="right" valign="top"><a id="a3403bd059a91f5e0b39165d46364cf99"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a3403bd059a91f5e0b39165d46364cf99">GetString</a> () const</td></tr>
@@ -101,13 +129,22 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a00b6111cb6f3047394061e79802cc93e">SetString</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newStr)</td></tr>
 <tr class="memdesc:a00b6111cb6f3047394061e79802cc93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the content of the variable, considered as a string. <br /></td></tr>
 <tr class="separator:a00b6111cb6f3047394061e79802cc93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b2945ffe51dbcd15b584e2c0f3d42f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#af4b2945ffe51dbcd15b584e2c0f3d42f">GetValue</a> () const</td></tr>
-<tr class="memdesc:af4b2945ffe51dbcd15b584e2c0f3d42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the content of the variable, considered as a number.  <a href="#af4b2945ffe51dbcd15b584e2c0f3d42f">More...</a><br /></td></tr>
+<tr class="memitem:af4b2945ffe51dbcd15b584e2c0f3d42f"><td class="memItemLeft" align="right" valign="top"><a id="af4b2945ffe51dbcd15b584e2c0f3d42f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#af4b2945ffe51dbcd15b584e2c0f3d42f">GetValue</a> () const</td></tr>
+<tr class="memdesc:af4b2945ffe51dbcd15b584e2c0f3d42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the content of the variable, considered as a number. <br /></td></tr>
 <tr class="separator:af4b2945ffe51dbcd15b584e2c0f3d42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302f56ff5f31d0d35ee7186e57bfbc7d"><td class="memItemLeft" align="right" valign="top"><a id="a302f56ff5f31d0d35ee7186e57bfbc7d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a302f56ff5f31d0d35ee7186e57bfbc7d">SetValue</a> (double val)</td></tr>
 <tr class="memdesc:a302f56ff5f31d0d35ee7186e57bfbc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the content of the variable, considered as a number. <br /></td></tr>
 <tr class="separator:a302f56ff5f31d0d35ee7186e57bfbc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8721fb1f068e7db8cf94fdcc54e5d5"><td class="memItemLeft" align="right" valign="top"><a id="aaf8721fb1f068e7db8cf94fdcc54e5d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#aaf8721fb1f068e7db8cf94fdcc54e5d5">GetBool</a> () const</td></tr>
+<tr class="memdesc:aaf8721fb1f068e7db8cf94fdcc54e5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the content of the variable, considered as a boolean. <br /></td></tr>
+<tr class="separator:aaf8721fb1f068e7db8cf94fdcc54e5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9813601c95bac03c4aab127db765e00c"><td class="memItemLeft" align="right" valign="top"><a id="a9813601c95bac03c4aab127db765e00c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a9813601c95bac03c4aab127db765e00c">SetBool</a> (bool val)</td></tr>
+<tr class="memdesc:a9813601c95bac03c4aab127db765e00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the content of the variable, considered as a boolean. <br /></td></tr>
+<tr class="separator:a9813601c95bac03c4aab127db765e00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9299f8dfc9a14e9f743940f2a6ec5cc7"><td class="memItemLeft" align="right" valign="top"><a id="a9299f8dfc9a14e9f743940f2a6ec5cc7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (double val)</td></tr>
 <tr class="separator:a9299f8dfc9a14e9f743940f2a6ec5cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +178,39 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (doubl
 <tr class="memitem:a9eec1eae792a2972ee24302f500b8394"><td class="memItemLeft" align="right" valign="top"><a id="a9eec1eae792a2972ee24302f500b8394"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (double val) const</td></tr>
 <tr class="separator:a9eec1eae792a2972ee24302f500b8394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e7e7c67b78ff7c7976ddeab23b1da3"><td class="memItemLeft" align="right" valign="top"><a id="a84e7e7c67b78ff7c7976ddeab23b1da3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (int val)</td></tr>
+<tr class="separator:a84e7e7c67b78ff7c7976ddeab23b1da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978269ec6e16702636f6ebcc43adfcb6"><td class="memItemLeft" align="right" valign="top"><a id="a978269ec6e16702636f6ebcc43adfcb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (int val)</td></tr>
+<tr class="separator:a978269ec6e16702636f6ebcc43adfcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c03aee378b8d95c69ca9cd1cb3c7553"><td class="memItemLeft" align="right" valign="top"><a id="a9c03aee378b8d95c69ca9cd1cb3c7553"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (int val)</td></tr>
+<tr class="separator:a9c03aee378b8d95c69ca9cd1cb3c7553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1f8e9945c44f3bfa060bdae889242b"><td class="memItemLeft" align="right" valign="top"><a id="aaf1f8e9945c44f3bfa060bdae889242b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (int val)</td></tr>
+<tr class="separator:aaf1f8e9945c44f3bfa060bdae889242b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc03780d0a980f2a20596432dacc5a48"><td class="memItemLeft" align="right" valign="top"><a id="acc03780d0a980f2a20596432dacc5a48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator/=</b> (int val)</td></tr>
+<tr class="separator:acc03780d0a980f2a20596432dacc5a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e05cca13645ef0added4332abf72e61"><td class="memItemLeft" align="right" valign="top"><a id="a6e05cca13645ef0added4332abf72e61"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (int val) const</td></tr>
+<tr class="separator:a6e05cca13645ef0added4332abf72e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cc8786e4bc944af5fa6c0c4e2e37a2"><td class="memItemLeft" align="right" valign="top"><a id="ab5cc8786e4bc944af5fa6c0c4e2e37a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (int val) const</td></tr>
+<tr class="separator:ab5cc8786e4bc944af5fa6c0c4e2e37a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abd9b0f608d4bbad924a272c8c0d896"><td class="memItemLeft" align="right" valign="top"><a id="a0abd9b0f608d4bbad924a272c8c0d896"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (int val) const</td></tr>
+<tr class="separator:a0abd9b0f608d4bbad924a272c8c0d896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace03125c9cc0bfd34cd24228ece57499"><td class="memItemLeft" align="right" valign="top"><a id="ace03125c9cc0bfd34cd24228ece57499"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (int val) const</td></tr>
+<tr class="separator:ace03125c9cc0bfd34cd24228ece57499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4371d96c47ef5785ed8df3969e2da987"><td class="memItemLeft" align="right" valign="top"><a id="a4371d96c47ef5785ed8df3969e2da987"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (int val) const</td></tr>
+<tr class="separator:a4371d96c47ef5785ed8df3969e2da987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4042c7d70b3d4e0bd6922d18479c2c"><td class="memItemLeft" align="right" valign="top"><a id="a2e4042c7d70b3d4e0bd6922d18479c2c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (int val) const</td></tr>
+<tr class="separator:a2e4042c7d70b3d4e0bd6922d18479c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedfef9efcad3c4b7dd75dcd5fcef66ec"><td class="memItemLeft" align="right" valign="top"><a id="aedfef9efcad3c4b7dd75dcd5fcef66ec"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;val)</td></tr>
 <tr class="separator:aedfef9efcad3c4b7dd75dcd5fcef66ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,17 +223,41 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 <tr class="memitem:a1bea7d6b707ffb54efa93a1518ae426b"><td class="memItemLeft" align="right" valign="top"><a id="a1bea7d6b707ffb54efa93a1518ae426b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;val) const</td></tr>
 <tr class="separator:a1bea7d6b707ffb54efa93a1518ae426b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfe56dee1cc0fe6819a214f41a7f75f1"><td class="memItemLeft" align="right" valign="top"><a id="adfe56dee1cc0fe6819a214f41a7f75f1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#adfe56dee1cc0fe6819a214f41a7f75f1">IsNumber</a> () const</td></tr>
-<tr class="memdesc:adfe56dee1cc0fe6819a214f41a7f75f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the variable is a number. <br /></td></tr>
-<tr class="separator:adfe56dee1cc0fe6819a214f41a7f75f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c29986884ae62fda60e811b03247be"><td class="memItemLeft" align="right" valign="top"><a id="ac5c29986884ae62fda60e811b03247be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const char *val)</td></tr>
+<tr class="separator:ac5c29986884ae62fda60e811b03247be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2400a5c1182b41a4dd47d3f71b0912"><td class="memItemLeft" align="right" valign="top"><a id="a0a2400a5c1182b41a4dd47d3f71b0912"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const char *val)</td></tr>
+<tr class="separator:a0a2400a5c1182b41a4dd47d3f71b0912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882cab076dd1b015f4aa679a2da5a7a3"><td class="memItemLeft" align="right" valign="top"><a id="a882cab076dd1b015f4aa679a2da5a7a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const char *val) const</td></tr>
+<tr class="separator:a882cab076dd1b015f4aa679a2da5a7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7fb2c0a65dd844eafd3f7ef0c712c9"><td class="memItemLeft" align="right" valign="top"><a id="add7fb2c0a65dd844eafd3f7ef0c712c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const char *val) const</td></tr>
+<tr class="separator:add7fb2c0a65dd844eafd3f7ef0c712c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0091c7159267a3ee86484ca2d1f512e"><td class="memItemLeft" align="right" valign="top"><a id="ac0091c7159267a3ee86484ca2d1f512e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const bool val)</td></tr>
+<tr class="separator:ac0091c7159267a3ee86484ca2d1f512e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504d7aa28a0f1e179c08f0ae5ab61290"><td class="memItemLeft" align="right" valign="top"><a id="a504d7aa28a0f1e179c08f0ae5ab61290"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const bool val) const</td></tr>
+<tr class="separator:a504d7aa28a0f1e179c08f0ae5ab61290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318a208fe69ec48255ebb330801825a6"><td class="memItemLeft" align="right" valign="top"><a id="a318a208fe69ec48255ebb330801825a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const bool val) const</td></tr>
+<tr class="separator:a318a208fe69ec48255ebb330801825a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Collection types</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Methods used for collection types </p>
+</div></td></tr>
+<tr class="memitem:ae716166d6f98e86f8f9700190ce4ec6a"><td class="memItemLeft" align="right" valign="top"><a id="ae716166d6f98e86f8f9700190ce4ec6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#ae716166d6f98e86f8f9700190ce4ec6a">ClearChildren</a> ()</td></tr>
+<tr class="memdesc:ae716166d6f98e86f8f9700190ce4ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all the children. <br /></td></tr>
+<tr class="separator:ae716166d6f98e86f8f9700190ce4ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d9ceeb419934885198139365bfae413"><td class="memItemLeft" align="right" valign="top"><a id="a1d9ceeb419934885198139365bfae413"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a1d9ceeb419934885198139365bfae413">GetChildrenCount</a> () const</td></tr>
+<tr class="memdesc:a1d9ceeb419934885198139365bfae413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of children that the variable has. <br /></td></tr>
+<tr class="separator:a1d9ceeb419934885198139365bfae413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Structure</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Methods used when the variable is considered as a structure. </p>
 </div></td></tr>
-<tr class="memitem:a9379f1d09022a383118b410f52a1c355"><td class="memItemLeft" align="right" valign="top"><a id="a9379f1d09022a383118b410f52a1c355"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a9379f1d09022a383118b410f52a1c355">IsStructure</a> () const</td></tr>
-<tr class="memdesc:a9379f1d09022a383118b410f52a1c355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the variable is a structure which can have children. <br /></td></tr>
-<tr class="separator:a9379f1d09022a383118b410f52a1c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c9a7e47a229ea5549e645e5ec40e38e"><td class="memItemLeft" align="right" valign="top"><a id="a5c9a7e47a229ea5549e645e5ec40e38e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a5c9a7e47a229ea5549e645e5ec40e38e">HasChild</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a5c9a7e47a229ea5549e645e5ec40e38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the variable is a structure and has the specified child. <br /></td></tr>
@@ -180,13 +274,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a287169e980158be835899b3de70268e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a287169e980158be835899b3de70268e1">RenameChild</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;oldName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newName)</td></tr>
 <tr class="memdesc:a287169e980158be835899b3de70268e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename the specified child.  <a href="#a287169e980158be835899b3de70268e1">More...</a><br /></td></tr>
 <tr class="separator:a287169e980158be835899b3de70268e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae716166d6f98e86f8f9700190ce4ec6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#ae716166d6f98e86f8f9700190ce4ec6a">ClearChildren</a> ()</td></tr>
-<tr class="memdesc:ae716166d6f98e86f8f9700190ce4ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all the children.  <a href="#ae716166d6f98e86f8f9700190ce4ec6a">More...</a><br /></td></tr>
-<tr class="separator:ae716166d6f98e86f8f9700190ce4ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9ceeb419934885198139365bfae413"><td class="memItemLeft" align="right" valign="top"><a id="a1d9ceeb419934885198139365bfae413"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a1d9ceeb419934885198139365bfae413">GetChildrenCount</a> () const</td></tr>
-<tr class="memdesc:a1d9ceeb419934885198139365bfae413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of children that the variable has. <br /></td></tr>
-<tr class="separator:a1d9ceeb419934885198139365bfae413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa741fd9206e173c4b887134c37aaf202"><td class="memItemLeft" align="right" valign="top"><a id="aa741fd9206e173c4b887134c37aaf202"></a>
 std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#aa741fd9206e173c4b887134c37aaf202">GetAllChildrenNames</a> () const</td></tr>
 <tr class="memdesc:aa741fd9206e173c4b887134c37aaf202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the names of all children. <br /></td></tr>
@@ -203,13 +290,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a99800be62a902741d554a4eee1183257">RemoveRecursively</a> (const <a class="el" href="classgd_1_1_variable.html">gd::Variable</a> &amp;variableToRemove)</td></tr>
 <tr class="memdesc:a99800be62a902741d554a4eee1183257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the specified variable if it can be found in the children. <br /></td></tr>
 <tr class="separator:a99800be62a902741d554a4eee1183257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Array</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Methods used when the variable is considered as an array. </p>
+</div></td></tr>
+<tr class="memitem:aed487fad1b85fd1c8486a43ac30d467d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_variable.html">Variable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#aed487fad1b85fd1c8486a43ac30d467d">GetAtIndex</a> (const size_t index)</td></tr>
+<tr class="memdesc:aed487fad1b85fd1c8486a43ac30d467d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element with the specified index.  <a href="#aed487fad1b85fd1c8486a43ac30d467d">More...</a><br /></td></tr>
+<tr class="separator:aed487fad1b85fd1c8486a43ac30d467d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de256fb94e1ee1e25ef24ebec8a3c60"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_variable.html">Variable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a4de256fb94e1ee1e25ef24ebec8a3c60">GetAtIndex</a> (const size_t index) const</td></tr>
+<tr class="memdesc:a4de256fb94e1ee1e25ef24ebec8a3c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element with the specified index.  <a href="#a4de256fb94e1ee1e25ef24ebec8a3c60">More...</a><br /></td></tr>
+<tr class="separator:a4de256fb94e1ee1e25ef24ebec8a3c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc580ca2a2d19795ebb7cc94a0fbad8"><td class="memItemLeft" align="right" valign="top"><a id="adfc580ca2a2d19795ebb7cc94a0fbad8"></a>
+<a class="el" href="classgd_1_1_variable.html">Variable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#adfc580ca2a2d19795ebb7cc94a0fbad8">PushNew</a> ()</td></tr>
+<tr class="memdesc:adfc580ca2a2d19795ebb7cc94a0fbad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new variable at the end of the list and returns it. <br /></td></tr>
+<tr class="separator:adfc580ca2a2d19795ebb7cc94a0fbad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3c919405d830d072b8759523ee8c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a9d3c919405d830d072b8759523ee8c12">RemoveAtIndex</a> (const size_t index)</td></tr>
+<tr class="memdesc:a9d3c919405d830d072b8759523ee8c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the element with the specified index.  <a href="#a9d3c919405d830d072b8759523ee8c12">More...</a><br /></td></tr>
+<tr class="separator:a9d3c919405d830d072b8759523ee8c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f7c991e13d8890dee6200742ff7fe6"><td class="memItemLeft" align="right" valign="top"><a id="af7f7c991e13d8890dee6200742ff7fe6"></a>
+const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgd_1_1_variable.html">Variable</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#af7f7c991e13d8890dee6200742ff7fe6">GetAllChildrenArray</a> () const</td></tr>
+<tr class="memdesc:af7f7c991e13d8890dee6200742ff7fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vector containing all the children. <br /></td></tr>
+<tr class="separator:af7f7c991e13d8890dee6200742ff7fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Serialization</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Methods used when to load or save a variable to XML. </p>
 </div></td></tr>
-<tr class="memitem:a2dc0eb997bc6c5f8b402a6c77adde113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#a2dc0eb997bc6c5f8b402a6c77adde113">SaveToXml</a> (TiXmlElement *element) const</td></tr>
-<tr class="separator:a2dc0eb997bc6c5f8b402a6c77adde113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5d57544337b6b0226430ca85715720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#adf5d57544337b6b0226430ca85715720">LoadFromXml</a> (const TiXmlElement *element)</td></tr>
-<tr class="separator:adf5d57544337b6b0226430ca85715720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa654a16c95ab193f83faa0e871ec17f4"><td class="memItemLeft" align="right" valign="top"><a id="aa654a16c95ab193f83faa0e871ec17f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#aa654a16c95ab193f83faa0e871ec17f4">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const</td></tr>
 <tr class="memdesc:aa654a16c95ab193f83faa0e871ec17f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize variable. <br /></td></tr>
@@ -218,28 +321,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#aeeda97fa5abf7a2e1cd82fa1126e819b">UnserializeFrom</a> (const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element)</td></tr>
 <tr class="memdesc:aeeda97fa5abf7a2e1cd82fa1126e819b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialize the variable. <br /></td></tr>
 <tr class="separator:aeeda97fa5abf7a2e1cd82fa1126e819b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac6f595831a1968c5d95da4888b2fdb7e"><td class="memItemLeft" align="right" valign="top"><a id="ac6f595831a1968c5d95da4888b2fdb7e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_variable.html#ac6f595831a1968c5d95da4888b2fdb7e">IsPrimitive</a> (const Type type)</td></tr>
+<tr class="memdesc:ac6f595831a1968c5d95da4888b2fdb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the passed type is primitive. <br /></td></tr>
+<tr class="separator:ac6f595831a1968c5d95da4888b2fdb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa08e3ae77fa24c72d353e01688c66e5f"><td class="memItemLeft" align="right" valign="top"><a id="aa08e3ae77fa24c72d353e01688c66e5f"></a>
+static <a class="el" href="classgd_1_1_variable.html">gd::Variable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>badVariable</b></td></tr>
+<tr class="separator:aa08e3ae77fa24c72d353e01688c66e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a variable which can be used by an object, a layout or a project. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_variables_container.html" title="Class defining a container for gd::Variable. ">gd::VariablesContainer</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae716166d6f98e86f8f9700190ce4ec6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae716166d6f98e86f8f9700190ce4ec6a">&#9670;&nbsp;</a></span>ClearChildren()</h2>
+<a id="aed487fad1b85fd1c8486a43ac30d467d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed487fad1b85fd1c8486a43ac30d467d">&#9670;&nbsp;</a></span>GetAtIndex() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void gd::Variable::ClearChildren </td>
+          <td class="memname"><a class="el" href="classgd_1_1_variable.html">Variable</a> &amp; gd::Variable::GetAtIndex </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove all the children. </p>
-<p>If the variable is not a structure, nothing is done. </p>
+<p>Return the element with the specified index. </p>
+<p>If the variable does not have the specified index, the array will be filled up to that index with empty variables. </p>
+
+</div>
+</div>
+<a id="a4de256fb94e1ee1e25ef24ebec8a3c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de256fb94e1ee1e25ef24ebec8a3c60">&#9670;&nbsp;</a></span>GetAtIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classgd_1_1_variable.html">Variable</a> &amp; gd::Variable::GetAtIndex </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the element with the specified index. </p>
+<p>If the variable has not the specified child, an empty variable is returned. </p>
 
 </div>
 </div>
@@ -287,42 +425,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="af4b2945ffe51dbcd15b584e2c0f3d42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4b2945ffe51dbcd15b584e2c0f3d42f">&#9670;&nbsp;</a></span>GetValue()</h2>
+<a id="a9d3c919405d830d072b8759523ee8c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3c919405d830d072b8759523ee8c12">&#9670;&nbsp;</a></span>RemoveAtIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double gd::Variable::GetValue </td>
+          <td class="memname">void gd::Variable::RemoveAtIndex </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the content of the variable, considered as a number. </p>
-<p>Get value as a double </p>
-
-</div>
-</div>
-<a id="adf5d57544337b6b0226430ca85715720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf5d57544337b6b0226430ca85715720">&#9670;&nbsp;</a></span>LoadFromXml()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::Variable::LoadFromXml </td>
-          <td>(</td>
-          <td class="paramtype">const TiXmlElement *&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Called to load the variable from a TiXmlElement. </p>
+
+<p>Remove the element with the specified index. </p>
+<p>And shifts all the next elements back by one. </p>
 
 </div>
 </div>
@@ -375,25 +495,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Rename the specified child. </p>
 <p>If the variable is not a structure or has not the specified child, nothing is done. </p><dl class="section return"><dt>Returns</dt><dd>true if the child was renamed, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a2dc0eb997bc6c5f8b402a6c77adde113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dc0eb997bc6c5f8b402a6c77adde113">&#9670;&nbsp;</a></span>SaveToXml()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::Variable::SaveToXml </td>
-          <td>(</td>
-          <td class="paramtype">TiXmlElement *&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Called to save the variable to a TiXmlElement. </p>
 
 </div>
 </div>
