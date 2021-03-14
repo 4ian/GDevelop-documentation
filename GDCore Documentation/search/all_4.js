@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data',['Data',['../union_generic_value_1_1_data.html',1,'GenericValue']]],
   ['date',['Date',['../classgd_1_1_version_wrapper.html#a09264564c9a318ad14195a548fa2e5a9',1,'gd::VersionWrapper']]],
   ['decomp_5ftype',['decomp_type',['../structutf8proc__property__struct.html#accca36acf0134cb64a257b2eba13fea0',1,'utf8proc_property_struct']]],
   ['deletecamera',['DeleteCamera',['../classgd_1_1_layer.html#a70c0e05a05be3d9e80fb13e0fe7c46a5',1,'gd::Layer']]],
@@ -11,12 +12,17 @@ var searchData=
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['description',['description',['../classgd_1_1_parameter_metadata.html#ac4db44766822e6ce1aa753aa9a71933a',1,'gd::ParameterMetadata']]],
   ['destroysingleton',['DestroySingleton',['../classgd_1_1_platform_manager.html#ada256738230e1f42861da70347f723d4',1,'gd::PlatformManager']]],
+  ['differencetype',['DifferenceType',['../class_generic_member_iterator.html#a902b99c8ae351cd7626514dc5f30740a',1,'GenericMemberIterator']]],
   ['direction',['Direction',['../classgd_1_1_direction.html',1,'gd']]],
   ['direxists',['DirExists',['../classgd_1_1_abstract_file_system.html#a32ee1be4d177d37599078d3b22c359f7',1,'gd::AbstractFileSystem']]],
   ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a2d9e47f43daf3b7a82e53cbacfb5ef6b',1,'gd::AbstractFileSystem']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
   ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource']]],
+  ['diyfp',['DiyFp',['../structinternal_1_1_diy_fp.html',1,'internal']]],
+  ['document',['Document',['../document_8h.html#ac6ea5b168e3fe8c7fa532450fc9391f7',1,'document.h']]],
+  ['document_2eh',['document.h',['../document_8h.html',1,'']]],
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object']]],
+  ['double',['Double',['../classinternal_1_1_double.html',1,'internal::Double'],['../class_writer.html#a22a43e8a7193105deec6b808736f7a1a',1,'Writer::Double()']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
   ['dynamiclibrarylasterror',['DynamicLibraryLastError',['../namespacegd.html#ab9cdac8f7bd009ba308b15d4f2424308',1,'gd']]]
 ];

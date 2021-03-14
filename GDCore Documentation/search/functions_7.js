@@ -22,6 +22,7 @@ var searchData=
   ['hasnoerrors',['HasNoErrors',['../classgd_1_1_expression_validator.html#ab5691e31db47511685ab83ef941fd474',1,'gd::ExpressionValidator']]],
   ['hasnosprites',['HasNoSprites',['../classgd_1_1_direction.html#aeb6a421f5db2294351036a464de7ac8c',1,'gd::Direction']]],
   ['hasobjectnamed',['HasObjectNamed',['../classgd_1_1_objects_container.html#a8b7c11fda7283f034f6339f4c1234959',1,'gd::ObjectsContainer']]],
+  ['hasparseerror',['HasParseError',['../class_generic_document.html#a510a0588db4eb372f5d81bc3646578fb',1,'GenericDocument::HasParseError()'],['../class_generic_reader.html#ac417441794477ea747b63adb6d3653a9',1,'GenericReader::HasParseError()']]],
   ['haspoint',['HasPoint',['../classgd_1_1_sprite.html#a37209cb23de6cc56b9386a71078ce0fa',1,'gd::Sprite']]],
   ['hasprojectandlayout',['HasProjectAndLayout',['../classgd_1_1_events_code_generator.html#aad5bda91139fb08829a432b525fd203c',1,'gd::EventsCodeGenerator']]],
   ['hasresource',['HasResource',['../classgd_1_1_resources_manager.html#a6e5a6b8189ac61fb62f7e75789159da7',1,'gd::ResourcesManager::HasResource()'],['../classgd_1_1_resource_folder.html#a348f150131fd79f72c79f4ed9e282de6',1,'gd::ResourceFolder::HasResource()']]],

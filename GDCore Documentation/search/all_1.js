@@ -35,12 +35,20 @@ var searchData=
   ['addscopedcondition',['AddScopedCondition',['../classgd_1_1_behavior_metadata.html#a68881e54f619912a28cd43d247342702',1,'gd::BehaviorMetadata::AddScopedCondition()'],['../classgd_1_1_object_metadata.html#a339f21b9b7ca82ba3777591793cde363',1,'gd::ObjectMetadata::AddScopedCondition()']]],
   ['addsprite',['AddSprite',['../classgd_1_1_direction.html#a5095770224059ff9d643ee4d380876d7',1,'gd::Direction']]],
   ['addstrexpression',['AddStrExpression',['../classgd_1_1_behavior_metadata.html#ad92053a5581a9312b6d41bde2ccb451d',1,'gd::BehaviorMetadata::AddStrExpression()'],['../classgd_1_1_object_metadata.html#a2c61ba71b9b8e750b1588a6f1aedb967',1,'gd::ObjectMetadata::AddStrExpression()'],['../classgd_1_1_platform_extension.html#a719045343da6048ac25252e88d72640e',1,'gd::PlatformExtension::AddStrExpression()']]],
+  ['allocator',['Allocator',['../classrapidjson_1_1_allocator.html',1,'rapidjson']]],
+  ['allocatortype',['AllocatorType',['../class_generic_value.html#a7beb83860c1b8d2a0e2a7da9796b2fa1',1,'GenericValue::AllocatorType()'],['../class_generic_document.html#a35155b912da66ced38d22e2551364c57',1,'GenericDocument::AllocatorType()']]],
   ['alwaysloaded',['alwaysLoaded',['../classgd_1_1_image_resource.html#a7f8f9f498c4e4e6afc8013972447d738',1,'gd::ImageResource']]],
   ['analyze',['Analyze',['../class_dependencies_analyzer.html#ae67760b123d47225f42b9bbbe6795360',1,'DependenciesAnalyzer']]],
   ['animation',['Animation',['../classgd_1_1_animation.html',1,'gd']]],
+  ['append',['Append',['../class_generic_pointer.html#aa8f86c0f330807f337351a95ae254b78',1,'GenericPointer::Append(const Token &amp;token, Allocator *allocator=0) const'],['../class_generic_pointer.html#a9f8a1711f5b8e0d951c25c6c65326f77',1,'GenericPointer::Append(const Ch *name, SizeType length, Allocator *allocator=0) const']]],
   ['arbitraryeventsworker',['ArbitraryEventsWorker',['../classgd_1_1_arbitrary_events_worker.html',1,'gd']]],
   ['arbitraryeventsworkerwithcontext',['ArbitraryEventsWorkerWithContext',['../classgd_1_1_arbitrary_events_worker_with_context.html',1,'gd']]],
   ['arbitraryresourceworker',['ArbitraryResourceWorker',['../classgd_1_1_arbitrary_resource_worker.html',1,'gd']]],
+  ['arraydata',['ArrayData',['../struct_generic_value_1_1_array_data.html',1,'GenericValue']]],
+  ['ascii',['ASCII',['../struct_a_s_c_i_i.html',1,'']]],
   ['at',['at',['../classgd_1_1_object_groups_container.html#a7a363ad678cc5f872fa88acc6ebcf561',1,'gd::ObjectGroupsContainer::at(size_t index)'],['../classgd_1_1_object_groups_container.html#ac04cbe891781aacdbfca589ae6a7e2a9',1,'gd::ObjectGroupsContainer::at(size_t index) const'],['../classgd_1_1_serializable_with_name_list.html#a13ec34080b43123c4709d8a478354cba',1,'gd::SerializableWithNameList::at(size_t index)'],['../classgd_1_1_serializable_with_name_list.html#a8d76701e3ec35bc0f2a07ad11b2fc0f7',1,'gd::SerializableWithNameList::at(size_t index) const'],['../classgd_1_1_s_ptr_list.html#a0acffe11ba84547f6af50665b8b463da',1,'gd::SPtrList::at(size_t index)'],['../classgd_1_1_s_ptr_list.html#a20174aef4419e432b7ccb42cae406d0a',1,'gd::SPtrList::at(size_t index) const']]],
-  ['audioresource',['AudioResource',['../classgd_1_1_audio_resource.html',1,'gd']]]
+  ['audioresource',['AudioResource',['../classgd_1_1_audio_resource.html',1,'gd']]],
+  ['autoutf',['AutoUTF',['../struct_auto_u_t_f.html',1,'']]],
+  ['autoutfinputstream',['AutoUTFInputStream',['../class_auto_u_t_f_input_stream.html',1,'AutoUTFInputStream&lt; CharType, InputByteStream &gt;'],['../class_auto_u_t_f_input_stream.html#a83837fced0971ba26dd9a8ec1575abb0',1,'AutoUTFInputStream::AutoUTFInputStream()']]],
+  ['autoutfoutputstream',['AutoUTFOutputStream',['../class_auto_u_t_f_output_stream.html',1,'AutoUTFOutputStream&lt; CharType, OutputByteStream &gt;'],['../class_auto_u_t_f_output_stream.html#a2fe7dbc8e43d11295f66df5653148137',1,'AutoUTFOutputStream::AutoUTFOutputStream()']]]
 ];

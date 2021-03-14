@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['v',['v',['../classgd_1_1_comment_event.html#adc9e5f8d956562e4878785a347910cd6',1,'gd::CommentEvent']]],
-  ['vertices',['vertices',['../class_polygon2d.html#a9c7da828e5f97e1cf85ad15b05e20b97',1,'Polygon2d']]]
+  ['usemultipledirections',['useMultipleDirections',['../classgd_1_1_animation.html#a7f323aa04638176ff778fd37651049b2',1,'gd::Animation']]],
+  ['utf8proc_5futf8class',['utf8proc_utf8class',['../utf8proc_8h.html#a36ce183975517b6f02b011133bc6bb0a',1,'utf8proc.c']]]
 ];

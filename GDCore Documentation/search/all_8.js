@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['handler',['Handler',['../classrapidjson_1_1_handler.html',1,'rapidjson']]],
   ['has',['Has',['../classgd_1_1_object_groups_container.html#ad0951599ab202b47b59860b371a8345c',1,'gd::ObjectGroupsContainer::Has()'],['../classgd_1_1_platform_specific_assets.html#a2bd340627b432adf66c40ee8a2a03dc5',1,'gd::PlatformSpecificAssets::Has()'],['../classgd_1_1_variables_container.html#a8910111630f6c51e75d5c4e18373d3dd',1,'gd::VariablesContainer::Has()'],['../classgd_1_1_serializable_with_name_list.html#a6f16d73dffd1d3ea670de776426fea29',1,'gd::SerializableWithNameList::Has()']]],
   ['hasattribute',['HasAttribute',['../classgd_1_1_serializer_element.html#aa9a7816bb725a81c3a473aacac8601fd',1,'gd::SerializerElement']]],
   ['hasbehaviornamed',['HasBehaviorNamed',['../classgd_1_1_object.html#aa2109a3201398242ca06962231c69327',1,'gd::Object']]],
@@ -15,6 +16,8 @@ var searchData=
   ['hasfolder',['HasFolder',['../classgd_1_1_resources_manager.html#a6baa7629d9cb2a58daf169a487f31d6d',1,'gd::ResourcesManager']]],
   ['hash_3c_20gd_3a_3astring_20_3e',['hash&lt; gd::String &gt;',['../structstd_1_1hash_3_01gd_1_1_string_01_4.html',1,'std']]],
   ['hash_3c_20sole_3a_3auuid_20_3e',['hash&lt; sole::uuid &gt;',['../structstd_1_1hash_3_01sole_1_1uuid_01_4.html',1,'std']]],
+  ['hashcode',['hashcode',['../struct_generic_value_1_1_string.html#a73631052aeb72fbabb6eaab0175f858e',1,'GenericValue::String']]],
+  ['hasher',['Hasher',['../classinternal_1_1_hasher.html',1,'internal']]],
   ['hasinstancesofobject',['HasInstancesOfObject',['../classgd_1_1_initial_instances_container.html#a1f3b51c0ec603be227a9a8155650e624',1,'gd::InitialInstancesContainer']]],
   ['haslayernamed',['HasLayerNamed',['../classgd_1_1_layout.html#a0613b56cd3866f58e2d7ddc94e920fb6',1,'gd::Layout']]],
   ['haslayoutnamed',['HasLayoutNamed',['../classgd_1_1_project.html#a10fe9679c006e9b8de9ab50b849beb29',1,'gd::Project']]],
@@ -24,11 +27,13 @@ var searchData=
   ['hasnoerrors',['HasNoErrors',['../classgd_1_1_expression_validator.html#ab5691e31db47511685ab83ef941fd474',1,'gd::ExpressionValidator']]],
   ['hasnosprites',['HasNoSprites',['../classgd_1_1_direction.html#aeb6a421f5db2294351036a464de7ac8c',1,'gd::Direction']]],
   ['hasobjectnamed',['HasObjectNamed',['../classgd_1_1_objects_container.html#a8b7c11fda7283f034f6339f4c1234959',1,'gd::ObjectsContainer']]],
+  ['hasparseerror',['HasParseError',['../class_generic_document.html#a510a0588db4eb372f5d81bc3646578fb',1,'GenericDocument::HasParseError()'],['../class_generic_reader.html#ac417441794477ea747b63adb6d3653a9',1,'GenericReader::HasParseError()']]],
   ['haspoint',['HasPoint',['../classgd_1_1_sprite.html#a37209cb23de6cc56b9386a71078ce0fa',1,'gd::Sprite']]],
   ['hasprojectandlayout',['hasProjectAndLayout',['../classgd_1_1_events_code_generator.html#a7ae1be8a97d1786f5af048e1d93a0f77',1,'gd::EventsCodeGenerator::hasProjectAndLayout()'],['../classgd_1_1_events_code_generator.html#aad5bda91139fb08829a432b525fd203c',1,'gd::EventsCodeGenerator::HasProjectAndLayout() const']]],
   ['hasresource',['HasResource',['../classgd_1_1_resources_manager.html#a6e5a6b8189ac61fb62f7e75789159da7',1,'gd::ResourcesManager::HasResource()'],['../classgd_1_1_resource_folder.html#a348f150131fd79f72c79f4ed9e282de6',1,'gd::ResourceFolder::HasResource()']]],
   ['hasresourcewithabsolutefilenames',['HasResourceWithAbsoluteFilenames',['../classgd_1_1_resources_absolute_path_checker.html#aaeb0e8d0074a413ff50c859a64fc4a2c',1,'gd::ResourcesAbsolutePathChecker']]],
   ['hassourcefile',['HasSourceFile',['../classgd_1_1_project.html#a385bd4ba8a2f2a3efea81f0675e63f93',1,'gd::Project']]],
   ['hassubevents',['HasSubEvents',['../classgd_1_1_base_event.html#a38dd768f5e3ad52ef0f6888dfb360a15',1,'gd::BaseEvent']]],
+  ['head_5f',['head_',['../struct_generic_string_stream.html#a3c86ef1e1f0655028cb8a3afce11ee4f',1,'GenericStringStream']]],
   ['highestzorderfinder',['HighestZOrderFinder',['../classgd_1_1_highest_z_order_finder.html',1,'gd']]]
 ];

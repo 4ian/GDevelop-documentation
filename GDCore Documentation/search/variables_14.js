@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoomfactor',['zoomFactor',['../classgd_1_1_layout_editor_canvas_options.html#a7739a9482a1f412cbf2b4f81d8875d92',1,'gd::LayoutEditorCanvasOptions']]]
+  ['windowmask',['windowMask',['../classgd_1_1_layout_editor_canvas_options.html#a146e0dd368f4f6dc7e2458a7a5dec7d7',1,'gd::LayoutEditorCanvasOptions']]]
 ];

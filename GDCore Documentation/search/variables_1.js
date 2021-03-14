@@ -1,6 +1,7 @@
 var searchData=
 [
   ['b',['b',['../classgd_1_1_comment_event.html#a2fbbe3df9d56e9084eb5f5750ec305b0',1,'gd::CommentEvent']]],
+  ['begin_5f',['begin_',['../struct_memory_stream.html#a91f0767b4f0ed2476d835e8344848a2f',1,'MemoryStream']]],
   ['behaviorfunctionname',['behaviorFunctionName',['../structgd_1_1_object_function_name_node.html#adac0c47723992ac8f1ff2c0a14030102',1,'gd::ObjectFunctionNameNode']]],
   ['behaviorfunctionnamelocation',['behaviorFunctionNameLocation',['../structgd_1_1_object_function_name_node.html#a91355f9108fad23fc20ea87f57b59774',1,'gd::ObjectFunctionNameNode']]],
   ['behaviornamelocation',['behaviorNameLocation',['../structgd_1_1_function_call_node.html#ab67cdd7032f7905131f4b3f07890b395',1,'gd::FunctionCallNode']]],

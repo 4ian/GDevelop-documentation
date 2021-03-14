@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> represents an UTF8 encoded string.  
+<p><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> represents an <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoded string.  
  <a href="classgd_1_1_string.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_string_8h_source.html">String.h</a>&gt;</code></p>
@@ -158,6 +158,9 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memitem:a9f2af4817337c5cc93ebb5070c84332d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_string.html#a9f2af4817337c5cc93ebb5070c84332d">clear</a> ()</td></tr>
 <tr class="memdesc:a9f2af4817337c5cc93ebb5070c84332d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the string.  <a href="#a9f2af4817337c5cc93ebb5070c84332d">More...</a><br /></td></tr>
 <tr class="separator:a9f2af4817337c5cc93ebb5070c84332d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f855e7c46a9b781200a86cce4d8fe3"><td class="memItemLeft" align="right" valign="top"><a id="aa1f855e7c46a9b781200a86cce4d8fe3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve</b> (gd::String::size_type <a class="el" href="classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9">size</a>)</td></tr>
+<tr class="separator:aa1f855e7c46a9b781200a86cce4d8fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Iterators</div></td></tr>
 <tr class="memitem:a8de04785f2005174c44c311a81284ee3"><td class="memItemLeft" align="right" valign="top"><a id="a8de04785f2005174c44c311a81284ee3"></a>
 <a class="el" href="classgd_1_1_string_1_1_string_iterator.html">String::iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_string.html#a8de04785f2005174c44c311a81284ee3">begin</a> ()</td></tr>
@@ -406,24 +409,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:aac9cebe192bb7f1f1f5d63136fc3e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> represents an UTF8 encoded string. </p>
-<p>This class represents an UTF8 encoded string. It provides almost the same features as the STL std::string class but is UTF8 aware (<a class="el" href="classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9" title="Returns the string&#39;s length. ">size()</a> returns the number of characters, not the number of bytes for example).</p>
+<div class="textblock"><p><a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> represents an <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoded string. </p>
+<p>This class represents an <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoded string. It provides almost the same features as the STL std::string class but is <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> aware (<a class="el" href="classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9" title="Returns the string&#39;s length. ">size()</a> returns the number of characters, not the number of bytes for example).</p>
 <h1><a class="anchor" id="WhatIsUTF8"></a>
 What is UTF8 and Unicode ?</h1>
 <p>(from <a href="https://en.wikipedia.org/wiki/Unicode">https://en.wikipedia.org/wiki/Unicode</a> and <a href="https://en.wikipedia.org/wiki/UTF-8">https://en.wikipedia.org/wiki/UTF-8</a>)</p>
 <p>Unicode is a computing industry standard for the consistent encoding, representation, and handling of text expressed in most of the world's writing systems. Unicode can be implemented by different character encodings. The most commonly used encodings are UTF-8, UTF-16 and the now-obsolete UCS-2.</p>
-<p>UTF-8 is a character encoding capable of encoding all possible characters, or code points, in Unicode. The encoding is variable-length (not every codepoint is 1 byte long) and uses 8-bit code units. It was designed for backward compatibility with ASCII. UTF-8 encodes each of the 1,112,064 valid code points in the Unicode code space using one to four 8-bit bytes (a group of 8 bits is known as an octet in the Unicode Standard). Code points with lower numerical values (i.e., earlier code positions in the Unicode character set, which tend to occur more frequently) are encoded using fewer bytes. The first 128 characters of Unicode, which correspond one-to-one with ASCII, are encoded using a single octet with the same binary value as ASCII, making valid ASCII text valid UTF-8-encoded Unicode as well.</p>
+<p>UTF-8 is a character encoding capable of encoding all possible characters, or code points, in Unicode. The encoding is variable-length (not every codepoint is 1 byte long) and uses 8-bit code units. It was designed for backward compatibility with <a class="el" href="struct_a_s_c_i_i.html" title="ASCII encoding. ">ASCII</a>. UTF-8 encodes each of the 1,112,064 valid code points in the Unicode code space using one to four 8-bit bytes (a group of 8 bits is known as an octet in the Unicode Standard). Code points with lower numerical values (i.e., earlier code positions in the Unicode character set, which tend to occur more frequently) are encoded using fewer bytes. The first 128 characters of Unicode, which correspond one-to-one with <a class="el" href="struct_a_s_c_i_i.html" title="ASCII encoding. ">ASCII</a>, are encoded using a single octet with the same binary value as <a class="el" href="struct_a_s_c_i_i.html" title="ASCII encoding. ">ASCII</a>, making valid <a class="el" href="struct_a_s_c_i_i.html" title="ASCII encoding. ">ASCII</a> text valid UTF-8-encoded Unicode as well.</p>
 <h1><a class="anchor" id="Limitations"></a>
 Limitations</h1>
-<p>The <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> class stores internally the string as an UTF8 encoded std::string. It results in some limitations : it's impossible to edit a single character with <a class="el" href="classgd_1_1_string.html#a1860c6bd7a5559bb915e275565825b54" title="Returns the code point at the specified position. ">operator[]()</a> nor at() because the new character length might not be the same.</p>
-<p><b>The <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> class supports almost all Unicode characters, except the ones that can't be represented as a single codepoint (obviously, a codepoint can be represented by 1 to 4 bytes, as codepoints are encoded in UTF8).</b> For examples, some special letters are composed of multiple codepoints (a letter, and the accents). Most of them can be combined into a single codepoint but some can't. These are the not supported ones. See <a class="el" href="classgd_1_1_string.html#Normalization">Normalization</a>.</p>
+<p>The <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> class stores internally the string as an <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoded std::string. It results in some limitations : it's impossible to edit a single character with <a class="el" href="classgd_1_1_string.html#a1860c6bd7a5559bb915e275565825b54" title="Returns the code point at the specified position. ">operator[]()</a> nor at() because the new character length might not be the same.</p>
+<p><b>The <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> class supports almost all Unicode characters, except the ones that can't be represented as a single codepoint (obviously, a codepoint can be represented by 1 to 4 bytes, as codepoints are encoded in <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a>).</b> For examples, some special letters are composed of multiple codepoints (a letter, and the accents). Most of them can be combined into a single codepoint but some can't. These are the not supported ones. See <a class="el" href="classgd_1_1_string.html#Normalization">Normalization</a>.</p>
 <h1><a class="anchor" id="Performance"></a>
 Performance</h1>
-<p>The UTF8 encoding has the advantage to reduce the RAM consumption compared to UTF16 or UTF32 for strings using a lot of latin characters. But the characters variable length brings some performance issues compared to fixed size encoding. That's why the complexity of each methods is written in their documentation. For instance, the <a class="el" href="classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9" title="Returns the string&#39;s length. ">size()</a> method is linear on the string size and so is the <a class="el" href="classgd_1_1_string.html#a1860c6bd7a5559bb915e275565825b54" title="Returns the code point at the specified position. ">operator[]()</a>.</p>
+<p>The <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoding has the advantage to reduce the RAM consumption compared to <a class="el" href="struct_u_t_f16.html" title="UTF-16 encoding. ">UTF16</a> or <a class="el" href="struct_u_t_f32.html" title="UTF-32 encoding. ">UTF32</a> for strings using a lot of latin characters. But the characters variable length brings some performance issues compared to fixed size encoding. That's why the complexity of each methods is written in their documentation. For instance, the <a class="el" href="classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9" title="Returns the string&#39;s length. ">size()</a> method is linear on the string size and so is the <a class="el" href="classgd_1_1_string.html#a1860c6bd7a5559bb915e275565825b54" title="Returns the code point at the specified position. ">operator[]()</a>.</p>
 <h1><a class="anchor" id="Conversion"></a>
 Conversions from/to other string types</h1>
 <p>The <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> handles implicit conversion with sf::String (implicit constructor and implicit conversion operator).</p>
-<p><b>However, this is not the case with std::string</b> as this conversion is not often lossless (mostly on Windows). You need to explicitly call <a class="el" href="classgd_1_1_string.html#ad194af4b2c569870b7f4b40289c957a1">gd::String::FromLocale</a> or <a class="el" href="classgd_1_1_string.html#af5b5cdaaedb1cf65e78e7c6d2f18d253">gd::String::FromUTF8</a> to convert a std::string to a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a>. However, if you want to get a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> object from a string literal, you can directly use the <a class="el" href="classgd_1_1_string.html#aa1fc6f5ce3034ef4f5a1af9ff5f24f21">operator=()</a> or the constructor as they are supporting const char* as argument (it assumes the string literal is encoded in UTF8, so you'll need to put the u8 prefix).</p>
+<p><b>However, this is not the case with std::string</b> as this conversion is not often lossless (mostly on Windows). You need to explicitly call <a class="el" href="classgd_1_1_string.html#ad194af4b2c569870b7f4b40289c957a1">gd::String::FromLocale</a> or <a class="el" href="classgd_1_1_string.html#af5b5cdaaedb1cf65e78e7c6d2f18d253">gd::String::FromUTF8</a> to convert a std::string to a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a>. However, if you want to get a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> object from a string literal, you can directly use the <a class="el" href="classgd_1_1_string.html#aa1fc6f5ce3034ef4f5a1af9ff5f24f21">operator=()</a> or the constructor as they are supporting const char* as argument (it assumes the string literal is encoded in <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a>, so you'll need to put the u8 prefix).</p>
 <h2><a class="anchor" id="Conversions1"></a>
 Implicit conversion from/to sf::String</h2>
 <div class="fragment"><div class="line"><span class="comment">//Get a String from sf::String</span></div><div class="line">sf::String sfmlStr(<span class="stringliteral">&quot;This is a test ! &quot;</span>);</div><div class="line"><a class="code" href="classgd_1_1_string.html">gd::String</a> str1(sfmlStr); <span class="comment">//Now contains &quot;This is a test ! &quot; encoded in UTF8</span></div><div class="line"></div><div class="line"><span class="comment">//Get a sf::String from String</span></div><div class="line">sf::String anotherSfmlString = str; <span class="comment">//anotherSfmlString now contains &quot;Another test ! &quot;</span></div></div><!-- fragment --><h2><a class="anchor" id="Conversions2"></a>
@@ -495,7 +498,7 @@ Case-insensitive comparison</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a string from an array of char <b>representing a string encoded in UTF8</b>.</p>
+<p>Constructs a string from an array of char <b>representing a string encoded in <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a></b>.</p>
 <p>Useful to implicitly create a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> object from a string literal.</p>
 <p><b>Usage:</b> </p><div class="fragment"><div class="line"><a class="code" href="classgd_1_1_string.html">gd::String</a> str(u8<span class="stringliteral">&quot;A little sentence.&quot;</span>);</div></div><!-- fragment --> 
 </div>
@@ -1087,7 +1090,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> created from a sf::String (UTF32).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> created from a sf::String (<a class="el" href="struct_u_t_f32.html" title="UTF-32 encoding. ">UTF32</a>).</dd></dl>
 <p>See <a class="el" href="classgd_1_1_string.html#Conversions1">Implicit conversion from/to sf::String</a> for more information. </p>
 
 </div>
@@ -1142,7 +1145,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> created an UTF8 encoded std::string. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> created an <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoded std::string. </dd></dl>
 
 </div>
 </div>
@@ -1169,7 +1172,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> created from a std::wstring (UTF32 on Linux and UCS-2 on Windows) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> created from a std::wstring (<a class="el" href="struct_u_t_f32.html" title="UTF-32 encoding. ">UTF32</a> on Linux and UCS-2 on Windows) </dd></dl>
 
 </div>
 </div>
@@ -1296,7 +1299,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assign the <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> using a string literal (it assumes that the <b>string literal is encoded in UTF8</b>).</p>
+<p>Assign the <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> using a string literal (it assumes that the <b>string literal is encoded in <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a></b>).</p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="classgd_1_1_string.html">gd::String</a> str;</div><div class="line">str = u8<span class="stringliteral">&quot;This is a test string.&quot;</span>;</div></div><!-- fragment --> 
 </div>
 </div>
@@ -1565,7 +1568,7 @@ template&lt;typename T &gt; </div>
 <p>Split the string with a delimiter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delimiter</td><td>delimiter (an UTF32 codepoint) </td></tr>
+    <tr><td class="paramname">delimiter</td><td>delimiter (an <a class="el" href="struct_u_t_f32.html" title="UTF-32 encoding. ">UTF32</a> codepoint) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1703,7 +1706,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a UTF8 encoded std::string from the current string. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a> encoded std::string from the current string. </dd></dl>
 
 </div>
 </div>
@@ -1721,7 +1724,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a wide string (std::wstring) encoded in UTF32 on Linux and in UCS-2 on Windows </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a wide string (std::wstring) encoded in <a class="el" href="struct_u_t_f32.html" title="UTF-32 encoding. ">UTF32</a> on Linux and in UCS-2 on Windows </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>On Windows, this is possibly a lossy conversion. </dd></dl>
 
 </div>
@@ -2023,7 +2026,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> containing the concatenation of lhs and rhs (rhs is converted to <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> assuming it's encoded in UTF8). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> containing the concatenation of lhs and rhs (rhs is converted to <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> assuming it's encoded in <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a>). </dd></dl>
 
 </div>
 </div>
@@ -2060,7 +2063,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> containing the concatenation of lhs and rhs (lhs is converted to <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> assuming it's encoded in UTF8). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> containing the concatenation of lhs and rhs (lhs is converted to <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> assuming it's encoded in <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a>). </dd></dl>
 
 </div>
 </div>
@@ -2205,7 +2208,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Outputs the string in a stream. </p><dl class="section note"><dt>Note</dt><dd>The string is converted to the current locale before. If you want to stream the string as UTF8, do : <div class="fragment"><div class="line">std::cout &lt;&lt; myString.Raw();</div></div><!-- fragment --> </dd></dl>
+<p>Outputs the string in a stream. </p><dl class="section note"><dt>Note</dt><dd>The string is converted to the current locale before. If you want to stream the string as <a class="el" href="struct_u_t_f8.html" title="UTF-8 encoding. ">UTF8</a>, do : <div class="fragment"><div class="line">std::cout &lt;&lt; myString.Raw();</div></div><!-- fragment --> </dd></dl>
 
 </div>
 </div>

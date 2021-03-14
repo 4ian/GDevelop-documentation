@@ -12,6 +12,7 @@ var searchData=
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
   ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource']]],
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object']]],
+  ['double',['Double',['../class_writer.html#a22a43e8a7193105deec6b808736f7a1a',1,'Writer']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
   ['dynamiclibrarylasterror',['DynamicLibraryLastError',['../namespacegd.html#ab9cdac8f7bd009ba308b15d4f2424308',1,'gd']]]
 ];

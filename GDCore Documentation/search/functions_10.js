@@ -9,6 +9,7 @@ var searchData=
   ['toutf32',['ToUTF32',['../classgd_1_1_string.html#a410d7030da3bdd6061b0acd064d9d1a4',1,'gd::String']]],
   ['toutf8',['ToUTF8',['../classgd_1_1_string.html#a4348a307a86bdd733f0cb1941acaff67',1,'gd::String']]],
   ['towide',['ToWide',['../classgd_1_1_string.html#ae588f705053728b1a776486b54f441bc',1,'gd::String']]],
+  ['transcode',['Transcode',['../struct_transcoder.html#a0ea2edfe35784ebf1063921d2bd5fb66',1,'Transcoder']]],
   ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4',1,'gd::InstructionSentenceFormatter']]],
   ['trim',['Trim',['../classgd_1_1_string.html#aacf4a9607674f54866a5eeaa9bb7cfa9',1,'gd::String']]]
 ];

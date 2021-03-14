@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['utf8proc_5fproperty_5ft',['utf8proc_property_t',['../utf8proc_8h.html#a2e1065c727f2aae573c43e2956211b48',1,'utf8proc.h']]],
-  ['utf8proc_5fpropval_5ft',['utf8proc_propval_t',['../utf8proc_8h.html#a6af2c24193540a798c7eeb490c017c32',1,'utf8proc.h']]]
+  ['allocatortype',['AllocatorType',['../class_generic_value.html#a7beb83860c1b8d2a0e2a7da9796b2fa1',1,'GenericValue::AllocatorType()'],['../class_generic_document.html#a35155b912da66ced38d22e2551364c57',1,'GenericDocument::AllocatorType()']]]
 ];

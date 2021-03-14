@@ -1,8 +1,13 @@
 var searchData=
 [
+  ['rapidjson_5fdisableif_5freturn',['RAPIDJSON_DISABLEIF_RETURN',['../class_generic_value.html#a4a4418a93777942e1fb7ea71f8aaf680',1,'GenericValue::RAPIDJSON_DISABLEIF_RETURN()'],['../class_generic_pointer.html#aaf4d7d852098878d24188d134182d42f',1,'GenericPointer::RAPIDJSON_DISABLEIF_RETURN((internal::NotExpr&lt; internal::IsSame&lt; typename internal::RemoveConst&lt; T &gt;::Type, Ch &gt; &gt;),(GenericPointer)) Append(T *name'],['../class_generic_pointer.html#a914bbdd96e2a248e035b8ebd68526369',1,'GenericPointer::RAPIDJSON_DISABLEIF_RETURN((internal::OrExpr&lt; internal::IsPointer&lt; T &gt;, internal::IsGenericValue&lt; T &gt; &gt;),(ValueType &amp;)) Set(ValueType &amp;root'],['../class_generic_pointer.html#a1bb4a253f33687734e5b20795632a801',1,'GenericPointer::RAPIDJSON_DISABLEIF_RETURN((internal::OrExpr&lt; internal::IsPointer&lt; T &gt;, internal::IsGenericValue&lt; T &gt; &gt;),(ValueType &amp;)) Set(GenericDocument&lt; EncodingType']]],
   ['raw',['Raw',['../classgd_1_1_string.html#a463a99d92556082045d8b1648ea4953a',1,'gd::String::Raw()'],['../classgd_1_1_string.html#a211b2dc7575cd11170182297668b2fa9',1,'gd::String::Raw() const']]],
+  ['rawassign',['RawAssign',['../class_generic_value.html#abb8ea2dfbe74ff4ee7dac6be31317f81',1,'GenericValue']]],
+  ['rawnumber',['RawNumber',['../struct_base_reader_handler.html#a9ed0d83d5e6c8f5e4b32ca3735ff0bb7',1,'BaseReaderHandler']]],
+  ['rawvalue',['RawValue',['../class_pretty_writer.html#a440890a72408a150ef46edda6becdc94',1,'PrettyWriter::RawValue()'],['../class_writer.html#ae0d1615104e4e88040b9640e6784008a',1,'Writer::RawValue()']]],
   ['readdir',['ReadDir',['../classgd_1_1_abstract_file_system.html#a357cdb44a69000cc56b595e9575536da',1,'gd::AbstractFileSystem']]],
   ['readfile',['ReadFile',['../classgd_1_1_abstract_file_system.html#ac0291a1e95a428112d97d7eb34c362c7',1,'gd::AbstractFileSystem']]],
+  ['realloc',['Realloc',['../class_memory_pool_allocator.html#aba75280d42184b0ad414243f7f5ac6c7',1,'MemoryPoolAllocator']]],
   ['registerproperty',['RegisterProperty',['../classgd_1_1_platform_extension.html#a0cc3124fb7377a725be327684aeeab0f',1,'gd::PlatformExtension']]],
   ['reloadbuiltinextensions',['ReloadBuiltinExtensions',['../classgd_1_1_platform.html#a792f9d5d1fcbf89ce590ad56e07c5abf',1,'gd::Platform']]],
   ['reloadimage',['ReloadImage',['../classgd_1_1_image_manager.html#a269b666d3d3f93f488bb0c9454d8e52c',1,'gd::ImageManager']]],
@@ -51,6 +56,7 @@ var searchData=
   ['replacelinkbylinkedevents',['ReplaceLinkByLinkedEvents',['../classgd_1_1_link_event.html#a337be42d7f56b27cdc66c4553275cc99',1,'gd::LinkEvent']]],
   ['replacestringinevents',['ReplaceStringInEvents',['../classgd_1_1_events_refactorer.html#a6c9f1baffb2aa2bf7c2a59531cd91263',1,'gd::EventsRefactorer']]],
   ['reporterror',['ReportError',['../classgd_1_1_events_code_generator.html#a89503c85888e276e4ba99baa8330974d',1,'gd::EventsCodeGenerator']]],
+  ['reset',['Reset',['../class_generic_schema_validator.html#a49efbbe098cb77728be3d48cafed17e4',1,'GenericSchemaValidator::Reset()'],['../class_writer.html#a8b53e8f137f7fcf694f5500711b3f58d',1,'Writer::Reset()']]],
   ['resetpersistentuuid',['ResetPersistentUuid',['../classgd_1_1_initial_instance.html#afbb9e27d05fa0ed1b991d42aaa1666e4',1,'gd::InitialInstance']]],
   ['resetprojectuuid',['ResetProjectUuid',['../classgd_1_1_project.html#a4378e07b7a741b94d855052bac263ba7',1,'gd::Project']]],
   ['resourcesrenamer',['ResourcesRenamer',['../classgd_1_1_resources_renamer.html#aceaa10ec1028239c709ac68e41422f82',1,'gd::ResourcesRenamer']]],

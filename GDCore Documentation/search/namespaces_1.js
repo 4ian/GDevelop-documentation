@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sole',['sole',['../namespacesole.html',1,'']]]
+  ['rapidjson',['rapidjson',['../namespacerapidjson.html',1,'']]]
 ];
