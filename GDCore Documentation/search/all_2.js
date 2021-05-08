@@ -18,6 +18,7 @@ var searchData=
   ['behaviorsshareddata',['BehaviorsSharedData',['../classgd_1_1_behaviors_shared_data.html',1,'gd']]],
   ['bidi_5fclass',['bidi_class',['../structutf8proc__property__struct.html#abd1fde92128233b6dbfdeb70b92c80d9',1,'utf8proc_property_struct']]],
   ['biginteger',['BigInteger',['../classinternal_1_1_big_integer.html',1,'internal']]],
+  ['bitmapfontresource',['BitmapFontResource',['../classgd_1_1_bitmap_font_resource.html',1,'gd']]],
   ['boundclass',['boundclass',['../structutf8proc__property__struct.html#a0b4f5087bd0ea76a375de47dfaa2110b',1,'utf8proc_property_struct']]],
   ['build',['Build',['../classgd_1_1_version_wrapper.html#a2fc02500f462db821f00cc5d5e9bb920',1,'gd::VersionWrapper']]],
   ['builtinextensionsimplementer',['BuiltinExtensionsImplementer',['../classgd_1_1_builtin_extensions_implementer.html',1,'gd']]]

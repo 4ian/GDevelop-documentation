@@ -43,6 +43,7 @@ var searchData=
   ['append',['Append',['../class_generic_pointer.html#aa8f86c0f330807f337351a95ae254b78',1,'GenericPointer::Append(const Token &amp;token, Allocator *allocator=0) const'],['../class_generic_pointer.html#a9f8a1711f5b8e0d951c25c6c65326f77',1,'GenericPointer::Append(const Ch *name, SizeType length, Allocator *allocator=0) const']]],
   ['arbitraryeventsworker',['ArbitraryEventsWorker',['../classgd_1_1_arbitrary_events_worker.html',1,'gd']]],
   ['arbitraryeventsworkerwithcontext',['ArbitraryEventsWorkerWithContext',['../classgd_1_1_arbitrary_events_worker_with_context.html',1,'gd']]],
+  ['arbitraryobjectsworker',['ArbitraryObjectsWorker',['../classgd_1_1_arbitrary_objects_worker.html',1,'gd']]],
   ['arbitraryresourceworker',['ArbitraryResourceWorker',['../classgd_1_1_arbitrary_resource_worker.html',1,'gd']]],
   ['arraydata',['ArrayData',['../struct_generic_value_1_1_array_data.html',1,'GenericValue']]],
   ['ascii',['ASCII',['../struct_a_s_c_i_i.html',1,'']]],

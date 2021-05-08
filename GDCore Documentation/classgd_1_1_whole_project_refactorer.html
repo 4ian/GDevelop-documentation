@@ -86,6 +86,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a117f286fda78f23733b7d2ef85721722"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#a117f286fda78f23733b7d2ef85721722">ExposeProjectEvents</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_arbitrary_events_worker_with_context.html">gd::ArbitraryEventsWorkerWithContext</a> &amp;worker)</td></tr>
 <tr class="memdesc:a117f286fda78f23733b7d2ef85721722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the specified worker on all events of the project (layout, external events, events functions...)  <a href="#a117f286fda78f23733b7d2ef85721722">More...</a><br /></td></tr>
 <tr class="separator:a117f286fda78f23733b7d2ef85721722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b8ca7f99bb8a9a4a9280132b60d77e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#ac2b8ca7f99bb8a9a4a9280132b60d77e">ExposeProjectObjects</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_arbitrary_objects_worker.html">gd::ArbitraryObjectsWorker</a> &amp;worker)</td></tr>
+<tr class="memdesc:ac2b8ca7f99bb8a9a4a9280132b60d77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the specified worker on all ObjectContainers of the project (global, layouts...)  <a href="#ac2b8ca7f99bb8a9a4a9280132b60d77e">More...</a><br /></td></tr>
+<tr class="separator:ac2b8ca7f99bb8a9a4a9280132b60d77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055eedec0689ae3575d3b9e4c51fbbab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#a055eedec0689ae3575d3b9e4c51fbbab">RenameEventsFunctionsExtension</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_events_functions_extension.html">gd::EventsFunctionsExtension</a> &amp;eventsFunctionsExtension, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;oldName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newName)</td></tr>
 <tr class="memdesc:a055eedec0689ae3575d3b9e4c51fbbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactor the project <b>before</b> an events function extension is renamed.  <a href="#a055eedec0689ae3575d3b9e4c51fbbab">More...</a><br /></td></tr>
 <tr class="separator:a055eedec0689ae3575d3b9e4c51fbbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +216,45 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Call the specified worker on all events of the project (layout, external events, events functions...) </p>
 <p>This should be the preferred way to traverse all the events of a project. </p>
+
+</div>
+</div>
+<a id="ac2b8ca7f99bb8a9a4a9280132b60d77e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b8ca7f99bb8a9a4a9280132b60d77e">&#9670;&nbsp;</a></span>ExposeProjectObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::WholeProjectRefactorer::ExposeProjectObjects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
+          <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_arbitrary_objects_worker.html">gd::ArbitraryObjectsWorker</a> &amp;&#160;</td>
+          <td class="paramname"><em>worker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call the specified worker on all ObjectContainers of the project (global, layouts...) </p>
+<p>This should be the preferred way to traverse all the objects of a project. </p>
 
 </div>
 </div>
