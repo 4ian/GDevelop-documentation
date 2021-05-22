@@ -7,7 +7,7 @@ var searchData=
   ['haschild',['HasChild',['../classgd_1_1_variable.html#a5c9a7e47a229ea5549e645e5ec40e38e',1,'gd::Variable::HasChild()'],['../classgd_1_1_serializer_element.html#a1a5d5e6fd8213d206e5600e84d2b2653',1,'gd::SerializerElement::HasChild()']]],
   ['hascustomcodegenerator',['HasCustomCodeGenerator',['../classgd_1_1_event_metadata.html#a1ca6cba34ee25a45aafe6a93b8332a44',1,'gd::EventMetadata']]],
   ['hascustomsize',['HasCustomSize',['../classgd_1_1_initial_instance.html#ace64dff957d4a111151a8b9345d77d2f',1,'gd::InitialInstance']]],
-  ['haseffectnamed',['HasEffectNamed',['../classgd_1_1_layer.html#ac62056b7be92b37ed2e76f586e329aa7',1,'gd::Layer']]],
+  ['haseffectnamed',['HasEffectNamed',['../classgd_1_1_effects_container.html#a5141da9aff3e6c59bbf23a0ca7b5da7f',1,'gd::EffectsContainer']]],
   ['haseventsfunctionnamed',['HasEventsFunctionNamed',['../classgd_1_1_events_functions_container.html#ab73a662c1e07008348dbb4edad3a6b9e',1,'gd::EventsFunctionsContainer']]],
   ['haseventsfunctionsextensionnamed',['HasEventsFunctionsExtensionNamed',['../classgd_1_1_project.html#a9fcd03cdcddd53dadbe0d61f0885b952',1,'gd::Project']]],
   ['hasexternaleventsnamed',['HasExternalEventsNamed',['../classgd_1_1_project.html#ade4c31fc756544dc1de22e00e95aa66a',1,'gd::Project']]],
