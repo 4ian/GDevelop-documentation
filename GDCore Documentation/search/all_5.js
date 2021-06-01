@@ -4,7 +4,7 @@ var searchData=
   ['effect',['Effect',['../classgd_1_1_effect.html',1,'gd']]],
   ['effectmetadata',['EffectMetadata',['../classgd_1_1_effect_metadata.html',1,'gd::EffectMetadata'],['../classgd_1_1_effect_metadata.html#a4cfd4b2602398a61e23dc0a44c5b6e50',1,'gd::EffectMetadata::EffectMetadata(const gd::String &amp;type_)'],['../classgd_1_1_effect_metadata.html#ac59d020c796c3270e5fcdd72176497ab',1,'gd::EffectMetadata::EffectMetadata()']]],
   ['effectscodegenerator',['EffectsCodeGenerator',['../classgd_1_1_effects_code_generator.html',1,'gd']]],
-  ['effectscontainer',['EffectsContainer',['../classgd_1_1_effects_container.html',1,'gd']]],
+  ['effectscontainer',['EffectsContainer',['../classgd_1_1_effects_container.html',1,'gd::EffectsContainer'],['../classgd_1_1_object.html#a25d7e74d5369784282872cf9e5c71e54',1,'gd::Object::effectsContainer()']]],
   ['empty',['empty',['../classgd_1_1_object_groups_container.html#a583814ed26c049b863df5d7208f38853',1,'gd::ObjectGroupsContainer::empty()'],['../classgd_1_1_string.html#ac6f7ef4e6407b38687eb376bffe22143',1,'gd::String::empty()'],['../classgd_1_1_serializable_with_name_list.html#a955855a70e62ef456cf8bed6faffec11',1,'gd::SerializableWithNameList::empty()'],['../classgd_1_1_s_ptr_list.html#a5e0614fe4df98f4538c92fd19d51204d',1,'gd::SPtrList::empty()']]],
   ['emptyevent',['EmptyEvent',['../classgd_1_1_empty_event.html',1,'gd']]],
   ['emptynode',['EmptyNode',['../structgd_1_1_empty_node.html',1,'gd']]],
