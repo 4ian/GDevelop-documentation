@@ -82,10 +82,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a81155b53aa7df251338d10f2163628bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a81155b53aa7df251338d10f2163628bc">CompletionKind</a> { <b>Object</b>, 
+<tr class="memitem:a81155b53aa7df251338d10f2163628bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a81155b53aa7df251338d10f2163628bc">CompletionKind</a> { <br />
+&#160;&#160;<b>Object</b>, 
 <b>Behavior</b>, 
 <b>Expression</b>, 
-<b>Variable</b>
+<b>Variable</b>, 
+<br />
+&#160;&#160;<b>Text</b>
+<br />
  }</td></tr>
 <tr class="separator:a81155b53aa7df251338d10f2163628bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,27 +124,59 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a22b7b9e546dcb48286003bd3dbeecdf6">IsExact</a> () const</td></tr>
 <tr class="memdesc:a22b7b9e546dcb48286003bd3dbeecdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the completion description is exact, i.e: it's not used to complete anything. Rather, it should display information about what is described by the completion. <br /></td></tr>
 <tr class="separator:a22b7b9e546dcb48286003bd3dbeecdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87fc16f602c505ac170373c89a988767"><td class="memItemLeft" align="right" valign="top"><a id="a87fc16f602c505ac170373c89a988767"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a87fc16f602c505ac170373c89a988767">GetReplacementStartPosition</a> () const</td></tr>
+<tr class="memdesc:a87fc16f602c505ac170373c89a988767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first character index of the autocompleted part. <br /></td></tr>
+<tr class="separator:a87fc16f602c505ac170373c89a988767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac553d7054ccf0755415f99f2040d79e0"><td class="memItemLeft" align="right" valign="top"><a id="ac553d7054ccf0755415f99f2040d79e0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#ac553d7054ccf0755415f99f2040d79e0">GetReplacementEndPosition</a> () const</td></tr>
+<tr class="memdesc:ac553d7054ccf0755415f99f2040d79e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first character index after the autocompleted part. <br /></td></tr>
+<tr class="separator:ac553d7054ccf0755415f99f2040d79e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a0a0448caa821bedd98bd3b86707b9"><td class="memItemLeft" align="right" valign="top"><a id="a70a0a0448caa821bedd98bd3b86707b9"></a>
+<a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a70a0a0448caa821bedd98bd3b86707b9">SetIsLastParameter</a> (bool isLastParameter_)</td></tr>
+<tr class="memdesc:a70a0a0448caa821bedd98bd3b86707b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the expression is the last child of a function call. <br /></td></tr>
+<tr class="separator:a70a0a0448caa821bedd98bd3b86707b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affccc74d217c906f8981b8fbf6755e69"><td class="memItemLeft" align="right" valign="top"><a id="affccc74d217c906f8981b8fbf6755e69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#affccc74d217c906f8981b8fbf6755e69">IsLastParameter</a> () const</td></tr>
+<tr class="memdesc:affccc74d217c906f8981b8fbf6755e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the expression is the last child of a function call. <br /></td></tr>
+<tr class="separator:affccc74d217c906f8981b8fbf6755e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469bb54f45b0712ef5b3b5b7a88240d0"><td class="memItemLeft" align="right" valign="top"><a id="a469bb54f45b0712ef5b3b5b7a88240d0"></a>
+<a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a469bb54f45b0712ef5b3b5b7a88240d0">SetParameterMetadata</a> (const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;parameterMetadata_)</td></tr>
+<tr class="memdesc:a469bb54f45b0712ef5b3b5b7a88240d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parameter metadata, in the case the completion is about a parameter of a function call. <br /></td></tr>
+<tr class="separator:a469bb54f45b0712ef5b3b5b7a88240d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e17e7f4d574fad87ff8c921c8bcb478"><td class="memItemLeft" align="right" valign="top"><a id="a6e17e7f4d574fad87ff8c921c8bcb478"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a6e17e7f4d574fad87ff8c921c8bcb478">HasParameterMetadata</a> () const</td></tr>
+<tr class="memdesc:a6e17e7f4d574fad87ff8c921c8bcb478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the completion is about a parameter of a function call. <br /></td></tr>
+<tr class="separator:a6e17e7f4d574fad87ff8c921c8bcb478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefaec681bc1479d3e058fd263f3dd8aa"><td class="memItemLeft" align="right" valign="top"><a id="aefaec681bc1479d3e058fd263f3dd8aa"></a>
+const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#aefaec681bc1479d3e058fd263f3dd8aa">GetParameterMetadata</a> () const</td></tr>
+<tr class="memdesc:aefaec681bc1479d3e058fd263f3dd8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parameter metadata, if the completion is about a parameter of a function call. Returns an empty metadata otherwise. <br /></td></tr>
+<tr class="separator:aefaec681bc1479d3e058fd263f3dd8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21276e4324266de3be10a819fecfcd92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a21276e4324266de3be10a819fecfcd92">ExpressionCompletionDescription</a> ()</td></tr>
 <tr class="separator:a21276e4324266de3be10a819fecfcd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad7a536dc087aa69f5f511a0e87c60eb7"><td class="memItemLeft" align="right" valign="top"><a id="ad7a536dc087aa69f5f511a0e87c60eb7"></a>
-static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#ad7a536dc087aa69f5f511a0e87c60eb7">ForObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_)</td></tr>
-<tr class="memdesc:ad7a536dc087aa69f5f511a0e87c60eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for an object with the given prefix. <br /></td></tr>
-<tr class="separator:ad7a536dc087aa69f5f511a0e87c60eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2036daa5ca71c8865874db8b4fde4000"><td class="memItemLeft" align="right" valign="top"><a id="a2036daa5ca71c8865874db8b4fde4000"></a>
-static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a2036daa5ca71c8865874db8b4fde4000">ForBehavior</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName_)</td></tr>
-<tr class="memdesc:a2036daa5ca71c8865874db8b4fde4000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for a behavior with the given prefix of the specified object. <br /></td></tr>
-<tr class="separator:a2036daa5ca71c8865874db8b4fde4000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e752e3a5fa548fcc8193b5999938d8"><td class="memItemLeft" align="right" valign="top"><a id="a27e752e3a5fa548fcc8193b5999938d8"></a>
-static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a27e752e3a5fa548fcc8193b5999938d8">ForVariable</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_)</td></tr>
-<tr class="memdesc:a27e752e3a5fa548fcc8193b5999938d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for a variable with the given prefix. <br /></td></tr>
-<tr class="separator:a27e752e3a5fa548fcc8193b5999938d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98095586a840b3726f342bfbba6b0b40"><td class="memItemLeft" align="right" valign="top"><a id="a98095586a840b3726f342bfbba6b0b40"></a>
-static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a98095586a840b3726f342bfbba6b0b40">ForExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName_=&quot;&quot;, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;behaviorName_=&quot;&quot;)</td></tr>
-<tr class="memdesc:a98095586a840b3726f342bfbba6b0b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for an expression (free, object or behavior expression) with the given prefix. <br /></td></tr>
-<tr class="separator:a98095586a840b3726f342bfbba6b0b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26662293b4b35431219a2d0493308cc7"><td class="memItemLeft" align="right" valign="top"><a id="a26662293b4b35431219a2d0493308cc7"></a>
+static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a26662293b4b35431219a2d0493308cc7">ForObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, size_t replacementStartPosition_, size_t replacementEndPosition_)</td></tr>
+<tr class="memdesc:a26662293b4b35431219a2d0493308cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for an object with the given prefix. <br /></td></tr>
+<tr class="separator:a26662293b4b35431219a2d0493308cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb961c82c2f6d62c7c10c0459d8e748"><td class="memItemLeft" align="right" valign="top"><a id="a6bb961c82c2f6d62c7c10c0459d8e748"></a>
+static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a6bb961c82c2f6d62c7c10c0459d8e748">ForBehavior</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, size_t replacementStartPosition_, size_t replacementEndPosition_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName_)</td></tr>
+<tr class="memdesc:a6bb961c82c2f6d62c7c10c0459d8e748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for a behavior with the given prefix of the specified object. <br /></td></tr>
+<tr class="separator:a6bb961c82c2f6d62c7c10c0459d8e748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c3644a7237ffb435b2cacbcb1ac551"><td class="memItemLeft" align="right" valign="top"><a id="a64c3644a7237ffb435b2cacbcb1ac551"></a>
+static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a64c3644a7237ffb435b2cacbcb1ac551">ForVariable</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, size_t replacementStartPosition_, size_t replacementEndPosition_)</td></tr>
+<tr class="memdesc:a64c3644a7237ffb435b2cacbcb1ac551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for a variable with the given prefix. <br /></td></tr>
+<tr class="separator:a64c3644a7237ffb435b2cacbcb1ac551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402bfd795a0361849dcb1c6ab434e88a"><td class="memItemLeft" align="right" valign="top"><a id="a402bfd795a0361849dcb1c6ab434e88a"></a>
+static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a402bfd795a0361849dcb1c6ab434e88a">ForText</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;parameterMetadata_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, size_t replacementStartPosition_, size_t replacementEndPosition_, const bool isLastParameter_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName_=&quot;&quot;)</td></tr>
+<tr class="memdesc:a402bfd795a0361849dcb1c6ab434e88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for a text with the given prefix. <br /></td></tr>
+<tr class="separator:a402bfd795a0361849dcb1c6ab434e88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259a3c8e1abc06eb1be58a9bed014a93"><td class="memItemLeft" align="right" valign="top"><a id="a259a3c8e1abc06eb1be58a9bed014a93"></a>
+static <a class="el" href="structgd_1_1_expression_completion_description.html">ExpressionCompletionDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgd_1_1_expression_completion_description.html#a259a3c8e1abc06eb1be58a9bed014a93">ForExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;prefix_, size_t replacementStartPosition_, size_t replacementEndPosition_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName_=&quot;&quot;, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;behaviorName_=&quot;&quot;)</td></tr>
+<tr class="memdesc:a259a3c8e1abc06eb1be58a9bed014a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a completion for an expression (free, object or behavior expression) with the given prefix. <br /></td></tr>
+<tr class="separator:a259a3c8e1abc06eb1be58a9bed014a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describe completions to be shown to the user. </p>
@@ -244,8 +280,9 @@ static <a class="el" href="structgd_1_1_expression_completion_description.html">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_expression_completion_finder_8h_source.html">ExpressionCompletionFinder.h</a></li>
+<li>ExpressionCompletionFinder.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

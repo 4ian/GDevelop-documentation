@@ -92,6 +92,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_node_location_finder.html#a2b21df0bde1ec382b6ff059a7fa57877">GetNode</a> ()</td></tr>
 <tr class="memdesc:a2b21df0bde1ec382b6ff059a7fa57877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the deepest node found at the search position, if any. <br /></td></tr>
 <tr class="separator:a2b21df0bde1ec382b6ff059a7fa57877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14792d857ce3e48bd997da29f5daca93"><td class="memItemLeft" align="right" valign="top"><a id="a14792d857ce3e48bd997da29f5daca93"></a>
+<a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_node_location_finder.html#a14792d857ce3e48bd997da29f5daca93">GetParentNode</a> ()</td></tr>
+<tr class="memdesc:a14792d857ce3e48bd997da29f5daca93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parent of deepest node found at the search position, if any. <br /></td></tr>
+<tr class="separator:a14792d857ce3e48bd997da29f5daca93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -99,6 +103,9 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_node_location_finder.html#aadd83ced57b48b4fea9348232c065167">GetNodeAtPosition</a> (<a class="el" href="structgd_1_1_expression_node.html">gd::ExpressionNode</a> &amp;node, size_t searchedPosition)</td></tr>
 <tr class="memdesc:aadd83ced57b48b4fea9348232c065167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to find the deepest node at the search position, if any. <br /></td></tr>
 <tr class="separator:aadd83ced57b48b4fea9348232c065167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee890a7b209e709ee19b991f5a68908"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_node_location_finder.html#a0ee890a7b209e709ee19b991f5a68908">GetParentNodeAtPosition</a> (<a class="el" href="structgd_1_1_expression_node.html">gd::ExpressionNode</a> &amp;node, size_t searchedPosition)</td></tr>
+<tr class="memdesc:a0ee890a7b209e709ee19b991f5a68908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to find the parent of the deepest node at the search position, if any.  <a href="#a0ee890a7b209e709ee19b991f5a68908">More...</a><br /></td></tr>
+<tr class="separator:a0ee890a7b209e709ee19b991f5a68908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -142,7 +149,47 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisitEmptyNode</b> 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Find the deepest node at the specified location in an expression. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_expression_parser2.html" title="Parse an expression, returning a tree of node corresponding to the parsed expression. ">gd::ExpressionParser2</a> </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0ee890a7b209e709ee19b991f5a68908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee890a7b209e709ee19b991f5a68908">&#9670;&nbsp;</a></span>GetParentNodeAtPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a>* gd::ExpressionNodeLocationFinder::GetParentNodeAtPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgd_1_1_expression_node.html">gd::ExpressionNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>searchedPosition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function to find the parent of the deepest node at the search position, if any. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Useful for tests. In other cases, prefer using <code>GetParentNode</code>. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_expression_node_location_finder_8h_source.html">ExpressionNodeLocationFinder.h</a></li>
 </ul>
 </div><!-- contents -->
