@@ -1,9 +1,9 @@
 var searchData=
 [
   ['exportcocos2dfiles',['ExportCocos2dFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#ae7a4641119e88d44be148e69c549ee8b',1,'gdjs::ExporterHelper']]],
-  ['exportcordovafiles',['ExportCordovaFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#afcc35b48031bff5a6898124d169681e0',1,'gdjs::ExporterHelper']]],
+  ['exportcordovafiles',['ExportCordovaFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a613a2fab5082da8d9b5c3480ba5ee4f0',1,'gdjs::ExporterHelper']]],
   ['exporteffectincludes',['ExportEffectIncludes',['../d0/d75/classgdjs_1_1_exporter_helper.html#a246aa66b740e5daaa640e5c07ab86cd2',1,'gdjs::ExporterHelper']]],
-  ['exportelectronfiles',['ExportElectronFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a9ec1d303dc6b139506d8a0066d2ecb03',1,'gdjs::ExporterHelper']]],
+  ['exportelectronfiles',['ExportElectronFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#afc57c71aceb933586692c57fec1d4af9',1,'gdjs::ExporterHelper']]],
   ['exporteventscode',['ExportEventsCode',['../d0/d75/classgdjs_1_1_exporter_helper.html#a1be922c76d8cf8a67b0be797e8363971',1,'gdjs::ExporterHelper']]],
   ['exportexternalsourcefiles',['ExportExternalSourceFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a4cd3a001fa29e714112b2ae498e5f714',1,'gdjs::ExporterHelper']]],
   ['exportfacebookinstantgamesfiles',['ExportFacebookInstantGamesFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a749478cbbaec91e7ca2bf51447f9ecd5',1,'gdjs::ExporterHelper']]],
