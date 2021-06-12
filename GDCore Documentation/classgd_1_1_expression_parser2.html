@@ -68,6 +68,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classgd_1_1_expression_parser2-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::ExpressionParser2 Class Reference</div>  </div>
@@ -86,6 +87,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58db8e35195e6af070bf632867c31952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae10c937cf5fdc876c3ca66b2cc52d547"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_parser2.html#ae10c937cf5fdc876c3ca66b2cc52d547">ParseExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;expression_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName=&quot;&quot;)</td></tr>
 <tr class="separator:ae10c937cf5fdc876c3ca66b2cc52d547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7b0480e463a8f795f4c87911adcd8949"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression_parser2.html#a7b0480e463a8f795f4c87911adcd8949">WrittenParametersFirstIndex</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;behaviorName)</td></tr>
+<tr class="separator:a7b0480e463a8f795f4c87911adcd8949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parse an expression, returning a tree of node corresponding to the parsed expression. </p>
@@ -143,6 +149,44 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The node representing the expression as a parsed tree. </dd></dl>
+
+</div>
+</div>
+<a id="a7b0480e463a8f795f4c87911adcd8949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0480e463a8f795f4c87911adcd8949">&#9670;&nbsp;</a></span>WrittenParametersFirstIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t gd::ExpressionParser2::WrittenParametersFirstIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>behaviorName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given an object name (or empty if none) and a behavior name (or empty if none), return the index of the first parameter that is inside the parenthesis: 0, 1 or 2.</p>
+<p>For example, in an expression like <code>Object.MyBehavior::Method("hello")</code>, the parameter "hello" is the second parameter (the first being by convention <a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">Object</a>, and the second MyBehavior, also by convention). </p>
 
 </div>
 </div>
