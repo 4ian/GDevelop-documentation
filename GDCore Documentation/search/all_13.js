@@ -23,7 +23,6 @@ var searchData=
   ['transcode',['Transcode',['../struct_transcoder.html#a0ea2edfe35784ebf1063921d2bd5fb66',1,'Transcoder']]],
   ['transcoder',['Transcoder',['../struct_transcoder.html',1,'']]],
   ['transcoder_3c_20encoding_2c_20encoding_20_3e',['Transcoder&lt; Encoding, Encoding &gt;',['../struct_transcoder_3_01_encoding_00_01_encoding_01_4.html',1,'']]],
-  ['translate',['Translate',['../classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4',1,'gd::InstructionSentenceFormatter']]],
   ['trim',['Trim',['../classgd_1_1_string.html#aacf4a9607674f54866a5eeaa9bb7cfa9',1,'gd::String']]],
   ['type',['type',['../classgd_1_1_parameter_metadata.html#a4e75083449de13430ce81dacdc8ea11e',1,'gd::ParameterMetadata::type()'],['../classgd_1_1_behavior_content.html#aaddb956e7168b0230c521ed73f1c40d0',1,'gd::BehaviorContent::type()'],['../classgd_1_1_object.html#aee93060a84f701627a6e1c2d851c3a63',1,'gd::Object::type()'],['../rapidjson_8h.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'Type():&#160;rapidjson.h']]],
   ['typehelper',['TypeHelper',['../structinternal_1_1_type_helper.html',1,'internal']]],

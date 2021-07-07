@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['labelfromtype',['LabelFromType',['../classgd_1_1_instruction_sentence_formatter.html#ac5013918141eca307fb9ed959a8d766d',1,'gd::InstructionSentenceFormatter']]],
   ['launch',['Launch',['../classgd_1_1_arbitrary_events_worker.html#a5bce134f7c8f1fe69c0b6cefa0e84ece',1,'gd::ArbitraryEventsWorker::Launch()'],['../classgd_1_1_arbitrary_events_worker_with_context.html#a4515635f1868166bafae3546def9a5c9',1,'gd::ArbitraryEventsWorkerWithContext::Launch()'],['../classgd_1_1_arbitrary_objects_worker.html#acd36936839dcc5e21418e490e300ff85',1,'gd::ArbitraryObjectsWorker::Launch()']]],
   ['launchresourceworkeronevents',['LaunchResourceWorkerOnEvents',['../group___i_d_e.html#ga83157999fa647494e7a1b5872d705ec6',1,'gd']]],
   ['leavecustomcondition',['LeaveCustomCondition',['../classgd_1_1_events_code_generation_context.html#a8a293f9f0aed82dab2c9d79c35f9cd31',1,'gd::EventsCodeGenerationContext']]],
@@ -17,7 +16,6 @@ var searchData=
   ['loadplatforminmanager',['LoadPlatformInManager',['../classgd_1_1_platform_loader.html#a5bd2f74ec611b53756bf84317f50eef7',1,'gd::PlatformLoader']]],
   ['loadsfmltexture',['LoadSFMLTexture',['../classgd_1_1_resources_loader.html#a8777c4477f9fe60d340db4923144b41f',1,'gd::ResourcesLoader']]],
   ['loadsoundbuffer',['LoadSoundBuffer',['../classgd_1_1_resources_loader.html#a5eadbeeb4b25b71c78df0fb27d34d041',1,'gd::ResourcesLoader']]],
-  ['loadtypesformattingfromconfig',['LoadTypesFormattingFromConfig',['../classgd_1_1_instruction_sentence_formatter.html#acffddca6180614b6696732dc68234729',1,'gd::InstructionSentenceFormatter']]],
   ['logerror',['LogError',['../namespacegd.html#af32aa15ad59e5811f7f4ec71e4f3af47',1,'gd']]],
   ['logmessage',['LogMessage',['../namespacegd.html#a52cbc4206d85629cb194df25b5304ed7',1,'gd']]],
   ['logstatus',['LogStatus',['../namespacegd.html#ada4fc5c1dcc0dc2f27d7f33fbc767033',1,'gd']]],

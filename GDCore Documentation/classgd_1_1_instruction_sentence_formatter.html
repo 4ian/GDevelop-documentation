@@ -68,7 +68,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classgd_1_1_instruction_sentence_formatter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::InstructionSentenceFormatter Class Reference</div>  </div>
@@ -82,25 +81,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a04e2d296b8e5a69bfc3d9dbd36cab2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a04e2d296b8e5a69bfc3d9dbd36cab2e4">Translate</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;instr, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;metadata)</td></tr>
-<tr class="memdesc:a04e2d296b8e5a69bfc3d9dbd36cab2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sentence from an instruction and its metadata.  <a href="#a04e2d296b8e5a69bfc3d9dbd36cab2e4">More...</a><br /></td></tr>
-<tr class="separator:a04e2d296b8e5a69bfc3d9dbd36cab2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c049d907523916386990e41122a8bf7"><td class="memItemLeft" align="right" valign="top"><a id="a8c049d907523916386990e41122a8bf7"></a>
 std::vector&lt; std::pair&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_text_formatting.html">gd::TextFormatting</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#a8c049d907523916386990e41122a8bf7">GetAsFormattedText</a> (const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;instr, const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;metadata)</td></tr>
 <tr class="memdesc:a8c049d907523916386990e41122a8bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a formatted sentence from an instruction and its metadata. <br /></td></tr>
 <tr class="separator:a8c049d907523916386990e41122a8bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad98f233b749c90f9a3841660ee64c194"><td class="memItemLeft" align="right" valign="top"><a id="ad98f233b749c90f9a3841660ee64c194"></a>
-<a class="el" href="classgd_1_1_text_formatting.html">TextFormatting</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#ad98f233b749c90f9a3841660ee64c194">GetFormattingFromType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type)</td></tr>
-<tr class="memdesc:ad98f233b749c90f9a3841660ee64c194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="classgd_1_1_text_formatting.html" title="Represents the style of a text displayed in the events editor. ">TextFormatting</a> object associated to the <em>type</em>. <br /></td></tr>
-<tr class="separator:ad98f233b749c90f9a3841660ee64c194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5013918141eca307fb9ed959a8d766d"><td class="memItemLeft" align="right" valign="top"><a id="ac5013918141eca307fb9ed959a8d766d"></a>
-<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#ac5013918141eca307fb9ed959a8d766d">LabelFromType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type)</td></tr>
-<tr class="memdesc:ac5013918141eca307fb9ed959a8d766d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the label of a parameter type. <br /></td></tr>
-<tr class="separator:ac5013918141eca307fb9ed959a8d766d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acffddca6180614b6696732dc68234729"><td class="memItemLeft" align="right" valign="top"><a id="acffddca6180614b6696732dc68234729"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_sentence_formatter.html#acffddca6180614b6696732dc68234729">LoadTypesFormattingFromConfig</a> ()</td></tr>
-<tr class="memdesc:acffddca6180614b6696732dc68234729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the configuration from the default configuration. <br /></td></tr>
-<tr class="separator:acffddca6180614b6696732dc68234729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -110,48 +94,10 @@ static <a class="el" href="classgd_1_1_instruction_sentence_formatter.html">Inst
 <tr class="memitem:a48a501d5be42df972d43f6bd33f17197"><td class="memItemLeft" align="right" valign="top"><a id="a48a501d5be42df972d43f6bd33f17197"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroySingleton</b> ()</td></tr>
 <tr class="separator:a48a501d5be42df972d43f6bd33f17197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a589bf74bafbb5c8b1cf08036c00fb912"><td class="memItemLeft" align="right" valign="top"><a id="a589bf74bafbb5c8b1cf08036c00fb912"></a>
-std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_text_formatting.html">gd::TextFormatting</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>typesFormatting</b></td></tr>
-<tr class="separator:a589bf74bafbb5c8b1cf08036c00fb912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generate user friendly sentences and information from an action or condition metadata. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a04e2d296b8e5a69bfc3d9dbd36cab2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e2d296b8e5a69bfc3d9dbd36cab2e4">&#9670;&nbsp;</a></span>Translate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::InstructionSentenceFormatter::Translate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_instruction.html">gd::Instruction</a> &amp;&#160;</td>
-          <td class="paramname"><em>instr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td>
-          <td class="paramname"><em>metadata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a sentence from an instruction and its metadata. </p>
-<p>Sentence is provided in the <a class="el" href="classgd_1_1_instruction_metadata.html" title="Describe user-friendly information about an instruction (action or condition), its parameters and the...">gd::InstructionMetadata</a> passed as parameter. Parameters placeholders ("_PARAMx_", x being the parameter index) are replaced by their values stored in the isntruction passed as parameter. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_instruction_sentence_formatter_8h_source.html">InstructionSentenceFormatter.h</a></li>
 <li>InstructionSentenceFormatter.cpp</li>
 </ul>
