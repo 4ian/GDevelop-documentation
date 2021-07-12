@@ -33,7 +33,7 @@ var searchData=
   ['copyfile',['CopyFile',['../classgd_1_1_abstract_file_system.html#aea9054a2a73f97bf3b533d7c0f6cf12b',1,'gd::AbstractFileSystem']]],
   ['count',['Count',['../classgd_1_1_object_groups_container.html#a7ba5ab01f8880973fa535b1189e37834',1,'gd::ObjectGroupsContainer::Count()'],['../classgd_1_1_variables_container.html#aadba9a51a3e6f428bc04ddd4dac6b8b5',1,'gd::VariablesContainer::Count()']]],
   ['create',['Create',['../classgd_1_1_initial_instances_container.html#a091ee3803fbc8bc0d07a03ec006c920f',1,'gd::InitialInstancesContainer']]],
-  ['createevent',['CreateEvent',['../classgd_1_1_platform.html#a09f8bb0f0f89fe923aba6dece7719b10',1,'gd::Platform::CreateEvent()'],['../classgd_1_1_platform_extension.html#a0c4a8ad3ac43ffe70c7504868df1d3fe',1,'gd::PlatformExtension::CreateEvent()'],['../classgd_1_1_project.html#a7da6d07e2fd9be6775f809438ef7561c',1,'gd::Project::CreateEvent()']]],
+  ['createevent',['CreateEvent',['../classgd_1_1_platform.html#a09f8bb0f0f89fe923aba6dece7719b10',1,'gd::Platform::CreateEvent()'],['../classgd_1_1_platform_extension.html#a10eb691b348753c80580a165ade5e9c3',1,'gd::PlatformExtension::CreateEvent()'],['../classgd_1_1_project.html#a7da6d07e2fd9be6775f809438ef7561c',1,'gd::Project::CreateEvent()']]],
   ['createfolder',['CreateFolder',['../classgd_1_1_resources_manager.html#a3df5713d597c74d607aed640a4fb937e',1,'gd::ResourcesManager']]],
   ['createobject',['CreateObject',['../classgd_1_1_platform.html#ab1f2be4c5dc241083aeaca95f056ae15',1,'gd::Platform::CreateObject()'],['../classgd_1_1_project.html#a45ca0043ebeca77621a71a920fb4df02',1,'gd::Project::CreateObject()']]],
   ['createrectangle',['CreateRectangle',['../class_polygon2d.html#a9c70e527cb62cb7ee6aee4f2799a4ace',1,'Polygon2d']]],

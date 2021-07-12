@@ -264,10 +264,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div></td></tr>
 <tr class="memitem:a45ca0043ebeca77621a71a920fb4df02"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a45ca0043ebeca77621a71a920fb4df02">CreateObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
 <tr class="separator:a45ca0043ebeca77621a71a920fb4df02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb6ff6adb656ac6251dada08eb227ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aacb6ff6adb656ac6251dada08eb227ed">GetBehavior</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:aacb6ff6adb656ac6251dada08eb227ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4acda43d49b34a6eba279303032e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_behaviors_shared_data.html">gd::BehaviorsSharedData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aff4acda43d49b34a6eba279303032e48">GetBehaviorSharedDatas</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:aff4acda43d49b34a6eba279303032e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da6d07e2fd9be6775f809438ef7561c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a7da6d07e2fd9be6775f809438ef7561c">CreateEvent</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
 <tr class="separator:a7da6d07e2fd9be6775f809438ef7561c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Layouts management</div></td></tr>
@@ -703,80 +699,6 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_whole_project_refactorer.html" title="Tool functions to do refactoring on the whole project after changes like deletion or renaming of an o...">WholeProjectRefactorer</a> </dd>
 <dd>
 <a class="el" href="classgd_1_1_arbitrary_resource_worker.html" title="ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...">ArbitraryResourceWorker</a> </dd></dl>
-
-</div>
-</div>
-<a id="aacb6ff6adb656ac6251dada08eb227ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacb6ff6adb656ac6251dada08eb227ed">&#9670;&nbsp;</a></span>GetBehavior()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> * gd::Project::GetBehavior </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the behavior of the given type.</p>
-<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the behavior is used, unless <em>platformName</em> argument is not empty. It is assumed that each platform provides an equivalent behavior.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>The type of the behavior </td></tr>
-    <tr><td class="paramname">platformName</td><td>The name of the platform to be used. If empty, the first platform supporting the object is used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aff4acda43d49b34a6eba279303032e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff4acda43d49b34a6eba279303032e48">&#9670;&nbsp;</a></span>GetBehaviorSharedDatas()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_behaviors_shared_data.html">gd::BehaviorsSharedData</a> * gd::Project::GetBehaviorSharedDatas </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the behavior shared data of the given type.</p>
-<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the behavior shared data is used, unless <em>platformName</em> argument is not empty. It is assumed that each platform provides equivalent behavior shared data.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>The type of behavior </td></tr>
-    <tr><td class="paramname">platformName</td><td>The name of the platform to be used. If empty, the first platform supporting the object is used. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
