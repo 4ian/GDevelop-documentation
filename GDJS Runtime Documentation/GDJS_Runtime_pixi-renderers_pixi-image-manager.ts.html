@@ -157,6 +157,9 @@ namespace gdjs {
           const res = this._resources[i];
           if (res.name === resourceName &amp;&amp; res.kind === 'image') {
             texture = PIXI.Texture.from(res.file);
+            if (!res.smoothed) {
+              texture.baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
+            }
             break;
           }
         }
