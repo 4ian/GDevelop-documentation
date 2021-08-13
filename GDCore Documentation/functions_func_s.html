@@ -94,6 +94,7 @@ $(function() {
 , <a class="el" href="classgd_1_1_behavior_content.html#a4fdf207264a24a9d6fd17f8925ed6c80">gd::BehaviorContent</a>
 , <a class="el" href="classgd_1_1_bitmap_font_resource.html#a3b5df9989182bddb42014b7f448e2dac">gd::BitmapFontResource</a>
 , <a class="el" href="classgd_1_1_comment_event.html#a4f8b2b2150dce5927c2fc021373580eb">gd::CommentEvent</a>
+, <a class="el" href="classgd_1_1_editor_settings.html#ac4ba0951634188c2a297ea48c5daf50e">gd::EditorSettings</a>
 , <a class="el" href="classgd_1_1_effect.html#af1585623caebdd72af60542942750752">gd::Effect</a>
 , <a class="el" href="classgd_1_1_effects_container.html#abc7af427a739379ddeabbdfec17b0b5b">gd::EffectsContainer</a>
 , <a class="el" href="classgd_1_1_events_based_behavior.html#a5d68fe7b01cd0c19e4a6c4581c0d3fc3">gd::EventsBasedBehavior</a>
@@ -114,7 +115,6 @@ $(function() {
 , <a class="el" href="classgd_1_1_json_resource.html#aa09a691e5450b34700c06e6658f85467">gd::JsonResource</a>
 , <a class="el" href="classgd_1_1_layer.html#a7cf148afb4f73afb470483e749e8c6f7">gd::Layer</a>
 , <a class="el" href="classgd_1_1_layout.html#a124361f41144bb3e089abec2d6d75f28">gd::Layout</a>
-, <a class="el" href="classgd_1_1_layout_editor_canvas_options.html#a9e6ae48ceaafb96c08744afcf1f0cb56">gd::LayoutEditorCanvasOptions</a>
 , <a class="el" href="classgd_1_1_link_event.html#a5f5243c0198f04460472588cda0ce630">gd::LinkEvent</a>
 , <a class="el" href="classgd_1_1_loading_screen.html#a26315e20285fe32d2b343d11df3b5e13">gd::LoadingScreen</a>
 , <a class="el" href="classgd_1_1_named_property_descriptor.html#a50b70cdd33165dff9696ebcf070c358f">gd::NamedPropertyDescriptor</a>
@@ -508,6 +508,9 @@ $(function() {
 <li>SetParameter()
 : <a class="el" href="classgd_1_1_instruction.html#a9caf7b28bdb2d087ada412515d776cec">gd::Instruction</a>
 </li>
+<li>SetParameterExtraInfo()
+: <a class="el" href="classgd_1_1_instruction_metadata.html#a08fb6f94e5972ae9ded0de9a5f8545ae">gd::InstructionMetadata</a>
+</li>
 <li>SetParameterLongDescription()
 : <a class="el" href="classgd_1_1_expression_metadata.html#a893146430f070693aef2aac75cb3a0a2">gd::ExpressionMetadata</a>
 , <a class="el" href="classgd_1_1_instruction_metadata.html#aa49958a5faeb20fcadd1990443565a46">gd::InstructionMetadata</a>
@@ -592,7 +595,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_serializer_element.html#a9f08efa88acba4a15d5bd7f0193887cf">gd::SerializerElement</a>
 </li>
 <li>SetStringRaw()
-: <a class="el" href="class_generic_value.html#a1451603922dcdf34976f125dc60f70ee">GenericValue&lt; Encoding, Allocator &gt;</a>
+: <a class="el" href="class_generic_value.html#ad3d91db36dfdbfc1af40a79aae07723c">GenericValue&lt; Encoding, Allocator &gt;</a>
 </li>
 <li>SetStringValue()
 : <a class="el" href="classgd_1_1_serializer_element.html#adc8dfa7ddd78c63f40feee34271dd5ab">gd::SerializerElement</a>
@@ -629,7 +632,7 @@ $(function() {
 </li>
 <li>SetValue()
 : <a class="el" href="classgd_1_1_property_descriptor.html#a036e80886513c6db7530f028a21c51c9">gd::PropertyDescriptor</a>
-, <a class="el" href="classgd_1_1_serializer_element.html#a52456f65a42a154acf35a596f95b74f9">gd::SerializerElement</a>
+, <a class="el" href="classgd_1_1_serializer_element.html#ae23f301138274b862fa1a5576c870cb5">gd::SerializerElement</a>
 , <a class="el" href="classgd_1_1_variable.html#a302f56ff5f31d0d35ee7186e57bfbc7d">gd::Variable</a>
 </li>
 <li>SetValueIteratorVariableName()
@@ -694,7 +697,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_layout.html#a00c3a891a8a0e94d793515ca6917860b">gd::Layout</a>
 </li>
 <li>String()
-: <a class="el" href="classgd_1_1_string.html#a2517faf3d6dcfe1aecabef7d7411ebe2">gd::String</a>
+: <a class="el" href="classgd_1_1_string.html#af9ab4767ba4c9bbf6e147eb49b23c45f">gd::String</a>
 , <a class="el" href="class_pretty_writer.html#a7e85689355a827d273f272c26b447225">PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</a>
 , <a class="el" href="class_writer.html#a24eb1a72b42da5fe51ff99d9c293dd11">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</a>
 </li>
@@ -716,7 +719,7 @@ $(function() {
 <li>Swap()
 : <a class="el" href="classgd_1_1_variables_container.html#a8ccb1c6cfbb16e639593d896a7b23b5e">gd::VariablesContainer</a>
 , <a class="el" href="class_generic_document.html#a6290e1290fad74177625af5938c0c58f">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;</a>
-, <a class="el" href="class_generic_pointer.html#aa84bc7e016c906436f464c8cbd858edb">GenericPointer&lt; ValueType, Allocator &gt;</a>
+, <a class="el" href="class_generic_pointer.html#a3b40ad3e851640e295a4623b624af395">GenericPointer&lt; ValueType, Allocator &gt;</a>
 </li>
 <li>SwapAnimations()
 : <a class="el" href="classgd_1_1_sprite_object.html#adf28c28cd8d599a16da01ed34ea8d216">gd::SpriteObject</a>

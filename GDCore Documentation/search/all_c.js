@@ -5,7 +5,6 @@ var searchData=
   ['layer',['Layer',['../classgd_1_1_layer.html',1,'gd']]],
   ['layerhasname',['LayerHasName',['../structgd_1_1_layer_has_name.html',1,'gd']]],
   ['layout',['Layout',['../classgd_1_1_layout.html',1,'gd']]],
-  ['layouteditorcanvasoptions',['LayoutEditorCanvasOptions',['../classgd_1_1_layout_editor_canvas_options.html',1,'gd']]],
   ['layouthasname',['LayoutHasName',['../structgd_1_1_layout_has_name.html',1,'gd']]],
   ['leavecustomcondition',['LeaveCustomCondition',['../classgd_1_1_events_code_generation_context.html#a8a293f9f0aed82dab2c9d79c35f9cd31',1,'gd::EventsCodeGenerationContext']]],
   ['lefttrim',['LeftTrim',['../classgd_1_1_string.html#ae633c3001f87db52952a9418145450c6',1,'gd::String']]],

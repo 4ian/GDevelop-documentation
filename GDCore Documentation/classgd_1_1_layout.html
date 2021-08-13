@@ -114,10 +114,10 @@ const <a class="el" href="classgd_1_1_behavior_content.html">gd::BehaviorContent
 const std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, std::unique_ptr&lt; <a class="el" href="classgd_1_1_behavior_content.html">gd::BehaviorContent</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#a5bcf4dcb10f95d3474f458d4555b7c75">GetAllBehaviorSharedData</a> () const</td></tr>
 <tr class="memdesc:a5bcf4dcb10f95d3474f458d4555b7c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a map of all shared data stored for behaviors. <br /></td></tr>
 <tr class="separator:a5bcf4dcb10f95d3474f458d4555b7c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd5af17f39c6e00bf7ecc9101b91903"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_layout_editor_canvas_options.html">gd::LayoutEditorCanvasOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#a4fd5af17f39c6e00bf7ecc9101b91903">GetAssociatedSettings</a> () const</td></tr>
-<tr class="separator:a4fd5af17f39c6e00bf7ecc9101b91903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e4b183b81a289142fdfcc7edfa83ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_layout_editor_canvas_options.html">gd::LayoutEditorCanvasOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#a8e4b183b81a289142fdfcc7edfa83ca7">GetAssociatedSettings</a> ()</td></tr>
-<tr class="separator:a8e4b183b81a289142fdfcc7edfa83ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf1ef118bbf51b50ac0335fe85dd262"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_editor_settings.html">gd::EditorSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#aacf1ef118bbf51b50ac0335fe85dd262">GetAssociatedEditorSettings</a> () const</td></tr>
+<tr class="separator:aacf1ef118bbf51b50ac0335fe85dd262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867486fdafda1e3343a236cde5eb4c29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_editor_settings.html">gd::EditorSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#a867486fdafda1e3343a236cde5eb4c29">GetAssociatedEditorSettings</a> ()</td></tr>
+<tr class="separator:a867486fdafda1e3343a236cde5eb4c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa82b23ed00bee0cace565baa5325199b"><td class="memItemLeft" align="right" valign="top">BaseProfiler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#aa82b23ed00bee0cace565baa5325199b">GetProfiler</a> () const</td></tr>
 <tr class="separator:aa82b23ed00bee0cace565baa5325199b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f3ddb72330ac91a75a22ab14d930fa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_layout.html#a8f3ddb72330ac91a75a22ab14d930fa9">SetProfiler</a> (BaseProfiler *profiler_)</td></tr>
@@ -359,8 +359,8 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a id="a4fd5af17f39c6e00bf7ecc9101b91903"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd5af17f39c6e00bf7ecc9101b91903">&#9670;&nbsp;</a></span>GetAssociatedSettings() <span class="overload">[1/2]</span></h2>
+<a id="aacf1ef118bbf51b50ac0335fe85dd262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf1ef118bbf51b50ac0335fe85dd262">&#9670;&nbsp;</a></span>GetAssociatedEditorSettings() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +369,7 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classgd_1_1_layout_editor_canvas_options.html">gd::LayoutEditorCanvasOptions</a>&amp; gd::Layout::GetAssociatedSettings </td>
+          <td class="memname">const <a class="el" href="classgd_1_1_editor_settings.html">gd::EditorSettings</a>&amp; gd::Layout::GetAssociatedEditorSettings </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -381,12 +381,12 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the settings associated to the layout. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_layout_editor_canvas_options.html" title="Tool class used to store settings of a LayoutEditorCanvas. ">gd::LayoutEditorCanvasOptions</a> </dd></dl>
+<p>Return the settings associated to the layout. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_editor_settings.html" title="Container for arbitrary serialized data to be used by the editor to store settings. ">gd::EditorSettings</a> </dd></dl>
 
 </div>
 </div>
-<a id="a8e4b183b81a289142fdfcc7edfa83ca7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e4b183b81a289142fdfcc7edfa83ca7">&#9670;&nbsp;</a></span>GetAssociatedSettings() <span class="overload">[2/2]</span></h2>
+<a id="a867486fdafda1e3343a236cde5eb4c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867486fdafda1e3343a236cde5eb4c29">&#9670;&nbsp;</a></span>GetAssociatedEditorSettings() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,7 +395,7 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_layout_editor_canvas_options.html">gd::LayoutEditorCanvasOptions</a>&amp; gd::Layout::GetAssociatedSettings </td>
+          <td class="memname"><a class="el" href="classgd_1_1_editor_settings.html">gd::EditorSettings</a>&amp; gd::Layout::GetAssociatedEditorSettings </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -407,7 +407,7 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the settings associated to the layout. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_layout_editor_canvas_options.html" title="Tool class used to store settings of a LayoutEditorCanvas. ">gd::LayoutEditorCanvasOptions</a> </dd></dl>
+<p>Return the settings associated to the layout. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_editor_settings.html" title="Container for arbitrary serialized data to be used by the editor to store settings. ">gd::EditorSettings</a> </dd></dl>
 
 </div>
 </div>

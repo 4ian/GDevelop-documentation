@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['editorsettings',['EditorSettings',['../classgd_1_1_editor_settings.html',1,'gd']]],
   ['effect',['Effect',['../classgd_1_1_effect.html',1,'gd']]],
   ['effectmetadata',['EffectMetadata',['../classgd_1_1_effect_metadata.html',1,'gd']]],
   ['effectscodegenerator',['EffectsCodeGenerator',['../classgd_1_1_effects_code_generator.html',1,'gd']]],
