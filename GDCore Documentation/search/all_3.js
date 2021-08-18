@@ -32,7 +32,6 @@ var searchData=
   ['compare',['compare',['../classgd_1_1_string.html#a533509875743fa673086bd9dbe189579',1,'gd::String']]],
   ['compilationforruntime',['compilationForRuntime',['../classgd_1_1_events_code_generator.html#a440f6ac796579a721eb4b2c100d11547',1,'gd::EventsCodeGenerator']]],
   ['compilationinfo',['CompilationInfo',['../classgd_1_1_compilation_info.html',1,'gd']]],
-  ['compiledforedittime',['CompiledForEdittime',['../classgd_1_1_version_wrapper.html#a4f739815ba0d9e9b7ae51ed298f4751d',1,'gd::VersionWrapper']]],
   ['completionkind',['CompletionKind',['../structgd_1_1_expression_completion_description.html#a81155b53aa7df251338d10f2163628bc',1,'gd::ExpressionCompletionDescription']]],
   ['computecenter',['ComputeCenter',['../class_polygon2d.html#ac0359d2dea8e35f18407e13c8e6fd756',1,'Polygon2d']]],
   ['computeedges',['ComputeEdges',['../class_polygon2d.html#aba17043ca71f503dacab45b38962e245',1,'Polygon2d']]],

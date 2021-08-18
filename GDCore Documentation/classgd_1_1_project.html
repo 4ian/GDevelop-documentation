@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classgd_1_1_project-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::Project Class Reference<div class="ingroups"><a class="el" href="group___platform_definition.html">Platform Definition (Common classes used by all platforms)</a></div></div>  </div>
@@ -96,14 +95,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:af6cd0843247976c0517e06da4a4524c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af6cd0843247976c0517e06da4a4524c1">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const</td></tr>
 <tr class="memdesc:af6cd0843247976c0517e06da4a4524c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the project.  <a href="#af6cd0843247976c0517e06da4a4524c1">More...</a><br /></td></tr>
 <tr class="separator:af6cd0843247976c0517e06da4a4524c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81121a62bbf210a7b917a2000d37090"><td class="memItemLeft" align="right" valign="top"><a id="ac81121a62bbf210a7b917a2000d37090"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac81121a62bbf210a7b917a2000d37090">IsDirty</a> ()</td></tr>
-<tr class="memdesc:ac81121a62bbf210a7b917a2000d37090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the project is marked as being modified (The IDE or application using the project should ask to save the project if the project is closed). <br /></td></tr>
-<tr class="separator:ac81121a62bbf210a7b917a2000d37090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07d99e57457577f66bce80ad368777a"><td class="memItemLeft" align="right" valign="top"><a id="aa07d99e57457577f66bce80ad368777a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa07d99e57457577f66bce80ad368777a">SetDirty</a> (bool enable=true)</td></tr>
-<tr class="memdesc:aa07d99e57457577f66bce80ad368777a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the project as being modified (The IDE or application using the project should ask to save the project if the project is closed). <br /></td></tr>
-<tr class="separator:aa07d99e57457577f66bce80ad368777a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0206cb4591df24402cf357d0558fce73"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a0206cb4591df24402cf357d0558fce73">GetLastSaveGDMajorVersion</a> ()</td></tr>
 <tr class="separator:a0206cb4591df24402cf357d0558fce73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaf2f6ae1e0a41787b8cd165b06692e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aaaf2f6ae1e0a41787b8cd165b06692e9">GetLastSaveGDMinorVersion</a> ()</td></tr>
@@ -435,18 +426,6 @@ const <a class="el" href="classgd_1_1_resources_manager.html">ResourcesManager</
 <a class="el" href="classgd_1_1_resources_manager.html">ResourcesManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aa21d727051e1c8c8d3d84f8c4c6e5a98">GetResourcesManager</a> ()</td></tr>
 <tr class="memdesc:aa21d727051e1c8c8d3d84f8c4c6e5a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the ResourceManager member containing the list of the resources. <br /></td></tr>
 <tr class="separator:aa21d727051e1c8c8d3d84f8c4c6e5a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a125be57b1555e193f6da8fcabeec6978"><td class="memItemLeft" align="right" valign="top"><a id="a125be57b1555e193f6da8fcabeec6978"></a>
-const std::shared_ptr&lt; <a class="el" href="classgd_1_1_image_manager.html">gd::ImageManager</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a125be57b1555e193f6da8fcabeec6978">GetImageManager</a> () const</td></tr>
-<tr class="memdesc:a125be57b1555e193f6da8fcabeec6978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the <a class="el" href="classgd_1_1_image_manager.html" title="Manage images for the IDE as well as at runtime for GD C++ Platform, providing an easy way to get SFM...">ImageManager</a> allowing to load SFML or OpenGL textures for the IDE ( or at runtime for the GD C++ <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">Platform</a> ). <br /></td></tr>
-<tr class="separator:a125be57b1555e193f6da8fcabeec6978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e5f08bc5422057918d7c7a0688f48d"><td class="memItemLeft" align="right" valign="top"><a id="a79e5f08bc5422057918d7c7a0688f48d"></a>
-std::shared_ptr&lt; <a class="el" href="classgd_1_1_image_manager.html">gd::ImageManager</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a79e5f08bc5422057918d7c7a0688f48d">GetImageManager</a> ()</td></tr>
-<tr class="memdesc:a79e5f08bc5422057918d7c7a0688f48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the <a class="el" href="classgd_1_1_image_manager.html" title="Manage images for the IDE as well as at runtime for GD C++ Platform, providing an easy way to get SFM...">ImageManager</a> allowing to load SFML or OpenGL textures for the IDE ( or at runtime for the GD C++ <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">Platform</a> ). <br /></td></tr>
-<tr class="separator:a79e5f08bc5422057918d7c7a0688f48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ad1b1fa131dd7e6d067701a2c77f8a"><td class="memItemLeft" align="right" valign="top"><a id="a35ad1b1fa131dd7e6d067701a2c77f8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a35ad1b1fa131dd7e6d067701a2c77f8a">SetImageManager</a> (std::shared_ptr&lt; <a class="el" href="classgd_1_1_image_manager.html">gd::ImageManager</a> &gt; imageManager_)</td></tr>
-<tr class="memdesc:a35ad1b1fa131dd7e6d067701a2c77f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to the <a class="el" href="classgd_1_1_image_manager.html" title="Manage images for the IDE as well as at runtime for GD C++ Platform, providing an easy way to get SFM...">ImageManager</a> allowing to load SFML or OpenGL textures for the IDE ( or at runtime for the GD C++ <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">Platform</a> ). <br /></td></tr>
-<tr class="separator:a35ad1b1fa131dd7e6d067701a2c77f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eefaf0417c4848a5dfd0c08938b3624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a0eefaf0417c4848a5dfd0c08938b3624">ExposeResources</a> (<a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;worker)</td></tr>
 <tr class="memdesc:a0eefaf0417c4848a5dfd0c08938b3624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called ( e.g. during compilation ) so as to inventory internal resources, sometimes update their filename or any other work or resources.  <a href="#a0eefaf0417c4848a5dfd0c08938b3624">More...</a><br /></td></tr>
 <tr class="separator:a0eefaf0417c4848a5dfd0c08938b3624"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -555,11 +534,6 @@ Static Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Other</div></td></tr>
 <tr class="memitem:af687750c9fa64218a4e1fd02365f5391"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#af687750c9fa64218a4e1fd02365f5391">ValidateName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
 <tr class="separator:af687750c9fa64218a4e1fd02365f5391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aafc689f51a71bf8c4ac7257b06fd1d3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aafc689f51a71bf8c4ac7257b06fd1d3d">imagesChanged</a></td></tr>
-<tr class="separator:aafc689f51a71bf8c4ac7257b06fd1d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -2233,22 +2207,6 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 </table>
 </div><div class="memdoc">
 <p>Return true if <em>name</em> is valid (can be used safely for an object, behavior, events function name, etc...). </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aafc689f51a71bf8c4ac7257b06fd1d3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafc689f51a71bf8c4ac7257b06fd1d3d">&#9670;&nbsp;</a></span>imagesChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>&gt; gd::Project::imagesChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Images that have been changed and which have to be reloaded </p>
 
 </div>
 </div>

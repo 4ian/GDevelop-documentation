@@ -3,7 +3,6 @@ var searchData=
   ['major',['Major',['../classgd_1_1_version_wrapper.html#aaebc3f91baf360317ba94b3ee626dc7d',1,'gd::VersionWrapper']]],
   ['makeabsolute',['MakeAbsolute',['../classgd_1_1_abstract_file_system.html#a2bad621100bc066b06e8e85748f4253c',1,'gd::AbstractFileSystem']]],
   ['makerelative',['MakeRelative',['../classgd_1_1_abstract_file_system.html#a67c0bb25312dd5b7968f27e0896082cc',1,'gd::AbstractFileSystem']]],
-  ['makespriteownsitsimage',['MakeSpriteOwnsItsImage',['../classgd_1_1_sprite.html#ae64bcb28e3c8607362604c5ff4374913',1,'gd::Sprite']]],
   ['malloc',['Malloc',['../class_memory_pool_allocator.html#a02f6832910453446cb77bf919ba49e99',1,'MemoryPoolAllocator']]],
   ['markasadvanced',['MarkAsAdvanced',['../classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277',1,'gd::InstructionMetadata::MarkAsAdvanced()'],['../classgd_1_1_multiple_instruction_metadata.html#aa9deb82e6249029a006a9ed15180838e',1,'gd::MultipleInstructionMetadata::MarkAsAdvanced()']]],
   ['markascomplex',['MarkAsComplex',['../classgd_1_1_instruction_metadata.html#a073dc8ddaaff2eb4395a98b2637a8c8a',1,'gd::InstructionMetadata::MarkAsComplex()'],['../classgd_1_1_multiple_instruction_metadata.html#aea3bb96fea5ce60a02f654846250200f',1,'gd::MultipleInstructionMetadata::MarkAsComplex()']]],

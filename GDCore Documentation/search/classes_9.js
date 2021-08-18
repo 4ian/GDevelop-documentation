@@ -4,7 +4,6 @@ var searchData=
   ['identifiernode',['IdentifierNode',['../structgd_1_1_identifier_node.html',1,'gd']]],
   ['identifierorfunctioncallorobjectfunctionnameoremptynode',['IdentifierOrFunctionCallOrObjectFunctionNameOrEmptyNode',['../structgd_1_1_identifier_or_function_call_or_object_function_name_or_empty_node.html',1,'gd']]],
   ['igenericremoteschemadocumentprovider',['IGenericRemoteSchemaDocumentProvider',['../class_i_generic_remote_schema_document_provider.html',1,'']]],
-  ['imagemanager',['ImageManager',['../classgd_1_1_image_manager.html',1,'gd']]],
   ['imageresource',['ImageResource',['../classgd_1_1_image_resource.html',1,'gd']]],
   ['imaxdiv_5ft',['imaxdiv_t',['../structimaxdiv__t.html',1,'']]],
   ['initialinstance',['InitialInstance',['../classgd_1_1_initial_instance.html',1,'gd']]],

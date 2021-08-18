@@ -165,37 +165,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#a9a2b4fb7b1aaa5f58edbc41ad5170cb4">SetDefaultCenterPoint</a> (bool enabled)</td></tr>
 <tr class="memdesc:a9a2b4fb7b1aaa5f58edbc41ad5170cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un/set center as being automatically computed. <br /></td></tr>
 <tr class="separator:a9a2b4fb7b1aaa5f58edbc41ad5170cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Sprite runtime management</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Functions used by the C++ game engine. </p>
-</div></td></tr>
-<tr class="memitem:a7dfcc7c0de8ac3e06061f731d9c781b3"><td class="memItemLeft" align="right" valign="top"><a id="a7dfcc7c0de8ac3e06061f731d9c781b3"></a>
-const sf::Sprite &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#a7dfcc7c0de8ac3e06061f731d9c781b3">GetSFMLSprite</a> () const</td></tr>
-<tr class="memdesc:a7dfcc7c0de8ac3e06061f731d9c781b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SFML sprite associated with the sprite. <br /></td></tr>
-<tr class="separator:a7dfcc7c0de8ac3e06061f731d9c781b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4bf5cbeaa6524e2dbc0adddee6ebe65"><td class="memItemLeft" align="right" valign="top"><a id="ac4bf5cbeaa6524e2dbc0adddee6ebe65"></a>
-sf::Sprite &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#ac4bf5cbeaa6524e2dbc0adddee6ebe65">GetSFMLSprite</a> ()</td></tr>
-<tr class="memdesc:ac4bf5cbeaa6524e2dbc0adddee6ebe65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SFML sprite associated with the sprite. <br /></td></tr>
-<tr class="separator:ac4bf5cbeaa6524e2dbc0adddee6ebe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7fbbb664e7f3ab20bf04da4f8abcf07"><td class="memItemLeft" align="right" valign="top"><a id="ac7fbbb664e7f3ab20bf04da4f8abcf07"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#ac7fbbb664e7f3ab20bf04da4f8abcf07">LoadImage</a> (std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_texture_wrapper.html">SFMLTextureWrapper</a> &gt; image)</td></tr>
-<tr class="memdesc:ac7fbbb664e7f3ab20bf04da4f8abcf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the SFML texture of the sprite. <br /></td></tr>
-<tr class="separator:ac7fbbb664e7f3ab20bf04da4f8abcf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac547dd051923d90450dfeb18e65227e9"><td class="memItemLeft" align="right" valign="top"><a id="ac547dd051923d90450dfeb18e65227e9"></a>
-std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_texture_wrapper.html">SFMLTextureWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#ac547dd051923d90450dfeb18e65227e9">GetSFMLTexture</a> ()</td></tr>
-<tr class="memdesc:ac547dd051923d90450dfeb18e65227e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SFML texture used by the sprite. <br /></td></tr>
-<tr class="separator:ac547dd051923d90450dfeb18e65227e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067b57682609cab2056d7e86b2f7d485"><td class="memItemLeft" align="right" valign="top"><a id="a067b57682609cab2056d7e86b2f7d485"></a>
-const std::shared_ptr&lt; <a class="el" href="class_s_f_m_l_texture_wrapper.html">SFMLTextureWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#a067b57682609cab2056d7e86b2f7d485">GetSFMLTexture</a> () const</td></tr>
-<tr class="memdesc:a067b57682609cab2056d7e86b2f7d485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SFML texture used by the sprite. <br /></td></tr>
-<tr class="separator:a067b57682609cab2056d7e86b2f7d485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64bcb28e3c8607362604c5ff4374913"><td class="memItemLeft" align="right" valign="top"><a id="ae64bcb28e3c8607362604c5ff4374913"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_sprite.html#ae64bcb28e3c8607362604c5ff4374913">MakeSpriteOwnsItsImage</a> ()</td></tr>
-<tr class="memdesc:ae64bcb28e3c8607362604c5ff4374913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the sprite, if it uses a texture from <a class="el" href="classgd_1_1_image_manager.html" title="Manage images for the IDE as well as at runtime for GD C++ Platform, providing an easy way to get SFM...">ImageManager</a>, copy this texture and take ownership of it. <br /></td></tr>
-<tr class="separator:ae64bcb28e3c8607362604c5ff4374913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a sprite to be displayed on the screen. </p>
-<p>A sprite contains a SFML sprite to be displayed, some points, and can also have its own texture (rather than a texture from <a class="el" href="classgd_1_1_image_manager.html" title="Manage images for the IDE as well as at runtime for GD C++ Platform, providing an easy way to get SFM...">ImageManager</a>).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_direction.html" title="Class defining a direction (set of frames) of an Animation. ">Direction</a> </dd>
 <dd>
 <a class="el" href="classgd_1_1_sprite_object.html" title="Standard sprite object for extensions that implements the standard SpriteExtension (see gd::BuiltinEx...">SpriteObject</a> </dd></dl>

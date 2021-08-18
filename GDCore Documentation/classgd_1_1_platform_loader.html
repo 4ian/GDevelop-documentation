@@ -80,8 +80,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a10d17edfafe3fb6e845e609d81f41928"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_loader.html#a10d17edfafe3fb6e845e609d81f41928">LoadAllPlatformsInManager</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> dir)</td></tr>
-<tr class="separator:a10d17edfafe3fb6e845e609d81f41928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd2f74ec611b53756bf84317f50eef7"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classgd_1_1_platform.html">gd::Platform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_loader.html#a5bd2f74ec611b53756bf84317f50eef7">LoadPlatformInManager</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> fullpath)</td></tr>
 <tr class="separator:a5bd2f74ec611b53756bf84317f50eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -89,40 +87,6 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Load a <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">gd::Platform</a> in memory from a file and add it to the manager. </p>
 <p>Platforms are expected to be compiled into shared library. The shared library must provides the two C functions CreateGDPlatform and DestroyGDPlatform : </p><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code" href="classgd_1_1_platform.html">gd::Platform</a> * GD_API CreateGDPlatform();</div><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> GD_API DestroyGDPlatform();</div></div><!-- fragment --><p>Platforms are expected to be singletons, so the DestroyGDPlatform is not passing any pointer as argument. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a10d17edfafe3fb6e845e609d81f41928"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10d17edfafe3fb6e845e609d81f41928">&#9670;&nbsp;</a></span>LoadAllPlatformsInManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gd::PlatformLoader::LoadAllPlatformsInManager </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td>
-          <td class="paramname"><em>dir</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Load all the platforms available in a directory.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dir</td><td>The directory where platforms must be searched for.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>For now, only GDCpp.dll and GDJS.dll are loaded. </dd></dl>
-
-</div>
-</div>
 <a id="a5bd2f74ec611b53756bf84317f50eef7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5bd2f74ec611b53756bf84317f50eef7">&#9670;&nbsp;</a></span>LoadPlatformInManager()</h2>
 

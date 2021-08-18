@@ -14,7 +14,6 @@ var searchData=
   ['preserveabsolutefilenames',['PreserveAbsoluteFilenames',['../classgd_1_1_resources_merging_helper.html#af037de5c7335e07b4effc5a3f3667397',1,'gd::ResourcesMergingHelper']]],
   ['preservedirectoriesstructure',['PreserveDirectoriesStructure',['../classgd_1_1_resources_merging_helper.html#a7cef0f0b83f5beb637e1c16dbe318d7e',1,'gd::ResourcesMergingHelper']]],
   ['prettywriter',['PrettyWriter',['../class_pretty_writer.html#a928ac2a5235b8877048ebdd5f35a556f',1,'PrettyWriter']]],
-  ['preventimagesunloading',['PreventImagesUnloading',['../classgd_1_1_image_manager.html#a0460ce1715c9c95cad543fb108305b7d',1,'gd::ImageManager']]],
   ['propertydescriptor',['PropertyDescriptor',['../classgd_1_1_property_descriptor.html#adea107a4cf8013eeb0107783cf90a8e6',1,'gd::PropertyDescriptor::PropertyDescriptor(gd::String propertyValue)'],['../classgd_1_1_property_descriptor.html#a85f0493da16ca3b1d7e7e5f797e73ae3',1,'gd::PropertyDescriptor::PropertyDescriptor()']]],
   ['push_5fback',['push_back',['../classgd_1_1_string.html#a38e05bb7227bc70639f0f4848405632b',1,'gd::String']]],
   ['pushnew',['PushNew',['../classgd_1_1_variable.html#adfc580ca2a2d19795ebb7cc94a0fbad8',1,'gd::Variable']]]

@@ -21,7 +21,6 @@ var searchData=
   ['hasinstancesofobject',['HasInstancesOfObject',['../classgd_1_1_initial_instances_container.html#a1f3b51c0ec603be227a9a8155650e624',1,'gd::InitialInstancesContainer']]],
   ['haslayernamed',['HasLayerNamed',['../classgd_1_1_layout.html#a0613b56cd3866f58e2d7ddc94e920fb6',1,'gd::Layout']]],
   ['haslayoutnamed',['HasLayoutNamed',['../classgd_1_1_project.html#a10fe9679c006e9b8de9ab50b849beb29',1,'gd::Project']]],
-  ['hasloadedsfmltexture',['HasLoadedSFMLTexture',['../classgd_1_1_image_manager.html#ad2786c8dd52802db948e3c9c4b588ed8',1,'gd::ImageManager']]],
   ['hasnoanimations',['HasNoAnimations',['../classgd_1_1_sprite_object.html#af45ca6f686406f656131530442bc26f1',1,'gd::SpriteObject']]],
   ['hasnodirections',['HasNoDirections',['../classgd_1_1_animation.html#ac545e1a9863cedd84f2d4cb0b2aee274',1,'gd::Animation']]],
   ['hasnoerrors',['HasNoErrors',['../classgd_1_1_expression_validator.html#ab5691e31db47511685ab83ef941fd474',1,'gd::ExpressionValidator']]],

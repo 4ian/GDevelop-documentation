@@ -25,7 +25,6 @@ var searchData=
   ['onideinitialized',['OnIDEInitialized',['../classgd_1_1_platform.html#a36662f1100390098e1eb6237537d56b0',1,'gd::Platform']]],
   ['onlyifotherdependencyisexported',['OnlyIfOtherDependencyIsExported',['../classgd_1_1_dependency_metadata.html#a420e792d5f72959a4c27bf167da029f0',1,'gd::DependencyMetadata']]],
   ['onlyifsomeextrasettingsnonempty',['OnlyIfSomeExtraSettingsNonEmpty',['../classgd_1_1_dependency_metadata.html#ac9ddf286fa47c902404d8bf493d01b84',1,'gd::DependencyMetadata']]],
-  ['opengltexturewrapper',['OpenGLTextureWrapper',['../class_open_g_l_texture_wrapper.html',1,'']]],
   ['openingparenthesislocation',['openingParenthesisLocation',['../structgd_1_1_function_call_node.html#a68fa955ce20704b84c1ce7ddffe25d16',1,'gd::FunctionCallNode']]],
   ['openlibrary',['OpenLibrary',['../namespacegd.html#ab8f0fd603e6c559ca309e7b8af89d19f',1,'gd']]],
   ['operator_20bool',['operator bool',['../struct_parse_result.html#a4cec9590497f982dec42e9f0763d5d73',1,'ParseResult']]],

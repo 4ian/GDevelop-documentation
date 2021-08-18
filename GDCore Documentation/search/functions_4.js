@@ -4,7 +4,6 @@ var searchData=
   ['empty',['empty',['../classgd_1_1_object_groups_container.html#a583814ed26c049b863df5d7208f38853',1,'gd::ObjectGroupsContainer::empty()'],['../classgd_1_1_string.html#ac6f7ef4e6407b38687eb376bffe22143',1,'gd::String::empty()'],['../classgd_1_1_serializable_with_name_list.html#a955855a70e62ef456cf8bed6faffec11',1,'gd::SerializableWithNameList::empty()'],['../classgd_1_1_s_ptr_list.html#a5e0614fe4df98f4538c92fd19d51204d',1,'gd::SPtrList::empty()']]],
   ['emptyobjectslistneeded',['EmptyObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#a9db1fa58b644073fb26e4b132fb75430',1,'gd::EventsCodeGenerationContext']]],
   ['enableextensionloadinglogs',['EnableExtensionLoadingLogs',['../classgd_1_1_platform.html#aa3d93b847454b69632bda3ad351589fb',1,'gd::Platform']]],
-  ['enableimagesunloading',['EnableImagesUnloading',['../classgd_1_1_image_manager.html#a6143e62ac3c27b17617a15baadb93a84',1,'gd::ImageManager']]],
   ['end',['end',['../classgd_1_1_string.html#ab3c24e4ebc0d5a1b7945346b3c099943',1,'gd::String::end()'],['../classgd_1_1_string.html#aa5ed3b36d31003ebb71627dec107f1e8',1,'gd::String::end() const']]],
   ['ensurebehavioreventsfunctionsproperparameters',['EnsureBehaviorEventsFunctionsProperParameters',['../classgd_1_1_whole_project_refactorer.html#a4fccc70cc67077fa5e77a310f1918129',1,'gd::WholeProjectRefactorer']]],
   ['entercustomcondition',['EnterCustomCondition',['../classgd_1_1_events_code_generation_context.html#a69469bf336a0e1219502c4aad00273fa',1,'gd::EventsCodeGenerationContext']]],

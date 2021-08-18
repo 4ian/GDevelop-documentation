@@ -11,7 +11,6 @@ var searchData=
   ['emptynode',['EmptyNode',['../structgd_1_1_empty_node.html',1,'gd']]],
   ['emptyobjectslistneeded',['EmptyObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#a9db1fa58b644073fb26e4b132fb75430',1,'gd::EventsCodeGenerationContext']]],
   ['enableextensionloadinglogs',['EnableExtensionLoadingLogs',['../classgd_1_1_platform.html#aa3d93b847454b69632bda3ad351589fb',1,'gd::Platform']]],
-  ['enableimagesunloading',['EnableImagesUnloading',['../classgd_1_1_image_manager.html#a6143e62ac3c27b17617a15baadb93a84',1,'gd::ImageManager']]],
   ['encodedinputstream',['EncodedInputStream',['../class_encoded_input_stream.html',1,'']]],
   ['encodedinputstream_3c_20utf8_3c_3e_2c_20memorystream_20_3e',['EncodedInputStream&lt; UTF8&lt;&gt;, MemoryStream &gt;',['../class_encoded_input_stream_3_01_u_t_f8_3_4_00_01_memory_stream_01_4.html',1,'']]],
   ['encodedoutputstream',['EncodedOutputStream',['../class_encoded_output_stream.html',1,'']]],

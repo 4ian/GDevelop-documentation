@@ -39,7 +39,6 @@ var searchData=
   ['isconvex',['IsConvex',['../class_polygon2d.html#aa355bfaf5420a47058b3d8adb3ebbd77',1,'Polygon2d']]],
   ['isdefaultcenterpoint',['IsDefaultCenterPoint',['../classgd_1_1_sprite.html#a522c7018e775406ec24661bdc4f2eb2a',1,'gd::Sprite']]],
   ['isdeprecated',['IsDeprecated',['../classgd_1_1_platform_extension.html#a9f3b12a09af5b5bfdac9d64203f85ec0',1,'gd::PlatformExtension']]],
-  ['isdirty',['IsDirty',['../classgd_1_1_project.html#ac81121a62bbf210a7b917a2000d37090',1,'gd::Project']]],
   ['isdisabled',['IsDisabled',['../classgd_1_1_base_event.html#a7909bb584c247f922eacb8e5c6db527a',1,'gd::BaseEvent']]],
   ['isdouble',['IsDouble',['../classgd_1_1_serializer_value.html#a407e16532526cf74e61bccdf20e7dcb9',1,'gd::SerializerValue']]],
   ['isempty',['IsEmpty',['../classgd_1_1_events_list.html#aa0298d1b146b827bd9b440461ea3a823',1,'gd::EventsList::IsEmpty()'],['../classgd_1_1_object_groups_container.html#ad544d2eefcba83f7b17087f667ced65d',1,'gd::ObjectGroupsContainer::IsEmpty()'],['../classgd_1_1_serializable_with_name_list.html#a6494b7d514926e1a22c9c4f25c88ebbd',1,'gd::SerializableWithNameList::IsEmpty()'],['../classgd_1_1_s_ptr_list.html#ac987edba3250100cfc40c157fbb99517',1,'gd::SPtrList::IsEmpty()']]],
