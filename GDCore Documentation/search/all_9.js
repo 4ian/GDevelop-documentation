@@ -90,6 +90,7 @@ var searchData=
   ['islightinglayer',['IsLightingLayer',['../classgd_1_1_layer.html#a67eafea4f99d6dcb745529834c34a618',1,'gd::Layer']]],
   ['islocked',['IsLocked',['../classgd_1_1_initial_instance.html#a2883e696538ecf77b325a002f04a43cb',1,'gd::InitialInstance']]],
   ['islooping',['IsLooping',['../classgd_1_1_direction.html#a78c79c70c9f683b06b2a50ba4c3f3b5d',1,'gd::Direction']]],
+  ['ismarkedasnotworkingforobjects',['IsMarkedAsNotWorkingForObjects',['../classgd_1_1_effect_metadata.html#af040a2e7ce1f0917391ddb266eeb57e4',1,'gd::EffectMetadata']]],
   ['isobject',['IsObject',['../classgd_1_1_parameter_metadata.html#aaeb5e8e421167a4458e747f8cac0632f',1,'gd::ParameterMetadata']]],
   ['isobjectinstruction',['IsObjectInstruction',['../classgd_1_1_instruction_metadata.html#a9e5bd25e8148e9ea360bfa47998c896e',1,'gd::InstructionMetadata']]],
   ['isolder',['IsOlder',['../classgd_1_1_version_wrapper.html#a289d296d5f707835f9451d3056864351',1,'gd::VersionWrapper']]],

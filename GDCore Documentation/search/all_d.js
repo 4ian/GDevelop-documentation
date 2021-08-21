@@ -7,6 +7,7 @@ var searchData=
   ['markasadvanced',['MarkAsAdvanced',['../classgd_1_1_instruction_metadata.html#ae5c064220092e5666a17f2744201b277',1,'gd::InstructionMetadata::MarkAsAdvanced()'],['../classgd_1_1_multiple_instruction_metadata.html#aa9deb82e6249029a006a9ed15180838e',1,'gd::MultipleInstructionMetadata::MarkAsAdvanced()']]],
   ['markascomplex',['MarkAsComplex',['../classgd_1_1_instruction_metadata.html#a073dc8ddaaff2eb4395a98b2637a8c8a',1,'gd::InstructionMetadata::MarkAsComplex()'],['../classgd_1_1_multiple_instruction_metadata.html#aea3bb96fea5ce60a02f654846250200f',1,'gd::MultipleInstructionMetadata::MarkAsComplex()']]],
   ['markasdeprecated',['MarkAsDeprecated',['../classgd_1_1_platform_extension.html#a737fe4f423cfee79efd899b2a236c104',1,'gd::PlatformExtension']]],
+  ['markasnotworkingforobjects',['MarkAsNotWorkingForObjects',['../classgd_1_1_effect_metadata.html#a065e57017b9719d3a87e846ac0a49c9b',1,'gd::EffectMetadata']]],
   ['markassimple',['MarkAsSimple',['../classgd_1_1_instruction_metadata.html#a20f6cccc70c0bf261944585ab9d9ec9e',1,'gd::InstructionMetadata::MarkAsSimple()'],['../classgd_1_1_multiple_instruction_metadata.html#a5e0b7d7892f173a87c102f65dea11df3',1,'gd::MultipleInstructionMetadata::MarkAsSimple()']]],
   ['maxconditionslistssize',['maxConditionsListsSize',['../classgd_1_1_events_code_generator.html#a8ef134acbe21b8ea7d606e776ea5f187',1,'gd::EventsCodeGenerator']]],
   ['maxcustomconditionsdepth',['maxCustomConditionsDepth',['../classgd_1_1_events_code_generator.html#a35db61f766059e5ca8f87bd4b1367407',1,'gd::EventsCodeGenerator']]],

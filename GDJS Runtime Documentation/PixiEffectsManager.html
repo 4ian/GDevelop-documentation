@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      GDJS/Runtime/variable.ts - Documentation
+      PixiEffectsManager - Documentation
   </title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
@@ -81,597 +79,2274 @@
   <div id="main">
     
       <h1 class="page-title">
-        GDJS/Runtime/variable.ts
+        PixiEffectsManager
       </h1>
     
 
     
-      
 
 <section>
+  <header>
+    
+      <h2>
+        
+        PixiEffectsManager
+        
+      </h2>
+
+      
+        <div class="class-description">
+          <p>Handle effects (aka PixiJS &quot;filters&quot;) on PixiJS objects.</p>
+        </div>
+      
+    
+  </header>
+
   <article>
-    <pre class="prettyprint source linenums"><code>/*
- * GDevelop JS Platform
- * Copyright 2013-2016 Florian Rival (Florian.Rival@gmail.com). All rights reserved.
- * This project is released under the MIT License.
- */
-namespace gdjs {
-  /**
-   * Children of a structure.
-   */
-  type Children = Record&lt;string, gdjs.Variable>;
+    <div class="container-overview">
+      
+        
 
-  /**
-   * A Variable is an object storing a value (number or a string) or children variables.
-   */
-  export class Variable {
-    // TODO: convert this to an integer to speed up the type checks at runtime.
-    _type: VariableType = 'number';
-    _value: float = 0;
-    _str: string = '0';
-    _bool: boolean = false;
-    _children: Children = {};
-    _childrenArray: gdjs.Variable[] = [];
-    _undefinedInContainer: boolean = false;
 
-    /**
-     * @param [varData] The optional initial content of the variable.
-     */
-    constructor(varData?: VariableData) {
-      this.reinitialize(varData);
-    }
+  
+    <h2>Constructor</h2>
+  
 
-    reinitialize(varData?: VariableData | undefined) {
-      this._type = 'number';
-      this._value = 0;
-      this._str = '0';
-      this._bool = false;
-      this._children = {};
-      this._childrenArray = [];
-      this._undefinedInContainer = false;
+  <span class='name-container'>
+    <a class="link-icon" href="#PixiEffectsManager">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="PixiEffectsManager">
+      <span class="type-signature"></span>new PixiEffectsManager<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
 
-      if (varData !== undefined) {
-        this._type = varData.type || 'number';
-        if (this._type === 'number') {
-          this._value = parseFloat((varData.value as string) || '0');
-          // Protect against NaN.
-          if (this._value !== this._value) this._value = 0;
-        } else if (this._type === 'string') {
-          this._str = '' + varData.value || '0';
-        } else if (this._type === 'boolean') {
-          this._bool = !!varData.value;
-        } else if (this._type === 'structure') {
-          if (varData.children !== undefined) {
-            for (var i = 0, len = varData.children.length; i &lt; len; ++i) {
-              var childData = varData.children[i];
-              if (childData.name === undefined) continue;
-              this._children[childData.name] = new gdjs.Variable(childData);
-            }
-          }
-        } else if (this._type === 'array' &amp;&amp; varData.children) {
-          for (const childData of varData.children)
-            this._childrenArray.push(new gdjs.Variable(childData));
-        }
-      }
-    }
+  
 
-    /**
-     * Return true if the variable type is a primitive type.
-     */
-    static isPrimitive(
-      type: VariableType
-    ): type is 'string' | 'number' | 'boolean' {
-      return type === 'string' || type === 'number' || type === 'boolean';
-    }
 
-    /**
-     * Deeply copies a variable into another.
-     * @param source The source variable.
-     * @param target The target variable.
-     * @param merge Should the target be merged with the source, or be an exact copy?
-     * @returns The target variable.
-     */
-    static copy(
-      source: gdjs.Variable,
-      target: gdjs.Variable,
-      merge?: boolean
-    ): gdjs.Variable {
-      if (!merge) target.clearChildren();
-      target.castTo(source.getType());
-      if (source.isPrimitive()) {
-        target.setValue(source.getValue());
-      } else if (source.getType() === 'structure') {
-        const children = source.getAllChildren();
-        for (const p in children) {
-          if (children.hasOwnProperty(p))
-            target.addChild(p, children[p].clone());
-        }
-      } else if (source.getType() === 'array') {
-        for (const p of source.getAllChildrenArray())
-          target.pushVariableCopy(p);
-      }
-      return target;
-    }
 
-    /**
-     * Converts a JavaScript object into a value compatible
-     * with GDevelop variables and store it inside this variable.
-     * @param obj - The value to convert.
-     */
-    fromJSObject(obj: any): this {
-      if (obj === null) {
-        this.setString('null');
-      } else if (typeof obj === 'number') {
-        if (Number.isNaN(obj)) {
-          console.warn('Variables cannot be set to NaN, setting it to 0.');
-          this.setNumber(0);
-        } else {
-          this.setNumber(obj);
-        }
-      } else if (typeof obj === 'string') {
-        this.setString(obj);
-      } else if (typeof obj === 'undefined') {
-        // Do not modify the variable, as there is no value to set it to.
-      } else if (typeof obj === 'boolean') {
-        this.setBoolean(obj);
-      } else if (Array.isArray(obj)) {
-        this.castTo('array');
-        this.clearChildren();
-        for (const i in obj) this.getChild(i).fromJSObject(obj[i]);
-      } else if (typeof obj === 'object') {
-        this.castTo('structure');
-        this.clearChildren();
-        for (var p in obj)
-          if (obj.hasOwnProperty(p)) this.getChild(p).fromJSObject(obj[p]);
-      } else if (typeof obj === 'symbol') {
-        this.setString(obj.toString());
-      } else if (typeof obj === 'bigint') {
-        if (obj > Number.MAX_SAFE_INTEGER)
-          console.warn(
-            'Integers bigger than ' +
-              Number.MAX_SAFE_INTEGER +
-              " aren't supported by GDevelop variables, it will be reduced to that size."
-          );
-        // @ts-ignore
-        variable.setNumber(parseInt(obj, 10));
-      } else if (typeof obj === 'function') {
-        console.error('Error: Impossible to set variable value to a function.');
-      } else {
-        console.error('Cannot identify type of object:', obj);
-      }
-      return this;
-    }
 
-    /**
-     * Unserialize a JSON string into this variable.
-     *
-     * This just logs an error if the JSON is invalid.
-     *
-     * @param json - A JSON string.
-     */
-    fromJSON(json: string): this {
-      try {
-        var obj = JSON.parse(json);
-      } catch (e) {
-        console.error('Unable to parse JSON: ', json, e);
-        return this;
-      }
-      this.fromJSObject(obj);
-      return this;
-    }
 
-    /**
-     * Converts this variable into an equivalent JavaScript object.
-     * @returns A JavaScript object equivalent to the variable.
-     */
-    toJSObject(): any {
-      switch (this._type) {
-        case 'string':
-          return this.getAsString();
-        case 'number':
-          return this.getAsNumber();
-        case 'boolean':
-          return this.getAsBoolean();
-        case 'structure':
-          const obj = {};
-          for (const name in this._children)
-            obj[name] = this._children[name].toJSObject();
-          return obj;
-        case 'array':
-          const arr: any[] = [];
-          for (const item of this._childrenArray) arr.push(item.toJSObject());
-          return arr;
-      }
-    }
 
-    /**
-     * Return true if the type of the variable is a primitive type.
-     */
-    isPrimitive() {
-      return gdjs.Variable.isPrimitive(this._type);
-    }
 
-    /**
-     * Returns a deep copy of this variable.
-     */
-    clone(): gdjs.Variable {
-      return gdjs.Variable.copy(this, new gdjs.Variable());
-    }
 
-    /**
-     * Used (usually by gdjs.VariablesContainer) to set that the variable must be
-     * considered as not existing in the container.
-     */
-    setUndefinedInContainer() {
-      this._undefinedInContainer = true;
-    }
 
-    /**
-     * Check if the variable must be considered as not existing in its container
-     * (usually a gdjs.VariablesContainer).
-     * @return true if the container must consider that the variable does not exist.
-     */
-    isUndefinedInContainer(): boolean {
-      return this._undefinedInContainer;
-    }
 
-    /**
-     * Converts the variable into another type.
-     * @param newType The new type of the variable
-     */
-    castTo(newType: VariableType) {
-      if (newType === 'string') this.setString(this.getAsString());
-      else if (newType === 'number') this.setNumber(this.getAsNumber());
-      else if (newType === 'boolean') this.setBoolean(this.getAsBoolean());
-      else if (newType === 'structure') {
-        if (this._type === 'structure') return;
-        this._children = this.getAllChildren();
-        this._type = 'structure';
-      } else if (newType === 'array') {
-        if (this._type === 'array') return;
-        this._childrenArray = this.getAllChildrenArray();
-        this._type = 'array';
-      }
-    }
 
-    /**
-     * Get the child with the specified name.
-     *
-     * If the variable has not the specified child, an empty variable with the specified name
-     * is added as child.
-     * @returns The child variable
-     */
-    getChild(childName: string): gdjs.Variable {
-      // Make sure the variable is a collection
-      if (this.isPrimitive()) this.castTo('structure');
 
-      if (this._type === 'array')
-        return this.getChildAt(parseInt(childName, 10) || 0);
 
-      if (
-        this._children[childName] === undefined ||
-        this._children[childName] === null
-      )
-        this._children[childName] = new gdjs.Variable();
-      return this._children[childName];
-    }
 
-    /**
-     * Add a child variable with the specified name.
-     *
-     * If there is an existing child variable with this name, it is erased.
-     * @param childName The name of the variable to add
-     * @param childVariable The variable to add as a child
-     * @returns The variable (for chaining calls)
-     */
-    addChild(childName: string, childVariable: gdjs.Variable): this {
-      // Make sure this is a structure
-      this.castTo('structure');
-      this._children[childName] = childVariable;
-      return this;
-    }
+<dl class="details">
 
-    /**
-     * Return the child in a variable.
-     *
-     * Check if the variable has the specified children
-     * @return true if variable has the children with the specified name
-     */
-    hasChild(childName: string): boolean {
-      return (
-        this._type === 'structure' &amp;&amp; this._children.hasOwnProperty(childName)
-      );
-    }
+  
 
-    /**
-     * Remove the child with the specified name.
-     *
-     * If the variable has not the specified child, nothing is done.
-     * @param childName The name of the child to be removed
-     */
-    removeChild(childName: string) {
-      if (this._type !== 'structure') return;
-      delete this._children[childName];
-    }
+  
 
-    /**
-     * Remove all the children.
-     */
-    clearChildren() {
-      this._children = {};
-      this._childrenArray = [];
-    }
+  
 
-    /**
-     * Replaces all the children with a new map of children.
-     * @param newChildren The map of new children.
-     */
-    replaceChildren(newChildren: Children) {
-      this._type = 'structure';
-      this._children = newChildren;
-    }
+  
 
-    /**
-     * Replaces all the children with a new array of children.
-     * @param newChildren The array of new children.
-     */
-    replaceChildrenArray(newChildren: gdjs.Variable[]) {
-      this._type = 'array';
-      this._childrenArray = newChildren;
-    }
+  
 
-    /**
-     * Get the value of the variable, considered as a number
-     * @return The number stored in the variable
-     */
-    getAsNumber(): float {
-      if (this._type !== 'number') {
-        let number = 0;
-        if (this._type === 'string') number = parseFloat(this._str);
-        else if (this._type === 'boolean') number = this._bool ? 1 : 0;
+  
 
-        return number === number ? number : 0; //Ensure NaN is not returned as a value.
-      }
+  
 
-      return this._value;
-    }
+  
 
-    /**
-     * Change the value of the variable, considered as a number
-     * @param newValue The new value to be set
-     */
-    setNumber(newValue: float) {
-      this._type = 'number';
-      //@ts-ignore parseFloat does accept numbers.
-      newValue = parseFloat(newValue);
-      this._value = newValue === newValue ? newValue : 0; // Prevent NaN
-    }
+  
 
-    /**
-     * Get the value of the variable, considered as a string
-     * @return The string stored in the variable
-     */
-    getAsString(): string {
-      if (this._type !== 'string') {
-        if (this._type === 'number') return this._value.toString();
-        else if (this._type === 'boolean') return this._bool ? 'true' : 'false';
-        else if (this._type === 'structure') return '[Structure]';
-        else if (this._type === 'array') return '[Array]';
-        else return '';
-      }
+  
 
-      return this._str;
-    }
+  
 
-    /**
-     * Change the value of the variable, considered as a string
-     * @param newValue The new string to be set
-     */
-    setString(newValue: string): void {
-      this._type = 'string';
-      this._str = '' + newValue;
-    }
+  
 
-    /**
-     * Get the value of the variable, considered as a boolean
-     * @return The boolean value of the variable.
-     */
-    getAsBoolean(): boolean {
-      if (this._type !== 'boolean') {
-        if (this._type === 'number') return this._value !== 0;
-        else if (this._type === 'string')
-          return this._str !== '0' &amp;&amp; this._str !== '' &amp;&amp; this._str !== 'false';
-        else return true;
-      }
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line13">line 13</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-      return this._bool;
-    }
+  
 
-    /**
-     * Change the value of the variable, considered as a boolean
-     * @param newValue The new boolean to be set.
-     */
-    setBoolean(newValue: boolean) {
-      this._type = 'boolean';
-      this._bool = !!newValue;
-    }
+  
 
-    /**
-     * Sets the primitive value using the setter of the current type.
-     * @param newValue The primitive value of the variable.
-     */
-    setValue(newValue: string | float | boolean) {
-      if (this._type === 'string') this.setString(newValue as string);
-      else if (this._type === 'number') this.setNumber(newValue as float);
-      else if (this._type === 'boolean') this.setBoolean(newValue as boolean);
-    }
+  
+</dl>
 
-    /**
-     * Gets the primitive value using the getter of the current type.
-     */
-    getValue(): string | float | boolean {
-      return this._type === 'number'
-        ? this.getAsNumber()
-        : this._type === 'boolean'
-        ? this.getAsBoolean()
-        : this.getAsString();
-    }
 
-    /**
-     * Return true if the variable is a structure.
-     * @return true if the variable is a structure.
-     * @deprecated Use {@link gdjs.Variable.getType} instead.
-     */
-    isStructure(): boolean {
-      return this._type === 'structure';
-    }
 
-    /**
-     * Return true if the variable is a number.
-     * @return true if the variable is a number.
-     * @deprecated Use {@link gdjs.Variable.getType} instead.
-     */
-    isNumber(): boolean {
-      return this._type === 'number';
-    }
 
-    /**
-     * Returns the type of the variable.
-     */
-    getType(): VariableType {
-      return this._type;
-    }
 
-    /**
-     * Return the object containing all the children of the variable.
-     * @return All the children of the variable
-     */
-    getAllChildren(): Children {
-      return this._type === 'structure'
-        ? this._children
-        : this._type === 'array'
-        ? ((Object.assign({}, this._childrenArray) as unknown) as Children)
-        : {};
-    }
 
-    /**
-     * Return an Array containing all the children of the variable.
-     */
-    getAllChildrenArray(): gdjs.Variable[] {
-      return this._type === 'structure'
-        ? Object.values(this._children)
-        : this._type === 'array'
-        ? this._childrenArray
-        : [];
-    }
 
-    /**
-     * Return the length of the collection.
-     */
-    getChildrenCount(): integer {
-      return this._type === 'structure'
-        ? Object.keys(this._children).length
-        : this._type === 'array'
-        ? this._childrenArray.length
-        : 0;
-    }
 
-    /**
-     * Add the given number to the variable value
-     * @param val the number to add
-     */
-    add(val: float) {
-      this.setNumber(this.getAsNumber() + val);
-    }
 
-    /**
-     * Subtract the given number to the variable value
-     * @param val the number to subtract
-     */
-    sub(val: float) {
-      this.setNumber(this.getAsNumber() - val);
-    }
 
-    /**
-     * Multiply the variable value by the given number
-     * @param val the factor
-     */
-    mul(val: float) {
-      this.setNumber(this.getAsNumber() * val);
-    }
 
-    /**
-     * Divide the variable value by the given number
-     * @param val the divisor
-     */
-    div(val: float) {
-      this.setNumber(this.getAsNumber() / val);
-    }
 
-    /**
-     * Concatenate the given string at the end of the variable value
-     * @param str the string to append
-     */
-    concatenateString(str: string) {
-      this.setString(this.getAsString() + str);
-    }
 
-    /**
-     * @deprecated
-     * @private
-     * @alias concatenateString
-     */
-    concatenate(str: string) {
-      this.setString(this.getAsString() + str);
-    }
 
-    /**
-     * Get a variable at a given index of the array.
-     */
-    getChildAt(index: integer) {
-      this.castTo('array');
-      if (
-        this._childrenArray[index] === undefined ||
-        this._childrenArray[index] === null
-      )
-        this._childrenArray[index] = new gdjs.Variable();
-      return this._childrenArray[index];
-    }
+      
+    </div>
 
-    /**
-     * Removes a variable at a given index of the array.
-     */
-    removeAtIndex(index: integer) {
-      if (this._type === 'array') this._childrenArray.splice(index, 1);
-    }
+    
 
-    /**
-     * Pushes a copy of a variable into the array.
-     */
-    pushVariableCopy(variable: gdjs.Variable) {
-      this.castTo('array');
-      this._childrenArray.push(variable.clone());
-    }
+    
 
-    /**
-     * Pushes a value into the array.
-     */
-    pushValue(value: string | float | boolean) {
-      this.castTo('array');
-      this._childrenArray.push(
-        new gdjs.Variable({
-          type: typeof value as 'string' | 'number' | 'boolean',
-          value,
-        })
-      );
-    }
-  }
-}
-</code></pre>
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#addEffect">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="addEffect">
+      <span class="type-signature"></span>addEffect<span class="signature">(effectData, rendererEffects, rendererObject, target)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Add a new effect on a PixiJS DisplayObject, or replace the one
+with the same name.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>effectData</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect data</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The renderer effects</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>rendererObject</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The renderer object</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>target</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effects target</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line77">line 77</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#applyEffect">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="applyEffect">
+      <span class="type-signature"></span>applyEffect<span class="signature">(rendererObject, effect)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Apply the effect on the PixiJS DisplayObject.
+Called after the effect is initialized.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererObject</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The renderer object</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>effect</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect to be applied.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line51">line 51</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#enableEffect">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="enableEffect">
+      <span class="type-signature"></span>enableEffect<span class="signature">(rendererEffects, name, value)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Enable an effect.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Set to true to enable, false to disable</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line184">line 184</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#hasEffect">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="hasEffect">
+      <span class="type-signature"></span>hasEffect<span class="signature">(rendererEffects, name)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Check if an effect exists.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect name</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+  <h5>Returns:</h5>
+  
+
+<table class="returns">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        <td class="type">
+          
+        </td>
+
+        <td class="description">
+          <p>True if the effect exists, false otherwise</p>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line175">line 175</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#initializeEffect">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="initializeEffect">
+      <span class="type-signature"></span>initializeEffect<span class="signature">(effectData, rendererEffects, target)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Initialize the renderer effect (PixiJS filter) from the effect data.
+Call the applyEffect method afterwards, to correctly apply the
+initialized effects on the object.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>effectData</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect data</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>target</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effects target</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line22">line 22</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#isEffectEnabled">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="isEffectEnabled">
+      <span class="type-signature"></span>isEffectEnabled<span class="signature">(rendererEffects, name)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Check if an effect is enabled.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect name</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+  <h5>Returns:</h5>
+  
+
+<table class="returns">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        <td class="type">
+          
+        </td>
+
+        <td class="description">
+          <p>true if the filter is enabled</p>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line196">line 196</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#removeEffect">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="removeEffect">
+      <span class="type-signature"></span>removeEffect<span class="signature">(rendererEffects, rendererObject, effectName)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Remove the effect with the specified name from a PixiJS DisplayObject.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>rendererObject</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The renderer object.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>effectName</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The name of the effect.</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line96">line 96</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#setEffectBooleanParameter">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="setEffectBooleanParameter">
+      <span class="type-signature"></span>setEffectBooleanParameter<span class="signature">(rendererEffects, name, parameterName, value)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Enable or disable the parameter of an effect (boolean).</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>parameterName</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The parameter name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The new value for the parameter</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line139">line 139</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#setEffectDoubleParameter">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="setEffectDoubleParameter">
+      <span class="type-signature"></span>setEffectDoubleParameter<span class="signature">(rendererEffects, name, parameterName, value)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update the parameter of an effect (with a number).</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>parameterName</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The parameter name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The new value for the parameter</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line111">line 111</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#setEffectStringParameter">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="setEffectStringParameter">
+      <span class="type-signature"></span>setEffectStringParameter<span class="signature">(rendererEffects, name, parameterName, value)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update the parameter of an effect (with a string).</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The collection of PixiJS filters.</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>name</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The effect name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>parameterName</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The parameter name</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>The new value for the parameter</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line125">line 125</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#updateAllEffectParameters">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="updateAllEffectParameters">
+      <span class="type-signature"></span>updateAllEffectParameters<span class="signature">(rendererEffects, effectData)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Updates all the effect parameters.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>rendererEffects</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>effectData</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line151">line 151</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#updatePreRender">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="updatePreRender">
+      <span class="type-signature"></span>updatePreRender<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Update the filters applied on a PixiJS DisplayObject.
+This must be called after the events and before the rendering.</p>
+<p>This allows effects to be sure that they are up to date and ready
+to render. This is not called on objects that are not rendered on screen
+(&quot;culling&quot;). This is always called on layers.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html">GDJS/Runtime/pixi-renderers/pixi-effects-manager.ts</a>, <a href="GDJS_Runtime_pixi-renderers_pixi-effects-manager.ts.html#line63">line 63</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+
+    
+
+    
   </article>
 </section>
 
-    
+
 
 
   </div>
