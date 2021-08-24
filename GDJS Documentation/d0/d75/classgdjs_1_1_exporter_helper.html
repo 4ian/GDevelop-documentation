@@ -89,14 +89,14 @@ Public Member Functions</h2></td></tr>
 const gd::String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#ada5884debab85a04032d19fcfcbf2eb1">GetLastError</a> () const</td></tr>
 <tr class="memdesc:ada5884debab85a04032d19fcfcbf2eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the error that occurred during the last export. <br /></td></tr>
 <tr class="separator:ada5884debab85a04032d19fcfcbf2eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d0097723c4c5618e8fe2de03b0efc2"><td class="memItemLeft" align="right" valign="top"><a id="aa7d0097723c4c5618e8fe2de03b0efc2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#aa7d0097723c4c5618e8fe2de03b0efc2">AddLibsInclude</a> (bool pixiRenderers, bool cocosRenderers, bool websocketDebuggerClient, gd::String gdevelopLogoStyle, std::vector&lt; gd::String &gt; &amp;includesFiles)</td></tr>
-<tr class="memdesc:aa7d0097723c4c5618e8fe2de03b0efc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add libraries files from Pixi.js or Cocos2d to the list of includes. <br /></td></tr>
-<tr class="separator:aa7d0097723c4c5618e8fe2de03b0efc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285158d1e9549706dc9f422705fbd887"><td class="memItemLeft" align="right" valign="top"><a id="a285158d1e9549706dc9f422705fbd887"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a285158d1e9549706dc9f422705fbd887">RemoveIncludes</a> (bool pixiRenderers, bool cocosRenderers, std::vector&lt; gd::String &gt; &amp;includesFiles)</td></tr>
-<tr class="memdesc:a285158d1e9549706dc9f422705fbd887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove include files that are Pixi or Cocos2d renderers. <br /></td></tr>
-<tr class="separator:a285158d1e9549706dc9f422705fbd887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04996ae0007300808d639f01818514d"><td class="memItemLeft" align="right" valign="top"><a id="ac04996ae0007300808d639f01818514d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#ac04996ae0007300808d639f01818514d">AddLibsInclude</a> (bool pixiRenderers, bool websocketDebuggerClient, gd::String gdevelopLogoStyle, std::vector&lt; gd::String &gt; &amp;includesFiles)</td></tr>
+<tr class="memdesc:ac04996ae0007300808d639f01818514d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add libraries files from Pixi.js to the list of includes. <br /></td></tr>
+<tr class="separator:ac04996ae0007300808d639f01818514d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c3e532316e5b6166c125b3f4a106ba"><td class="memItemLeft" align="right" valign="top"><a id="ab9c3e532316e5b6166c125b3f4a106ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#ab9c3e532316e5b6166c125b3f4a106ba">RemoveIncludes</a> (bool pixiRenderers, std::vector&lt; gd::String &gt; &amp;includesFiles)</td></tr>
+<tr class="memdesc:ab9c3e532316e5b6166c125b3f4a106ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove include files that are Pixi renderers. <br /></td></tr>
+<tr class="separator:ab9c3e532316e5b6166c125b3f4a106ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7bf354abd3e2548eed82ddfd59f40a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a4b7bf354abd3e2548eed82ddfd59f40a">ExportIncludesAndLibs</a> (const std::vector&lt; gd::String &gt; &amp;includesFiles, gd::String exportDir, bool exportSourceMaps)</td></tr>
 <tr class="memdesc:a4b7bf354abd3e2548eed82ddfd59f40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all the specified files to the export directory. Relative files are copied from "&lt;GDJS root&gt;/Runtime" directory.  <a href="#a4b7bf354abd3e2548eed82ddfd59f40a">More...</a><br /></td></tr>
 <tr class="separator:a4b7bf354abd3e2548eed82ddfd59f40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,10 +123,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a613a2fab5082da8d9b5c3480ba5ee4f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a613a2fab5082da8d9b5c3480ba5ee4f0">ExportCordovaFiles</a> (const gd::Project &amp;project, gd::String exportDir, std::set&lt; gd::String &gt; usedExtensions)</td></tr>
 <tr class="memdesc:a613a2fab5082da8d9b5c3480ba5ee4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the Cordova configuration file and save it to the export directory.  <a href="#a613a2fab5082da8d9b5c3480ba5ee4f0">More...</a><br /></td></tr>
 <tr class="separator:a613a2fab5082da8d9b5c3480ba5ee4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7a4641119e88d44be148e69c549ee8b"><td class="memItemLeft" align="right" valign="top"><a id="ae7a4641119e88d44be148e69c549ee8b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#ae7a4641119e88d44be148e69c549ee8b">ExportCocos2dFiles</a> (const gd::Project &amp;project, gd::String exportDir, bool debugMode, const std::vector&lt; gd::String &gt; &amp;includesFiles)</td></tr>
-<tr class="memdesc:ae7a4641119e88d44be148e69c549ee8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the base Cocos2d files. <br /></td></tr>
-<tr class="separator:ae7a4641119e88d44be148e69c549ee8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc57c71aceb933586692c57fec1d4af9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#afc57c71aceb933586692c57fec1d4af9">ExportElectronFiles</a> (const gd::Project &amp;project, gd::String exportDir, std::set&lt; gd::String &gt; usedExtensions)</td></tr>
 <tr class="memdesc:afc57c71aceb933586692c57fec1d4af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the Electron files for packaging and save it to the export directory.  <a href="#afc57c71aceb933586692c57fec1d4af9">More...</a><br /></td></tr>
 <tr class="separator:afc57c71aceb933586692c57fec1d4af9"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['exportcocos2dfiles',['ExportCocos2dFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#ae7a4641119e88d44be148e69c549ee8b',1,'gdjs::ExporterHelper']]],
   ['exportcordovafiles',['ExportCordovaFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a613a2fab5082da8d9b5c3480ba5ee4f0',1,'gdjs::ExporterHelper']]],
   ['exporteffectincludes',['ExportEffectIncludes',['../d0/d75/classgdjs_1_1_exporter_helper.html#a246aa66b740e5daaa640e5c07ab86cd2',1,'gdjs::ExporterHelper']]],
   ['exportelectronfiles',['ExportElectronFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#afc57c71aceb933586692c57fec1d4af9',1,'gdjs::ExporterHelper']]],
@@ -13,6 +12,5 @@ var searchData=
   ['exportprojectdata',['ExportProjectData',['../d0/d75/classgdjs_1_1_exporter_helper.html#aecc3874fc14a7a8feb3a1afba7285177',1,'gdjs::ExporterHelper']]],
   ['exportprojectforpixipreview',['ExportProjectForPixiPreview',['../dc/dda/classgdjs_1_1_exporter.html#ae6c8aea4046fd6fae37a4e163cd2b968',1,'gdjs::Exporter::ExportProjectForPixiPreview()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#a26a7da4237f55e55b078bdd585a39c4a',1,'gdjs::ExporterHelper::ExportProjectForPixiPreview()']]],
   ['exportresources',['ExportResources',['../d0/d75/classgdjs_1_1_exporter_helper.html#a82bff829110d0bad0d7d5c6ff6d6c89d',1,'gdjs::ExporterHelper']]],
-  ['exportwholecocos2dproject',['ExportWholeCocos2dProject',['../dc/dda/classgdjs_1_1_exporter.html#ad3ae6cff62f793e877337fd20f447f57',1,'gdjs::Exporter']]],
   ['exportwholepixiproject',['ExportWholePixiProject',['../dc/dda/classgdjs_1_1_exporter.html#a3923a6194065b0ccb1988309544c439d',1,'gdjs::Exporter']]]
 ];
