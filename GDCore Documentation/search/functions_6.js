@@ -311,6 +311,7 @@ var searchData=
   ['getparseerror',['GetParseError',['../class_generic_document.html#a9400a5bd3169cc6ed545e681ccc06070',1,'GenericDocument']]],
   ['getparseerror_5fen',['GetParseError_En',['../group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s.html#ga755b523205f46c980c80d12e230a3abd',1,'en.h']]],
   ['getparseerrorcode',['GetParseErrorCode',['../class_generic_reader.html#a937bf90919f50e1c370b312cee5833e8',1,'GenericReader']]],
+  ['getpixelsrounding',['GetPixelsRounding',['../classgd_1_1_project.html#a390fe479a1a89ef3d39431f35392431f',1,'gd::Project']]],
   ['getplainstring',['GetPlainString',['../classgd_1_1_expression.html#a44f942a05e94761dad3c862a3a429d7d',1,'gd::Expression']]],
   ['getplatform',['GetPlatform',['../classgd_1_1_events_code_generator.html#a197b56ff95006108a60d7eef413b53bd',1,'gd::EventsCodeGenerator::GetPlatform()'],['../classgd_1_1_platform_manager.html#a3d1be03bdd9e56dd51f56bb4af8ef670',1,'gd::PlatformManager::GetPlatform()']]],
   ['getplatformspecificassets',['GetPlatformSpecificAssets',['../classgd_1_1_project.html#a545b02e3964c632ae68fc3a52ac8cd32',1,'gd::Project::GetPlatformSpecificAssets()'],['../classgd_1_1_project.html#a8e188a5b8ee37aa665c8fa0d3c432278',1,'gd::Project::GetPlatformSpecificAssets() const']]],

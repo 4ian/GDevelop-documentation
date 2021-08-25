@@ -211,6 +211,10 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 <tr class="separator:a6f4943223c562f6897722102b7ac95ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab960553137b1ed176e190d34c8f18951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab960553137b1ed176e190d34c8f18951">SetScaleMode</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;scaleMode_)</td></tr>
 <tr class="separator:ab960553137b1ed176e190d34c8f18951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390fe479a1a89ef3d39431f35392431f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a390fe479a1a89ef3d39431f35392431f">GetPixelsRounding</a> () const</td></tr>
+<tr class="separator:a390fe479a1a89ef3d39431f35392431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49ccebb66100af5686351239100a16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ab49ccebb66100af5686351239100a16a">SetPixelsRounding</a> (bool enable)</td></tr>
+<tr class="separator:ab49ccebb66100af5686351239100a16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae394a0bd5c5eedb5a687930f0b8cd4ea"><td class="memItemLeft" align="right" valign="top"><a id="ae394a0bd5c5eedb5a687930f0b8cd4ea"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ae394a0bd5c5eedb5a687930f0b8cd4ea">GetUseDeprecatedZeroAsDefaultZOrder</a> () const</td></tr>
 <tr class="memdesc:ae394a0bd5c5eedb5a687930f0b8cd4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the project should set 0 as Z-order for objects created from events (which is deprecated) - instead of the highest Z order that was found on each layer when the scene started. <br /></td></tr>
@@ -1140,6 +1144,32 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
+<a id="a390fe479a1a89ef3d39431f35392431f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390fe479a1a89ef3d39431f35392431f">&#9670;&nbsp;</a></span>GetPixelsRounding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Project::GetPixelsRounding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return true if pixels rounding option is enabled. </p>
+
+</div>
+</div>
 <a id="ade0fb6095b292434c40dc645a234c563"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade0fb6095b292434c40dc645a234c563">&#9670;&nbsp;</a></span>GetProjectFile()</h2>
 
@@ -1941,6 +1971,33 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab49ccebb66100af5686351239100a16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49ccebb66100af5686351239100a16a">&#9670;&nbsp;</a></span>SetPixelsRounding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Project::SetPixelsRounding </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set pixels rounding option to true or false. </p>
 
 </div>
 </div>

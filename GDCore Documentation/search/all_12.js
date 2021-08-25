@@ -127,6 +127,7 @@ var searchData=
   ['setparametermetadata',['SetParameterMetadata',['../structgd_1_1_expression_completion_description.html#a469bb54f45b0712ef5b3b5b7a88240d0',1,'gd::ExpressionCompletionDescription']]],
   ['setparameters',['SetParameters',['../classgd_1_1_instruction.html#a431948aca4e115cbb7151a92c644eadd',1,'gd::Instruction']]],
   ['setparameterscount',['SetParametersCount',['../classgd_1_1_instruction.html#a398691cdb6394402b5448c1fcd64ecac',1,'gd::Instruction']]],
+  ['setpixelsrounding',['SetPixelsRounding',['../classgd_1_1_project.html#ab49ccebb66100af5686351239100a16a',1,'gd::Project']]],
   ['setpreloadasmusic',['SetPreloadAsMusic',['../classgd_1_1_audio_resource.html#a452ba313b9e912b79598a097578ebd15',1,'gd::AudioResource']]],
   ['setpreloadassound',['SetPreloadAsSound',['../classgd_1_1_audio_resource.html#a9dec87a48af750ee6677519ba42baf22',1,'gd::AudioResource']]],
   ['setpreprocessing',['SetPreprocessing',['../classgd_1_1_event_metadata.html#a97833b0bc30ce98f163841231eef96cd',1,'gd::EventMetadata']]],
