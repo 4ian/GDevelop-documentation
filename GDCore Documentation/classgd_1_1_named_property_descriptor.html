@@ -96,8 +96,6 @@ virtual <a class="el" href="classgd_1_1_named_property_descriptor.html">NamedPro
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_named_property_descriptor.html#ac03da8dd5a2f458ecdcfa4f2e1787b1c">GetName</a> () const</td></tr>
 <tr class="memdesc:ac03da8dd5a2f458ecdcfa4f2e1787b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the property. <br /></td></tr>
 <tr class="separator:ac03da8dd5a2f458ecdcfa4f2e1787b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf08b7a181d0e7d9d9972d2ca797e7a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6">ToPropertyDescriptor</a> ()</td></tr>
-<tr class="separator:aaf08b7a181d0e7d9d9972d2ca797e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Serialization</div></td></tr>
 <tr class="memitem:a50b70cdd33165dff9696ebcf070c358f"><td class="memItemLeft" align="right" valign="top"><a id="a50b70cdd33165dff9696ebcf070c358f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_named_property_descriptor.html#a50b70cdd33165dff9696ebcf070c358f">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const</td></tr>
@@ -142,6 +140,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_property_descriptor.html#af16191823cb83cbf04ea36af2a12c301">SetDescription</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> description_)</td></tr>
 <tr class="memdesc:af16191823cb83cbf04ea36af2a12c301 inherit pub_methods_classgd_1_1_property_descriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the description displayed to the user, if any. <br /></td></tr>
 <tr class="separator:af16191823cb83cbf04ea36af2a12c301 inherit pub_methods_classgd_1_1_property_descriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b51e0e9cd3ef27f19d17016b203f1bd inherit pub_methods_classgd_1_1_property_descriptor"><td class="memItemLeft" align="right" valign="top"><a id="a2b51e0e9cd3ef27f19d17016b203f1bd"></a>
+<a class="el" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_property_descriptor.html#a2b51e0e9cd3ef27f19d17016b203f1bd">SetExtraInfo</a> (const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;info)</td></tr>
+<tr class="memdesc:a2b51e0e9cd3ef27f19d17016b203f1bd inherit pub_methods_classgd_1_1_property_descriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set and replace the additional information for the property. <br /></td></tr>
+<tr class="separator:a2b51e0e9cd3ef27f19d17016b203f1bd inherit pub_methods_classgd_1_1_property_descriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae79e9401050b521b1ae19ca1d656d44a inherit pub_methods_classgd_1_1_property_descriptor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_property_descriptor.html#ae79e9401050b521b1ae19ca1d656d44a">AddExtraInfo</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;info)</td></tr>
 <tr class="memdesc:ae79e9401050b521b1ae19ca1d656d44a inherit pub_methods_classgd_1_1_property_descriptor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an information about the property.  <a href="classgd_1_1_property_descriptor.html#ae79e9401050b521b1ae19ca1d656d44a">More...</a><br /></td></tr>
 <tr class="separator:ae79e9401050b521b1ae19ca1d656d44a inherit pub_methods_classgd_1_1_property_descriptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,32 +201,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Change the name of the property. </p>
 <dl class="section note"><dt>Note</dt><dd>If the property is used in a list/vector, it's better to use any rename method provided by it (as it can ensure uniqueness). </dd></dl>
-
-</div>
-</div>
-<a id="aaf08b7a181d0e7d9d9972d2ca797e7a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf08b7a181d0e7d9d9972d2ca797e7a6">&#9670;&nbsp;</a></span>ToPropertyDescriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_property_descriptor.html">PropertyDescriptor</a> gd::NamedPropertyDescriptor::ToPropertyDescriptor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return a <a class="el" href="classgd_1_1_property_descriptor.html" title="Used to describe a property shown in a property grid. ">PropertyDescriptor</a> from this <a class="el" href="classgd_1_1_named_property_descriptor.html" title="Used to describe a property shown in a property grid. ">NamedPropertyDescriptor</a>, slicing the name. </p>
 
 </div>
 </div>

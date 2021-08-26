@@ -14,7 +14,6 @@ var searchData=
   ['tokenhelper',['TokenHelper',['../structinternal_1_1_token_helper.html',1,'internal']]],
   ['tokenhelper_3c_20stack_2c_20char_20_3e',['TokenHelper&lt; Stack, char &gt;',['../structinternal_1_1_token_helper_3_01_stack_00_01char_01_4.html',1,'internal']]],
   ['tolocale',['ToLocale',['../classgd_1_1_string.html#a38361bb24ca3cd24c1f44241f8801999',1,'gd::String']]],
-  ['topropertydescriptor',['ToPropertyDescriptor',['../classgd_1_1_named_property_descriptor.html#aaf08b7a181d0e7d9d9972d2ca797e7a6',1,'gd::NamedPropertyDescriptor']]],
   ['tosfstring',['ToSfString',['../classgd_1_1_string.html#a58198639e70fe187c5925abf837a5e55',1,'gd::String']]],
   ['totaltimeduringlastsession',['totalTimeDuringLastSession',['../classgd_1_1_base_event.html#af7f2d47a1625c73343eb549394b6d6fe',1,'gd::BaseEvent']]],
   ['toutf32',['ToUTF32',['../classgd_1_1_string.html#a410d7030da3bdd6061b0acd064d9d1a4',1,'gd::String']]],
