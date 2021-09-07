@@ -9,6 +9,7 @@ var searchData=
   ['loadextension',['LoadExtension',['../classgd_1_1_extensions_loader.html#a5dc2ba982ab40cafd6424e7b24253a24',1,'gd::ExtensionsLoader']]],
   ['loadplatforminmanager',['LoadPlatformInManager',['../classgd_1_1_platform_loader.html#a5bd2f74ec611b53756bf84317f50eef7',1,'gd::PlatformLoader']]],
   ['logerror',['LogError',['../namespacegd.html#af32aa15ad59e5811f7f4ec71e4f3af47',1,'gd']]],
+  ['logfatalerror',['LogFatalError',['../namespacegd.html#ad84c27c57f43f450e22fc6f7467aa4ab',1,'gd']]],
   ['logmessage',['LogMessage',['../namespacegd.html#a52cbc4206d85629cb194df25b5304ed7',1,'gd']]],
   ['logstatus',['LogStatus',['../namespacegd.html#ada4fc5c1dcc0dc2f27d7f33fbc767033',1,'gd']]],
   ['logwarning',['LogWarning',['../namespacegd.html#a73c8d31b71086a051978c6e953211c96',1,'gd']]],

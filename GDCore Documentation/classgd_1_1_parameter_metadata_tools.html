@@ -80,6 +80,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParametersToOb
 <tr class="separator:a7049c8f3b7f385a8d4f70341c4864c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e1615eeef4a620fcdfc72eb1febbf0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata_tools.html#a35e1615eeef4a620fcdfc72eb1febbf0">IterateOverParameters</a> (const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;parametersMetadata, std::function&lt; void(const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;parameterMetadata, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterValue, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;lastObjectName)&gt; fn)</td></tr>
 <tr class="separator:a35e1615eeef4a620fcdfc72eb1febbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930bcf9cd9a6debfea5f4260840e6efd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata_tools.html#a930bcf9cd9a6debfea5f4260840e6efd">IterateOverParametersWithIndex</a> (const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;parameters, const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;parametersMetadata, std::function&lt; void(const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;parameterMetadata, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterValue, size_t parameterIndex, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;lastObjectName)&gt; fn)</td></tr>
+<tr class="separator:a930bcf9cd9a6debfea5f4260840e6efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1e15c03ee05dbae8b01ee3f1ae5063"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata_tools.html#a1a1e15c03ee05dbae8b01ee3f1ae5063">GetObjectParameterIndexFor</a> (const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;parametersMetadata, size_t parameterIndex)</td></tr>
 <tr class="separator:a1a1e15c03ee05dbae8b01ee3f1ae5063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -146,6 +148,49 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParametersToOb
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::function&lt; void(const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;parameterMetadata, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterValue, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;lastObjectName)&gt;&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Iterate over a list of parameters and their values. Callback function is called with the parameter metadata, its value and if applicable the name of the object it's linked to. </p>
+
+</div>
+</div>
+<a id="a930bcf9cd9a6debfea5f4260840e6efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930bcf9cd9a6debfea5f4260840e6efd">&#9670;&nbsp;</a></span>IterateOverParametersWithIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::ParameterMetadataTools::IterateOverParametersWithIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classgd_1_1_expression.html">gd::Expression</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parametersMetadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &amp;parameterMetadata, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterValue, size_t parameterIndex, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;lastObjectName)&gt;&#160;</td>
           <td class="paramname"><em>fn</em>&#160;</td>
         </tr>
         <tr>

@@ -117,8 +117,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a115028bcc01f8045ea0a2e66c5a41b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#ae567a74cf8e5d02e105f5267a93f0ea8">GenerateEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
 <tr class="separator:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3b48045127d8cb34008719f6d85370"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a1f3b48045127d8cb34008719f6d85370">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
-<tr class="separator:a1f3b48045127d8cb34008719f6d85370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a3be06b50064b2fdc41a5ecb790ab8861">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
+<tr class="separator:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -190,8 +190,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 <div class="textblock"><p>The class being responsible for generating JavaScript code from events. </p>
 <p>See also gd::EventsCodeGenerator. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1f3b48045127d8cb34008719f6d85370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3b48045127d8cb34008719f6d85370">&#9670;&nbsp;</a></span>GenerateBehaviorEventsFunctionCode()</h2>
+<a id="a3be06b50064b2fdc41a5ecb790ab8861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be06b50064b2fdc41a5ecb790ab8861">&#9670;&nbsp;</a></span>GenerateBehaviorEventsFunctionCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,6 +204,12 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
           <td>(</td>
           <td class="paramtype">gd::Project &amp;&#160;</td>
           <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::EventsBasedBehavior &amp;&#160;</td>
+          <td class="paramname"><em>eventsBasedBehavior</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

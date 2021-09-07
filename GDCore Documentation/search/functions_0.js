@@ -4,6 +4,7 @@ var searchData=
   ['addallmissing',['AddAllMissing',['../classgd_1_1_project_resources_adder.html#a571a9da83739594f21dec87f78e9ff3f',1,'gd::ProjectResourcesAdder']]],
   ['addanimation',['AddAnimation',['../classgd_1_1_sprite_object.html#a69b8768b8e895149067a3826ca9d3489',1,'gd::SpriteObject']]],
   ['addbehavior',['AddBehavior',['../classgd_1_1_platform_extension.html#af76a4042da652cedaedd28c04b9aad74',1,'gd::PlatformExtension::AddBehavior()'],['../classgd_1_1_object.html#aa8fe174c2cdc4907a3caeb83d01590b5',1,'gd::Object::AddBehavior()']]],
+  ['addbehaviorandrequiredbehaviors',['AddBehaviorAndRequiredBehaviors',['../classgd_1_1_whole_project_refactorer.html#a6d02111216107c18174b81382017c376',1,'gd::WholeProjectRefactorer']]],
   ['addcamera',['AddCamera',['../classgd_1_1_layer.html#ac96f4d6125081267e3a5f3ac27ce600a',1,'gd::Layer']]],
   ['addchild',['AddChild',['../classgd_1_1_serializer_element.html#aa84d3665a3cd084f2d405ddfe3eb6813',1,'gd::SerializerElement']]],
   ['addcodeonlyparameter',['AddCodeOnlyParameter',['../classgd_1_1_expression_metadata.html#a4369c553a32f875343d8b011eff92337',1,'gd::ExpressionMetadata::AddCodeOnlyParameter()'],['../classgd_1_1_instruction_metadata.html#a0df4dc5ba4fb371609fe46d92c2f3c43',1,'gd::InstructionMetadata::AddCodeOnlyParameter()'],['../classgd_1_1_multiple_instruction_metadata.html#adbe3d78153aef15e15fef09812cc021d',1,'gd::MultipleInstructionMetadata::AddCodeOnlyParameter()']]],
