@@ -85,6 +85,7 @@ var searchData=
   ['getallplatforms',['GetAllPlatforms',['../classgd_1_1_platform_manager.html#aed5c446e6db22d3fa8115a164b23b63c',1,'gd::PlatformManager']]],
   ['getallproperties',['GetAllProperties',['../classgd_1_1_platform_extension.html#aa17c0fd0ba2c1d246a9339b88a266b7d',1,'gd::PlatformExtension']]],
   ['getallresourcenames',['GetAllResourceNames',['../classgd_1_1_resources_manager.html#aa3c98bddad1ca85e4338a468fbb59912',1,'gd::ResourcesManager::GetAllResourceNames()'],['../classgd_1_1_resource_folder.html#a66323f4d754f727138695ae08f4d55e8',1,'gd::ResourceFolder::GetAllResourceNames()']]],
+  ['getallresources',['GetAllResources',['../classgd_1_1_resources_manager.html#add3a4ab78db3f4ceef735e5df4333915',1,'gd::ResourcesManager']]],
   ['getallresourcesoldandnewfilename',['GetAllResourcesOldAndNewFilename',['../classgd_1_1_resources_merging_helper.html#a841b8b414d0706c5e6107f47e7604323',1,'gd::ResourcesMergingHelper']]],
   ['getallsearchablestrings',['GetAllSearchableStrings',['../classgd_1_1_comment_event.html#ac6d69cd21fbba606d2e70384b51c22f7',1,'gd::CommentEvent::GetAllSearchableStrings()'],['../classgd_1_1_group_event.html#aa60375f07367019e9e6ad73696815816',1,'gd::GroupEvent::GetAllSearchableStrings()'],['../classgd_1_1_base_event.html#a9f7679bb5bb3089411bc8ec81764c51e',1,'gd::BaseEvent::GetAllSearchableStrings()']]],
   ['getallsourcefiles',['GetAllSourceFiles',['../classgd_1_1_project.html#a09a337ac8a24021a00051322683c1879',1,'gd::Project']]],
