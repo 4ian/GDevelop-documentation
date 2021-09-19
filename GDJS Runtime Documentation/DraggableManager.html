@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      Extensions/BitmapText/bitmaptextruntimeobject-pixi-renderer.ts - Documentation
+      DraggableManager - Documentation
   </title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
@@ -81,193 +79,336 @@
   <div id="main">
     
       <h1 class="page-title">
-        Extensions/BitmapText/bitmaptextruntimeobject-pixi-renderer.ts
+        DraggableManager
       </h1>
     
 
     
-      
 
 <section>
+  <header>
+    
+      <h2>
+        
+        DraggableManager
+        
+      </h2>
+
+      
+        <div class="class-description">
+          <p>Handle the dragging</p>
+        </div>
+      
+    
+  </header>
+
   <article>
-    <pre class="prettyprint source linenums"><code>namespace gdjs {
-  import PIXI = GlobalPIXIModule.PIXI;
+    <div class="container-overview">
+      
+        
 
-  /**
-   * The PIXI.js renderer for the Bitmap Text runtime object.
-   */
-  export class BitmapTextRuntimeObjectPixiRenderer {
-    _object: gdjs.BitmapTextRuntimeObject;
-    _pixiObject: PIXI.BitmapText;
 
-    /**
-     * @param runtimeObject The object to render
-     * @param runtimeScene The gdjs.RuntimeScene in which the object is
-     */
-    constructor(
-      runtimeObject: gdjs.BitmapTextRuntimeObject,
-      runtimeScene: gdjs.RuntimeScene
-    ) {
-      this._object = runtimeObject;
+  
+    <h2>Constructor</h2>
+  
 
-      // Obtain the bitmap font to use in the object.
-      const bitmapFont = runtimeScene
-        .getGame()
-        .getBitmapFontManager()
-        .obtainBitmapFont(
-          runtimeObject._bitmapFontResourceName,
-          runtimeObject._textureAtlasResourceName
-        );
-      this._pixiObject = new PIXI.BitmapText(runtimeObject._text, {
-        fontName: bitmapFont.font,
-        fontSize: bitmapFont.size,
-      });
+  <span class='name-container'>
+    <a class="link-icon" href="#DraggableManager">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="DraggableManager">
+      <span class="type-signature"></span>new DraggableManager<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
 
-      // Set the object on the scene
-      runtimeScene
-        .getLayer('')
-        .getRenderer()
-        .addRendererObject(this._pixiObject, runtimeObject.getZOrder());
+  
 
-      // Set the anchor in the center, so that the object rotates around
-      // its center.
-      // @ts-ignore
-      this._pixiObject.anchor.x = 0.5;
-      // @ts-ignore
-      this._pixiObject.anchor.y = 0.5;
 
-      this.updateAlignment();
-      this.updateTextContent();
-      this.updateAngle();
-      this.updateOpacity();
-      this.updateScale();
-      this.updateWrappingWidth();
-      this.updateTint();
-    }
 
-    getRendererObject() {
-      return this._pixiObject;
-    }
 
-    onDestroy() {
-      // Mark the font from the object as not used anymore.
-      this._object._runtimeScene
-        .getGame()
-        .getBitmapFontManager()
-        .releaseBitmapFont(this._pixiObject.fontName);
 
-      this._pixiObject.destroy();
-    }
 
-    getFontSize() {
-      return this._pixiObject.fontSize;
-    }
 
-    updateFont(): void {
-      // Get the new bitmap font to use
-      const bitmapFont = this._object._runtimeScene
-        .getGame()
-        .getBitmapFontManager()
-        .obtainBitmapFont(
-          this._object._bitmapFontResourceName,
-          this._object._textureAtlasResourceName
-        );
 
-      // Mark the old font as not used anymore
-      this._object._runtimeScene
-        .getGame()
-        .getBitmapFontManager()
-        .releaseBitmapFont(this._pixiObject.fontName);
 
-      // Update the font used by the object:
-      this._pixiObject.fontName = bitmapFont.font;
-      this._pixiObject.fontSize = bitmapFont.size;
-      this.updatePosition();
-    }
 
-    updateTint(): void {
-      this._pixiObject.tint = gdjs.rgbToHexNumber(
-        this._object._tint[0],
-        this._object._tint[1],
-        this._object._tint[2]
-      );
-      this._pixiObject.dirty = true;
-    }
 
-    /**
-     * Get the tint of the bitmap object as a "R;G;B" string.
-     * @returns the tint of bitmap object in "R;G;B" format.
-     */
-    getTint(): string {
-      return (
-        this._object._tint[0] +
-        ';' +
-        this._object._tint[1] +
-        ';' +
-        this._object._tint[2]
-      );
-    }
 
-    updateScale(): void {
-      this._pixiObject.scale.set(Math.max(this._object._scale, 0));
-      this.updatePosition();
-    }
 
-    getScale() {
-      return Math.max(this._pixiObject.scale.x, this._pixiObject.scale.y);
-    }
 
-    updateWrappingWidth(): void {
-      if (this._object._wordWrap) {
-        this._pixiObject.maxWidth =
-          this._object._wrappingWidth / this._object._scale;
-        this._pixiObject.dirty = true;
-      } else {
-        this._pixiObject.maxWidth = 0;
-        this._pixiObject.dirty = true;
-      }
-      this.updatePosition();
-    }
+<dl class="details">
 
-    updateTextContent(): void {
-      this._pixiObject.text = this._object._text;
-      this.updatePosition();
-    }
+  
 
-    updateAlignment(): void {
-      // @ts-ignore - assume align is always a valid value.
-      this._pixiObject.align = this._object._align;
-      this.updatePosition();
-    }
+  
 
-    updatePosition(): void {
-      this._pixiObject.position.x = this._object.x + this.getWidth() / 2;
-      this._pixiObject.position.y = this._object.y + this.getHeight() / 2;
-    }
+  
 
-    updateAngle(): void {
-      this._pixiObject.rotation = gdjs.toRad(this._object.angle);
-    }
+  
 
-    updateOpacity(): void {
-      this._pixiObject.alpha = this._object._opacity / 255;
-    }
+  
 
-    getWidth(): float {
-      return this._pixiObject.textWidth * this.getScale();
-    }
+  
 
-    getHeight(): float {
-      return this._pixiObject.textHeight * this.getScale();
-    }
-  }
-  export const BitmapTextRuntimeObjectRenderer = BitmapTextRuntimeObjectPixiRenderer;
-}
-</code></pre>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Extensions_DraggableBehavior_draggableruntimebehavior.ts.html">Extensions/DraggableBehavior/draggableruntimebehavior.ts</a>, <a href="Extensions_DraggableBehavior_draggableruntimebehavior.ts.html#line102">line 102</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.getMouseManager">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".getMouseManager">
+      <span class="type-signature">(static) </span>getMouseManager<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the platforms manager of a scene.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Extensions_DraggableBehavior_draggableruntimebehavior.ts.html">Extensions/DraggableBehavior/draggableruntimebehavior.ts</a>, <a href="Extensions_DraggableBehavior_draggableruntimebehavior.ts.html#line111">line 111</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.getTouchManager">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".getTouchManager">
+      <span class="type-signature">(static) </span>getTouchManager<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the platforms manager of a scene.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Extensions_DraggableBehavior_draggableruntimebehavior.ts.html">Extensions/DraggableBehavior/draggableruntimebehavior.ts</a>, <a href="Extensions_DraggableBehavior_draggableruntimebehavior.ts.html#line124">line 124</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+
+    
+
+    
   </article>
 </section>
 
-    
+
 
 
   </div>
