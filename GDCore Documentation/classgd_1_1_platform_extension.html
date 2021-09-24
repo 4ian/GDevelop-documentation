@@ -279,10 +279,6 @@ std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a cla
 <tr class="separator:a4f0138efcddad25a89611c0544aec7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35f996b50f883e1c145e3104042f9b9"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#ab35f996b50f883e1c145e3104042f9b9">GetAllStrExpressionsForBehavior</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> autoType)</td></tr>
 <tr class="separator:ab35f996b50f883e1c145e3104042f9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee91447449f4f4ce45885dd2153a815"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a9ee91447449f4f4ce45885dd2153a815">ExposeConditionsResources</a> (<a class="el" href="classgd_1_1_instruction.html">Instruction</a> &amp;condition, <a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;worker)</td></tr>
-<tr class="separator:a9ee91447449f4f4ce45885dd2153a815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e46e6878e76ae6fa968f5a22137e820"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">ExposeActionsResources</a> (<a class="el" href="classgd_1_1_instruction.html">Instruction</a> &amp;action, <a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;worker)</td></tr>
-<tr class="separator:a8e46e6878e76ae6fa968f5a22137e820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17c0fd0ba2c1d246a9339b88a266b7d"><td class="memItemLeft" align="right" valign="top"><a id="aa17c0fd0ba2c1d246a9339b88a266b7d"></a>
 std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#aa17c0fd0ba2c1d246a9339b88a266b7d">GetAllProperties</a> ()</td></tr>
 <tr class="memdesc:aa17c0fd0ba2c1d246a9339b88a266b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the properties of the extension. Properties are shown in the game properties in the editor, and are exported in the project data. <br /></td></tr>
@@ -800,82 +796,6 @@ template&lt;class T &gt; </div>
 
 <p>Create a custom event. </p>
 <p>Return an empty pointer if <em>eventType</em> is not provided by the extension. </p>
-
-</div>
-</div>
-<a id="a8e46e6878e76ae6fa968f5a22137e820"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e46e6878e76ae6fa968f5a22137e820">&#9670;&nbsp;</a></span>ExposeActionsResources()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void gd::PlatformExtension::ExposeActionsResources </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_instruction.html">Instruction</a> &amp;&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;&#160;</td>
-          <td class="paramname"><em>worker</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Called to inventory resources used by actions (and possibly do work on them, like renaming, etc...)</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_arbitrary_resource_worker.html" title="ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...">ArbitraryResourceWorker</a> </dd></dl>
-
-</div>
-</div>
-<a id="a9ee91447449f4f4ce45885dd2153a815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ee91447449f4f4ce45885dd2153a815">&#9670;&nbsp;</a></span>ExposeConditionsResources()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void gd::PlatformExtension::ExposeConditionsResources </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_instruction.html">Instruction</a> &amp;&#160;</td>
-          <td class="paramname"><em>condition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;&#160;</td>
-          <td class="paramname"><em>worker</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Called to inventory resources used by conditions (and possibly do work on them, like renaming, etc...)</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a8e46e6878e76ae6fa968f5a22137e820">gd::PlatformExtension::ExposeActionsResources</a> </dd></dl>
 
 </div>
 </div>

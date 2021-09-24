@@ -116,6 +116,7 @@ var searchData=
   ['getassociatedlayout',['GetAssociatedLayout',['../classgd_1_1_external_events.html#a89e092f7b9be4ede827aa2eb25c55743',1,'gd::ExternalEvents::GetAssociatedLayout()'],['../classgd_1_1_external_layout.html#a73bd8a948deb7a6e04586cc8f56a082b',1,'gd::ExternalLayout::GetAssociatedLayout()']]],
   ['getatindex',['GetAtIndex',['../classgd_1_1_variable.html#aed487fad1b85fd1c8486a43ac30d467d',1,'gd::Variable::GetAtIndex(const size_t index)'],['../classgd_1_1_variable.html#a4de256fb94e1ee1e25ef24ebec8a3c60',1,'gd::Variable::GetAtIndex(const size_t index) const']]],
   ['getauthor',['GetAuthor',['../classgd_1_1_platform_extension.html#a907027b788af9db323948265b7dcb9ba',1,'gd::PlatformExtension::GetAuthor()'],['../classgd_1_1_project.html#aa69e97d2b806904495cca5bf2be5e965',1,'gd::Project::GetAuthor()']]],
+  ['getauthorids',['GetAuthorIds',['../classgd_1_1_project.html#a4fa34f9c7cae7471e7cffb7543aec500',1,'gd::Project::GetAuthorIds() const'],['../classgd_1_1_project.html#ac1303731a766b205438506d1960e22ab',1,'gd::Project::GetAuthorIds()']]],
   ['getbackgroundcolorb',['GetBackgroundColorB',['../classgd_1_1_group_event.html#a7d0e62fb42fd1a9c31015ddeb5d0ba8f',1,'gd::GroupEvent']]],
   ['getbackgroundcolorblue',['GetBackgroundColorBlue',['../classgd_1_1_layout.html#aab8563003f9024107b923c4b8b2541e4',1,'gd::Layout']]],
   ['getbackgroundcolorg',['GetBackgroundColorG',['../classgd_1_1_group_event.html#a6a67c9dfcd134b6b0d68bbe332d91140',1,'gd::GroupEvent']]],

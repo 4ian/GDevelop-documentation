@@ -7,5 +7,6 @@ var searchData=
   ['resourcesinusehelper',['ResourcesInUseHelper',['../classgd_1_1_resources_in_use_helper.html',1,'gd']]],
   ['resourcesmanager',['ResourcesManager',['../classgd_1_1_resources_manager.html',1,'gd']]],
   ['resourcesmerginghelper',['ResourcesMergingHelper',['../classgd_1_1_resources_merging_helper.html',1,'gd']]],
-  ['resourcesrenamer',['ResourcesRenamer',['../classgd_1_1_resources_renamer.html',1,'gd']]]
+  ['resourcesrenamer',['ResourcesRenamer',['../classgd_1_1_resources_renamer.html',1,'gd']]],
+  ['resourceworkerineventsworker',['ResourceWorkerInEventsWorker',['../classgd_1_1_resource_worker_in_events_worker.html',1,'gd']]]
 ];

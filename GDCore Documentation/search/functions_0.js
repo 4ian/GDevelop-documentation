@@ -1,7 +1,6 @@
 var searchData=
 [
   ['addaction',['AddAction',['../classgd_1_1_behavior_metadata.html#a043c9ce3d4e057e8af275f3b474115e8',1,'gd::BehaviorMetadata::AddAction()'],['../classgd_1_1_object_metadata.html#a6d954dc68c00c3ceeace6de4bfefbe5e',1,'gd::ObjectMetadata::AddAction()'],['../classgd_1_1_platform_extension.html#a34e95be54f2dfa80b804e8e4830e7d9c',1,'gd::PlatformExtension::AddAction()']]],
-  ['addallmissing',['AddAllMissing',['../classgd_1_1_project_resources_adder.html#a571a9da83739594f21dec87f78e9ff3f',1,'gd::ProjectResourcesAdder']]],
   ['addanimation',['AddAnimation',['../classgd_1_1_sprite_object.html#a69b8768b8e895149067a3826ca9d3489',1,'gd::SpriteObject']]],
   ['addbehavior',['AddBehavior',['../classgd_1_1_platform_extension.html#af76a4042da652cedaedd28c04b9aad74',1,'gd::PlatformExtension::AddBehavior()'],['../classgd_1_1_object.html#aa8fe174c2cdc4907a3caeb83d01590b5',1,'gd::Object::AddBehavior()']]],
   ['addbehaviorandrequiredbehaviors',['AddBehaviorAndRequiredBehaviors',['../classgd_1_1_whole_project_refactorer.html#a6d02111216107c18174b81382017c376',1,'gd::WholeProjectRefactorer']]],
