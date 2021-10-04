@@ -113,6 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19c7623002763f45ece3e4ca5e4f03e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">gd::MultipleInstructionMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a19c7623002763f45ece3e4ca5e4f03e6">AddExpressionAndConditionAndAction</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;sentenceName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon)</td></tr>
 <tr class="memdesc:a19c7623002763f45ece3e4ca5e4f03e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new expression, condition and action as being part of the object.  <a href="#a19c7623002763f45ece3e4ca5e4f03e6">More...</a><br /></td></tr>
 <tr class="separator:a19c7623002763f45ece3e4ca5e4f03e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79403cf69bb600555116452e08adb5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a79403cf69bb600555116452e08adb5e8">AddDuplicatedAction</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newActionName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;copiedActionName)</td></tr>
+<tr class="memdesc:a79403cf69bb600555116452e08adb5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new action which is the duplicate of the specified one.  <a href="#a79403cf69bb600555116452e08adb5e8">More...</a><br /></td></tr>
+<tr class="separator:a79403cf69bb600555116452e08adb5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafec0ccdecbb0a22b5216b1c863822cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#aafec0ccdecbb0a22b5216b1c863822cc">AddDuplicatedCondition</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newConditionName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;copiedConditionName)</td></tr>
+<tr class="memdesc:aafec0ccdecbb0a22b5216b1c863822cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new condition which is the duplicate of the specified one.  <a href="#aafec0ccdecbb0a22b5216b1c863822cc">More...</a><br /></td></tr>
+<tr class="separator:aafec0ccdecbb0a22b5216b1c863822cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b350f972954b9161fc071eef0529ecb"><td class="memItemLeft" align="right" valign="top"><a id="a6b350f972954b9161fc071eef0529ecb"></a>
 <a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a6b350f972954b9161fc071eef0529ecb">SetFullName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_)</td></tr>
 <tr class="memdesc:a6b350f972954b9161fc071eef0529ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name shown to the user. <br /></td></tr>
@@ -300,6 +306,68 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
 
 <p>Declare a new condition as being part of the extension. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Prefer using <code>AddScopedCondition</code>, to properly namespace the condition. </dd></dl>
+
+</div>
+</div>
+<a id="a79403cf69bb600555116452e08adb5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79403cf69bb600555116452e08adb5e8">&#9670;&nbsp;</a></span>AddDuplicatedAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; gd::ObjectMetadata::AddDuplicatedAction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>newActionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>copiedActionName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new action which is the duplicate of the specified one. </p>
+<p>Useful for handling a deprecated action that is just a "copy" of the new one. </p>
+
+</div>
+</div>
+<a id="aafec0ccdecbb0a22b5216b1c863822cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafec0ccdecbb0a22b5216b1c863822cc">&#9670;&nbsp;</a></span>AddDuplicatedCondition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp; gd::ObjectMetadata::AddDuplicatedCondition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>newConditionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>copiedConditionName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new condition which is the duplicate of the specified one. </p>
+<p>Useful for handling a deprecated condition that is just a "copy" of the new one. </p>
 
 </div>
 </div>
