@@ -146,9 +146,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanHaveSubInstruction
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#ae23cdc5b20b7346f76f6b9815210be15">IsHidden</a> () const</td></tr>
 <tr class="memdesc:ae23cdc5b20b7346f76f6b9815210be15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the instruction must be hidden in the IDE. <br /></td></tr>
 <tr class="separator:ae23cdc5b20b7346f76f6b9815210be15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e2456898b4e18e9dafb6be6fc12c9eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a6e2456898b4e18e9dafb6be6fc12c9eb">AddParameter</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;label, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;optionalObjectType=&quot;&quot;, bool parameterIsOptional=false)</td></tr>
-<tr class="memdesc:a6e2456898b4e18e9dafb6be6fc12c9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a parameter to the instruction metadata.  <a href="#a6e2456898b4e18e9dafb6be6fc12c9eb">More...</a><br /></td></tr>
-<tr class="separator:a6e2456898b4e18e9dafb6be6fc12c9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ff5307fd3d3270555fdb0fb1b2ddfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a43ff5307fd3d3270555fdb0fb1b2ddfd">AddParameter</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;label, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;supplementaryInformation=&quot;&quot;, bool parameterIsOptional=false)</td></tr>
+<tr class="memdesc:a43ff5307fd3d3270555fdb0fb1b2ddfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a parameter to the instruction metadata.  <a href="#a43ff5307fd3d3270555fdb0fb1b2ddfd">More...</a><br /></td></tr>
+<tr class="separator:a43ff5307fd3d3270555fdb0fb1b2ddfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df4dc5ba4fb371609fe46d92c2f3c43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a0df4dc5ba4fb371609fe46d92c2f3c43">AddCodeOnlyParameter</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;supplementaryInformation)</td></tr>
 <tr class="memdesc:a0df4dc5ba4fb371609fe46d92c2f3c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a parameter not displayed in editor.  <a href="#a0df4dc5ba4fb371609fe46d92c2f3c43">More...</a><br /></td></tr>
 <tr class="separator:a0df4dc5ba4fb371609fe46d92c2f3c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,8 +345,8 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 
 </div>
 </div>
-<a id="a6e2456898b4e18e9dafb6be6fc12c9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e2456898b4e18e9dafb6be6fc12c9eb">&#9670;&nbsp;</a></span>AddParameter()</h2>
+<a id="a43ff5307fd3d3270555fdb0fb1b2ddfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ff5307fd3d3270555fdb0fb1b2ddfd">&#9670;&nbsp;</a></span>AddParameter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,7 +367,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>optionalObjectType</em> = <code>&quot;&quot;</code>, </td>
+          <td class="paramname"><em>supplementaryInformation</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -388,7 +388,11 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
   <table class="params">
     <tr><td class="paramname">type</td><td>One of the type handled by GDevelop. This will also determine the type of the argument used when calling the function in the generated code. </td></tr>
     <tr><td class="paramname">description</td><td>Description for parameter </td></tr>
-    <tr><td class="paramname">optionalObjectType</td><td>If type is "object", this parameter will describe which objects are allowed. If it is empty, all objects are allowed. </td></tr>
+    <tr><td class="paramname">supplementaryInformation</td><td>Additional information that can be used for rendering or logic. For example:<ul>
+<li>If type is "object", this argument will describe which objects are allowed. If this argument is empty, all objects are allowed.</li>
+<li>If type is "operator", this argument will be used to display only pertinent operators. </li>
+</ul>
+</td></tr>
     <tr><td class="paramname">parameterIsOptional</td><td>true if the parameter must be optional, false otherwise.</td></tr>
   </table>
   </dd>
@@ -500,7 +504,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </div><div class="memdoc">
 
 <p>Set the default value used in editor (or if an optional parameter is empty during code generation) for the last added parameter. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a6e2456898b4e18e9dafb6be6fc12c9eb" title="Add a parameter to the instruction metadata. ">AddParameter</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a43ff5307fd3d3270555fdb0fb1b2ddfd" title="Add a parameter to the instruction metadata. ">AddParameter</a> </dd></dl>
 
 </div>
 </div>
@@ -654,7 +658,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </div><div class="memdoc">
 
 <p>Set the additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter), for the last added parameter. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a6e2456898b4e18e9dafb6be6fc12c9eb" title="Add a parameter to the instruction metadata. ">AddParameter</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a43ff5307fd3d3270555fdb0fb1b2ddfd" title="Add a parameter to the instruction metadata. ">AddParameter</a> </dd></dl>
 
 </div>
 </div>
@@ -683,7 +687,7 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </div><div class="memdoc">
 
 <p>Set the long description shown in the editor for the last added parameter. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a6e2456898b4e18e9dafb6be6fc12c9eb" title="Add a parameter to the instruction metadata. ">AddParameter</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a43ff5307fd3d3270555fdb0fb1b2ddfd" title="Add a parameter to the instruction metadata. ">AddParameter</a> </dd></dl>
 
 </div>
 </div>
