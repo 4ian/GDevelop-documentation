@@ -1,7 +1,7 @@
 var searchData=
 [
   ['schemavalidatingreader',['SchemaValidatingReader',['../class_schema_validating_reader.html#ae7945b71687ad3dd13b9c3d096892eac',1,'SchemaValidatingReader']]],
-  ['searchinevents',['SearchInEvents',['../classgd_1_1_events_refactorer.html#ac7c9a7e30220ee6ccdccf768b4fc651b',1,'gd::EventsRefactorer']]],
+  ['searchinevents',['SearchInEvents',['../classgd_1_1_events_refactorer.html#aee6b00c825ec51738f2837b5fa4679c9',1,'gd::EventsRefactorer']]],
   ['serializeeventsfunctionsto',['SerializeEventsFunctionsTo',['../classgd_1_1_events_functions_container.html#a3813f04353e2dd588d30bde810d0322e',1,'gd::EventsFunctionsContainer']]],
   ['serializeeventsto',['SerializeEventsTo',['../classgd_1_1_events_list_serialization.html#a3db6a52dc5d19f7b31e257d5a7c63e7a',1,'gd::EventsListSerialization']]],
   ['serializeinstructionsto',['SerializeInstructionsTo',['../classgd_1_1_events_list_serialization.html#af584689f52548fee1df208d05f51a3da',1,'gd::EventsListSerialization']]],
@@ -159,7 +159,7 @@ var searchData=
   ['sety',['SetY',['../class_point.html#ade26ff15ad16ceea3c46e65b22d795f5',1,'Point::SetY()'],['../classgd_1_1_initial_instance.html#a065164d8ecc8ca6641338c5d4bb6f28d',1,'gd::InitialInstance::SetY()']]],
   ['setzorder',['SetZOrder',['../classgd_1_1_initial_instance.html#a5a6068e360f5fdf24c3a297db3c61513',1,'gd::InitialInstance']]],
   ['showgdevelopsplash',['ShowGDevelopSplash',['../classgd_1_1_loading_screen.html#a0bcd304b52877e9461892d30e2d9c040',1,'gd::LoadingScreen']]],
-  ['size',['size',['../classgd_1_1_events_list.html#a2e5a4c493fadc30cc5f9789b69fa5667',1,'gd::EventsList::size()'],['../classgd_1_1_object_groups_container.html#aebae45aefcc146dbf4eecfed8deb2f06',1,'gd::ObjectGroupsContainer::size()'],['../classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9',1,'gd::String::size()'],['../classgd_1_1_serializable_with_name_list.html#a403393e8a216930041c57ecc23330170',1,'gd::SerializableWithNameList::size()'],['../classgd_1_1_s_ptr_list.html#a4588d52a0f1bd447c67d1aaf39247231',1,'gd::SPtrList::size()'],['../class_memory_pool_allocator.html#ae7fcf0341c13e899cf488bc7c8949956',1,'MemoryPoolAllocator::Size()']]],
+  ['size',['Size',['../class_memory_pool_allocator.html#ae7fcf0341c13e899cf488bc7c8949956',1,'MemoryPoolAllocator::Size()'],['../classgd_1_1_events_list.html#a2e5a4c493fadc30cc5f9789b69fa5667',1,'gd::EventsList::size()'],['../classgd_1_1_object_groups_container.html#aebae45aefcc146dbf4eecfed8deb2f06',1,'gd::ObjectGroupsContainer::size()'],['../classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9',1,'gd::String::size()'],['../classgd_1_1_serializable_with_name_list.html#a403393e8a216930041c57ecc23330170',1,'gd::SerializableWithNameList::size()'],['../classgd_1_1_s_ptr_list.html#a4588d52a0f1bd447c67d1aaf39247231',1,'gd::SPtrList::size()']]],
   ['skipwhitespace',['SkipWhitespace',['../reader_8h.html#a60338858b2582eca23f3e509a2d82e0e',1,'reader.h']]],
   ['someinstancesareonlayer',['SomeInstancesAreOnLayer',['../classgd_1_1_initial_instances_container.html#a546a3b83322b0deb1e1157d19eb6bcc5',1,'gd::InitialInstancesContainer']]],
   ['split',['Split',['../classgd_1_1_string.html#a0bb2aed65a9457a4aa61e052357b8d6c',1,'gd::String']]],
