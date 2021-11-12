@@ -377,6 +377,7 @@ var searchData=
   ['gettypename',['GetTypeName',['../classgd_1_1_behavior.html#a6c983f8bc193ed7943248774218d133c',1,'gd::Behavior::GetTypeName()'],['../classgd_1_1_behavior_content.html#ab07d633d5519b7c5e21e2a4bb4d89d18',1,'gd::BehaviorContent::GetTypeName()'],['../classgd_1_1_behaviors_shared_data.html#a3f4fcce0d6af3e62dc116fb2b9954248',1,'gd::BehaviorsSharedData::GetTypeName()']]],
   ['gettypeofbehavior',['GetTypeOfBehavior',['../namespacegd.html#a4f30507b089be6fbfbaf9c54a89412f6',1,'gd']]],
   ['gettypeofobject',['GetTypeOfObject',['../namespacegd.html#a3393da6c1075e188d5757030cc9d73a8',1,'gd']]],
+  ['getupdateifnotvisible',['GetUpdateIfNotVisible',['../classgd_1_1_sprite_object.html#a112007e40e02fd56baa13793a97a96f5',1,'gd::SpriteObject']]],
   ['getusagecomplexity',['GetUsageComplexity',['../classgd_1_1_instruction_metadata.html#aaf1d9353ea693efada38249334f89b6e',1,'gd::InstructionMetadata']]],
   ['getusedeprecatedzeroasdefaultzorder',['GetUseDeprecatedZeroAsDefaultZOrder',['../classgd_1_1_project.html#ae394a0bd5c5eedb5a687930f0b8cd4ea',1,'gd::Project']]],
   ['getusedplatforms',['GetUsedPlatforms',['../classgd_1_1_project.html#a7f7a9b4b28485da5aa2ef1dc99d0b1cc',1,'gd::Project']]],
