@@ -74,6 +74,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a40a0bc4afd4af32ccc5056ed662cd20a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_events_list_unfolder.html#a40a0bc4afd4af32ccc5056ed662cd20a">UnfoldWhenContaining</a> (<a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;list, const <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &amp;eventToContain)</td></tr>
 <tr class="memdesc:a40a0bc4afd4af32ccc5056ed662cd20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively unfold all the event lists containing the specified event.  <a href="#a40a0bc4afd4af32ccc5056ed662cd20a">More...</a><br /></td></tr>
 <tr class="separator:a40a0bc4afd4af32ccc5056ed662cd20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc8afd1b475312f541532717c143937"><td class="memItemLeft" align="right" valign="top"><a id="acdc8afd1b475312f541532717c143937"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FoldAll</b> (<a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;list)</td></tr>
+<tr class="separator:acdc8afd1b475312f541532717c143937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936c94753023b13c4d4f0f2e392c0c00"><td class="memItemLeft" align="right" valign="top"><a id="a936c94753023b13c4d4f0f2e392c0c00"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_events_list_unfolder.html#a936c94753023b13c4d4f0f2e392c0c00">UnfoldToLevel</a> (<a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;list, const int8_t maxLevel, const std::size_t currentLevel=0)</td></tr>
+<tr class="memdesc:a936c94753023b13c4d4f0f2e392c0c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively unfold all the events until a certain level of depth. 0 is the top level. If you want to unfold all events regardless of its depth, use <code>maxLevel = -1</code>. <code>currentLevel</code> is used for the recursion. <br /></td></tr>
+<tr class="separator:a936c94753023b13c4d4f0f2e392c0c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a40a0bc4afd4af32ccc5056ed662cd20a"></a>
