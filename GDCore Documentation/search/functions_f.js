@@ -24,6 +24,7 @@ var searchData=
   ['setboolvalue',['SetBoolValue',['../classgd_1_1_serializer_element.html#ac892fa1ed914720fc2271d1ed12cd452',1,'gd::SerializerElement']]],
   ['setcameracount',['SetCameraCount',['../classgd_1_1_layer.html#a55bf2a43d01b58dc98ac5690fd2f6a2a',1,'gd::Layer']]],
   ['setcanhavesubinstructions',['SetCanHaveSubInstructions',['../classgd_1_1_instruction_metadata.html#ab63f5ca342e0391c3050411d92f7d047',1,'gd::InstructionMetadata']]],
+  ['setcategoryfullname',['SetCategoryFullName',['../classgd_1_1_object_metadata.html#ad09156a7e2d6fe8c494ae2e52b22367c',1,'gd::ObjectMetadata']]],
   ['setcodegenerator',['SetCodeGenerator',['../classgd_1_1_event_metadata.html#a769e1d27f987b9d185a7600e005a0394',1,'gd::EventMetadata']]],
   ['setcodeonly',['SetCodeOnly',['../classgd_1_1_parameter_metadata.html#aef7725c3b325079e082abaedf4f771ab',1,'gd::ParameterMetadata']]],
   ['setcollisionmaskautomatic',['SetCollisionMaskAutomatic',['../classgd_1_1_sprite.html#ac8721f7f5546cf97b443fc604d6b3593',1,'gd::Sprite']]],
