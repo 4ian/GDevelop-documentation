@@ -104,12 +104,6 @@ virtual <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><t
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform.html#aa3d93b847454b69632bda3ad351589fb">EnableExtensionLoadingLogs</a> (bool enable)</td></tr>
 <tr class="memdesc:aa3d93b847454b69632bda3ad351589fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate or disable the logs on the standard output when loading an extension. <br /></td></tr>
 <tr class="separator:aa3d93b847454b69632bda3ad351589fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169c395cb03c7404a962406012d3063a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform.html#a169c395cb03c7404a962406012d3063a">OnIDEClosed</a> ()</td></tr>
-<tr class="memdesc:a169c395cb03c7404a962406012d3063a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE is about to shut down: Take this opportunity for erasing for example any temporary file.  <a href="#a169c395cb03c7404a962406012d3063a">More...</a><br /></td></tr>
-<tr class="separator:a169c395cb03c7404a962406012d3063a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36662f1100390098e1eb6237537d56b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform.html#a36662f1100390098e1eb6237537d56b0">OnIDEInitialized</a> ()</td></tr>
-<tr class="memdesc:a36662f1100390098e1eb6237537d56b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE is initialized and ready to be used.  <a href="#a36662f1100390098e1eb6237537d56b0">More...</a><br /></td></tr>
-<tr class="separator:a36662f1100390098e1eb6237537d56b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Extensions management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Member functions used to manage the extensions </p>
 </div></td></tr>
@@ -135,6 +129,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a57485a633acb3383e5595cf3fcb0da22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform.html#a57485a633acb3383e5595cf3fcb0da22">RemoveExtension</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name)</td></tr>
 <tr class="memdesc:a57485a633acb3383e5595cf3fcb0da22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an extension from the platform.  <a href="#a57485a633acb3383e5595cf3fcb0da22">More...</a><br /></td></tr>
 <tr class="separator:a57485a633acb3383e5595cf3fcb0da22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690079883cd77402a2e255c592d5693f"><td class="memItemLeft" align="right" valign="top"><a id="a690079883cd77402a2e255c592d5693f"></a>
+const <a class="el" href="classgd_1_1_instruction_or_expression_group_metadata.html">InstructionOrExpressionGroupMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform.html#a690079883cd77402a2e255c592d5693f">GetInstructionOrExpressionGroupMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const</td></tr>
+<tr class="memdesc:a690079883cd77402a2e255c592d5693f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the metadata (icon, etc...) of a group used for instructions or expressions. <br /></td></tr>
+<tr class="separator:a690079883cd77402a2e255c592d5693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Factory method</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Member functions used to create the platform objects. TODO: This could be moved to <a class="el" href="classgd_1_1_metadata_provider.html" title="Allow to easily get metadata for instructions (i.e actions and conditions), expressions, objects and behaviors. ">gd::MetadataProvider</a>. </p>
 </div></td></tr>
@@ -254,62 +252,6 @@ std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEve
 
 <p>Must return the name of the function that is used to create an extension for this platform. </p>
 <p>For example, GD C++ <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">Platform</a> uses "CreateGDExtension" and GD JS <a class="el" href="classgd_1_1_platform.html" title="Base class for implementing a platform. ">Platform</a> "CreateGDJSExtension". </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_extensions_loader.html" title="Internal class loading static extensions. ">gd::ExtensionsLoader</a> </dd></dl>
-
-</div>
-</div>
-<a id="a169c395cb03c7404a962406012d3063a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a169c395cb03c7404a962406012d3063a">&#9670;&nbsp;</a></span>OnIDEClosed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void gd::Platform::OnIDEClosed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE is about to shut down: Take this opportunity for erasing for example any temporary file. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>This should be removed. </dd></dl>
-
-</div>
-</div>
-<a id="a36662f1100390098e1eb6237537d56b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36662f1100390098e1eb6237537d56b0">&#9670;&nbsp;</a></span>OnIDEInitialized()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void gd::Platform::OnIDEInitialized </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE is initialized and ready to be used. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>This should be removed. </dd></dl>
 
 </div>
 </div>

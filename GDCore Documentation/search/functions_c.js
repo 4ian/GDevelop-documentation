@@ -11,8 +11,6 @@ var searchData=
   ['objectslistneeded',['ObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#adfe84a7dace4294224df3b82c7739c60',1,'gd::EventsCodeGenerationContext']]],
   ['objectslistwithoutpickingneeded',['ObjectsListWithoutPickingNeeded',['../classgd_1_1_events_code_generation_context.html#ae402607ce5c59d60810c08a1756da9b8',1,'gd::EventsCodeGenerationContext']]],
   ['offset',['Offset',['../struct_parse_result.html#afbe762766ac21b2aae266105f1dfa643',1,'ParseResult']]],
-  ['onideclosed',['OnIDEClosed',['../classgd_1_1_platform.html#a169c395cb03c7404a962406012d3063a',1,'gd::Platform']]],
-  ['onideinitialized',['OnIDEInitialized',['../classgd_1_1_platform.html#a36662f1100390098e1eb6237537d56b0',1,'gd::Platform']]],
   ['onlyifotherdependencyisexported',['OnlyIfOtherDependencyIsExported',['../classgd_1_1_dependency_metadata.html#a420e792d5f72959a4c27bf167da029f0',1,'gd::DependencyMetadata']]],
   ['onlyifsomeextrasettingsnonempty',['OnlyIfSomeExtraSettingsNonEmpty',['../classgd_1_1_dependency_metadata.html#ac9ddf286fa47c902404d8bf493d01b84',1,'gd::DependencyMetadata']]],
   ['openlibrary',['OpenLibrary',['../namespacegd.html#ab8f0fd603e6c559ca309e7b8af89d19f',1,'gd']]],

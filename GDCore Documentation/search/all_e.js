@@ -12,7 +12,6 @@ var searchData=
   ['normalizeseparator',['NormalizeSeparator',['../classgd_1_1_abstract_file_system.html#a87424272a61c3ad3e1a6212c248fd2df',1,'gd::AbstractFileSystem']]],
   ['normform',['NormForm',['../classgd_1_1_string.html#ac9fbe9e33c5ebfa40ef54ff848702617',1,'gd::String']]],
   ['not_5fenough_5froom',['not_enough_room',['../classutf8_1_1not__enough__room.html',1,'utf8']]],
-  ['notifyplatformideinitialized',['NotifyPlatformIDEInitialized',['../classgd_1_1_platform_manager.html#aa23fb8b534d2a8f33284288c19097a77',1,'gd::PlatformManager']]],
   ['number',['Number',['../union_generic_value_1_1_number.html',1,'GenericValue']]],
   ['numbernode',['NumberNode',['../structgd_1_1_number_node.html',1,'gd']]]
 ];
