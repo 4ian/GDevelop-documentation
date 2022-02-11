@@ -24,5 +24,6 @@ var searchData=
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object']]],
   ['double',['Double',['../classinternal_1_1_double.html',1,'internal::Double'],['../class_writer.html#a22a43e8a7193105deec6b808736f7a1a',1,'Writer::Double()']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
+  ['duplicatedinstructionoptions',['DuplicatedInstructionOptions',['../structgd_1_1_duplicated_instruction_options.html',1,'gd']]],
   ['dynamiclibrarylasterror',['DynamicLibraryLastError',['../namespacegd.html#ab9cdac8f7bd009ba308b15d4f2424308',1,'gd']]]
 ];
