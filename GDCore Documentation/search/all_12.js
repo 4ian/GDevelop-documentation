@@ -140,6 +140,7 @@ var searchData=
   ['setprojectuuid',['SetProjectUuid',['../classgd_1_1_project.html#a17825ef87508fd46997e0d939b3b0343',1,'gd::Project']]],
   ['setrawdoubleproperty',['SetRawDoubleProperty',['../classgd_1_1_initial_instance.html#a0554c033ee70b163f68e7f9327752aa5',1,'gd::InitialInstance']]],
   ['setrawstringproperty',['SetRawStringProperty',['../classgd_1_1_initial_instance.html#a7ae5f55fb44d8b5efce558f21382b300',1,'gd::InitialInstance']]],
+  ['setrequiresbaseobjectcapability',['SetRequiresBaseObjectCapability',['../classgd_1_1_expression_metadata.html#a93a899fecfcfb76bf1f67b75d4dc6021',1,'gd::ExpressionMetadata::SetRequiresBaseObjectCapability()'],['../classgd_1_1_instruction_metadata.html#a7f6835f72696c9cc39d8688b87b64af0',1,'gd::InstructionMetadata::SetRequiresBaseObjectCapability()'],['../classgd_1_1_multiple_instruction_metadata.html#a01d67cf894109c3f000297db696bde83',1,'gd::MultipleInstructionMetadata::SetRequiresBaseObjectCapability()']]],
   ['setscalemode',['SetScaleMode',['../classgd_1_1_project.html#ab960553137b1ed176e190d34c8f18951',1,'gd::Project']]],
   ['setsentence',['SetSentence',['../classgd_1_1_events_function.html#aea6c76098a33685da5d8ee0782095c6c',1,'gd::EventsFunction']]],
   ['setsize',['SetSize',['../classgd_1_1_camera.html#a184d4c214a0ea52d8931d8b12640b592',1,'gd::Camera']]],

@@ -37,6 +37,7 @@ var searchData=
   ['addscopedcondition',['AddScopedCondition',['../classgd_1_1_behavior_metadata.html#a68881e54f619912a28cd43d247342702',1,'gd::BehaviorMetadata::AddScopedCondition()'],['../classgd_1_1_object_metadata.html#a339f21b9b7ca82ba3777591793cde363',1,'gd::ObjectMetadata::AddScopedCondition()']]],
   ['addsprite',['AddSprite',['../classgd_1_1_direction.html#a5095770224059ff9d643ee4d380876d7',1,'gd::Direction']]],
   ['addstrexpression',['AddStrExpression',['../classgd_1_1_behavior_metadata.html#ad92053a5581a9312b6d41bde2ccb451d',1,'gd::BehaviorMetadata::AddStrExpression()'],['../classgd_1_1_object_metadata.html#a2c61ba71b9b8e750b1588a6f1aedb967',1,'gd::ObjectMetadata::AddStrExpression()'],['../classgd_1_1_platform_extension.html#a719045343da6048ac25252e88d72640e',1,'gd::PlatformExtension::AddStrExpression()']]],
+  ['addunsupportedbaseobjectcapability',['AddUnsupportedBaseObjectCapability',['../classgd_1_1_object_metadata.html#ad3449f9059e7793509abb6aba9f74d19',1,'gd::ObjectMetadata']]],
   ['allocator',['Allocator',['../classrapidjson_1_1_allocator.html',1,'rapidjson']]],
   ['allocatortype',['AllocatorType',['../class_generic_value.html#a7beb83860c1b8d2a0e2a7da9796b2fa1',1,'GenericValue::AllocatorType()'],['../class_generic_document.html#a35155b912da66ced38d22e2551364c57',1,'GenericDocument::AllocatorType()']]],
   ['alwaysloaded',['alwaysLoaded',['../classgd_1_1_image_resource.html#a7f8f9f498c4e4e6afc8013972447d738',1,'gd::ImageResource']]],

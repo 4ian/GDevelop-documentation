@@ -138,6 +138,18 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 <a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#ad09156a7e2d6fe8c494ae2e52b22367c">SetCategoryFullName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;categoryFullName_)</td></tr>
 <tr class="memdesc:ad09156a7e2d6fe8c494ae2e52b22367c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the (user friendly) name of the group this object must be categorised in. <br /></td></tr>
 <tr class="separator:ad09156a7e2d6fe8c494ae2e52b22367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2ba95b399390a537e3d731bd0b2603"><td class="memItemLeft" align="right" valign="top"><a id="add2ba95b399390a537e3d731bd0b2603"></a>
+const std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#add2ba95b399390a537e3d731bd0b2603">GetUnsupportedBaseObjectCapabilities</a> () const</td></tr>
+<tr class="memdesc:add2ba95b399390a537e3d731bd0b2603"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "capabilities" that are offered by the base object that are <em>not</em> supported by this object, and should be hidden in the editor inferface. <br /></td></tr>
+<tr class="separator:add2ba95b399390a537e3d731bd0b2603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3449f9059e7793509abb6aba9f74d19"><td class="memItemLeft" align="right" valign="top"><a id="ad3449f9059e7793509abb6aba9f74d19"></a>
+<a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#ad3449f9059e7793509abb6aba9f74d19">AddUnsupportedBaseObjectCapability</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;capability)</td></tr>
+<tr class="memdesc:ad3449f9059e7793509abb6aba9f74d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a "capability" that is offered by the base object that is <em>not</em> supported by this object, and should be hidden in the editor inferface. <br /></td></tr>
+<tr class="separator:ad3449f9059e7793509abb6aba9f74d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aba60c9d1612009c15a8620a80156e1"><td class="memItemLeft" align="right" valign="top"><a id="a8aba60c9d1612009c15a8620a80156e1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a8aba60c9d1612009c15a8620a80156e1">IsUnsupportedBaseObjectCapability</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;capability) const</td></tr>
+<tr class="memdesc:a8aba60c9d1612009c15a8620a80156e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a "capability" that is offered by the base object is <em>not</em> supported by this object, and should be hidden in the editor inferface. <br /></td></tr>
+<tr class="separator:a8aba60c9d1612009c15a8620a80156e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39ff0ff89510f9a268a577961a3eadd"><td class="memItemLeft" align="right" valign="top"><a id="ab39ff0ff89510f9a268a577961a3eadd"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:ab39ff0ff89510f9a268a577961a3eadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +178,16 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 <a class="el" href="classgd_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#ad09e4f43376c7ff4310ba0dcd3c4d051">AddIncludeFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;includeFile)</td></tr>
 <tr class="memdesc:ad09e4f43376c7ff4310ba0dcd3c4d051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the already existing include files. <br /></td></tr>
 <tr class="separator:ad09e4f43376c7ff4310ba0dcd3c4d051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1051c19347b3910ba97392af12902006"><td class="memItemLeft" align="right" valign="top"><a id="a1051c19347b3910ba97392af12902006"></a>
+std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a1051c19347b3910ba97392af12902006">GetAllActions</a> ()</td></tr>
+<tr class="memdesc:a1051c19347b3910ba97392af12902006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to a map containing the names of the actions (as keys) and the metadata associated with (as values). <br /></td></tr>
+<tr class="separator:a1051c19347b3910ba97392af12902006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba64497b29ed071c99d9c3db2c3fe16"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a4ba64497b29ed071c99d9c3db2c3fe16">GetAllConditions</a> ()</td></tr>
+<tr class="separator:a4ba64497b29ed071c99d9c3db2c3fe16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358676e23979f92ced2e34e1e56f0721"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a358676e23979f92ced2e34e1e56f0721">GetAllExpressions</a> ()</td></tr>
+<tr class="separator:a358676e23979f92ced2e34e1e56f0721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bdb1c6d046497813a6cb11939a30fa"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a57bdb1c6d046497813a6cb11939a30fa">GetAllStrExpressions</a> ()</td></tr>
+<tr class="separator:a57bdb1c6d046497813a6cb11939a30fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -617,6 +639,84 @@ It's recommended to use this function to avoid declaring 3 times a similar expre
       </table>
 </div><div class="memdoc">
 <p>Declare a new condition as being part of the object. </p>
+
+</div>
+</div>
+<a id="a4ba64497b29ed071c99d9c3db2c3fe16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba64497b29ed071c99d9c3db2c3fe16">&#9670;&nbsp;</a></span>GetAllConditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a>&gt;&amp; gd::ObjectMetadata::GetAllConditions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a77b3a7a3f85c1aa5f26d06013e83eda2" title="Return a reference to a map containing the names of the actions (as keys) and the metadata associated...">gd::PlatformExtension::GetAllActions</a> </dd></dl>
+
+</div>
+</div>
+<a id="a358676e23979f92ced2e34e1e56f0721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358676e23979f92ced2e34e1e56f0721">&#9670;&nbsp;</a></span>GetAllExpressions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a>&gt;&amp; gd::ObjectMetadata::GetAllExpressions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a77b3a7a3f85c1aa5f26d06013e83eda2" title="Return a reference to a map containing the names of the actions (as keys) and the metadata associated...">gd::PlatformExtension::GetAllActions</a> </dd></dl>
+
+</div>
+</div>
+<a id="a57bdb1c6d046497813a6cb11939a30fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bdb1c6d046497813a6cb11939a30fa">&#9670;&nbsp;</a></span>GetAllStrExpressions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a>&gt;&amp; gd::ObjectMetadata::GetAllStrExpressions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a77b3a7a3f85c1aa5f26d06013e83eda2" title="Return a reference to a map containing the names of the actions (as keys) and the metadata associated...">gd::PlatformExtension::GetAllActions</a> </dd></dl>
 
 </div>
 </div>

@@ -170,6 +170,16 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 <a class="el" href="classgd_1_1_behaviors_shared_data.html">gd::BehaviorsSharedData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#aab0873798c6c14cc731933fe51aef28d">GetSharedDataInstance</a> () const</td></tr>
 <tr class="memdesc:aab0873798c6c14cc731933fe51aef28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the associated <a class="el" href="classgd_1_1_behaviors_shared_data.html" title="Base class for defining data shared by behaviors having the same type and name. ">gd::BehaviorsSharedData</a>, handling behavior shared data, if any (nullptr if none). <br /></td></tr>
 <tr class="separator:aab0873798c6c14cc731933fe51aef28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebff339619d4940f537a6c45ca19e6c1"><td class="memItemLeft" align="right" valign="top"><a id="aebff339619d4940f537a6c45ca19e6c1"></a>
+std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#aebff339619d4940f537a6c45ca19e6c1">GetAllActions</a> ()</td></tr>
+<tr class="memdesc:aebff339619d4940f537a6c45ca19e6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to a map containing the names of the actions (as keys) and the metadata associated with (as values). <br /></td></tr>
+<tr class="separator:aebff339619d4940f537a6c45ca19e6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a3c28c32c8c7f5c66fe06d8f0c97b9"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#ad1a3c28c32c8c7f5c66fe06d8f0c97b9">GetAllConditions</a> ()</td></tr>
+<tr class="separator:ad1a3c28c32c8c7f5c66fe06d8f0c97b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e42634bb106b64eb8abe1b01875b98"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#ab0e42634bb106b64eb8abe1b01875b98">GetAllExpressions</a> ()</td></tr>
+<tr class="separator:ab0e42634bb106b64eb8abe1b01875b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24768803836344ccb3e6fb191690fe09"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#a24768803836344ccb3e6fb191690fe09">GetAllStrExpressions</a> ()</td></tr>
+<tr class="separator:a24768803836344ccb3e6fb191690fe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -770,6 +780,84 @@ It's recommended to use this function to avoid declaring 3 times a similar expre
       </table>
 </div><div class="memdoc">
 <p>Declare a new string expression as being part of the extension. </p>
+
+</div>
+</div>
+<a id="ad1a3c28c32c8c7f5c66fe06d8f0c97b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a3c28c32c8c7f5c66fe06d8f0c97b9">&#9670;&nbsp;</a></span>GetAllConditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a>&gt;&amp; gd::BehaviorMetadata::GetAllConditions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a77b3a7a3f85c1aa5f26d06013e83eda2" title="Return a reference to a map containing the names of the actions (as keys) and the metadata associated...">gd::PlatformExtension::GetAllActions</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab0e42634bb106b64eb8abe1b01875b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e42634bb106b64eb8abe1b01875b98">&#9670;&nbsp;</a></span>GetAllExpressions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a>&gt;&amp; gd::BehaviorMetadata::GetAllExpressions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a77b3a7a3f85c1aa5f26d06013e83eda2" title="Return a reference to a map containing the names of the actions (as keys) and the metadata associated...">gd::PlatformExtension::GetAllActions</a> </dd></dl>
+
+</div>
+</div>
+<a id="a24768803836344ccb3e6fb191690fe09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24768803836344ccb3e6fb191690fe09">&#9670;&nbsp;</a></span>GetAllStrExpressions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a>&gt;&amp; gd::BehaviorMetadata::GetAllStrExpressions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_platform_extension.html#a77b3a7a3f85c1aa5f26d06013e83eda2" title="Return a reference to a map containing the names of the actions (as keys) and the metadata associated...">gd::PlatformExtension::GetAllActions</a> </dd></dl>
 
 </div>
 </div>

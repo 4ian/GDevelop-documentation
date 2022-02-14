@@ -91,6 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a917419edd2d0bf23d17e70c57c2eb03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9131315e9fbd8c62a0d3d96bc215644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">MultipleInstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html#ab9131315e9fbd8c62a0d3d96bc215644">SetHidden</a> ()</td></tr>
 <tr class="separator:ab9131315e9fbd8c62a0d3d96bc215644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d67cf894109c3f000297db696bde83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">MultipleInstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html#a01d67cf894109c3f000297db696bde83">SetRequiresBaseObjectCapability</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;capability)</td></tr>
+<tr class="separator:a01d67cf894109c3f000297db696bde83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab058017d44b6ccbc0f8dca07a249c585"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">MultipleInstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html#ab058017d44b6ccbc0f8dca07a249c585">UseStandardParameters</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type)</td></tr>
 <tr class="separator:ab058017d44b6ccbc0f8dca07a249c585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6da837e150b12ac76b010e7c354e597"><td class="memItemLeft" align="right" valign="top"><a id="ad6da837e150b12ac76b010e7c354e597"></a>
@@ -124,6 +126,9 @@ static <a class="el" href="classgd_1_1_multiple_instruction_metadata.html">Multi
 <tr class="memitem:a5dabe66a27273e8e2192a59bf3a5534e"><td class="memItemLeft" align="right" valign="top"><a id="a5dabe66a27273e8e2192a59bf3a5534e"></a>
 static <a class="el" href="classgd_1_1_multiple_instruction_metadata.html">MultipleInstructionMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WithExpressionAndConditionAndAction</b> (<a class="el" href="classgd_1_1_expression_metadata.html">gd::ExpressionMetadata</a> &amp;expression, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;condition, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;action)</td></tr>
 <tr class="separator:a5dabe66a27273e8e2192a59bf3a5534e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeddd25f9ed3cb26ee2cd0fa0184fd38"><td class="memItemLeft" align="right" valign="top"><a id="afeddd25f9ed3cb26ee2cd0fa0184fd38"></a>
+static <a class="el" href="classgd_1_1_multiple_instruction_metadata.html">MultipleInstructionMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WithConditionAndAction</b> (<a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;condition, <a class="el" href="classgd_1_1_instruction_metadata.html">gd::InstructionMetadata</a> &amp;action)</td></tr>
+<tr class="separator:afeddd25f9ed3cb26ee2cd0fa0184fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A "composite" metadata that can be used to easily declare both an expression and a related condition (and a related action) without writing manually the three of them. </p>
@@ -369,6 +374,33 @@ static <a class="el" href="classgd_1_1_multiple_instruction_metadata.html">Multi
 </table>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#aa49958a5faeb20fcadd1990443565a46" title="Set the long description shown in the editor for the last added parameter. ">gd::InstructionMetadata::SetParameterLongDescription</a> </dd></dl>
+
+</div>
+</div>
+<a id="a01d67cf894109c3f000297db696bde83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d67cf894109c3f000297db696bde83">&#9670;&nbsp;</a></span>SetRequiresBaseObjectCapability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_multiple_instruction_metadata.html">MultipleInstructionMetadata</a>&amp; gd::MultipleInstructionMetadata::SetRequiresBaseObjectCapability </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>capability</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction_metadata.html#a7f6835f72696c9cc39d8688b87b64af0" title="Mark this (object) instruction as requiring the specified capability, offered by the base object...">gd::InstructionMetadata::SetRequiresBaseObjectCapability</a> </dd></dl>
 
 </div>
 </div>
