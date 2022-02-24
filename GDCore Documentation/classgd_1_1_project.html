@@ -144,6 +144,18 @@ const std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a
 std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac1303731a766b205438506d1960e22ab">GetAuthorIds</a> ()</td></tr>
 <tr class="memdesc:ac1303731a766b205438506d1960e22ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the author ids of the project, to modify them (non-const). <br /></td></tr>
 <tr class="separator:ac1303731a766b205438506d1960e22ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acc3974bf7f1dcdfbfa8b0bed71332a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6acc3974bf7f1dcdfbfa8b0bed71332a">SetPlayableWithKeyboard</a> (bool playable=true)</td></tr>
+<tr class="separator:a6acc3974bf7f1dcdfbfa8b0bed71332a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1a66c6a3e29ecf8c52e996a22168ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aad1a66c6a3e29ecf8c52e996a22168ed">IsPlayableWithKeyboard</a> () const</td></tr>
+<tr class="separator:aad1a66c6a3e29ecf8c52e996a22168ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132e81e041c0dd4c0c9e98e10491c238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a132e81e041c0dd4c0c9e98e10491c238">SetPlayableWithGamepad</a> (bool playable=true)</td></tr>
+<tr class="separator:a132e81e041c0dd4c0c9e98e10491c238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d33438698d5c325262dc9adca82134"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a48d33438698d5c325262dc9adca82134">IsPlayableWithGamepad</a> () const</td></tr>
+<tr class="separator:a48d33438698d5c325262dc9adca82134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da193881b5fd18bdc80c9e9022d6614"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a5da193881b5fd18bdc80c9e9022d6614">SetPlayableWithMobile</a> (bool playable=true)</td></tr>
+<tr class="separator:a5da193881b5fd18bdc80c9e9022d6614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b402f018683bdf361c1901c6777dba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a74b402f018683bdf361c1901c6777dba">IsPlayableWithMobile</a> () const</td></tr>
+<tr class="separator:a74b402f018683bdf361c1901c6777dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d556b9e3ed34867b8664e5844ae5b7"><td class="memItemLeft" align="right" valign="top"><a id="ac7d556b9e3ed34867b8664e5844ae5b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#ac7d556b9e3ed34867b8664e5844ae5b7">SetPackageName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;packageName_)</td></tr>
 <tr class="memdesc:ac7d556b9e3ed34867b8664e5844ae5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the project package name. <br /></td></tr>
@@ -1636,6 +1648,84 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
+<a id="a48d33438698d5c325262dc9adca82134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d33438698d5c325262dc9adca82134">&#9670;&nbsp;</a></span>IsPlayableWithGamepad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Project::IsPlayableWithGamepad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the project is defined as playable with a gamepad. </p>
+
+</div>
+</div>
+<a id="aad1a66c6a3e29ecf8c52e996a22168ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1a66c6a3e29ecf8c52e996a22168ed">&#9670;&nbsp;</a></span>IsPlayableWithKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Project::IsPlayableWithKeyboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the project is defined as playable with a keyboard. </p>
+
+</div>
+</div>
+<a id="a74b402f018683bdf361c1901c6777dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b402f018683bdf361c1901c6777dba">&#9670;&nbsp;</a></span>IsPlayableWithMobile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Project::IsPlayableWithMobile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the project is defined as playable on a mobile. </p>
+
+</div>
+</div>
 <a id="a3e08440c7620b8eb45bad794865a3d38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e08440c7620b8eb45bad794865a3d38">&#9670;&nbsp;</a></span>IsVerticalSynchronizationEnabledByDefault()</h2>
 
@@ -2014,6 +2104,102 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 </table>
 </div><div class="memdoc">
 <p>Set pixels rounding option to true or false. </p>
+
+</div>
+</div>
+<a id="a132e81e041c0dd4c0c9e98e10491c238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132e81e041c0dd4c0c9e98e10491c238">&#9670;&nbsp;</a></span>SetPlayableWithGamepad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Project::SetPlayableWithGamepad </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>playable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Define the project as playable with a gamepad. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>True to define the project as playable with a gamepad. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6acc3974bf7f1dcdfbfa8b0bed71332a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acc3974bf7f1dcdfbfa8b0bed71332a">&#9670;&nbsp;</a></span>SetPlayableWithKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Project::SetPlayableWithKeyboard </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>playable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Define the project as playable with a keyboard. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>True to define the project as playable with a keyboard. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5da193881b5fd18bdc80c9e9022d6614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da193881b5fd18bdc80c9e9022d6614">&#9670;&nbsp;</a></span>SetPlayableWithMobile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Project::SetPlayableWithMobile </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>playable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Define the project as playable on a mobile. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>True to define the project as playable on a mobile. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
