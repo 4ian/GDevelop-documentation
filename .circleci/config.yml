@@ -60,7 +60,7 @@ jobs:
             echo 'home238011373.1and1-data.host ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFjDE2sDVlaHhXudMMsLEuJvY+nBuTbwLGpQkLaJ5oxIR9vXinw/2dSzqnDAlrmJ1ZgWKQnvPh7Mz770Hp/sobU=' >> ~/.ssh/known_hosts
             echo '# home238011373.1and1-data.host:22 SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u1~ui10+2' >> ~/.ssh/known_hosts
             echo 'home238011373.1and1-data.host ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINbBMvvDjN4IP04VAZlDH42A+HL25ifeIK9CorAvaMA/' >> ~/.ssh/known_hosts
-            rsync -r GDevelop/docs-wiki/ $WIKI_USERNAME@$WIKI_HOSTNAME:~/gdevelop-wiki/dokuwiki/data/pages/gdevelop5
+            rsync -r GDevelop/docs-wiki/ $WIKI_USERNAME@$WIKI_HOSTNAME:~/gdevelop-new-wiki/dokuwiki/data/pages/gdevelop5
 
 workflows:
   version: 2
