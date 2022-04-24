@@ -76,6 +76,7 @@ var searchData=
   ['issameobjectslist',['IsSameObjectsList',['../classgd_1_1_events_code_generation_context.html#a6f5aa8942315b8cf0443ac6aafd390a8',1,'gd::EventsCodeGenerationContext']]],
   ['issmooth',['IsSmooth',['../classgd_1_1_image_resource.html#a599376bf7f2d6cc34ae155287ebb43b0',1,'gd::ImageResource']]],
   ['isstring',['IsString',['../classgd_1_1_serializer_value.html#a518d9d4ad891ee8306482b8dceebe68a',1,'gd::SerializerValue']]],
+  ['istobedeclared',['IsToBeDeclared',['../classgd_1_1_events_code_generation_context.html#a346ef476252077538555fa65925471fb',1,'gd::EventsCodeGenerationContext']]],
   ['isunsupportedbaseobjectcapability',['IsUnsupportedBaseObjectCapability',['../classgd_1_1_object_metadata.html#a8aba60c9d1612009c15a8620a80156e1',1,'gd::ObjectMetadata']]],
   ['isuseradded',['IsUserAdded',['../classgd_1_1_resource.html#a3c399dac119046de10df8adffdd9b8e1',1,'gd::Resource']]],
   ['isvalid',['IsValid',['../class_generic_schema_validator.html#a8ebda4da3d8b1fc41e57f15dd62e8f19',1,'GenericSchemaValidator::IsValid()'],['../classgd_1_1_string.html#a8399527584eea3953f4ab2f90858841e',1,'gd::String::IsValid()']]],

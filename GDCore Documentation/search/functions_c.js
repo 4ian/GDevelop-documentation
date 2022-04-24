@@ -1,7 +1,7 @@
 var searchData=
 [
   ['object',['Object',['../classgd_1_1_object.html#a53e48d12c5f38c8219180445c7ef2ad0',1,'gd::Object::Object(const gd::String &amp;name)'],['../classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968',1,'gd::Object::Object(const gd::Object &amp;object)']]],
-  ['objectalreadydeclared',['ObjectAlreadyDeclared',['../classgd_1_1_events_code_generation_context.html#a840fa8d643336fb5bd3056aadd7b9886',1,'gd::EventsCodeGenerationContext']]],
+  ['objectalreadydeclaredbyparents',['ObjectAlreadyDeclaredByParents',['../classgd_1_1_events_code_generation_context.html#a2d13d9f954ac3c781a968a71b8cb86b1',1,'gd::EventsCodeGenerationContext']]],
   ['objectmetadata',['ObjectMetadata',['../classgd_1_1_object_metadata.html#a8ced7cfc65085e87e7039627e196af50',1,'gd::ObjectMetadata::ObjectMetadata(const gd::String &amp;extensionNamespace_, const gd::String &amp;name_, const gd::String &amp;fullname_, const gd::String &amp;description_, const gd::String &amp;icon24x24_, std::shared_ptr&lt; gd::Object &gt; blueprintObject_)'],['../classgd_1_1_object_metadata.html#ae33b721c722d1c18a8ae62efe702e608',1,'gd::ObjectMetadata::ObjectMetadata(const gd::String &amp;extensionNamespace_, const gd::String &amp;name_, const gd::String &amp;fullname_, const gd::String &amp;description_, const gd::String &amp;icon24x24_, CreateFunPtr createFunPtrP)']]],
   ['objectorgroupremovedineventsfunction',['ObjectOrGroupRemovedInEventsFunction',['../classgd_1_1_whole_project_refactorer.html#a1c62e0210aa75906bd7a79bf6061c4cd',1,'gd::WholeProjectRefactorer']]],
   ['objectorgroupremovedinlayout',['ObjectOrGroupRemovedInLayout',['../classgd_1_1_whole_project_refactorer.html#a850e4e2ca694ed30c462ae85fd0e6c19',1,'gd::WholeProjectRefactorer']]],
@@ -9,7 +9,7 @@ var searchData=
   ['objectorgrouprenamedinlayout',['ObjectOrGroupRenamedInLayout',['../classgd_1_1_whole_project_refactorer.html#a95364bd2c2f3c947294bdd3933a3bf3e',1,'gd::WholeProjectRefactorer']]],
   ['objectscontainer',['ObjectsContainer',['../classgd_1_1_objects_container.html#aca2afa84d13d9851f2ba842544efa685',1,'gd::ObjectsContainer']]],
   ['objectslistneeded',['ObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#adfe84a7dace4294224df3b82c7739c60',1,'gd::EventsCodeGenerationContext']]],
-  ['objectslistwithoutpickingneeded',['ObjectsListWithoutPickingNeeded',['../classgd_1_1_events_code_generation_context.html#ae402607ce5c59d60810c08a1756da9b8',1,'gd::EventsCodeGenerationContext']]],
+  ['objectslistneededoremptyifjustdeclared',['ObjectsListNeededOrEmptyIfJustDeclared',['../classgd_1_1_events_code_generation_context.html#ab9b7a9fd59fcda2f3a605d55534fdb39',1,'gd::EventsCodeGenerationContext']]],
   ['offset',['Offset',['../struct_parse_result.html#afbe762766ac21b2aae266105f1dfa643',1,'ParseResult']]],
   ['onlyifotherdependencyisexported',['OnlyIfOtherDependencyIsExported',['../classgd_1_1_dependency_metadata.html#a420e792d5f72959a4c27bf167da029f0',1,'gd::DependencyMetadata']]],
   ['onlyifsomeextrasettingsnonempty',['OnlyIfSomeExtraSettingsNonEmpty',['../classgd_1_1_dependency_metadata.html#ac9ddf286fa47c902404d8bf493d01b84',1,'gd::DependencyMetadata']]],

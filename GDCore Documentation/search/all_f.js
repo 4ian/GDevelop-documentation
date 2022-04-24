@@ -1,7 +1,7 @@
 var searchData=
 [
   ['object',['Object',['../classgd_1_1_object.html',1,'gd::Object'],['../classgd_1_1_object.html#a53e48d12c5f38c8219180445c7ef2ad0',1,'gd::Object::Object(const gd::String &amp;name)'],['../classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968',1,'gd::Object::Object(const gd::Object &amp;object)']]],
-  ['objectalreadydeclared',['ObjectAlreadyDeclared',['../classgd_1_1_events_code_generation_context.html#a840fa8d643336fb5bd3056aadd7b9886',1,'gd::EventsCodeGenerationContext']]],
+  ['objectalreadydeclaredbyparents',['ObjectAlreadyDeclaredByParents',['../classgd_1_1_events_code_generation_context.html#a2d13d9f954ac3c781a968a71b8cb86b1',1,'gd::EventsCodeGenerationContext']]],
   ['objectdata',['ObjectData',['../struct_generic_value_1_1_object_data.html',1,'GenericValue']]],
   ['objectfunctionnamenode',['ObjectFunctionNameNode',['../structgd_1_1_object_function_name_node.html',1,'gd']]],
   ['objectfunctionorbehaviorname',['objectFunctionOrBehaviorName',['../structgd_1_1_object_function_name_node.html#a51430c971008d261ecf323750b71a61e',1,'gd::ObjectFunctionNameNode']]],
@@ -18,7 +18,7 @@ var searchData=
   ['objectorgrouprenamedinlayout',['ObjectOrGroupRenamedInLayout',['../classgd_1_1_whole_project_refactorer.html#a95364bd2c2f3c947294bdd3933a3bf3e',1,'gd::WholeProjectRefactorer']]],
   ['objectscontainer',['ObjectsContainer',['../classgd_1_1_objects_container.html',1,'gd::ObjectsContainer'],['../classgd_1_1_objects_container.html#aca2afa84d13d9851f2ba842544efa685',1,'gd::ObjectsContainer::ObjectsContainer()']]],
   ['objectslistneeded',['ObjectsListNeeded',['../classgd_1_1_events_code_generation_context.html#adfe84a7dace4294224df3b82c7739c60',1,'gd::EventsCodeGenerationContext']]],
-  ['objectslistwithoutpickingneeded',['ObjectsListWithoutPickingNeeded',['../classgd_1_1_events_code_generation_context.html#ae402607ce5c59d60810c08a1756da9b8',1,'gd::EventsCodeGenerationContext']]],
+  ['objectslistneededoremptyifjustdeclared',['ObjectsListNeededOrEmptyIfJustDeclared',['../classgd_1_1_events_code_generation_context.html#ab9b7a9fd59fcda2f3a605d55534fdb39',1,'gd::EventsCodeGenerationContext']]],
   ['objectvariables',['objectVariables',['../classgd_1_1_object.html#a44f98d0805ceead0c797f6b582782382',1,'gd::Object']]],
   ['offset',['Offset',['../struct_parse_result.html#afbe762766ac21b2aae266105f1dfa643',1,'ParseResult']]],
   ['onlyifotherdependencyisexported',['OnlyIfOtherDependencyIsExported',['../classgd_1_1_dependency_metadata.html#a420e792d5f72959a4c27bf167da029f0',1,'gd::DependencyMetadata']]],

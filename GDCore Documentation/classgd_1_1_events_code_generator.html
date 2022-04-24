@@ -1427,9 +1427,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ExpressionCodeGenera
 <br />
  Other standard parameters type that should be implemented by platforms:</p><ul>
 <li>currentScene: Reference to the current runtime scene.</li>
-<li>objectList : a map containing lists of objects which are specified by the object name in another parameter. Example: <div class="fragment"><div class="line">    AddExpression(<span class="stringliteral">&quot;Count&quot;</span>, _(<span class="stringliteral">&quot;Object count&quot;</span>), _(<span class="stringliteral">&quot;Count the number of picked</span></div><div class="line"><span class="stringliteral">objects&quot;</span>), _(<span class="stringliteral">&quot;Objects&quot;</span>), <span class="stringliteral">&quot;res/conditions/nbObjet.png&quot;</span>)</div><div class="line">    .AddParameter(<span class="stringliteral">&quot;objectList&quot;</span>, _(<span class="stringliteral">&quot;Object&quot;</span>))</div><div class="line">    .SetFunctionName(<span class="stringliteral">&quot;getPickedObjectsCount&quot;</span>);</div></div><!-- fragment --></li>
-<li>objectListWithoutPicking : Same as objectList but do not pick object if they are not already picked.</li>
-<li>objectPtr : Return a reference to the object specified by the object name in another parameter. Example: <div class="fragment"><div class="line">.AddParameter(<span class="stringliteral">&quot;object&quot;</span>, _(<span class="stringliteral">&quot;Object&quot;</span>))</div><div class="line">.AddParameter(<span class="stringliteral">&quot;objectPtr&quot;</span>, _(<span class="stringliteral">&quot;Target object&quot;</span>))</div></div><!-- fragment --> </li>
+<li>objectList : a map containing lists of objects which are specified by the object name in another parameter.</li>
+<li>objectListOrEmptyIfJustDeclared : Same as <code>objectList</code> but do not pick object if they are not already picked.</li>
+<li>objectPtr: Return a reference to the object specified by the object name in another parameter. Example: <div class="fragment"><div class="line">.AddParameter(<span class="stringliteral">&quot;object&quot;</span>, _(<span class="stringliteral">&quot;Object&quot;</span>))</div><div class="line">.AddParameter(<span class="stringliteral">&quot;objectPtr&quot;</span>, _(<span class="stringliteral">&quot;Target object&quot;</span>))</div></div><!-- fragment --> </li>
 </ul>
 
 </div>
