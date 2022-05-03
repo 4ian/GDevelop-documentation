@@ -133,6 +133,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanHaveSubInstruction
 <tr class="separator:a57f82adb301bb1c112d2a2cf4f07743b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3abf812e3d2b0beba881deda6713f7a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a3abf812e3d2b0beba881deda6713f7a5">SetPrivate</a> ()</td></tr>
 <tr class="separator:a3abf812e3d2b0beba881deda6713f7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed473f086d9c8dd444d96b5190a8a6b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#aed473f086d9c8dd444d96b5190a8a6b4">IsAsync</a> () const</td></tr>
+<tr class="separator:aed473f086d9c8dd444d96b5190a8a6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fed60cc55db30137642cc8c3560424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a78fed60cc55db30137642cc8c3560424">SetAsync</a> ()</td></tr>
+<tr class="separator:a78fed60cc55db30137642cc8c3560424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab63f5ca342e0391c3050411d92f7d047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#ab63f5ca342e0391c3050411d92f7d047">SetCanHaveSubInstructions</a> ()</td></tr>
 <tr class="separator:ab63f5ca342e0391c3050411d92f7d047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48275cfd8aae0ac2637a71f7869a58a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#ab48275cfd8aae0ac2637a71f7869a58a">SetHidden</a> ()</td></tr>
@@ -435,6 +439,32 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 
 </div>
 </div>
+<a id="aed473f086d9c8dd444d96b5190a8a6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed473f086d9c8dd444d96b5190a8a6b4">&#9670;&nbsp;</a></span>IsAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::InstructionMetadata::IsAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the instruction is asynchronous - it will be running in the background, executing the instructions following it before the frame after it resolved. </p>
+
+</div>
+</div>
 <a id="a57f82adb301bb1c112d2a2cf4f07743b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57f82adb301bb1c112d2a2cf4f07743b">&#9670;&nbsp;</a></span>IsPrivate()</h2>
 
@@ -458,6 +488,32 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 </table>
 </div><div class="memdoc">
 <p>Check if the instruction is private - it can't be used outside of the object/ behavior that it is attached too. </p>
+
+</div>
+</div>
+<a id="a78fed60cc55db30137642cc8c3560424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78fed60cc55db30137642cc8c3560424">&#9670;&nbsp;</a></span>SetAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a>&amp; gd::InstructionMetadata::SetAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set that the instruction is asynchronous - it will be running in the background, executing the instructions following it before the frame after it resolved. </p>
 
 </div>
 </div>

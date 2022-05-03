@@ -62,7 +62,7 @@ var searchData=
   ['resetprojectuuid',['ResetProjectUuid',['../classgd_1_1_project.html#a4378e07b7a741b94d855052bac263ba7',1,'gd::Project']]],
   ['resourcesrenamer',['ResourcesRenamer',['../classgd_1_1_resources_renamer.html#aceaa10ec1028239c709ac68e41422f82',1,'gd::ResourcesRenamer']]],
   ['restrictsearchtolayer',['RestrictSearchToLayer',['../classgd_1_1_highest_z_order_finder.html#a097c97f7b36f481ee7fbc49ecb422bf5',1,'gd::HighestZOrderFinder']]],
-  ['reuse',['Reuse',['../classgd_1_1_events_code_generation_context.html#a1eb817f9eb7a36c2e32003640cd29f92',1,'gd::EventsCodeGenerationContext']]],
+  ['reuse',['Reuse',['../classgd_1_1_events_code_generation_context.html#a1b0851a0e6dcd3cd763724570f6e2953',1,'gd::EventsCodeGenerationContext']]],
   ['revision',['Revision',['../classgd_1_1_version_wrapper.html#af4dffce6497776e3a1d7fbc9e8e7f349',1,'gd::VersionWrapper']]],
   ['rfind',['rfind',['../classgd_1_1_string.html#a95f8027c3ddf78b4af7a8070955beda8',1,'gd::String::rfind(const String &amp;search, size_type pos=npos) const'],['../classgd_1_1_string.html#a31fd38c6bfdd36deb8b525f1f5d430bf',1,'gd::String::rfind(const char *search, size_type pos=npos) const'],['../classgd_1_1_string.html#aeffde86e13c5e6563cc17abd896f645b',1,'gd::String::rfind(const value_type &amp;search, size_type pos=npos) const']]],
   ['righttrim',['RightTrim',['../classgd_1_1_string.html#af1879ed23dfd007b2c04603b142de310',1,'gd::String']]],

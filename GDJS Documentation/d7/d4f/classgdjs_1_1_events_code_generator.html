@@ -84,9 +84,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac4961a39867d9c6c4a6ae7bec122a281"><td class="memItemLeft" align="right" valign="top">virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#ac4961a39867d9c6c4a6ae7bec122a281">GenerateEventsListCode</a> (gd::EventsList &amp;events, const gd::EventsCodeGenerationContext &amp;context)</td></tr>
-<tr class="memdesc:ac4961a39867d9c6c4a6ae7bec122a281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing an event list.  <a href="#ac4961a39867d9c6c4a6ae7bec122a281">More...</a><br /></td></tr>
-<tr class="separator:ac4961a39867d9c6c4a6ae7bec122a281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe71233232975dc3593cafe4a391c563"><td class="memItemLeft" align="right" valign="top">virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#afe71233232975dc3593cafe4a391c563">GenerateEventsListCode</a> (gd::EventsList &amp;events, gd::EventsCodeGenerationContext &amp;context)</td></tr>
+<tr class="memdesc:afe71233232975dc3593cafe4a391c563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate code for executing an event list.  <a href="#afe71233232975dc3593cafe4a391c563">More...</a><br /></td></tr>
+<tr class="separator:afe71233232975dc3593cafe4a391c563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a2d835b6f91e7cc355d12c33712e274"><td class="memItemLeft" align="right" valign="top">virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a7a2d835b6f91e7cc355d12c33712e274">GenerateConditionsListCode</a> (gd::InstructionsList &amp;conditions, gd::EventsCodeGenerationContext &amp;context)</td></tr>
 <tr class="separator:a7a2d835b6f91e7cc355d12c33712e274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fcc67cda0fce7f3d025a882b0d9e54"><td class="memItemLeft" align="right" valign="top"><a id="af6fcc67cda0fce7f3d025a882b0d9e54"></a>
@@ -140,12 +140,12 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 <tr class="memitem:a752362b34817dff7625e1eeab1a5dbd1"><td class="memItemLeft" align="right" valign="top"><a id="a752362b34817dff7625e1eeab1a5dbd1"></a>
 virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateBehaviorCondition</b> (const gd::String &amp;objectName, const gd::String &amp;behaviorName, const gd::BehaviorMetadata &amp;autoInfo, const std::vector&lt; gd::String &gt; &amp;arguments, const gd::InstructionMetadata &amp;instrInfos, const gd::String &amp;returnBoolean, bool conditionInverted, gd::EventsCodeGenerationContext &amp;context)</td></tr>
 <tr class="separator:a752362b34817dff7625e1eeab1a5dbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae6d18bf6143f8bfcb5445d7a1d2ade"><td class="memItemLeft" align="right" valign="top"><a id="a0ae6d18bf6143f8bfcb5445d7a1d2ade"></a>
-virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectAction</b> (const gd::String &amp;objectName, const gd::ObjectMetadata &amp;objInfo, const std::vector&lt; gd::String &gt; &amp;arguments, const gd::InstructionMetadata &amp;instrInfos, gd::EventsCodeGenerationContext &amp;context)</td></tr>
-<tr class="separator:a0ae6d18bf6143f8bfcb5445d7a1d2ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3abd7042529cd6e3ba5803c38e9f336"><td class="memItemLeft" align="right" valign="top"><a id="af3abd7042529cd6e3ba5803c38e9f336"></a>
-virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateBehaviorAction</b> (const gd::String &amp;objectName, const gd::String &amp;behaviorName, const gd::BehaviorMetadata &amp;autoInfo, const std::vector&lt; gd::String &gt; &amp;arguments, const gd::InstructionMetadata &amp;instrInfos, gd::EventsCodeGenerationContext &amp;context)</td></tr>
-<tr class="separator:af3abd7042529cd6e3ba5803c38e9f336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad377f319f319f0674788d2998373f7d7"><td class="memItemLeft" align="right" valign="top"><a id="ad377f319f319f0674788d2998373f7d7"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectAction</b> (const gd::String &amp;objectName, const gd::ObjectMetadata &amp;objInfo, const std::vector&lt; gd::String &gt; &amp;arguments, const gd::InstructionMetadata &amp;instrInfos, gd::EventsCodeGenerationContext &amp;context, const gd::String &amp;optionalAsyncCallbackName=&quot;&quot;)</td></tr>
+<tr class="separator:ad377f319f319f0674788d2998373f7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8694709c820d2ceaf8d93d38b3041b48"><td class="memItemLeft" align="right" valign="top"><a id="a8694709c820d2ceaf8d93d38b3041b48"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateBehaviorAction</b> (const gd::String &amp;objectName, const gd::String &amp;behaviorName, const gd::BehaviorMetadata &amp;autoInfo, const std::vector&lt; gd::String &gt; &amp;arguments, const gd::InstructionMetadata &amp;instrInfos, gd::EventsCodeGenerationContext &amp;context, const gd::String &amp;optionalAsyncCallbackName=&quot;&quot;)</td></tr>
+<tr class="separator:a8694709c820d2ceaf8d93d38b3041b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa6eca1649b653390b5cc9f5be4059b"><td class="memItemLeft" align="right" valign="top"><a id="a1fa6eca1649b653390b5cc9f5be4059b"></a>
 virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateGetBehaviorNameCode</b> (const gd::String &amp;behaviorName)</td></tr>
 <tr class="separator:a1fa6eca1649b653390b5cc9f5be4059b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +176,9 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 <tr class="memitem:adf85e2d243ce78c575cba4eb56c80949"><td class="memItemLeft" align="right" valign="top"><a id="adf85e2d243ce78c575cba4eb56c80949"></a>
 virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectsDeclarationCode</b> (gd::EventsCodeGenerationContext &amp;context)</td></tr>
 <tr class="separator:adf85e2d243ce78c575cba4eb56c80949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b3b7fab458cc990cc1df1cd6eacb5a4"><td class="memItemLeft" align="right" valign="top"><a id="a6b3b7fab458cc990cc1df1cd6eacb5a4"></a>
-virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateAllInstancesGetterCode</b> (gd::String &amp;objectName)</td></tr>
-<tr class="separator:a6b3b7fab458cc990cc1df1cd6eacb5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa2bb57863e698d5f52c7993538beff"><td class="memItemLeft" align="right" valign="top"><a id="a0aa2bb57863e698d5f52c7993538beff"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateAllInstancesGetterCode</b> (const gd::String &amp;objectName, gd::EventsCodeGenerationContext &amp;context)</td></tr>
+<tr class="separator:a0aa2bb57863e698d5f52c7993538beff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a599037e2ebda3694b690a62bc395a4ed"><td class="memItemLeft" align="right" valign="top"><a id="a599037e2ebda3694b690a62bc395a4ed"></a>
 virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateProfilerSectionBegin</b> (const gd::String &amp;section)</td></tr>
 <tr class="separator:a599037e2ebda3694b690a62bc395a4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,8 +395,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 
 </div>
 </div>
-<a id="ac4961a39867d9c6c4a6ae7bec122a281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4961a39867d9c6c4a6ae7bec122a281">&#9670;&nbsp;</a></span>GenerateEventsListCode()</h2>
+<a id="afe71233232975dc3593cafe4a391c563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe71233232975dc3593cafe4a391c563">&#9670;&nbsp;</a></span>GenerateEventsListCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +413,7 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const gd::EventsCodeGenerationContext &amp;&#160;</td>
+          <td class="paramtype">gd::EventsCodeGenerationContext &amp;&#160;</td>
           <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>

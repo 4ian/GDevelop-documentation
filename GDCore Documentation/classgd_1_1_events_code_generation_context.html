@@ -83,11 +83,13 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e0d0237aa1040ee653df8fc31df84e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a5e0d0237aa1040ee653df8fc31df84e2">EventsCodeGenerationContext</a> (unsigned int *maxDepthLevel_=nullptr)</td></tr>
 <tr class="separator:a5e0d0237aa1040ee653df8fc31df84e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accab68342bf1b1de21da92c6f7ba37e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#accab68342bf1b1de21da92c6f7ba37e4">InheritsFrom</a> (const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;parent)</td></tr>
-<tr class="separator:accab68342bf1b1de21da92c6f7ba37e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eb817f9eb7a36c2e32003640cd29f92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a1eb817f9eb7a36c2e32003640cd29f92">Reuse</a> (const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;parent)</td></tr>
-<tr class="memdesc:a1eb817f9eb7a36c2e32003640cd29f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">As InheritsFrom, mark the context as being the child of another one, but enabling the child context to use the same object lists.  <a href="#a1eb817f9eb7a36c2e32003640cd29f92">More...</a><br /></td></tr>
-<tr class="separator:a1eb817f9eb7a36c2e32003640cd29f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59743bc0d63acb581f382438b7f3c5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#ac59743bc0d63acb581f382438b7f3c5b">InheritsFrom</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;parent)</td></tr>
+<tr class="separator:ac59743bc0d63acb581f382438b7f3c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3ab0ee52fca0d22a0ea757e6d3acc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#aba3ab0ee52fca0d22a0ea757e6d3acc6">InheritsAsAsyncCallbackFrom</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;parent)</td></tr>
+<tr class="separator:aba3ab0ee52fca0d22a0ea757e6d3acc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0851a0e6dcd3cd763724570f6e2953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a1b0851a0e6dcd3cd763724570f6e2953">Reuse</a> (<a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;parent)</td></tr>
+<tr class="memdesc:a1b0851a0e6dcd3cd763724570f6e2953"><td class="mdescLeft">&#160;</td><td class="mdescRight">As InheritsFrom, mark the context as being the child of another one, but enabling the child context to use the same object lists.  <a href="#a1b0851a0e6dcd3cd763724570f6e2953">More...</a><br /></td></tr>
+<tr class="separator:a1b0851a0e6dcd3cd763724570f6e2953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcebf1b501c7d1e15d6250a5b1574d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#afcebf1b501c7d1e15d6250a5b1574d42">ForbidReuse</a> ()</td></tr>
 <tr class="memdesc:afcebf1b501c7d1e15d6250a5b1574d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forbid any optimization that would reuse and modify the object list from this context in children context.  <a href="#afcebf1b501c7d1e15d6250a5b1574d42">More...</a><br /></td></tr>
 <tr class="separator:afcebf1b501c7d1e15d6250a5b1574d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,10 +118,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a9db1fa58b644073fb26e4b132fb75430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d13d9f954ac3c781a968a71b8cb86b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a2d13d9f954ac3c781a968a71b8cb86b1">ObjectAlreadyDeclaredByParents</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName) const</td></tr>
 <tr class="separator:a2d13d9f954ac3c781a968a71b8cb86b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a511ad5274f54e00697a06090b0940d8d"><td class="memItemLeft" align="right" valign="top"><a id="a511ad5274f54e00697a06090b0940d8d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a511ad5274f54e00697a06090b0940d8d">SetObjectDeclared</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName)</td></tr>
-<tr class="memdesc:a511ad5274f54e00697a06090b0940d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consider that <em>objectName</em> is now declared in the context. <br /></td></tr>
-<tr class="separator:a511ad5274f54e00697a06090b0940d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf19515656109f30bb9b8471351515c"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#abcf19515656109f30bb9b8471351515c">GetAllObjectsToBeDeclared</a> () const</td></tr>
 <tr class="separator:abcf19515656109f30bb9b8471351515c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea79f9bf9a5741312d76fcbacafbc6f0"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#aea79f9bf9a5741312d76fcbacafbc6f0">GetObjectsListsToBeDeclared</a> () const</td></tr>
@@ -147,9 +145,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a2256ecf118101b867d5d8c0c5429b82d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a2256ecf118101b867d5d8c0c5429b82d">GetCurrentConditionDepth</a> () const</td></tr>
 <tr class="memdesc:a2256ecf118101b867d5d8c0c5429b82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current condition depth : The depth is increased each time a custom condition code is generated, and decreased when the condition generation is done.  <a href="#a2256ecf118101b867d5d8c0c5429b82d">More...</a><br /></td></tr>
 <tr class="separator:a2256ecf118101b867d5d8c0c5429b82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51146875498d53c842052a55b403d940"><td class="memItemLeft" align="right" valign="top">const std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a51146875498d53c842052a55b403d940">GetAllDeclaredObjectsAcrossChildren</a> ()</td></tr>
+<tr class="memdesc:a51146875498d53c842052a55b403d940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of all objects declared in this context and subcontexts.  <a href="#a51146875498d53c842052a55b403d940">More...</a><br /></td></tr>
+<tr class="separator:a51146875498d53c842052a55b403d940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b09f9517d2032829c799a252a8afdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a58b09f9517d2032829c799a252a8afdc">ShouldUseAsyncObjectsList</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName) const</td></tr>
+<tr class="separator:a58b09f9517d2032829c799a252a8afdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39fbdb22af8e79f1b7d499b5e92a4b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#aa39fbdb22af8e79f1b7d499b5e92a4b7">IsInsideAsync</a> () const</td></tr>
+<tr class="separator:aa39fbdb22af8e79f1b7d499b5e92a4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e1655f32bbb70b48c3f61694354856"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#af6e1655f32bbb70b48c3f61694354856">IsAsyncCallback</a> () const</td></tr>
+<tr class="separator:af6e1655f32bbb70b48c3f61694354856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346ef476252077538555fa65925471fb"><td class="memItemLeft" align="right" valign="top"><a id="a346ef476252077538555fa65925471fb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_code_generation_context.html#a346ef476252077538555fa65925471fb">IsToBeDeclared</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;objectName)</td></tr>
-<tr class="memdesc:a346ef476252077538555fa65925471fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given object is already going to be declared (either as a traditional objects list, or an empty one). <br /></td></tr>
+<tr class="memdesc:a346ef476252077538555fa65925471fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given object is already going to be declared in this context (either as a traditional objects list, or an empty one). <br /></td></tr>
 <tr class="separator:a346ef476252077538555fa65925471fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -248,6 +255,35 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
 
 </div>
 </div>
+<a id="a51146875498d53c842052a55b403d940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51146875498d53c842052a55b403d940">&#9670;&nbsp;</a></span>GetAllDeclaredObjectsAcrossChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;<a class="el" href="classgd_1_1_string.html">gd::String</a>&gt;&amp; gd::EventsCodeGenerationContext::GetAllDeclaredObjectsAcrossChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the list of all objects declared in this context and subcontexts. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Only works on an async callback's context.</dd></dl>
+<p>It is to be used by the Async event code generator to know what objects lists to backup for the async callback and async callbacks after it. </p>
+
+</div>
+</div>
 <a id="abcf19515656109f30bb9b8471351515c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcf19515656109f30bb9b8471351515c">&#9670;&nbsp;</a></span>GetAllObjectsToBeDeclared()</h2>
 
@@ -262,7 +298,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return all the objects lists which will be declared by the current context ( the non empty as well as the empty objects lists ) </p>
+<p>Return all the objects lists which will be declared by the current context (normal, potentially empty or empty). </p>
 
 </div>
 </div>
@@ -417,7 +453,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the objects lists which will be declared by the current context </p>
+<p>Return the objects lists which will be declared by the current context. </p>
 
 </div>
 </div>
@@ -501,8 +537,27 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
 
 </div>
 </div>
-<a id="accab68342bf1b1de21da92c6f7ba37e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accab68342bf1b1de21da92c6f7ba37e4">&#9670;&nbsp;</a></span>InheritsFrom()</h2>
+<a id="aba3ab0ee52fca0d22a0ea757e6d3acc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba3ab0ee52fca0d22a0ea757e6d3acc6">&#9670;&nbsp;</a></span>InheritsAsAsyncCallbackFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::EventsCodeGenerationContext::InheritsAsAsyncCallbackFrom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call this method to make an <a class="el" href="classgd_1_1_events_code_generation_context.html" title="Used to manage the context when generating code for events. ">EventsCodeGenerationContext</a> as a "child" of another one, but in the context of an async function. </p>
+
+</div>
+</div>
+<a id="ac59743bc0d63acb581f382438b7f3c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59743bc0d63acb581f382438b7f3c5b">&#9670;&nbsp;</a></span>InheritsFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,13 +565,65 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
         <tr>
           <td class="memname">void gd::EventsCodeGenerationContext::InheritsFrom </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;&#160;</td>
           <td class="paramname"><em>parent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Call this method to make an <a class="el" href="classgd_1_1_events_code_generation_context.html" title="Used to manage the context when generating code for events. ">EventsCodeGenerationContext</a> as a "child" of another one. The child will then for example not declare again objects already declared by its parent. </p>
+
+</div>
+</div>
+<a id="af6e1655f32bbb70b48c3f61694354856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e1655f32bbb70b48c3f61694354856">&#9670;&nbsp;</a></span>IsAsyncCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::EventsCodeGenerationContext::IsAsyncCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the code currently being generated is an asynchronous callback (but not a child of an asynchronous callback). </p>
+
+</div>
+</div>
+<a id="aa39fbdb22af8e79f1b7d499b5e92a4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39fbdb22af8e79f1b7d499b5e92a4b7">&#9670;&nbsp;</a></span>IsInsideAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::EventsCodeGenerationContext::IsInsideAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the code currently being generated is inside an asynchronous context (either in an asynchronous callback, or in a children of an asynchronous callback). </p>
 
 </div>
 </div>
@@ -547,7 +654,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
 </div><div class="memdoc">
 
 <p>Check if twos context have the same list for an object. </p>
-<p>This can be the case when a context is reusing the lists of another (see <a class="el" href="classgd_1_1_events_code_generation_context.html#a1eb817f9eb7a36c2e32003640cd29f92" title="As InheritsFrom, mark the context as being the child of another one, but enabling the child context t...">gd::EventsCodeGenerationContext::Reuse</a>). </p>
+<p>This can be the case when a context is reusing the lists of another (see <a class="el" href="classgd_1_1_events_code_generation_context.html#a1b0851a0e6dcd3cd763724570f6e2953" title="As InheritsFrom, mark the context as being the child of another one, but enabling the child context t...">gd::EventsCodeGenerationContext::Reuse</a>). </p>
 
 </div>
 </div>
@@ -619,8 +726,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
 
 </div>
 </div>
-<a id="a1eb817f9eb7a36c2e32003640cd29f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eb817f9eb7a36c2e32003640cd29f92">&#9670;&nbsp;</a></span>Reuse()</h2>
+<a id="a1b0851a0e6dcd3cd763724570f6e2953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0851a0e6dcd3cd763724570f6e2953">&#9670;&nbsp;</a></span>Reuse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +735,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
         <tr>
           <td class="memname">void gd::EventsCodeGenerationContext::Reuse </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_events_code_generation_context.html">EventsCodeGenerationContext</a> &amp;&#160;</td>
           <td class="paramname"><em>parent</em></td><td>)</td>
           <td></td>
         </tr>
@@ -690,6 +797,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EventsCodeGenerator<
 </table>
 </div><div class="memdoc">
 <p>Set that no particular object is being handled by an instruction. </p>
+
+</div>
+</div>
+<a id="a58b09f9517d2032829c799a252a8afdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b09f9517d2032829c799a252a8afdc">&#9670;&nbsp;</a></span>ShouldUseAsyncObjectsList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::EventsCodeGenerationContext::ShouldUseAsyncObjectsList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if an object list should be gotten from a backed up objects list instead of the parent context. This can happen inside an asynchronous callback or a child context of an asynchronous callback (i.e: the <code>asyncDepth</code> is not 0). </p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@ var searchData=
   ['entercustomcondition',['EnterCustomCondition',['../classgd_1_1_events_code_generation_context.html#a69469bf336a0e1219502c4aad00273fa',1,'gd::EventsCodeGenerationContext']]],
   ['erase',['Erase',['../class_generic_pointer.html#a759c07e81c9738e7a2a68b36d5c28643',1,'GenericPointer::Erase()'],['../classgd_1_1_string.html#ad0b988e0d91a3d5321a5483495b4238e',1,'gd::String::erase(iterator first, iterator last)'],['../classgd_1_1_string.html#aec3a7ada7fa952ba4d96d4119d358b7d',1,'gd::String::erase(iterator p)'],['../classgd_1_1_string.html#a8bc6ea70f1f7cfe460d05248faa6dab1',1,'gd::String::erase(size_type pos=0, size_type len=npos)']]],
   ['error_2eh',['error.h',['../error_8h.html',1,'']]],
-  ['erroroccurred',['errorOccurred',['../classgd_1_1_events_code_generator.html#ae078863765c6faa3a97f0ef72121460e',1,'gd::EventsCodeGenerator::errorOccurred()'],['../classgd_1_1_events_code_generator.html#ae4eea93213a65769dbd2b8d8f55d9d73',1,'gd::EventsCodeGenerator::ErrorOccurred() const']]],
+  ['erroroccurred',['ErrorOccurred',['../classgd_1_1_events_code_generator.html#ae4eea93213a65769dbd2b8d8f55d9d73',1,'gd::EventsCodeGenerator::ErrorOccurred() const'],['../classgd_1_1_events_code_generator.html#ae078863765c6faa3a97f0ef72121460e',1,'gd::EventsCodeGenerator::errorOccurred()']]],
   ['eventmetadata',['EventMetadata',['../classgd_1_1_event_metadata.html',1,'gd']]],
   ['events_20_28classes_20defining_20the_20event_20system_20and_20some_20tools_20associated_20with_20events_29',['Events (Classes defining the event system and some tools associated with events)',['../group___events.html',1,'']]],
   ['eventsbasedbehavior',['EventsBasedBehavior',['../classgd_1_1_events_based_behavior.html',1,'gd']]],
