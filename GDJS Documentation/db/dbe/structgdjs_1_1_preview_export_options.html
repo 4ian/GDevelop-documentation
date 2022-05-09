@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html#ac4c9f5d4bdbf88903ff563b2381c3972">SetNonRuntimeScriptsCacheBurst</a> (unsigned int value)</td></tr>
 <tr class="memdesc:ac4c9f5d4bdbf88903ff563b2381c3972"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to a non zero value, the exported script URLs will have an extra search parameter added (with the given value) to ensure browser cache is bypassed when they are loaded. <br /></td></tr>
 <tr class="separator:ac4c9f5d4bdbf88903ff563b2381c3972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3903ccd881c7ea0a205aa19086461cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html#a3903ccd881c7ea0a205aa19086461cca">SetElectronRemoteRequirePath</a> (const gd::String &amp;electronRemoteRequirePath_)</td></tr>
+<tr class="separator:a3903ccd881c7ea0a205aa19086461cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -151,6 +153,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>fullLoadingScreen</b>
 <tr class="memitem:afe43ae4838dd3ff4896b5fa13f806b8c"><td class="memItemLeft" align="right" valign="top"><a id="afe43ae4838dd3ff4896b5fa13f806b8c"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nonRuntimeScriptsCacheBurst</b></td></tr>
 <tr class="separator:afe43ae4838dd3ff4896b5fa13f806b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050f36a127a7f92ad06684ef232fa193"><td class="memItemLeft" align="right" valign="top"><a id="a050f36a127a7f92ad06684ef232fa193"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>electronRemoteRequirePath</b></td></tr>
+<tr class="separator:a050f36a127a7f92ad06684ef232fa193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The options used to export a project for a preview. </p>
@@ -195,6 +200,34 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nonRuntimeScr
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3903ccd881c7ea0a205aa19086461cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3903ccd881c7ea0a205aa19086461cca">&#9670;&nbsp;</a></span>SetElectronRemoteRequirePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a>&amp; gdjs::PreviewExportOptions::SetElectronRemoteRequirePath </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>electronRemoteRequirePath_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the path to use for the game engine to require "@electron/remote". This is because the preview is run in a folder without any node_module, but this is still required for now for some features. This should be removed once the dependency to "@electron/remote" is removed. </p>
 
 </div>
 </div>
