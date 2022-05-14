@@ -13,8 +13,9 @@ var searchData=
   ['variablebracketaccessornode',['VariableBracketAccessorNode',['../structgd_1_1_variable_bracket_accessor_node.html',1,'gd']]],
   ['variablenode',['VariableNode',['../structgd_1_1_variable_node.html',1,'gd']]],
   ['variablescontainer',['VariablesContainer',['../classgd_1_1_variables_container.html',1,'gd']]],
+  ['vector2',['Vector2',['../classgd_1_1_vector2.html',1,'gd::Vector2&lt; T &gt;'],['../classgd_1_1_vector2.html#a18458f0f00fa2f541f2b5d502f128951',1,'gd::Vector2::Vector2()'],['../classgd_1_1_vector2.html#a994fcfe8cdffd2698031b0f44fda0ee8',1,'gd::Vector2::Vector2(T X, T Y)'],['../classgd_1_1_vector2.html#a763e9dd408e6dbf5dde0e2dcb97aa844',1,'gd::Vector2::Vector2(const Vector2&lt; U &gt; &amp;vector)']]],
   ['versionwrapper',['VersionWrapper',['../classgd_1_1_version_wrapper.html',1,'gd']]],
   ['versionwrapper_2eh',['VersionWrapper.h',['../_version_wrapper_8h.html',1,'']]],
-  ['vertices',['vertices',['../class_polygon2d.html#a9c7da828e5f97e1cf85ad15b05e20b97',1,'Polygon2d']]],
+  ['vertices',['vertices',['../class_polygon2d.html#abae62036315ddeb927bbe0221efdff00',1,'Polygon2d']]],
   ['videoresource',['VideoResource',['../classgd_1_1_video_resource.html',1,'gd']]]
 ];

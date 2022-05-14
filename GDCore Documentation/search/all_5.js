@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edges',['edges',['../class_polygon2d.html#a45b7428e12a193c12faab129670baddb',1,'Polygon2d']]],
+  ['edges',['edges',['../class_polygon2d.html#ab30d739d6df96d3153f8a16ba711ab50',1,'Polygon2d']]],
   ['editorsettings',['EditorSettings',['../classgd_1_1_editor_settings.html',1,'gd']]],
   ['effect',['Effect',['../classgd_1_1_effect.html',1,'gd']]],
   ['effectmetadata',['EffectMetadata',['../classgd_1_1_effect_metadata.html',1,'gd::EffectMetadata'],['../classgd_1_1_effect_metadata.html#a4cfd4b2602398a61e23dc0a44c5b6e50',1,'gd::EffectMetadata::EffectMetadata(const gd::String &amp;type_)'],['../classgd_1_1_effect_metadata.html#ac59d020c796c3270e5fcdd72176497ab',1,'gd::EffectMetadata::EffectMetadata()']]],

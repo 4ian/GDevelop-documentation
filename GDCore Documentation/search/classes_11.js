@@ -11,7 +11,6 @@ var searchData=
   ['serializer',['Serializer',['../classgd_1_1_serializer.html',1,'gd']]],
   ['serializerelement',['SerializerElement',['../classgd_1_1_serializer_element.html',1,'gd']]],
   ['serializervalue',['SerializerValue',['../classgd_1_1_serializer_value.html',1,'gd']]],
-  ['sfmlfilestream',['SFMLFileStream',['../classgd_1_1_s_f_m_l_file_stream.html',1,'gd']]],
   ['shortstring',['ShortString',['../struct_generic_value_1_1_short_string.html',1,'GenericValue']]],
   ['sourcefile',['SourceFile',['../classgd_1_1_source_file.html',1,'gd']]],
   ['sprite',['Sprite',['../classgd_1_1_sprite.html',1,'gd']]],

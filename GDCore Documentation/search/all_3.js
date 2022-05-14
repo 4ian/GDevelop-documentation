@@ -34,7 +34,7 @@ var searchData=
   ['compilationforruntime',['compilationForRuntime',['../classgd_1_1_events_code_generator.html#a440f6ac796579a721eb4b2c100d11547',1,'gd::EventsCodeGenerator']]],
   ['compilationinfo',['CompilationInfo',['../classgd_1_1_compilation_info.html',1,'gd']]],
   ['completionkind',['CompletionKind',['../structgd_1_1_expression_completion_description.html#a81155b53aa7df251338d10f2163628bc',1,'gd::ExpressionCompletionDescription']]],
-  ['computecenter',['ComputeCenter',['../class_polygon2d.html#ac0359d2dea8e35f18407e13c8e6fd756',1,'Polygon2d']]],
+  ['computecenter',['ComputeCenter',['../class_polygon2d.html#a1a433931ae3dbe98a5baed463ac8de6e',1,'Polygon2d']]],
   ['computeedges',['ComputeEdges',['../class_polygon2d.html#aba17043ca71f503dacab45b38962e245',1,'Polygon2d']]],
   ['considerasarray',['ConsiderAsArray',['../classgd_1_1_serializer_element.html#a4f2f6aa557e22046afcfc7efbbab0d16',1,'gd::SerializerElement']]],
   ['considerasarrayof',['ConsiderAsArrayOf',['../classgd_1_1_serializer_element.html#acefcadd01ed6f0ee52f142814e328015',1,'gd::SerializerElement']]],

@@ -19,7 +19,7 @@ var searchData=
   ['closelibrary',['CloseLibrary',['../namespacegd.html#a4ca0493cccd6c7b8b870bfcc019c0477',1,'gd']]],
   ['code',['Code',['../struct_parse_result.html#a2aae3c2f42b31cc2409ee1e03bc4852e',1,'ParseResult']]],
   ['compare',['compare',['../classgd_1_1_string.html#a533509875743fa673086bd9dbe189579',1,'gd::String']]],
-  ['computecenter',['ComputeCenter',['../class_polygon2d.html#ac0359d2dea8e35f18407e13c8e6fd756',1,'Polygon2d']]],
+  ['computecenter',['ComputeCenter',['../class_polygon2d.html#a1a433931ae3dbe98a5baed463ac8de6e',1,'Polygon2d']]],
   ['computeedges',['ComputeEdges',['../class_polygon2d.html#aba17043ca71f503dacab45b38962e245',1,'Polygon2d']]],
   ['considerasarray',['ConsiderAsArray',['../classgd_1_1_serializer_element.html#a4f2f6aa557e22046afcfc7efbbab0d16',1,'gd::SerializerElement']]],
   ['considerasarrayof',['ConsiderAsArrayOf',['../classgd_1_1_serializer_element.html#acefcadd01ed6f0ee52f142814e328015',1,'gd::SerializerElement']]],

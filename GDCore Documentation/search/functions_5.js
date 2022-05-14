@@ -28,7 +28,6 @@ var searchData=
   ['from',['From',['../classgd_1_1_string.html#a231c9dde51cb369cf6350460d5a68401',1,'gd::String']]],
   ['fromjson',['FromJSON',['../classgd_1_1_serializer.html#a8d2956f78184593fcb2eaf5e13c07a92',1,'gd::Serializer::FromJSON(const char *json)'],['../classgd_1_1_serializer.html#a89689319b02fa88e129597ffb1649dfc',1,'gd::Serializer::FromJSON(const gd::String &amp;json)']]],
   ['fromlocale',['FromLocale',['../classgd_1_1_string.html#ad194af4b2c569870b7f4b40289c957a1',1,'gd::String']]],
-  ['fromsfstring',['FromSfString',['../classgd_1_1_string.html#a0cbcef838f1158ae7127546bbbdb8646',1,'gd::String']]],
   ['fromutf32',['FromUTF32',['../classgd_1_1_string.html#a9a77becf3de120eba1b3c1a68341fb20',1,'gd::String']]],
   ['fromutf8',['FromUTF8',['../classgd_1_1_string.html#af5b5cdaaedb1cf65e78e7c6d2f18d253',1,'gd::String']]],
   ['fromwide',['FromWide',['../classgd_1_1_string.html#a18d19e438d8273e2881752155993b850',1,'gd::String']]],
