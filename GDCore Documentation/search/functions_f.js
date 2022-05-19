@@ -53,7 +53,7 @@ var searchData=
   ['setfilename',['SetFileName',['../classgd_1_1_source_file.html#adf43bd807f6b93a8724b2c2ba9e3d120',1,'gd::SourceFile']]],
   ['setfirstlayout',['SetFirstLayout',['../classgd_1_1_project.html#aca132134e31018e4088d1150a4e31e3a',1,'gd::Project']]],
   ['setfloatvalue',['SetFloatValue',['../classgd_1_1_serializer_element.html#a671669b6480768babca304faf4127a0d',1,'gd::SerializerElement']]],
-  ['setfolded',['SetFolded',['../classgd_1_1_base_event.html#a6cb5d8821474f9251c2fe3a7c0c92311',1,'gd::BaseEvent']]],
+  ['setfolded',['SetFolded',['../classgd_1_1_base_event.html#a6cb5d8821474f9251c2fe3a7c0c92311',1,'gd::BaseEvent::SetFolded()'],['../classgd_1_1_variable.html#af82b592f925c89495e9fca971775ff84',1,'gd::Variable::SetFolded()']]],
   ['setfolderproject',['SetFolderProject',['../classgd_1_1_project.html#a60a1a84864ead9f4cd0f6ddc38b2797e',1,'gd::Project']]],
   ['setfollowbaselayercamera',['SetFollowBaseLayerCamera',['../classgd_1_1_layer.html#aceb246e9010e26bfa6cce2bc8545aa79',1,'gd::Layer']]],
   ['setformatoptions',['SetFormatOptions',['../class_pretty_writer.html#a1ff9dbeff9b9c724080cb65987a41b73',1,'PrettyWriter']]],
