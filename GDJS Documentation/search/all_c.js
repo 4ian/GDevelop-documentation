@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['overview_20of_20the_20js_20platform',['Overview of the JS Platform',['../d4/d8c/_overview_of_g_d_j_s.html',1,'index']]]
+  ['previewexportoptions',['PreviewExportOptions',['../db/dbe/structgdjs_1_1_preview_export_options.html',1,'gdjs::PreviewExportOptions'],['../db/dbe/structgdjs_1_1_preview_export_options.html#ab380d6c21d7dbffc4ee6f6492238c22e',1,'gdjs::PreviewExportOptions::PreviewExportOptions()']]]
 ];
