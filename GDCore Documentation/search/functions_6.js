@@ -369,6 +369,7 @@ var searchData=
   ['getsourceproject',['GetSourceProject',['../classgd_1_1_unfilled_required_behavior_property_problem.html#abdf580b93b3d82f67a4a84c012235a2b',1,'gd::UnfilledRequiredBehaviorPropertyProblem']]],
   ['getsourcepropertyname',['GetSourcePropertyName',['../classgd_1_1_unfilled_required_behavior_property_problem.html#a6bc6e5ada6fdc1238d300b4414211f6a',1,'gd::UnfilledRequiredBehaviorPropertyProblem']]],
   ['getsprite',['GetSprite',['../classgd_1_1_direction.html#ac075ec2b3960e23cce107355b07457b6',1,'gd::Direction::GetSprite(std::size_t nb) const'],['../classgd_1_1_direction.html#a4ccb39fff8b7ce93c40c3c759fa8c374',1,'gd::Direction::GetSprite(std::size_t nb)']]],
+  ['getspritenames',['GetSpriteNames',['../classgd_1_1_direction.html#ae7598db53a99e2980db10930b4176a35',1,'gd::Direction']]],
   ['getspritescount',['GetSpritesCount',['../classgd_1_1_direction.html#a8dfb9828a25a5e56bfa715442acb2fd7',1,'gd::Direction']]],
   ['getstackcapacity',['GetStackCapacity',['../class_generic_document.html#a9e2e543c326b8b981d4f2c3d6793d15b',1,'GenericDocument']]],
   ['getstrexpressionmetadata',['GetStrExpressionMetadata',['../classgd_1_1_metadata_provider.html#a9e6534f6a739d4ce0def5e0cddef960f',1,'gd::MetadataProvider']]],
