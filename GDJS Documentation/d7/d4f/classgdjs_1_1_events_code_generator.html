@@ -113,8 +113,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a115028bcc01f8045ea0a2e66c5a41b14"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a115028bcc01f8045ea0a2e66c5a41b14">GenerateLayoutCode</a> (gd::Project &amp;project, const gd::Layout &amp;scene, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
-<tr class="separator:a115028bcc01f8045ea0a2e66c5a41b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749810f9a97c3f2562a2f240477ae06f"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a749810f9a97c3f2562a2f240477ae06f">GenerateLayoutCode</a> (const gd::Project &amp;project, const gd::Layout &amp;scene, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
+<tr class="separator:a749810f9a97c3f2562a2f240477ae06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#ae567a74cf8e5d02e105f5267a93f0ea8">GenerateEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
 <tr class="separator:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a3be06b50064b2fdc41a5ecb790ab8861">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
@@ -122,9 +122,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac5eebf217754ac92afd06936fe0a9f8b"><td class="memItemLeft" align="right" valign="top"><a id="ac5eebf217754ac92afd06936fe0a9f8b"></a>
-virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateParameterCodes</b> (const gd::String &amp;parameter, const gd::ParameterMetadata &amp;metadata, gd::EventsCodeGenerationContext &amp;context, const gd::String &amp;lastObjectName, std::vector&lt; std::pair&lt; gd::String, gd::String &gt; &gt; *supplementaryParametersTypes)</td></tr>
-<tr class="separator:ac5eebf217754ac92afd06936fe0a9f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c045d5d76f2e07e42c34209ed190493"><td class="memItemLeft" align="right" valign="top"><a id="a6c045d5d76f2e07e42c34209ed190493"></a>
+virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateParameterCodes</b> (const gd::Expression &amp;parameter, const gd::ParameterMetadata &amp;metadata, gd::EventsCodeGenerationContext &amp;context, const gd::String &amp;lastObjectName, std::vector&lt; std::pair&lt; gd::String, gd::String &gt; &gt; *supplementaryParametersTypes)</td></tr>
+<tr class="separator:a6c045d5d76f2e07e42c34209ed190493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc06ac895b42a581a89371c57e885084"><td class="memItemLeft" align="right" valign="top"><a id="afc06ac895b42a581a89371c57e885084"></a>
 virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateObjectFunctionCall</b> (gd::String objectListName, const gd::ObjectMetadata &amp;objMetadata, const gd::ExpressionCodeGenerationInformation &amp;codeInfo, gd::String parametersStr, gd::String defaultOutput, gd::EventsCodeGenerationContext &amp;context)</td></tr>
 <tr class="separator:afc06ac895b42a581a89371c57e885084"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -442,8 +442,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 
 </div>
 </div>
-<a id="a115028bcc01f8045ea0a2e66c5a41b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a115028bcc01f8045ea0a2e66c5a41b14">&#9670;&nbsp;</a></span>GenerateLayoutCode()</h2>
+<a id="a749810f9a97c3f2562a2f240477ae06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749810f9a97c3f2562a2f240477ae06f">&#9670;&nbsp;</a></span>GenerateLayoutCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +454,7 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
         <tr>
           <td class="memname">gd::String gdjs::EventsCodeGenerator::GenerateLayoutCode </td>
           <td>(</td>
-          <td class="paramtype">gd::Project &amp;&#160;</td>
+          <td class="paramtype">const gd::Project &amp;&#160;</td>
           <td class="paramname"><em>project</em>, </td>
         </tr>
         <tr>

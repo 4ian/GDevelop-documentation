@@ -92,10 +92,21 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression.html#aa1ff91b3bdec0fc256901440c9f24bd2">Expression</a> (const char *plainString_)</td></tr>
 <tr class="memdesc:aa1ff91b3bdec0fc256901440c9f24bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an expression from a const char *. <br /></td></tr>
 <tr class="separator:aa1ff91b3bdec0fc256901440c9f24bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8e643056f6b1ed327a84cf044e5829"><td class="memItemLeft" align="right" valign="top"><a id="aea8e643056f6b1ed327a84cf044e5829"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression.html#aea8e643056f6b1ed327a84cf044e5829">Expression</a> (const <a class="el" href="classgd_1_1_expression.html">Expression</a> &amp;copy)</td></tr>
+<tr class="memdesc:aea8e643056f6b1ed327a84cf044e5829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy construct an expression. <br /></td></tr>
+<tr class="separator:aea8e643056f6b1ed327a84cf044e5829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a75e73ea244960aeba3861c0bc1dfea"><td class="memItemLeft" align="right" valign="top"><a id="a0a75e73ea244960aeba3861c0bc1dfea"></a>
+<a class="el" href="classgd_1_1_expression.html">Expression</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression.html#a0a75e73ea244960aeba3861c0bc1dfea">operator=</a> (const <a class="el" href="classgd_1_1_expression.html">Expression</a> &amp;expression)</td></tr>
+<tr class="memdesc:a0a75e73ea244960aeba3861c0bc1dfea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classgd_1_1_expression.html" title="Class representing an expression used as a parameter of a gd::Instruction. This class is nothing more...">Expression</a> affectation overriding. <br /></td></tr>
+<tr class="separator:a0a75e73ea244960aeba3861c0bc1dfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44f942a05e94761dad3c862a3a429d7d"><td class="memItemLeft" align="right" valign="top"><a id="a44f942a05e94761dad3c862a3a429d7d"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression.html#a44f942a05e94761dad3c862a3a429d7d">GetPlainString</a> () const</td></tr>
 <tr class="memdesc:a44f942a05e94761dad3c862a3a429d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the plain string representing the expression. <br /></td></tr>
 <tr class="separator:a44f942a05e94761dad3c862a3a429d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1feae7c85eeaafac1fa2c5f594fab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgd_1_1_expression_node.html">gd::ExpressionNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression.html#a6e1feae7c85eeaafac1fa2c5f594fab9">GetRootNode</a> () const</td></tr>
+<tr class="memdesc:a6e1feae7c85eeaafac1fa2c5f594fab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the expression node.  <a href="#a6e1feae7c85eeaafac1fa2c5f594fab9">More...</a><br /></td></tr>
+<tr class="separator:a6e1feae7c85eeaafac1fa2c5f594fab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d1504c94181ee0697d7c697502c151"><td class="memItemLeft" align="right" valign="top"><a id="a59d1504c94181ee0697d7c697502c151"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_expression.html#a59d1504c94181ee0697d7c697502c151">c_str</a> () const</td></tr>
 <tr class="memdesc:a59d1504c94181ee0697d7c697502c151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mimics std::string::c_str. <br /></td></tr>
@@ -104,8 +115,30 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing an expression used as a parameter of a <a class="el" href="classgd_1_1_instruction.html" title="An instruction is a member of an event: It can be a condition or an action. ">gd::Instruction</a>. This class is nothing more than a wrapper around a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_instruction.html" title="An instruction is a member of an event: It can be a condition or an action. ">gd::Instruction</a> </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6e1feae7c85eeaafac1fa2c5f594fab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1feae7c85eeaafac1fa2c5f594fab9">&#9670;&nbsp;</a></span>GetRootNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgd_1_1_expression_node.html">ExpressionNode</a> * gd::Expression::GetRootNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the expression node. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::unique_ptr&lt;gd::ExpressionNode&gt; </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_expression_8h_source.html">Expression.h</a></li>
+<li>Expression.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

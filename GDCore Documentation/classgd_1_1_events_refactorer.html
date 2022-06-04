@@ -86,8 +86,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a115b84b43501bd634c01af1e64e682a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee6b00c825ec51738f2837b5fa4679c9"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classgd_1_1_events_search_result.html">EventsSearchResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_refactorer.html#aee6b00c825ec51738f2837b5fa4679c9">SearchInEvents</a> (const <a class="el" href="classgd_1_1_platform.html">gd::Platform</a> &amp;platform, <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;events, <a class="el" href="classgd_1_1_string.html">gd::String</a> search, bool matchCase, bool inConditions, bool inActions, bool inEventStrings, bool inEventSentences)</td></tr>
 <tr class="separator:aee6b00c825ec51738f2837b5fa4679c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad248ee59d40be441e4f4c554b1713311"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_refactorer.html#ad248ee59d40be441e4f4c554b1713311">ReplaceStringInEvents</a> (<a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;project, <a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;layout, <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;events, <a class="el" href="classgd_1_1_string.html">gd::String</a> toReplace, <a class="el" href="classgd_1_1_string.html">gd::String</a> newString, bool matchCase, bool inConditions, bool inActions, bool inEventString)</td></tr>
-<tr class="separator:ad248ee59d40be441e4f4c554b1713311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9076920a24754c210a88d3190b5f3c80"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classgd_1_1_events_search_result.html">EventsSearchResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_refactorer.html#a9076920a24754c210a88d3190b5f3c80">ReplaceStringInEvents</a> (<a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;project, <a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;layout, <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;events, <a class="el" href="classgd_1_1_string.html">gd::String</a> toReplace, <a class="el" href="classgd_1_1_string.html">gd::String</a> newString, bool matchCase, bool inConditions, bool inActions, bool inEventString)</td></tr>
+<tr class="separator:a9076920a24754c210a88d3190b5f3c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class containing functions to do refactoring tasks on events. </p>
@@ -210,8 +210,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad248ee59d40be441e4f4c554b1713311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad248ee59d40be441e4f4c554b1713311">&#9670;&nbsp;</a></span>ReplaceStringInEvents()</h2>
+<a id="a9076920a24754c210a88d3190b5f3c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9076920a24754c210a88d3190b5f3c80">&#9670;&nbsp;</a></span>ReplaceStringInEvents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +220,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void gd::EventsRefactorer::ReplaceStringInEvents </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classgd_1_1_events_search_result.html">EventsSearchResult</a> &gt; gd::EventsRefactorer::ReplaceStringInEvents </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;&#160;</td>
           <td class="paramname"><em>project</em>, </td>
@@ -285,7 +285,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Replace all occurrences of a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> in events </p>
+<p>Replace all occurrences of a <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">gd::String</a> in events</p>
+<dl class="section return"><dt>Returns</dt><dd>A vector of all modified events. </dd></dl>
 
 </div>
 </div>

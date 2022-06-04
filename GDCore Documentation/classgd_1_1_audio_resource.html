@@ -91,9 +91,9 @@ virtual <a class="el" href="classgd_1_1_audio_resource.html">AudioResource</a> *
 <tr class="memitem:a543312e18667497f21355510ef4fb823"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a543312e18667497f21355510ef4fb823">SetFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newFile) override</td></tr>
 <tr class="memdesc:a543312e18667497f21355510ef4fb823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change, if applicable, the file of the resource.  <a href="#a543312e18667497f21355510ef4fb823">More...</a><br /></td></tr>
 <tr class="separator:a543312e18667497f21355510ef4fb823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e48b32eab5f8d1d0d92e174b6013dd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a23e48b32eab5f8d1d0d92e174b6013dd">UseFile</a> () override</td></tr>
-<tr class="memdesc:a23e48b32eab5f8d1d0d92e174b6013dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the resource use a file.  <a href="#a23e48b32eab5f8d1d0d92e174b6013dd">More...</a><br /></td></tr>
-<tr class="separator:a23e48b32eab5f8d1d0d92e174b6013dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0aeb01897eb889c3a30e890d6d4aed"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a6a0aeb01897eb889c3a30e890d6d4aed">UseFile</a> () const override</td></tr>
+<tr class="memdesc:a6a0aeb01897eb889c3a30e890d6d4aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the resource use a file.  <a href="#a6a0aeb01897eb889c3a30e890d6d4aed">More...</a><br /></td></tr>
+<tr class="separator:a6a0aeb01897eb889c3a30e890d6d4aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79fb9e22cd8ffcf7c3859d6e7b34e6f1"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_audio_resource.html#a79fb9e22cd8ffcf7c3859d6e7b34e6f1">GetProperties</a> () const override</td></tr>
 <tr class="memdesc:a79fb9e22cd8ffcf7c3859d6e7b34e6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the resource.  <a href="#a79fb9e22cd8ffcf7c3859d6e7b34e6f1">More...</a><br /></td></tr>
 <tr class="separator:a79fb9e22cd8ffcf7c3859d6e7b34e6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +193,7 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 </div><div class="memdoc">
 
 <p>Return, if applicable, the <a class="el" href="classgd_1_1_string.html" title="String represents an UTF8 encoded string. ">String</a> containing the file used by the resource. The file is relative to the project directory. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_resource.html#a923e08798eb149bf8a6922d55b186dc4" title="Return true if the resource use a file. ">gd::Resource::UseFile</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_resource.html#a7102f6c8f2bb526111312108b51ff681" title="Return true if the resource use a file. ">gd::Resource::UseFile</a> </dd>
 <dd>
 <a class="el" href="classgd_1_1_resource.html#aa652c11e4cbf814c3d9179e04f139d72" title="Change, if applicable, the file of the resource. ">gd::Resource::SetFile</a> </dd></dl>
 
@@ -257,7 +257,7 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 </div><div class="memdoc">
 
 <p>Change, if applicable, the file of the resource. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_resource.html#a923e08798eb149bf8a6922d55b186dc4" title="Return true if the resource use a file. ">gd::Resource::UseFile</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_resource.html#a7102f6c8f2bb526111312108b51ff681" title="Return true if the resource use a file. ">gd::Resource::UseFile</a> </dd>
 <dd>
 <a class="el" href="classgd_1_1_resource.html#ae789341a981c1e44098b858dc09f519d" title="Return, if applicable, the String containing the file used by the resource. The file is relative to t...">gd::Resource::GetFile</a> </dd></dl>
 
@@ -306,8 +306,8 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 
 </div>
 </div>
-<a id="a23e48b32eab5f8d1d0d92e174b6013dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23e48b32eab5f8d1d0d92e174b6013dd">&#9670;&nbsp;</a></span>UseFile()</h2>
+<a id="a6a0aeb01897eb889c3a30e890d6d4aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0aeb01897eb889c3a30e890d6d4aed">&#9670;&nbsp;</a></span>UseFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +319,7 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
           <td class="memname">virtual bool gd::AudioResource::UseFile </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -334,7 +334,7 @@ virtual const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&
 <dd>
 <a class="el" href="classgd_1_1_resource.html#aa652c11e4cbf814c3d9179e04f139d72" title="Change, if applicable, the file of the resource. ">gd::Resource::SetFile</a> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classgd_1_1_resource.html#a923e08798eb149bf8a6922d55b186dc4">gd::Resource</a>.</p>
+<p>Reimplemented from <a class="el" href="classgd_1_1_resource.html#a7102f6c8f2bb526111312108b51ff681">gd::Resource</a>.</p>
 
 </div>
 </div>
