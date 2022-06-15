@@ -120,6 +120,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a2136b97a9cc791cfc95f00c3c254d476"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a2136b97a9cc791cfc95f00c3c254d476">CompleteIndexFile</a> (gd::String &amp;indexFileContent, gd::String exportDir, const std::vector&lt; gd::String &gt; &amp;includesFiles, unsigned int nonRuntimeScriptsCacheBurst, gd::String additionalSpec)</td></tr>
 <tr class="memdesc:a2136b97a9cc791cfc95f00c3c254d476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the annotations in a index.html file by the specified content.  <a href="#a2136b97a9cc791cfc95f00c3c254d476">More...</a><br /></td></tr>
 <tr class="separator:a2136b97a9cc791cfc95f00c3c254d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b3bb488de79cd3b06c240653b5ad89"><td class="memItemLeft" align="right" valign="top">const gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#ae1b3bb488de79cd3b06c240653b5ad89">GenerateWebManifest</a> (const gd::Project &amp;project)</td></tr>
+<tr class="memdesc:ae1b3bb488de79cd3b06c240653b5ad89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a WebManifest, a metadata file that allow to make the exported game a working PWA.  <a href="#ae1b3bb488de79cd3b06c240653b5ad89">More...</a><br /></td></tr>
+<tr class="separator:ae1b3bb488de79cd3b06c240653b5ad89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613a2fab5082da8d9b5c3480ba5ee4f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d75/classgdjs_1_1_exporter_helper.html#a613a2fab5082da8d9b5c3480ba5ee4f0">ExportCordovaFiles</a> (const gd::Project &amp;project, gd::String exportDir, std::set&lt; gd::String &gt; usedExtensions)</td></tr>
 <tr class="memdesc:a613a2fab5082da8d9b5c3480ba5ee4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the Cordova configuration file and save it to the export directory.  <a href="#a613a2fab5082da8d9b5c3480ba5ee4f0">More...</a><br /></td></tr>
 <tr class="separator:a613a2fab5082da8d9b5c3480ba5ee4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -691,6 +694,32 @@ gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
     <tr><td class="paramname">project</td><td>The project with resources to be exported. </td></tr>
     <tr><td class="paramname">exportDir</td><td>The directory where the preview must be created. </td></tr>
     <tr><td class="paramname">progressDlg</td><td>Optional wxProgressDialog which will be updated with the progress. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1b3bb488de79cd3b06c240653b5ad89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b3bb488de79cd3b06c240653b5ad89">&#9670;&nbsp;</a></span>GenerateWebManifest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const gd::String gdjs::ExporterHelper::GenerateWebManifest </td>
+          <td>(</td>
+          <td class="paramtype">const gd::Project &amp;&#160;</td>
+          <td class="paramname"><em>project</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates a WebManifest, a metadata file that allow to make the exported game a working PWA. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">project</td><td>The project containing the game properties to generate the manifest from. </td></tr>
   </table>
   </dd>
 </dl>

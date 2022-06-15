@@ -10,6 +10,7 @@ var searchData=
   ['generatelayoutcode',['GenerateLayoutCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a749810f9a97c3f2562a2f240477ae06f',1,'gdjs::EventsCodeGenerator']]],
   ['generatelayoutcompletecode',['GenerateLayoutCompleteCode',['../dc/d3f/classgdjs_1_1_layout_code_generator.html#a31da91680c37e2f766200d2fc64dc105',1,'gdjs::LayoutCodeGenerator']]],
   ['generateruntimebehaviorcompletecode',['GenerateRuntimeBehaviorCompleteCode',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3',1,'gdjs::BehaviorCodeGenerator']]],
+  ['generatewebmanifest',['GenerateWebManifest',['../d0/d75/classgdjs_1_1_exporter_helper.html#ae1b3bb488de79cd3b06c240653b5ad89',1,'gdjs::ExporterHelper']]],
   ['get',['Get',['../d2/d3d/classgdjs_1_1_js_platform.html#aace4a7661473b55c7f73d590349330bc',1,'gdjs::JsPlatform']]],
   ['getbehaviorpropertygettername',['GetBehaviorPropertyGetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee',1,'gdjs::BehaviorCodeGenerator']]],
   ['getbehaviorpropertysettername',['GetBehaviorPropertySetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1',1,'gdjs::BehaviorCodeGenerator']]],
