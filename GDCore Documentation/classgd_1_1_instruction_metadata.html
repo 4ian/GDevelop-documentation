@@ -135,8 +135,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanHaveSubInstruction
 <tr class="separator:a3abf812e3d2b0beba881deda6713f7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed473f086d9c8dd444d96b5190a8a6b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#aed473f086d9c8dd444d96b5190a8a6b4">IsAsync</a> () const</td></tr>
 <tr class="separator:aed473f086d9c8dd444d96b5190a8a6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78fed60cc55db30137642cc8c3560424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a78fed60cc55db30137642cc8c3560424">SetAsync</a> ()</td></tr>
-<tr class="separator:a78fed60cc55db30137642cc8c3560424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a9f508e936fe9f42191b63772762ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a05a9f508e936fe9f42191b63772762ea">IsOptionallyAsync</a> () const</td></tr>
+<tr class="separator:a05a9f508e936fe9f42191b63772762ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab63f5ca342e0391c3050411d92f7d047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#ab63f5ca342e0391c3050411d92f7d047">SetCanHaveSubInstructions</a> ()</td></tr>
 <tr class="separator:ab63f5ca342e0391c3050411d92f7d047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48275cfd8aae0ac2637a71f7869a58a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#ab48275cfd8aae0ac2637a71f7869a58a">SetHidden</a> ()</td></tr>
@@ -221,8 +221,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:a9cba518770d45e8f1ce891f826463a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the instruction being declared is somewhat manipulating in a standard way.  <a href="#a9cba518770d45e8f1ce891f826463a2e">More...</a><br /></td></tr>
 <tr class="separator:a9cba518770d45e8f1ce891f826463a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209b4899706abc77907d7fa1ad20f1ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a209b4899706abc77907d7fa1ad20f1ea">SetFunctionName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;functionName)</td></tr>
-<tr class="memdesc:a209b4899706abc77907d7fa1ad20f1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the function that should be called when generating the source code from events.  <a href="#a209b4899706abc77907d7fa1ad20f1ea">More...</a><br /></td></tr>
 <tr class="separator:a209b4899706abc77907d7fa1ad20f1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b1a65b9d3873431fa79335ebef606d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata.html#a40b1a65b9d3873431fa79335ebef606d">SetAsyncFunctionName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;functionName)</td></tr>
+<tr class="separator:a40b1a65b9d3873431fa79335ebef606d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -465,6 +466,32 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 
 </div>
 </div>
+<a id="a05a9f508e936fe9f42191b63772762ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a9f508e936fe9f42191b63772762ea">&#9670;&nbsp;</a></span>IsOptionallyAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::InstructionMetadata::IsOptionallyAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if the instruction asynchronicity is optional. If it is, it can either be used synchronously or asynchronously, with one function for each. </p>
+
+</div>
+</div>
 <a id="a57f82adb301bb1c112d2a2cf4f07743b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57f82adb301bb1c112d2a2cf4f07743b">&#9670;&nbsp;</a></span>IsPrivate()</h2>
 
@@ -491,8 +518,8 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
 
 </div>
 </div>
-<a id="a78fed60cc55db30137642cc8c3560424"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78fed60cc55db30137642cc8c3560424">&#9670;&nbsp;</a></span>SetAsync()</h2>
+<a id="a40b1a65b9d3873431fa79335ebef606d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b1a65b9d3873431fa79335ebef606d">&#9670;&nbsp;</a></span>SetAsyncFunctionName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,9 +528,10 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata.html">InstructionMetadata</a>&amp; gd::InstructionMetadata::SetAsync </td>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a>&amp; gd::InstructionMetadata::SetAsyncFunctionName </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>functionName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -513,7 +541,14 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set that the instruction is asynchronous - it will be running in the background, executing the instructions following it before the frame after it resolved. </p>
+<p>Set the name of the function, doing asynchronous work, which will be called in the generated code. This function should return an asynchronous task (i.e: <code>gdjs.AsyncTask</code> in the JavaScript runtime).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functionName</td><td>the name of the function doing asynchronous work to call. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Shortcut for <code>codeExtraInformation.SetAsyncFunctionName</code>. </dd></dl>
 
 </div>
 </div>
@@ -595,11 +630,9 @@ std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">Paramet
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Set the function that should be called when generating the source code from events. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Set the name of the function which will be called in the generated code. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">functionName</td><td>the name of the function to call </td></tr>
+    <tr><td class="paramname">functionName</td><td>the name of the function to call. </td></tr>
   </table>
   </dd>
 </dl>

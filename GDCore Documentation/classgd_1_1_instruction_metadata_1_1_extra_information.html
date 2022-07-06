@@ -92,6 +92,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa13386728445c476bca91520e9dcf5ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#aa13386728445c476bca91520e9dcf5ce">SetFunctionName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;functionName_)</td></tr>
 <tr class="separator:aa13386728445c476bca91520e9dcf5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d55e4a7cc2d7f0abddfbd7e93a8f04f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a6d55e4a7cc2d7f0abddfbd7e93a8f04f">SetAsyncFunctionName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;functionName_)</td></tr>
+<tr class="separator:a6d55e4a7cc2d7f0abddfbd7e93a8f04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a353229a428ab3dbcdd9e53117ace5155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#a353229a428ab3dbcdd9e53117ace5155">SetManipulatedType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
 <tr class="separator:a353229a428ab3dbcdd9e53117ace5155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff0cadb681dc0d6fb6d15c256e5cb88e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html#aff0cadb681dc0d6fb6d15c256e5cb88e">SetGetter</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;getter)</td></tr>
@@ -126,6 +128,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6152455285f6d290604fbd3c9e12c764"><td class="memItemLeft" align="right" valign="top"><a id="a6152455285f6d290604fbd3c9e12c764"></a>
 <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>functionCallName</b></td></tr>
 <tr class="separator:a6152455285f6d290604fbd3c9e12c764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13426d83c1ebc62915342932c38b8792"><td class="memItemLeft" align="right" valign="top"><a id="a13426d83c1ebc62915342932c38b8792"></a>
+<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>asyncFunctionCallName</b></td></tr>
+<tr class="separator:a13426d83c1ebc62915342932c38b8792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea2b0a5d7662981cf946e4cc02fa3b7"><td class="memItemLeft" align="right" valign="top"><a id="a3ea2b0a5d7662981cf946e4cc02fa3b7"></a>
 <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
 <tr class="separator:a3ea2b0a5d7662981cf946e4cc02fa3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +153,39 @@ std::function&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>(<a
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines information about how generate the code for an instruction. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6d55e4a7cc2d7f0abddfbd7e93a8f04f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d55e4a7cc2d7f0abddfbd7e93a8f04f">&#9670;&nbsp;</a></span>SetAsyncFunctionName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_instruction_metadata_1_1_extra_information.html">ExtraInformation</a>&amp; gd::InstructionMetadata::ExtraInformation::SetAsyncFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>functionName_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the name of the function, doing asynchronous work, which will be called in the generated code. This function should return an asynchronous task (i.e: <code>gdjs.AsyncTask</code> in the JavaScript runtime).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">functionName</td><td>the name of the function doing asynchronous work to call. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa13386728445c476bca91520e9dcf5ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa13386728445c476bca91520e9dcf5ce">&#9670;&nbsp;</a></span>SetFunctionName()</h2>
 
@@ -171,9 +209,9 @@ std::function&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>(<a
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the function name which will be used when generating the code. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the name of the function which will be called in the generated code. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">functionName</td><td>the name of the function to call </td></tr>
+    <tr><td class="paramname">functionName</td><td>the name of the function to call. </td></tr>
   </table>
   </dd>
 </dl>

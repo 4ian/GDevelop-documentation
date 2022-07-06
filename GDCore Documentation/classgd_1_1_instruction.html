@@ -99,6 +99,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b0b612031acd713a7db59b662aebc12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#a3b0b612031acd713a7db59b662aebc12">SetInverted</a> (bool inverted_)</td></tr>
 <tr class="memdesc:a3b0b612031acd713a7db59b662aebc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the instruction is inverted or not.  <a href="#a3b0b612031acd713a7db59b662aebc12">More...</a><br /></td></tr>
 <tr class="separator:a3b0b612031acd713a7db59b662aebc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae813427d3e0059acd964852f36a0fb77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#ae813427d3e0059acd964852f36a0fb77">IsAwaited</a> () const</td></tr>
+<tr class="memdesc:ae813427d3e0059acd964852f36a0fb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the async instruction should be awaited. This is not relevant if the instruction is not optionally asynchronous.  <a href="#ae813427d3e0059acd964852f36a0fb77">More...</a><br /></td></tr>
+<tr class="separator:ae813427d3e0059acd964852f36a0fb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2282a726661149ef387b2125b5000d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#a5c2282a726661149ef387b2125b5000d">SetAwaited</a> (bool awaited)</td></tr>
+<tr class="memdesc:a5c2282a726661149ef387b2125b5000d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the async instruction is to be awaited or not. This is not relevant if the instruction is not optionally asynchronous.  <a href="#a5c2282a726661149ef387b2125b5000d">More...</a><br /></td></tr>
+<tr class="separator:a5c2282a726661149ef387b2125b5000d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0f226372007dc29e5f9de2722deb64"><td class="memItemLeft" align="right" valign="top"><a id="a2b0f226372007dc29e5f9de2722deb64"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_instruction.html#a2b0f226372007dc29e5f9de2722deb64">GetParametersCount</a> () const</td></tr>
 <tr class="memdesc:a2b0f226372007dc29e5f9de2722deb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of parameters of the instruction. <br /></td></tr>
@@ -339,6 +345,34 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ae813427d3e0059acd964852f36a0fb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae813427d3e0059acd964852f36a0fb77">&#9670;&nbsp;</a></span>IsAwaited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::Instruction::IsAwaited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the async instruction should be awaited. This is not relevant if the instruction is not optionally asynchronous. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the instruction is to be awaited </dd></dl>
+
+</div>
+</div>
 <a id="ab3cd81ca71248becf24d5c277945eca8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3cd81ca71248becf24d5c277945eca8">&#9670;&nbsp;</a></span>IsInverted()</h2>
 
@@ -364,6 +398,40 @@ Friends</h2></td></tr>
 
 <p>Return true if the condition is inverted. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the condition is inverted </dd></dl>
+
+</div>
+</div>
+<a id="a5c2282a726661149ef387b2125b5000d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2282a726661149ef387b2125b5000d">&#9670;&nbsp;</a></span>SetAwaited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::Instruction::SetAwaited </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>awaited</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set if the async instruction is to be awaited or not. This is not relevant if the instruction is not optionally asynchronous. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inverted</td><td>true if the instruction must be awaited </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
