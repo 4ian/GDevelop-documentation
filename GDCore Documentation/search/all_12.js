@@ -138,6 +138,7 @@ var searchData=
   ['setplayablewithmobile',['SetPlayableWithMobile',['../classgd_1_1_project.html#a5da193881b5fd18bdc80c9e9022d6614',1,'gd::Project']]],
   ['setpreloadasmusic',['SetPreloadAsMusic',['../classgd_1_1_audio_resource.html#a452ba313b9e912b79598a097578ebd15',1,'gd::AudioResource']]],
   ['setpreloadassound',['SetPreloadAsSound',['../classgd_1_1_audio_resource.html#a9dec87a48af750ee6677519ba42baf22',1,'gd::AudioResource']]],
+  ['setpreloadincache',['SetPreloadInCache',['../classgd_1_1_audio_resource.html#aa465a6c07e27a559be0a340b7c9342c5',1,'gd::AudioResource']]],
   ['setpreprocessing',['SetPreprocessing',['../classgd_1_1_event_metadata.html#a97833b0bc30ce98f163841231eef96cd',1,'gd::EventMetadata']]],
   ['setprivate',['SetPrivate',['../classgd_1_1_expression_metadata.html#a2831c837e9a8697ca8b348684566c2b4',1,'gd::ExpressionMetadata::SetPrivate()'],['../classgd_1_1_instruction_metadata.html#a3abf812e3d2b0beba881deda6713f7a5',1,'gd::InstructionMetadata::SetPrivate()'],['../classgd_1_1_events_function.html#a528f966c067125163be60f9362169fb6',1,'gd::EventsFunction::SetPrivate()']]],
   ['setprofiler',['SetProfiler',['../classgd_1_1_layout.html#a8f3ddb72330ac91a75a22ab14d930fa9',1,'gd::Layout']]],

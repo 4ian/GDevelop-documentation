@@ -9,6 +9,7 @@ var searchData=
   ['populate',['Populate',['../class_generic_document.html#a36fbc7d0a9595d26e0d2c8859d207d1f',1,'GenericDocument']]],
   ['preloadasmusic',['PreloadAsMusic',['../classgd_1_1_audio_resource.html#a6680999b893abcaebe74073776748ba7',1,'gd::AudioResource']]],
   ['preloadassound',['PreloadAsSound',['../classgd_1_1_audio_resource.html#a545dc3b8bcb1f5ef4bccf60e7984aa30',1,'gd::AudioResource']]],
+  ['preloadincache',['PreloadInCache',['../classgd_1_1_audio_resource.html#afdd870fb81c81c2826b6cd6397df2176',1,'gd::AudioResource']]],
   ['preprocess',['Preprocess',['../classgd_1_1_base_event.html#af05fa8d742ee600ef6e54173315cdb50',1,'gd::BaseEvent']]],
   ['preprocessasyncactions',['PreprocessAsyncActions',['../classgd_1_1_base_event.html#a6b6e85f0f870913ee747d833528444a2',1,'gd::BaseEvent']]],
   ['preprocesseventlist',['PreprocessEventList',['../classgd_1_1_events_code_generator.html#ac60c41bf25f04fb048f576711e97fdc7',1,'gd::EventsCodeGenerator']]],
