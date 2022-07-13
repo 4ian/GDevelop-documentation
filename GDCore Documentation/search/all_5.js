@@ -36,6 +36,8 @@ var searchData=
   ['eventsfunctionscontainer',['EventsFunctionsContainer',['../classgd_1_1_events_functions_container.html',1,'gd']]],
   ['eventsfunctionsextension',['EventsFunctionsExtension',['../classgd_1_1_events_functions_extension.html',1,'gd']]],
   ['eventsfunctiontools',['EventsFunctionTools',['../classgd_1_1_events_function_tools.html',1,'gd']]],
+  ['eventsleaderboardslister',['EventsLeaderboardsLister',['../classgd_1_1_events_leaderboards_lister.html',1,'gd']]],
+  ['eventsleaderboardsrenamer',['EventsLeaderboardsRenamer',['../classgd_1_1_events_leaderboards_renamer.html',1,'gd']]],
   ['eventslist',['EventsList',['../classgd_1_1_events_list.html',1,'gd']]],
   ['eventslistnextuniqueid',['eventsListNextUniqueId',['../classgd_1_1_events_code_generator.html#a93d7b4e5e142ab73165f9fe7c9e74d05',1,'gd::EventsCodeGenerator']]],
   ['eventslistserialization',['EventsListSerialization',['../classgd_1_1_events_list_serialization.html',1,'gd']]],

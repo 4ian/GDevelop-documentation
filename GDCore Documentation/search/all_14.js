@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u',['U',['../struct_generic_value_1_1_number_1_1_u.html',1,'GenericValue&lt; Encoding, Allocator &gt;::Number::U'],['../unioninternal_1_1_hasher_1_1_number_1_1_u.html',1,'internal::Hasher&lt; Encoding, Allocator &gt;::Number::U']]],
+  ['u',['U',['../unioninternal_1_1_hasher_1_1_number_1_1_u.html',1,'internal::Hasher&lt; Encoding, Allocator &gt;::Number::U'],['../struct_generic_value_1_1_number_1_1_u.html',1,'GenericValue&lt; Encoding, Allocator &gt;::Number::U']]],
   ['unaryoperatornode',['UnaryOperatorNode',['../structgd_1_1_unary_operator_node.html',1,'gd']]],
   ['unfilledrequiredbehaviorpropertyproblem',['UnfilledRequiredBehaviorPropertyProblem',['../classgd_1_1_unfilled_required_behavior_property_problem.html',1,'gd']]],
   ['unfoldtolevel',['UnfoldToLevel',['../class_events_list_unfolder.html#a936c94753023b13c4d4f0f2e392c0c00',1,'EventsListUnfolder']]],
@@ -20,7 +20,7 @@ var searchData=
   ['usedextensionsfinder',['UsedExtensionsFinder',['../classgd_1_1_used_extensions_finder.html',1,'gd']]],
   ['useexternalsourcefiles',['UseExternalSourceFiles',['../classgd_1_1_project.html#ac982068c19ebcba311651bf1e65fb44a',1,'gd::Project']]],
   ['usefile',['UseFile',['../classgd_1_1_resource.html#a7102f6c8f2bb526111312108b51ff681',1,'gd::Resource::UseFile()'],['../classgd_1_1_image_resource.html#a8516c1787fe63a3d3c45ddbc84fd124b',1,'gd::ImageResource::UseFile()'],['../classgd_1_1_audio_resource.html#a6a0aeb01897eb889c3a30e890d6d4aed',1,'gd::AudioResource::UseFile()'],['../classgd_1_1_font_resource.html#af4f02c2b26a25cf2b725feb74e97ca9e',1,'gd::FontResource::UseFile()'],['../classgd_1_1_video_resource.html#af9ed41c9c2cf9e527c459bac56a3e8bb',1,'gd::VideoResource::UseFile()'],['../classgd_1_1_json_resource.html#abcfcd11dea556e2c2640930be878c098',1,'gd::JsonResource::UseFile()'],['../classgd_1_1_bitmap_font_resource.html#a73019bd5fac718da8718e1d32eae5ff6',1,'gd::BitmapFontResource::UseFile()']]],
-  ['usemultipledirections',['useMultipleDirections',['../classgd_1_1_animation.html#a7f323aa04638176ff778fd37651049b2',1,'gd::Animation::useMultipleDirections()'],['../classgd_1_1_animation.html#ab8ee51916fb5fc489678d24b31a8c3c0',1,'gd::Animation::UseMultipleDirections() const']]],
+  ['usemultipledirections',['UseMultipleDirections',['../classgd_1_1_animation.html#ab8ee51916fb5fc489678d24b31a8c3c0',1,'gd::Animation::UseMultipleDirections() const'],['../classgd_1_1_animation.html#a7f323aa04638176ff778fd37651049b2',1,'gd::Animation::useMultipleDirections()']]],
   ['usestandardoperatorparameters',['UseStandardOperatorParameters',['../classgd_1_1_instruction_metadata.html#a87b219784887327b91d1d24552076039',1,'gd::InstructionMetadata']]],
   ['usestandardparameters',['UseStandardParameters',['../classgd_1_1_multiple_instruction_metadata.html#ab058017d44b6ccbc0f8dca07a249c585',1,'gd::MultipleInstructionMetadata']]],
   ['usestandardrelationaloperatorparameters',['UseStandardRelationalOperatorParameters',['../classgd_1_1_instruction_metadata.html#afb9c4c67a716cf180014ffe6a38191ce',1,'gd::InstructionMetadata']]],
