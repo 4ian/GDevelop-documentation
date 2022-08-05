@@ -133,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#accad02cbc20b5c1036ff0e688398aae4">AddIncludeFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;includeFile)</td></tr>
 <tr class="memdesc:accad02cbc20b5c1036ff0e688398aae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the already existing include files. <br /></td></tr>
 <tr class="separator:accad02cbc20b5c1036ff0e688398aae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b56592448c0ff79b67e26327ea91129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#a1b56592448c0ff79b67e26327ea91129">AddRequiredFile</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;requiredFile)</td></tr>
+<tr class="memdesc:a1b56592448c0ff79b67e26327ea91129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the already existing required files.  <a href="#a1b56592448c0ff79b67e26327ea91129">More...</a><br /></td></tr>
+<tr class="separator:a1b56592448c0ff79b67e26327ea91129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8882afc5a3bce43f4409d7f752d667a2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#a8882afc5a3bce43f4409d7f752d667a2">GetHelpPath</a> () const</td></tr>
 <tr class="separator:a8882afc5a3bce43f4409d7f752d667a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56899ad9ae11a4ad17cf52030de17fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_metadata.html#ac56899ad9ae11a4ad17cf52030de17fe">SetHelpPath</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;path)</td></tr>
@@ -198,6 +201,9 @@ std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a cla
 <tr class="memitem:a345fd036b3165582526cec18999f644d"><td class="memItemLeft" align="right" valign="top"><a id="a345fd036b3165582526cec18999f644d"></a>
 std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>includeFiles</b></td></tr>
 <tr class="separator:a345fd036b3165582526cec18999f644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7689caa5fb7f8340b3794b409801e646"><td class="memItemLeft" align="right" valign="top"><a id="a7689caa5fb7f8340b3794b409801e646"></a>
+std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>requiredFiles</b></td></tr>
+<tr class="separator:a7689caa5fb7f8340b3794b409801e646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316f6e0dda46c0c46195b8d3d1f43372"><td class="memItemLeft" align="right" valign="top"><a id="a316f6e0dda46c0c46195b8d3d1f43372"></a>
 <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>className</b></td></tr>
 <tr class="separator:a316f6e0dda46c0c46195b8d3d1f43372"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,6 +621,27 @@ std::vector&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;
 <dl class="section note"><dt>Note</dt><dd>The action name is prefixed by "Set" (and the namespace, as the condition). </dd>
 <dd>
 It's recommended to use this function to avoid declaring 3 times a similar expression/condition/action. </dd></dl>
+
+</div>
+</div>
+<a id="a1b56592448c0ff79b67e26327ea91129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b56592448c0ff79b67e26327ea91129">&#9670;&nbsp;</a></span>AddRequiredFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_behavior_metadata.html">BehaviorMetadata</a> &amp; gd::BehaviorMetadata::AddRequiredFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>requiredFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a file to the already existing required files. </p>
+<dl class="section note"><dt>Note</dt><dd>These files are required for the behavior to work, but they are not executable. </dd></dl>
 
 </div>
 </div>
