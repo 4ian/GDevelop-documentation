@@ -82,6 +82,7 @@ var searchData=
   ['isprimitive',['IsPrimitive',['../classgd_1_1_variable.html#ac6f595831a1968c5d95da4888b2fdb7e',1,'gd::Variable']]],
   ['isprivate',['IsPrivate',['../classgd_1_1_expression_metadata.html#a768cb9175ea806d1ab91326e0d879e17',1,'gd::ExpressionMetadata::IsPrivate()'],['../classgd_1_1_instruction_metadata.html#a57f82adb301bb1c112d2a2cf4f07743b',1,'gd::InstructionMetadata::IsPrivate()'],['../classgd_1_1_events_function.html#acf84f1d18cf6bd5cfb2cb997ea4d2757',1,'gd::EventsFunction::IsPrivate()']]],
   ['issameobjectslist',['IsSameObjectsList',['../classgd_1_1_events_code_generation_context.html#a6f5aa8942315b8cf0443ac6aafd390a8',1,'gd::EventsCodeGenerationContext']]],
+  ['issealed',['IsSealed',['../classgd_1_1_initial_instance.html#a93a7d3837a53a8d89cef2e0e7a9c0bd0',1,'gd::InitialInstance']]],
   ['issmooth',['IsSmooth',['../classgd_1_1_image_resource.html#a599376bf7f2d6cc34ae155287ebb43b0',1,'gd::ImageResource']]],
   ['isstring',['IsString',['../classgd_1_1_serializer_value.html#a518d9d4ad891ee8306482b8dceebe68a',1,'gd::SerializerValue']]],
   ['istobedeclared',['IsToBeDeclared',['../classgd_1_1_events_code_generation_context.html#a346ef476252077538555fa65925471fb',1,'gd::EventsCodeGenerationContext']]],

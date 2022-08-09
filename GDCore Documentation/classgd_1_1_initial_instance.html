@@ -157,11 +157,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomHeight</b> (
 <tr class="separator:a3fb7a2021279045985923b13652fb710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2883e696538ecf77b325a002f04a43cb"><td class="memItemLeft" align="right" valign="top"><a id="a2883e696538ecf77b325a002f04a43cb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_initial_instance.html#a2883e696538ecf77b325a002f04a43cb">IsLocked</a> () const</td></tr>
-<tr class="memdesc:a2883e696538ecf77b325a002f04a43cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the instance is locked and cannot be selected by clicking on it in the IDE. <br /></td></tr>
+<tr class="memdesc:a2883e696538ecf77b325a002f04a43cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the instance is locked and cannot be moved in the IDE. <br /></td></tr>
 <tr class="separator:a2883e696538ecf77b325a002f04a43cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea32e27c7f44ba7adbf7cf2eb38cfacb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_initial_instance.html#aea32e27c7f44ba7adbf7cf2eb38cfacb">SetLocked</a> (bool enable=true)</td></tr>
 <tr class="memdesc:aea32e27c7f44ba7adbf7cf2eb38cfacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Un)lock the initial instance.  <a href="#aea32e27c7f44ba7adbf7cf2eb38cfacb">More...</a><br /></td></tr>
 <tr class="separator:aea32e27c7f44ba7adbf7cf2eb38cfacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a7d3837a53a8d89cef2e0e7a9c0bd0"><td class="memItemLeft" align="right" valign="top"><a id="a93a7d3837a53a8d89cef2e0e7a9c0bd0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_initial_instance.html#a93a7d3837a53a8d89cef2e0e7a9c0bd0">IsSealed</a> () const</td></tr>
+<tr class="memdesc:a93a7d3837a53a8d89cef2e0e7a9c0bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the instance cannot be selected by clicking on it in the IDE (only applies if instance is also locked). <br /></td></tr>
+<tr class="separator:a93a7d3837a53a8d89cef2e0e7a9c0bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f914142c63954796f9a84fa20c6bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_initial_instance.html#af5f914142c63954796f9a84fa20c6bcf">SetSealed</a> (bool enable=true)</td></tr>
+<tr class="memdesc:af5f914142c63954796f9a84fa20c6bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Un)seal the initial instance.  <a href="#af5f914142c63954796f9a84fa20c6bcf">More...</a><br /></td></tr>
+<tr class="separator:af5f914142c63954796f9a84fa20c6bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Variable management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to initial instance variables management. </p>
 </div></td></tr>
@@ -454,7 +461,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>(Un)lock the initial instance. </p>
-<p>An instance which is locked cannot be selected by clicking on it in a layout editor canvas. </p>
+<p>An instance which is locked cannot be moved with actions in the IDE. </p>
+
+</div>
+</div>
+<a id="af5f914142c63954796f9a84fa20c6bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f914142c63954796f9a84fa20c6bcf">&#9670;&nbsp;</a></span>SetSealed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::InitialInstance::SetSealed </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(Un)seal the initial instance. </p>
+<p>An instance which is sealed cannot be selected by clicking on it in a layout editor canvas. </p>
 
 </div>
 </div>
