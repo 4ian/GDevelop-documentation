@@ -301,8 +301,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td colspan="2"><div class="groupHeader">Factory method</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Member functions used to create objects for the project </p>
 </div></td></tr>
-<tr class="memitem:a45ca0043ebeca77621a71a920fb4df02"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a45ca0043ebeca77621a71a920fb4df02">CreateObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
-<tr class="separator:a45ca0043ebeca77621a71a920fb4df02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ff41a41ed1e09f4f3e9f955aa3f9b4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a40ff41a41ed1e09f4f3e9f955aa3f9b4">CreateObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const</td></tr>
+<tr class="separator:a40ff41a41ed1e09f4f3e9f955aa3f9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da6d07e2fd9be6775f809438ef7561c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgd_1_1_base_event.html">gd::BaseEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a7da6d07e2fd9be6775f809438ef7561c">CreateEvent</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;platformName=&quot;&quot;)</td></tr>
 <tr class="separator:a7da6d07e2fd9be6775f809438ef7561c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Layouts management</div></td></tr>
@@ -463,6 +463,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a6fe15253793b7e682d4d9b49b7692304">ClearEventsFunctionsExtensions</a> ()</td></tr>
 <tr class="memdesc:a6fe15253793b7e682d4d9b49b7692304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all the events functions extensions. <br /></td></tr>
 <tr class="separator:a6fe15253793b7e682d4d9b49b7692304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44696bbb778b720d48db6b0dad57b602"><td class="memItemLeft" align="right" valign="top"><a id="a44696bbb778b720d48db6b0dad57b602"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a44696bbb778b720d48db6b0dad57b602">HasEventsBasedObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type) const</td></tr>
+<tr class="memdesc:a44696bbb778b720d48db6b0dad57b602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if events based object with a given type exists. <br /></td></tr>
+<tr class="separator:a44696bbb778b720d48db6b0dad57b602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d617054f1f7b1c2e06e0ab2fd7591e"><td class="memItemLeft" align="right" valign="top"><a id="a27d617054f1f7b1c2e06e0ab2fd7591e"></a>
+<a class="el" href="classgd_1_1_events_based_object.html">gd::EventsBasedObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#a27d617054f1f7b1c2e06e0ab2fd7591e">GetEventsBasedObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type)</td></tr>
+<tr class="memdesc:a27d617054f1f7b1c2e06e0ab2fd7591e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the events based object with a given type. <br /></td></tr>
+<tr class="separator:a27d617054f1f7b1c2e06e0ab2fd7591e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb37f1423ff95d735d37dde3e68bc7a5"><td class="memItemLeft" align="right" valign="top"><a id="aeb37f1423ff95d735d37dde3e68bc7a5"></a>
+const <a class="el" href="classgd_1_1_events_based_object.html">gd::EventsBasedObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_project.html#aeb37f1423ff95d735d37dde3e68bc7a5">GetEventsBasedObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type) const</td></tr>
+<tr class="memdesc:aeb37f1423ff95d735d37dde3e68bc7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the events based object with a given type. <br /></td></tr>
+<tr class="separator:aeb37f1423ff95d735d37dde3e68bc7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Resources management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to resources management. </p>
 </div></td></tr>
@@ -655,8 +667,8 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
 
 </div>
 </div>
-<a id="a45ca0043ebeca77621a71a920fb4df02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45ca0043ebeca77621a71a920fb4df02">&#9670;&nbsp;</a></span>CreateObject()</h2>
+<a id="a40ff41a41ed1e09f4f3e9f955aa3f9b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ff41a41ed1e09f4f3e9f955aa3f9b4">&#9670;&nbsp;</a></span>CreateObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,29 +683,20 @@ std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html"
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>platformName</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Create an object of the given type with the specified name.</p>
-<dl class="section note"><dt>Note</dt><dd>A project can use more than one platform. In this case, the first platform supporting the object is used, unless <em>platformName</em> argument is not empty.<br />
- It is assumed that each platform provides an equivalent object.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The type of the object </td></tr>
     <tr><td class="paramname">name</td><td>The name of the object </td></tr>
-    <tr><td class="paramname">platformName</td><td>The name of the platform to be used. If empty, the first platform supporting the object is used. </td></tr>
   </table>
   </dd>
 </dl>

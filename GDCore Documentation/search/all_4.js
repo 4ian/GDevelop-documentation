@@ -21,9 +21,9 @@ var searchData=
   ['diyfp',['DiyFp',['../structinternal_1_1_diy_fp.html',1,'internal']]],
   ['document',['Document',['../document_8h.html#ac6ea5b168e3fe8c7fa532450fc9391f7',1,'document.h']]],
   ['document_2eh',['document.h',['../document_8h.html',1,'']]],
-  ['doserializeto',['DoSerializeTo',['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object']]],
+  ['doserializeto',['DoSerializeTo',['../class_custom_object.html#ac0779f2450d2b60e18041f9404892660',1,'CustomObject::DoSerializeTo()'],['../classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420',1,'gd::Object::DoSerializeTo()']]],
   ['double',['Double',['../classinternal_1_1_double.html',1,'internal::Double'],['../class_writer.html#a22a43e8a7193105deec6b808736f7a1a',1,'Writer::Double()']]],
-  ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object']]],
+  ['dounserializefrom',['DoUnserializeFrom',['../class_custom_object.html#a240d46ad9b2651470324961db52157c4',1,'CustomObject::DoUnserializeFrom()'],['../classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701',1,'gd::Object::DoUnserializeFrom()']]],
   ['duplicatedinstructionoptions',['DuplicatedInstructionOptions',['../structgd_1_1_duplicated_instruction_options.html',1,'gd']]],
   ['dynamiclibrarylasterror',['DynamicLibraryLastError',['../namespacegd.html#ab9cdac8f7bd009ba308b15d4f2424308',1,'gd']]]
 ];

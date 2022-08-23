@@ -83,6 +83,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e5093be1686d163db1c2ad20a5de04b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function_tools.html#a4e5093be1686d163db1c2ad20a5de04b">BehaviorEventsFunctionToObjectsContainer</a> (const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_events_based_behavior.html">gd::EventsBasedBehavior</a> &amp;eventsBasedBehavior, const <a class="el" href="classgd_1_1_events_function.html">gd::EventsFunction</a> &amp;eventsFunction, <a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;outputGlobalObjectsContainer, <a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;outputObjectsContainer)</td></tr>
 <tr class="memdesc:a4e5093be1686d163db1c2ad20a5de04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a behavior events function, initialize the given objects container with objects described in the events function parameters, in the events function groups and in the behavior properties (for additional required behaviors on the object).  <a href="#a4e5093be1686d163db1c2ad20a5de04b">More...</a><br /></td></tr>
 <tr class="separator:a4e5093be1686d163db1c2ad20a5de04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fb71ae562d412ecbb2338280a12757"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function_tools.html#a39fb71ae562d412ecbb2338280a12757">ObjectEventsFunctionToObjectsContainer</a> (const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_events_based_object.html">gd::EventsBasedObject</a> &amp;eventsBasedObject, const <a class="el" href="classgd_1_1_events_function.html">gd::EventsFunction</a> &amp;eventsFunction, <a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;outputGlobalObjectsContainer, <a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;outputObjectsContainer)</td></tr>
+<tr class="memdesc:a39fb71ae562d412ecbb2338280a12757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a parent-object events function, initialize the given objects container with objects described in the events function parameters, in the events function groups and in the parent-object properties for child-objects.  <a href="#a39fb71ae562d412ecbb2338280a12757">More...</a><br /></td></tr>
+<tr class="separator:a39fb71ae562d412ecbb2338280a12757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains tools to use events functions. </p>
@@ -191,6 +194,63 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Given a free events function, initialize the given objects container with objects described in the events function parameters and in the events function groups. </p>
+<p>This is useful to create the "context" of a function, before code generation for example. </p>
+
+</div>
+</div>
+<a id="a39fb71ae562d412ecbb2338280a12757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fb71ae562d412ecbb2338280a12757">&#9670;&nbsp;</a></span>ObjectEventsFunctionToObjectsContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::EventsFunctionTools::ObjectEventsFunctionToObjectsContainer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
+          <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_events_based_object.html">gd::EventsBasedObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>eventsBasedObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_events_function.html">gd::EventsFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>eventsFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>outputGlobalObjectsContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_objects_container.html">gd::ObjectsContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>outputObjectsContainer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given a parent-object events function, initialize the given objects container with objects described in the events function parameters, in the events function groups and in the parent-object properties for child-objects. </p>
 <p>This is useful to create the "context" of a function, before code generation for example. </p>
 
 </div>

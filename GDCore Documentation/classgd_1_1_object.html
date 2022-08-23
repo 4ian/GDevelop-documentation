@@ -80,7 +80,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="_object_8h_source.html">Object.h</a>&gt;</code></p>
 
-<p>Inherited by <a class="el" href="classgd_1_1_sprite_object.html">gd::SpriteObject</a>.</p>
+<p>Inherited by <a class="el" href="class_custom_object.html">CustomObject</a>, and <a class="el" href="classgd_1_1_sprite_object.html">gd::SpriteObject</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -426,7 +426,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Must return a pointer to a copy of the object. A such method is needed to do polymorphic copies. Just redefine this method in your derived object class like this: </p><div class="fragment"><div class="line"><span class="keywordflow">return</span> gd::make_unique&lt;MyObject&gt;(*this);</div></div><!-- fragment --> 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#aabed4f5674f65b1d710049ea33da963b">gd::SpriteObject</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#aabed4f5674f65b1d710049ea33da963b">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ab453a8c1cbdf27a3805681efb948bed1">CustomObject</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Protected Attributes</h2></td></tr>
 <p>Called ( e.g. during compilation ) so as to inventory internal resources and sometimes update their filename. Implementation example: </p>
 <div class="fragment"><div class="line">worker.ExposeImage(myImage);</div><div class="line">worker.ExposeFile(myResourceFile);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_arbitrary_resource_worker.html" title="ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...">ArbitraryResourceWorker</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a77a3957e1870c6e608798a08507de902">gd::SpriteObject</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a77a3957e1870c6e608798a08507de902">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ae35f1998fc6df0b37453e7e4ec1fe9a9">CustomObject</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key and values. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a9cc6085afd2554944da4d03c9ccc3bfb">gd::SpriteObject</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a9cc6085afd2554944da4d03c9ccc3bfb">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#a38570d6d3ab414130ef91bdc54d414ea">CustomObject</a>.</p>
 
 </div>
 </div>
@@ -536,7 +536,7 @@ Protected Attributes</h2></td></tr>
 <p>Usage example: </p><div class="fragment"><div class="line">std::map&lt;gd::String, gd::PropertyDescriptor&gt; properties;</div><div class="line">properties[ToString(_(<span class="stringliteral">&quot;Text&quot;</span>))].SetValue(<span class="stringliteral">&quot;Hello world!&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> properties;</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_property_descriptor.html" title="Used to describe a property shown in a property grid. ">gd::PropertyDescriptor</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a4ea52fdd065531daf810b9ab069f0489">gd::SpriteObject</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a4ea52fdd065531daf810b9ab069f0489">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#acb62bf666bd258a08577027fec9c515c">CustomObject</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a381a02700a8134a5c00c098ada5fe6d1">gd::SpriteObject</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a381a02700a8134a5c00c098ada5fe6d1">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ad1d19b082f423bfb05baad489b352c76">CustomObject</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ Protected Attributes</h2></td></tr>
 <p>Called when the IDE wants to update a custom property of the object. </p>
 <dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a47b0cec5fee657d1b7175c65b0d26d91">gd::SpriteObject</a>.</p>
+<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a47b0cec5fee657d1b7175c65b0d26d91">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ac3d186b2553ad8d6ecee567104fd743e">CustomObject</a>.</p>
 
 </div>
 </div>

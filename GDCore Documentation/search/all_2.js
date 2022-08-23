@@ -17,6 +17,7 @@ var searchData=
   ['behaviornamenamespaceseparatorlocation',['behaviorNameNamespaceSeparatorLocation',['../structgd_1_1_object_function_name_node.html#a37433aa795c7fc814d87c7d0c06c73f1',1,'gd::ObjectFunctionNameNode::behaviorNameNamespaceSeparatorLocation()'],['../structgd_1_1_function_call_node.html#ab198b5f2cbbfffaa7715ef92caab6bb3',1,'gd::FunctionCallNode::behaviorNameNamespaceSeparatorLocation()']]],
   ['behaviors',['behaviors',['../classgd_1_1_object.html#a65409a1ab7d2c316e3de25395f4b4d3f',1,'gd::Object']]],
   ['behaviorsshareddata',['BehaviorsSharedData',['../classgd_1_1_behaviors_shared_data.html',1,'gd']]],
+  ['behaviortyperenamer',['BehaviorTypeRenamer',['../classgd_1_1_behavior_type_renamer.html',1,'gd']]],
   ['bidi_5fclass',['bidi_class',['../structutf8proc__property__struct.html#abd1fde92128233b6dbfdeb70b92c80d9',1,'utf8proc_property_struct']]],
   ['biginteger',['BigInteger',['../classinternal_1_1_big_integer.html',1,'internal']]],
   ['bitmapfontresource',['BitmapFontResource',['../classgd_1_1_bitmap_font_resource.html',1,'gd']]],
