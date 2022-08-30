@@ -77,111 +77,80 @@ $(function() {
  <a href="classgd_1_1_behaviors_shared_data.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_behaviors_shared_data_8h_source.html">BehaviorsSharedData.h</a>&gt;</code></p>
+
+<p>Inherits <a class="el" href="classgd_1_1_behavior_configuration_container.html">gd::BehaviorConfigurationContainer</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a90ceb3484db4950cf3813237b54c5fd3"><td class="memItemLeft" align="right" valign="top"><a id="a90ceb3484db4950cf3813237b54c5fd3"></a>
-virtual <a class="el" href="classgd_1_1_behaviors_shared_data.html">gd::BehaviorsSharedData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> () const</td></tr>
-<tr class="separator:a90ceb3484db4950cf3813237b54c5fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4fcce0d6af3e62dc116fb2b9954248"><td class="memItemLeft" align="right" valign="top"><a id="a3f4fcce0d6af3e62dc116fb2b9954248"></a>
-<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behaviors_shared_data.html#a3f4fcce0d6af3e62dc116fb2b9954248">GetTypeName</a> ()</td></tr>
-<tr class="memdesc:a3f4fcce0d6af3e62dc116fb2b9954248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name identifying the type of the behavior. <br /></td></tr>
-<tr class="separator:a3f4fcce0d6af3e62dc116fb2b9954248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9017c69dc14c2e631d2080be27d6646"><td class="memItemLeft" align="right" valign="top"><a id="ac9017c69dc14c2e631d2080be27d6646"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behaviors_shared_data.html#ac9017c69dc14c2e631d2080be27d6646">SetTypeName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
-<tr class="memdesc:ac9017c69dc14c2e631d2080be27d6646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change name identifying the type of the behavior. <br /></td></tr>
-<tr class="separator:ac9017c69dc14c2e631d2080be27d6646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce9e58afa9f63fba8a03d41539aaeb4"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behaviors_shared_data.html#a9ce9e58afa9f63fba8a03d41539aaeb4">GetProperties</a> (const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorSharedDataContent) const</td></tr>
-<tr class="memdesc:a9ce9e58afa9f63fba8a03d41539aaeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the properties of the shared data.  <a href="#a9ce9e58afa9f63fba8a03d41539aaeb4">More...</a><br /></td></tr>
-<tr class="separator:a9ce9e58afa9f63fba8a03d41539aaeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e7c396cfd2fae49ce8f0ff215227b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behaviors_shared_data.html#af2e7c396cfd2fae49ce8f0ff215227b3">UpdateProperty</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorSharedDataContent, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value)</td></tr>
-<tr class="memdesc:af2e7c396cfd2fae49ce8f0ff215227b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a property of the shared data.  <a href="#af2e7c396cfd2fae49ce8f0ff215227b3">More...</a><br /></td></tr>
-<tr class="separator:af2e7c396cfd2fae49ce8f0ff215227b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93fefae9d5f9957fc3bec232a41c963b"><td class="memItemLeft" align="right" valign="top"><a id="a93fefae9d5f9957fc3bec232a41c963b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeContent</b> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorSharedDataContent)</td></tr>
-<tr class="separator:a93fefae9d5f9957fc3bec232a41c963b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7fc75f79d82200f1490d4371f3fc81"><td class="memItemLeft" align="right" valign="top"><a id="aea7fc75f79d82200f1490d4371f3fc81"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorsSharedData</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
+<tr class="separator:aea7fc75f79d82200f1490d4371f3fc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36de53a49ccae7405cbf0ac592bd1f70"><td class="memItemLeft" align="right" valign="top"><a id="a36de53a49ccae7405cbf0ac592bd1f70"></a>
+virtual <a class="el" href="classgd_1_1_behaviors_shared_data.html">BehaviorsSharedData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> () const override</td></tr>
+<tr class="separator:a36de53a49ccae7405cbf0ac592bd1f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgd_1_1_behavior_configuration_container"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgd_1_1_behavior_configuration_container')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgd_1_1_behavior_configuration_container.html">gd::BehaviorConfigurationContainer</a></td></tr>
+<tr class="memitem:ad98ab56f53dd7d345e4f0e6da2dcf778 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="ad98ab56f53dd7d345e4f0e6da2dcf778"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BehaviorConfigurationContainer</b> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
+<tr class="separator:ad98ab56f53dd7d345e4f0e6da2dcf778 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388ac7454971d6726136033a9b92db1f inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a388ac7454971d6726136033a9b92db1f"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a388ac7454971d6726136033a9b92db1f">GetName</a> () const</td></tr>
+<tr class="memdesc:a388ac7454971d6726136033a9b92db1f inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name identifying the behavior. <br /></td></tr>
+<tr class="separator:a388ac7454971d6726136033a9b92db1f inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cedce0ec6292e0a65de848f692dff26 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a1cedce0ec6292e0a65de848f692dff26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a1cedce0ec6292e0a65de848f692dff26">SetName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_)</td></tr>
+<tr class="memdesc:a1cedce0ec6292e0a65de848f692dff26 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the name identifying the behavior. <br /></td></tr>
+<tr class="separator:a1cedce0ec6292e0a65de848f692dff26 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0b19490847b99dbf6d7da96ce0063a inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a2e0b19490847b99dbf6d7da96ce0063a"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a2e0b19490847b99dbf6d7da96ce0063a">GetTypeName</a> () const</td></tr>
+<tr class="memdesc:a2e0b19490847b99dbf6d7da96ce0063a inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of the behavior. <br /></td></tr>
+<tr class="separator:a2e0b19490847b99dbf6d7da96ce0063a inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b27e80f2899cf74341e9831038e45d inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a80b27e80f2899cf74341e9831038e45d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a80b27e80f2899cf74341e9831038e45d">SetTypeName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
+<tr class="memdesc:a80b27e80f2899cf74341e9831038e45d inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the behavior. <br /></td></tr>
+<tr class="separator:a80b27e80f2899cf74341e9831038e45d inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867e75dccb54a46d945f66badadfd1fd inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a867e75dccb54a46d945f66badadfd1fd">GetProperties</a> () const</td></tr>
+<tr class="memdesc:a867e75dccb54a46d945f66badadfd1fd inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the behavior.  <a href="classgd_1_1_behavior_configuration_container.html#a867e75dccb54a46d945f66badadfd1fd">More...</a><br /></td></tr>
+<tr class="separator:a867e75dccb54a46d945f66badadfd1fd inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b927e955c28f52a8f11193f77888c8b inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a0b927e955c28f52a8f11193f77888c8b">UpdateProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value)</td></tr>
+<tr class="memdesc:a0b927e955c28f52a8f11193f77888c8b inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the behavior.  <a href="classgd_1_1_behavior_configuration_container.html#a0b927e955c28f52a8f11193f77888c8b">More...</a><br /></td></tr>
+<tr class="separator:a0b927e955c28f52a8f11193f77888c8b inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8115e5bb4f045e1bd77868765c97ba47 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a8115e5bb4f045e1bd77868765c97ba47"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a8115e5bb4f045e1bd77868765c97ba47">InitializeContent</a> ()</td></tr>
+<tr class="memdesc:a8115e5bb4f045e1bd77868765c97ba47 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to initialize the content with the default properties for the behavior. <br /></td></tr>
+<tr class="separator:a8115e5bb4f045e1bd77868765c97ba47 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1bdfe6f31a22919a2e6e9e00e26733 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a4d1bdfe6f31a22919a2e6e9e00e26733"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a4d1bdfe6f31a22919a2e6e9e00e26733">SerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;element) const</td></tr>
+<tr class="memdesc:a4d1bdfe6f31a22919a2e6e9e00e26733 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the behavior content. <br /></td></tr>
+<tr class="separator:a4d1bdfe6f31a22919a2e6e9e00e26733 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a129c5e2e6c065b87311632d1d02db inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="ac1a129c5e2e6c065b87311632d1d02db"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#ac1a129c5e2e6c065b87311632d1d02db">UnserializeFrom</a> (const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;element)</td></tr>
+<tr class="memdesc:ac1a129c5e2e6c065b87311632d1d02db inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialize the behavior content. <br /></td></tr>
+<tr class="separator:ac1a129c5e2e6c065b87311632d1d02db inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0674cb644186718d83ed7ce0f56757 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a9e0674cb644186718d83ed7ce0f56757"></a>
+const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetContent</b> () const</td></tr>
+<tr class="separator:a9e0674cb644186718d83ed7ce0f56757 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8b402fd362de28cc762a150bb57871 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a2d8b402fd362de28cc762a150bb57871"></a>
+<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetContent</b> ()</td></tr>
+<tr class="separator:a2d8b402fd362de28cc762a150bb57871 inherit pub_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classgd_1_1_behavior_configuration_container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classgd_1_1_behavior_configuration_container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classgd_1_1_behavior_configuration_container.html">gd::BehaviorConfigurationContainer</a></td></tr>
+<tr class="memitem:a6cf76117b599970e701675ebe2511746 inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a6cf76117b599970e701675ebe2511746">GetProperties</a> (const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent) const</td></tr>
+<tr class="memdesc:a6cf76117b599970e701675ebe2511746 inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the behavior.  <a href="classgd_1_1_behavior_configuration_container.html#a6cf76117b599970e701675ebe2511746">More...</a><br /></td></tr>
+<tr class="separator:a6cf76117b599970e701675ebe2511746 inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339f0c1f1bafd2f85479b5ce5421eb83 inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a339f0c1f1bafd2f85479b5ce5421eb83">UpdateProperty</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value)</td></tr>
+<tr class="memdesc:a339f0c1f1bafd2f85479b5ce5421eb83 inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the behavior.  <a href="classgd_1_1_behavior_configuration_container.html#a339f0c1f1bafd2f85479b5ce5421eb83">More...</a><br /></td></tr>
+<tr class="separator:a339f0c1f1bafd2f85479b5ce5421eb83 inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4536af0a1f75c41733c1502d545e9f inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="memItemLeft" align="right" valign="top"><a id="a5d4536af0a1f75c41733c1502d545e9f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_behavior_configuration_container.html#a5d4536af0a1f75c41733c1502d545e9f">InitializeContent</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent)</td></tr>
+<tr class="memdesc:a5d4536af0a1f75c41733c1502d545e9f inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to initialize the content with the default properties for the behavior. <br /></td></tr>
+<tr class="separator:a5d4536af0a1f75c41733c1502d545e9f inherit pro_methods_classgd_1_1_behavior_configuration_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for defining data shared by behaviors having the same type and name. </p>
 <p>Behaviors can use shared data, as if they were extending the <a class="el" href="classgd_1_1_layout.html" title="Represent a layout ( also called a scene ) of a project. ">gd::Layout</a> class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9ce9e58afa9f63fba8a03d41539aaeb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ce9e58afa9f63fba8a03d41539aaeb4">&#9670;&nbsp;</a></span>GetProperties()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; gd::BehaviorsSharedData::GetProperties </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;&#160;</td>
-          <td class="paramname"><em>behaviorSharedDataContent</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE wants to know about the properties of the shared data. </p>
-<p>Usage example: </p><div class="fragment"><div class="line">std::map&lt;gd::String, gd::PropertyDescriptor&gt; properties;</div><div class="line">properties[_(<span class="stringliteral">&quot;Initial speed&quot;</span>)].SetValue(<a class="code" href="classgd_1_1_string.html#a231c9dde51cb369cf6350460d5a68401">gd::String::From</a>(initialSpeed));</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> properties;</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_property_descriptor.html" title="Used to describe a property shown in a property grid. ">gd::PropertyDescriptor</a> </dd></dl>
-
-</div>
-</div>
-<a id="af2e7c396cfd2fae49ce8f0ff215227b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e7c396cfd2fae49ce8f0ff215227b3">&#9670;&nbsp;</a></span>UpdateProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool gd::BehaviorsSharedData::UpdateProperty </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;&#160;</td>
-          <td class="paramname"><em>behaviorSharedDataContent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE wants to update a property of the shared data. </p>
-<dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_behaviors_shared_data_8h_source.html">BehaviorsSharedData.h</a></li>
 <li>BehaviorsSharedData.cpp</li>
 </ul>

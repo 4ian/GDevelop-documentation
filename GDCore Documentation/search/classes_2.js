@@ -5,7 +5,7 @@ var searchData=
   ['basicistreamwrapper',['BasicIStreamWrapper',['../class_basic_i_stream_wrapper.html',1,'']]],
   ['basicostreamwrapper',['BasicOStreamWrapper',['../class_basic_o_stream_wrapper.html',1,'']]],
   ['behavior',['Behavior',['../classgd_1_1_behavior.html',1,'gd']]],
-  ['behaviorcontent',['BehaviorContent',['../classgd_1_1_behavior_content.html',1,'gd']]],
+  ['behaviorconfigurationcontainer',['BehaviorConfigurationContainer',['../classgd_1_1_behavior_configuration_container.html',1,'gd']]],
   ['behaviormetadata',['BehaviorMetadata',['../classgd_1_1_behavior_metadata.html',1,'gd']]],
   ['behaviorsshareddata',['BehaviorsSharedData',['../classgd_1_1_behaviors_shared_data.html',1,'gd']]],
   ['behaviortyperenamer',['BehaviorTypeRenamer',['../classgd_1_1_behavior_type_renamer.html',1,'gd']]],

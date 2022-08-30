@@ -85,6 +85,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a8ced7cfc65085e87e7039627e196af50">ObjectMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon24x24_, std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt; blueprintObject_)</td></tr>
 <tr class="memdesc:a8ced7cfc65085e87e7039627e196af50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an object metadata, using a "blueprint" object that will be copied when a new object is requested. <br /></td></tr>
 <tr class="separator:a8ced7cfc65085e87e7039627e196af50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b67e525ac96b34e35d15de78ad0045"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#a32b67e525ac96b34e35d15de78ad0045">ObjectMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon24x24_)</td></tr>
+<tr class="memdesc:a32b67e525ac96b34e35d15de78ad0045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an object metadata, without "blueprint" object.  <a href="#a32b67e525ac96b34e35d15de78ad0045">More...</a><br /></td></tr>
+<tr class="separator:a32b67e525ac96b34e35d15de78ad0045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33b721c722d1c18a8ae62efe702e608"><td class="memItemLeft" align="right" valign="top"><a id="ae33b721c722d1c18a8ae62efe702e608"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object_metadata.html#ae33b721c722d1c18a8ae62efe702e608">ObjectMetadata</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;extensionNamespace_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon24x24_, CreateFunPtr createFunPtrP)</td></tr>
 <tr class="memdesc:ae33b721c722d1c18a8ae62efe702e608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an object metadata, with a function that will be called to instanciate a new object. <br /></td></tr>
@@ -215,7 +218,57 @@ CreateFunPtr&#160;</td><td class="memItemRight" valign="bottom"><b>createFunPtr<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains user-friendly information about an object type, and a function to create a new <a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a> of this type. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a32b67e525ac96b34e35d15de78ad0045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b67e525ac96b34e35d15de78ad0045">&#9670;&nbsp;</a></span>ObjectMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gd::ObjectMetadata::ObjectMetadata </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>extensionNamespace_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>fullname_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>description_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>icon24x24_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct an object metadata, without "blueprint" object. </p>
+<dl class="section note"><dt>Note</dt><dd>This is used by events based objects. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6d954dc68c00c3ceeace6de4bfefbe5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d954dc68c00c3ceeace6de4bfefbe5e">&#9670;&nbsp;</a></span>AddAction()</h2>
 

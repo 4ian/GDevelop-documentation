@@ -22,7 +22,7 @@ var searchData=
   ['transcoder',['Transcoder',['../struct_transcoder.html',1,'']]],
   ['transcoder_3c_20encoding_2c_20encoding_20_3e',['Transcoder&lt; Encoding, Encoding &gt;',['../struct_transcoder_3_01_encoding_00_01_encoding_01_4.html',1,'']]],
   ['trim',['Trim',['../classgd_1_1_string.html#aacf4a9607674f54866a5eeaa9bb7cfa9',1,'gd::String']]],
-  ['type',['type',['../classgd_1_1_parameter_metadata.html#a4e75083449de13430ce81dacdc8ea11e',1,'gd::ParameterMetadata::type()'],['../classgd_1_1_behavior_content.html#aaddb956e7168b0230c521ed73f1c40d0',1,'gd::BehaviorContent::type()'],['../classgd_1_1_object.html#aee93060a84f701627a6e1c2d851c3a63',1,'gd::Object::type()'],['../rapidjson_8h.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'Type():&#160;rapidjson.h']]],
+  ['type',['type',['../classgd_1_1_parameter_metadata.html#a4e75083449de13430ce81dacdc8ea11e',1,'gd::ParameterMetadata::type()'],['../classgd_1_1_object.html#aee93060a84f701627a6e1c2d851c3a63',1,'gd::Object::type()'],['../rapidjson_8h.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'Type():&#160;rapidjson.h']]],
   ['typehelper',['TypeHelper',['../structinternal_1_1_type_helper.html',1,'internal']]],
   ['typehelper_3c_20valuetype_2c_20bool_20_3e',['TypeHelper&lt; ValueType, bool &gt;',['../structinternal_1_1_type_helper_3_01_value_type_00_01bool_01_4.html',1,'internal']]],
   ['typehelper_3c_20valuetype_2c_20const_20typename_20valuetype_3a_3ach_20_2a_20_3e',['TypeHelper&lt; ValueType, const typename ValueType::Ch * &gt;',['../structinternal_1_1_type_helper_3_01_value_type_00_01const_01typename_01_value_type_1_1_ch_01_5_01_4.html',1,'internal']]],
