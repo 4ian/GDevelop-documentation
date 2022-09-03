@@ -178,9 +178,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a1c64554b43c99990ed365c61861862b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Others properties management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to exposing others properties of the instance.</p>
-<dl class="section note"><dt>Note</dt><dd>Extensions writers: even if we can define new types of object by inheriting from <a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a> class, we cannot define new <a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> classes.</dd></dl>
-<p>However, objects can store custom properties for their associated initial instances. When the IDE want to get the custom properties, it will call <code>GetCustomProperties</code> and <code>UpdateCustomProperty</code> methods. These methods are here defined to forward the call to the <a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a> associated to the <a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> (by looking at the value returned by <a class="el" href="classgd_1_1_initial_instance.html#a4fb734864ff5b001d7592f0a108580ab" title="Get the name of object instantiated on the layout. ">GetObjectName()</a>).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Extensions writers: even if we can define new types of object by inheriting from <a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">gd::Object</a> class, we cannot define new <a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> classes.</dd></dl>
+<p>However, objects can store custom properties for their associated initial instances. When the IDE want to get the custom properties, it will call <code>GetCustomProperties</code> and <code>UpdateCustomProperty</code> methods. These methods are here defined to forward the call to the <a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">gd::Object</a> associated to the <a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> (by looking at the value returned by <a class="el" href="classgd_1_1_initial_instance.html#a4fb734864ff5b001d7592f0a108580ab" title="Get the name of object instantiated on the layout. ">GetObjectName()</a>).</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">gd::Object</a> </dd></dl>
 </div></td></tr>
 <tr class="memitem:ac7ed7f3e778c4fdb609afaa06994c59a"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_initial_instance.html#ac7ed7f3e778c4fdb609afaa06994c59a">GetCustomProperties</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;layout)</td></tr>
 <tr class="memdesc:ac7ed7f3e778c4fdb609afaa06994c59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a map containing the properties names (as keys) and their values.  <a href="#ac7ed7f3e778c4fdb609afaa06994c59a">More...</a><br /></td></tr>
@@ -397,7 +397,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Return true if the instance has a size which is different from its object default size. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">gd::Object</a> </dd></dl>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">gd::Object</a> </dd></dl>
 
 </div>
 </div>

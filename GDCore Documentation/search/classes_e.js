@@ -1,6 +1,7 @@
 var searchData=
 [
   ['object',['Object',['../classgd_1_1_object.html',1,'gd']]],
+  ['objectconfiguration',['ObjectConfiguration',['../classgd_1_1_object_configuration.html',1,'gd']]],
   ['objectdata',['ObjectData',['../struct_generic_value_1_1_object_data.html',1,'GenericValue']]],
   ['objectfunctionnamenode',['ObjectFunctionNameNode',['../structgd_1_1_object_function_name_node.html',1,'gd']]],
   ['objectgroup',['ObjectGroup',['../classgd_1_1_object_group.html',1,'gd']]],

@@ -6,5 +6,6 @@ var searchData=
   ['_7egenericvalue',['~GenericValue',['../class_generic_value.html#a213ba89ef5ef961a5e655bd8c78ac9f4',1,'GenericValue']]],
   ['_7ememorypoolallocator',['~MemoryPoolAllocator',['../class_memory_pool_allocator.html#ad4eee0ef3cfe8cda31034fbce98b7a9b',1,'MemoryPoolAllocator']]],
   ['_7eobject',['~Object',['../classgd_1_1_object.html#ade6b645842790f9e3f8acefacc0a18f2',1,'gd::Object']]],
+  ['_7eobjectconfiguration',['~ObjectConfiguration',['../classgd_1_1_object_configuration.html#ab2075c9177226647bb40e6c07914574e',1,'gd::ObjectConfiguration']]],
   ['_7epropertydescriptor',['~PropertyDescriptor',['../classgd_1_1_property_descriptor.html#ab23c178bfb7877d49c11398a91f570be',1,'gd::PropertyDescriptor']]]
 ];

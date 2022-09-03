@@ -75,17 +75,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class used to represent an object of a platform.  
+<p>Represent an object of a platform.  
  <a href="classgd_1_1_object.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_object_8h_source.html">Object.h</a>&gt;</code></p>
-
-<p>Inherited by <a class="el" href="class_custom_object.html">CustomObject</a>, and <a class="el" href="classgd_1_1_sprite_object.html">gd::SpriteObject</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53e48d12c5f38c8219180445c7ef2ad0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a53e48d12c5f38c8219180445c7ef2ad0">Object</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>)</td></tr>
-<tr class="separator:a53e48d12c5f38c8219180445c7ef2ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180407c061b0dc5002c77ddc0f0d6f06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a180407c061b0dc5002c77ddc0f0d6f06">Object</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, std::unique_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &gt; configuration)</td></tr>
+<tr class="separator:a180407c061b0dc5002c77ddc0f0d6f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032ba0116c9a3c191d1381e0cb55d968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968">Object</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object)</td></tr>
 <tr class="separator:a032ba0116c9a3c191d1381e0cb55d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e3a7f23b60a41ae16c2f85ba242e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#ad2e3a7f23b60a41ae16c2f85ba242e49">operator=</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object)</td></tr>
@@ -94,6 +92,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade6b645842790f9e3f8acefacc0a18f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92800e23a8210735d90a04b7fb7ecea4"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a92800e23a8210735d90a04b7fb7ecea4">Clone</a> () const</td></tr>
 <tr class="separator:a92800e23a8210735d90a04b7fb7ecea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5cc4cb97e16988609350c903aa59d3"><td class="memItemLeft" align="right" valign="top"><a id="a0a5cc4cb97e16988609350c903aa59d3"></a>
+<a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a0a5cc4cb97e16988609350c903aa59d3">GetConfiguration</a> ()</td></tr>
+<tr class="memdesc:a0a5cc4cb97e16988609350c903aa59d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object configuration. <br /></td></tr>
+<tr class="separator:a0a5cc4cb97e16988609350c903aa59d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3b700ff0ef6b59d7fcbd199a70b363"><td class="memItemLeft" align="right" valign="top"><a id="a6a3b700ff0ef6b59d7fcbd199a70b363"></a>
+const <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetConfiguration</b> () const</td></tr>
+<tr class="separator:a6a3b700ff0ef6b59d7fcbd199a70b363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Common properties</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to common properties </p>
 </div></td></tr>
@@ -129,32 +134,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#aceae77c511685f875d7e5e6fc1243b7c">GetTags</a> () const</td></tr>
 <tr class="memdesc:aceae77c511685f875d7e5e6fc1243b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the tags of the object. <br /></td></tr>
 <tr class="separator:aceae77c511685f875d7e5e6fc1243b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Resources management</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Members functions related to managing resources used by the object </p>
-</div></td></tr>
-<tr class="memitem:ad02a158af2c102e394f63c4852636b93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#ad02a158af2c102e394f63c4852636b93">ExposeResources</a> (<a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;worker)</td></tr>
-<tr class="memdesc:ad02a158af2c102e394f63c4852636b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called ( e.g. during compilation ) so as to inventory internal resources and sometimes update their filename. Implementation example:  <a href="#ad02a158af2c102e394f63c4852636b93">More...</a><br /></td></tr>
-<tr class="separator:ad02a158af2c102e394f63c4852636b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd39afd36000418fa770b27eb19fc22e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#acd39afd36000418fa770b27eb19fc22e">SupportShaders</a> ()</td></tr>
-<tr class="separator:acd39afd36000418fa770b27eb19fc22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Object properties</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Reading and updating object properties </p>
-</div></td></tr>
-<tr class="memitem:aee651554e6c2083abd3973208c3d45cc"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#aee651554e6c2083abd3973208c3d45cc">GetProperties</a> () const</td></tr>
-<tr class="memdesc:aee651554e6c2083abd3973208c3d45cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the object.  <a href="#aee651554e6c2083abd3973208c3d45cc">More...</a><br /></td></tr>
-<tr class="separator:aee651554e6c2083abd3973208c3d45cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ac15b6784b6b691910d78925657622"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a50ac15b6784b6b691910d78925657622">UpdateProperty</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value)</td></tr>
-<tr class="memdesc:a50ac15b6784b6b691910d78925657622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the object.  <a href="#a50ac15b6784b6b691910d78925657622">More...</a><br /></td></tr>
-<tr class="separator:a50ac15b6784b6b691910d78925657622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Drawing and editing initial instances</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Members functions related to drawing and editing initial instances of this object </p>
-</div></td></tr>
-<tr class="memitem:a0511115287e5b8ebc41819d0c6e9a72f"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a0511115287e5b8ebc41819d0c6e9a72f">GetInitialInstanceProperties</a> (const <a class="el" href="classgd_1_1_initial_instance.html">gd::InitialInstance</a> &amp;instance, <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;layout)</td></tr>
-<tr class="memdesc:a0511115287e5b8ebc41819d0c6e9a72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of an initial instance of this object.  <a href="#a0511115287e5b8ebc41819d0c6e9a72f">More...</a><br /></td></tr>
-<tr class="separator:a0511115287e5b8ebc41819d0c6e9a72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4106d18b8588da4a0d0e555e43a75508"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a4106d18b8588da4a0d0e555e43a75508">UpdateInitialInstanceProperty</a> (<a class="el" href="classgd_1_1_initial_instance.html">gd::InitialInstance</a> &amp;instance, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value, <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;layout)</td></tr>
-<tr class="memdesc:a4106d18b8588da4a0d0e555e43a75508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of an initial instance of this object.  <a href="#a4106d18b8588da4a0d0e555e43a75508">More...</a><br /></td></tr>
-<tr class="separator:a4106d18b8588da4a0d0e555e43a75508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Behaviors management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Members functions related to behaviors management. </p>
 </div></td></tr>
@@ -181,7 +160,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a099d2993cdab2b49c0f5ef53a48240df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a099d2993cdab2b49c0f5ef53a48240df">RenameBehavior</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newName)</td></tr>
 <tr class="memdesc:a099d2993cdab2b49c0f5ef53a48240df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the name of behavior called name to newName.  <a href="#a099d2993cdab2b49c0f5ef53a48240df">More...</a><br /></td></tr>
 <tr class="separator:a099d2993cdab2b49c0f5ef53a48240df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26592f4b9d906c12e094fd443b54c12f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a26592f4b9d906c12e094fd443b54c12f">AddNewBehavior</a> (const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#aee93060a84f701627a6e1c2d851c3a63">type</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>)</td></tr>
+<tr class="memitem:a26592f4b9d906c12e094fd443b54c12f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a26592f4b9d906c12e094fd443b54c12f">AddNewBehavior</a> (const <a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>)</td></tr>
 <tr class="memdesc:a26592f4b9d906c12e094fd443b54c12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the behavior of the specified <em>type</em> with the specified <em>name</em>.  <a href="#a26592f4b9d906c12e094fd443b54c12f">More...</a><br /></td></tr>
 <tr class="separator:a26592f4b9d906c12e094fd443b54c12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666d78ba3c705b112ff8ba51bf18c421"><td class="memItemLeft" align="right" valign="top"><a id="a666d78ba3c705b112ff8ba51bf18c421"></a>
@@ -222,14 +201,6 @@ const <a class="el" href="classgd_1_1_effects_container.html">gd::EffectsContain
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aefd333f8df78fb5481aec65aae0c7701"><td class="memItemLeft" align="right" valign="top"><a id="aefd333f8df78fb5481aec65aae0c7701"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701">DoUnserializeFrom</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element)</td></tr>
-<tr class="memdesc:aefd333f8df78fb5481aec65aae0c7701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived objects can redefine this method to load custom attributes. <br /></td></tr>
-<tr class="separator:aefd333f8df78fb5481aec65aae0c7701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20651ee7a344bb8bfaf4a7d74087b420"><td class="memItemLeft" align="right" valign="top"><a id="a20651ee7a344bb8bfaf4a7d74087b420"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420">DoSerializeTo</a> (<a class="el" href="classgd_1_1_serializer_element.html">SerializerElement</a> &amp;element) const</td></tr>
-<tr class="memdesc:a20651ee7a344bb8bfaf4a7d74087b420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived objects can redefine this method to save custom attributes. <br /></td></tr>
-<tr class="separator:a20651ee7a344bb8bfaf4a7d74087b420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12791c07b8323b89efff87b88108f2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a12791c07b8323b89efff87b88108f2b9">Init</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object)</td></tr>
 <tr class="separator:a12791c07b8323b89efff87b88108f2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -243,8 +214,9 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#aa1a61a58b7d84c6881b0e2aaa28a1071">assetStoreId</a></td></tr>
 <tr class="memdesc:aa1a61a58b7d84c6881b0e2aaa28a1071"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the asset if the object comes from the store. <br /></td></tr>
 <tr class="separator:aa1a61a58b7d84c6881b0e2aaa28a1071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee93060a84f701627a6e1c2d851c3a63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#aee93060a84f701627a6e1c2d851c3a63">type</a></td></tr>
-<tr class="separator:aee93060a84f701627a6e1c2d851c3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8570148ec3705ea7e7bdeb7ec2320d8f"><td class="memItemLeft" align="right" valign="top"><a id="a8570148ec3705ea7e7bdeb7ec2320d8f"></a>
+std::unique_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b></td></tr>
+<tr class="separator:a8570148ec3705ea7e7bdeb7ec2320d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9c5bbbb41ef5bb0a0613088195b37f8"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, std::unique_ptr&lt; <a class="el" href="classgd_1_1_behavior.html">gd::Behavior</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#ac9c5bbbb41ef5bb0a0613088195b37f8">behaviors</a></td></tr>
 <tr class="separator:ac9c5bbbb41ef5bb0a0613088195b37f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44f98d0805ceead0c797f6b582782382"><td class="memItemLeft" align="right" valign="top"><a id="a44f98d0805ceead0c797f6b582782382"></a>
@@ -261,10 +233,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a25d7e74d5369784282872cf9e5c71e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class used to represent an object of a platform. </p>
+<div class="textblock"><p>Represent an object of a platform. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a53e48d12c5f38c8219180445c7ef2ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53e48d12c5f38c8219180445c7ef2ad0">&#9670;&nbsp;</a></span>Object() <span class="overload">[1/2]</span></h2>
+<a id="a180407c061b0dc5002c77ddc0f0d6f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a180407c061b0dc5002c77ddc0f0d6f06">&#9670;&nbsp;</a></span>Object() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,14 +245,30 @@ Protected Attributes</h2></td></tr>
           <td class="memname">gd::Object::Object </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &gt;&#160;</td>
+          <td class="paramname"><em>configuration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Create a new object with the name passed as argument. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td><a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">Object</a>'s name </td></tr>
+    <tr><td class="paramname">name</td><td><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">Object</a>'s name </td></tr>
   </table>
   </dd>
 </dl>
@@ -402,118 +390,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Must return a pointer to a copy of the object. A such method is needed to do polymorphic copies. Just redefine this method in your derived object class like this: </p><div class="fragment"><div class="line"><span class="keywordflow">return</span> gd::make_unique&lt;MyObject&gt;(*this);</div></div><!-- fragment --> 
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#aabed4f5674f65b1d710049ea33da963b">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ab453a8c1cbdf27a3805681efb948bed1">CustomObject</a>.</p>
-
-</div>
-</div>
-<a id="ad02a158af2c102e394f63c4852636b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad02a158af2c102e394f63c4852636b93">&#9670;&nbsp;</a></span>ExposeResources()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void gd::Object::ExposeResources </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html">gd::ArbitraryResourceWorker</a> &amp;&#160;</td>
-          <td class="paramname"><em>worker</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called ( e.g. during compilation ) so as to inventory internal resources and sometimes update their filename. Implementation example: </p>
-<div class="fragment"><div class="line">worker.ExposeImage(myImage);</div><div class="line">worker.ExposeFile(myResourceFile);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_arbitrary_resource_worker.html" title="ArbitraryResourceWorker is used so as to inventory resources and sometimes update them...">ArbitraryResourceWorker</a> </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a77a3957e1870c6e608798a08507de902">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ae35f1998fc6df0b37453e7e4ec1fe9a9">CustomObject</a>.</p>
-
-</div>
-</div>
-<a id="a0511115287e5b8ebc41819d0c6e9a72f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0511115287e5b8ebc41819d0c6e9a72f">&#9670;&nbsp;</a></span>GetInitialInstanceProperties()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; gd::Object::GetInitialInstanceProperties </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_initial_instance.html">gd::InitialInstance</a> &amp;&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
-          <td class="paramname"><em>project</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</td>
-          <td class="paramname"><em>layout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE wants to know about the custom properties of an initial instance of this object. </p>
-<dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key and values. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a9cc6085afd2554944da4d03c9ccc3bfb">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#a38570d6d3ab414130ef91bdc54d414ea">CustomObject</a>.</p>
-
-</div>
-</div>
-<a id="aee651554e6c2083abd3973208c3d45cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee651554e6c2083abd3973208c3d45cc">&#9670;&nbsp;</a></span>GetProperties()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt; gd::Object::GetProperties </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE wants to know about the custom properties of the object. </p>
-<p>Usage example: </p><div class="fragment"><div class="line">std::map&lt;gd::String, gd::PropertyDescriptor&gt; properties;</div><div class="line">properties[ToString(_(<span class="stringliteral">&quot;Text&quot;</span>))].SetValue(<span class="stringliteral">&quot;Hello world!&quot;</span>);</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> properties;</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a std::map with properties names as key. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_property_descriptor.html" title="Used to describe a property shown in a property grid. ">gd::PropertyDescriptor</a> </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a4ea52fdd065531daf810b9ab069f0489">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#acb62bf666bd258a08577027fec9c515c">CustomObject</a>.</p>
-
 </div>
 </div>
 <a id="a12791c07b8323b89efff87b88108f2b9"></a>
@@ -539,7 +415,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initialize object using another object. Used by copy-ctor and assign-op. Don't forget to update me if members were changed! </p>
+<p>Initialize object using another object. Used by copy-ctor and assign-op. Don't forget to update me if members were changed!</p>
+<p>It's needed because there is no default copy for a map of unique_ptr like behaviors and it must be a deep copy. </p>
 
 </div>
 </div>
@@ -618,33 +495,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Serialize the object. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html#a20651ee7a344bb8bfaf4a7d74087b420" title="Derived objects can redefine this method to save custom attributes. ">DoSerializeTo</a> </dd></dl>
-
-</div>
-</div>
-<a id="acd39afd36000418fa770b27eb19fc22e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd39afd36000418fa770b27eb19fc22e">&#9670;&nbsp;</a></span>SupportShaders()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool gd::Object::SupportShaders </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Redefine this function to return true if your object can use shaders. </p>
+<dl class="section see"><dt>See also</dt><dd>DoSerializeTo </dd></dl>
 
 </div>
 </div>
@@ -675,108 +526,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unserialize the object. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_object.html#aefd333f8df78fb5481aec65aae0c7701" title="Derived objects can redefine this method to load custom attributes. ">DoUnserializeFrom</a> </dd></dl>
-
-</div>
-</div>
-<a id="a4106d18b8588da4a0d0e555e43a75508"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4106d18b8588da4a0d0e555e43a75508">&#9670;&nbsp;</a></span>UpdateInitialInstanceProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool gd::Object::UpdateInitialInstanceProperty </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_initial_instance.html">gd::InitialInstance</a> &amp;&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
-          <td class="paramname"><em>project</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgd_1_1_layout.html">gd::Layout</a> &amp;&#160;</td>
-          <td class="paramname"><em>layout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE wants to update a custom property of an initial instance of this object. </p>
-<dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_initial_instance.html" title="Represents an instance of an object to be created on a layout start up. ">gd::InitialInstance</a> </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a381a02700a8134a5c00c098ada5fe6d1">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ad1d19b082f423bfb05baad489b352c76">CustomObject</a>.</p>
-
-</div>
-</div>
-<a id="a50ac15b6784b6b691910d78925657622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ac15b6784b6b691910d78925657622">&#9670;&nbsp;</a></span>UpdateProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool gd::Object::UpdateProperty </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called when the IDE wants to update a custom property of the object. </p>
-<dl class="section return"><dt>Returns</dt><dd>false if the new value cannot be set </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classgd_1_1_sprite_object.html#a47b0cec5fee657d1b7175c65b0d26d91">gd::SpriteObject</a>, and <a class="el" href="class_custom_object.html#ac3d186b2553ad8d6ecee567104fd743e">CustomObject</a>.</p>
+<dl class="section see"><dt>See also</dt><dd>DoUnserializeFrom </dd></dl>
 
 </div>
 </div>
@@ -801,29 +551,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Contains all behaviors and their properties for the object. <a class="el" href="classgd_1_1_behavior.html" title="Base class used to represents a behavior that can be applied to an object. It stores the content (i...">Behavior</a> contents are the ownership of the object. </p>
-
-</div>
-</div>
-<a id="aee93060a84f701627a6e1c2d851c3a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee93060a84f701627a6e1c2d851c3a63">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgd_1_1_string.html">gd::String</a> gd::Object::type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Which type is the object. ( To test if we can do something reserved to some objects with it ) </p>
 
 </div>
 </div>

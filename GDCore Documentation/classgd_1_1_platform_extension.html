@@ -135,9 +135,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a794b7fd9f314c1c007b8dcca4d333844"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a794b7fd9f314c1c007b8dcca4d333844">AddObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_)</td></tr>
 <tr class="memdesc:a794b7fd9f314c1c007b8dcca4d333844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new object as being part of the extension.  <a href="#a794b7fd9f314c1c007b8dcca4d333844">More...</a><br /></td></tr>
 <tr class="separator:a794b7fd9f314c1c007b8dcca4d333844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13344d9812851149933265628f8d0ab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a13344d9812851149933265628f8d0ab3">AddObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_, std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt; instance)</td></tr>
-<tr class="memdesc:a13344d9812851149933265628f8d0ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new object as being part of the extension.  <a href="#a13344d9812851149933265628f8d0ab3">More...</a><br /></td></tr>
-<tr class="separator:a13344d9812851149933265628f8d0ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6926747bff3fc3fb34a00712158ccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#add6926747bff3fc3fb34a00712158ccc">AddObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_, std::shared_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &gt; instance)</td></tr>
+<tr class="memdesc:add6926747bff3fc3fb34a00712158ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new object as being part of the extension.  <a href="#add6926747bff3fc3fb34a00712158ccc">More...</a><br /></td></tr>
+<tr class="separator:add6926747bff3fc3fb34a00712158ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76be067beab857d01129a4746b398ffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object_metadata.html">gd::ObjectMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_platform_extension.html#a76be067beab857d01129a4746b398ffe">AddEventsBasedObject</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;fullname_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;description_, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;icon_)</td></tr>
 <tr class="memdesc:a76be067beab857d01129a4746b398ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new events based object as being part of the extension.  <a href="#a76be067beab857d01129a4746b398ffe">More...</a><br /></td></tr>
 <tr class="separator:a76be067beab857d01129a4746b398ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -844,7 +844,7 @@ template&lt;class T &gt; </div>
 <p>Declare a new object as being part of the extension. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>the declared class inherited from <em><a class="el" href="classgd_1_1_object.html" title="Base class used to represent an object of a platform. ">gd::Object</a></em> </td></tr>
+    <tr><td class="paramname">T</td><td>the declared class inherited from <em><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">gd::Object</a></em> </td></tr>
   </table>
   </dd>
 </dl>
@@ -860,8 +860,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a13344d9812851149933265628f8d0ab3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13344d9812851149933265628f8d0ab3">&#9670;&nbsp;</a></span>AddObject() <span class="overload">[2/2]</span></h2>
+<a id="add6926747bff3fc3fb34a00712158ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6926747bff3fc3fb34a00712158ccc">&#9670;&nbsp;</a></span>AddObject() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -893,7 +893,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgd_1_1_object.html">gd::Object</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &gt;&#160;</td>
           <td class="paramname"><em>instance</em>&#160;</td>
         </tr>
         <tr>
