@@ -84,6 +84,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a180407c061b0dc5002c77ddc0f0d6f06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a180407c061b0dc5002c77ddc0f0d6f06">Object</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, std::unique_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> &gt; configuration)</td></tr>
 <tr class="separator:a180407c061b0dc5002c77ddc0f0d6f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70968e716dcf0079a79a0bdd92afa9eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a70968e716dcf0079a79a0bdd92afa9eb">Object</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_object.html#a6b913c183be7fe5a65de77ac21543d3f">name</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, <a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> *configuration)</td></tr>
+<tr class="separator:a70968e716dcf0079a79a0bdd92afa9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032ba0116c9a3c191d1381e0cb55d968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968">Object</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object)</td></tr>
 <tr class="separator:a032ba0116c9a3c191d1381e0cb55d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e3a7f23b60a41ae16c2f85ba242e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_object.html">Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_object.html#ad2e3a7f23b60a41ae16c2f85ba242e49">operator=</a> (const <a class="el" href="classgd_1_1_object.html">gd::Object</a> &amp;object)</td></tr>
@@ -236,7 +238,7 @@ std::unique_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">g
 <div class="textblock"><p>Represent an object of a platform. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a180407c061b0dc5002c77ddc0f0d6f06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a180407c061b0dc5002c77ddc0f0d6f06">&#9670;&nbsp;</a></span>Object() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a180407c061b0dc5002c77ddc0f0d6f06">&#9670;&nbsp;</a></span>Object() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,17 +268,48 @@ std::unique_ptr&lt; <a class="el" href="classgd_1_1_object_configuration.html">g
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a new object with the name passed as argument. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">Object</a>'s name </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Create a new object with the name passed as argument. </p>
+
+</div>
+</div>
+<a id="a70968e716dcf0079a79a0bdd92afa9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70968e716dcf0079a79a0bdd92afa9eb">&#9670;&nbsp;</a></span>Object() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gd::Object::Object </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_object_configuration.html">gd::ObjectConfiguration</a> *&#160;</td>
+          <td class="paramname"><em>configuration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a new object with the name passed as argument.</p>
+<p><a class="el" href="classgd_1_1_object.html" title="Represent an object of a platform. ">Object</a> takes the ownership of the configuration. </p>
 
 </div>
 </div>
 <a id="a032ba0116c9a3c191d1381e0cb55d968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a032ba0116c9a3c191d1381e0cb55d968">&#9670;&nbsp;</a></span>Object() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a032ba0116c9a3c191d1381e0cb55d968">&#9670;&nbsp;</a></span>Object() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

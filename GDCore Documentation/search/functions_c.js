@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['object',['Object',['../classgd_1_1_object.html#a180407c061b0dc5002c77ddc0f0d6f06',1,'gd::Object::Object(const gd::String &amp;name, const gd::String &amp;type, std::unique_ptr&lt; gd::ObjectConfiguration &gt; configuration)'],['../classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968',1,'gd::Object::Object(const gd::Object &amp;object)']]],
+  ['object',['Object',['../classgd_1_1_object.html#a180407c061b0dc5002c77ddc0f0d6f06',1,'gd::Object::Object(const gd::String &amp;name, const gd::String &amp;type, std::unique_ptr&lt; gd::ObjectConfiguration &gt; configuration)'],['../classgd_1_1_object.html#a70968e716dcf0079a79a0bdd92afa9eb',1,'gd::Object::Object(const gd::String &amp;name, const gd::String &amp;type, gd::ObjectConfiguration *configuration)'],['../classgd_1_1_object.html#a032ba0116c9a3c191d1381e0cb55d968',1,'gd::Object::Object(const gd::Object &amp;object)']]],
   ['objectalreadydeclaredbyparents',['ObjectAlreadyDeclaredByParents',['../classgd_1_1_events_code_generation_context.html#a2d13d9f954ac3c781a968a71b8cb86b1',1,'gd::EventsCodeGenerationContext']]],
   ['objectconfiguration',['ObjectConfiguration',['../classgd_1_1_object_configuration.html#a232d6ba2fcaff3f2fc8ada8411b35f2a',1,'gd::ObjectConfiguration']]],
   ['objecteventsfunctiontoobjectscontainer',['ObjectEventsFunctionToObjectsContainer',['../classgd_1_1_events_function_tools.html#a39fb71ae562d412ecbb2338280a12757',1,'gd::EventsFunctionTools']]],
