@@ -8,7 +8,7 @@ var searchData=
   ['objectorgroupremovedineventsbasedobject',['ObjectOrGroupRemovedInEventsBasedObject',['../classgd_1_1_whole_project_refactorer.html#a3ced03ef7528d928dcc126afc69fbb73',1,'gd::WholeProjectRefactorer']]],
   ['objectorgroupremovedineventsfunction',['ObjectOrGroupRemovedInEventsFunction',['../classgd_1_1_whole_project_refactorer.html#a1c62e0210aa75906bd7a79bf6061c4cd',1,'gd::WholeProjectRefactorer']]],
   ['objectorgroupremovedinlayout',['ObjectOrGroupRemovedInLayout',['../classgd_1_1_whole_project_refactorer.html#a850e4e2ca694ed30c462ae85fd0e6c19',1,'gd::WholeProjectRefactorer']]],
-  ['objectorgrouprenamedineventsbasedobject',['ObjectOrGroupRenamedInEventsBasedObject',['../classgd_1_1_whole_project_refactorer.html#aa510e05a892e23cd211e2819902ec710',1,'gd::WholeProjectRefactorer']]],
+  ['objectorgrouprenamedineventsbasedobject',['ObjectOrGroupRenamedInEventsBasedObject',['../classgd_1_1_whole_project_refactorer.html#a4408f8d417f635a7207a92f342028183',1,'gd::WholeProjectRefactorer']]],
   ['objectorgrouprenamedineventsfunction',['ObjectOrGroupRenamedInEventsFunction',['../classgd_1_1_whole_project_refactorer.html#a827e4ef7f068e1a5b676425a6bc96e80',1,'gd::WholeProjectRefactorer']]],
   ['objectorgrouprenamedinlayout',['ObjectOrGroupRenamedInLayout',['../classgd_1_1_whole_project_refactorer.html#a95364bd2c2f3c947294bdd3933a3bf3e',1,'gd::WholeProjectRefactorer']]],
   ['objectscontainer',['ObjectsContainer',['../classgd_1_1_objects_container.html#aca2afa84d13d9851f2ba842544efa685',1,'gd::ObjectsContainer']]],
