@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['launch',['Launch',['../classgd_1_1_arbitrary_events_worker.html#a5bce134f7c8f1fe69c0b6cefa0e84ece',1,'gd::ArbitraryEventsWorker::Launch()'],['../classgd_1_1_arbitrary_events_worker_with_context.html#a4515635f1868166bafae3546def9a5c9',1,'gd::ArbitraryEventsWorkerWithContext::Launch()'],['../classgd_1_1_arbitrary_objects_worker.html#acd36936839dcc5e21418e490e300ff85',1,'gd::ArbitraryObjectsWorker::Launch()']]],
+  ['launch',['Launch',['../classgd_1_1_arbitrary_events_worker.html#a5bce134f7c8f1fe69c0b6cefa0e84ece',1,'gd::ArbitraryEventsWorker::Launch()'],['../classgd_1_1_arbitrary_events_worker_with_context.html#a4515635f1868166bafae3546def9a5c9',1,'gd::ArbitraryEventsWorkerWithContext::Launch()'],['../classgd_1_1_read_only_arbitrary_events_worker.html#a7fd8ea0b723d571e0d40d9c28915beb0',1,'gd::ReadOnlyArbitraryEventsWorker::Launch()'],['../classgd_1_1_read_only_arbitrary_events_worker_with_context.html#a192eda4cdb8c93ac050db2976c871023',1,'gd::ReadOnlyArbitraryEventsWorkerWithContext::Launch()'],['../classgd_1_1_arbitrary_objects_worker.html#acd36936839dcc5e21418e490e300ff85',1,'gd::ArbitraryObjectsWorker::Launch()']]],
   ['launchresourceworkeronevents',['LaunchResourceWorkerOnEvents',['../group___i_d_e.html#ga83157999fa647494e7a1b5872d705ec6',1,'gd']]],
   ['layer',['Layer',['../classgd_1_1_layer.html',1,'gd']]],
   ['layerhasname',['LayerHasName',['../structgd_1_1_layer_has_name.html',1,'gd']]],

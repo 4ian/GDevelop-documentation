@@ -38,6 +38,8 @@ var searchData=
   ['reader',['Reader',['../reader_8h.html#a84f3b66a66647f4ac4267078359188ba',1,'reader.h']]],
   ['reader_2eh',['reader.h',['../reader_8h.html',1,'']]],
   ['readfile',['ReadFile',['../classgd_1_1_abstract_file_system.html#ac0291a1e95a428112d97d7eb34c362c7',1,'gd::AbstractFileSystem']]],
+  ['readonlyarbitraryeventsworker',['ReadOnlyArbitraryEventsWorker',['../classgd_1_1_read_only_arbitrary_events_worker.html',1,'gd']]],
+  ['readonlyarbitraryeventsworkerwithcontext',['ReadOnlyArbitraryEventsWorkerWithContext',['../classgd_1_1_read_only_arbitrary_events_worker_with_context.html',1,'gd']]],
   ['realloc',['Realloc',['../class_memory_pool_allocator.html#aba75280d42184b0ad414243f7f5ac6c7',1,'MemoryPoolAllocator']]],
   ['reference',['Reference',['../class_generic_member_iterator.html#ae80f6b601eb9e24f73aa75fb32b35c65',1,'GenericMemberIterator']]],
   ['registerproperty',['RegisterProperty',['../classgd_1_1_platform_extension.html#a0cc3124fb7377a725be327684aeeab0f',1,'gd::PlatformExtension']]],
