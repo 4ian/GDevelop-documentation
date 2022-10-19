@@ -119,6 +119,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a3be06b50064b2fdc41a5ecb790ab8861">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
 <tr class="separator:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6593097cefb486076caedc44a9f22f8f"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a6593097cefb486076caedc44a9f22f8f">GenerateObjectEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsBasedObject &amp;eventsBasedObject, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, const gd::String &amp;endingCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
+<tr class="separator:a6593097cefb486076caedc44a9f22f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -271,9 +273,10 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
     <tr><td class="paramname">project</td><td>Project used. </td></tr>
     <tr><td class="paramname">eventsFunction</td><td>The events function to be compiled. </td></tr>
     <tr><td class="paramname">codeNamespace</td><td>Where to store the context used by the function. </td></tr>
-    <tr><td class="paramname">includeFiles</td><td>Will be filled with the necessary include files. </td></tr>
+    <tr><td class="paramname">fullyQualifiedFunctionName</td><td>The function name with its namespace. </td></tr>
     <tr><td class="paramname">onceTriggersVariable</td><td>The code to access the variable holding OnceTriggers. </td></tr>
     <tr><td class="paramname">preludeCode</td><td>The code to run just before the events generated code. </td></tr>
+    <tr><td class="paramname">includeFiles</td><td>Will be filled with the necessary include files. </td></tr>
     <tr><td class="paramname">compilationForRuntime</td><td>Set this to true if the code is generated for runtime.</td></tr>
   </table>
   </dd>
@@ -498,6 +501,107 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
   <table class="params">
     <tr><td class="paramname">project</td><td>Project the scene belongs to. </td></tr>
     <tr><td class="paramname">scene</td><td>The scene to generate the code for. </td></tr>
+    <tr><td class="paramname">includeFiles</td><td>Will be filled with the necessary include files. </td></tr>
+    <tr><td class="paramname">compilationForRuntime</td><td>Set this to true if the code is generated for runtime.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>JavaScript code </dd></dl>
+
+</div>
+</div>
+<a id="a6593097cefb486076caedc44a9f22f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6593097cefb486076caedc44a9f22f8f">&#9670;&nbsp;</a></span>GenerateObjectEventsFunctionCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">gd::String gdjs::EventsCodeGenerator::GenerateObjectEventsFunctionCode </td>
+          <td>(</td>
+          <td class="paramtype">gd::Project &amp;&#160;</td>
+          <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::EventsBasedObject &amp;&#160;</td>
+          <td class="paramname"><em>eventsBasedObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::EventsFunction &amp;&#160;</td>
+          <td class="paramname"><em>eventsFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>codeNamespace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>fullyQualifiedFunctionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>onceTriggersVariable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>preludeCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>endingCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::set&lt; gd::String &gt; &amp;&#160;</td>
+          <td class="paramname"><em>includeFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>compilationForRuntime</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate JavaScript for executing events of a events based object function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">project</td><td>Project used. </td></tr>
+    <tr><td class="paramname">eventsBasedObject</td><td>The object that contains the function to be compiled. </td></tr>
+    <tr><td class="paramname">eventsFunction</td><td>The events function to be compiled. </td></tr>
+    <tr><td class="paramname">codeNamespace</td><td>Where to store the context used by the function. </td></tr>
+    <tr><td class="paramname">fullyQualifiedFunctionName</td><td>The function name with its namespace. </td></tr>
+    <tr><td class="paramname">onceTriggersVariable</td><td>The code to access the variable holding OnceTriggers. </td></tr>
+    <tr><td class="paramname">preludeCode</td><td>The code to run right before the events generated code. </td></tr>
+    <tr><td class="paramname">endingCode</td><td>The code to run right after the events generated code. </td></tr>
     <tr><td class="paramname">includeFiles</td><td>Will be filled with the necessary include files. </td></tr>
     <tr><td class="paramname">compilationForRuntime</td><td>Set this to true if the code is generated for runtime.</td></tr>
   </table>

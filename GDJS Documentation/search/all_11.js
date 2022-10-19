@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['variablesextension',['VariablesExtension',['../dd/d25/classgdjs_1_1_variables_extension.html',1,'gdjs']]]
+  ['usewebsocketdebuggerclientwithserveraddress',['UseWebsocketDebuggerClientWithServerAddress',['../db/dbe/structgdjs_1_1_preview_export_options.html#a8cf24b5465fe170a17b15d04d37d91df',1,'gdjs::PreviewExportOptions']]],
+  ['usewindowmessagedebuggerclient',['UseWindowMessageDebuggerClient',['../db/dbe/structgdjs_1_1_preview_export_options.html#a1612b690c0399ca40b6d158125f7787a',1,'gdjs::PreviewExportOptions']]]
 ];

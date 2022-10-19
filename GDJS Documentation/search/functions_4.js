@@ -9,7 +9,9 @@ var searchData=
   ['generatefreeeventsfunctioncompletecode',['GenerateFreeEventsFunctionCompleteCode',['../d7/da9/classgdjs_1_1_events_functions_extension_code_generator.html#ac1c8ace58b66896356dd17a2aaeb6f5b',1,'gdjs::EventsFunctionsExtensionCodeGenerator']]],
   ['generatelayoutcode',['GenerateLayoutCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a749810f9a97c3f2562a2f240477ae06f',1,'gdjs::EventsCodeGenerator']]],
   ['generatelayoutcompletecode',['GenerateLayoutCompleteCode',['../dc/d3f/classgdjs_1_1_layout_code_generator.html#a31da91680c37e2f766200d2fc64dc105',1,'gdjs::LayoutCodeGenerator']]],
+  ['generateobjecteventsfunctioncode',['GenerateObjectEventsFunctionCode',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a6593097cefb486076caedc44a9f22f8f',1,'gdjs::EventsCodeGenerator']]],
   ['generateruntimebehaviorcompletecode',['GenerateRuntimeBehaviorCompleteCode',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a8a2cf41a51e0ffecb35159c3ba3494a3',1,'gdjs::BehaviorCodeGenerator']]],
+  ['generateruntimeobjectcompletecode',['GenerateRuntimeObjectCompleteCode',['../dc/df3/classgdjs_1_1_object_code_generator.html#a15f6a100ac33b20ac1a87d1e37823b18',1,'gdjs::ObjectCodeGenerator']]],
   ['generatewebmanifest',['GenerateWebManifest',['../d0/d75/classgdjs_1_1_exporter_helper.html#ae1b3bb488de79cd3b06c240653b5ad89',1,'gdjs::ExporterHelper']]],
   ['get',['Get',['../d2/d3d/classgdjs_1_1_js_platform.html#aace4a7661473b55c7f73d590349330bc',1,'gdjs::JsPlatform']]],
   ['getbehaviorpropertygettername',['GetBehaviorPropertyGetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee',1,'gdjs::BehaviorCodeGenerator']]],
@@ -19,5 +21,7 @@ var searchData=
   ['getexportedincludefilename',['GetExportedIncludeFilename',['../d0/d75/classgdjs_1_1_exporter_helper.html#a253f38e4e6b6dd09b8afd9071ba8e2ea',1,'gdjs::ExporterHelper']]],
   ['getextensioncreatefunctionname',['GetExtensionCreateFunctionName',['../d2/d3d/classgdjs_1_1_js_platform.html#a693d18edd1891ae1303aaaa918c99200',1,'gdjs::JsPlatform']]],
   ['getlasterror',['GetLastError',['../dc/dda/classgdjs_1_1_exporter.html#a1c28c0a90a3bbefff8f3d2d981cf26da',1,'gdjs::Exporter::GetLastError()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#ada5884debab85a04032d19fcfcbf2eb1',1,'gdjs::ExporterHelper::GetLastError()']]],
-  ['getobjectlistname',['GetObjectListName',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a7d1004c9dd588ffbd14dcf6b58ad8388',1,'gdjs::EventsCodeGenerator']]]
+  ['getobjectlistname',['GetObjectListName',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a7d1004c9dd588ffbd14dcf6b58ad8388',1,'gdjs::EventsCodeGenerator']]],
+  ['getobjectpropertygettername',['GetObjectPropertyGetterName',['../dc/df3/classgdjs_1_1_object_code_generator.html#a877625939cae5b811cd2b2b40434bba1',1,'gdjs::ObjectCodeGenerator']]],
+  ['getobjectpropertysettername',['GetObjectPropertySetterName',['../dc/df3/classgdjs_1_1_object_code_generator.html#a4fb4cf9c82e2b0ad100128ff0420ca5b',1,'gdjs::ObjectCodeGenerator']]]
 ];
