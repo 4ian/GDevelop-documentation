@@ -201,6 +201,9 @@ $(function() {
 <li>IsAbsolute()
 : <a class="el" href="classgd_1_1_abstract_file_system.html#adce96e1343abc395942d1a9a6e159e68">gd::AbstractFileSystem</a>
 </li>
+<li>IsAction()
+: <a class="el" href="classgd_1_1_events_function.html#a5efebf055f5494f618e6d353866c468c">gd::EventsFunction</a>
+</li>
 <li>IsAsync()
 : <a class="el" href="classgd_1_1_instruction_metadata.html#aed473f086d9c8dd444d96b5190a8a6b4">gd::InstructionMetadata</a>
 </li>
@@ -212,6 +215,7 @@ $(function() {
 </li>
 <li>IsBehavior()
 : <a class="el" href="classgd_1_1_parameter_metadata.html#acb4e8694a3a9681501a72752a212de5c">gd::ParameterMetadata</a>
+, <a class="el" href="classgd_1_1_value_type_metadata.html#aa592211b0dacb8c22ba3f59fce1dd647">gd::ValueTypeMetadata</a>
 </li>
 <li>IsBehaviorInstruction()
 : <a class="el" href="classgd_1_1_instruction_metadata.html#ae945dc7425d1cb3eb5d5af1755bbf4b9">gd::InstructionMetadata</a>
@@ -231,11 +235,17 @@ $(function() {
 <li>IsComplete()
 : <a class="el" href="class_writer.html#a07d74d36dd3191b06e0aab678c246157">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</a>
 </li>
+<li>IsCondition()
+: <a class="el" href="classgd_1_1_events_function.html#a9b7028dd1b04225558aa0327a59d56b7">gd::EventsFunction</a>
+</li>
 <li>IsConvex()
 : <a class="el" href="class_polygon2d.html#aa355bfaf5420a47058b3d8adb3ebbd77">Polygon2d</a>
 </li>
 <li>IsDefaultCenterPoint()
 : <a class="el" href="classgd_1_1_sprite.html#a522c7018e775406ec24661bdc4f2eb2a">gd::Sprite</a>
+</li>
+<li>IsDefined()
+: <a class="el" href="classgd_1_1_value_type_metadata.html#a844493adfe393e284ad42e264ed8c04e">gd::ValueTypeMetadata</a>
 </li>
 <li>IsDeprecated()
 : <a class="el" href="classgd_1_1_platform_extension.html#a9f3b12a09af5b5bfdac9d64203f85ec0">gd::PlatformExtension</a>
@@ -270,7 +280,8 @@ $(function() {
 , <a class="el" href="classgd_1_1_while_event.html#a30c746bff3ce8237a65405ed7ff9f3cc">gd::WhileEvent</a>
 </li>
 <li>IsExpression()
-: <a class="el" href="classgd_1_1_parameter_metadata.html#a7647389d0c64be73ad1411e01de3bbf7">gd::ParameterMetadata</a>
+: <a class="el" href="classgd_1_1_events_function.html#a5c797975931171adfcf3b0c730f147d3">gd::EventsFunction</a>
+, <a class="el" href="classgd_1_1_parameter_metadata.html#a7647389d0c64be73ad1411e01de3bbf7">gd::ParameterMetadata</a>
 </li>
 <li>IsExtensionLoaded()
 : <a class="el" href="classgd_1_1_platform.html#a5f05b4141ee0af1077a8723c1d10a71a">gd::Platform</a>
@@ -322,8 +333,12 @@ $(function() {
 <li>IsMarkedAsNotWorkingForObjects()
 : <a class="el" href="classgd_1_1_effect_metadata.html#af040a2e7ce1f0917391ddb266eeb57e4">gd::EffectMetadata</a>
 </li>
+<li>IsNumber()
+: <a class="el" href="classgd_1_1_value_type_metadata.html#afaa15db790f60cd3277029f84e087ee6">gd::ValueTypeMetadata</a>
+</li>
 <li>IsObject()
 : <a class="el" href="classgd_1_1_parameter_metadata.html#aaeb5e8e421167a4458e747f8cac0632f">gd::ParameterMetadata</a>
+, <a class="el" href="classgd_1_1_value_type_metadata.html#aa3eb468ed9d1424675a838c356d0f69a">gd::ValueTypeMetadata</a>
 </li>
 <li>IsObjectInstruction()
 : <a class="el" href="classgd_1_1_instruction_metadata.html#a9e5bd25e8148e9ea360bfa47998c896e">gd::InstructionMetadata</a>
@@ -339,6 +354,7 @@ $(function() {
 </li>
 <li>IsOptional()
 : <a class="el" href="classgd_1_1_parameter_metadata.html#a7aa567fe7891901fb8ddda67496caf9c">gd::ParameterMetadata</a>
+, <a class="el" href="classgd_1_1_value_type_metadata.html#a96da0ba6000e3b3c0511b45f880b4a0d">gd::ValueTypeMetadata</a>
 </li>
 <li>IsOptionallyAsync()
 : <a class="el" href="classgd_1_1_instruction_metadata.html#a05a9f508e936fe9f42191b63772762ea">gd::InstructionMetadata</a>
@@ -374,9 +390,19 @@ $(function() {
 </li>
 <li>IsString()
 : <a class="el" href="classgd_1_1_serializer_value.html#a518d9d4ad891ee8306482b8dceebe68a">gd::SerializerValue</a>
+, <a class="el" href="classgd_1_1_value_type_metadata.html#a13bd20b7abb2ace6d6fda2418f768a4c">gd::ValueTypeMetadata</a>
 </li>
 <li>IsToBeDeclared()
 : <a class="el" href="classgd_1_1_events_code_generation_context.html#a346ef476252077538555fa65925471fb">gd::EventsCodeGenerationContext</a>
+</li>
+<li>IsTypeBehavior()
+: <a class="el" href="classgd_1_1_value_type_metadata.html#a025b04b5796b2ab33351e12bd1617715">gd::ValueTypeMetadata</a>
+</li>
+<li>IsTypeExpression()
+: <a class="el" href="classgd_1_1_value_type_metadata.html#a04ce0ea0c361a52f5af7421aa7a0c996">gd::ValueTypeMetadata</a>
+</li>
+<li>IsTypeObject()
+: <a class="el" href="classgd_1_1_value_type_metadata.html#aa6b1083af66f580f348f05617adefa28">gd::ValueTypeMetadata</a>
 </li>
 <li>IsUnsupportedBaseObjectCapability()
 : <a class="el" href="classgd_1_1_object_metadata.html#a8aba60c9d1612009c15a8620a80156e1">gd::ObjectMetadata</a>
@@ -390,6 +416,9 @@ $(function() {
 </li>
 <li>IsValueUndefined()
 : <a class="el" href="classgd_1_1_serializer_element.html#a9ada9a85aef079a8e261eedd8a58132e">gd::SerializerElement</a>
+</li>
+<li>IsVariable()
+: <a class="el" href="classgd_1_1_value_type_metadata.html#ada9e8ef0ffc2f1442946015d7cf67979">gd::ValueTypeMetadata</a>
 </li>
 <li>IsVerticalSynchronizationEnabledByDefault()
 : <a class="el" href="classgd_1_1_project.html#a3e08440c7620b8eb45bad794865a3d38">gd::Project</a>

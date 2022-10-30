@@ -81,10 +81,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7dc42dfbef35efd85d2b8fed276671a0"><td class="memItemLeft" align="right" valign="top"><a id="a7dc42dfbef35efd85d2b8fed276671a0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FunctionType</b> { <b>Action</b>, 
+<tr class="memitem:a7dc42dfbef35efd85d2b8fed276671a0"><td class="memItemLeft" align="right" valign="top"><a id="a7dc42dfbef35efd85d2b8fed276671a0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FunctionType</b> { <br />
+&#160;&#160;<b>Action</b>, 
 <b>Condition</b>, 
 <b>Expression</b>, 
-<b>StringExpression</b>
+<b>ExpressionAndCondition</b>, 
+<br />
+&#160;&#160;<b>ActionWithOperator</b>
+<br />
  }</td></tr>
 <tr class="separator:a7dc42dfbef35efd85d2b8fed276671a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +138,22 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 <a class="el" href="classgd_1_1_events_function.html">EventsFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a92748641909b78bb8d8f7400afd6e26a">SetGroup</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;group_)</td></tr>
 <tr class="memdesc:a92748641909b78bb8d8f7400afd6e26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the group of the instruction in the editor. <br /></td></tr>
 <tr class="separator:a92748641909b78bb8d8f7400afd6e26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3832075fe72357dffb74682b453c0ff"><td class="memItemLeft" align="right" valign="top"><a id="ae3832075fe72357dffb74682b453c0ff"></a>
+const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#ae3832075fe72357dffb74682b453c0ff">GetGetterName</a> () const</td></tr>
+<tr class="memdesc:ae3832075fe72357dffb74682b453c0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the ExpressionAndCondition to use as an operand that is defined in the editor. <br /></td></tr>
+<tr class="separator:ae3832075fe72357dffb74682b453c0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5c8b54922f58141088356c3d386619"><td class="memItemLeft" align="right" valign="top"><a id="adc5c8b54922f58141088356c3d386619"></a>
+<a class="el" href="classgd_1_1_events_function.html">EventsFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#adc5c8b54922f58141088356c3d386619">SetGetterName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;getterName_)</td></tr>
+<tr class="memdesc:adc5c8b54922f58141088356c3d386619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the ExpressionAndCondition to use as an operand that is defined in the editor. <br /></td></tr>
+<tr class="separator:adc5c8b54922f58141088356c3d386619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad38d83cc2d293e3915e172d234bab0"><td class="memItemLeft" align="right" valign="top"><a id="aaad38d83cc2d293e3915e172d234bab0"></a>
+<a class="el" href="classgd_1_1_events_function.html">EventsFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#aaad38d83cc2d293e3915e172d234bab0">SetExpressionType</a> (const <a class="el" href="classgd_1_1_value_type_metadata.html">gd::ValueTypeMetadata</a> &amp;type)</td></tr>
+<tr class="memdesc:aaad38d83cc2d293e3915e172d234bab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the expression. <br /></td></tr>
+<tr class="separator:aaad38d83cc2d293e3915e172d234bab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52af93065d8cd04465296fba3e03a931"><td class="memItemLeft" align="right" valign="top"><a id="a52af93065d8cd04465296fba3e03a931"></a>
+const <a class="el" href="classgd_1_1_value_type_metadata.html">gd::ValueTypeMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a52af93065d8cd04465296fba3e03a931">GetExpressionType</a> () const</td></tr>
+<tr class="memdesc:a52af93065d8cd04465296fba3e03a931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the expression. <br /></td></tr>
+<tr class="separator:a52af93065d8cd04465296fba3e03a931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ea9da293442ddbb6da9264e336ab2e"><td class="memItemLeft" align="right" valign="top"><a id="a50ea9da293442ddbb6da9264e336ab2e"></a>
 <a class="el" href="classgd_1_1_events_function.html">EventsFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a50ea9da293442ddbb6da9264e336ab2e">SetFunctionType</a> (FunctionType type)</td></tr>
 <tr class="memdesc:a50ea9da293442ddbb6da9264e336ab2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the function. <br /></td></tr>
@@ -142,6 +162,16 @@ const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</t
 FunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a682be299f49d37b5dc2c14ec7b01dc79">GetFunctionType</a> () const</td></tr>
 <tr class="memdesc:a682be299f49d37b5dc2c14ec7b01dc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the function. <br /></td></tr>
 <tr class="separator:a682be299f49d37b5dc2c14ec7b01dc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efebf055f5494f618e6d353866c468c"><td class="memItemLeft" align="right" valign="top"><a id="a5efebf055f5494f618e6d353866c468c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a5efebf055f5494f618e6d353866c468c">IsAction</a> () const</td></tr>
+<tr class="memdesc:a5efebf055f5494f618e6d353866c468c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the function is an action. <br /></td></tr>
+<tr class="separator:a5efebf055f5494f618e6d353866c468c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c797975931171adfcf3b0c730f147d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a5c797975931171adfcf3b0c730f147d3">IsExpression</a> () const</td></tr>
+<tr class="memdesc:a5c797975931171adfcf3b0c730f147d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the function is an expression.  <a href="#a5c797975931171adfcf3b0c730f147d3">More...</a><br /></td></tr>
+<tr class="separator:a5c797975931171adfcf3b0c730f147d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7028dd1b04225558aa0327a59d56b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a9b7028dd1b04225558aa0327a59d56b7">IsCondition</a> () const</td></tr>
+<tr class="memdesc:a9b7028dd1b04225558aa0327a59d56b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the function is a condition.  <a href="#a9b7028dd1b04225558aa0327a59d56b7">More...</a><br /></td></tr>
+<tr class="separator:a9b7028dd1b04225558aa0327a59d56b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf84f1d18cf6bd5cfb2cb997ea4d2757"><td class="memItemLeft" align="right" valign="top"><a id="acf84f1d18cf6bd5cfb2cb997ea4d2757"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#acf84f1d18cf6bd5cfb2cb997ea4d2757">IsPrivate</a> ()</td></tr>
 <tr class="memdesc:acf84f1d18cf6bd5cfb2cb997ea4d2757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the function is private. <br /></td></tr>
@@ -158,8 +188,11 @@ const <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;
 <a class="el" href="classgd_1_1_events_list.html">gd::EventsList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a6f1ff6995e48a753fe9c58ff3c5e80e0">GetEvents</a> ()</td></tr>
 <tr class="memdesc:a6f1ff6995e48a753fe9c58ff3c5e80e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the events. <br /></td></tr>
 <tr class="separator:a6f1ff6995e48a753fe9c58ff3c5e80e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac898089fd7eb9aa9d04c223082bca540"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#ac898089fd7eb9aa9d04c223082bca540">GetParametersForEvents</a> (const <a class="el" href="classgd_1_1_events_functions_container.html">gd::EventsFunctionsContainer</a> &amp;functionsContainer) const</td></tr>
+<tr class="memdesc:ac898089fd7eb9aa9d04c223082bca540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parameters of the function that are used in the events.  <a href="#ac898089fd7eb9aa9d04c223082bca540">More...</a><br /></td></tr>
+<tr class="separator:ac898089fd7eb9aa9d04c223082bca540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2295e8b1a0234add31b6efc992e0787"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#ab2295e8b1a0234add31b6efc992e0787">GetParameters</a> () const</td></tr>
-<tr class="memdesc:ab2295e8b1a0234add31b6efc992e0787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parameters of the function.  <a href="#ab2295e8b1a0234add31b6efc992e0787">More...</a><br /></td></tr>
+<tr class="memdesc:ab2295e8b1a0234add31b6efc992e0787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parameters of the function that are filled in the editor.  <a href="#ab2295e8b1a0234add31b6efc992e0787">More...</a><br /></td></tr>
 <tr class="separator:ab2295e8b1a0234add31b6efc992e0787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399a6692d379097158001b97074fbdaf"><td class="memItemLeft" align="right" valign="top"><a id="a399a6692d379097158001b97074fbdaf"></a>
 std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_function.html#a399a6692d379097158001b97074fbdaf">GetParameters</a> ()</td></tr>
@@ -212,8 +245,87 @@ The conversion to an extension is not in GDCore and should be done by the IDE (s
 </table>
 </div><div class="memdoc">
 
-<p>Return the parameters of the function. </p>
+<p>Return the parameters of the function that are filled in the editor. </p>
+<dl class="section note"><dt>Note</dt><dd>They won't be used for ActionWithOperator, but they need to be kept to avoid to loose them when the function type is changed.</dd>
+<dd>
+During code/extension generation, new parameters are added to the generated function, like "runtimeScene" and "eventsFunctionContext". This should be transparent to the user. </dd></dl>
+
+</div>
+</div>
+<a id="ac898089fd7eb9aa9d04c223082bca540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac898089fd7eb9aa9d04c223082bca540">&#9670;&nbsp;</a></span>GetParametersForEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="classgd_1_1_parameter_metadata.html">gd::ParameterMetadata</a> &gt; &amp; gd::EventsFunction::GetParametersForEvents </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_events_functions_container.html">gd::EventsFunctionsContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>functionsContainer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the parameters of the function that are used in the events. </p>
 <dl class="section note"><dt>Note</dt><dd>During code/extension generation, new parameters are added to the generated function, like "runtimeScene" and "eventsFunctionContext". This should be transparent to the user. </dd></dl>
+
+</div>
+</div>
+<a id="a9b7028dd1b04225558aa0327a59d56b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7028dd1b04225558aa0327a59d56b7">&#9670;&nbsp;</a></span>IsCondition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::EventsFunction::IsCondition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the function is a condition. </p>
+<p>Note that a function can be both an expression and a condition. </p>
+
+</div>
+</div>
+<a id="a5c797975931171adfcf3b0c730f147d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c797975931171adfcf3b0c730f147d3">&#9670;&nbsp;</a></span>IsExpression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::EventsFunction::IsExpression </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the function is an expression. </p>
+<p>Note that a function can be both an expression and a condition. </p>
 
 </div>
 </div>

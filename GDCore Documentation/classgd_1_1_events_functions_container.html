@@ -66,6 +66,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classgd_1_1_events_functions_container-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -82,8 +84,22 @@ $(function() {
 
 <p>Inherited by <a class="el" href="classgd_1_1_events_functions_extension.html">gd::EventsFunctionsExtension</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa9fbeb20d371bee13d1ab98444a09bd6"><td class="memItemLeft" align="right" valign="top"><a id="aa9fbeb20d371bee13d1ab98444a09bd6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FunctionOwner</b> { <b>Extension</b>, 
+<b>Object</b>, 
+<b>Behavior</b>
+ }</td></tr>
+<tr class="separator:aa9fbeb20d371bee13d1ab98444a09bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afc3d2b2b6e015422eb9e7754aacb20e5"><td class="memItemLeft" align="right" valign="top"><a id="afc3d2b2b6e015422eb9e7754aacb20e5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventsFunctionsContainer</b> (FunctionOwner source_)</td></tr>
+<tr class="separator:afc3d2b2b6e015422eb9e7754aacb20e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0c928309bdc5749b8e2f973e151f58"><td class="memItemLeft" align="right" valign="top">FunctionOwner&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_functions_container.html#a0d0c928309bdc5749b8e2f973e151f58">GetOwner</a> () const</td></tr>
+<tr class="memdesc:a0d0c928309bdc5749b8e2f973e151f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the source of the function container.  <a href="#a0d0c928309bdc5749b8e2f973e151f58">More...</a><br /></td></tr>
+<tr class="separator:a0d0c928309bdc5749b8e2f973e151f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Events Functions management</div></td></tr>
 <tr class="memitem:ab73a662c1e07008348dbb4edad3a6b9e"><td class="memItemLeft" align="right" valign="top"><a id="ab73a662c1e07008348dbb4edad3a6b9e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_events_functions_container.html#ab73a662c1e07008348dbb4edad3a6b9e">HasEventsFunctionNamed</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name) const</td></tr>
@@ -260,6 +276,34 @@ Protected Member Functions</h2></td></tr>
 
 <p>Get the function at the specified index in the list. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Trying to access to a not existing function will result in undefined behavior. </dd></dl>
+
+</div>
+</div>
+<a id="a0d0c928309bdc5749b8e2f973e151f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0c928309bdc5749b8e2f973e151f58">&#9670;&nbsp;</a></span>GetOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FunctionOwner gd::EventsFunctionsContainer::GetOwner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the source of the function container. </p>
+<dl class="section note"><dt>Note</dt><dd>For instance, it can be useful to handle specific parameters for behaviors. </dd></dl>
 
 </div>
 </div>

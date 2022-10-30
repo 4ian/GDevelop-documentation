@@ -115,8 +115,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a749810f9a97c3f2562a2f240477ae06f"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a749810f9a97c3f2562a2f240477ae06f">GenerateLayoutCode</a> (const gd::Project &amp;project, const gd::Layout &amp;scene, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
 <tr class="separator:a749810f9a97c3f2562a2f240477ae06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#ae567a74cf8e5d02e105f5267a93f0ea8">GenerateEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
-<tr class="separator:ae567a74cf8e5d02e105f5267a93f0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4017019ee4c5e9b44f4a3ebfd2ddff2"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#ad4017019ee4c5e9b44f4a3ebfd2ddff2">GenerateEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsFunctionsContainer &amp;functionsContainer, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
+<tr class="separator:ad4017019ee4c5e9b44f4a3ebfd2ddff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a3be06b50064b2fdc41a5ecb790ab8861">GenerateBehaviorEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsBasedBehavior &amp;eventsBasedBehavior, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
 <tr class="separator:a3be06b50064b2fdc41a5ecb790ab8861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6593097cefb486076caedc44a9f22f8f"><td class="memItemLeft" align="right" valign="top">static gd::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classgdjs_1_1_events_code_generator.html#a6593097cefb486076caedc44a9f22f8f">GenerateObjectEventsFunctionCode</a> (gd::Project &amp;project, const gd::EventsBasedObject &amp;eventsBasedObject, const gd::EventsFunction &amp;eventsFunction, const gd::String &amp;codeNamespace, const gd::String &amp;fullyQualifiedFunctionName, const gd::String &amp;onceTriggersVariable, const gd::String &amp;preludeCode, const gd::String &amp;endingCode, std::set&lt; gd::String &gt; &amp;includeFiles, bool compilationForRuntime=false)</td></tr>
@@ -332,8 +332,8 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 
 </div>
 </div>
-<a id="ae567a74cf8e5d02e105f5267a93f0ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae567a74cf8e5d02e105f5267a93f0ea8">&#9670;&nbsp;</a></span>GenerateEventsFunctionCode()</h2>
+<a id="ad4017019ee4c5e9b44f4a3ebfd2ddff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4017019ee4c5e9b44f4a3ebfd2ddff2">&#9670;&nbsp;</a></span>GenerateEventsFunctionCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,6 +346,12 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
           <td>(</td>
           <td class="paramtype">gd::Project &amp;&#160;</td>
           <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gd::EventsFunctionsContainer &amp;&#160;</td>
+          <td class="paramname"><em>functionsContainer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -387,6 +393,7 @@ virtual gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">project</td><td>Project used. </td></tr>
+    <tr><td class="paramname">functionsContainer</td><td>The container of the compiled event function. </td></tr>
     <tr><td class="paramname">eventsFunction</td><td>The events function to be compiled. </td></tr>
     <tr><td class="paramname">codeNamespace</td><td>Where to store the context used by the function. </td></tr>
     <tr><td class="paramname">includeFiles</td><td>Will be filled with the necessary include files. </td></tr>

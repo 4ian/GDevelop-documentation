@@ -69,7 +69,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classgd_1_1_parameter_metadata-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gd::ParameterMetadata Class Reference<div class="ingroups"><a class="el" href="group___events.html">Events (Classes defining the event system and some tools associated with events)</a></div></div>  </div>
@@ -83,12 +82,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a82d06be50faa748fd950f8da241e1568"><td class="memItemLeft" align="right" valign="top"><a id="a82d06be50faa748fd950f8da241e1568"></a>
+<a class="el" href="classgd_1_1_value_type_metadata.html">gd::ValueTypeMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a82d06be50faa748fd950f8da241e1568">GetValueTypeMetadata</a> ()</td></tr>
+<tr class="memdesc:a82d06be50faa748fd950f8da241e1568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the metadata of the parameter type. <br /></td></tr>
+<tr class="separator:a82d06be50faa748fd950f8da241e1568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9909a395ef5b6a802b0c69db2446e570"><td class="memItemLeft" align="right" valign="top"><a id="a9909a395ef5b6a802b0c69db2446e570"></a>
+<a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a9909a395ef5b6a802b0c69db2446e570">SetValueTypeMetadata</a> (const <a class="el" href="classgd_1_1_value_type_metadata.html">gd::ValueTypeMetadata</a> &amp;valueTypeMetadata_)</td></tr>
+<tr class="memdesc:a9909a395ef5b6a802b0c69db2446e570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the metadata of the parameter type. <br /></td></tr>
+<tr class="separator:a9909a395ef5b6a802b0c69db2446e570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af602db13fc210699c8b3d608f9dc5746"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#af602db13fc210699c8b3d608f9dc5746">GetType</a> () const</td></tr>
 <tr class="memdesc:af602db13fc210699c8b3d608f9dc5746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of the parameter.  <a href="#af602db13fc210699c8b3d608f9dc5746">More...</a><br /></td></tr>
 <tr class="separator:af602db13fc210699c8b3d608f9dc5746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65adfa9a555b5d7d68561cbb918dd619"><td class="memItemLeft" align="right" valign="top"><a id="a65adfa9a555b5d7d68561cbb918dd619"></a>
-<a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a65adfa9a555b5d7d68561cbb918dd619">SetType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
-<tr class="memdesc:a65adfa9a555b5d7d68561cbb918dd619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the parameter. <br /></td></tr>
+<tr class="memitem:a65adfa9a555b5d7d68561cbb918dd619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a65adfa9a555b5d7d68561cbb918dd619">SetType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type_)</td></tr>
+<tr class="memdesc:a65adfa9a555b5d7d68561cbb918dd619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the parameter.  <a href="#a65adfa9a555b5d7d68561cbb918dd619">More...</a><br /></td></tr>
 <tr class="separator:a65adfa9a555b5d7d68561cbb918dd619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7604c3fa5e2f03a4c9acf0f22543f94e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a7604c3fa5e2f03a4c9acf0f22543f94e">GetName</a> () const</td></tr>
 <tr class="memdesc:a7604c3fa5e2f03a4c9acf0f22543f94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the parameter.  <a href="#a7604c3fa5e2f03a4c9acf0f22543f94e">More...</a><br /></td></tr>
@@ -96,21 +102,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b36f5aac5899c401e21f78664642a66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a0b36f5aac5899c401e21f78664642a66">SetName</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name_)</td></tr>
 <tr class="memdesc:a0b36f5aac5899c401e21f78664642a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the parameter.  <a href="#a0b36f5aac5899c401e21f78664642a66">More...</a><br /></td></tr>
 <tr class="separator:a0b36f5aac5899c401e21f78664642a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9992914d5f75ec577670a8338edbc35b"><td class="memItemLeft" align="right" valign="top"><a id="a9992914d5f75ec577670a8338edbc35b"></a>
-const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a9992914d5f75ec577670a8338edbc35b">GetExtraInfo</a> () const</td></tr>
-<tr class="memdesc:a9992914d5f75ec577670a8338edbc35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an optional additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter). <br /></td></tr>
+<tr class="memitem:a9992914d5f75ec577670a8338edbc35b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a9992914d5f75ec577670a8338edbc35b">GetExtraInfo</a> () const</td></tr>
+<tr class="memdesc:a9992914d5f75ec577670a8338edbc35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an optional additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter).  <a href="#a9992914d5f75ec577670a8338edbc35b">More...</a><br /></td></tr>
 <tr class="separator:a9992914d5f75ec577670a8338edbc35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e366db467a45f950d2261d6f68c4e4"><td class="memItemLeft" align="right" valign="top"><a id="a35e366db467a45f950d2261d6f68c4e4"></a>
-<a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a35e366db467a45f950d2261d6f68c4e4">SetExtraInfo</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;supplementaryInformation_)</td></tr>
-<tr class="memdesc:a35e366db467a45f950d2261d6f68c4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an optional additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter). <br /></td></tr>
+<tr class="memitem:a35e366db467a45f950d2261d6f68c4e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a35e366db467a45f950d2261d6f68c4e4">SetExtraInfo</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;supplementaryInformation_)</td></tr>
+<tr class="memdesc:a35e366db467a45f950d2261d6f68c4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an optional additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter).  <a href="#a35e366db467a45f950d2261d6f68c4e4">More...</a><br /></td></tr>
 <tr class="separator:a35e366db467a45f950d2261d6f68c4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aa567fe7891901fb8ddda67496caf9c"><td class="memItemLeft" align="right" valign="top"><a id="a7aa567fe7891901fb8ddda67496caf9c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a7aa567fe7891901fb8ddda67496caf9c">IsOptional</a> () const</td></tr>
-<tr class="memdesc:a7aa567fe7891901fb8ddda67496caf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the parameter is optional. <br /></td></tr>
+<tr class="memitem:a7aa567fe7891901fb8ddda67496caf9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a7aa567fe7891901fb8ddda67496caf9c">IsOptional</a> () const</td></tr>
+<tr class="memdesc:a7aa567fe7891901fb8ddda67496caf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the parameter is optional.  <a href="#a7aa567fe7891901fb8ddda67496caf9c">More...</a><br /></td></tr>
 <tr class="separator:a7aa567fe7891901fb8ddda67496caf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09fe4cb772b5911e4dc700cb41d3343"><td class="memItemLeft" align="right" valign="top"><a id="ac09fe4cb772b5911e4dc700cb41d3343"></a>
-<a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#ac09fe4cb772b5911e4dc700cb41d3343">SetOptional</a> (bool optional_=true)</td></tr>
-<tr class="memdesc:ac09fe4cb772b5911e4dc700cb41d3343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the parameter is optional. <br /></td></tr>
+<tr class="memitem:ac09fe4cb772b5911e4dc700cb41d3343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#ac09fe4cb772b5911e4dc700cb41d3343">SetOptional</a> (bool optional_=true)</td></tr>
+<tr class="memdesc:ac09fe4cb772b5911e4dc700cb41d3343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the parameter is optional.  <a href="#ac09fe4cb772b5911e4dc700cb41d3343">More...</a><br /></td></tr>
 <tr class="separator:ac09fe4cb772b5911e4dc700cb41d3343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e20bd88d4f42a8b7b4e1dbd0908e46"><td class="memItemLeft" align="right" valign="top"><a id="aa0e20bd88d4f42a8b7b4e1dbd0908e46"></a>
 const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#aa0e20bd88d4f42a8b7b4e1dbd0908e46">GetDescription</a> () const</td></tr>
@@ -162,47 +164,82 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acb4e8694a3a9681501a72752a212de5c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#acb4e8694a3a9681501a72752a212de5c">IsBehavior</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterType)</td></tr>
 <tr class="memdesc:acb4e8694a3a9681501a72752a212de5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the type of the parameter is "behavior".  <a href="#acb4e8694a3a9681501a72752a212de5c">More...</a><br /></td></tr>
 <tr class="separator:acb4e8694a3a9681501a72752a212de5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7647389d0c64be73ad1411e01de3bbf7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a7647389d0c64be73ad1411e01de3bbf7">IsExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;<a class="el" href="classgd_1_1_parameter_metadata.html#a4e75083449de13430ce81dacdc8ea11e">type</a>, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterType)</td></tr>
+<tr class="memitem:a7647389d0c64be73ad1411e01de3bbf7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a7647389d0c64be73ad1411e01de3bbf7">IsExpression</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;type, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterType)</td></tr>
 <tr class="memdesc:a7647389d0c64be73ad1411e01de3bbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the type of the parameter is an expression of the given type.  <a href="#a7647389d0c64be73ad1411e01de3bbf7">More...</a><br /></td></tr>
 <tr class="separator:a7647389d0c64be73ad1411e01de3bbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e948fadb6defe3e77dc542b0bc69183"><td class="memItemLeft" align="right" valign="top"><a id="a3e948fadb6defe3e77dc542b0bc69183"></a>
-static const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a3e948fadb6defe3e77dc542b0bc69183">GetExpressionValueType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterType)</td></tr>
-<tr class="memdesc:a3e948fadb6defe3e77dc542b0bc69183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the expression type from the parameter type. Declinations of "number" and "string" types (like "forceMultiplier" or "sceneName") are replaced by "number" and "string". <br /></td></tr>
-<tr class="separator:a3e948fadb6defe3e77dc542b0bc69183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4802106f19aef4906f782cc52907f8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a8e4802106f19aef4906f782cc52907f8">GetExpressionValueType</a> (const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;parameterType)</td></tr>
+<tr class="memdesc:a8e4802106f19aef4906f782cc52907f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the expression type from the parameter type. Declinations of "number" and "string" types (like "forceMultiplier" or "sceneName") are replaced by "number" and "string".  <a href="#a8e4802106f19aef4906f782cc52907f8">More...</a><br /></td></tr>
+<tr class="separator:a8e4802106f19aef4906f782cc52907f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4e75083449de13430ce81dacdc8ea11e"><td class="memItemLeft" align="right" valign="top"><a id="a4e75083449de13430ce81dacdc8ea11e"></a>
-<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a4e75083449de13430ce81dacdc8ea11e">type</a></td></tr>
-<tr class="memdesc:a4e75083449de13430ce81dacdc8ea11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter type. <br /></td></tr>
-<tr class="separator:a4e75083449de13430ce81dacdc8ea11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95445a59cef0f381e2ba5c87e382e4f7"><td class="memItemLeft" align="right" valign="top"><a id="a95445a59cef0f381e2ba5c87e382e4f7"></a>
-<a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a95445a59cef0f381e2ba5c87e382e4f7">supplementaryInformation</a></td></tr>
-<tr class="memdesc:a95445a59cef0f381e2ba5c87e382e4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used if needed. <br /></td></tr>
-<tr class="separator:a95445a59cef0f381e2ba5c87e382e4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190e80dc576ff0de4d19fad2c1cf93de"><td class="memItemLeft" align="right" valign="top"><a id="a190e80dc576ff0de4d19fad2c1cf93de"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#a190e80dc576ff0de4d19fad2c1cf93de">optional</a></td></tr>
-<tr class="memdesc:a190e80dc576ff0de4d19fad2c1cf93de"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the parameter is optional. <br /></td></tr>
-<tr class="separator:a190e80dc576ff0de4d19fad2c1cf93de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4db44766822e6ce1aa753aa9a71933a"><td class="memItemLeft" align="right" valign="top"><a id="ac4db44766822e6ce1aa753aa9a71933a"></a>
 <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#ac4db44766822e6ce1aa753aa9a71933a">description</a></td></tr>
 <tr class="memdesc:ac4db44766822e6ce1aa753aa9a71933a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description shown in editor. <br /></td></tr>
 <tr class="separator:ac4db44766822e6ce1aa753aa9a71933a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac84a0e831b9ab7c8fba59bbd296324af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_parameter_metadata.html#ac84a0e831b9ab7c8fba59bbd296324af">codeOnly</a></td></tr>
 <tr class="separator:ac84a0e831b9ab7c8fba59bbd296324af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab8a84277587c555729baf623aecf67d7"><td class="memItemLeft" align="right" valign="top"><a id="ab8a84277587c555729baf623aecf67d7"></a>
-static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberType</b> = &quot;number&quot;</td></tr>
-<tr class="separator:ab8a84277587c555729baf623aecf67d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad478771250a2d487a858bb9a65b34b79"><td class="memItemLeft" align="right" valign="top"><a id="ad478771250a2d487a858bb9a65b34b79"></a>
-static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stringType</b> = &quot;string&quot;</td></tr>
-<tr class="separator:ad478771250a2d487a858bb9a65b34b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describe a parameter of an instruction (action, condition) or of an expression: type, user-friendly description, etc... </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8e4802106f19aef4906f782cc52907f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4802106f19aef4906f782cc52907f8">&#9670;&nbsp;</a></span>GetExpressionValueType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&amp; gd::ParameterMetadata::GetExpressionValueType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameterType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the expression type from the parameter type. Declinations of "number" and "string" types (like "forceMultiplier" or "sceneName") are replaced by "number" and "string". </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a9992914d5f75ec577670a8338edbc35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9992914d5f75ec577670a8338edbc35b">&#9670;&nbsp;</a></span>GetExtraInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classgd_1_1_string.html">gd::String</a>&amp; gd::ParameterMetadata::GetExtraInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return an optional additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
+
+</div>
+</div>
 <a id="a7604c3fa5e2f03a4c9acf0f22543f94e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7604c3fa5e2f03a4c9acf0f22543f94e">&#9670;&nbsp;</a></span>GetName()</h2>
 
@@ -256,6 +293,7 @@ static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</
 
 <p>Return the type of the parameter. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_parameter_metadata.html#aaeb5e8e421167a4458e747f8cac0632f" title="Return true if the type of the parameter is representing one object (or more, i.e: an object group)...">gd::ParameterMetadata::IsObject</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -285,6 +323,7 @@ static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</
 
 <p>Return true if the type of the parameter is "behavior". </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_parameter_metadata.html#af602db13fc210699c8b3d608f9dc5746" title="Return the type of the parameter. ">gd::ParameterMetadata::GetType</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -324,6 +363,7 @@ static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</
 
 <p>Return true if the type of the parameter is an expression of the given type. </p>
 <dl class="section note"><dt>Note</dt><dd>If you had a new type of parameter, also add it in the IDE ( see EventsFunctionParametersEditor, ParameterRenderingService and ExpressionAutocompletion) and in the <a class="el" href="classgd_1_1_events_code_generator.html" title="Internal class used to generate code from events. ">EventsCodeGenerator</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -353,6 +393,64 @@ static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</
 
 <p>Return true if the type of the parameter is representing one object (or more, i.e: an object group). </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgd_1_1_parameter_metadata.html#af602db13fc210699c8b3d608f9dc5746" title="Return the type of the parameter. ">gd::ParameterMetadata::GetType</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a7aa567fe7891901fb8ddda67496caf9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa567fe7891901fb8ddda67496caf9c">&#9670;&nbsp;</a></span>IsOptional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gd::ParameterMetadata::IsOptional </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the parameter is optional. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a35e366db467a45f950d2261d6f68c4e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e366db467a45f950d2261d6f68c4e4">&#9670;&nbsp;</a></span>SetExtraInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a>&amp; gd::ParameterMetadata::SetExtraInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>supplementaryInformation_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set an optional additional information, used for some parameters with special type (for example, it can contains the type of object accepted by the parameter). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -382,6 +480,64 @@ static const <a class="el" href="classgd_1_1_string.html">gd::String</a>&#160;</
 
 <p>Set the name of the parameter. </p>
 <p>Name is optional, and won't be filled for most parameters of extensions. It is useful when generating a function from events, where parameters must be named. </p>
+
+</div>
+</div>
+<a id="ac09fe4cb772b5911e4dc700cb41d3343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09fe4cb772b5911e4dc700cb41d3343">&#9670;&nbsp;</a></span>SetOptional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a>&amp; gd::ParameterMetadata::SetOptional </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>optional_</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set if the parameter is optional. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a65adfa9a555b5d7d68561cbb918dd619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65adfa9a555b5d7d68561cbb918dd619">&#9670;&nbsp;</a></span>SetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgd_1_1_parameter_metadata.html">ParameterMetadata</a>&amp; gd::ParameterMetadata::SetType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>type_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the type of the parameter. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Use <a class="el" href="classgd_1_1_value_type_metadata.html" title="Define a type for parameters of a function (action, condition or expression) or the returned value of...">gd::ValueTypeMetadata</a> instead. </dd></dl>
 
 </div>
 </div>
