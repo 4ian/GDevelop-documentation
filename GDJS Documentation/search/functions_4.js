@@ -16,6 +16,8 @@ var searchData=
   ['get',['Get',['../d2/d3d/classgdjs_1_1_js_platform.html#aace4a7661473b55c7f73d590349330bc',1,'gdjs::JsPlatform']]],
   ['getbehaviorpropertygettername',['GetBehaviorPropertyGetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee',1,'gdjs::BehaviorCodeGenerator']]],
   ['getbehaviorpropertysettername',['GetBehaviorPropertySetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1',1,'gdjs::BehaviorCodeGenerator']]],
+  ['getbehaviorsharedpropertygettername',['GetBehaviorSharedPropertyGetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a7a4a1618190b8f4a3644eb9d189ae407',1,'gdjs::BehaviorCodeGenerator']]],
+  ['getbehaviorsharedpropertysettername',['GetBehaviorSharedPropertySetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a7ef79de530794b0e4247ae5e49dfa3eb',1,'gdjs::BehaviorCodeGenerator']]],
   ['getcodenamespace',['GetCodeNamespace',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a55cbe256130c7722b7cd7f31b4fbf6ff',1,'gdjs::EventsCodeGenerator']]],
   ['getcodenamespaceaccessor',['GetCodeNamespaceAccessor',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a86c6da4f0e20002526a9f159620d96db',1,'gdjs::EventsCodeGenerator']]],
   ['getexportedincludefilename',['GetExportedIncludeFilename',['../d0/d75/classgdjs_1_1_exporter_helper.html#a253f38e4e6b6dd09b8afd9071ba8e2ea',1,'gdjs::ExporterHelper']]],

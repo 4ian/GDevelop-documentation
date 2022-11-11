@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A <a class="el" href="classgd_1_1_behavior.html" title="Base class used to represents a behavior that can be applied to an object. It stores the content (i...">gd::Behavior</a> that stores its content in JSON and forward the properties related functions to Javascript with Emscripten.  
+<p>A <a class="el" href="classgd_1_1_behavior.html" title="Base class used to represents a behavior that can be applied to an object. It stores the content (i...">gd::Behavior</a> that stores its content in JSON.  
  <a href="classgd_1_1_custom_behavior.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_custom_behavior_8h_source.html">CustomBehavior.h</a>&gt;</code></p>
@@ -140,19 +140,19 @@ const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerEle
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac908907b5a9ae5f18fadeaca14f98dba"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_custom_behavior.html#ac908907b5a9ae5f18fadeaca14f98dba">GetProperties</a> (const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent) const override</td></tr>
+<tr class="memitem:ac908907b5a9ae5f18fadeaca14f98dba"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a>, <a class="el" href="classgd_1_1_property_descriptor.html">gd::PropertyDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_custom_behavior.html#ac908907b5a9ae5f18fadeaca14f98dba">GetProperties</a> (const <a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent) const override</td></tr>
 <tr class="memdesc:ac908907b5a9ae5f18fadeaca14f98dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to know about the custom properties of the behavior.  <a href="#ac908907b5a9ae5f18fadeaca14f98dba">More...</a><br /></td></tr>
 <tr class="separator:ac908907b5a9ae5f18fadeaca14f98dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac26fba9a0faf536da3e21cf17d986a4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_custom_behavior.html#aac26fba9a0faf536da3e21cf17d986a4">UpdateProperty</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value) override</td></tr>
+<tr class="memitem:aac26fba9a0faf536da3e21cf17d986a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_custom_behavior.html#aac26fba9a0faf536da3e21cf17d986a4">UpdateProperty</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;name, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;value) override</td></tr>
 <tr class="memdesc:aac26fba9a0faf536da3e21cf17d986a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the IDE wants to update a custom property of the behavior.  <a href="#aac26fba9a0faf536da3e21cf17d986a4">More...</a><br /></td></tr>
 <tr class="separator:aac26fba9a0faf536da3e21cf17d986a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12bfcb246eb6dd3839dc22159f4b4f14"><td class="memItemLeft" align="right" valign="top"><a id="a12bfcb246eb6dd3839dc22159f4b4f14"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_custom_behavior.html#a12bfcb246eb6dd3839dc22159f4b4f14">InitializeContent</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_custom_behavior.html#a12bfcb246eb6dd3839dc22159f4b4f14">InitializeContent</a> (<a class="el" href="classgd_1_1_serializer_element.html">gd::SerializerElement</a> &amp;behaviorContent) override</td></tr>
 <tr class="memdesc:a12bfcb246eb6dd3839dc22159f4b4f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to initialize the content with the default properties for the behavior. <br /></td></tr>
 <tr class="separator:a12bfcb246eb6dd3839dc22159f4b4f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classgd_1_1_behavior.html" title="Base class used to represents a behavior that can be applied to an object. It stores the content (i...">gd::Behavior</a> that stores its content in JSON and forward the properties related functions to Javascript with Emscripten. </p>
+<div class="textblock"><p>A <a class="el" href="classgd_1_1_behavior.html" title="Base class used to represents a behavior that can be applied to an object. It stores the content (i...">gd::Behavior</a> that stores its content in JSON. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac908907b5a9ae5f18fadeaca14f98dba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac908907b5a9ae5f18fadeaca14f98dba">&#9670;&nbsp;</a></span>GetProperties()</h2>

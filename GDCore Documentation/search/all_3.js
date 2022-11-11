@@ -60,7 +60,9 @@ var searchData=
   ['createresource',['CreateResource',['../classgd_1_1_resources_manager.html#aad6e917dbe1b908e87b9de720362f429',1,'gd::ResourcesManager']]],
   ['crtallocator',['CrtAllocator',['../class_crt_allocator.html',1,'']]],
   ['custombehavior',['CustomBehavior',['../classgd_1_1_custom_behavior.html',1,'gd']]],
+  ['custombehaviorsshareddata',['CustomBehaviorsSharedData',['../classgd_1_1_custom_behaviors_shared_data.html',1,'gd']]],
   ['customcodeoutsidemain',['customCodeOutsideMain',['../classgd_1_1_events_code_generator.html#a8e496700c1dd61b0dcaee38520da0948',1,'gd::EventsCodeGenerator']]],
+  ['customconfigurationhelper',['CustomConfigurationHelper',['../classgd_1_1_custom_configuration_helper.html',1,'gd']]],
   ['customglobaldeclarations',['customGlobalDeclarations',['../classgd_1_1_events_code_generator.html#a9955e8e3165da16d6ead37ed8d1c90cf',1,'gd::EventsCodeGenerator']]],
   ['customobjectconfiguration',['CustomObjectConfiguration',['../classgd_1_1_custom_object_configuration.html',1,'gd::CustomObjectConfiguration'],['../classgd_1_1_custom_object_configuration.html#a67ce1804ba80487c33942bb22e9ef910',1,'gd::CustomObjectConfiguration::CustomObjectConfiguration()']]],
   ['customobjecttyperenamer',['CustomObjectTypeRenamer',['../classgd_1_1_custom_object_type_renamer.html',1,'gd']]]

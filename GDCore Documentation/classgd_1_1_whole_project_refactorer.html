@@ -119,6 +119,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9fd93b1af12a12f16f9d51ab26fb4c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#ad9fd93b1af12a12f16f9d51ab26fb4c1">RenameEventsBasedBehaviorProperty</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_events_functions_extension.html">gd::EventsFunctionsExtension</a> &amp;eventsFunctionsExtension, const <a class="el" href="classgd_1_1_events_based_behavior.html">gd::EventsBasedBehavior</a> &amp;eventsBasedBehavior, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;oldPropertyName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newPropertyName)</td></tr>
 <tr class="memdesc:ad9fd93b1af12a12f16f9d51ab26fb4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactor the project <b>before</b> a property of a behavior is renamed.  <a href="#ad9fd93b1af12a12f16f9d51ab26fb4c1">More...</a><br /></td></tr>
 <tr class="separator:ad9fd93b1af12a12f16f9d51ab26fb4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb5cc53b69538a631628eb57b5833d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#aefb5cc53b69538a631628eb57b5833d6">RenameEventsBasedBehaviorSharedProperty</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_events_functions_extension.html">gd::EventsFunctionsExtension</a> &amp;eventsFunctionsExtension, const <a class="el" href="classgd_1_1_events_based_behavior.html">gd::EventsBasedBehavior</a> &amp;eventsBasedBehavior, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;oldPropertyName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newPropertyName)</td></tr>
+<tr class="memdesc:aefb5cc53b69538a631628eb57b5833d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactor the project <b>before</b> a shared property of a behavior is renamed.  <a href="#aefb5cc53b69538a631628eb57b5833d6">More...</a><br /></td></tr>
+<tr class="separator:aefb5cc53b69538a631628eb57b5833d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846af2dbf5c905b6a671c3444677ba4c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#a846af2dbf5c905b6a671c3444677ba4c">RenameEventsBasedObjectProperty</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, const <a class="el" href="classgd_1_1_events_functions_extension.html">gd::EventsFunctionsExtension</a> &amp;eventsFunctionsExtension, const <a class="el" href="classgd_1_1_events_based_object.html">gd::EventsBasedObject</a> &amp;eventsBasedObject, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;oldPropertyName, const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;newPropertyName)</td></tr>
 <tr class="memdesc:a846af2dbf5c905b6a671c3444677ba4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactor the project <b>before</b> a property of an object is renamed.  <a href="#a846af2dbf5c905b6a671c3444677ba4c">More...</a><br /></td></tr>
 <tr class="separator:a846af2dbf5c905b6a671c3444677ba4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1227,6 +1230,63 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Refactor the project <b>before</b> a property of a behavior is renamed. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Do the renaming of the specified property after calling this. This is because the property is expected to have its old name for the refactoring. </dd></dl>
+
+</div>
+</div>
+<a id="aefb5cc53b69538a631628eb57b5833d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb5cc53b69538a631628eb57b5833d6">&#9670;&nbsp;</a></span>RenameEventsBasedBehaviorSharedProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::WholeProjectRefactorer::RenameEventsBasedBehaviorSharedProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
+          <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_events_functions_extension.html">gd::EventsFunctionsExtension</a> &amp;&#160;</td>
+          <td class="paramname"><em>eventsFunctionsExtension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_events_based_behavior.html">gd::EventsBasedBehavior</a> &amp;&#160;</td>
+          <td class="paramname"><em>eventsBasedBehavior</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>oldPropertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>newPropertyName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refactor the project <b>before</b> a shared property of a behavior is renamed. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Do the renaming of the specified shared property after calling this. This is because the shared property is expected to have its old name for the refactoring. </dd></dl>
 
 </div>
 </div>
