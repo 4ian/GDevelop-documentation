@@ -455,6 +455,9 @@ $(function() {
 <li>GetBackgroundColorRed()
 : <a class="el" href="classgd_1_1_layout.html#abad44259dfd667bdd3f499952f3d7961">gd::Layout</a>
 </li>
+<li>GetBaseUnit()
+: <a class="el" href="classgd_1_1_measurement_unit_element.html#a9810d6fab87e7b39e37a17dff5c0669c">gd::MeasurementUnitElement</a>
+</li>
 <li>GetBehavior()
 : <a class="el" href="classgd_1_1_object.html#ab425e9b127828a88a1dee4fe90558f58">gd::Object</a>
 , <a class="el" href="classgd_1_1_platform_extension.html#a07f383add96476f5e9576fbc8036366c">gd::PlatformExtension</a>
@@ -602,6 +605,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_abstract_events_based_entity.html#ae8f748706294a8940ce93e45995d524c">gd::AbstractEventsBasedEntity</a>
 , <a class="el" href="classgd_1_1_effect_metadata.html#a5f97b258ca17eec19710552da6ce4a82">gd::EffectMetadata</a>
 , <a class="el" href="classgd_1_1_events_function.html#afb8d2a3f1f7655b0194a523e081d7e18">gd::EventsFunction</a>
+, <a class="el" href="classgd_1_1_measurement_unit.html#ae28d817dfe2036f89d3a0e207c0e0d6c">gd::MeasurementUnit</a>
 , <a class="el" href="classgd_1_1_parameter_metadata.html#aa0e20bd88d4f42a8b7b4e1dbd0908e46">gd::ParameterMetadata</a>
 , <a class="el" href="classgd_1_1_platform.html#a671c85e4ddf33f14c4087cc409e5161a">gd::Platform</a>
 , <a class="el" href="classgd_1_1_platform_extension.html#ad88cb810d20a416f21409bdd03949c64">gd::PlatformExtension</a>
@@ -638,6 +642,12 @@ $(function() {
 </li>
 <li>GetEffectsCount()
 : <a class="el" href="classgd_1_1_effects_container.html#a9f92328113f4ae9821c99bc9db260901">gd::EffectsContainer</a>
+</li>
+<li>GetElements()
+: <a class="el" href="classgd_1_1_measurement_unit.html#a6ed2a4e86525ae19ab38a338b166492d">gd::MeasurementUnit</a>
+</li>
+<li>GetElementsWithWords()
+: <a class="el" href="classgd_1_1_measurement_unit.html#ac0c70f56182c293ab5c5a314895695c0">gd::MeasurementUnit</a>
 </li>
 <li>GetErrorOffset()
 : <a class="el" href="class_generic_document.html#ae1ef7ca99ced428e9300c68e5142afdb">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;</a>
@@ -894,7 +904,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_serializer_element.html#a62d8044df5ac16f2104c019a9fe4eed6">gd::SerializerElement</a>
 </li>
 <li>GetInternalVector()
-: <a class="el" href="classgd_1_1_events_functions_container.html#a67718a840f69425fead54e26de80ff9d">gd::EventsFunctionsContainer</a>
+: <a class="el" href="classgd_1_1_events_functions_container.html#a7b4ac71391a6c1ea93e209a2add71f50">gd::EventsFunctionsContainer</a>
 , <a class="el" href="classgd_1_1_serializable_with_name_list.html#a43afd4bfa6f7bea90d2f78b0b2cc750b">gd::SerializableWithNameList&lt; T &gt;</a>
 </li>
 <li>GetIntValue()
@@ -917,6 +927,9 @@ $(function() {
 </li>
 <li>GetKind()
 : <a class="el" href="classgd_1_1_resource.html#af4c0b799312c95869c6bd095d93df18f">gd::Resource</a>
+</li>
+<li>GetLabel()
+: <a class="el" href="classgd_1_1_measurement_unit.html#a925668fb3d5fe4a76106609a6d860409">gd::MeasurementUnit</a>
 </li>
 <li>GetLanguage()
 : <a class="el" href="classgd_1_1_source_file.html#a4cf6254401150cb9dcc14ae6662e9c98">gd::SourceFile</a>
@@ -941,7 +954,7 @@ $(function() {
 </li>
 <li>GetLayer()
 : <a class="el" href="classgd_1_1_initial_instance.html#a2d93e1200a64afd39787d0a496e14453">gd::InitialInstance</a>
-, <a class="el" href="classgd_1_1_layout.html#a4557dcd4eeed14cfc044ef203b967476">gd::Layout</a>
+, <a class="el" href="classgd_1_1_layout.html#a6e93a2ea6999e4c2d30d68b987fe00b0">gd::Layout</a>
 </li>
 <li>GetLayerPosition()
 : <a class="el" href="classgd_1_1_layout.html#a019505104803fabeef65234fa7f85387">gd::Layout</a>
@@ -951,7 +964,7 @@ $(function() {
 </li>
 <li>GetLayout()
 : <a class="el" href="classgd_1_1_events_code_generator.html#af21f229ab8065a44ce1798d931f429ff">gd::EventsCodeGenerator</a>
-, <a class="el" href="classgd_1_1_project.html#a5ef71c345a1cf8e8896ccdcafd234531">gd::Project</a>
+, <a class="el" href="classgd_1_1_project.html#a564e851f3867eed8534f5d7024487480">gd::Project</a>
 </li>
 <li>GetLayoutPosition()
 : <a class="el" href="classgd_1_1_project.html#ae14ee6fe8e43ba4b980e9acc3abee452">gd::Project</a>
@@ -1016,6 +1029,8 @@ $(function() {
 , <a class="el" href="classgd_1_1_group_event.html#a82ceebbc40b4fd272882f2602b9065a6">gd::GroupEvent</a>
 , <a class="el" href="classgd_1_1_layer.html#a8d548223f04c1c6c590f4a6a8ee3fb6b">gd::Layer</a>
 , <a class="el" href="classgd_1_1_layout.html#aa2978395e94372bd3b3d6127d6c126dc">gd::Layout</a>
+, <a class="el" href="classgd_1_1_measurement_base_unit.html#a754b841540460842d6b28b005c2d774d">gd::MeasurementBaseUnit</a>
+, <a class="el" href="classgd_1_1_measurement_unit.html#a6980c87818dd9be7a2e2f9c1b25ca207">gd::MeasurementUnit</a>
 , <a class="el" href="classgd_1_1_named_property_descriptor.html#ac03da8dd5a2f458ecdcfa4f2e1787b1c">gd::NamedPropertyDescriptor</a>
 , <a class="el" href="classgd_1_1_object.html#ae19d35e7f851753c9c6a743ebdff097e">gd::Object</a>
 , <a class="el" href="classgd_1_1_object_group.html#ae997d2caec941f22e2ab5b716affaa6c">gd::ObjectGroup</a>
@@ -1050,7 +1065,7 @@ $(function() {
 : <a class="el" href="class_dependencies_analyzer.html#ad2905e96411abfd19d41ddce43a02d5e">DependenciesAnalyzer</a>
 </li>
 <li>GetObject()
-: <a class="el" href="classgd_1_1_objects_container.html#a51f426f61a30147e57c303c33285ab40">gd::ObjectsContainer</a>
+: <a class="el" href="classgd_1_1_objects_container.html#a51bd880ca826a2b3f323034543c799b8">gd::ObjectsContainer</a>
 </li>
 <li>GetObjectAnyExpressionMetadata()
 : <a class="el" href="classgd_1_1_metadata_provider.html#a07ab8d038077412ca57443292ecff512">gd::MetadataProvider</a>
@@ -1062,8 +1077,8 @@ $(function() {
 : <a class="el" href="classgd_1_1_metadata_provider.html#a96b92beb1d18411481f3141caf447107">gd::MetadataProvider</a>
 </li>
 <li>GetObjectGroups()
-: <a class="el" href="classgd_1_1_events_function.html#adaef45fe366660103593b6103ac99b7e">gd::EventsFunction</a>
-, <a class="el" href="classgd_1_1_objects_container.html#a8c712584dbb416572ed9193c5baa4ccd">gd::ObjectsContainer</a>
+: <a class="el" href="classgd_1_1_events_function.html#a56181f263341c3922aa69249d926b889">gd::EventsFunction</a>
+, <a class="el" href="classgd_1_1_objects_container.html#adfe28abdee0cdb34ba014b82bb8714c9">gd::ObjectsContainer</a>
 </li>
 <li>GetObjectListName()
 : <a class="el" href="classgd_1_1_events_code_generator.html#a65d952438f2ac3f39baa73008de845f0">gd::EventsCodeGenerator</a>
@@ -1074,7 +1089,7 @@ $(function() {
 </li>
 <li>GetObjectName()
 : <a class="el" href="structgd_1_1_expression_completion_description.html#a35776b86373ce47ae913caba088c829f">gd::ExpressionCompletionDescription</a>
-, <a class="el" href="classgd_1_1_expression_variable_owner_finder.html#a41cb32bdcdb135fd03a6a70843984395">gd::ExpressionVariableOwnerFinder</a>
+, <a class="el" href="classgd_1_1_expression_variable_owner_finder.html#a15385eae7868c89f348c6a30fdded5fc">gd::ExpressionVariableOwnerFinder</a>
 , <a class="el" href="classgd_1_1_initial_instance.html#a4fb734864ff5b001d7592f0a108580ab">gd::InitialInstance</a>
 </li>
 <li>GetObjectNames()
@@ -1087,7 +1102,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_objects_container.html#abcd782322a84d9ebfdf03b06f3d03f37">gd::ObjectsContainer</a>
 </li>
 <li>GetObjects()
-: <a class="el" href="classgd_1_1_objects_container.html#a15dd31aa3b862cda9c1e5fdbf006da06">gd::ObjectsContainer</a>
+: <a class="el" href="classgd_1_1_objects_container.html#a931a010dc9d32733effe7381f984eef2">gd::ObjectsContainer</a>
 </li>
 <li>GetObjectsAndGroups()
 : <a class="el" href="classgd_1_1_events_code_generator.html#a83d7642cf3a0ff8b7224211bfddcb5f6">gd::EventsCodeGenerator</a>
@@ -1118,7 +1133,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_project.html#aad77bc4c0f22aa9a27e11b347bf694ef">gd::Project</a>
 </li>
 <li>GetOrigin()
-: <a class="el" href="classgd_1_1_sprite.html#aa4938c675e3237ea907cd3de7bb937a7">gd::Sprite</a>
+: <a class="el" href="classgd_1_1_sprite.html#a310e8a0e5b09c8e441f204120f826237">gd::Sprite</a>
 </li>
 <li>GetOriginalInstruction()
 : <a class="el" href="classgd_1_1_instruction.html#aa05f5ac6460add86b3c13d5a6c1bff31">gd::Instruction</a>
@@ -1136,13 +1151,13 @@ $(function() {
 : <a class="el" href="classgd_1_1_project.html#a071a2c0471384881088120e02d949932">gd::Project</a>
 </li>
 <li>GetParameter()
-: <a class="el" href="classgd_1_1_instruction.html#a4989a78c30cf86354a2846947dce9115">gd::Instruction</a>
+: <a class="el" href="classgd_1_1_instruction.html#a2afe7c4b764c394cd9724735b1fdf842">gd::Instruction</a>
 </li>
 <li>GetParameterMetadata()
 : <a class="el" href="structgd_1_1_expression_completion_description.html#aefaec681bc1479d3e058fd263f3dd8aa">gd::ExpressionCompletionDescription</a>
 </li>
 <li>GetParameters()
-: <a class="el" href="classgd_1_1_events_function.html#a399a6692d379097158001b97074fbdaf">gd::EventsFunction</a>
+: <a class="el" href="classgd_1_1_events_function.html#ab2295e8b1a0234add31b6efc992e0787">gd::EventsFunction</a>
 , <a class="el" href="classgd_1_1_instruction.html#a29847e4edda8760eefbfd203b1af73e2">gd::Instruction</a>
 </li>
 <li>GetParametersAndTypes()
@@ -1193,6 +1208,9 @@ $(function() {
 <li>GetPositions()
 : <a class="el" href="classgd_1_1_events_position_finder.html#a95c9f2b56632e8139d2b65a31a6778d3">gd::EventsPositionFinder</a>
 </li>
+<li>GetPower()
+: <a class="el" href="classgd_1_1_measurement_unit_element.html#a002bdc4261e952686e6ca098d630079c">gd::MeasurementUnitElement</a>
+</li>
 <li>GetPrefix()
 : <a class="el" href="structgd_1_1_expression_completion_description.html#a06ccc1125625cfb0781b9e5fbede991b">gd::ExpressionCompletionDescription</a>
 </li>
@@ -1236,6 +1254,9 @@ $(function() {
 <li>GetPropertyExpressionName()
 : <a class="el" href="classgd_1_1_abstract_events_based_entity.html#a1a4bbe56e4e7d824a05a62f063fdce5a">gd::AbstractEventsBasedEntity</a>
 </li>
+<li>GetQuantity()
+: <a class="el" href="classgd_1_1_measurement_base_unit.html#a9d77dd920cf235911cc10d2056e4d228">gd::MeasurementBaseUnit</a>
+</li>
 <li>GetRawDoubleProperty()
 : <a class="el" href="classgd_1_1_initial_instance.html#a57d48a9b3a00ee116a795e129c64ce64">gd::InitialInstance</a>
 </li>
@@ -1259,8 +1280,8 @@ $(function() {
 , <a class="el" href="classgd_1_1_instruction_metadata.html#af5d09e2f321ee3e7e40d1fb09bab4097">gd::InstructionMetadata</a>
 </li>
 <li>GetResource()
-: <a class="el" href="classgd_1_1_resource_folder.html#a6a5734bc380359457840f3d6f5a345e2">gd::ResourceFolder</a>
-, <a class="el" href="classgd_1_1_resources_manager.html#afde1494125de5585c2f9d4f369704392">gd::ResourcesManager</a>
+: <a class="el" href="classgd_1_1_resource_folder.html#a9d0e4537563f2fa9a7418d5a8cf2682a">gd::ResourceFolder</a>
+, <a class="el" href="classgd_1_1_resources_manager.html#aeb145f0744076317ac96fd80abbd9524">gd::ResourcesManager</a>
 </li>
 <li>GetResourceNameWithFile()
 : <a class="el" href="classgd_1_1_resources_manager.html#ad0f4f6cdb5b5ba633af0fb191e4abe04">gd::ResourcesManager</a>
@@ -1272,7 +1293,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_resources_manager.html#ad6a2837891f1d4145034ad3bfe74e736">gd::ResourcesManager</a>
 </li>
 <li>GetResourcesManager()
-: <a class="el" href="classgd_1_1_project.html#aa1778effd8c9e426593174fbe4a9942a">gd::Project</a>
+: <a class="el" href="classgd_1_1_project.html#aa21d727051e1c8c8d3d84f8c4c6e5a98">gd::Project</a>
 </li>
 <li>GetResourceSPtr()
 : <a class="el" href="classgd_1_1_resources_manager.html#abc7c13245070780c2931a147ab431e25">gd::ResourcesManager</a>
@@ -1338,7 +1359,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_unfilled_required_behavior_property_problem.html#a6bc6e5ada6fdc1238d300b4414211f6a">gd::UnfilledRequiredBehaviorPropertyProblem</a>
 </li>
 <li>GetSprite()
-: <a class="el" href="classgd_1_1_direction.html#a4ccb39fff8b7ce93c40c3c759fa8c374">gd::Direction</a>
+: <a class="el" href="classgd_1_1_direction.html#ac075ec2b3960e23cce107355b07457b6">gd::Direction</a>
 </li>
 <li>GetSpriteNames()
 : <a class="el" href="classgd_1_1_direction.html#ae7598db53a99e2980db10930b4176a35">gd::Direction</a>
@@ -1363,13 +1384,13 @@ $(function() {
 : <a class="el" href="classgd_1_1_serializer_element.html#a5d7cec0bece7956f81e9550807d05aa4">gd::SerializerElement</a>
 </li>
 <li>GetSubEvents()
-: <a class="el" href="classgd_1_1_async_event.html#afe8dea6998223ab5973c5da10374f62f">gd::AsyncEvent</a>
-, <a class="el" href="classgd_1_1_base_event.html#aab91a7bf60e2df6f4f13e3ff4f68125d">gd::BaseEvent</a>
+: <a class="el" href="classgd_1_1_async_event.html#a7d5fec0ba3cf6c44f4fae1857fa5cada">gd::AsyncEvent</a>
+, <a class="el" href="classgd_1_1_base_event.html#aa341b80a4073c17f4ecae98119a848e3">gd::BaseEvent</a>
 , <a class="el" href="classgd_1_1_for_each_child_variable_event.html#aa8f64a50396baf928ac9bfd818ad2c7a">gd::ForEachChildVariableEvent</a>
 , <a class="el" href="classgd_1_1_for_each_event.html#a0361b570495b269265fa15c46dfefbc6">gd::ForEachEvent</a>
 , <a class="el" href="classgd_1_1_group_event.html#a200e38bf3c636a7542f063fd2f3e4d5a">gd::GroupEvent</a>
-, <a class="el" href="classgd_1_1_repeat_event.html#a387ee7f8d8f0db7ac3a8e59c31fabb51">gd::RepeatEvent</a>
-, <a class="el" href="classgd_1_1_standard_event.html#aa49109a5dd779d98c971b49a62afcb51">gd::StandardEvent</a>
+, <a class="el" href="classgd_1_1_repeat_event.html#a025e2a92044ce32313d4e0f25aa5ccc3">gd::RepeatEvent</a>
+, <a class="el" href="classgd_1_1_standard_event.html#a83122bf4b6920f9f7df3e583db00513f">gd::StandardEvent</a>
 , <a class="el" href="classgd_1_1_while_event.html#aafd294a3cf05a4d7538cf70d934ec8ee">gd::WhileEvent</a>
 </li>
 <li>GetSubInstructions()
@@ -1377,6 +1398,9 @@ $(function() {
 </li>
 <li>GetSubtitle()
 : <a class="el" href="classgd_1_1_platform.html#ad47a2523095f35da0e756378489c7a67">gd::Platform</a>
+</li>
+<li>GetSymbol()
+: <a class="el" href="classgd_1_1_measurement_base_unit.html#a886e80ac97d4fcf31c060c1fbd7aeb31">gd::MeasurementBaseUnit</a>
 </li>
 <li>GetTags()
 : <a class="el" href="classgd_1_1_object.html#aceae77c511685f875d7e5e6fc1243b7c">gd::Object</a>
@@ -1440,7 +1464,7 @@ $(function() {
 : <a class="el" href="classgd_1_1_parameter_metadata.html#a82d06be50faa748fd950f8da241e1568">gd::ParameterMetadata</a>
 </li>
 <li>GetVariables()
-: <a class="el" href="classgd_1_1_initial_instance.html#a1c64554b43c99990ed365c61861862b5">gd::InitialInstance</a>
+: <a class="el" href="classgd_1_1_initial_instance.html#affd111f8d9d05db543494483ca3fbede">gd::InitialInstance</a>
 , <a class="el" href="classgd_1_1_layout.html#a48389eedcb44c94111d8ec02618ddee4">gd::Layout</a>
 , <a class="el" href="classgd_1_1_object.html#a68e7562369c6a368e96ea9d920713642">gd::Object</a>
 , <a class="el" href="classgd_1_1_project.html#a92d2e2184490313ecd2e6cc45a081409">gd::Project</a>

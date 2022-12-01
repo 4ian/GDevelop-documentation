@@ -104,6 +104,7 @@ var searchData=
   ['setmanipulatedtype',['SetManipulatedType',['../classgd_1_1_instruction_metadata_1_1_extra_information.html#a353229a428ab3dbcdd9e53117ace5155',1,'gd::InstructionMetadata::ExtraInformation::SetManipulatedType()'],['../classgd_1_1_instruction_metadata.html#a9cba518770d45e8f1ce891f826463a2e',1,'gd::InstructionMetadata::SetManipulatedType()']]],
   ['setmaxdecimalplaces',['SetMaxDecimalPlaces',['../class_writer.html#a58e3f94dc5af1432a8eace5ba427eca7',1,'Writer']]],
   ['setmaximumfps',['SetMaximumFPS',['../classgd_1_1_project.html#ab5c528fd41e0acd25d8e7bcc7288b326',1,'gd::Project']]],
+  ['setmeasurementunit',['SetMeasurementUnit',['../classgd_1_1_property_descriptor.html#ab33b3ddf7b70663e2dce3141ecf5b5b3',1,'gd::PropertyDescriptor']]],
   ['setmetadata',['SetMetadata',['../classgd_1_1_direction.html#a7a11ba979ce9a553cbe0c561574d08b6',1,'gd::Direction::SetMetadata()'],['../classgd_1_1_resource.html#ae4d658aa9e8b5e030323cd8c68f8c62c',1,'gd::Resource::SetMetadata()']]],
   ['setminimumfps',['SetMinimumFPS',['../classgd_1_1_project.html#a788aafd26a7e6673f3a067d96b50e2f0',1,'gd::Project']]],
   ['setmultilinestringvalue',['SetMultilineStringValue',['../classgd_1_1_serializer_element.html#ae79401a882e18a623f10a9f76d2031dc',1,'gd::SerializerElement']]],
