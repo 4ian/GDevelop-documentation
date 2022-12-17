@@ -428,8 +428,8 @@ var searchData=
   ['getvertices',['GetVertices',['../class_polygon2d.html#a14d13fdfd9a734af8e7bd3c671df541d',1,'Polygon2d::GetVertices()'],['../class_polygon2d.html#a9484385e61063007d8d005312cdc7d50',1,'Polygon2d::GetVertices() const']]],
   ['getvisibility',['GetVisibility',['../classgd_1_1_layer.html#a0818740a8a1efc553e4027dae53aa43a',1,'gd::Layer']]],
   ['getwindowdefaulttitle',['GetWindowDefaultTitle',['../classgd_1_1_layout.html#aab001319520a010576c3cdb770c8a795',1,'gd::Layout']]],
-  ['getx',['GetX',['../class_point.html#a82dc501f6f908f8f7fb2670a16dbf6ae',1,'Point::GetX()'],['../classgd_1_1_initial_instance.html#ad397ba59b5ea50a0f59ea7f6de224885',1,'gd::InitialInstance::GetX()']]],
-  ['gety',['GetY',['../class_point.html#ab5deec177af70f54dc6239f8ac9b7111',1,'Point::GetY()'],['../classgd_1_1_initial_instance.html#a6784833d638ca98d7582419cbc282fec',1,'gd::InitialInstance::GetY()']]],
+  ['getx',['GetX',['../class_point.html#a9a6aa9a62426e1d1025624b28b165787',1,'Point::GetX()'],['../classgd_1_1_initial_instance.html#ad397ba59b5ea50a0f59ea7f6de224885',1,'gd::InitialInstance::GetX()']]],
+  ['gety',['GetY',['../class_point.html#a70b390ca26d9487d85d0b7383faffec4',1,'Point::GetY()'],['../classgd_1_1_initial_instance.html#a6784833d638ca98d7582419cbc282fec',1,'gd::InitialInstance::GetY()']]],
   ['getzorder',['GetZOrder',['../classgd_1_1_initial_instance.html#ad21e728f911fcfb2f03ebaecd8041eff',1,'gd::InitialInstance']]],
   ['globalobjectorgroupremoved',['GlobalObjectOrGroupRemoved',['../classgd_1_1_whole_project_refactorer.html#af08a0f95faf2c29472dec4bb2c2aecfc',1,'gd::WholeProjectRefactorer']]],
   ['globalobjectorgrouprenamed',['GlobalObjectOrGroupRenamed',['../classgd_1_1_whole_project_refactorer.html#ada0e1e88b90a968a0335ba6e29a89ded',1,'gd::WholeProjectRefactorer']]]

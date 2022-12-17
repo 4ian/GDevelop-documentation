@@ -113,7 +113,7 @@ var searchData=
   ['revision',['Revision',['../classgd_1_1_version_wrapper.html#af4dffce6497776e3a1d7fbc9e8e7f349',1,'gd::VersionWrapper']]],
   ['rfind',['rfind',['../classgd_1_1_string.html#a95f8027c3ddf78b4af7a8070955beda8',1,'gd::String::rfind(const String &amp;search, size_type pos=npos) const'],['../classgd_1_1_string.html#a31fd38c6bfdd36deb8b525f1f5d430bf',1,'gd::String::rfind(const char *search, size_type pos=npos) const'],['../classgd_1_1_string.html#aeffde86e13c5e6563cc17abd896f645b',1,'gd::String::rfind(const value_type &amp;search, size_type pos=npos) const']]],
   ['righttrim',['RightTrim',['../classgd_1_1_string.html#af1879ed23dfd007b2c04603b142de310',1,'gd::String']]],
-  ['rotate',['Rotate',['../class_polygon2d.html#a28c95623d956641e09127e5e080300f2',1,'Polygon2d']]],
+  ['rotate',['Rotate',['../class_polygon2d.html#ac96e442f7001b5d501c6c8382bdd8148',1,'Polygon2d']]],
   ['round',['Round',['../group___common_programming_tools.html#ga96a3aed6b2d1926a3b080bd50a691a2e',1,'gd']]],
   ['runtimeonly',['runtimeOnly',['../classgd_1_1_compilation_info.html#aac46970dbc2b64f590a34af410eaedc3',1,'gd::CompilationInfo']]]
 ];
