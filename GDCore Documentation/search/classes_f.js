@@ -2,6 +2,7 @@ var searchData=
 [
   ['parametermetadata',['ParameterMetadata',['../classgd_1_1_parameter_metadata.html',1,'gd']]],
   ['parametermetadatatools',['ParameterMetadataTools',['../classgd_1_1_parameter_metadata_tools.html',1,'gd']]],
+  ['parameteroptions',['ParameterOptions',['../structgd_1_1_parameter_options.html',1,'gd']]],
   ['parseresult',['ParseResult',['../struct_parse_result.html',1,'']]],
   ['platform',['Platform',['../classgd_1_1_platform.html',1,'gd']]],
   ['platformextension',['PlatformExtension',['../classgd_1_1_platform_extension.html',1,'gd']]],
