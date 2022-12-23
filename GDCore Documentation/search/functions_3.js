@@ -10,7 +10,7 @@ var searchData=
   ['direxists',['DirExists',['../classgd_1_1_abstract_file_system.html#a32ee1be4d177d37599078d3b22c359f7',1,'gd::AbstractFileSystem']]],
   ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a2d9e47f43daf3b7a82e53cbacfb5ef6b',1,'gd::AbstractFileSystem']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
-  ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource']]],
+  ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource::DisablePreload()'],['../classgd_1_1_tilemap_resource.html#a241bfd20a5542f201486b96ec1fbcb83',1,'gd::TilemapResource::DisablePreload()']]],
   ['doserializeto',['DoSerializeTo',['../classgd_1_1_custom_object_configuration.html#a3778a555c1b09732e7e05e25f1981bfb',1,'gd::CustomObjectConfiguration::DoSerializeTo()'],['../classgd_1_1_object_configuration.html#a2ff8ee0f3cde864b4fdaeb22fe20ad9e',1,'gd::ObjectConfiguration::DoSerializeTo()']]],
   ['double',['Double',['../class_writer.html#a22a43e8a7193105deec6b808736f7a1a',1,'Writer']]],
   ['dounserializefrom',['DoUnserializeFrom',['../classgd_1_1_custom_object_configuration.html#a2a4962d8dd2ccf15c8a4bccf82e38f0a',1,'gd::CustomObjectConfiguration::DoUnserializeFrom()'],['../classgd_1_1_object_configuration.html#ac842418daef83762db3fd1727d0afc67',1,'gd::ObjectConfiguration::DoUnserializeFrom()']]],

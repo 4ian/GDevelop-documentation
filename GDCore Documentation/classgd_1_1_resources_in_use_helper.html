@@ -95,6 +95,9 @@ std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &a
 <tr class="memitem:a60d719dc2da23e36865acefb30479a83"><td class="memItemLeft" align="right" valign="top"><a id="a60d719dc2da23e36865acefb30479a83"></a>
 std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllJsons</b> ()</td></tr>
 <tr class="separator:a60d719dc2da23e36865acefb30479a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1482bf686114699d52058f95a2a785b1"><td class="memItemLeft" align="right" valign="top"><a id="a1482bf686114699d52058f95a2a785b1"></a>
+std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllTilemaps</b> ()</td></tr>
+<tr class="separator:a1482bf686114699d52058f95a2a785b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b95ab6cd242f512453846ee3f3eb13"><td class="memItemLeft" align="right" valign="top"><a id="ab6b95ab6cd242f512453846ee3f3eb13"></a>
 std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllVideos</b> ()</td></tr>
 <tr class="separator:ab6b95ab6cd242f512453846ee3f3eb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +127,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resources_in_use_helper.html#aa788ab25ac432297ba7cb139ab53abf7">ExposeJson</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;jsonResourceName) override</td></tr>
 <tr class="memdesc:aa788ab25ac432297ba7cb139ab53abf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a JSON, which is always a reference to a "json" resource. <br /></td></tr>
 <tr class="separator:aa788ab25ac432297ba7cb139ab53abf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e06d08f755abf46124e4f5d9d2553a8"><td class="memItemLeft" align="right" valign="top"><a id="a3e06d08f755abf46124e4f5d9d2553a8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resources_in_use_helper.html#a3e06d08f755abf46124e4f5d9d2553a8">ExposeTilemap</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;tilemapResourceName) override</td></tr>
+<tr class="memdesc:a3e06d08f755abf46124e4f5d9d2553a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a Tilemap, which is always a reference to a "tilemap" resource. <br /></td></tr>
+<tr class="separator:a3e06d08f755abf46124e4f5d9d2553a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9378968775b25daae938512dfc166a08"><td class="memItemLeft" align="right" valign="top"><a id="a9378968775b25daae938512dfc166a08"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_resources_in_use_helper.html#a9378968775b25daae938512dfc166a08">ExposeVideo</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;videoResourceName) override</td></tr>
 <tr class="memdesc:a9378968775b25daae938512dfc166a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a video, which is always a reference to a "video" resource. <br /></td></tr>
@@ -140,6 +147,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#a285af1d18689e64c39b7a962d0a4fadd">ExposeShader</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;shaderName)</td></tr>
 <tr class="memdesc:a285af1d18689e64c39b7a962d0a4fadd inherit pub_methods_classgd_1_1_arbitrary_resource_worker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose a shader.  Currently unsupported. <br /></td></tr>
 <tr class="separator:a285af1d18689e64c39b7a962d0a4fadd inherit pub_methods_classgd_1_1_arbitrary_resource_worker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace132f02351131013204a43885e06cea inherit pub_methods_classgd_1_1_arbitrary_resource_worker"><td class="memItemLeft" align="right" valign="top"><a id="ace132f02351131013204a43885e06cea"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_arbitrary_resource_worker.html#ace132f02351131013204a43885e06cea">ExposeEmbeddeds</a> (<a class="el" href="classgd_1_1_string.html">gd::String</a> &amp;resourceName)</td></tr>
+<tr class="memdesc:ace132f02351131013204a43885e06cea inherit pub_methods_classgd_1_1_arbitrary_resource_worker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose the embedded resources of the specified resource. <br /></td></tr>
+<tr class="separator:ace132f02351131013204a43885e06cea inherit pub_methods_classgd_1_1_arbitrary_resource_worker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -155,6 +166,9 @@ std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#1
 <tr class="memitem:a4cbdcfd0a6c95d72a59d8b6a0477fcf5"><td class="memItemLeft" align="right" valign="top"><a id="a4cbdcfd0a6c95d72a59d8b6a0477fcf5"></a>
 std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allJsons</b></td></tr>
 <tr class="separator:a4cbdcfd0a6c95d72a59d8b6a0477fcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dc16211dc55d68380265d30ca9044c"><td class="memItemLeft" align="right" valign="top"><a id="ac3dc16211dc55d68380265d30ca9044c"></a>
+std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allTilemaps</b></td></tr>
+<tr class="separator:ac3dc16211dc55d68380265d30ca9044c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881668400af31fef0b0a51a2c54e7eab"><td class="memItemLeft" align="right" valign="top"><a id="a881668400af31fef0b0a51a2c54e7eab"></a>
 std::set&lt; <a class="el" href="classgd_1_1_string.html">gd::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allVideos</b></td></tr>
 <tr class="separator:a881668400af31fef0b0a51a2c54e7eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
