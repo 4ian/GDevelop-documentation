@@ -7,6 +7,7 @@ var searchData=
   ['textnode',['TextNode',['../structgd_1_1_text_node.html',1,'gd']]],
   ['textr',['textR',['../classgd_1_1_comment_event.html#acd6482f9df2713cf840a6fe85e57fa22',1,'gd::CommentEvent']]],
   ['tilemapresource',['TilemapResource',['../classgd_1_1_tilemap_resource.html',1,'gd']]],
+  ['tilesetresource',['TilesetResource',['../classgd_1_1_tileset_resource.html',1,'gd']]],
   ['to',['To',['../classgd_1_1_string.html#ae7dd2330f73d88e5af2ae2d7b0af81a3',1,'gd::String']]],
   ['todo_20list',['Todo List',['../todo.html',1,'']]],
   ['toescapedxmlstring',['ToEscapedXMLString',['../classgd_1_1_serializer.html#a0560287d898cf2e308b3ea675e6ab829',1,'gd::Serializer']]],

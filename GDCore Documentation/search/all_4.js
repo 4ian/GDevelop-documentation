@@ -17,7 +17,7 @@ var searchData=
   ['direxists',['DirExists',['../classgd_1_1_abstract_file_system.html#a32ee1be4d177d37599078d3b22c359f7',1,'gd::AbstractFileSystem']]],
   ['dirnamefrom',['DirNameFrom',['../classgd_1_1_abstract_file_system.html#a2d9e47f43daf3b7a82e53cbacfb5ef6b',1,'gd::AbstractFileSystem']]],
   ['disableinputwhenfocusislost',['DisableInputWhenFocusIsLost',['../classgd_1_1_layout.html#acf6987ec57b1d1d2f5f10b513eab4611',1,'gd::Layout']]],
-  ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource::DisablePreload()'],['../classgd_1_1_tilemap_resource.html#a241bfd20a5542f201486b96ec1fbcb83',1,'gd::TilemapResource::DisablePreload()']]],
+  ['disablepreload',['DisablePreload',['../classgd_1_1_json_resource.html#a9255040d36bdb3efced959084f8c781b',1,'gd::JsonResource::DisablePreload()'],['../classgd_1_1_tilemap_resource.html#a241bfd20a5542f201486b96ec1fbcb83',1,'gd::TilemapResource::DisablePreload()'],['../classgd_1_1_tileset_resource.html#a7e249c8da6e1d7d7c9d0fc86c86e43be',1,'gd::TilesetResource::DisablePreload()']]],
   ['diyfp',['DiyFp',['../structinternal_1_1_diy_fp.html',1,'internal']]],
   ['document',['Document',['../document_8h.html#ac6ea5b168e3fe8c7fa532450fc9391f7',1,'document.h']]],
   ['document_2eh',['document.h',['../document_8h.html',1,'']]],
