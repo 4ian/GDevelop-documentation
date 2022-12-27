@@ -10,7 +10,6 @@ var searchData=
   ['exporteventscode',['ExportEventsCode',['../d0/d75/classgdjs_1_1_exporter_helper.html#ae2b787948395cc20ad5435579ac72199',1,'gdjs::ExporterHelper']]],
   ['exportexternalsourcefiles',['ExportExternalSourceFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a6f9aef14c2dfee84123d0c29f470b96c',1,'gdjs::ExporterHelper']]],
   ['exportfacebookinstantgamesfiles',['ExportFacebookInstantGamesFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a749478cbbaec91e7ca2bf51447f9ecd5',1,'gdjs::ExporterHelper']]],
-  ['exportfreefunctionincludes',['ExportFreeFunctionIncludes',['../d0/d75/classgdjs_1_1_exporter_helper.html#acfc0b881013ab0b25fd859aaa34bd07b',1,'gdjs::ExporterHelper']]],
   ['exportincludesandlibs',['ExportIncludesAndLibs',['../d0/d75/classgdjs_1_1_exporter_helper.html#a4b7bf354abd3e2548eed82ddfd59f40a',1,'gdjs::ExporterHelper']]],
   ['exportobjectandbehaviorsincludes',['ExportObjectAndBehaviorsIncludes',['../d0/d75/classgdjs_1_1_exporter_helper.html#a26da997eebf25f4c46d9c641a4f02e40',1,'gdjs::ExporterHelper']]],
   ['exportobjectandbehaviorsrequiredfiles',['ExportObjectAndBehaviorsRequiredFiles',['../d0/d75/classgdjs_1_1_exporter_helper.html#a4361485916a1532fd290d151e41b6e9e',1,'gdjs::ExporterHelper']]],
