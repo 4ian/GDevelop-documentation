@@ -16,8 +16,10 @@ var searchData=
   ['get',['Get',['../d2/d3d/classgdjs_1_1_js_platform.html#aace4a7661473b55c7f73d590349330bc',1,'gdjs::JsPlatform']]],
   ['getbehaviorpropertygettername',['GetBehaviorPropertyGetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#ab3b6d249665be922a7a667b9d588caee',1,'gdjs::BehaviorCodeGenerator']]],
   ['getbehaviorpropertysettername',['GetBehaviorPropertySetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a23d2af2d107e11d1fc9950f4744625d1',1,'gdjs::BehaviorCodeGenerator']]],
+  ['getbehaviorpropertytogglefunctionname',['GetBehaviorPropertyToggleFunctionName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a239b894bd9216301062b24aa98b13b07',1,'gdjs::BehaviorCodeGenerator']]],
   ['getbehaviorsharedpropertygettername',['GetBehaviorSharedPropertyGetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a7a4a1618190b8f4a3644eb9d189ae407',1,'gdjs::BehaviorCodeGenerator']]],
   ['getbehaviorsharedpropertysettername',['GetBehaviorSharedPropertySetterName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#a7ef79de530794b0e4247ae5e49dfa3eb',1,'gdjs::BehaviorCodeGenerator']]],
+  ['getbehaviorsharedpropertytogglefunctionname',['GetBehaviorSharedPropertyToggleFunctionName',['../db/d58/classgdjs_1_1_behavior_code_generator.html#acad7a691ff89d67138fe7df49b50e908',1,'gdjs::BehaviorCodeGenerator']]],
   ['getcodenamespace',['GetCodeNamespace',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a55cbe256130c7722b7cd7f31b4fbf6ff',1,'gdjs::EventsCodeGenerator']]],
   ['getcodenamespaceaccessor',['GetCodeNamespaceAccessor',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a86c6da4f0e20002526a9f159620d96db',1,'gdjs::EventsCodeGenerator']]],
   ['getexportedincludefilename',['GetExportedIncludeFilename',['../d0/d75/classgdjs_1_1_exporter_helper.html#a253f38e4e6b6dd09b8afd9071ba8e2ea',1,'gdjs::ExporterHelper']]],
@@ -25,5 +27,6 @@ var searchData=
   ['getlasterror',['GetLastError',['../dc/dda/classgdjs_1_1_exporter.html#a1c28c0a90a3bbefff8f3d2d981cf26da',1,'gdjs::Exporter::GetLastError()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#ada5884debab85a04032d19fcfcbf2eb1',1,'gdjs::ExporterHelper::GetLastError()']]],
   ['getobjectlistname',['GetObjectListName',['../d7/d4f/classgdjs_1_1_events_code_generator.html#a7d1004c9dd588ffbd14dcf6b58ad8388',1,'gdjs::EventsCodeGenerator']]],
   ['getobjectpropertygettername',['GetObjectPropertyGetterName',['../dc/df3/classgdjs_1_1_object_code_generator.html#a877625939cae5b811cd2b2b40434bba1',1,'gdjs::ObjectCodeGenerator']]],
-  ['getobjectpropertysettername',['GetObjectPropertySetterName',['../dc/df3/classgdjs_1_1_object_code_generator.html#a4fb4cf9c82e2b0ad100128ff0420ca5b',1,'gdjs::ObjectCodeGenerator']]]
+  ['getobjectpropertysettername',['GetObjectPropertySetterName',['../dc/df3/classgdjs_1_1_object_code_generator.html#a4fb4cf9c82e2b0ad100128ff0420ca5b',1,'gdjs::ObjectCodeGenerator']]],
+  ['getobjectpropertytogglefunctionname',['GetObjectPropertyToggleFunctionName',['../dc/df3/classgdjs_1_1_object_code_generator.html#af9c4c15d24e71dc45c9d8e7741e7dfe1',1,'gdjs::ObjectCodeGenerator']]]
 ];
