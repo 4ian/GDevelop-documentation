@@ -61,7 +61,7 @@ var searchData=
   ['isfollowingbaselayercamera',['IsFollowingBaseLayerCamera',['../classgd_1_1_layer.html#a6d76ff60d5913052621be9975c16511b',1,'gd::Layer']]],
   ['isgdevelopsplashshown',['IsGDevelopSplashShown',['../classgd_1_1_loading_screen.html#a4889a2eac4684b067208fde231247d0b',1,'gd::LoadingScreen']]],
   ['isgdmanaged',['IsGDManaged',['../classgd_1_1_source_file.html#a6bf1f6d286091ea014b1bdeb5a4eed62',1,'gd::SourceFile']]],
-  ['ishidden',['IsHidden',['../classgd_1_1_instruction_metadata.html#ae23cdc5b20b7346f76f6b9815210be15',1,'gd::InstructionMetadata::IsHidden()'],['../classgd_1_1_property_descriptor.html#a07db2ff1229e57426d794b12672bddc5',1,'gd::PropertyDescriptor::IsHidden()']]],
+  ['ishidden',['IsHidden',['../classgd_1_1_instruction_metadata.html#ae23cdc5b20b7346f76f6b9815210be15',1,'gd::InstructionMetadata::IsHidden()'],['../classgd_1_1_object_metadata.html#a0a6b421c6fdf61ed910ab60fbca7871a',1,'gd::ObjectMetadata::IsHidden()'],['../classgd_1_1_property_descriptor.html#a07db2ff1229e57426d794b12672bddc5',1,'gd::PropertyDescriptor::IsHidden()']]],
   ['isinputdisabledwhenfocusislost',['IsInputDisabledWhenFocusIsLost',['../classgd_1_1_layout.html#a255efd0684810dad4a7953e56cbc082c',1,'gd::Layout']]],
   ['isinsideasync',['IsInsideAsync',['../classgd_1_1_events_code_generation_context.html#aa39fbdb22af8e79f1b7d499b5e92a4b7',1,'gd::EventsCodeGenerationContext']]],
   ['isint',['IsInt',['../classgd_1_1_serializer_value.html#a98fbbb2605565650b4146057b7788506',1,'gd::SerializerValue']]],
