@@ -6,6 +6,7 @@ var searchData=
   ['setexternallayoutname',['SetExternalLayoutName',['../db/dbe/structgdjs_1_1_preview_export_options.html#a26226ff501d285d19288143f77581548',1,'gdjs::PreviewExportOptions']]],
   ['setfallbackauthor',['SetFallbackAuthor',['../db/dbe/structgdjs_1_1_preview_export_options.html#a8f82096cf1eb54cc9b16c4cea4d7ade5',1,'gdjs::PreviewExportOptions::SetFallbackAuthor()'],['../dd/d37/structgdjs_1_1_export_options.html#af596d2586b90a2c0ae57e30e93463edd',1,'gdjs::ExportOptions::SetFallbackAuthor()']]],
   ['setfullloadingscreen',['SetFullLoadingScreen',['../db/dbe/structgdjs_1_1_preview_export_options.html#a7bfbc8544c60894d6eb4575bf79b0889',1,'gdjs::PreviewExportOptions']]],
+  ['setgdevelopresourcetoken',['SetGDevelopResourceToken',['../db/dbe/structgdjs_1_1_preview_export_options.html#a3e10e05ca4e52e946e2847303e5224f4',1,'gdjs::PreviewExportOptions']]],
   ['setincludefilehash',['SetIncludeFileHash',['../db/dbe/structgdjs_1_1_preview_export_options.html#a4ad48abf2a9a6f3974b91c12ea1eb136',1,'gdjs::PreviewExportOptions']]],
   ['setisdevelopmentenvironment',['SetIsDevelopmentEnvironment',['../db/dbe/structgdjs_1_1_preview_export_options.html#a68e58011b6339b251056addf8eed4221',1,'gdjs::PreviewExportOptions']]],
   ['setlayoutname',['SetLayoutName',['../db/dbe/structgdjs_1_1_preview_export_options.html#a99b87ae4767666af213ef3ec3ba209ed',1,'gdjs::PreviewExportOptions']]],

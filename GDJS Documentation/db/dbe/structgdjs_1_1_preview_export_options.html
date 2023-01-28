@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac4c9f5d4bdbf88903ff563b2381c3972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3903ccd881c7ea0a205aa19086461cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html#a3903ccd881c7ea0a205aa19086461cca">SetElectronRemoteRequirePath</a> (const gd::String &amp;electronRemoteRequirePath_)</td></tr>
 <tr class="separator:a3903ccd881c7ea0a205aa19086461cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e10e05ca4e52e946e2847303e5224f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html#a3e10e05ca4e52e946e2847303e5224f4">SetGDevelopResourceToken</a> (const gd::String &amp;gdevelopResourceToken_)</td></tr>
+<tr class="separator:a3e10e05ca4e52e946e2847303e5224f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -173,6 +175,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>nonRuntimeScr
 <tr class="memitem:a050f36a127a7f92ad06684ef232fa193"><td class="memItemLeft" align="right" valign="top"><a id="a050f36a127a7f92ad06684ef232fa193"></a>
 gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>electronRemoteRequirePath</b></td></tr>
 <tr class="separator:a050f36a127a7f92ad06684ef232fa193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d18c93adca6ebaf76a0a616923a1aa"><td class="memItemLeft" align="right" valign="top"><a id="a70d18c93adca6ebaf76a0a616923a1aa"></a>
+gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>gdevelopResourceToken</b></td></tr>
+<tr class="separator:a70d18c93adca6ebaf76a0a616923a1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The options used to export a project for a preview. </p>
@@ -245,6 +250,33 @@ gd::String&#160;</td><td class="memItemRight" valign="bottom"><b>electronRemoteR
 </table>
 </div><div class="memdoc">
 <p>Set the path to use for the game engine to require "@electron/remote". This is because the preview is run in a folder without any node_module, but this is still required for now for some features. This should be removed once the dependency to "@electron/remote" is removed. </p>
+
+</div>
+</div>
+<a id="a3e10e05ca4e52e946e2847303e5224f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e10e05ca4e52e946e2847303e5224f4">&#9670;&nbsp;</a></span>SetGDevelopResourceToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dbe/structgdjs_1_1_preview_export_options.html">PreviewExportOptions</a>&amp; gdjs::PreviewExportOptions::SetGDevelopResourceToken </td>
+          <td>(</td>
+          <td class="paramtype">const gd::String &amp;&#160;</td>
+          <td class="paramname"><em>gdevelopResourceToken_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the token to use by the game engine when requiring any resource stored on GDevelop Cloud buckets. Note that this is only useful during previews. </p>
 
 </div>
 </div>
