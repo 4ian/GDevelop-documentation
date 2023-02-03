@@ -61,7 +61,7 @@ var searchData=
   ['invalidimagedata',['InvalidImageData',['../namespacegd.html#a5b0cb5bf3b1615fc2a3fc37f4a02b304',1,'gd']]],
   ['isabsolute',['IsAbsolute',['../classgd_1_1_abstract_file_system.html#adce96e1343abc395942d1a9a6e159e68',1,'gd::AbstractFileSystem']]],
   ['isaction',['IsAction',['../classgd_1_1_events_function.html#a5efebf055f5494f618e6d353866c468c',1,'gd::EventsFunction']]],
-  ['isasync',['IsAsync',['../classgd_1_1_instruction_metadata.html#aed473f086d9c8dd444d96b5190a8a6b4',1,'gd::InstructionMetadata']]],
+  ['isasync',['IsAsync',['../classgd_1_1_instruction_metadata.html#aed473f086d9c8dd444d96b5190a8a6b4',1,'gd::InstructionMetadata::IsAsync()'],['../classgd_1_1_events_function.html#a92c883ac80248e7a436e28165415be64',1,'gd::EventsFunction::IsAsync()']]],
   ['isasynccallback',['IsAsyncCallback',['../classgd_1_1_events_code_generation_context.html#af6e1655f32bbb70b48c3f61694354856',1,'gd::EventsCodeGenerationContext']]],
   ['isawaited',['IsAwaited',['../classgd_1_1_instruction.html#ae813427d3e0059acd964852f36a0fb77',1,'gd::Instruction']]],
   ['isbehavior',['IsBehavior',['../classgd_1_1_parameter_metadata.html#acb4e8694a3a9681501a72752a212de5c',1,'gd::ParameterMetadata::IsBehavior()'],['../classgd_1_1_value_type_metadata.html#aa592211b0dacb8c22ba3f59fce1dd647',1,'gd::ValueTypeMetadata::IsBehavior()']]],
