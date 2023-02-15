@@ -1,6 +1,7 @@
 var searchData=
 [
   ['s',['s',['../struct_generic_string_ref.html#ac555994afd329bc9bc1780acf2f9d9be',1,'GenericStringRef']]],
+  ['scanproject',['ScanProject',['../classgd_1_1_instructions_count_evaluator.html#a0e639866612fc78c81adbc1d5fb5a13e',1,'gd::InstructionsCountEvaluator']]],
   ['scene',['scene',['../classgd_1_1_events_code_generator.html#a4bb9a7aa61f965e4bcc6ffc17103c9e0',1,'gd::EventsCodeGenerator']]],
   ['scenenamemangler',['SceneNameMangler',['../classgd_1_1_scene_name_mangler.html',1,'gd']]],
   ['schema',['Schema',['../classinternal_1_1_schema.html',1,'internal']]],
@@ -191,7 +192,7 @@ var searchData=
   ['shoulduseasyncobjectslist',['ShouldUseAsyncObjectsList',['../classgd_1_1_events_code_generation_context.html#a58b09f9517d2032829c799a252a8afdc',1,'gd::EventsCodeGenerationContext']]],
   ['showgdeveloplogoduringloadingscreen',['ShowGDevelopLogoDuringLoadingScreen',['../classgd_1_1_loading_screen.html#a3f183cc622296376e716ecec16a6c04c',1,'gd::LoadingScreen']]],
   ['showgdevelopwatermark',['ShowGDevelopWatermark',['../classgd_1_1_watermark.html#a6d8bf235f583be8a09128c26a4e401db',1,'gd::Watermark']]],
-  ['size',['size',['../classgd_1_1_events_list.html#a2e5a4c493fadc30cc5f9789b69fa5667',1,'gd::EventsList::size()'],['../classgd_1_1_object_groups_container.html#aebae45aefcc146dbf4eecfed8deb2f06',1,'gd::ObjectGroupsContainer::size()'],['../classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9',1,'gd::String::size()'],['../classgd_1_1_serializable_with_name_list.html#a403393e8a216930041c57ecc23330170',1,'gd::SerializableWithNameList::size()'],['../classgd_1_1_s_ptr_list.html#a4588d52a0f1bd447c67d1aaf39247231',1,'gd::SPtrList::size()'],['../class_memory_pool_allocator.html#ae7fcf0341c13e899cf488bc7c8949956',1,'MemoryPoolAllocator::Size()']]],
+  ['size',['Size',['../class_memory_pool_allocator.html#ae7fcf0341c13e899cf488bc7c8949956',1,'MemoryPoolAllocator::Size()'],['../classgd_1_1_events_list.html#a2e5a4c493fadc30cc5f9789b69fa5667',1,'gd::EventsList::size()'],['../classgd_1_1_object_groups_container.html#aebae45aefcc146dbf4eecfed8deb2f06',1,'gd::ObjectGroupsContainer::size()'],['../classgd_1_1_string.html#affcc5fb0ab124e3d1c3ab71a4af815e9',1,'gd::String::size()'],['../classgd_1_1_serializable_with_name_list.html#a403393e8a216930041c57ecc23330170',1,'gd::SerializableWithNameList::size()'],['../classgd_1_1_s_ptr_list.html#a4588d52a0f1bd447c67d1aaf39247231',1,'gd::SPtrList::size()']]],
   ['size_5f',['size_',['../struct_memory_stream.html#ab26a1b5c6d5e8f52c0f6982feba47f36',1,'MemoryStream']]],
   ['sizetype',['SizeType',['../rapidjson_8h.html#a5ed6e6e67250fadbd041127e6386dcb5',1,'rapidjson.h']]],
   ['skipwhitespace',['SkipWhitespace',['../reader_8h.html#a60338858b2582eca23f3e509a2d82e0e',1,'reader.h']]],

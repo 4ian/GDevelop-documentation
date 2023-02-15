@@ -83,6 +83,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d3ce9945c08b78e94e0d501ae86ce7f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#a3d3ce9945c08b78e94e0d501ae86ce7f">ExposeProjectEvents</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_arbitrary_events_worker.html">gd::ArbitraryEventsWorker</a> &amp;worker)</td></tr>
 <tr class="memdesc:a3d3ce9945c08b78e94e0d501ae86ce7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the specified worker on all events of the project (layout, external events, events functions...)  <a href="#a3d3ce9945c08b78e94e0d501ae86ce7f">More...</a><br /></td></tr>
 <tr class="separator:a3d3ce9945c08b78e94e0d501ae86ce7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadc5e4d8b4a28a2560949c7ea1824e4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#aeadc5e4d8b4a28a2560949c7ea1824e4">ExposeProjectEventsWithoutExtensions</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_arbitrary_events_worker.html">gd::ArbitraryEventsWorker</a> &amp;worker)</td></tr>
+<tr class="memdesc:aeadc5e4d8b4a28a2560949c7ea1824e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the specified worker on all events of the project (layout and external events) but not events from extensions.  <a href="#aeadc5e4d8b4a28a2560949c7ea1824e4">More...</a><br /></td></tr>
+<tr class="separator:aeadc5e4d8b4a28a2560949c7ea1824e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117f286fda78f23733b7d2ef85721722"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgd_1_1_whole_project_refactorer.html#a117f286fda78f23733b7d2ef85721722">ExposeProjectEvents</a> (<a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;project, <a class="el" href="classgd_1_1_arbitrary_events_worker_with_context.html">gd::ArbitraryEventsWorkerWithContext</a> &amp;worker)</td></tr>
 <tr class="memdesc:a117f286fda78f23733b7d2ef85721722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the specified worker on all events of the project (layout, external events, events functions...)  <a href="#a117f286fda78f23733b7d2ef85721722">More...</a><br /></td></tr>
 <tr class="separator:a117f286fda78f23733b7d2ef85721722"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,6 +360,45 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Call the specified worker on all events of the project (layout, external events, events functions...) </p>
 <p>This should be the preferred way to traverse all the events of a project. </p>
+
+</div>
+</div>
+<a id="aeadc5e4d8b4a28a2560949c7ea1824e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeadc5e4d8b4a28a2560949c7ea1824e4">&#9670;&nbsp;</a></span>ExposeProjectEventsWithoutExtensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gd::WholeProjectRefactorer::ExposeProjectEventsWithoutExtensions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_project.html">gd::Project</a> &amp;&#160;</td>
+          <td class="paramname"><em>project</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgd_1_1_arbitrary_events_worker.html">gd::ArbitraryEventsWorker</a> &amp;&#160;</td>
+          <td class="paramname"><em>worker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call the specified worker on all events of the project (layout and external events) but not events from extensions. </p>
+<p>Only use this for stats. </p>
 
 </div>
 </div>
