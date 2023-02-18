@@ -1,6 +1,7 @@
 var searchData=
 [
   ['sceneextension',['SceneExtension',['../de/dd7/classgdjs_1_1_scene_extension.html',1,'gdjs']]],
+  ['setallowauthenticationusingiframeforpreview',['SetAllowAuthenticationUsingIframeForPreview',['../db/dbe/structgdjs_1_1_preview_export_options.html#afc2e34e1b0ee800266e98b75a3852c81',1,'gdjs::PreviewExportOptions']]],
   ['setcodenamespace',['SetCodeNamespace',['../d7/d4f/classgdjs_1_1_events_code_generator.html#acce6507d78b9e6552c646202c6d747dc',1,'gdjs::EventsCodeGenerator']]],
   ['setcodeoutputdirectory',['SetCodeOutputDirectory',['../dc/dda/classgdjs_1_1_exporter.html#a9c51541a1481d6bf610f15f1621e1ddd',1,'gdjs::Exporter::SetCodeOutputDirectory()'],['../d0/d75/classgdjs_1_1_exporter_helper.html#afeecd7cc427087d226bf9591954ef243',1,'gdjs::ExporterHelper::SetCodeOutputDirectory()']]],
   ['setelectronremoterequirepath',['SetElectronRemoteRequirePath',['../db/dbe/structgdjs_1_1_preview_export_options.html#a3903ccd881c7ea0a205aa19086461cca',1,'gdjs::PreviewExportOptions']]],
