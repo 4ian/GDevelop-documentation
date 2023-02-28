@@ -7,5 +7,7 @@ var searchData=
   ['foreachchildvariableevent',['ForEachChildVariableEvent',['../classgd_1_1_for_each_child_variable_event.html',1,'gd']]],
   ['foreachevent',['ForEachEvent',['../classgd_1_1_for_each_event.html',1,'gd']]],
   ['functioncallnode',['FunctionCallNode',['../structgd_1_1_function_call_node.html',1,'gd']]],
-  ['functioncallorobjectfunctionnameoremptynode',['FunctionCallOrObjectFunctionNameOrEmptyNode',['../structgd_1_1_function_call_or_object_function_name_or_empty_node.html',1,'gd']]]
+  ['functioncallorobjectfunctionnameoremptynode',['FunctionCallOrObjectFunctionNameOrEmptyNode',['../structgd_1_1_function_call_or_object_function_name_or_empty_node.html',1,'gd']]],
+  ['functionparameterbehaviortyperenamer',['FunctionParameterBehaviorTypeRenamer',['../classgd_1_1_function_parameter_behavior_type_renamer.html',1,'gd']]],
+  ['functionparameterobjecttyperenamer',['FunctionParameterObjectTypeRenamer',['../classgd_1_1_function_parameter_object_type_renamer.html',1,'gd']]]
 ];

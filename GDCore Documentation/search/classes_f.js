@@ -13,6 +13,8 @@ var searchData=
   ['polygon2d',['Polygon2d',['../class_polygon2d.html',1,'']]],
   ['prettywriter',['PrettyWriter',['../class_pretty_writer.html',1,'']]],
   ['project',['Project',['../classgd_1_1_project.html',1,'gd']]],
+  ['projectbrowser',['ProjectBrowser',['../classgd_1_1_project_browser.html',1,'gd']]],
+  ['projectbrowserhelper',['ProjectBrowserHelper',['../classgd_1_1_project_browser_helper.html',1,'gd']]],
   ['projectresourcesadder',['ProjectResourcesAdder',['../classgd_1_1_project_resources_adder.html',1,'gd']]],
   ['projectresourcescopier',['ProjectResourcesCopier',['../classgd_1_1_project_resources_copier.html',1,'gd']]],
   ['projectstripper',['ProjectStripper',['../classgd_1_1_project_stripper.html',1,'gd']]],

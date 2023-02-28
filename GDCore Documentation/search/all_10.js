@@ -33,6 +33,8 @@ var searchData=
   ['preservedirectoriesstructure',['PreserveDirectoriesStructure',['../classgd_1_1_resources_merging_helper.html#a7cef0f0b83f5beb637e1c16dbe318d7e',1,'gd::ResourcesMergingHelper::PreserveDirectoriesStructure(bool preserveDirectoriesStructure_=true)'],['../classgd_1_1_resources_merging_helper.html#af8f9fd27e4fd673b67da6c297db6dae8',1,'gd::ResourcesMergingHelper::preserveDirectoriesStructure()']]],
   ['prettywriter',['PrettyWriter',['../class_pretty_writer.html',1,'PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;'],['../class_pretty_writer.html#a928ac2a5235b8877048ebdd5f35a556f',1,'PrettyWriter::PrettyWriter()']]],
   ['project',['Project',['../classgd_1_1_project.html',1,'gd::Project'],['../classgd_1_1_events_code_generator.html#a124bbe24df17eebfbff5161c7e2f311e',1,'gd::EventsCodeGenerator::project()']]],
+  ['projectbrowser',['ProjectBrowser',['../classgd_1_1_project_browser.html',1,'gd']]],
+  ['projectbrowserhelper',['ProjectBrowserHelper',['../classgd_1_1_project_browser_helper.html',1,'gd']]],
   ['projectresourcesadder',['ProjectResourcesAdder',['../classgd_1_1_project_resources_adder.html',1,'gd']]],
   ['projectresourcescopier',['ProjectResourcesCopier',['../classgd_1_1_project_resources_copier.html',1,'gd']]],
   ['projectstripper',['ProjectStripper',['../classgd_1_1_project_stripper.html',1,'gd']]],

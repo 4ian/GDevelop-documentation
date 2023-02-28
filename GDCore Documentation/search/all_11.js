@@ -96,6 +96,7 @@ var searchData=
   ['replacelinkbylinkedevents',['ReplaceLinkByLinkedEvents',['../classgd_1_1_link_event.html#a337be42d7f56b27cdc66c4553275cc99',1,'gd::LinkEvent']]],
   ['replacestringinevents',['ReplaceStringInEvents',['../classgd_1_1_events_refactorer.html#a9076920a24754c210a88d3190b5f3c80',1,'gd::EventsRefactorer']]],
   ['reporterror',['ReportError',['../classgd_1_1_events_code_generator.html#a89503c85888e276e4ba99baa8330974d',1,'gd::EventsCodeGenerator']]],
+  ['requiredbehaviorrenamer',['RequiredBehaviorRenamer',['../classgd_1_1_required_behavior_renamer.html',1,'gd']]],
   ['requiredobjects',['requiredObjects',['../structgd_1_1_events_code_generator_1_1_callback_descriptor.html#a085659fcc7fb77358ef9cea8da636b4b',1,'gd::EventsCodeGenerator::CallbackDescriptor']]],
   ['reset',['Reset',['../class_generic_schema_validator.html#a49efbbe098cb77728be3d48cafed17e4',1,'GenericSchemaValidator::Reset()'],['../class_writer.html#a8b53e8f137f7fcf694f5500711b3f58d',1,'Writer::Reset()']]],
   ['resetpersistentuuid',['ResetPersistentUuid',['../classgd_1_1_initial_instance.html#afbb9e27d05fa0ed1b991d42aaa1666e4',1,'gd::InitialInstance']]],
